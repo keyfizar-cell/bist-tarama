@@ -21,7 +21,9 @@ jobs:
       - name: Bagimliliklari kur
         run: pip install --quiet tradingview-screener pandas
 
-      - name: Taramayi calistir
+            - name: Taramayi calistir
+        env:
+          TV_SESSIONID: ${{ secrets.TV_SESSIONID }}
         run: python tarama.py
 
       - name: Sonucu repoya isle
