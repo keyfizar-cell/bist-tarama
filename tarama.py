@@ -56,25 +56,35 @@ def veri_cek():
 
 
 def eksikleri_tamamla(df, alanlar):
-    """Pazar taramasinda cikmayan ZORUNLU sembolleri ticker ile ayrica cek ve birlestir."""
+    """Pazar taramasinda cikmayan ZORUNLU sembolleri ticker ile ayrica cek.
+    Birden fazla bicim/alan seti denenir; her deneme ve hatasi kayda gecer."""
     mevcut = set(df["name"].astype(str))
     eksik = [s for s in ZORUNLU if s not in mevcut]
+    tani = []
     if not eksik:
-        return df, [], []
-    try:
-        n, df2 = (Query()
-                  .select(*alanlar)
-                  .set_tickers(*[f"BIST:{s}" for s in eksik])
-                  .get_scanner_data())
-        bulunan = set(df2["name"].astype(str))
-        hala = [s for s in eksik if s not in bulunan]
-        df = pd.concat([df, df2], ignore_index=True)
-        print(f"[ok] eksik tamamlama: {len(bulunan)}/{len(eksik)} cekildi "
-              f"({', '.join(sorted(bulunan))}); hala eksik: {hala or 'yok'}", file=sys.stderr)
-        return df, sorted(bulunan), hala
-    except Exception as e:
-        print(f"[uyari] eksik tamamlama basarisiz: {e}", file=sys.stderr)
-        return df, [], eksik
+        return df, [], [], tani
+
+    MINI = ["name", "close", "change"]
+    denemeler = [
+        ("BIST:{}  tam alanlar",    [f"BIST:{s}" for s in eksik], alanlar),
+        ("BIST:{}  cekirdek",       [f"BIST:{s}" for s in eksik], CEKIRDEK),
+        ("BIST:{}  minimal",        [f"BIST:{s}" for s in eksik], MINI),
+        ("duz {}   minimal",        list(eksik),                  MINI),
+    ]
+    for ad, tickers, alan in denemeler:
+        try:
+            n, df2 = (Query().select(*alan).set_tickers(*tickers).get_scanner_data())
+            bulunan = sorted(set(df2["name"].astype(str))) if len(df2) else []
+            tani.append(f"{ad}: OK, {len(df2)} satir, bulunan={bulunan}")
+            if bulunan:
+                df = pd.concat([df, df2], ignore_index=True)
+                hala = [s for s in eksik if s not in set(bulunan)]
+                print(f"[ok] eksik tamamlama ({ad}): {bulunan}", file=sys.stderr)
+                return df, bulunan, hala, tani
+        except Exception as e:
+            tani.append(f"{ad}: HATA {type(e).__name__}: {str(e)[:300]}")
+            print(f"[uyari] {ad} -> {type(e).__name__}: {str(e)[:300]}", file=sys.stderr)
+    return df, [], eksik, tani
 
 
 def sayi(v):
@@ -170,7 +180,7 @@ def tv_etiket(skor):
 
 def main():
     df, etiket, alanlar = veri_cek()
-    df, tamamlanan, hala_eksik = eksikleri_tamamla(df, alanlar)
+    df, tamamlanan, hala_eksik, tani = eksikleri_tamamla(df, alanlar)
     var_rsi = "RSI" in df.columns
     kayitlar = [degerlendir(r, var_rsi) for r in df.to_dict("records")]
     for k in kayitlar:
@@ -192,6 +202,7 @@ def main():
         "hisse_sayisi": len(kayitlar),
         "ticker_ile_tamamlanan": tamamlanan,
         "hala_eksik": hala_eksik,
+        "tamamlama_tanilama": tani,
         "sermaye_islemi_elenen": [k["kod"] for k in kayitlar if k["olasi_sermaye_islemi"]],
         "hacim_esigi": HACIM_KAT,
         "tam_kurulum": tam,
