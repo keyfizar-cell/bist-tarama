@@ -37,9 +37,13 @@ HACIM_KAT = 2.0          # hacim patlamasi esigi (10 gun ort. kaci kati)
 # TradingView oturum cerezi (GitHub Secret -> env). YOKSA anonim calisir.
 # Anonim: ~620 sembol. Oturumlu: ~630 (KRDMD, KRDMB, EKGYO, ISCTR, KOZAL vb. acilir).
 # GUVENLIK: bu deger ASLA yazdirilmaz/loglanmaz.
-_SID = (os.environ.get("TV_SESSIONID") or "").strip()
+_SID = (os.environ.get("TV_SESSIONID") or "").strip().strip('"\'')
 COOKIES = {"sessionid": _SID} if _SID else None
-KW = {"cookies": COOKIES} if COOKIES else {}
+# Cerez ONCE denenir, REDDEDILIRSE anonim moda dusulur. Cerez ana isi asla cokertmez.
+CEREZ_MODLARI = ([({"cookies": COOKIES}, "oturumlu"), ({}, "anonim")]
+                 if COOKIES else [({}, "anonim")])
+KW = {}                      # veri_cek basarili olunca calisan mod buraya yazilir
+AKTIF_MOD = "belirsiz"
 NOTLAR    = []           # her adimin sonucu; JSON'a yazilir
 
 
@@ -73,23 +77,39 @@ def _sayfalayarak(alanlar, etiket):
 
 
 def veri_cek():
-    """Sirayla: (tam alanlar, cekirdek alanlar) x (sayfalama, tek istek).
-    Ilk basarili olan kullanilir; her deneme NOTLAR'a yazilir."""
-    for alanlar, etiket in ((CEKIRDEK + OPSIYONEL, "tam"), (CEKIRDEK, "cekirdek")):
-        try:
-            df, toplam = _sayfalayarak(alanlar, etiket)
-            not_ekle(f"sayfalama OK (alan={etiket}): {len(df)} satir / API toplam {toplam}")
-            return df, etiket, alanlar, toplam
-        except Exception as e:
-            not_ekle(f"sayfalama basarisiz (alan={etiket}): {type(e).__name__}: {str(e)[:200]}")
-        try:
-            n, df = _sorgu(alanlar, 2000)
-            if df is not None and len(df):
-                not_ekle(f"tek istek OK (alan={etiket}): {len(df)} satir / API toplam {n}")
-                return df, etiket, alanlar, n
-            not_ekle(f"tek istek bos (alan={etiket})")
-        except Exception as e:
-            not_ekle(f"tek istek basarisiz (alan={etiket}): {type(e).__name__}: {str(e)[:200]}")
+    """(cerez modu) x (alan seti) x (sayfalama, tek istek) sirayla denenir.
+    Ilk basarili kombinasyon kullanilir; calisan cerez modu global KW'ye yazilir."""
+    global KW, AKTIF_MOD
+    for kw, mod in CEREZ_MODLARI:
+        for alanlar, etiket in ((CEKIRDEK + OPSIYONEL, "tam"), (CEKIRDEK, "cekirdek")):
+            try:
+                parcalar, offset, toplam = [], 0, None
+                while True:
+                    n, df = (Query().select(*alanlar).set_markets("turkey")
+                             .limit(500).offset(offset).get_scanner_data(**kw))
+                    toplam = n
+                    if df is None or len(df) == 0:
+                        break
+                    parcalar.append(df); offset += len(df)
+                    if offset >= n or offset > 5000:
+                        break
+                if parcalar:
+                    df = pd.concat(parcalar, ignore_index=True)
+                    KW, AKTIF_MOD = kw, mod
+                    not_ekle(f"OK [{mod}/{etiket}/sayfalama]: {len(df)} satir / API toplam {toplam}")
+                    return df, etiket, alanlar, toplam
+            except Exception as e:
+                not_ekle(f"basarisiz [{mod}/{etiket}/sayfalama]: {type(e).__name__}: {str(e)[:160]}")
+            try:
+                n, df = (Query().select(*alanlar).set_markets("turkey")
+                         .limit(2000).get_scanner_data(**kw))
+                if df is not None and len(df):
+                    KW, AKTIF_MOD = kw, mod
+                    not_ekle(f"OK [{mod}/{etiket}/tek istek]: {len(df)} satir / API toplam {n}")
+                    return df, etiket, alanlar, n
+                not_ekle(f"bos [{mod}/{etiket}/tek istek]")
+            except Exception as e:
+                not_ekle(f"basarisiz [{mod}/{etiket}/tek istek]: {type(e).__name__}: {str(e)[:160]}")
     raise SystemExit("HATA: veri alinamadi. " + " | ".join(NOTLAR))
 
 
@@ -203,7 +223,7 @@ def tv_etiket(skor):
 
 
 def main():
-    not_ekle("TradingView oturumu: " + ("VAR (kapsam genis)" if COOKIES else "YOK (anonim, ~620 sembol)"))
+    not_ekle("TV oturum cerezi: " + ("tanimli" if COOKIES else "tanimsiz"))
     df, etiket, alanlar, api_toplam = veri_cek()
     df, tamamlanan, hala_eksik = eksikleri_tamamla(df, alanlar)
 
@@ -232,7 +252,8 @@ def main():
         "rsi_mevcut": var_rsi,
         "hisse_sayisi": len(kayitlar),
         "api_toplam": api_toplam,
-        "oturum_kullanildi": bool(COOKIES),
+        "oturum_cerezi_tanimli": bool(COOKIES),
+        "aktif_mod": AKTIF_MOD,
         "ticker_ile_tamamlanan": tamamlanan,
         "hala_eksik": hala_eksik,
         "sermaye_islemi_elenen": [k["kod"] for k in kayitlar if k["olasi_sermaye_islemi"]],
