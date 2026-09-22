@@ -33,6 +33,13 @@ ZORUNLU = [
 ]
 
 HACIM_KAT = 2.0          # hacim patlamasi esigi (10 gun ort. kaci kati)
+
+# TradingView oturum cerezi (GitHub Secret -> env). YOKSA anonim calisir.
+# Anonim: ~620 sembol. Oturumlu: ~630 (KRDMD, KRDMB, EKGYO, ISCTR, KOZAL vb. acilir).
+# GUVENLIK: bu deger ASLA yazdirilmaz/loglanmaz.
+_SID = (os.environ.get("TV_SESSIONID") or "").strip()
+COOKIES = {"sessionid": _SID} if _SID else None
+KW = {"cookies": COOKIES} if COOKIES else {}
 NOTLAR    = []           # her adimin sonucu; JSON'a yazilir
 
 
@@ -46,7 +53,7 @@ def _sorgu(alanlar, limit, offset=0):
     q = Query().select(*alanlar).set_markets("turkey").limit(limit)
     if offset:
         q = q.offset(offset)
-    return q.get_scanner_data()
+    return q.get_scanner_data(**KW)
 
 
 def _sayfalayarak(alanlar, etiket):
@@ -110,7 +117,7 @@ def eksikleri_tamamla(df, alanlar):
     ]
     for ad, tickers, alan in denemeler:
         try:
-            n, df2 = Query().select(*alan).set_tickers(*tickers).get_scanner_data()
+            n, df2 = Query().select(*alan).set_tickers(*tickers).get_scanner_data(**KW)
             bulunan = sorted(set(df2["name"].astype(str))) if (df2 is not None and len(df2)) else []
             not_ekle(f"{ad}: {len(df2) if df2 is not None else 0} satir, bulunan={bulunan}")
             gercek = [b for b in bulunan if b in eksik]
@@ -196,6 +203,7 @@ def tv_etiket(skor):
 
 
 def main():
+    not_ekle("TradingView oturumu: " + ("VAR (kapsam genis)" if COOKIES else "YOK (anonim, ~620 sembol)"))
     df, etiket, alanlar, api_toplam = veri_cek()
     df, tamamlanan, hala_eksik = eksikleri_tamamla(df, alanlar)
 
@@ -224,6 +232,7 @@ def main():
         "rsi_mevcut": var_rsi,
         "hisse_sayisi": len(kayitlar),
         "api_toplam": api_toplam,
+        "oturum_kullanildi": bool(COOKIES),
         "ticker_ile_tamamlanan": tamamlanan,
         "hala_eksik": hala_eksik,
         "sermaye_islemi_elenen": [k["kod"] for k in kayitlar if k["olasi_sermaye_islemi"]],
