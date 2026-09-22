@@ -38,18 +38,32 @@ HACIM_KAT = 2.0   # hacim patlamasi esigi (10 gun ort. kaci kati)
 
 
 def veri_cek():
-    """Once opsiyonellerle dene; API reddederse cekirdege dus."""
+    """Once opsiyonellerle dene; API reddederse cekirdege dus.
+    TradingView tek istekte sinirli satir donduruyor -> OFFSET ile sayfalanir."""
     for alanlar, etiket in ((CEKIRDEK + OPSIYONEL, "tam"), (CEKIRDEK, "cekirdek")):
         try:
-            n, df = (Query()
-                     .select(*alanlar)
-                     .set_markets("turkey")
-                     # NOT: .where(col("is_primary") == True) KULLANMA — bu filtre
-                     # pay siniflarini (KRDMD, ISCTR gibi) listeden dusuruyor.
-                     .limit(2000)
-                     .get_scanner_data())
-            print(f"[ok] alan seti='{etiket}' · {len(df)} satir (toplam {n})", file=sys.stderr)
-            return df, etiket, alanlar
+            parcalar, offset, toplam = [], 0, None
+            while True:
+                n, df = (Query()
+                         .select(*alanlar)
+                         .set_markets("turkey")
+                         .limit(500)
+                         .offset(offset)
+                         .get_scanner_data())
+                toplam = n
+                if len(df) == 0:
+                    break
+                parcalar.append(df)
+                offset += len(df)
+                print(f"[sayfa] offset={offset}/{n}", file=sys.stderr)
+                if offset >= n or offset > 5000:
+                    break
+            df = pd.concat(parcalar, ignore_index=True) if parcalar else None
+            if df is None or len(df) == 0:
+                raise RuntimeError("bos sonuc")
+            print(f"[ok] alan seti='{etiket}' · {len(df)} satir cekildi (API toplam: {toplam})",
+                  file=sys.stderr)
+            return df, etiket, alanlar, toplam
         except Exception as e:
             print(f"[uyari] alan seti='{etiket}' basarisiz: {e}", file=sys.stderr)
     raise SystemExit("HATA: TradingView tarayicisindan veri alinamadi.")
@@ -65,7 +79,11 @@ def eksikleri_tamamla(df, alanlar):
         return df, [], [], tani
 
     MINI = ["name", "close", "change"]
+    # KANARYA: THYAO pazar taramasinda KESIN var. set_tickers ile de gelirse
+    # sorun sembol adlarindadir; gelmezse global uc BIST'i hic servis etmiyordur.
+    kanarya = "THYAO"
     denemeler = [
+        ("BIST:{} + kanarya",       [f"BIST:{x}" for x in eksik + [kanarya]], MINI),
         ("BIST:{}  tam alanlar",    [f"BIST:{s}" for s in eksik], alanlar),
         ("BIST:{}  cekirdek",       [f"BIST:{s}" for s in eksik], CEKIRDEK),
         ("BIST:{}  minimal",        [f"BIST:{s}" for s in eksik], MINI),
@@ -179,7 +197,7 @@ def tv_etiket(skor):
 
 
 def main():
-    df, etiket, alanlar = veri_cek()
+    df, etiket, alanlar, api_toplam = veri_cek()
     df, tamamlanan, hala_eksik, tani = eksikleri_tamamla(df, alanlar)
     var_rsi = "RSI" in df.columns
     kayitlar = [degerlendir(r, var_rsi) for r in df.to_dict("records")]
@@ -200,6 +218,7 @@ def main():
         "alan_seti": etiket,
         "rsi_mevcut": var_rsi,
         "hisse_sayisi": len(kayitlar),
+        "api_toplam": api_toplam,
         "ticker_ile_tamamlanan": tamamlanan,
         "hala_eksik": hala_eksik,
         "tamamlama_tanilama": tani,
