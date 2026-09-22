@@ -6,7 +6,21 @@ Ucretsiz: TradingView hesabi veya API anahtari GEREKMEZ.
 """
 import json, os, sys, datetime as dt
 
+import pandas as pd
 from tradingview_screener import Query, col
+
+# Pazar taramasi bazi PAY SINIFI kodlarini dondurmuyor (21-22 Eyl'de KRDMD ve ISCTR
+# hicbir filtre olmadan da gelmedi; sorun is_primary degil, TradingView'in turkey
+# evreninde bu semboller yok). Bunlar ikinci bir sorguda TICKER ile acikca cekilir.
+ZORUNLU = [
+    # portfoy (BIST)
+    "AKBNK","BLUME","CANTE","ENKAI","HEKTS","KRDMD","OBAMS","PAPIL","SOHOE","TTKOM",
+    "ULUUN","VAKBN","YIGIT",
+    # BIST 30
+    "AKSEN","ALARK","ASELS","ASTOR","BIMAS","BRSAN","EKGYO","EREGL","FROTO","GARAN",
+    "GUBRF","HALKB","ISCTR","KCHOL","KOZAL","MGROS","OYAKC","PGSUS","SAHOL","SASA",
+    "SISE","TCELL","THYAO","TOASO","TUPRS","YKBNK",
+]
 
 # --- Alanlar -------------------------------------------------------------
 # CEKIRDEK: dokumantasyondan varligi dogrulanmis alanlar
@@ -35,10 +49,32 @@ def veri_cek():
                      .limit(2000)
                      .get_scanner_data())
             print(f"[ok] alan seti='{etiket}' · {len(df)} satir (toplam {n})", file=sys.stderr)
-            return df, etiket
+            return df, etiket, alanlar
         except Exception as e:
             print(f"[uyari] alan seti='{etiket}' basarisiz: {e}", file=sys.stderr)
     raise SystemExit("HATA: TradingView tarayicisindan veri alinamadi.")
+
+
+def eksikleri_tamamla(df, alanlar):
+    """Pazar taramasinda cikmayan ZORUNLU sembolleri ticker ile ayrica cek ve birlestir."""
+    mevcut = set(df["name"].astype(str))
+    eksik = [s for s in ZORUNLU if s not in mevcut]
+    if not eksik:
+        return df, [], []
+    try:
+        n, df2 = (Query()
+                  .select(*alanlar)
+                  .set_tickers(*[f"BIST:{s}" for s in eksik])
+                  .get_scanner_data())
+        bulunan = set(df2["name"].astype(str))
+        hala = [s for s in eksik if s not in bulunan]
+        df = pd.concat([df, df2], ignore_index=True)
+        print(f"[ok] eksik tamamlama: {len(bulunan)}/{len(eksik)} cekildi "
+              f"({', '.join(sorted(bulunan))}); hala eksik: {hala or 'yok'}", file=sys.stderr)
+        return df, sorted(bulunan), hala
+    except Exception as e:
+        print(f"[uyari] eksik tamamlama basarisiz: {e}", file=sys.stderr)
+        return df, [], eksik
 
 
 def sayi(v):
@@ -133,7 +169,8 @@ def tv_etiket(skor):
 
 
 def main():
-    df, etiket = veri_cek()
+    df, etiket, alanlar = veri_cek()
+    df, tamamlanan, hala_eksik = eksikleri_tamamla(df, alanlar)
     var_rsi = "RSI" in df.columns
     kayitlar = [degerlendir(r, var_rsi) for r in df.to_dict("records")]
     for k in kayitlar:
@@ -153,6 +190,8 @@ def main():
         "alan_seti": etiket,
         "rsi_mevcut": var_rsi,
         "hisse_sayisi": len(kayitlar),
+        "ticker_ile_tamamlanan": tamamlanan,
+        "hala_eksik": hala_eksik,
         "sermaye_islemi_elenen": [k["kod"] for k in kayitlar if k["olasi_sermaye_islemi"]],
         "hacim_esigi": HACIM_KAT,
         "tam_kurulum": tam,
