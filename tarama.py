@@ -30,8 +30,9 @@ def veri_cek():
             n, df = (Query()
                      .select(*alanlar)
                      .set_markets("turkey")
-                     .where(col("is_primary") == True)
-                     .limit(1000)
+                     # NOT: .where(col("is_primary") == True) KULLANMA — bu filtre
+                     # pay siniflarini (KRDMD, ISCTR gibi) listeden dusuruyor.
+                     .limit(2000)
                      .get_scanner_data())
             print(f"[ok] alan seti='{etiket}' · {len(df)} satir (toplam {n})", file=sys.stderr)
             return df, etiket
@@ -81,8 +82,15 @@ def degerlendir(r, var_rsi):
                    and ema50 is not None and kapanis is not None and kapanis < ema50)
     donus_teyidi = (macd_0_ustu or macd_yukseliyor) and not dusen_bicak
 
+    # BIST gunluk marj +-%10 (bazi paylarda +-%20). Bunun cok otesindeki bir "dusus"
+    # neredeyse her zaman BEDELSIZ/BOLUNME fiyat duzeltmesidir, gercek satis degil.
+    # Boyle bir gun sahte "asiri satim + hacim patlamasi" uretir -> aday havuzundan cikar.
+    gun_yuzde = sayi(r.get("change"))
+    olasi_sermaye_islemi = (gun_yuzde is not None and abs(gun_yuzde) > 15)
+
     return {
         "kod": r.get("name"),
+        "olasi_sermaye_islemi": olasi_sermaye_islemi,
         "kapanis": kapanis,
         "gunluk_yuzde": sayi(r.get("change")),
         "rsi": rsi,
@@ -109,7 +117,8 @@ def degerlendir(r, var_rsi):
         # olculemiyorsa "hacim: veri yok" notuyla gecer.
         "hacim_elemesi": bool(hacim_orani is not None and not hacim_patlamasi),
         "TAM_KURULUM": bool(asiri_satim and donus_teyidi
-                            and not (hacim_orani is not None and not hacim_patlamasi)),
+                            and not (hacim_orani is not None and not hacim_patlamasi)
+                            and not olasi_sermaye_islemi),
     }
 
 
@@ -132,7 +141,8 @@ def main():
 
     tam = [k for k in kayitlar if k["TAM_KURULUM"]]
     # tam kurulum yoksa en yakin adaylar: asiri satim var ama donus yok
-    yakin = [k for k in kayitlar if k["asiri_satim"] and not k["TAM_KURULUM"]]
+    yakin = [k for k in kayitlar
+             if k["asiri_satim"] and not k["TAM_KURULUM"] and not k["olasi_sermaye_islemi"]]
     tam.sort(key=lambda x: -(x["hacim_orani"] or 0))
     yakin.sort(key=lambda x: -(x["hacim_orani"] or 0))
 
@@ -143,6 +153,7 @@ def main():
         "alan_seti": etiket,
         "rsi_mevcut": var_rsi,
         "hisse_sayisi": len(kayitlar),
+        "sermaye_islemi_elenen": [k["kod"] for k in kayitlar if k["olasi_sermaye_islemi"]],
         "hacim_esigi": HACIM_KAT,
         "tam_kurulum": tam,
         "yakin_adaylar": yakin[:10],
