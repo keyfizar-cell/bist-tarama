@@ -215,13 +215,13 @@ def tv_etiket(skor):
 # bekledigi TradingView-tarzi anahtarlara koyariz -> tum kriter mantigi AYNEN
 # calisir, tutarli kalir. tv_sinyal Yahoo'da olmadigi icin "veri yok".
 # yfinance bu ortamda 403 alir; GitHub Actions'ta acik internetle calisir.
-def yahoo_row(kod):
-    import yfinance as yf
-    h = yf.Ticker(f"{kod}.IS").history(period="1y", interval="1d", auto_adjust=False)
-    if h is None or len(h) < 30:
-        return None
-    c = h["Close"].dropna()
-    v = h["Volume"].dropna()
+def _gostergeler(c, v=None):
+    """Kapanis serisi (c) ve opsiyonel hacim serisi (v) -> degerlendir()'in
+    bekledigi TradingView-tarzi anahtar sozlugu. RSI(14)/MACD(12,26,9)/
+    Bollinger(20,2)/EMA50 tek yerden hesaplanir -> Yahoo ve Is Yatirim
+    yedekleri AYNI matematigi kullanir, tutarli kalir. Recommend.All hesaplanamaz
+    (bu kaynaklar TV onerisi vermez) -> tv_sinyal 'veri yok'."""
+    c = pd.to_numeric(c, errors="coerce").dropna()
     if len(c) < 30:
         return None
     delta = c.diff()
@@ -239,8 +239,8 @@ def yahoo_row(kod):
     ema50 = c.ewm(span=50, adjust=False).mean()
     close = float(c.iloc[-1])
     prev  = float(c.iloc[-2])
+    v = pd.to_numeric(v, errors="coerce").dropna() if v is not None else None
     return {
-        "name": kod,
         "close": close,
         "change": ((close / prev - 1) * 100) if prev else None,
         "RSI": float(rsi.iloc[-1]),
@@ -249,13 +249,25 @@ def yahoo_row(kod):
         "BB.lower": float(sma20.iloc[-1] - 2 * std20.iloc[-1]),
         "BB.upper": float(sma20.iloc[-1] + 2 * std20.iloc[-1]),
         "EMA50": float(ema50.iloc[-1]),
-        "volume": float(v.iloc[-1]) if len(v) else None,
-        "average_volume_10d_calc": float(v.tail(10).mean()) if len(v) >= 10 else None,
+        "volume": float(v.iloc[-1]) if (v is not None and len(v)) else None,
+        "average_volume_10d_calc": (float(v.tail(10).mean())
+                                    if (v is not None and len(v) >= 10) else None),
         "price_52_week_high": float(c.tail(252).max()),
         "price_52_week_low": float(c.tail(252).min()),
         "market_cap_basic": None,
-        "Recommend.All": None,   # Yahoo TV onerisi vermez -> tv_sinyal "veri yok"
+        "Recommend.All": None,   # kaynak TV onerisi vermez -> tv_sinyal "veri yok"
     }
+
+
+def yahoo_row(kod):
+    import yfinance as yf
+    h = yf.Ticker(f"{kod}.IS").history(period="1y", interval="1d", auto_adjust=False)
+    if h is None or len(h) < 30:
+        return None
+    d = _gostergeler(h["Close"], h["Volume"] if "Volume" in h.columns else None)
+    if d:
+        d["name"] = kod
+    return d
 
 
 def yahoo_ile_kurtar(hala_eksik, kayitlar):
@@ -280,6 +292,69 @@ def yahoo_ile_kurtar(hala_eksik, kayitlar):
     return [x for x in hala_eksik if x not in kurtarilan]
 
 
+# --- Eksik kodlar icin IS YATIRIM gosterge hesabi (29.09.2026 gelistirmesi) ---
+# UCUNCU yedek: hem TradingView tamamlama hem de Yahoo basarisiz olursa devreye
+# girer. Yahoo (ABD) ve TradingView'den TAMAMEN BAGIMSIZ bir kaynaktir (Is
+# Yatirim / BIST), boylece kapsam boslugu icin gercek bir cesitlilik saglar.
+# isyatirimhisse ucretsiz, API anahtari gerektirmez. Sadece kapanis serisini
+# kullaniriz; gostergeler _gostergeler() ile AYNI matematikle hesaplanir.
+# NOT: asiri istekte IP engeli riski var -> yalnizca kalan birkac kod icin,
+# tek tek denenir; her kod ayri try -> ana akisi asla cokertmez.
+def isyatirim_row(kod):
+    from isyatirimhisse import fetch_stock_data
+    bas = (dt.date.today() - dt.timedelta(days=420)).strftime("%d-%m-%Y")
+    df = fetch_stock_data(symbols=kod, start_date=bas)
+    if df is None or not len(df):
+        return None
+
+    def _col(anahtarlar):
+        for c in df.columns:
+            u = str(c).upper()
+            if any(k in u for k in anahtarlar):
+                return c
+        return None
+
+    kapanis_col = _col(["KAPANIS", "CLOSING", "CLOSE"])
+    if kapanis_col is None:
+        not_ekle(f"isyatirim: {kod} kapanis sutunu bulunamadi (sutunlar={list(df.columns)[:8]})")
+        return None
+    tarih_col = _col(["TARIH", "DATE"])
+    hacim_col = _col(["HACIM", "VOLUME", "VOL"])
+
+    d2 = df.copy()
+    if tarih_col is not None:
+        try:
+            d2 = d2.sort_values(tarih_col)
+        except Exception:
+            pass
+    d = _gostergeler(d2[kapanis_col], d2[hacim_col] if hacim_col else None)
+    if d:
+        d["name"] = kod
+    return d
+
+
+def isyatirim_ile_kurtar(hala_eksik, kayitlar):
+    """hala_eksik kodlari Is Yatirim gostergeleriyle kayitlara ekler; kurtarilanlari
+    hala_eksik'ten duser. Her kod ayri try — hicbiri ana akisi bozamaz."""
+    kurtarilan = []
+    for kod in list(hala_eksik):
+        try:
+            row = isyatirim_row(kod)
+            if not row:
+                not_ekle(f"isyatirim gosterge: {kod} icin yeterli veri yok")
+                continue
+            k = degerlendir(row, True)
+            k["tv_sinyal"] = "veri yok"
+            k["veri_kaynagi"] = "isyatirim (gosterge hesabi)"
+            kayitlar.append(k)
+            kurtarilan.append(kod)
+            not_ekle(f"isyatirim gosterge: {kod} eklendi "
+                     f"(RSI={k['rsi']:.1f} MACD={k['macd']:.3f} kapanis={k['kapanis']})")
+        except Exception as e:
+            not_ekle(f"isyatirim gosterge: {kod} HATA {type(e).__name__}: {str(e)[:120]}")
+    return [x for x in hala_eksik if x not in kurtarilan]
+
+
 def main():
     not_ekle("TV oturum cerezi: " + ("tanimli" if COOKIES else "tanimsiz"))
     df, etiket, alanlar, api_toplam = veri_cek()
@@ -298,6 +373,9 @@ def main():
     # Tamamlama adimi acamadiysa: kalan eksikleri Yahoo gostergeleriyle kurtar.
     if hala_eksik:
         hala_eksik = yahoo_ile_kurtar(hala_eksik, kayitlar)
+    # Yahoo da getiremediyse: bagimsiz ucuncu kaynak Is Yatirim ile son bir dene.
+    if hala_eksik:
+        hala_eksik = isyatirim_ile_kurtar(hala_eksik, kayitlar)
 
     tam   = sorted([k for k in kayitlar if k["TAM_KURULUM"]],
                    key=lambda x: -(x["hacim_orani"] or 0))
