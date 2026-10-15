@@ -35,7 +35,9 @@ jobs:
           python-version: '3.12'
 
       - name: Bagimliliklari kur
-        run: pip install --quiet kap-client
+        # Surum sabit: kap_tarama.py v2, kutuphanenin ic modullerini
+        # (_client/_endpoints) kullanir; surum pinlemek kirilmayi onler.
+        run: pip install --quiet "kap-client==1.2.0"
 
       - name: KAP taramasi
         run: python kap_tarama.py
