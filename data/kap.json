@@ -1,0 +1,39 @@
+{
+  "uretim_zamani_utc": "2026-10-15T12:30:04.351367+00:00",
+  "tarih": "2026-10-15",
+  "gun_penceresi_gun": 4,
+  "baslangic": "2026-10-11",
+  "kaynak": "KAP (kap-client)",
+  "kodlar": {
+    "AKBNK": [],
+    "BLUME": [],
+    "CANTE": [],
+    "ENKAI": [],
+    "HEKTS": [],
+    "KRDMD": [],
+    "OBAMS": [],
+    "PAPIL": [],
+    "SOHOE": [],
+    "TTKOM": [],
+    "ULUUN": [],
+    "VAKBN": [],
+    "YIGIT": []
+  },
+  "notlar": [
+    "AKBNK: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "BLUME: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "CANTE: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "ENKAI: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "HEKTS: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "KRDMD: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "OBAMS: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "PAPIL: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "SOHOE: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "TTKOM: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "ULUUN: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "VAKBN: KAP'ta bulunamadı (kod değişmiş/delist olabilir)",
+    "YIGIT: KAP'ta bulunamadı (kod değişmiş/delist olabilir)"
+  ],
+  "hisse_sayisi": 13,
+  "bildirimli_kod_sayisi": 0
+}
