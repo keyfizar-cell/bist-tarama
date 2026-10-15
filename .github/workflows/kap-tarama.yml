@@ -1,0 +1,58 @@
+name: BIST KAP Bildirim Taraması
+
+# Bu is akisi ANA taramadan (bist-tarama.yml) TAMAMEN BAGIMSIZDIR ve onu
+# ETKILEMEZ. Ana tarama ("BIST Emir Bozkurt Taramasi") bittikten SONRA
+# otomatik calisir (workflow_run) -> EK BIR HARICI TETIK GEREKMEZ. Elle de
+# tetiklenebilir (workflow_dispatch). kap_tarama.py her durumda sifir cikisla
+# biter; bu is basarisiz olsa bile ana tarama ve bultenler etkilenmez.
+#
+# NOT: workflow_run tetigi, bu dosya VARSAYILAN DALDA (main) oldugunda calisir.
+on:
+  workflow_run:
+    workflows: ["BIST Emir Bozkurt Taraması"]
+    types: [completed]
+  workflow_dispatch:
+
+# Ana tarama ile ayni anda push yarisini onlemek icin ayri eszamanlilik grubu;
+# ayrica workflow_run zaten ana tarama bittikten sonra calistigi icin push
+# sirasi dogal olarak ana taramadan sonradir. rebase-retry dongusu kalan
+# carpismalari da cozer.
+concurrency:
+  group: bist-kap-tarama
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  kap:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Bagimliliklari kur
+        run: pip install --quiet kap-client
+
+      - name: KAP taramasi
+        run: python kap_tarama.py
+
+      - name: Sonucu repoya isle
+        run: |
+          git config user.name  "kap-bot"
+          git config user.email "kap-bot@users.noreply.github.com"
+          git add data/kap.json
+          if git diff --staged --quiet; then
+            echo "kap verisi degismedi, commit yok"; exit 0
+          fi
+          git commit -m "kap: $(date -u +%Y-%m-%d)"
+          for i in 1 2 3 4 5; do
+            if git push; then echo "push OK (deneme $i)"; exit 0; fi
+            echo "push carpisti; rebase edip yeniden deniyorum ($i)"
+            git pull --rebase --autostash || true
+            sleep $((i * 3))
+          done
+          echo "push 5 denemede basarisiz"; exit 1
