@@ -1,18 +1,25 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-KAP bildirim toplayıcı — keyfizar-cell/bist-tarama
+KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v2)
 
 Portföy (ve istenirse ek) BIST kodları için son N günün KAP bildirimlerini
-kap-client (ücretsiz, MIT lisanslı, API anahtarı/giriş GEREKTİRMEZ) ile çeker
-ve data/kap.json dosyasına yazar. Sabah/akşam bültenleri bu dosyayı
+kap-client (ücretsiz, MIT, API anahtarı/giriş GEREKTİRMEZ) ile çeker ve
+data/kap.json dosyasına yazar. Sabah/akşam bültenleri bu dosyayı
 raw.githubusercontent.com üzerinden okuyabilir (KAP'a WebFetch-okunur yedek).
 
-GÜVENLİK TASARIMI (önemli):
-  • Bu script ANA taramadan (tarama.py) TAMAMEN BAĞIMSIZDIR ve onu ETKİLEMEZ.
-  • Hata olsa bile HER ZAMAN data/kap.json yazar (boş da olsa) ve SIFIR çıkışla
-    biter — bağlı olduğu iş akışını (workflow) asla düşürmez.
-  • Her kod ayrı try/except içinde; bir kodun hatası diğerlerini etkilemez.
+YÖNTEM (v2 — neden değişti):
+  v1 her kod için fetch_disclosures(ticker) çağırıyordu; bu kütüphanede
+  ticker→şirket çözümlemesi (company/items uç noktası) halka açık hisseleri
+  getirmediği için TÜM kodlar "bulunamadı" dönüyordu. v2 bunu bypass eder:
+  tarih aralığı için TEK bir piyasa-geneli bildirim sorgusu yapar
+  (mkkMemberOidList boş = tüm şirketler), dönen satırları stockCodes alanına
+  göre izleme listemizle EŞLEŞTİRİR. Çözümleme uç noktasına hiç bağımlı değil.
+
+GÜVENLİK TASARIMI:
+  • ANA taramadan (tarama.py) TAMAMEN BAĞIMSIZDIR, onu ETKİLEMEZ.
+  • Hata olsa bile HER ZAMAN data/kap.json yazar ve SIFIR çıkışla biter —
+    bağlı iş akışını asla düşürmez.
 """
 from __future__ import annotations
 
@@ -24,21 +31,17 @@ from datetime import date, datetime, timedelta, timezone
 
 # ───────────────────────── AYARLAR (düzenlenebilir) ─────────────────────────
 # Portföy BIST kodları. NVO (NYSE) KAP kapsamında olmadığı için HARİÇ.
-# Drive'daki portföyle ELLE eşitlenir; kod eklemek/çıkarmak için bu listeyi
-# düzenle. (Koza unvan değişikliği: KOZAL→TRALT, KOZAA→TRMET, IPEKE→TRENJ —
-# portföyde varsa YENİ kodu yaz.)
+# Drive portföyüyle ELLE eşitlenir. (Koza: KOZAL→TRALT, KOZAA→TRMET, IPEKE→TRENJ)
 PORTFOY: list[str] = [
     "AKBNK", "BLUME", "CANTE", "ENKAI", "HEKTS", "KRDMD", "OBAMS",
     "PAPIL", "SOHOE", "TTKOM", "ULUUN", "VAKBN", "YIGIT",
 ]
-
-# İstenirse ek izlenecek kodlar (ör. BIST30 üyeleri). Boş bırakılabilir.
-# Örnek: EK_KODLAR = ["THYAO", "GARAN", "ASELS", "EREGL", "KCHOL", "SISE"]
+# İstenirse ek izlenecek kodlar (ör. BIST30). Boş bırakılabilir.
 EK_KODLAR: list[str] = []
 
-GUN_PENCERESI = 4        # son kaç günün bildirimleri taransın (hafta sonu payı)
-KOD_BASI_LIMIT = 15      # kod başına en fazla bildirim (en yeniden)
-TIMEOUT = 30.0           # kap-client istek zaman aşımı (saniye)
+GUN_PENCERESI = 4        # son kaç günün bildirimleri (hafta sonu payı)
+KOD_BASI_LIMIT = 20      # kod başına en fazla bildirim (en yeniden)
+TIMEOUT = 30.0
 CIKTI = "data/kap.json"
 # ─────────────────────────────────────────────────────────────────────────────
 
@@ -49,18 +52,35 @@ def _yaz(cikti: dict) -> None:
         json.dump(cikti, f, ensure_ascii=False, indent=2)
     print(
         "data/kap.json yazıldı: "
-        f"{cikti.get('bildirimli_kod_sayisi', '?')}/{cikti.get('hisse_sayisi', '?')} "
-        "kodda bildirim var"
+        f"{cikti.get('bildirimli_kod_sayisi', '?')}/{cikti.get('hisse_sayisi', '?')} kodda bildirim "
+        f"(piyasa satırı: {cikti.get('toplam_piyasa_satiri', '?')})"
     )
 
 
+def _kayit(d) -> dict:
+    pz = getattr(d, "publish_datetime", None)
+    return {
+        "no": getattr(d, "index", None),
+        "zaman": pz.isoformat() if pz else None,
+        "tur": getattr(d, "disclosure_type", None) or None,
+        "konu": getattr(d, "subject", None) or None,
+        "ozet": (getattr(d, "summary", None) or None),
+        "sirket": getattr(d, "company_name", None) or None,
+        "kodlar": getattr(d, "stock_codes", None) or None,
+        "gecikmeli": bool(getattr(d, "is_late", False)),
+        "duzeltme": bool(getattr(d, "is_corrective", False)),
+        "ek_var": bool(getattr(d, "has_attachment", False)),
+        "url": getattr(d, "url", None),
+    }
+
+
 def main() -> None:
-    # Benzersiz, sırayı koruyan kod listesi
-    kodlar: list[str] = []
+    izleme: list[str] = []
     for k in PORTFOY + EK_KODLAR:
         k = (k or "").strip().upper()
-        if k and k not in kodlar:
-            kodlar.append(k)
+        if k and k not in izleme:
+            izleme.append(k)
+    izleme_set = set(izleme)
 
     bugun = date.today()
     baslangic = bugun - timedelta(days=GUN_PENCERESI)
@@ -70,65 +90,63 @@ def main() -> None:
         "tarih": bugun.isoformat(),
         "gun_penceresi_gun": GUN_PENCERESI,
         "baslangic": baslangic.isoformat(),
-        "kaynak": "KAP (kap-client)",
-        "kodlar": {},
+        "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
+        "kodlar": {k: [] for k in izleme},
         "notlar": [],
     }
 
     try:
-        from kap_client import (
-            Kap,
-            EmptyResponseError,
-            CompanyNotFoundError,
-            RateLimitError,
-            KapError,
+        from kap_client._client import KapHttpClient
+        from kap_client._endpoints import (
+            MemberDisclosureQueryBody,
+            MEMBER_DISCLOSURE_QUERY_URL,
+            DisclosureRow,
         )
-    except Exception as e:  # kütüphane yoksa bile dosya yaz
+        from kap_client import Disclosure
+    except Exception as e:
         cikti["notlar"].append(f"kap-client import edilemedi: {e!r}")
-        cikti["hisse_sayisi"] = 0
+        cikti["hisse_sayisi"] = len(izleme)
         cikti["bildirimli_kod_sayisi"] = 0
+        cikti["toplam_piyasa_satiri"] = 0
         _yaz(cikti)
         return
 
+    def _ds(d: date) -> str:
+        return d.isoformat()
+
+    toplam = 0
     try:
-        with Kap(timeout=TIMEOUT) as kap:
-            for kod in kodlar:
+        with KapHttpClient(timeout=TIMEOUT) as http:
+            body = MemberDisclosureQueryBody(
+                fromDate=_ds(baslangic),
+                toDate=_ds(bugun),
+                mkkMemberOidList=[],   # boş = piyasa geneli (tüm şirketler)
+            )
+            rows = http.post(MEMBER_DISCLOSURE_QUERY_URL, body)
+            toplam = len(rows)
+            for raw in rows:
                 try:
-                    diz = kap.fetch_disclosures(kod, baslangic, bugun)
-                    kayitlar = []
-                    for d in diz[:KOD_BASI_LIMIT]:
-                        pz = getattr(d, "publish_datetime", None)
-                        kayitlar.append({
-                            "no": getattr(d, "index", None),
-                            "zaman": pz.isoformat() if pz else None,
-                            "tur": getattr(d, "disclosure_type", None),
-                            "konu": getattr(d, "subject", None),
-                            "ozet": (getattr(d, "summary", None) or None),
-                            "sirket": getattr(d, "company_name", None),
-                            "gecikmeli": bool(getattr(d, "is_late", False)),
-                            "duzeltme": bool(getattr(d, "is_corrective", False)),
-                            "ek_var": bool(getattr(d, "has_attachment", False)),
-                            "url": getattr(d, "url", None),
-                        })
-                    cikti["kodlar"][kod] = kayitlar
-                except EmptyResponseError:
-                    cikti["kodlar"][kod] = []  # pencerede bildirim yok (normal)
-                except CompanyNotFoundError:
-                    cikti["kodlar"][kod] = []
-                    cikti["notlar"].append(
-                        f"{kod}: KAP'ta bulunamadı (kod değişmiş/delist olabilir)"
-                    )
-                except RateLimitError as e:
-                    cikti["kodlar"][kod] = []
-                    cikti["notlar"].append(f"{kod}: hız sınırı — {e!r}")
-                except Exception as e:  # tek kod hatası diğerlerini durdurmaz
-                    cikti["kodlar"][kod] = []
-                    cikti["notlar"].append(f"{kod}: hata {e!r}")
+                    d = Disclosure.from_row(DisclosureRow.model_validate(raw))
+                except Exception:
+                    continue
+                kodlar = [c.strip().upper() for c in (d.stock_codes or "").split(",") if c.strip()]
+                for kod in kodlar:
+                    if kod in izleme_set:
+                        cikti["kodlar"][kod].append(_kayit(d))
+        # her kod için en yeniden eskiye sırala + limit
+        for kod, lst in cikti["kodlar"].items():
+            lst.sort(key=lambda x: (x.get("zaman") or ""), reverse=True)
+            cikti["kodlar"][kod] = lst[:KOD_BASI_LIMIT]
     except Exception as e:
         cikti["notlar"].append(
-            f"KAP oturumu genel hata: {e!r} :: {traceback.format_exc(limit=2)}"
+            f"KAP sorgu hatası: {e!r} :: {traceback.format_exc(limit=2)}"
         )
 
+    cikti["toplam_piyasa_satiri"] = toplam
+    if toplam == 0:
+        cikti["notlar"].append(
+            "Piyasa-geneli sorgu 0 satır döndü — tarih aralığı/endpoint kontrol edilmeli."
+        )
     cikti["hisse_sayisi"] = len(cikti["kodlar"])
     cikti["bildirimli_kod_sayisi"] = sum(1 for v in cikti["kodlar"].values() if v)
     _yaz(cikti)
@@ -137,7 +155,7 @@ def main() -> None:
 if __name__ == "__main__":
     try:
         main()
-    except Exception as e:  # son güvenlik ağı — yine de dosya yaz, sıfır çık
+    except Exception as e:
         try:
             _yaz({
                 "uretim_zamani_utc": datetime.now(timezone.utc).isoformat(),
@@ -145,9 +163,9 @@ if __name__ == "__main__":
                 "kodlar": {},
                 "hisse_sayisi": 0,
                 "bildirimli_kod_sayisi": 0,
+                "toplam_piyasa_satiri": 0,
             })
         except Exception:
             pass
         print("kap_tarama beklenmedik hata:", e, file=sys.stderr)
-    # İş akışını ASLA düşürme: her durumda 0 ile çık.
     sys.exit(0)
