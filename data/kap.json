@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-10-15T15:21:49.368139+00:00",
-  "tarih": "2026-10-15",
+  "uretim_zamani_utc": "2026-10-16T15:21:45.042001+00:00",
+  "tarih": "2026-10-16",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-11",
+  "baslangic": "2026-10-12",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [
@@ -156,6 +156,19 @@
     "ENKAI": [],
     "HEKTS": [
       {
+        "no": 1682795,
+        "zaman": "2026-10-15T21:05:25",
+        "tur": "ODA",
+        "konu": "Özel Durum Açıklaması (Genel)",
+        "ozet": "Tahsisli Sermaye Artırımı Sonrası OYAK'ın Pay ve Oy Hakkı Oranı ile Pay Alım Teklifi Yükümlülüğüne İlişkin Açıklaması",
+        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
+        "kodlar": "HEKTS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1682795"
+      },
+      {
         "no": 1682362,
         "zaman": "2026-10-14T20:04:07",
         "tur": "CA",
@@ -215,6 +228,19 @@
     "SOHOE": [],
     "TTKOM": [
       {
+        "no": 1682767,
+        "zaman": "2026-10-15T18:42:30",
+        "tur": "DG",
+        "konu": "Şirket Genel Bilgi Formu",
+        "ozet": null,
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1682767"
+      },
+      {
         "no": 1680959,
         "zaman": "2026-10-13T18:01:31",
         "tur": "ODA",
@@ -229,6 +255,19 @@
       }
     ],
     "ULUUN": [
+      {
+        "no": 1682782,
+        "zaman": "2026-10-15T19:41:32",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "15.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1682782"
+      },
       {
         "no": 1682364,
         "zaman": "2026-10-14T20:07:58",
@@ -287,7 +326,7 @@
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1342,
+  "toplam_piyasa_satiri": 1806,
   "hisse_sayisi": 13,
   "bildirimli_kod_sayisi": 7
 }
