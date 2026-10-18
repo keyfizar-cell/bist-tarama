@@ -1,7 +1,9 @@
 name: BIST KAP Bildirim Taraması
 
-# v3.0 — kap_tarama.py artık İKİ dosya üretir: data/kap.json (eskisi gibi) ve
-# YENİ data/geri_alim.json (piyasa geneli pay geri alım özeti). Bu is akisi ANA
+# v3.1 — kap_tarama.py İKİ dosya üretir: data/kap.json (eskisi gibi) ve
+# YENİ data/geri_alim.json (piyasa geneli pay geri alım özeti). v3.1'de lot/tutar
+# icin ikinci yol: KAP PDF/Word belge disa-aktarma (pdfplumber + python-docx ile
+# ayristirilir). Bu is akisi ANA
 # taramadan (bist-tarama.yml) TAMAMEN BAGIMSIZDIR ve onu ETKILEMEZ. Ana tarama
 # ("BIST Emir Bozkurt Taramasi") bittikten SONRA otomatik calisir (workflow_run)
 # -> EK BIR HARICI TETIK GEREKMEZ. Elle de tetiklenebilir (workflow_dispatch).
@@ -37,9 +39,10 @@ jobs:
           python-version: '3.12'
 
       - name: Bagimliliklari kur
-        # Surum sabit: kap_tarama.py v3.0, kutuphanenin ic modullerini
-        # (_client/_endpoints) ve get_html'i kullanir; surum pinlemek kirilmayi onler.
-        run: pip install --quiet "kap-client==1.2.0"
+        # Surum sabit: kap_tarama.py v3.1 kap-client ic modullerini (_client/
+        # _endpoints) ve get_html'i kullanir; surum pinlemek kirilmayi onler.
+        # pdfplumber + python-docx: KAP PDF/Word belgelerinden lot/tutar ayristirma.
+        run: pip install --quiet "kap-client==1.2.0" pdfplumber python-docx
 
       - name: KAP taramasi
         run: python kap_tarama.py
