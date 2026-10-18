@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.1)
+KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.2)
 
 İKİ ÇIKTI, HER İKİSİ DE BAĞIMSIZ VE AYRI DOSYA:
   (1) data/kap.json       — v2 ile AYNI: portföy/ek kodlar için son N günün
@@ -73,8 +73,9 @@ GA_BILDIRIM_LIMIT = 60
 DETAY_DENE = True                 # kapatmak için False
 DETAY_KAPSAM = "portfoy_bist30"   # "portfoy_bist30" | "portfoy" | "yok"
 DETAY_FORMAT = "pdf_sonra_word"   # "pdf_sonra_word" | "pdf" | "word"
-MAX_DETAY = 60                    # en fazla kaç belge indirilsin (kibar/hızlı)
-DETAY_ORNEK_KAYDET = True         # ilk başarılı belgenin metnini tanı için kaydet
+MAX_DETAY = 80                    # en fazla kaç belge indirilsin (kibar/hızlı)
+GA_DETAY_DENEME = 3               # şirket başına en güncelden kaç bildirim denensin (parse olana dek)
+DETAY_ORNEK_KAYDET = True         # ilk belgenin metnini (4000 krktr) tanı için kaydet
 BELGE_TIMEOUT = 25
 BELGE_BEKLE = 0.3                 # belgeler arası kibar bekleme (sn)
 
@@ -113,8 +114,8 @@ def _tr_sayi(s):
     if not m:
         return None
     ham = m.group(1)
-    # '13.10.2026' gibi tarih: iki nokta + virgül yok + 8 hane → tarih say, atla
-    if ham.count(".") >= 2 and "," not in ham:
+    # Yalnızca gerçek gg.aa.yyyy tarihi reddet (binlik ayraçlı 4.120.000'ı DEĞİL).
+    if re.fullmatch(r"\d{1,2}\.\d{1,2}\.\d{4}", ham):
         return None
     try:
         return float(ham.replace(".", "").replace(",", "."))
@@ -262,83 +263,71 @@ def _program_mi(konu: str, ozet: str) -> bool:
         or ("çerçevesinde" in b and "geri al" in b)
 
 
-# ── belge ayrıştırma (SAF; ağ yok → test edilebilir) ──
-def _tablo_topla(tablolar: list) -> dict:
-    """pdfplumber/docx tablolarından (satır=hücre listesi) nominal/tutar/oran topla.
-    Geri-alım işlem tablosunun başlık satırını bulup veri satırlarını toplar."""
-    out = {"lot": None, "tutar": None, "sermaye_orani": None, "satir": 0}
-    for tbl in tablolar or []:
-        if not tbl or len(tbl) < 2:
-            continue
-        bas = None
-        kol: dict = {}
-        for ri, row in enumerate(tbl[:4]):
-            hr = [_tr_lower(c or "") for c in row]
-            joined = " ".join(hr)
-            if ("nominal" in joined or "pay" in joined) and \
-               ("tutar" in joined or "fiyat" in joined or "tarih" in joined):
-                bas = ri
-                for ci, h in enumerate(hr):
-                    if ("nominal" in h) or ("pay" in h and ("adet" in h or "tutar" in h)):
-                        kol.setdefault("lot", ci)
-                    if "işlem tutar" in h or "tutar (tl)" in h or h.strip() in ("tutar", "tutarı"):
-                        kol.setdefault("tutar", ci)
-                    if "sermaye" in h and "oran" in h:
-                        kol.setdefault("oran", ci)
-                break
-        if bas is None or "lot" not in kol:
-            continue
-        lot_t = tut_t = 0.0
-        lot_v = tut_v = False
-        oran = None
-        for row in tbl[bas + 1:]:
-            if kol.get("lot") is not None and kol["lot"] < len(row):
-                v = _tr_sayi(row[kol["lot"]])
-                if v is not None:
-                    lot_t += v; lot_v = True
-            if kol.get("tutar") is not None and kol["tutar"] < len(row):
-                v = _tr_sayi(row[kol["tutar"]])
-                if v is not None:
-                    tut_t += v; tut_v = True
-            if kol.get("oran") is not None and kol["oran"] < len(row):
-                v = _tr_sayi(row[kol["oran"]])
-                if v is not None:
-                    oran = v
-            out["satir"] += 1
-        if lot_v:
-            out["lot"] = round(lot_t, 2)
-        if tut_v:
-            out["tutar"] = round(tut_t, 2)
-        if oran is not None:
-            out["sermaye_orani"] = oran
-        if lot_v or tut_v:
-            break
-    return out
+# ── belge ayrıştırma (SAF; ağ yok → gerçek KAP metniyle test edilebilir) ──
+# KAP "Geri Alım İşlemlerinin Detayları" tablosu (PDF metin çıktısında) satır biçimi:
+#   <işlem tarihi> <nominal/lot TL> <sermayeye oranı %> <işlem fiyatı TL/adet>
+#   <program çerçevesinde DAHA ÖNCE geri alınan nominal TL> <imtiyaz>
+# ör:  03.07.2026 4.120.000 0,12865 48,81 0 -
+# ÖNEMLİ: Tabloda "işlem tutarı (TL)" sütunu YOKTUR → tutar = Σ(nominal × fiyat).
+#   Her bildirim programın TÜM geçmişini taşır → şirket başına YALNIZ en güncel
+#   bildirim ayrıştırılır (bildirimler arası TOPLAMA YAPILMAZ, çifte sayım olur).
+#   Kümülatif lot = son satırın "daha önce" + son satırın nominali (kısmi tabloda
+#   bile doğru). Sermaye = nominal ÷ (oran/100); kümülatif oran = 100×küm_lot/sermaye.
+_SATIR_DESEN = re.compile(
+    r"(\d{2}\.\d{2}\.\d{4})\s+([\d.]+(?:,\d+)?)\s+(\d+,\d+)\s+([\d.]+,\d+)\s+([\d.]+(?:,\d+)?)"
+)
 
 
-def _metin_sayi_ayikla(metin: str) -> dict:
-    """Düz belge metninden (etiketli satır düzeni) nominal/tutar/oran ayıkla."""
-    out = {"lot": None, "tutar": None, "sermaye_orani": None}
+def _buyback_detay_parse(metin: str) -> dict:
+    """Tek bir geri-alım bildiriminin METNİNDEN kümülatif lot/tutar/sermaye oranı.
+    -> {lot, tutar, sermaye_orani, satir, azami_pay, ayrilan_fon} ; satır yoksa lot=None."""
+    out = {"lot": None, "tutar": None, "sermaye_orani": None, "satir": 0,
+           "azami_pay": None, "ayrilan_fon": None}
     if not metin:
         return out
-    satirlar = [s for s in re.split(r"[\r\n]+", metin) if s.strip()]
-    for s in satirlar:
-        d = _tr_lower(s)
-        if out["lot"] is None and (("nominal" in d) or ("pay adedi" in d) or ("geri alınan pay" in d and "tutar" in d)):
-            out["lot"] = _satir_son_sayi(s)
-        if out["tutar"] is None and (("işlem tutar" in d) or ("toplam tutar" in d) or ("ödenen tutar" in d) or ("alım tutar" in d)):
-            out["tutar"] = _satir_son_sayi(s)
-        if out["sermaye_orani"] is None and ("sermaye" in d and "oran" in d):
-            out["sermaye_orani"] = _satir_son_sayi(s)
+    satirlar = []  # (nominal, oran, fiyat, daha_once)
+    for m in _SATIR_DESEN.finditer(metin):
+        nom = _tr_sayi(m.group(2)); oran = _tr_sayi(m.group(3))
+        fiyat = _tr_sayi(m.group(4)); daha = _tr_sayi(m.group(5))
+        if nom is None:
+            continue
+        satirlar.append((nom, oran, fiyat, daha))
+    if not satirlar:
+        return out
+    out["satir"] = len(satirlar)
+    # tutar = Σ(nominal×fiyat) (gösterilen satırlar)
+    tutar = sum(n * f for (n, o, f, d) in satirlar if f is not None)
+    out["tutar"] = round(tutar, 2) if tutar else None
+    # kümülatif lot = son satırın (daha_önce + nominal); yoksa Σ nominal
+    son = satirlar[-1]
+    if son[3] is not None:
+        out["lot"] = round(son[3] + son[0], 2)
+    else:
+        out["lot"] = round(sum(n for (n, o, f, d) in satirlar), 2)
+    # sermaye = nominal ÷ (oran/100) ilk geçerli satırdan → kümülatif oran
+    sermaye = None
+    for (n, o, f, d) in satirlar:
+        if o and o > 0 and n:
+            sermaye = n / (o / 100.0)
+            break
+    if sermaye and sermaye > 0:
+        out["sermaye_orani"] = round(100.0 * out["lot"] / sermaye, 5)
+    else:
+        toplam_oran = sum(o for (n, o, f, d) in satirlar if o)
+        out["sermaye_orani"] = round(toplam_oran, 5) if toplam_oran else None
+    # program meta (en iyi çaba): azami pay / ayrılan fon (etiket sonrası ilk büyük sayı)
+    def _meta(anahtar):
+        i = _tr_lower(metin).find(anahtar)
+        if i < 0:
+            return None
+        for s in re.findall(_SAYI, metin[i:i + 160]):
+            v = _tr_sayi(s)
+            if v and v >= 1000:
+                return v
+        return None
+    out["azami_pay"] = _meta("azami pay")
+    out["ayrilan_fon"] = _meta("ayrılan fon")
     return out
-
-
-def _birlestir(tablo: dict, metin: dict) -> dict:
-    """Tablo önceliklidir; eksikleri metin doldurur."""
-    r = {"lot": None, "tutar": None, "sermaye_orani": None}
-    for k in r:
-        r[k] = tablo.get(k) if tablo.get(k) is not None else metin.get(k)
-    return r
 
 
 # ── belge indirme + çıkarma (ağ; try/except'le sarılı) ──
@@ -407,10 +396,11 @@ def _docx_coz(data: bytes):
 
 
 def _detay_getir(index, http=None) -> tuple:
-    """index için KAP belgesini (PDF/Word) indirip ayıklar.
-    -> (parse_dict | None, kaynak_str | None, ornek_metin_str)."""
+    """index için KAP belgesini (PDF/Word) indirip DÜZ METNİNİ döndürür.
+    Ayrıştırma çağırana aittir (_buyback_detay_parse).
+    -> (metin_str, kaynak_str | None)."""
     if index is None:
-        return None, None, ""
+        return "", None
     sira = {"pdf_sonra_word": ("pdf", "word"), "pdf": ("pdf",), "word": ("word",)}.get(
         DETAY_FORMAT, ("pdf", "word"))
     for fmt in sira:
@@ -422,16 +412,12 @@ def _detay_getir(index, http=None) -> tuple:
         if not data or len(data) < 200:
             continue
         try:
-            tablolar, metin = (_pdf_coz(data) if fmt == "pdf" else _docx_coz(data))
+            _tbl, metin = (_pdf_coz(data) if fmt == "pdf" else _docx_coz(data))
         except Exception:
-            tablolar, metin = None, ""
-        parse = _birlestir(_tablo_topla(tablolar or []), _metin_sayi_ayikla(metin))
-        if parse["lot"] is not None or parse["tutar"] is not None or parse["sermaye_orani"] is not None:
-            return parse, fmt, (metin or "")[:1500]
-        # metin geldi ama sayı yok → tanı için örnek döndür (ikinci formata da bakmadan)
+            metin = ""
         if metin:
-            return None, fmt, metin[:1500]
-    return None, None, ""
+            return metin, fmt
+    return "", None
 
 
 def _piyasa_degeri_haritasi() -> dict:
@@ -589,44 +575,46 @@ def _ga_fazi() -> None:
                 for kod, s in sirketler.items():
                     if kod not in kapsam:
                         continue
-                    kum_lot = kum_tutar = 0.0
-                    lot_var = tutar_var = False
-                    son_oran = None
-                    for b in s["bildirimler"]:
-                        if b.get("sinif") != "işlem" or b.get("no") is None:
-                            continue
+                    # İşlem bildirimleri (en yeni → eski; _ga_derle zaten sıraladı).
+                    # Her bildirim programın TÜM geçmişini taşıdığından YALNIZ en güncel
+                    # (parse edilebilen ilk) bildirim kullanılır — TOPLAMA YOK.
+                    islemler = [b for b in s["bildirimler"]
+                                if b.get("sinif") == "işlem" and b.get("no") is not None]
+                    parse = None
+                    for b in islemler[:GA_DETAY_DENEME]:
                         if cekilen >= MAX_DETAY:
                             break
                         cekilen += 1
                         try:
-                            parse, kaynak, ornek = _detay_getir(b["no"], hdoc)
+                            metin, kaynak = _detay_getir(b["no"], hdoc)
                         except Exception:
-                            parse, kaynak, ornek = None, None, ""
+                            metin, kaynak = "", None
                         if BELGE_BEKLE:
                             time.sleep(BELGE_BEKLE)
-                        if DETAY_ORNEK_KAYDET and not ornek_kaydedildi and ornek:
-                            cikti["detay_ornek"] = {"kod": kod, "no": b["no"], "kaynak": kaynak, "metin": ornek}
+                        if DETAY_ORNEK_KAYDET and not ornek_kaydedildi and metin:
+                            cikti["detay_ornek"] = {"kod": kod, "no": b["no"],
+                                                    "kaynak": kaynak, "metin": metin[:4000]}
                             ornek_kaydedildi = True
-                        if not parse:
-                            continue
-                        if kaynak in kaynak_say:
-                            kaynak_say[kaynak] += 1
-                        if parse.get("lot") is not None:
-                            kum_lot += parse["lot"]; lot_var = True
+                        p = _buyback_detay_parse(metin)
+                        if p.get("lot") is not None:
+                            if kaynak in kaynak_say:
+                                kaynak_say[kaynak] += 1
+                            p["kaynak"] = kaynak
+                            p["bildirim_no"] = b["no"]
+                            p["bildirim_tarih"] = b["tarih"]
+                            b["detay"] = p
+                            parse = p
+                            break
+                    if parse:
+                        basari += 1
+                        s["kumulatif_lot"] = parse["lot"]
                         if parse.get("tutar") is not None:
-                            kum_tutar += parse["tutar"]; tutar_var = True
+                            s["kumulatif_tutar_tl"] = parse["tutar"]
+                            pd = s.get("piyasa_degeri")
+                            if isinstance(pd, (int, float)) and pd:
+                                s["piyasa_degeri_orani_yuzde"] = round(100.0 * parse["tutar"] / pd, 4)
                         if parse.get("sermaye_orani") is not None:
-                            son_oran = parse["sermaye_orani"]
-                        b["detay"] = {**parse, "kaynak": kaynak}
-                    if lot_var:
-                        s["kumulatif_lot"] = round(kum_lot, 2); basari += 1
-                    if tutar_var:
-                        s["kumulatif_tutar_tl"] = round(kum_tutar, 2)
-                        pd = s.get("piyasa_degeri")
-                        if isinstance(pd, (int, float)) and pd:
-                            s["piyasa_degeri_orani_yuzde"] = round(100.0 * kum_tutar / pd, 4)
-                    if son_oran is not None:
-                        s["sermaye_orani_yuzde"] = son_oran
+                            s["sermaye_orani_yuzde"] = parse["sermaye_orani"]
         except Exception as e:
             cikti["notlar"].append(f"Tier-2 belge fazı hatası: {e!r}")
         cikti["detay_basari_sayisi"] = basari
