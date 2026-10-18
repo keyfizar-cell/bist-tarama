@@ -1,10 +1,12 @@
 name: BIST KAP Bildirim Taraması
 
-# Bu is akisi ANA taramadan (bist-tarama.yml) TAMAMEN BAGIMSIZDIR ve onu
-# ETKILEMEZ. Ana tarama ("BIST Emir Bozkurt Taramasi") bittikten SONRA
-# otomatik calisir (workflow_run) -> EK BIR HARICI TETIK GEREKMEZ. Elle de
-# tetiklenebilir (workflow_dispatch). kap_tarama.py her durumda sifir cikisla
-# biter; bu is basarisiz olsa bile ana tarama ve bultenler etkilenmez.
+# v3.0 — kap_tarama.py artık İKİ dosya üretir: data/kap.json (eskisi gibi) ve
+# YENİ data/geri_alim.json (piyasa geneli pay geri alım özeti). Bu is akisi ANA
+# taramadan (bist-tarama.yml) TAMAMEN BAGIMSIZDIR ve onu ETKILEMEZ. Ana tarama
+# ("BIST Emir Bozkurt Taramasi") bittikten SONRA otomatik calisir (workflow_run)
+# -> EK BIR HARICI TETIK GEREKMEZ. Elle de tetiklenebilir (workflow_dispatch).
+# kap_tarama.py her durumda sifir cikisla biter; bu is basarisiz olsa bile ana
+# tarama ve bultenler etkilenmez.
 #
 # NOT: workflow_run tetigi, bu dosya VARSAYILAN DALDA (main) oldugunda calisir.
 on:
@@ -35,8 +37,8 @@ jobs:
           python-version: '3.12'
 
       - name: Bagimliliklari kur
-        # Surum sabit: kap_tarama.py v2, kutuphanenin ic modullerini
-        # (_client/_endpoints) kullanir; surum pinlemek kirilmayi onler.
+        # Surum sabit: kap_tarama.py v3.0, kutuphanenin ic modullerini
+        # (_client/_endpoints) ve get_html'i kullanir; surum pinlemek kirilmayi onler.
         run: pip install --quiet "kap-client==1.2.0"
 
       - name: KAP taramasi
@@ -46,11 +48,11 @@ jobs:
         run: |
           git config user.name  "kap-bot"
           git config user.email "kap-bot@users.noreply.github.com"
-          git add data/kap.json
+          git add data/kap.json data/geri_alim.json
           if git diff --staged --quiet; then
             echo "kap verisi degismedi, commit yok"; exit 0
           fi
-          git commit -m "kap: $(date -u +%Y-%m-%d)"
+          git commit -m "kap+geri_alim: $(date -u +%Y-%m-%d)"
           for i in 1 2 3 4 5; do
             if git push; then echo "push OK (deneme $i)"; exit 0; fi
             echo "push carpisti; rebase edip yeniden deniyorum ($i)"
