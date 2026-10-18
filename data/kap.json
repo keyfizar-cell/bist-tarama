@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-10-16T15:21:45.042001+00:00",
-  "tarih": "2026-10-16",
+  "uretim_zamani_utc": "2026-10-18T17:55:02.089769+00:00",
+  "tarih": "2026-10-18",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-12",
+  "baslangic": "2026-10-14",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [
@@ -31,110 +31,6 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1681923"
-      },
-      {
-        "no": 1680485,
-        "zaman": "2026-10-13T16:30:40",
-        "tur": "DG",
-        "konu": "İhraç Belgesi",
-        "ozet": "Yurt İçi Borçlanma Aracı SPK Onaylı İhraç Belgesi",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1680485"
-      },
-      {
-        "no": 1680471,
-        "zaman": "2026-10-13T16:30:24",
-        "tur": "DG",
-        "konu": "İhraç Belgesi",
-        "ozet": "Yurt İçi Borçlanma Aracı SPK Onaylı İhraç Belgesi",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1680471"
-      },
-      {
-        "no": 1680470,
-        "zaman": "2026-10-13T16:30:10",
-        "tur": "DG",
-        "konu": "Yeşil veya Sürdürülebilir Temalı Sermaye Piyasası Aracına İlişkin Bildirim",
-        "ozet": "Yurt Dışında Yeşil/Sürdürülebilir Temalı Borçlanma Aracı Senelik İzin Yenilemesine İlişkin SPK İzni",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1680470"
-      },
-      {
-        "no": 1680469,
-        "zaman": "2026-10-13T16:29:56",
-        "tur": "DG",
-        "konu": "İhraç Belgesi",
-        "ozet": "Yurt Dışında Yeşil/Sürdürülebilir Temalı Borçlanma Aracı Senelik İzin Yenilemesine İlişkin SPK Onaylı İhraç Belgesi.",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1680469"
-      },
-      {
-        "no": 1680467,
-        "zaman": "2026-10-13T16:29:40",
-        "tur": "CA",
-        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-        "ozet": "Yurtdışı Piyasalara Tahvil İhracı",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1680467"
-      },
-      {
-        "no": 1680078,
-        "zaman": "2026-10-13T11:03:38",
-        "tur": "DG",
-        "konu": "Finansal Takvim",
-        "ozet": "Finansal Takvim (2026 3.Çeyrek)",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1680078"
-      },
-      {
-        "no": 1679679,
-        "zaman": "2026-10-12T18:16:32",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Rekabet Kurumu Soruşturması Hakkında",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1679679"
-      },
-      {
-        "no": 1678932,
-        "zaman": "2026-10-12T10:10:41",
-        "tur": "CA",
-        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-        "ozet": "Nitelikli Yatırımcılara Yapılan Tahvil İhracı",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1678932"
       }
     ],
     "BLUME": [
@@ -180,47 +76,21 @@
         "duzeltme": false,
         "ek_var": true,
         "url": "https://www.kap.org.tr/tr/Bildirim/1682362"
-      },
-      {
-        "no": 1679840,
-        "zaman": "2026-10-12T20:00:40",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Yeni Bağımsız Yönetim Kurulu Üyesi Seçimi Hk.",
-        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
-        "kodlar": "HEKTS",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1679840"
-      },
-      {
-        "no": 1679838,
-        "zaman": "2026-10-12T20:00:28",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Bağlı Ortaklığımız Ferbis Tarım Ticaret ve Sanayi A.Ş.'nin Esas Sözleşme Değişikliğinin SPK Onayı hk.",
-        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
-        "kodlar": "HEKTS",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1679838"
       }
     ],
     "KRDMD": [
       {
-        "no": 1681196,
-        "zaman": "2026-10-13T19:20:00",
+        "no": 1683328,
+        "zaman": "2026-10-16T18:36:27",
         "tur": "CA",
         "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "13.10.2026 Tarihli Pay Geri Alım İşlemleri",
+        "ozet": "16.10.2026 Tarihli Pay Geri Alım İşlemleri",
         "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
         "kodlar": "KRDMA, KRDMB, KRDMD",
         "gecikmeli": false,
         "duzeltme": false,
         "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1681196"
+        "url": "https://www.kap.org.tr/tr/Bildirim/1683328"
       }
     ],
     "OBAMS": [],
@@ -239,22 +109,35 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1682767"
-      },
-      {
-        "no": 1680959,
-        "zaman": "2026-10-13T18:01:31",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Organizasyonel Atama",
-        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
-        "kodlar": "TTKOM",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1680959"
       }
     ],
     "ULUUN": [
+      {
+        "no": 1683373,
+        "zaman": "2026-10-16T22:02:59",
+        "tur": "ODA",
+        "konu": "Esas Sözleşme Tadili",
+        "ozet": "Esas Sözleşme Tadili Sermaye Piyasası Kurulu Onayı Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1683373"
+      },
+      {
+        "no": 1683353,
+        "zaman": "2026-10-16T19:56:10",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "16.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1683353"
+      },
       {
         "no": 1682782,
         "zaman": "2026-10-15T19:41:32",
@@ -280,53 +163,13 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1682364"
-      },
-      {
-        "no": 1681237,
-        "zaman": "2026-10-13T19:56:11",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "13.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1681237"
-      },
-      {
-        "no": 1679852,
-        "zaman": "2026-10-12T20:31:18",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "12.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1679852"
       }
     ],
-    "VAKBN": [
-      {
-        "no": 1680222,
-        "zaman": "2026-10-13T13:10:08",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Kredi Anlaşması Hakkında",
-        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
-        "kodlar": "TVB, VAKBN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1680222"
-      }
-    ],
+    "VAKBN": [],
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1806,
+  "toplam_piyasa_satiri": 1141,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 7
+  "bildirimli_kod_sayisi": 6
 }
