@@ -1,7 +1,13 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.2)
+KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.3)
+
+v3.3: v3.2 ayrıştırıcısı 4 kapsam-içi (portföy+BIST30) geri-alım şirketinden 3'ünü
+çözdü; KRDMD çözülemedi. v3.3 yalnızca TANI ekler (ayrıştırma mantığı aynı):
+geri_alim.json'a "detay_ornek_basarisiz" (parse edilemeyen ilk kapsam-içi belgenin
+metni) + her kapsam-içi şirkete "detay_durum" (ok/satir_yok/indirilemedi). Böylece
+KRDMD'nin KAP tablo düzeni görülüp ayrıştırıcı kesinleştirilebilir.
 
 İKİ ÇIKTI, HER İKİSİ DE BAĞIMSIZ VE AYRI DOSYA:
   (1) data/kap.json       — v2 ile AYNI: portföy/ek kodlar için son N günün
@@ -496,7 +502,7 @@ def _ga_fazi() -> None:
                      "belgesinden lot/tutar/sermaye oranı; yalnız Actions'ta doğrulanır. "
                      "İlk belgenin metni 'detay_ornek'te (tanı/ince ayar)."),
         "detay_denendi": False, "detay_basari_sayisi": 0, "detay_kaynak_sayisi": {},
-        "detay_ornek": None,
+        "detay_ornek": None, "detay_ornek_basarisiz": None,
         "toplam_piyasa_satiri": 0, "geri_alim_bildirim_sayisi": 0,
         "sirket_sayisi": 0, "sirketler": {}, "portfoy_ozet": {}, "notlar": [],
     }
@@ -566,6 +572,7 @@ def _ga_fazi() -> None:
         cekilen = 0
         kaynak_say: dict = {"pdf": 0, "word": 0}
         ornek_kaydedildi = False
+        basarisiz_kaydedildi = [False]  # ilk başarısız kapsam-içi belge tanısı
         try:
             with KapHttpClient(timeout=TIMEOUT) as hdoc:
                 try:   # oturum/çerez ısıtma
@@ -581,6 +588,7 @@ def _ga_fazi() -> None:
                     islemler = [b for b in s["bildirimler"]
                                 if b.get("sinif") == "işlem" and b.get("no") is not None]
                     parse = None
+                    indi = False  # en az bir belge metni geldi mi
                     for b in islemler[:GA_DETAY_DENEME]:
                         if cekilen >= MAX_DETAY:
                             break
@@ -591,11 +599,20 @@ def _ga_fazi() -> None:
                             metin, kaynak = "", None
                         if BELGE_BEKLE:
                             time.sleep(BELGE_BEKLE)
+                        if metin:
+                            indi = True
                         if DETAY_ORNEK_KAYDET and not ornek_kaydedildi and metin:
                             cikti["detay_ornek"] = {"kod": kod, "no": b["no"],
                                                     "kaynak": kaynak, "metin": metin[:4000]}
                             ornek_kaydedildi = True
                         p = _buyback_detay_parse(metin)
+                        # TANI: indi ama satır çıkmadı → ilk başarısız kapsam-içi belgenin
+                        # metnini ayrı kaydet (farklı KAP tablo düzenini görüp düzeltmek için)
+                        if (DETAY_ORNEK_KAYDET and not basarisiz_kaydedildi[0]
+                                and metin and p.get("lot") is None):
+                            cikti["detay_ornek_basarisiz"] = {"kod": kod, "no": b["no"],
+                                                              "kaynak": kaynak, "metin": metin[:4000]}
+                            basarisiz_kaydedildi[0] = True
                         if p.get("lot") is not None:
                             if kaynak in kaynak_say:
                                 kaynak_say[kaynak] += 1
@@ -605,6 +622,7 @@ def _ga_fazi() -> None:
                             b["detay"] = p
                             parse = p
                             break
+                    s["detay_durum"] = ("ok" if parse else ("satir_yok" if indi else "indirilemedi"))
                     if parse:
                         basari += 1
                         s["kumulatif_lot"] = parse["lot"]
