@@ -1,9 +1,11 @@
 name: BIST KAP Bildirim Taraması
 
-# v3.1 — kap_tarama.py İKİ dosya üretir: data/kap.json (eskisi gibi) ve
-# YENİ data/geri_alim.json (piyasa geneli pay geri alım özeti). v3.1'de lot/tutar
-# icin ikinci yol: KAP PDF/Word belge disa-aktarma (pdfplumber + python-docx ile
-# ayristirilir). Bu is akisi ANA
+# v3.2 — kap_tarama.py İKİ dosya üretir: data/kap.json (eskisi gibi) ve
+# YENİ data/geri_alim.json (piyasa geneli pay geri alım özeti). lot/tutar icin
+# ikinci yol: KAP PDF/Word belge disa-aktarma (pdfplumber + python-docx). v3.2:
+# gercek KAP belge yapisina gore ayristirici duzeltildi (sirket basina TEK/en
+# guncel bildirim; tutar = nominal x fiyat; sermaye = nominal / (oran/100)).
+# Bu is akisi ANA
 # taramadan (bist-tarama.yml) TAMAMEN BAGIMSIZDIR ve onu ETKILEMEZ. Ana tarama
 # ("BIST Emir Bozkurt Taramasi") bittikten SONRA otomatik calisir (workflow_run)
 # -> EK BIR HARICI TETIK GEREKMEZ. Elle de tetiklenebilir (workflow_dispatch).
