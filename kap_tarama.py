@@ -1,67 +1,56 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.0)
+KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.1)
 
-İKİ ÇIKTI ÜRETİR, HER İKİSİ DE BAĞIMSIZ VE AYRI DOSYA:
+İKİ ÇIKTI, HER İKİSİ DE BAĞIMSIZ VE AYRI DOSYA:
   (1) data/kap.json       — v2 ile AYNI: portföy/ek kodlar için son N günün
-                            KAP bildirimleri (bültenlerin mevcut KAP yedeği).
-                            Mantık ve çıktı biçimi v2 ile BİREBİR aynıdır,
-                            DEĞİŞTİRİLMEMİŞTİR → mevcut tüketiciler bozulmaz.
-  (2) data/geri_alim.json — YENİ: 01.09.2026'dan bugüne piyasa genelindeki
-                            TÜM "Pay Geri Alım" bildirimlerini şirket bazında
-                            özetler (Kemal Çağlar Demirtaş'ın X'te paylaştığı
-                            geri-alım takip tablosunun KENDİ KAP verimizden
-                            üretilen, ona bağımlı OLMAYAN karşılığı).
+                            KAP bildirimleri. Mantık/biçim DEĞİŞTİRİLMEDİ.
+  (2) data/geri_alim.json — 01.09.2026'dan bugüne piyasa genelindeki TÜM
+                            "Pay Geri Alım" bildirimlerini şirket bazında özetler.
 
-GÜVENLİK TASARIMI (v2'den devralındı, v3'te de geçerli):
+v3.1 YENİLİĞİ — LOT/TUTAR İÇİN İKİNCİ YOL (Tier-2 yeniden yazıldı):
+  v3.0'da Tier-2, bildirimin Angular (SPA) sayfasını get_html ile çekip regex
+  deniyordu — güvenilmezdi. v3.1 bunun yerine KAP'ın KENDİ BELGE DIŞA-AKTARMA
+  uçlarını kullanır (ücretsiz, giriş/anahtar yok):
+     PDF :  https://www.kap.org.tr/tr/api/BildirimPdf/{index}
+     Word:  https://www.kap.org.tr/tr/api/notification/export/word/{index}
+  Bunlar bildirimin GERÇEK BELGESİDİR; "Pay Geri Alım İşlemleri" tablosunu
+  (tarih, nominal/lot, fiyat aralığı, işlem tutarı, sermayeye oran) içerir.
+  Belge indirilir, önce TABLO olarak (pdfplumber / python-docx), olmazsa düz
+  METİN anahtar-kelimesiyle ayrıştırılır. Varsayılan: PDF dene, olmazsa Word.
+
+  ⚠️ Bu uçlar binary döndürür; kap.org.tr buluttan/WebFetch'ten 403 verdiği için
+  ayrıştırma YALNIZ GitHub Actions'ta (tam internet) doğrulanır. İlk çalışmada
+  geri_alim.json'daki "detay_ornek" alanına ilk belgenin METNİ yazılır → gerçek
+  KAP düzenini görüp (gerekirse) ayrıştırmayı kesinleştiririz.
+
+GÜVENLİK TASARIMI:
   • ANA taramadan (tarama.py) TAMAMEN BAĞIMSIZDIR, onu ETKİLEMEZ.
-  • İki faz da KENDİ içinde try/except ile sarılıdır; biri patlasa bile
-    diğeri çalışır. HER İKİ dosya HER DURUMDA yazılır; betik DAİMA sıfır
-    çıkışla (sys.exit(0)) biter → bağlı iş akışını ASLA düşürmez.
-
-VERİ DÜRÜSTLÜĞÜ (önemli):
-  • Piyasa-geneli bildirim LİSTE sorgusu yalnızca başlık verir:
-    tarih, tür, konu, özet (ör. "13.10.2026 Tarihli Pay Geri Alım İşlemleri"),
-    şirket, kodlar, url. Lot/adet, ortalama fiyat, tutar, program bütçesi ve
-    SERMAYEYE ORANI bu listede YOKTUR — bunlar bildirimin DETAY sayfasındadır.
-  • Bu yüzden geri_alim.json İKİ KATMANLIDIR:
-      TIER-1 (GÜVENİLİR, her zaman çalışır): şirket bazında geri-alım
-        bildirimlerinin listesi + sayısı + program/işlem sınıfı + ilk/son
-        tarih + KAP linkleri + portföy/BIST30 işareti + piyasa değeri.
-      TIER-2 (EN İYİ ÇABA, varsayılan açık ama ASLA zorunlu değil): yalnız
-        PORTFÖY+BIST30 şirketlerinin geri-alım bildirim DETAYINI (get_html)
-        çekip lot/fiyat/tutar/sermaye-oranını regex ile ayıklamayı dener;
-        başarısızsa veya alan yoksa "veri yok" yazar, Tier-1'e düşer.
-    ⚠️ KAP detay sayfası Angular SPA'dır; get_html'in kullanılabilir içerik
-    döndürüp döndürmediği YALNIZ GitHub Actions'ta (tam internet) doğrulanır.
-    Bulut/yerel ortamdan kap.org.tr 403 verir. İlk Actions çalışmasından sonra
-    geri_alim.json'da kumulatif_* alanlarının dolu mu "veri yok" mu olduğunu
-    KONTROL ET; hep "veri yok" ise DETAY_DENE=False yapıp Tier-1 ile devam et.
+  • İki faz da KENDİ try/except'inde; HER İKİ dosya HER DURUMDA yazılır; betik
+    DAİMA sıfır çıkışla (sys.exit(0)) biter → bağlı iş akışını ASLA düşürmez.
+  • Tier-2 kapatılabilir (DETAY_DENE=False) ve kibar/sınırlıdır (MAX_DETAY).
 """
 from __future__ import annotations
 
+import io
 import json
 import os
 import re
 import sys
+import time
 import traceback
+import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 # ───────────────────────── AYARLAR (düzenlenebilir) ─────────────────────────
-# Portföy BIST kodları. NVO (NYSE) KAP kapsamında olmadığı için HARİÇ.
-# Drive portföyüyle ELLE eşitlenir. (Koza: KOZAL→TRALT, KOZAA→TRMET, IPEKE→TRENJ)
 PORTFOY: list[str] = [
     "AKBNK", "BLUME", "CANTE", "ENKAI", "HEKTS", "KRDMD", "OBAMS",
     "PAPIL", "SOHOE", "TTKOM", "ULUUN", "VAKBN", "YIGIT",
 ]
-# İstenirse ek izlenecek kodlar (kap.json fazı için; BIST30 geri_alim fazında
-# ayrıca işaretlenir). Boş bırakılabilir.
 EK_KODLAR: list[str] = []
 
-# BIST30 — YAKLAŞIK liste, düzenlenebilir; güncel endeks bileşimini teyit et.
-# (Koza unvan değişikliği: KOZAL→TRALT) Yalnız geri_alim.json'da "bist30" işareti
-# ve Tier-2 detay çekme kapsamı için kullanılır.
+# BIST30 — YAKLAŞIK, düzenlenebilir; güncel endeks bileşimini teyit et.
 BIST30: list[str] = [
     "AKBNK", "AKSEN", "ALARK", "ASELS", "ASTOR", "BIMAS", "EKGYO", "ENKAI",
     "EREGL", "FROTO", "GARAN", "GUBRF", "HEKTS", "ISCTR", "KCHOL", "KONTR",
@@ -70,26 +59,76 @@ BIST30: list[str] = [
 ]
 
 # ── kap.json fazı (v2 ile aynı) ──
-GUN_PENCERESI = 4        # son kaç günün bildirimleri (hafta sonu payı)
-KOD_BASI_LIMIT = 20      # kod başına en fazla bildirim (en yeniden)
+GUN_PENCERESI = 4
+KOD_BASI_LIMIT = 20
 CIKTI = "data/kap.json"
 
-# ── geri_alim.json fazı (yeni) ──
-GERI_ALIM_BASLANGIC = "2026-09-01"   # geri-alım takibinin başlangıç günü
+# ── geri_alim.json fazı ──
+GERI_ALIM_BASLANGIC = "2026-09-01"
 GERI_ALIM_CIKTI = "data/geri_alim.json"
-CHUNK_GUN = 7            # piyasa sorgusunu kaç günlük parçalara böl (olası satır sınırına karşı)
-GA_BILDIRIM_LIMIT = 60   # şirket başına geri_alim.json'a yazılacak en fazla bildirim
-DETAY_DENE = True        # Tier-2: detay sayfasından lot/fiyat/tutar ayıklamayı dene
-DETAY_KAPSAM = "portfoy_bist30"   # "portfoy_bist30" | "portfoy" | "yok"
-MAX_DETAY = 50           # Tier-2'de en fazla kaç detay sayfası çekilsin (kibar/hızlı)
-TIMEOUT = 30.0
+CHUNK_GUN = 7
+GA_BILDIRIM_LIMIT = 60
 
-GERI_ALIM_ANAHTAR = ("geri al",)   # konu/özet/tür içinde aranır (küçük harf, TR)
+# ── Tier-2 (lot/tutar ikinci yol: KAP belge dışa-aktarma) ──
+DETAY_DENE = True                 # kapatmak için False
+DETAY_KAPSAM = "portfoy_bist30"   # "portfoy_bist30" | "portfoy" | "yok"
+DETAY_FORMAT = "pdf_sonra_word"   # "pdf_sonra_word" | "pdf" | "word"
+MAX_DETAY = 60                    # en fazla kaç belge indirilsin (kibar/hızlı)
+DETAY_ORNEK_KAYDET = True         # ilk başarılı belgenin metnini tanı için kaydet
+BELGE_TIMEOUT = 25
+BELGE_BEKLE = 0.3                 # belgeler arası kibar bekleme (sn)
+
+TIMEOUT = 30.0
+GERI_ALIM_ANAHTAR = ("geri al",)
+
+BASE_KAP = "https://www.kap.org.tr"
+PDF_URL = BASE_KAP + "/tr/api/BildirimPdf/{}"
+WORD_URL = BASE_KAP + "/tr/api/notification/export/word/{}"
+BELGE_BASLIK = {
+    "User-Agent": ("Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+                   "(KHTML, like Gecko) Chrome/123.0 Safari/537.36"),
+    "Referer": BASE_KAP + "/tr/bildirim-sorgu",
+    "Accept": ("application/pdf,application/vnd.openxmlformats-officedocument."
+               "wordprocessingml.document,*/*"),
+}
 # ─────────────────────────────────────────────────────────────────────────────
 
 
 def _tr_lower(s: str) -> str:
     return (s or "").replace("I", "ı").replace("İ", "i").lower()
+
+
+_SAYI = r"[0-9][0-9\.]*(?:,[0-9]+)?"
+
+
+def _tr_sayi(s):
+    """ '1.234.567,89' → 1234567.89. Tarih/aralık/yıl gibi değerler None."""
+    if s is None:
+        return None
+    s = str(s).strip()
+    if not s:
+        return None
+    # tam hücre tek bir TR sayı mı? (tarih '13.10.2026' ve aralık '41,2-41,5' hariç)
+    m = re.fullmatch(r"%?\s*([0-9][0-9\.]*(?:,[0-9]+)?)\s*%?", s)
+    if not m:
+        return None
+    ham = m.group(1)
+    # '13.10.2026' gibi tarih: iki nokta + virgül yok + 8 hane → tarih say, atla
+    if ham.count(".") >= 2 and "," not in ham:
+        return None
+    try:
+        return float(ham.replace(".", "").replace(",", "."))
+    except ValueError:
+        return None
+
+
+def _satir_son_sayi(satir: str):
+    sayilar = re.findall(_SAYI, satir)
+    for s in reversed(sayilar):
+        v = _tr_sayi(s)
+        if v is not None and not (2020 <= v <= 2035 and "," not in s):  # yıl değilse
+            return v
+    return None
 
 
 # ╔══════════════════════════════════════════════════════════════════════════╗
@@ -124,7 +163,6 @@ def _kayit(d) -> dict:
 
 
 def _kap_fazi() -> None:
-    """v2 davranışı: portföy/ek kodlar için son N gün → data/kap.json."""
     izleme: list[str] = []
     for k in PORTFOY + EK_KODLAR:
         k = (k or "").strip().upper()
@@ -167,7 +205,7 @@ def _kap_fazi() -> None:
             body = MemberDisclosureQueryBody(
                 fromDate=baslangic.isoformat(),
                 toDate=bugun.isoformat(),
-                mkkMemberOidList=[],   # boş = piyasa geneli (tüm şirketler)
+                mkkMemberOidList=[],
             )
             rows = http.post(MEMBER_DISCLOSURE_QUERY_URL, body)
             toplam = len(rows)
@@ -199,7 +237,7 @@ def _kap_fazi() -> None:
 
 
 # ╔══════════════════════════════════════════════════════════════════════════╗
-# ║  FAZ 2 — geri_alim.json  (yeni)                                           ║
+# ║  FAZ 2 — geri_alim.json                                                   ║
 # ╚══════════════════════════════════════════════════════════════════════════╝
 def _ga_yaz(cikti: dict) -> None:
     os.makedirs("data", exist_ok=True)
@@ -209,12 +247,11 @@ def _ga_yaz(cikti: dict) -> None:
         "data/geri_alim.json yazıldı: "
         f"{cikti.get('sirket_sayisi', '?')} şirkette geri alım, "
         f"{cikti.get('geri_alim_bildirim_sayisi', '?')} bildirim "
-        f"(detay denendi: {cikti.get('detay_denendi')}, başarı: {cikti.get('detay_basari_sayisi', 0)})"
+        f"(detay: {cikti.get('detay_denendi')}, belge başarı: {cikti.get('detay_basari_sayisi', 0)})"
     )
 
 
 def _gunluk_islem_mi(konu: str, ozet: str) -> bool:
-    """ 'GG.AA.YYYY Tarihli Pay Geri Alım İşlemleri' kalıbı = günlük işlem bildirimi."""
     blob = f"{konu or ''} {ozet or ''}"
     return bool(re.search(r"\d{1,2}\.\d{2}\.\d{4}\s*Tarihli\s*Pay\s*Geri\s*Al", blob, re.IGNORECASE))
 
@@ -225,76 +262,193 @@ def _program_mi(konu: str, ozet: str) -> bool:
         or ("çerçevesinde" in b and "geri al" in b)
 
 
-_SAYI = r"[0-9][0-9\.]*(?:,[0-9]+)?"
-
-def _tr_sayi(s: str):
-    """ '1.234.567,89' → 1234567.89 ; başarısızsa None. """
-    if not s:
-        return None
-    s = s.strip().replace(".", "").replace(",", ".")
-    try:
-        return float(s)
-    except ValueError:
-        return None
-
-
-def _detay_parse_html(html: str) -> dict:
-    """KAP geri-alım detay HTML'inden lot/fiyat/tutar/sermaye-oranı ayıklamayı
-    DENER. Bulunamayan alan None döner (çağıran 'veri yok' yazar). SPA içeriği
-    gelmezse hepsi None olur — bu beklenen bir durumdur, hata değildir."""
-    # Not: fiyat/fiyat-aralığı KASITLI çıkarılmıyor — TR binlik ayraçlı sayılar
-    # (ör. "648.500,00") naif regex ile fiyat ("500,00") gibi görünüp yanıltıyor.
-    # Görevin istediği sayısal alanlar lot/tutar/sermaye oranıdır; fiyat gerekmez.
-    out = {"lot": None, "tutar": None, "sermaye_orani": None}
-    if not html or len(html) < 40:
-        return out
-    metin = re.sub(r"<[^>]+>", " ", html)          # etiketleri at
-    metin = re.sub(r"\s+", " ", metin)
-    d = _tr_lower(metin)
-
-    def yakala(anahtarlar, pencere_boy=120, desen=_SAYI, birden=False):
-        for a in anahtarlar:
-            i = d.find(a)
-            if i < 0:
-                continue
-            pencere = metin[i + len(a):i + len(a) + pencere_boy]
-            sayilar = re.findall(desen, pencere)
-            if sayilar:
-                return sayilar if birden else sayilar[0]
-        return None
-
-    lot = yakala(["nominal", "pay adedi", "nominal tutar", "adet"])
-    out["lot"] = _tr_sayi(lot) if lot else None
-    tutar = yakala(["işlem tutarı", "toplam tutar", "alım tutarı", "ödenen"])
-    out["tutar"] = _tr_sayi(tutar) if tutar else None
-    oran = yakala(["sermayeye oran", "sermaye oran", "ödenmiş sermaye"], pencere_boy=90)
-    out["sermaye_orani"] = _tr_sayi(oran) if oran else None
+# ── belge ayrıştırma (SAF; ağ yok → test edilebilir) ──
+def _tablo_topla(tablolar: list) -> dict:
+    """pdfplumber/docx tablolarından (satır=hücre listesi) nominal/tutar/oran topla.
+    Geri-alım işlem tablosunun başlık satırını bulup veri satırlarını toplar."""
+    out = {"lot": None, "tutar": None, "sermaye_orani": None, "satir": 0}
+    for tbl in tablolar or []:
+        if not tbl or len(tbl) < 2:
+            continue
+        bas = None
+        kol: dict = {}
+        for ri, row in enumerate(tbl[:4]):
+            hr = [_tr_lower(c or "") for c in row]
+            joined = " ".join(hr)
+            if ("nominal" in joined or "pay" in joined) and \
+               ("tutar" in joined or "fiyat" in joined or "tarih" in joined):
+                bas = ri
+                for ci, h in enumerate(hr):
+                    if ("nominal" in h) or ("pay" in h and ("adet" in h or "tutar" in h)):
+                        kol.setdefault("lot", ci)
+                    if "işlem tutar" in h or "tutar (tl)" in h or h.strip() in ("tutar", "tutarı"):
+                        kol.setdefault("tutar", ci)
+                    if "sermaye" in h and "oran" in h:
+                        kol.setdefault("oran", ci)
+                break
+        if bas is None or "lot" not in kol:
+            continue
+        lot_t = tut_t = 0.0
+        lot_v = tut_v = False
+        oran = None
+        for row in tbl[bas + 1:]:
+            if kol.get("lot") is not None and kol["lot"] < len(row):
+                v = _tr_sayi(row[kol["lot"]])
+                if v is not None:
+                    lot_t += v; lot_v = True
+            if kol.get("tutar") is not None and kol["tutar"] < len(row):
+                v = _tr_sayi(row[kol["tutar"]])
+                if v is not None:
+                    tut_t += v; tut_v = True
+            if kol.get("oran") is not None and kol["oran"] < len(row):
+                v = _tr_sayi(row[kol["oran"]])
+                if v is not None:
+                    oran = v
+            out["satir"] += 1
+        if lot_v:
+            out["lot"] = round(lot_t, 2)
+        if tut_v:
+            out["tutar"] = round(tut_t, 2)
+        if oran is not None:
+            out["sermaye_orani"] = oran
+        if lot_v or tut_v:
+            break
     return out
 
 
-def _piyasa_degeri_haritasi() -> dict:
-    """latest.json'dan {KOD: (piyasa_degeri, kapanis)} — yoksa boş."""
-    harita: dict = {}
-    for yol in ("data/latest.json", "data/latest.json"):
+def _metin_sayi_ayikla(metin: str) -> dict:
+    """Düz belge metninden (etiketli satır düzeni) nominal/tutar/oran ayıkla."""
+    out = {"lot": None, "tutar": None, "sermaye_orani": None}
+    if not metin:
+        return out
+    satirlar = [s for s in re.split(r"[\r\n]+", metin) if s.strip()]
+    for s in satirlar:
+        d = _tr_lower(s)
+        if out["lot"] is None and (("nominal" in d) or ("pay adedi" in d) or ("geri alınan pay" in d and "tutar" in d)):
+            out["lot"] = _satir_son_sayi(s)
+        if out["tutar"] is None and (("işlem tutar" in d) or ("toplam tutar" in d) or ("ödenen tutar" in d) or ("alım tutar" in d)):
+            out["tutar"] = _satir_son_sayi(s)
+        if out["sermaye_orani"] is None and ("sermaye" in d and "oran" in d):
+            out["sermaye_orani"] = _satir_son_sayi(s)
+    return out
+
+
+def _birlestir(tablo: dict, metin: dict) -> dict:
+    """Tablo önceliklidir; eksikleri metin doldurur."""
+    r = {"lot": None, "tutar": None, "sermaye_orani": None}
+    for k in r:
+        r[k] = tablo.get(k) if tablo.get(k) is not None else metin.get(k)
+    return r
+
+
+# ── belge indirme + çıkarma (ağ; try/except'le sarılı) ──
+def _belge_indir(url: str, http=None) -> bytes | None:
+    """Önce kap-client'ın CANLI httpx oturumunu (çerez/başlık hazır) dener —
+    Actions'ta KAP'a erişme şansı en yüksek olan budur; olmazsa urllib'e düşer."""
+    # 1) kap-client httpx oturumu (byCriteria POST'larından sonra çerezli)
+    cli = getattr(http, "_client", None) if http is not None else None
+    if cli is not None:
         try:
-            with open(yol, encoding="utf-8") as f:
-                lt = json.load(f)
-            for h in lt.get("tum_hisseler", []) or []:
-                kod = (h.get("kod") or "").strip().upper()
-                if kod:
-                    harita[kod] = (h.get("piyasa_degeri"), h.get("kapanis"))
-            break
+            resp = cli.get(url, headers=BELGE_BASLIK, timeout=BELGE_TIMEOUT)
+            if getattr(resp, "status_code", None) == 200:
+                return resp.content
         except Exception:
+            pass
+    # 2) urllib yedeği
+    try:
+        req = urllib.request.Request(url, headers=BELGE_BASLIK)
+        with urllib.request.urlopen(req, timeout=BELGE_TIMEOUT) as r:
+            if getattr(r, "status", 200) not in (200, None):
+                return None
+            return r.read()
+    except Exception:
+        return None
+
+
+def _pdf_coz(data: bytes):
+    """-> (tablolar, metin) ; pdfplumber yoksa (None, '')."""
+    try:
+        import pdfplumber
+    except Exception:
+        return None, ""
+    tablolar = []
+    metin = []
+    with pdfplumber.open(io.BytesIO(data)) as pdf:
+        for p in pdf.pages:
+            try:
+                for t in (p.extract_tables() or []):
+                    tablolar.append(t)
+            except Exception:
+                pass
+            try:
+                metin.append(p.extract_text() or "")
+            except Exception:
+                pass
+    return tablolar, "\n".join(metin)
+
+
+def _docx_coz(data: bytes):
+    """-> (tablolar, metin) ; python-docx yoksa (None, '')."""
+    try:
+        import docx
+    except Exception:
+        return None, ""
+    doc = docx.Document(io.BytesIO(data))
+    metin = [p.text for p in doc.paragraphs]
+    tablolar = []
+    for t in doc.tables:
+        tbl = []
+        for row in t.rows:
+            hucreler = [c.text for c in row.cells]
+            tbl.append(hucreler)
+            metin.append(" | ".join(hucreler))
+        tablolar.append(tbl)
+    return tablolar, "\n".join(metin)
+
+
+def _detay_getir(index, http=None) -> tuple:
+    """index için KAP belgesini (PDF/Word) indirip ayıklar.
+    -> (parse_dict | None, kaynak_str | None, ornek_metin_str)."""
+    if index is None:
+        return None, None, ""
+    sira = {"pdf_sonra_word": ("pdf", "word"), "pdf": ("pdf",), "word": ("word",)}.get(
+        DETAY_FORMAT, ("pdf", "word"))
+    for fmt in sira:
+        url = (PDF_URL if fmt == "pdf" else WORD_URL).format(index)
+        try:
+            data = _belge_indir(url, http)
+        except Exception:
+            data = None
+        if not data or len(data) < 200:
             continue
+        try:
+            tablolar, metin = (_pdf_coz(data) if fmt == "pdf" else _docx_coz(data))
+        except Exception:
+            tablolar, metin = None, ""
+        parse = _birlestir(_tablo_topla(tablolar or []), _metin_sayi_ayikla(metin))
+        if parse["lot"] is not None or parse["tutar"] is not None or parse["sermaye_orani"] is not None:
+            return parse, fmt, (metin or "")[:1500]
+        # metin geldi ama sayı yok → tanı için örnek döndür (ikinci formata da bakmadan)
+        if metin:
+            return None, fmt, metin[:1500]
+    return None, None, ""
+
+
+def _piyasa_degeri_haritasi() -> dict:
+    harita: dict = {}
+    try:
+        with open("data/latest.json", encoding="utf-8") as f:
+            lt = json.load(f)
+        for h in lt.get("tum_hisseler", []) or []:
+            kod = (h.get("kod") or "").strip().upper()
+            if kod:
+                harita[kod] = (h.get("piyasa_degeri"), h.get("kapanis"))
+    except Exception:
+        pass
     return harita
 
 
-def _ga_derle(kayitlar: list[dict], pd_harita: dict,
-              portfoy_set: set, bist30_set: set) -> dict:
-    """Geri-alım bildirim kayıtlarını (dict listesi) şirket bazında özetler.
-    SAF fonksiyon (ağ yok) → mock ile test edilebilir. Her kayıt:
-      {no, zaman, tur, konu, ozet, sirket, kodlar(str), url}
-    """
+def _ga_derle(kayitlar: list, pd_harita: dict, portfoy_set: set, bist30_set: set) -> dict:
     sirketler: dict = {}
     for r in kayitlar:
         kodlar = [c.strip().upper() for c in (r.get("kodlar") or "").split(",") if c.strip()]
@@ -307,13 +461,12 @@ def _ga_derle(kayitlar: list[dict], pd_harita: dict,
             s = sirketler.setdefault(kod, {
                 "kod": kod, "sirket": r.get("sirket"),
                 "portfoyde": kod in portfoy_set, "bist30": kod in bist30_set,
-                "bildirimler": [], "islem_bildirim_sayisi": 0,
-                "program_bildirim_sayisi": 0,
+                "bildirimler": [], "islem_bildirim_sayisi": 0, "program_bildirim_sayisi": 0,
             })
             if not s.get("sirket"):
                 s["sirket"] = r.get("sirket")
             s["bildirimler"].append({
-                "tarih": (r.get("zaman") or "")[:10], "zaman": r.get("zaman"),
+                "no": r.get("no"), "tarih": (r.get("zaman") or "")[:10], "zaman": r.get("zaman"),
                 "tur": r.get("tur"), "konu": konu, "ozet": ozet,
                 "sinif": "program/karar" if program else ("işlem" if gunluk else "diğer"),
                 "url": r.get("url"),
@@ -332,13 +485,11 @@ def _ga_derle(kayitlar: list[dict], pd_harita: dict,
         pd, kap = pd_harita.get(kod, (None, None))
         s["piyasa_degeri"] = pd
         s["kapanis"] = kap
-        # Tier-2 alanları (varsayılan "veri yok"; detay fazı doldurur)
         s["kumulatif_lot"] = "veri yok"
         s["kumulatif_tutar_tl"] = "veri yok"
         s["sermaye_orani_yuzde"] = "veri yok"
         s["piyasa_degeri_orani_yuzde"] = "veri yok"
         s["bildirimler"] = s["bildirimler"][:GA_BILDIRIM_LIMIT]
-
     return sirketler
 
 
@@ -353,11 +504,13 @@ def _ga_fazi() -> None:
         "uretim_zamani_utc": datetime.now(timezone.utc).isoformat(),
         "tarih": bugun.isoformat(),
         "baslangic": baslangic.isoformat(),
-        "kaynak": "KAP (kap-client, piyasa-geneli 'Pay Geri Alım' bildirimleri)",
+        "kaynak": "KAP (kap-client liste + BildirimPdf/Word belge dışa-aktarma)",
         "aciklama": ("Tier-1 (güvenilir): bildirim listesi/sayısı/sınıfı/link. "
-                     "Tier-2 (en iyi çaba): detaydan lot/fiyat/tutar/sermaye oranı "
-                     "— SPA nedeniyle 'veri yok' olabilir, yalnız Actions'ta doğrulanır."),
-        "detay_denendi": False, "detay_basari_sayisi": 0,
+                     "Tier-2 (ikinci yol): her 'işlem' bildiriminin KAP PDF/Word "
+                     "belgesinden lot/tutar/sermaye oranı; yalnız Actions'ta doğrulanır. "
+                     "İlk belgenin metni 'detay_ornek'te (tanı/ince ayar)."),
+        "detay_denendi": False, "detay_basari_sayisi": 0, "detay_kaynak_sayisi": {},
+        "detay_ornek": None,
         "toplam_piyasa_satiri": 0, "geri_alim_bildirim_sayisi": 0,
         "sirket_sayisi": 0, "sirketler": {}, "portfoy_ozet": {}, "notlar": [],
     }
@@ -379,21 +532,18 @@ def _ga_fazi() -> None:
     if not pd_harita:
         cikti["notlar"].append("latest.json okunamadı → piyasa değeri oranları 'veri yok'.")
 
-    ga_kayitlar: list[dict] = []
+    ga_kayitlar: list = []
     gorulen_no: set = set()
     toplam_satir = 0
 
     try:
         with KapHttpClient(timeout=TIMEOUT) as http:
-            # tarih aralığını CHUNK_GUN'lük parçalara böl (olası satır sınırına karşı)
             p0 = baslangic
             while p0 <= bugun:
                 p1 = min(p0 + timedelta(days=CHUNK_GUN - 1), bugun)
                 try:
                     body = MemberDisclosureQueryBody(
-                        fromDate=p0.isoformat(), toDate=p1.isoformat(),
-                        mkkMemberOidList=[],
-                    )
+                        fromDate=p0.isoformat(), toDate=p1.isoformat(), mkkMemberOidList=[])
                     rows = http.post(MEMBER_DISCLOSURE_QUERY_URL, body)
                     toplam_satir += len(rows)
                     for raw in rows:
@@ -412,48 +562,62 @@ def _ga_fazi() -> None:
                 except Exception as e:
                     cikti["notlar"].append(f"parça {p0}..{p1} hatası: {e!r}")
                 p0 = p1 + timedelta(days=1)
+    except Exception as e:
+        cikti["notlar"].append(f"geri alım sorgu hatası: {e!r} :: {traceback.format_exc(limit=2)}")
 
-            cikti["toplam_piyasa_satiri"] = toplam_satir
-            cikti["geri_alim_bildirim_sayisi"] = len(ga_kayitlar)
+    cikti["toplam_piyasa_satiri"] = toplam_satir
+    cikti["geri_alim_bildirim_sayisi"] = len(ga_kayitlar)
+    sirketler = _ga_derle(ga_kayitlar, pd_harita, portfoy_set, bist30_set)
 
-            sirketler = _ga_derle(ga_kayitlar, pd_harita, portfoy_set, bist30_set)
-
-            # ── Tier-2: detay sayfasından sayısal ayıklama (en iyi çaba) ──
-            if DETAY_DENE and DETAY_KAPSAM != "yok":
-                cikti["detay_denendi"] = True
-                if DETAY_KAPSAM == "portfoy":
-                    kapsam = portfoy_set
-                else:
-                    kapsam = portfoy_set | bist30_set
-                basari = 0
-                cekilen = 0
+    # ── Tier-2: KAP belge dışa-aktarma (ikinci yol) ──
+    # Belge GET'leri için CANLI bir KAP oturumu (hdoc) açılır: önce bildirim-sorgu
+    # sayfası ısıtılıp çerez alınır (KAP bot kontrolü), sonra PDF/Word indirilir.
+    # Her şey try/except'le sarılı → bu faz patlasa bile dosya yine yazılır.
+    if DETAY_DENE and DETAY_KAPSAM != "yok":
+        cikti["detay_denendi"] = True
+        kapsam = portfoy_set if DETAY_KAPSAM == "portfoy" else (portfoy_set | bist30_set)
+        basari = 0
+        cekilen = 0
+        kaynak_say: dict = {"pdf": 0, "word": 0}
+        ornek_kaydedildi = False
+        try:
+            with KapHttpClient(timeout=TIMEOUT) as hdoc:
+                try:   # oturum/çerez ısıtma
+                    hdoc.get_html(BASE_KAP + "/tr/bildirim-sorgu")
+                except Exception:
+                    pass
                 for kod, s in sirketler.items():
                     if kod not in kapsam:
                         continue
-                    kum_lot = 0.0
-                    kum_tutar = 0.0
-                    lot_var = tutar_var = oran_son = False
+                    kum_lot = kum_tutar = 0.0
+                    lot_var = tutar_var = False
                     son_oran = None
                     for b in s["bildirimler"]:
-                        if b.get("sinif") != "işlem" or not b.get("url"):
+                        if b.get("sinif") != "işlem" or b.get("no") is None:
                             continue
                         if cekilen >= MAX_DETAY:
                             break
                         cekilen += 1
                         try:
-                            html = http.get_html(b["url"])
-                            p = _detay_parse_html(html)
+                            parse, kaynak, ornek = _detay_getir(b["no"], hdoc)
                         except Exception:
-                            p = None
-                        if not p:
+                            parse, kaynak, ornek = None, None, ""
+                        if BELGE_BEKLE:
+                            time.sleep(BELGE_BEKLE)
+                        if DETAY_ORNEK_KAYDET and not ornek_kaydedildi and ornek:
+                            cikti["detay_ornek"] = {"kod": kod, "no": b["no"], "kaynak": kaynak, "metin": ornek}
+                            ornek_kaydedildi = True
+                        if not parse:
                             continue
-                        if p.get("lot") is not None:
-                            kum_lot += p["lot"]; lot_var = True
-                        if p.get("tutar") is not None:
-                            kum_tutar += p["tutar"]; tutar_var = True
-                        if p.get("sermaye_orani") is not None:
-                            son_oran = p["sermaye_orani"]; oran_son = True
-                        b["detay"] = p
+                        if kaynak in kaynak_say:
+                            kaynak_say[kaynak] += 1
+                        if parse.get("lot") is not None:
+                            kum_lot += parse["lot"]; lot_var = True
+                        if parse.get("tutar") is not None:
+                            kum_tutar += parse["tutar"]; tutar_var = True
+                        if parse.get("sermaye_orani") is not None:
+                            son_oran = parse["sermaye_orani"]
+                        b["detay"] = {**parse, "kaynak": kaynak}
                     if lot_var:
                         s["kumulatif_lot"] = round(kum_lot, 2); basari += 1
                     if tutar_var:
@@ -461,38 +625,32 @@ def _ga_fazi() -> None:
                         pd = s.get("piyasa_degeri")
                         if isinstance(pd, (int, float)) and pd:
                             s["piyasa_degeri_orani_yuzde"] = round(100.0 * kum_tutar / pd, 4)
-                    if oran_son and son_oran is not None:
+                    if son_oran is not None:
                         s["sermaye_orani_yuzde"] = son_oran
-                cikti["detay_basari_sayisi"] = basari
-                if basari == 0:
-                    cikti["notlar"].append(
-                        "Tier-2 hiçbir detaydan sayı ayıklayamadı (KAP SPA içeriği "
-                        "gelmemiş olabilir). Tier-1 (liste/sayı/link) geçerli; "
-                        "istenirse DETAY_DENE=False yapılabilir.")
+        except Exception as e:
+            cikti["notlar"].append(f"Tier-2 belge fazı hatası: {e!r}")
+        cikti["detay_basari_sayisi"] = basari
+        cikti["detay_kaynak_sayisi"] = kaynak_say
+        if basari == 0:
+            cikti["notlar"].append(
+                "Tier-2 hiçbir belgeden lot/tutar ayıklayamadı. 'detay_ornek' alanına "
+                "bakıp (varsa) ayrıştırma kesinleştirilebilir; ya da DETAY_DENE=False "
+                "yapılıp Tier-1 (liste/sayı/link) ile devam edilebilir.")
 
-            cikti["sirketler"] = sirketler
-            cikti["sirket_sayisi"] = len(sirketler)
-            cikti["portfoy_ozet"] = {
-                k: {
-                    "toplam_bildirim": s["toplam_bildirim"],
-                    "islem_bildirim_sayisi": s["islem_bildirim_sayisi"],
-                    "son_bildirim_tarih": s["son_bildirim_tarih"],
-                    "kumulatif_lot": s["kumulatif_lot"],
-                    "kumulatif_tutar_tl": s["kumulatif_tutar_tl"],
-                }
-                for k, s in sirketler.items() if s["portfoyde"]
-            }
-    except Exception as e:
-        cikti["notlar"].append(
-            f"geri alım sorgu hatası: {e!r} :: {traceback.format_exc(limit=2)}")
-
+    cikti["sirketler"] = sirketler
+    cikti["sirket_sayisi"] = len(sirketler)
+    cikti["portfoy_ozet"] = {
+        k: {"toplam_bildirim": s["toplam_bildirim"], "islem_bildirim_sayisi": s["islem_bildirim_sayisi"],
+            "son_bildirim_tarih": s["son_bildirim_tarih"], "kumulatif_lot": s["kumulatif_lot"],
+            "kumulatif_tutar_tl": s["kumulatif_tutar_tl"], "sermaye_orani_yuzde": s["sermaye_orani_yuzde"]}
+        for k, s in sirketler.items() if s["portfoyde"]
+    }
     if toplam_satir == 0:
         cikti["notlar"].append("Piyasa-geneli sorgu 0 satır — tarih aralığı/endpoint kontrol et.")
     _ga_yaz(cikti)
 
 
 def main() -> None:
-    # İki faz birbirinden bağımsız; biri patlasa diğeri yine çalışır.
     try:
         _kap_fazi()
     except Exception as e:
