@@ -1,5 +1,5 @@
 {
-  "uretim_zamani_utc": "2026-10-18T18:12:26.333523+00:00",
+  "uretim_zamani_utc": "2026-10-18T18:28:09.133284+00:00",
   "tarih": "2026-10-18",
   "baslangic": "2026-09-01",
   "kaynak": "KAP (kap-client liste + BildirimPdf/Word belge dışa-aktarma)",
@@ -7,14 +7,14 @@
   "detay_denendi": true,
   "detay_basari_sayisi": 3,
   "detay_kaynak_sayisi": {
-    "pdf": 23,
+    "pdf": 3,
     "word": 0
   },
   "detay_ornek": {
     "kod": "TRALT",
     "no": 1683289,
     "kaynak": "pdf",
-    "metin": "KAP'ta yayınlanma tarihi ve saati: 16.10.2026 18:17:50\nhttps://www.kap.org.tr/tr/Bildirim/1683289\nKAMUYU AYDINLATMA PLATFORMU\nTÜRK ALTIN İŞLETMELERİ A.Ş.\nPayların Geri Alınmasına İlişkin Bildirim\nPayların Geri Alınmasına İlişkin Bildirim\nÖzet Bilgi 16.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.\nYapılan Açıklama Güncelleme mi ? Evet\nYapılan Açıklama Düzeltme mi ? Hayır\nYapılan Açıklama Ertelenmiş Bir\nHayır\nAçıklama mı ?\nGeri Alım İşlemini Gerçekleştiren\nTÜRK ALTIN İŞLETMELERİ A.Ş.\nOrtaklık\nGeri Alım İşlemine Konu Ortaklık TÜRK ALTIN İŞLETMELERİ A.Ş.\nGeri Alım İşleminin Niteliği Geri Alım Programı Çerçevesinde\nYönetim Kurulu Karar Tarihi 29.06.2026\nVarsa Geri Alım Programının\n3 YIL\nUygulanacağı Süre\nGeri Alıma Konu Azami Pay Miktarı\n85.125.000\n(Nominal TL)\nGeri Alım İçin Ayrılan Fonun\n5.000.000.000\nToplam Tutarı (TL)\nGeri Alım İşlemlerinin Detayları\nİşlem İşleme Konu Payların Sermayeye İşlem Fiyatı (TL/ Program Çerçevesinde Daha Önce Geri Alınan Varsa Bu Paylara Bağlı\nİşleme Konu Pay\nTarihi Nominal Tutarı (TL) Oranı (%) Adet) Payların Nominal Tutarı (TL) İmtiyazlar\nB Grubu, TRALT,\n03.07.2026 4.120.000 0,12865 48,81 0 -\nTREKOAL00014\nB Grubu, TRALT,\n06.07.2026 1.300.000 0,04059 50,81 4.120.000 -\nTREKOAL00014\nB Grubu, TRALT,\n07.07.2026 1.875.000 0,05855 52,54 5.420.000 -\nTREKOAL00014\nB Grubu, TRALT,\n08.07.2026 1.805.660 0,05638 50,94 7.295.000 -\nTREKOAL00014\nB Grubu, TRALT,\n09.07.2026 400.000 0,01249 53,02 9.100.660 -\nTREKOAL00014\nB Grubu, TRALT,\n10.07.2026 798.000 0,02492 54,2 9."
+    "metin": "KAP'ta yayınlanma tarihi ve saati: 16.10.2026 18:17:50\nhttps://www.kap.org.tr/tr/Bildirim/1683289\nKAMUYU AYDINLATMA PLATFORMU\nTÜRK ALTIN İŞLETMELERİ A.Ş.\nPayların Geri Alınmasına İlişkin Bildirim\nPayların Geri Alınmasına İlişkin Bildirim\nÖzet Bilgi 16.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.\nYapılan Açıklama Güncelleme mi ? Evet\nYapılan Açıklama Düzeltme mi ? Hayır\nYapılan Açıklama Ertelenmiş Bir\nHayır\nAçıklama mı ?\nGeri Alım İşlemini Gerçekleştiren\nTÜRK ALTIN İŞLETMELERİ A.Ş.\nOrtaklık\nGeri Alım İşlemine Konu Ortaklık TÜRK ALTIN İŞLETMELERİ A.Ş.\nGeri Alım İşleminin Niteliği Geri Alım Programı Çerçevesinde\nYönetim Kurulu Karar Tarihi 29.06.2026\nVarsa Geri Alım Programının\n3 YIL\nUygulanacağı Süre\nGeri Alıma Konu Azami Pay Miktarı\n85.125.000\n(Nominal TL)\nGeri Alım İçin Ayrılan Fonun\n5.000.000.000\nToplam Tutarı (TL)\nGeri Alım İşlemlerinin Detayları\nİşlem İşleme Konu Payların Sermayeye İşlem Fiyatı (TL/ Program Çerçevesinde Daha Önce Geri Alınan Varsa Bu Paylara Bağlı\nİşleme Konu Pay\nTarihi Nominal Tutarı (TL) Oranı (%) Adet) Payların Nominal Tutarı (TL) İmtiyazlar\nB Grubu, TRALT,\n03.07.2026 4.120.000 0,12865 48,81 0 -\nTREKOAL00014\nB Grubu, TRALT,\n06.07.2026 1.300.000 0,04059 50,81 4.120.000 -\nTREKOAL00014\nB Grubu, TRALT,\n07.07.2026 1.875.000 0,05855 52,54 5.420.000 -\nTREKOAL00014\nB Grubu, TRALT,\n08.07.2026 1.805.660 0,05638 50,94 7.295.000 -\nTREKOAL00014\nB Grubu, TRALT,\n09.07.2026 400.000 0,01249 53,02 9.100.660 -\nTREKOAL00014\nB Grubu, TRALT,\n10.07.2026 798.000 0,02492 54,2 9.500.660 -\nTREKOAL00014\nB Grubu, TRALT,\n13.07.2026 400.000 0,01249 51,4 10.298.660 -\nTREKOAL00014\nB Grubu, TRALT,\n17.07.2026 4.035.579 0,12601 50,04 10.698.660 -\nTREKOAL00014\nB Grubu, TRALT,\n20.07.2026 2.000.000 0,06245 49,93 14.734.239 -\nTREKOAL00014\nB Grubu, TRALT,\n22.07.2026 3.687.183 0,11513 50,01 16.734.239 -\nTREKOAL00014\nB Grubu, TRALT,\n24.07.2026 15.005.815 0,46857 49,22 20.421.422 -\nTREKOAL00014\nB Grubu, TRALT,\n27.07.2026 5.000.000 0,15613 48,19 35.427.237 -\nTREKOAL00014\nB Grubu, TRALT, 28.07.2026 3.900.000 0,12178 46,51 40.427.237\nTREKOAL00014\nB Grubu, TRALT,\n29.07.2026 4.765.188 0,1488 44,71 44.327.237\nTREKOAL00014\nB Grubu, TRALT,\n31.07.2026 6.080.000 0,18985 42,77 49.092.425\nTREKOAL00014\nB Grubu, TRALT,\n12.08.2026 2.503.159 0,07816 47,53 55.172.425\nTREKOAL00014\nB Grubu, TRALT,\n17.09.2026 1.135.952 0,03547 48,82 57.675.584\nTREKOAL00014\nB Grubu, TRALT,\n21.09.2026 675.000 0,02108 50,93 58.811.536\nTREKOAL00014\nB Grubu, TRALT,\n22.09.2026 224.480 0,00701 50,24 59.486.536\nTREKOAL00014\nB Grubu, TRALT,\n24.09.2026 1.250.000 0,03903 48,38 59.711.016\nTREKOAL00014\nB Grubu, TRALT,\n28.09.2026 2.560.000 0,07994 46,75 60.961.016\nTREKOAL00014\nB Grubu, TRALT,\n29.09.2026 4.500.000 0,14052 45,78 63.521.016\nTREKOAL00014\nB Grubu, TRALT,\n30.09.2026 2.232.500 0,06971 44,64 68.021.016\nTREKOAL00014\nB Grubu, TRALT,\n01.10.2026 2.300.000 0,07182 43,47 70.253.516\nTREKOAL00014\nB Grubu, TRALT,\n06.10.2026 1.147.500 0,03583 43,58 72.553.516\nTREKOAL00014\nB Grubu, TRALT,\n07.10.2026 3.000.000 0,09368 41,69 73.701.016\nTREKOAL00014\nB Grubu, TRALT,\n16.10.2026 2.426.500 0,07577 41,22 76.701.016\nTREKOAL00014\nEk Açıklamalar\nŞirketimiz Yönetim Kurulu'nun 29.06.2026 tarihli kararı ile başlatılan pay geri alım işlemleri kapsamında;\n16.10.2026 tarihinde Borsa İstanbul'da pay başına 40,96 – 41,48 TL fiyat aralığından (ağırlıklı ortalama 41,22 TL) 2.426.500 TL\nnominal tutarlı Türk Altın İşletmeleri A.Ş. payları geri alınmıştır. 16.10.2026 tarihinde geri alınan payların sermayeye oranı %\n0,07577'dir. Bir önceki Geri alım tutarı olan 75.000.000 adet pay alımı ile birlikte toplam geri alınan payların sermayeye oranı\n%4,81 olmuştur.\nKamuoyunun bilgilerine sunarız.\nSaygılarımızla,\nYukarıdaki açıklamalarımızın, Sermaye Piyasası Kurulu‘nun yürürlükteki Özel Durumlar Tebliğinde yer alan esaslara uygun olduğunu, bu\nkonuda/konularda tarafımıza ulaşan bilgileri tam olarak yansıttığını, bilgilerin defter, kayıt ve belgelerimize uygun olduğunu, konuyla ilgili\nbilgileri tam ve doğru olarak elde etmek için ger"
   },
   "toplam_piyasa_satiri": 11728,
   "geri_alim_bildirim_sayisi": 1046,
@@ -4985,10 +4985,15 @@
           "sinif": "işlem",
           "url": "https://www.kap.org.tr/tr/Bildirim/1683289",
           "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.07577,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
+            "lot": 79127516.0,
+            "tutar": 3743868514.28,
+            "sermaye_orani": 2.47081,
+            "satir": 27,
+            "azami_pay": 85125000.0,
+            "ayrilan_fon": 5000000000.0,
+            "kaynak": "pdf",
+            "bildirim_no": 1683289,
+            "bildirim_tarih": "2026-10-16"
           }
         },
         {
@@ -4999,13 +5004,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "07.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1675320",
-          "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.09368,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1675320"
         },
         {
           "no": 1673888,
@@ -5015,13 +5014,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "06.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1673888",
-          "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.03583,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1673888"
         },
         {
           "no": 1670918,
@@ -5031,13 +5024,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "01.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1670918",
-          "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.07182,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1670918"
         },
         {
           "no": 1670507,
@@ -5047,13 +5034,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "30.09.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1670507",
-          "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.06971,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1670507"
         },
         {
           "no": 1669717,
@@ -5063,13 +5044,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "29.09.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1669717",
-          "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.14052,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1669717"
         },
         {
           "no": 1669126,
@@ -5079,13 +5054,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "28.09.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1669126",
-          "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.07994,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1669126"
         },
         {
           "no": 1667867,
@@ -5095,13 +5064,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "24.09.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1667867",
-          "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.039,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1667867"
         },
         {
           "no": 1666753,
@@ -5111,13 +5074,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "22.09.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1666753",
-          "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.00701,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1666753"
         },
         {
           "no": 1666254,
@@ -5127,13 +5084,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "21.09.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1666254",
-          "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.02108,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1666254"
         },
         {
           "no": 1664863,
@@ -5143,13 +5094,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "17.09.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1664863",
-          "detay": {
-            "lot": 1598000.0,
-            "tutar": 0.03547,
-            "sermaye_orani": 0.15613,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1664863"
         },
         {
           "no": 1664447,
@@ -5169,10 +5114,10 @@
       "toplam_bildirim": 12,
       "piyasa_degeri": 137259151955.00002,
       "kapanis": 41.3,
-      "kumulatif_lot": 17578000.0,
-      "kumulatif_tutar_tl": 0.67,
-      "sermaye_orani_yuzde": 0.15613,
-      "piyasa_degeri_orani_yuzde": 0.0
+      "kumulatif_lot": 79127516.0,
+      "kumulatif_tutar_tl": 3743868514.28,
+      "sermaye_orani_yuzde": 2.47081,
+      "piyasa_degeri_orani_yuzde": 2.7276
     },
     "MERCN": {
       "kod": "MERCN",
@@ -9559,13 +9504,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "16.10.2026 Tarihli Pay Geri Alım İşlemleri",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1683328",
-          "detay": {
-            "lot": 375107.0,
-            "tutar": null,
-            "sermaye_orani": 0.00877,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1683328"
         },
         {
           "no": 1681196,
@@ -9575,13 +9514,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "13.10.2026 Tarihli Pay Geri Alım İşlemleri",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1681196",
-          "detay": {
-            "lot": 175107.0,
-            "tutar": null,
-            "sermaye_orani": 0.01536,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1681196"
         },
         {
           "no": 1668351,
@@ -9611,9 +9544,9 @@
       "toplam_bildirim": 4,
       "piyasa_degeri": null,
       "kapanis": 41.2599983215332,
-      "kumulatif_lot": 550214.0,
+      "kumulatif_lot": "veri yok",
       "kumulatif_tutar_tl": "veri yok",
-      "sermaye_orani_yuzde": 0.01536,
+      "sermaye_orani_yuzde": "veri yok",
       "piyasa_degeri_orani_yuzde": "veri yok"
     },
     "EKDMR": {
@@ -10352,10 +10285,15 @@
           "sinif": "işlem",
           "url": "https://www.kap.org.tr/tr/Bildirim/1683353",
           "detay": {
-            "lot": 1050000.0,
-            "tutar": null,
-            "sermaye_orani": 0.00333,
-            "kaynak": "pdf"
+            "lot": 14160741.0,
+            "tutar": 94679456.67,
+            "sermaye_orani": 1.88848,
+            "satir": 136,
+            "azami_pay": 75000000.0,
+            "ayrilan_fon": 525000000.0,
+            "kaynak": "pdf",
+            "bildirim_no": 1683353,
+            "bildirim_tarih": "2026-10-16"
           }
         },
         {
@@ -10366,13 +10304,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "15.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1682782",
-          "detay": {
-            "lot": 1050000.0,
-            "tutar": null,
-            "sermaye_orani": 0.00333,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1682782"
         },
         {
           "no": 1682364,
@@ -10382,13 +10314,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "14.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1682364",
-          "detay": {
-            "lot": 1050000.0,
-            "tutar": null,
-            "sermaye_orani": 0.00333,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1682364"
         },
         {
           "no": 1681237,
@@ -10398,13 +10324,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "13.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1681237",
-          "detay": {
-            "lot": 1050000.0,
-            "tutar": null,
-            "sermaye_orani": 0.00333,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1681237"
         },
         {
           "no": 1679852,
@@ -10414,13 +10334,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "12.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1679852",
-          "detay": {
-            "lot": 1050000.0,
-            "tutar": null,
-            "sermaye_orani": 0.00333,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1679852"
         },
         {
           "no": 1678663,
@@ -10430,13 +10344,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "09.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1678663",
-          "detay": {
-            "lot": 1050000.0,
-            "tutar": null,
-            "sermaye_orani": 0.00333,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1678663"
         },
         {
           "no": 1678003,
@@ -10446,13 +10354,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "08.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1678003",
-          "detay": {
-            "lot": 1050000.0,
-            "tutar": null,
-            "sermaye_orani": 0.00333,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1678003"
         },
         {
           "no": 1675451,
@@ -10462,13 +10364,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "07.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1675451",
-          "detay": {
-            "lot": 1050000.0,
-            "tutar": null,
-            "sermaye_orani": 0.00333,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1675451"
         },
         {
           "no": 1673959,
@@ -10478,13 +10374,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "06.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1673959",
-          "detay": {
-            "lot": 1050000.0,
-            "tutar": null,
-            "sermaye_orani": 0.00333,
-            "kaynak": "pdf"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1673959"
         },
         {
           "no": 1672620,
@@ -10504,10 +10394,10 @@
       "toplam_bildirim": 10,
       "piyasa_degeri": 4908232146.0,
       "kapanis": 6.48,
-      "kumulatif_lot": 9450000.0,
-      "kumulatif_tutar_tl": "veri yok",
-      "sermaye_orani_yuzde": 0.00333,
-      "piyasa_degeri_orani_yuzde": "veri yok"
+      "kumulatif_lot": 14160741.0,
+      "kumulatif_tutar_tl": 94679456.67,
+      "sermaye_orani_yuzde": 1.88848,
+      "piyasa_degeri_orani_yuzde": 1.929
     },
     "AAGYO": {
       "kod": "AAGYO",
@@ -12484,10 +12374,15 @@
           "sinif": "işlem",
           "url": "https://www.kap.org.tr/tr/Bildirim/1670485",
           "detay": {
-            "lot": null,
-            "tutar": null,
+            "lot": 18015001.0,
+            "tutar": 18321256.02,
             "sermaye_orani": 0.18015,
-            "kaynak": "pdf"
+            "satir": 1,
+            "azami_pay": 500000000.0,
+            "ayrilan_fon": 2000000000.0,
+            "kaynak": "pdf",
+            "bildirim_no": 1670485,
+            "bildirim_tarih": "2026-09-30"
           }
         },
         {
@@ -12508,10 +12403,10 @@
       "toplam_bildirim": 3,
       "piyasa_degeri": 10499996447.0,
       "kapanis": 1.02,
-      "kumulatif_lot": "veri yok",
-      "kumulatif_tutar_tl": "veri yok",
+      "kumulatif_lot": 18015001.0,
+      "kumulatif_tutar_tl": 18321256.02,
       "sermaye_orani_yuzde": 0.18015,
-      "piyasa_degeri_orani_yuzde": "veri yok"
+      "piyasa_degeri_orani_yuzde": 0.1745
     },
     "ZERGY": {
       "kod": "ZERGY",
@@ -13510,24 +13405,24 @@
       "toplam_bildirim": 4,
       "islem_bildirim_sayisi": 2,
       "son_bildirim_tarih": "2026-10-16",
-      "kumulatif_lot": 550214.0,
+      "kumulatif_lot": "veri yok",
       "kumulatif_tutar_tl": "veri yok",
-      "sermaye_orani_yuzde": 0.01536
+      "sermaye_orani_yuzde": "veri yok"
     },
     "ULUUN": {
       "toplam_bildirim": 10,
       "islem_bildirim_sayisi": 9,
       "son_bildirim_tarih": "2026-10-16",
-      "kumulatif_lot": 9450000.0,
-      "kumulatif_tutar_tl": "veri yok",
-      "sermaye_orani_yuzde": 0.00333
+      "kumulatif_lot": 14160741.0,
+      "kumulatif_tutar_tl": 94679456.67,
+      "sermaye_orani_yuzde": 1.88848
     },
     "CANTE": {
       "toplam_bildirim": 3,
       "islem_bildirim_sayisi": 1,
       "son_bildirim_tarih": "2026-10-01",
-      "kumulatif_lot": "veri yok",
-      "kumulatif_tutar_tl": "veri yok",
+      "kumulatif_lot": 18015001.0,
+      "kumulatif_tutar_tl": 18321256.02,
       "sermaye_orani_yuzde": 0.18015
     }
   },
