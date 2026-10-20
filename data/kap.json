@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-10-19T15:22:34.878491+00:00",
-  "tarih": "2026-10-19",
+  "uretim_zamani_utc": "2026-10-20T15:21:55.110914+00:00",
+  "tarih": "2026-10-20",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-15",
+  "baslangic": "2026-10-16",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [
@@ -23,21 +23,7 @@
     "BLUME": [],
     "CANTE": [],
     "ENKAI": [],
-    "HEKTS": [
-      {
-        "no": 1682795,
-        "zaman": "2026-10-15T21:05:25",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Tahsisli Sermaye Artırımı Sonrası OYAK'ın Pay ve Oy Hakkı Oranı ile Pay Alım Teklifi Yükümlülüğüne İlişkin Açıklaması",
-        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
-        "kodlar": "HEKTS",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1682795"
-      }
-    ],
+    "HEKTS": [],
     "KRDMD": [
       {
         "no": 1683328,
@@ -56,22 +42,21 @@
     "OBAMS": [],
     "PAPIL": [],
     "SOHOE": [],
-    "TTKOM": [
+    "TTKOM": [],
+    "ULUUN": [
       {
-        "no": 1682767,
-        "zaman": "2026-10-15T18:42:30",
-        "tur": "DG",
-        "konu": "Şirket Genel Bilgi Formu",
-        "ozet": null,
-        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
-        "kodlar": "TTKOM",
+        "no": 1684169,
+        "zaman": "2026-10-19T19:57:56",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "19.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
         "gecikmeli": false,
         "duzeltme": false,
         "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1682767"
-      }
-    ],
-    "ULUUN": [
+        "url": "https://www.kap.org.tr/tr/Bildirim/1684169"
+      },
       {
         "no": 1683373,
         "zaman": "2026-10-16T22:02:59",
@@ -97,26 +82,13 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1683353"
-      },
-      {
-        "no": 1682782,
-        "zaman": "2026-10-15T19:41:32",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "15.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1682782"
       }
     ],
     "VAKBN": [],
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1238,
+  "toplam_piyasa_satiri": 1305,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 5
+  "bildirimli_kod_sayisi": 3
 }
