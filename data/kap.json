@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-10-20T15:21:55.110914+00:00",
-  "tarih": "2026-10-20",
+  "uretim_zamani_utc": "2026-10-21T15:21:39.192429+00:00",
+  "tarih": "2026-10-21",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-16",
+  "baslangic": "2026-10-17",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [
@@ -24,26 +24,39 @@
     "CANTE": [],
     "ENKAI": [],
     "HEKTS": [],
-    "KRDMD": [
-      {
-        "no": 1683328,
-        "zaman": "2026-10-16T18:36:27",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "16.10.2026 Tarihli Pay Geri Alım İşlemleri",
-        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "KRDMA, KRDMB, KRDMD",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1683328"
-      }
-    ],
+    "KRDMD": [],
     "OBAMS": [],
     "PAPIL": [],
     "SOHOE": [],
-    "TTKOM": [],
+    "TTKOM": [
+      {
+        "no": 1685118,
+        "zaman": "2026-10-21T15:41:40",
+        "tur": "ODA",
+        "konu": "Kurumsal Yönetim İlkelerine Uyum Derecelendirmesi",
+        "ozet": "Kurumsal Yönetim Derecelendirme Sözleşmesinin Uzatılması",
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1685118"
+      }
+    ],
     "ULUUN": [
+      {
+        "no": 1684667,
+        "zaman": "2026-10-20T19:38:09",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "20.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1684667"
+      },
       {
         "no": 1684169,
         "zaman": "2026-10-19T19:57:56",
@@ -56,39 +69,13 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1684169"
-      },
-      {
-        "no": 1683373,
-        "zaman": "2026-10-16T22:02:59",
-        "tur": "ODA",
-        "konu": "Esas Sözleşme Tadili",
-        "ozet": "Esas Sözleşme Tadili Sermaye Piyasası Kurulu Onayı Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1683373"
-      },
-      {
-        "no": 1683353,
-        "zaman": "2026-10-16T19:56:10",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "16.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1683353"
       }
     ],
     "VAKBN": [],
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1305,
+  "toplam_piyasa_satiri": 1293,
   "hisse_sayisi": 13,
   "bildirimli_kod_sayisi": 3
 }
