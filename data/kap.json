@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-10-21T15:21:39.192429+00:00",
-  "tarih": "2026-10-21",
+  "uretim_zamani_utc": "2026-10-22T15:21:58.692447+00:00",
+  "tarih": "2026-10-22",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-17",
+  "baslangic": "2026-10-18",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [
@@ -25,7 +25,21 @@
     "ENKAI": [],
     "HEKTS": [],
     "KRDMD": [],
-    "OBAMS": [],
+    "OBAMS": [
+      {
+        "no": 1685380,
+        "zaman": "2026-10-21T18:51:11",
+        "tur": "ODA",
+        "konu": "Özel Durum Açıklaması (Genel)",
+        "ozet": "SIAL Paris 2026 Fuarı Kapsamında Alınan Yeni Siparişler Hakkında",
+        "sirket": "OBA MAKARNACILIK SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "OBAMS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1685380"
+      }
+    ],
     "PAPIL": [],
     "SOHOE": [],
     "TTKOM": [
@@ -44,6 +58,19 @@
       }
     ],
     "ULUUN": [
+      {
+        "no": 1685472,
+        "zaman": "2026-10-21T20:24:30",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "21.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1685472"
+      },
       {
         "no": 1684667,
         "zaman": "2026-10-20T19:38:09",
@@ -71,11 +98,38 @@
         "url": "https://www.kap.org.tr/tr/Bildirim/1684169"
       }
     ],
-    "VAKBN": [],
+    "VAKBN": [
+      {
+        "no": 1685784,
+        "zaman": "2026-10-22T15:20:56",
+        "tur": "CA",
+        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+        "ozet": "Yurt İçinde Nitelikli Yatırımcılara İhraç Edilen Katkı Sermaye Hesaplamasına Dahil Edilecek Türk Lirası Borçlanma Aracının 8. Kupon Ödemesi",
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1685784"
+      },
+      {
+        "no": 1685783,
+        "zaman": "2026-10-22T15:20:30",
+        "tur": "CA",
+        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+        "ozet": "Yurt İçinde Nitelikli Yatırımcılara İhraç Edilen Katkı Sermaye Hesaplamasına Dahil Edilecek Türk Lirası Borçlanma Aracının 8. Kupon Ödemesi",
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1685783"
+      }
+    ],
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1293,
+  "toplam_piyasa_satiri": 1757,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 3
+  "bildirimli_kod_sayisi": 5
 }
