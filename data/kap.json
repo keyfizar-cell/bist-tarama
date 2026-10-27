@@ -1,11 +1,63 @@
 {
-  "uretim_zamani_utc": "2026-10-26T15:21:56.828192+00:00",
-  "tarih": "2026-10-26",
+  "uretim_zamani_utc": "2026-10-27T15:22:04.121957+00:00",
+  "tarih": "2026-10-27",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-22",
+  "baslangic": "2026-10-23",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [
+      {
+        "no": 1688332,
+        "zaman": "2026-10-27T18:16:06",
+        "tur": "FR",
+        "konu": "Sorumluluk Beyanı (Konsolide Olmayan)",
+        "ozet": "30-09-2026 Akbank Konsolide Olmayan Sorumluluk Beyanı",
+        "sirket": "AKBANK T.A.Ş.",
+        "kodlar": "AKBNK",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1688332"
+      },
+      {
+        "no": 1688328,
+        "zaman": "2026-10-27T18:15:54",
+        "tur": "FR",
+        "konu": "Sorumluluk Beyanı (Konsolide)",
+        "ozet": "30-09-2026 Akbank Konsolide Sorumluluk Beyanı",
+        "sirket": "AKBANK T.A.Ş.",
+        "kodlar": "AKBNK",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1688328"
+      },
+      {
+        "no": 1688326,
+        "zaman": "2026-10-27T18:15:42",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "AKBANK T.A.Ş.",
+        "kodlar": "AKBNK",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1688326"
+      },
+      {
+        "no": 1688323,
+        "zaman": "2026-10-27T18:15:30",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "AKBANK T.A.Ş.",
+        "kodlar": "AKBNK",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1688323"
+      },
       {
         "no": 1687058,
         "zaman": "2026-10-26T09:00:05",
@@ -54,6 +106,19 @@
     ],
     "KRDMD": [
       {
+        "no": 1687642,
+        "zaman": "2026-10-26T19:23:58",
+        "tur": "DG",
+        "konu": "Şirket Genel Bilgi Formu",
+        "ozet": null,
+        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "KRDMA, KRDMB, KRDMD",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1687642"
+      },
+      {
         "no": 1687549,
         "zaman": "2026-10-26T18:15:46",
         "tur": "CA",
@@ -91,32 +156,6 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1686923"
-      },
-      {
-        "no": 1686076,
-        "zaman": "2026-10-22T20:01:01",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Yönetim Kurulu Görev Dağılımı",
-        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "KRDMA, KRDMB, KRDMD",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686076"
-      },
-      {
-        "no": 1686072,
-        "zaman": "2026-10-22T19:42:33",
-        "tur": "CA",
-        "konu": "Genel Kurul İşlemlerine İlişkin Bildirim",
-        "ozet": "Olağanüstü Genel Kurul Toplantısı hk",
-        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "KRDMA, KRDMB, KRDMD",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686072"
       }
     ],
     "OBAMS": [],
@@ -192,6 +231,19 @@
     ],
     "ULUUN": [
       {
+        "no": 1687632,
+        "zaman": "2026-10-26T19:13:26",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "26.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1687632"
+      },
+      {
         "no": 1687016,
         "zaman": "2026-10-23T20:08:22",
         "tur": "CA",
@@ -203,53 +255,27 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1687016"
-      },
-      {
-        "no": 1686066,
-        "zaman": "2026-10-22T19:25:40",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "22.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686066"
       }
     ],
     "VAKBN": [
       {
-        "no": 1685784,
-        "zaman": "2026-10-22T15:20:56",
-        "tur": "CA",
-        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-        "ozet": "Yurt İçinde Nitelikli Yatırımcılara İhraç Edilen Katkı Sermaye Hesaplamasına Dahil Edilecek Türk Lirası Borçlanma Aracının 8. Kupon Ödemesi",
+        "no": 1688351,
+        "zaman": "2026-10-27T18:18:15",
+        "tur": "ODA",
+        "konu": "Özel Durum Açıklaması (Genel)",
+        "ozet": "Bankalarda İyi Ücretlendirme Uygulamalarına İlişkin Rehber kapsamında geri alınan paylar",
         "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
         "kodlar": "TVB, VAKBN",
         "gecikmeli": false,
         "duzeltme": false,
         "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1685784"
-      },
-      {
-        "no": 1685783,
-        "zaman": "2026-10-22T15:20:30",
-        "tur": "CA",
-        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-        "ozet": "Yurt İçinde Nitelikli Yatırımcılara İhraç Edilen Katkı Sermaye Hesaplamasına Dahil Edilecek Türk Lirası Borçlanma Aracının 8. Kupon Ödemesi",
-        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
-        "kodlar": "TVB, VAKBN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1685783"
+        "url": "https://www.kap.org.tr/tr/Bildirim/1688351"
       }
     ],
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1671,
+  "toplam_piyasa_satiri": 1758,
   "hisse_sayisi": 13,
   "bildirimli_kod_sayisi": 8
 }
