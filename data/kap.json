@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-10-27T15:22:04.121957+00:00",
-  "tarih": "2026-10-27",
+  "uretim_zamani_utc": "2026-10-28T15:21:57.725695+00:00",
+  "tarih": "2026-10-28",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-23",
+  "baslangic": "2026-10-24",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [
@@ -72,38 +72,10 @@
         "url": "https://www.kap.org.tr/tr/Bildirim/1687058"
       }
     ],
-    "BLUME": [
-      {
-        "no": 1686112,
-        "zaman": "2026-10-23T08:55:38",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "Payların Geri Alınmasına İlişkin Bildirim",
-        "sirket": "BLUME METAL KİMYA A.Ş.",
-        "kodlar": "BLUME",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686112"
-      }
-    ],
+    "BLUME": [],
     "CANTE": [],
     "ENKAI": [],
-    "HEKTS": [
-      {
-        "no": 1686978,
-        "zaman": "2026-10-23T18:33:21",
-        "tur": "CA",
-        "konu": "Sermaye Artırımı - Azaltımı İşlemlerine İlişkin Bildirim",
-        "ozet": "Tahsisli Sermaye Artırımı Sonrası Esas Sözleşme Değişikliği İçin Sermaye Piyasası Kurulu?na Başvurulması Hk.",
-        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
-        "kodlar": "HEKTS",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686978"
-      }
-    ],
+    "HEKTS": [],
     "KRDMD": [
       {
         "no": 1687642,
@@ -130,88 +102,36 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1687549"
-      },
-      {
-        "no": 1686938,
-        "zaman": "2026-10-23T18:16:48",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "23.10.2026 Tarihli Pay Geri Alım İşlemleri",
-        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "KRDMA, KRDMB, KRDMD",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686938"
-      },
-      {
-        "no": 1686923,
-        "zaman": "2026-10-23T18:12:56",
-        "tur": "ODA",
-        "konu": "Yönetim Kurulu Komiteleri",
-        "ozet": "Yönetim Kurulu Komiteleri hk.",
-        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "KRDMA, KRDMB, KRDMD",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686923"
       }
     ],
     "OBAMS": [],
     "PAPIL": [],
     "SOHOE": [
       {
-        "no": 1686956,
-        "zaman": "2026-10-23T18:22:47",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Yönetici Sorumluluk Sigortası Yapılması",
-        "sirket": "SOHO GİYİM VE ENERJİ A.Ş.",
-        "kodlar": "SOHOE",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686956"
-      },
-      {
-        "no": 1686942,
-        "zaman": "2026-10-23T18:17:29",
-        "tur": "FR",
-        "konu": "Sorumluluk Beyanı (Konsolide)",
-        "ozet": "01.01.2026 - 30.09.2026 Ara Hesap Dönemine İlişkin Sorumluluk Beyanı",
-        "sirket": "SOHO GİYİM VE ENERJİ A.Ş.",
-        "kodlar": "SOHOE",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686942"
-      },
-      {
-        "no": 1686939,
-        "zaman": "2026-10-23T18:16:56",
-        "tur": "FR",
-        "konu": "Faaliyet Raporu (Konsolide)",
-        "ozet": "01.01.2026 - 30.09.2026 Ara Hesap Dönemine İlişkin Yönetim Kurulu Faaliyet Raporu",
+        "no": 1689060,
+        "zaman": "2026-10-28T14:10:47",
+        "tur": "DG",
+        "konu": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
+        "ozet": "Halka Arzdan Elde Edilen Fonun Kullanımına İlişkin Rapor",
         "sirket": "SOHO GİYİM VE ENERJİ A.Ş.",
         "kodlar": "SOHOE",
         "gecikmeli": false,
         "duzeltme": false,
         "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686939"
+        "url": "https://www.kap.org.tr/tr/Bildirim/1689060"
       },
       {
-        "no": 1686935,
-        "zaman": "2026-10-23T18:16:22",
-        "tur": "FR",
-        "konu": "Finansal Rapor",
-        "ozet": null,
+        "no": 1689059,
+        "zaman": "2026-10-28T14:10:36",
+        "tur": "DG",
+        "konu": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Değerlendirme Raporu",
+        "ozet": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Gerçekleşme ve Değerlendirme Raporu-2",
         "sirket": "SOHO GİYİM VE ENERJİ A.Ş.",
         "kodlar": "SOHOE",
         "gecikmeli": false,
         "duzeltme": false,
         "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1686935"
+        "url": "https://www.kap.org.tr/tr/Bildirim/1689059"
       }
     ],
     "TTKOM": [
@@ -231,6 +151,32 @@
     ],
     "ULUUN": [
       {
+        "no": 1689016,
+        "zaman": "2026-10-28T13:38:14",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "28.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1689016"
+      },
+      {
+        "no": 1688525,
+        "zaman": "2026-10-27T19:38:04",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "27.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1688525"
+      },
+      {
         "no": 1687632,
         "zaman": "2026-10-26T19:13:26",
         "tur": "CA",
@@ -242,19 +188,6 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1687632"
-      },
-      {
-        "no": 1687016,
-        "zaman": "2026-10-23T20:08:22",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "23.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1687016"
       }
     ],
     "VAKBN": [
@@ -275,7 +208,7 @@
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1758,
+  "toplam_piyasa_satiri": 1488,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 8
+  "bildirimli_kod_sayisi": 6
 }
