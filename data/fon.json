@@ -1,6 +1,6 @@
 {
-  "uretim_zamani_utc": "2026-10-28T15:21:59.536659+00:00",
-  "tarih": "2026-10-28",
+  "uretim_zamani_utc": "2026-10-29T15:22:03.084497+00:00",
+  "tarih": "2026-10-29",
   "kaynak": "tefasmak>pytefas",
   "aciklama": "BIST portföy + eurobond + TL borçlanma fonları (TEFAS). Ana taramadan bağımsız üretilir.",
   "fonlar": {
@@ -18,10 +18,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": -0.99,
       "getiri_1y": 19.11,
-      "icerik": {
-        "Yatırım Fonları Katılma Payları": 95.48,
-        "Ters Repo": 4.46
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "IBB": {
       "fon_kodu": "IBB",
@@ -37,13 +34,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": -1.21,
       "getiri_1y": 33.63,
-      "icerik": {
-        "Hisse Senedi": 39.82,
-        "Ters Repo": 33.63,
-        "Vadeli İşlemler Nakit Teminatları": 20.06,
-        "Yabancı Kamu Borçlanma": 4.94,
-        "Gayrimenkul Yatırım Fonu Katılma Belgesi": 1.29
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "IJC": {
       "fon_kodu": "IJC",
@@ -59,11 +50,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": -10.45,
       "getiri_1y": 38.59,
-      "icerik": {
-        "Yabancı Hisse Senedi": 72.66,
-        "Hisse Senedi": 25.35,
-        "Yatırım Fonları Katılma Payları": 0.9
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "TI2": {
       "fon_kodu": "TI2",
@@ -79,12 +66,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": -9.76,
       "getiri_1y": 1.72,
-      "icerik": {
-        "Hisse Senedi": 91.89,
-        "Vadeli İşlemler Nakit Teminatları": 3.12,
-        "Ters Repo": 2.68,
-        "Yatırım Fonları Katılma Payları": 2.31
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "ZBJ": {
       "fon_kodu": "ZBJ",
@@ -100,16 +82,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 2.87,
       "getiri_1y": 46.69,
-      "icerik": {
-        "TL Vadeli Mevduat": 41.63,
-        "Devlet Tahvili": 24.76,
-        "Ters Repo": 14.6,
-        "Takasbank Para Piyasası": 10.5,
-        "Özel Sektör Tahvili": 2.68,
-        "Vadeli Mevduat": 2.24,
-        "TL Katılma Hesabı": 2.05,
-        "Finansman Bonosu": 1.43
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "DBH": {
       "fon_kodu": "DBH",
@@ -125,12 +98,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 1.8,
       "getiri_1y": 22.59,
-      "icerik": {
-        "Özel Sektör Dövize Endeksli": 60.56,
-        "Kamu Borçlanma Aracı": 28.9,
-        "Yabancı Özel Sektör Borçlanma": 7.46,
-        "Yatırım Fonları Katılma Payları": 2.97
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "FPE": {
       "fon_kodu": "FPE",
@@ -146,11 +114,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 2.61,
       "getiri_1y": 20.01,
-      "icerik": {
-        "Özel Sektör Dövize Endeksli": 50.74,
-        "Kamu Borçlanma Aracı": 42.41,
-        "Yabancı Özel Sektör Borçlanma": 6.38
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "GPA": {
       "fon_kodu": "GPA",
@@ -166,14 +130,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 2.84,
       "getiri_1y": 22.23,
-      "icerik": {
-        "Kamu Borçlanma Aracı": 63.29,
-        "Özel Sektör Dövize Endeksli": 21.51,
-        "Vadeli İşlemler Nakit Teminatları": 5.62,
-        "Ters Repo": 4.77,
-        "Döviz Vadeli Mevduat": 2.42,
-        "Yabancı Kamu Borçlanma": 2.07
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "YBE": {
       "fon_kodu": "YBE",
@@ -189,14 +146,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 2.71,
       "getiri_1y": 22.42,
-      "icerik": {
-        "Kamu Borçlanma Aracı": 59.65,
-        "Özel Sektör Dövize Endeksli": 26.61,
-        "Ters Repo": 6.77,
-        "Yatırım Fonları Katılma Payları": 3.36,
-        "Vadeli İşlemler Nakit Teminatları": 1.91,
-        "Hisse Senedi": 1.61
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "FUB": {
       "fon_kodu": "FUB",
@@ -212,12 +162,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 2.66,
       "getiri_1y": 20.07,
-      "icerik": {
-        "Kamu Borçlanma Aracı": 73.45,
-        "Özel Sektör Dövize Endeksli": 17.72,
-        "Ters Repo": 7.76,
-        "Vadeli İşlemler Nakit Teminatları": 0.97
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "AKE": {
       "fon_kodu": "AKE",
@@ -233,12 +178,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 2.45,
       "getiri_1y": 19.52,
-      "icerik": {
-        "Kamu Borçlanma Aracı": 64.4,
-        "Özel Sektör Dövize Endeksli": 26.36,
-        "Ters Repo": 5.64,
-        "Vadeli İşlemler Nakit Teminatları": 3.04
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "IPV": {
       "fon_kodu": "IPV",
@@ -254,15 +194,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 2.21,
       "getiri_1y": 23.92,
-      "icerik": {
-        "Özel Sektör Dövize Endeksli": 61.65,
-        "Kamu Borçlanma Aracı": 21.69,
-        "Vadeli İşlemler Nakit Teminatları": 8.75,
-        "Girişim Sermayesi YF Katılma Belgesi": 3.93,
-        "Yatırım Fonları Katılma Payları": 1.63,
-        "Ters Repo": 1.31,
-        "Gayrimenkul Yatırım Fonu Katılma Belgesi": 0.91
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "TPL": {
       "fon_kodu": "TPL",
@@ -278,14 +210,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 2.74,
       "getiri_1y": 19.71,
-      "icerik": {
-        "Özel Sektör Dövize Endeksli": 42.69,
-        "Kamu Borçlanma Aracı": 39.16,
-        "Ters Repo": 11.97,
-        "Vadeli İşlemler Nakit Teminatları": 3.43,
-        "TL Vadeli Mevduat": 1.71,
-        "Devlet Tahvili": 1.04
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "TZV": {
       "fon_kodu": "TZV",
@@ -301,16 +226,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 2.63,
       "getiri_1y": 43.35,
-      "icerik": {
-        "Devlet Tahvili": 49.13,
-        "Finansman Bonosu": 24.33,
-        "Özel Sektör Tahvili": 9.21,
-        "TL Vadeli Mevduat": 9.12,
-        "Ters Repo": 2.51,
-        "Vadeli Mevduat": 2.32,
-        "Kamu Kira Sertifikası (TL)": 1.78,
-        "Takasbank Para Piyasası": 1.58
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     },
     "TSI": {
       "fon_kodu": "TSI",
@@ -326,16 +242,7 @@
       "fiyat_tarih": "2026-10-28",
       "getiri_1a": 2.72,
       "getiri_1y": 42.94,
-      "icerik": {
-        "Devlet Tahvili": 47.73,
-        "Özel Sektör Tahvili": 15.87,
-        "Finansman Bonosu": 15.5,
-        "TL Vadeli Mevduat": 7.76,
-        "Hazine Bonosu": 4.7,
-        "Özel Sektör Kira Sertifikası": 4.31,
-        "Ters Repo": 2.31,
-        "Kamu Kira Sertifikası (TL)": 1.82
-      }
+      "icerik_hata": "'NoneType' object has no attribute 'get'"
     }
   },
   "basari_sayisi": 15,
