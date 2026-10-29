@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-10-28T15:21:57.725695+00:00",
-  "tarih": "2026-10-28",
+  "uretim_zamani_utc": "2026-10-29T15:21:56.579239+00:00",
+  "tarih": "2026-10-29",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-24",
+  "baslangic": "2026-10-25",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [
@@ -208,7 +208,7 @@
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1488,
+  "toplam_piyasa_satiri": 1492,
   "hisse_sayisi": 13,
   "bildirimli_kod_sayisi": 6
 }
