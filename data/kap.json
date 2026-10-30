@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-10-29T15:21:56.579239+00:00",
-  "tarih": "2026-10-29",
+  "uretim_zamani_utc": "2026-10-30T15:22:04.576438+00:00",
+  "tarih": "2026-10-30",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-25",
+  "baslangic": "2026-10-26",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [
@@ -57,19 +57,6 @@
         "duzeltme": false,
         "ek_var": true,
         "url": "https://www.kap.org.tr/tr/Bildirim/1688323"
-      },
-      {
-        "no": 1687058,
-        "zaman": "2026-10-26T09:00:05",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Sendikasyon Kredisi Hakkında",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1687058"
       }
     ],
     "BLUME": [],
@@ -208,7 +195,7 @@
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1492,
+  "toplam_piyasa_satiri": 2000,
   "hisse_sayisi": 13,
   "bildirimli_kod_sayisi": 6
 }
