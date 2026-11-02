@@ -1,201 +1,106 @@
 {
-  "uretim_zamani_utc": "2026-10-30T15:22:04.576438+00:00",
-  "tarih": "2026-10-30",
+  "uretim_zamani_utc": "2026-11-02T15:21:17.940976+00:00",
+  "tarih": "2026-11-02",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-26",
+  "baslangic": "2026-10-29",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
-    "AKBNK": [
-      {
-        "no": 1688332,
-        "zaman": "2026-10-27T18:16:06",
-        "tur": "FR",
-        "konu": "Sorumluluk Beyanı (Konsolide Olmayan)",
-        "ozet": "30-09-2026 Akbank Konsolide Olmayan Sorumluluk Beyanı",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1688332"
-      },
-      {
-        "no": 1688328,
-        "zaman": "2026-10-27T18:15:54",
-        "tur": "FR",
-        "konu": "Sorumluluk Beyanı (Konsolide)",
-        "ozet": "30-09-2026 Akbank Konsolide Sorumluluk Beyanı",
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1688328"
-      },
-      {
-        "no": 1688326,
-        "zaman": "2026-10-27T18:15:42",
-        "tur": "FR",
-        "konu": "Finansal Rapor",
-        "ozet": null,
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1688326"
-      },
-      {
-        "no": 1688323,
-        "zaman": "2026-10-27T18:15:30",
-        "tur": "FR",
-        "konu": "Finansal Rapor",
-        "ozet": null,
-        "sirket": "AKBANK T.A.Ş.",
-        "kodlar": "AKBNK",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1688323"
-      }
-    ],
+    "AKBNK": [],
     "BLUME": [],
     "CANTE": [],
     "ENKAI": [],
     "HEKTS": [],
-    "KRDMD": [
+    "KRDMD": [],
+    "OBAMS": [],
+    "PAPIL": [],
+    "SOHOE": [],
+    "TTKOM": [],
+    "ULUUN": [
       {
-        "no": 1687642,
-        "zaman": "2026-10-26T19:23:58",
+        "no": 1690183,
+        "zaman": "2026-10-30T19:42:23",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "30.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1690183"
+      }
+    ],
+    "VAKBN": [],
+    "YIGIT": [
+      {
+        "no": 1690378,
+        "zaman": "2026-11-02T09:03:47",
         "tur": "DG",
         "konu": "Şirket Genel Bilgi Formu",
         "ozet": null,
-        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "KRDMA, KRDMB, KRDMD",
+        "sirket": "YİĞİT AKÜ MALZEMELERİ NAKLİYAT TURİZM İNŞAAT SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "YIGIT",
         "gecikmeli": false,
         "duzeltme": false,
         "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1687642"
+        "url": "https://www.kap.org.tr/tr/Bildirim/1690378"
       },
       {
-        "no": 1687549,
-        "zaman": "2026-10-26T18:15:46",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "26.10.2026 Tarihli Pay Geri Alım İşlemleri",
-        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "KRDMA, KRDMB, KRDMD",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1687549"
-      }
-    ],
-    "OBAMS": [],
-    "PAPIL": [],
-    "SOHOE": [
-      {
-        "no": 1689060,
-        "zaman": "2026-10-28T14:10:47",
+        "no": 1690111,
+        "zaman": "2026-10-30T18:54:16",
         "tur": "DG",
-        "konu": "Sermaye Artırımından Elde Edilecek - Edilen Fonun Kullanımına İlişkin Rapor",
-        "ozet": "Halka Arzdan Elde Edilen Fonun Kullanımına İlişkin Rapor",
-        "sirket": "SOHO GİYİM VE ENERJİ A.Ş.",
-        "kodlar": "SOHOE",
+        "konu": "Sürdürülebilirlik Raporu",
+        "ozet": "2025 Yılı Sürdürülebilirlik Raporu",
+        "sirket": "YİĞİT AKÜ MALZEMELERİ NAKLİYAT TURİZM İNŞAAT SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "YIGIT",
         "gecikmeli": false,
         "duzeltme": false,
         "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1689060"
+        "url": "https://www.kap.org.tr/tr/Bildirim/1690111"
       },
       {
-        "no": 1689059,
-        "zaman": "2026-10-28T14:10:36",
-        "tur": "DG",
-        "konu": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Değerlendirme Raporu",
-        "ozet": "Halka Arz Fiyatının Belirlenmesinde Esas Alınan Varsayımlara İlişkin Gerçekleşme ve Değerlendirme Raporu-2",
-        "sirket": "SOHO GİYİM VE ENERJİ A.Ş.",
-        "kodlar": "SOHOE",
+        "no": 1690110,
+        "zaman": "2026-10-30T18:53:54",
+        "tur": "FR",
+        "konu": "Sorumluluk Beyanı (Konsolide Olmayan)",
+        "ozet": "2026 Yılı 3.3 Aylık Finansal Raporlara İlişkin Sorumluluk Beyanı",
+        "sirket": "YİĞİT AKÜ MALZEMELERİ NAKLİYAT TURİZM İNŞAAT SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "YIGIT",
         "gecikmeli": false,
         "duzeltme": false,
         "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1689059"
-      }
-    ],
-    "TTKOM": [
-      {
-        "no": 1687554,
-        "zaman": "2026-10-26T18:16:52",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Kulüp Kredisi Anlaşması",
-        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
-        "kodlar": "TTKOM",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1687554"
-      }
-    ],
-    "ULUUN": [
-      {
-        "no": 1689016,
-        "zaman": "2026-10-28T13:38:14",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "28.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1689016"
+        "url": "https://www.kap.org.tr/tr/Bildirim/1690110"
       },
       {
-        "no": 1688525,
-        "zaman": "2026-10-27T19:38:04",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "27.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
+        "no": 1690108,
+        "zaman": "2026-10-30T18:53:28",
+        "tur": "FR",
+        "konu": "Faaliyet Raporu (Konsolide Olmayan)",
+        "ozet": "2026 Yılı 3.3 Aylık Faaliyet Raporu",
+        "sirket": "YİĞİT AKÜ MALZEMELERİ NAKLİYAT TURİZM İNŞAAT SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "YIGIT",
         "gecikmeli": false,
         "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1688525"
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1690108"
       },
       {
-        "no": 1687632,
-        "zaman": "2026-10-26T19:13:26",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "26.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
+        "no": 1690107,
+        "zaman": "2026-10-30T18:53:03",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "YİĞİT AKÜ MALZEMELERİ NAKLİYAT TURİZM İNŞAAT SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "YIGIT",
         "gecikmeli": false,
         "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1687632"
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1690107"
       }
-    ],
-    "VAKBN": [
-      {
-        "no": 1688351,
-        "zaman": "2026-10-27T18:18:15",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Bankalarda İyi Ücretlendirme Uygulamalarına İlişkin Rehber kapsamında geri alınan paylar",
-        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
-        "kodlar": "TVB, VAKBN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1688351"
-      }
-    ],
-    "YIGIT": []
+    ]
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 2000,
+  "toplam_piyasa_satiri": 1500,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 6
+  "bildirimli_kod_sayisi": 2
 }
