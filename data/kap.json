@@ -1,21 +1,74 @@
 {
-  "uretim_zamani_utc": "2026-11-02T15:21:17.940976+00:00",
-  "tarih": "2026-11-02",
+  "uretim_zamani_utc": "2026-11-03T15:21:28.871711+00:00",
+  "tarih": "2026-11-03",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-29",
+  "baslangic": "2026-10-30",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [],
     "BLUME": [],
     "CANTE": [],
     "ENKAI": [],
-    "HEKTS": [],
+    "HEKTS": [
+      {
+        "no": 1691624,
+        "zaman": "2026-11-03T15:59:53",
+        "tur": "CA",
+        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+        "ozet": "TRFHEKTK2611 ISIN Kodlu Finansman Bonosu İtfası",
+        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
+        "kodlar": "HEKTS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1691624"
+      },
+      {
+        "no": 1691300,
+        "zaman": "2026-11-03T09:17:42",
+        "tur": "CA",
+        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+        "ozet": "TRFHEKT42715 ISIN Kodlu Finansman Bonosu İhracı",
+        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
+        "kodlar": "HEKTS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1691300"
+      },
+      {
+        "no": 1691167,
+        "zaman": "2026-11-02T18:30:32",
+        "tur": "CA",
+        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+        "ozet": "TRFHEKTK2611 ISIN Kodlu Bononun Kupon Dönemine İlişkin Faiz Oranı Hakkında",
+        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
+        "kodlar": "HEKTS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1691167"
+      }
+    ],
     "KRDMD": [],
     "OBAMS": [],
     "PAPIL": [],
     "SOHOE": [],
     "TTKOM": [],
     "ULUUN": [
+      {
+        "no": 1691210,
+        "zaman": "2026-11-02T20:00:15",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "02.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1691210"
+      },
       {
         "no": 1690183,
         "zaman": "2026-10-30T19:42:23",
@@ -100,7 +153,7 @@
     ]
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1500,
+  "toplam_piyasa_satiri": 1806,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 2
+  "bildirimli_kod_sayisi": 3
 }
