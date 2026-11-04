@@ -1,14 +1,28 @@
 {
-  "uretim_zamani_utc": "2026-11-03T15:21:28.871711+00:00",
-  "tarih": "2026-11-03",
+  "uretim_zamani_utc": "2026-11-04T15:21:51.943649+00:00",
+  "tarih": "2026-11-04",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-10-30",
+  "baslangic": "2026-10-31",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [],
     "BLUME": [],
     "CANTE": [],
-    "ENKAI": [],
+    "ENKAI": [
+      {
+        "no": 1692260,
+        "zaman": "2026-11-04T15:06:27",
+        "tur": "ODA",
+        "konu": "Kurumsal Yönetim İlkelerine Uyum Derecelendirmesi",
+        "ozet": "Kurumsal Yönetim Derecelendirme Not Bildirimi",
+        "sirket": "ENKA İNŞAAT VE SANAYİ A.Ş.",
+        "kodlar": "ENKAI",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1692260"
+      }
+    ],
     "HEKTS": [
       {
         "no": 1691624,
@@ -52,10 +66,51 @@
     ],
     "KRDMD": [],
     "OBAMS": [],
-    "PAPIL": [],
+    "PAPIL": [
+      {
+        "no": 1692575,
+        "zaman": "2026-11-04T18:17:49",
+        "tur": "DG",
+        "konu": "Şirket Genel Bilgi Formu",
+        "ozet": null,
+        "sirket": "PAPİLON SAVUNMA TEKNOLOJİ VE TİCARET A.Ş.",
+        "kodlar": "PAPIL",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1692575"
+      }
+    ],
     "SOHOE": [],
-    "TTKOM": [],
+    "TTKOM": [
+      {
+        "no": 1691934,
+        "zaman": "2026-11-03T19:27:38",
+        "tur": "ODA",
+        "konu": "Özel Durum Açıklaması (Genel)",
+        "ozet": "Eurobond İşlemleri Hakkında Açıklama",
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1691934"
+      }
+    ],
     "ULUUN": [
+      {
+        "no": 1691969,
+        "zaman": "2026-11-03T21:23:20",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "03.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1691969"
+      },
       {
         "no": 1691210,
         "zaman": "2026-11-02T20:00:15",
@@ -68,19 +123,6 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1691210"
-      },
-      {
-        "no": 1690183,
-        "zaman": "2026-10-30T19:42:23",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "30.10.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1690183"
       }
     ],
     "VAKBN": [],
@@ -97,63 +139,11 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1690378"
-      },
-      {
-        "no": 1690111,
-        "zaman": "2026-10-30T18:54:16",
-        "tur": "DG",
-        "konu": "Sürdürülebilirlik Raporu",
-        "ozet": "2025 Yılı Sürdürülebilirlik Raporu",
-        "sirket": "YİĞİT AKÜ MALZEMELERİ NAKLİYAT TURİZM İNŞAAT SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "YIGIT",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1690111"
-      },
-      {
-        "no": 1690110,
-        "zaman": "2026-10-30T18:53:54",
-        "tur": "FR",
-        "konu": "Sorumluluk Beyanı (Konsolide Olmayan)",
-        "ozet": "2026 Yılı 3.3 Aylık Finansal Raporlara İlişkin Sorumluluk Beyanı",
-        "sirket": "YİĞİT AKÜ MALZEMELERİ NAKLİYAT TURİZM İNŞAAT SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "YIGIT",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1690110"
-      },
-      {
-        "no": 1690108,
-        "zaman": "2026-10-30T18:53:28",
-        "tur": "FR",
-        "konu": "Faaliyet Raporu (Konsolide Olmayan)",
-        "ozet": "2026 Yılı 3.3 Aylık Faaliyet Raporu",
-        "sirket": "YİĞİT AKÜ MALZEMELERİ NAKLİYAT TURİZM İNŞAAT SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "YIGIT",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1690108"
-      },
-      {
-        "no": 1690107,
-        "zaman": "2026-10-30T18:53:03",
-        "tur": "FR",
-        "konu": "Finansal Rapor",
-        "ozet": null,
-        "sirket": "YİĞİT AKÜ MALZEMELERİ NAKLİYAT TURİZM İNŞAAT SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "YIGIT",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1690107"
       }
     ]
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1806,
+  "toplam_piyasa_satiri": 1193,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 3
+  "bildirimli_kod_sayisi": 6
 }
