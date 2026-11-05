@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_tarama.py  v1.1  (2026-11-05)  proxy destegi
+# youtube_tarama.py  v1.2  (2026-11-05)  proxy + RSS tekrar deneme + onceki veriyi koruma
 # "Emir Bozkurt | Stratejik Yatirim" (@stratejik.yatirim) kanalinin EN YENI
 # videosunu RSS'ten bulur, Turkce oto-altyazi transkriptini
 # (youtube-transcript-api, ucretsiz, anahtarsiz) ceker ve
@@ -10,8 +10,10 @@ import os
 import re
 import sys
 import json
+import time
 import datetime
 import traceback
+import urllib.error
 import urllib.request
 
 CHANNEL_ID = "UChiWzAwOe7J67dd5PmmUnnA"
@@ -19,6 +21,7 @@ CHANNEL_ADI = "Emir Bozkurt | Stratejik Yatirim"
 DIL_ONCELIK = ["tr", "tr-TR", "en"]
 TRANSKRIPT_MAX_KARAKTER = 12000
 SON_VIDEO_BAGLAM = 8
+RSS_DENEME_BEKLEME = [0, 5, 15, 30]  # saniye; 4 deneme
 
 OUT_PATH = os.path.join("data", "youtube_emir.json")
 RSS_URL = "https://www.youtube.com/feeds/videos.xml?channel_id=" + CHANNEL_ID
@@ -49,11 +52,39 @@ def iskelet(hata, son_videolar=None):
     }
 
 
+def onceki_veri():
+    # Bir onceki calismanin JSON'u; yoksa / bozuksa None.
+    try:
+        with open(OUT_PATH, encoding="utf-8") as f:
+            d = json.load(f)
+        return d if isinstance(d, dict) else None
+    except Exception:
+        return None
+
+
+def rss_xml():
+    # YouTube RSS ara sira gecici 404/5xx veriyor: birkac kez tekrar dene.
+    son_hata = None
+    for i, bekle in enumerate(RSS_DENEME_BEKLEME, 1):
+        if bekle:
+            time.sleep(bekle)
+        try:
+            req = urllib.request.Request(
+                RSS_URL, headers={"User-Agent": "Mozilla/5.0 (bist-bulten-bot)"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                xml = r.read().decode("utf-8", "replace")
+            if "<entry>" in xml:
+                return xml
+            son_hata = RuntimeError("RSS bos dondu")
+        except (urllib.error.URLError, OSError) as e:
+            son_hata = e
+        print("RSS deneme %d/%d basarisiz: %s: %s"
+              % (i, len(RSS_DENEME_BEKLEME), type(son_hata).__name__, son_hata))
+    raise son_hata
+
+
 def rss_videolar():
-    req = urllib.request.Request(
-        RSS_URL, headers={"User-Agent": "Mozilla/5.0 (bist-bulten-bot)"})
-    with urllib.request.urlopen(req, timeout=30) as r:
-        xml = r.read().decode("utf-8", "replace")
+    xml = rss_xml()
     girisler = []
     for m in re.finditer(r"<entry>(.*?)</entry>", xml, re.S):
         blok = m.group(1)
@@ -144,14 +175,28 @@ def yaz(cikti):
           "| hata:", cikti.get("hata"))
 
 
+def onceki_ile_yaz(onceki, hata):
+    # Calisma basarisizsa onceki iyi veriyi silme: aynen koru, sadece
+    # hata ve son deneme bilgisini ekle. Onceki veri yoksa iskelet yaz.
+    if onceki and onceki.get("en_yeni_video"):
+        d = dict(onceki)
+        d["hata"] = hata
+        d["son_deneme_utc"] = now_utc()
+        d["onceki_veri_korundu"] = True
+        yaz(d)
+    else:
+        yaz(iskelet(hata))
+
+
 def main():
+    onceki = onceki_veri()
     try:
         vids = rss_videolar()
     except Exception as e:
-        yaz(iskelet("RSS cekilemedi: %s: %s" % (type(e).__name__, e)))
+        onceki_ile_yaz(onceki, "RSS cekilemedi: %s: %s" % (type(e).__name__, e))
         return
     if not vids:
-        yaz(iskelet("RSS bos / video bulunamadi"))
+        onceki_ile_yaz(onceki, "RSS bos / video bulunamadi")
         return
     son = [{"baslik": v["baslik"], "yayin_tarihi": v["yayin_tarihi"], "url": v["url"]}
            for v in vids[:SON_VIDEO_BAGLAM]]
@@ -164,6 +209,16 @@ def main():
             thata = "transkript bos dondu"
     except Exception as e:
         thata = "transkript alinamadi: %s: %s" % (type(e).__name__, e)
+    # Transkript alinamadiysa ama ayni videonun transkripti onceki
+    # calismada alinmissa onu koru.
+    onceki_v = (onceki or {}).get("en_yeni_video") or {}
+    if (not tvar and onceki_v.get("video_id") == en_yeni["video_id"]
+            and onceki_v.get("transkript")):
+        print("Transkript alinamadi; ayni videonun onceki transkripti korunuyor.")
+        transkript = onceki_v["transkript"]
+        dil = onceki_v.get("transkript_dil")
+        tvar = True
+        thata = "onceki transkript korundu; bu calismada: %s" % thata
     kesildi = False
     if transkript and len(transkript) > TRANSKRIPT_MAX_KARAKTER:
         transkript = transkript[:TRANSKRIPT_MAX_KARAKTER]
