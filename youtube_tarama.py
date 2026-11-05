@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_tarama.py  v1.0  (2026-11-05)
+# youtube_tarama.py  v1.1  (2026-11-05)  proxy destegi
 # "Emir Bozkurt | Stratejik Yatirim" (@stratejik.yatirim) kanalinin EN YENI
 # videosunu RSS'ten bulur, Turkce oto-altyazi transkriptini
 # (youtube-transcript-api, ucretsiz, anahtarsiz) ceker ve
@@ -86,9 +86,28 @@ def _snippet_metni(snippets):
     return re.sub(r"\s+", " ", metin).strip()
 
 
+def proxy_ayari():
+    # Proxy, GitHub secret'larindan ortam degiskeni olarak gelir.
+    # 1) WEBSHARE_PROXY_USERNAME + WEBSHARE_PROXY_PASSWORD -> Webshare konut proxy
+    # 2) YT_PROXY_URL (ornek: http://kullanici:sifre@host:port) -> genel proxy
+    # Hicbiri yoksa proxy kullanilmaz.
+    ws_user = os.environ.get("WEBSHARE_PROXY_USERNAME", "").strip()
+    ws_pass = os.environ.get("WEBSHARE_PROXY_PASSWORD", "").strip()
+    if ws_user and ws_pass:
+        from youtube_transcript_api.proxies import WebshareProxyConfig
+        return WebshareProxyConfig(proxy_username=ws_user, proxy_password=ws_pass), "webshare"
+    url = os.environ.get("YT_PROXY_URL", "").strip()
+    if url:
+        from youtube_transcript_api.proxies import GenericProxyConfig
+        return GenericProxyConfig(http_url=url, https_url=url), "genel"
+    return None, None
+
+
 def transkript_cek(video_id):
     from youtube_transcript_api import YouTubeTranscriptApi
-    ytt = YouTubeTranscriptApi()
+    pcfg, ptur = proxy_ayari()
+    print("Proxy:", ptur or "yok")
+    ytt = YouTubeTranscriptApi(proxy_config=pcfg)
     try:
         fetched = ytt.fetch(video_id, languages=DIL_ONCELIK)
         return _snippet_metni(fetched.snippets), getattr(fetched, "language_code", None)
