@@ -1,5 +1,5 @@
 {
-  "uretim_zamani_utc": "2026-11-06T09:08:59.393113+00:00",
+  "uretim_zamani_utc": "2026-11-06T09:12:56.107410+00:00",
   "kanal": "Emir Bozkurt | Stratejik Yatirim",
   "channel_id": "UChiWzAwOe7J67dd5PmmUnnA",
   "video_liste_kaynagi": "rss_kanal",
@@ -38,7 +38,7 @@
     ]
   },
   "transkript_var": true,
-  "son_basarili_utc": "2026-11-06T09:08:59.393135+00:00",
+  "son_basarili_utc": "2026-11-06T09:12:56.107435+00:00",
   "son_videolar": [
     {
       "baslik": "3 Bilançoda 3 Farklı Hikâye! ASELS, THYAO ve EBEBK | 9A 2026 #2",
@@ -82,9 +82,8 @@
     }
   ],
   "hata": null,
-  "surum": "2.0",
+  "surum": "2.1",
   "denemeler": [
-    "youtube-transcript-api: RetryError: HTTPSConnectionPool(host='www.youtube.com', port=443): Max retries exceeded with url: /api/timedtext?v=HiwhEVFB-1E&ei=BJntapnrC774sfIP8PLdqAI&caps=a",
-    "Gemini gemini-3-flash-preview: 15664 karakter, bitis=STOP"
+    "Ayni video icin transkript zaten var; yeniden cekilmedi."
   ]
 }
