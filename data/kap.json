@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-11-05T15:21:59.130740+00:00",
-  "tarih": "2026-11-05",
+  "uretim_zamani_utc": "2026-11-06T09:00:25.682068+00:00",
+  "tarih": "2026-11-06",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-11-01",
+  "baslangic": "2026-11-02",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [],
@@ -191,6 +191,32 @@
     ],
     "ULUUN": [
       {
+        "no": 1693455,
+        "zaman": "2026-11-05T19:43:50",
+        "tur": "CA",
+        "konu": "Genel Kurul İşlemlerine İlişkin Bildirim",
+        "ozet": "2025 Yılına Ait Olağan Genel Kurul Toplantısı Daveti Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1693455"
+      },
+      {
+        "no": 1693454,
+        "zaman": "2026-11-05T19:42:10",
+        "tur": "CA",
+        "konu": "Kar Payı Dağıtım İşlemlerine İlişkin Bildirim",
+        "ozet": "2025 Yılı Kar Payı Dağıtım Önerisi Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1693454"
+      },
+      {
         "no": 1692748,
         "zaman": "2026-11-04T19:18:38",
         "tur": "CA",
@@ -230,7 +256,112 @@
         "url": "https://www.kap.org.tr/tr/Bildirim/1691210"
       }
     ],
-    "VAKBN": [],
+    "VAKBN": [
+      {
+        "no": 1693614,
+        "zaman": "2026-11-06T10:10:06",
+        "tur": "ODA",
+        "konu": "Kurumsal Yönetim İlkelerine Uyum Derecelendirmesi",
+        "ozet": "Kurumsal Yönetim Derecelendirme Sözleşmesi Yenilemesi",
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1693614"
+      },
+      {
+        "no": 1693535,
+        "zaman": "2026-11-06T09:37:17",
+        "tur": "ODA",
+        "konu": "Kurumsal Yönetim İlkelerine Uyum Derecelendirmesi",
+        "ozet": "Kurumsal Yönetim Derecelendirme Sözleşmesi Yenilemesi",
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1693535"
+      },
+      {
+        "no": 1693416,
+        "zaman": "2026-11-05T18:55:54",
+        "tur": "FR",
+        "konu": "Sorumluluk Beyanı (Konsolide)",
+        "ozet": "30 Eylül 2026 Konsolide Sorumluluk Beyanı",
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1693416"
+      },
+      {
+        "no": 1693415,
+        "zaman": "2026-11-05T18:55:30",
+        "tur": "FR",
+        "konu": "Faaliyet Raporu (Konsolide)",
+        "ozet": "30 Eylül 2026 Konsolide Ara Dönem Faaliyet Raporu",
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1693415"
+      },
+      {
+        "no": 1693414,
+        "zaman": "2026-11-05T18:55:02",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1693414"
+      },
+      {
+        "no": 1693412,
+        "zaman": "2026-11-05T18:47:17",
+        "tur": "FR",
+        "konu": "Sorumluluk Beyanı (Konsolide Olmayan)",
+        "ozet": "30 Eylül 2026 Konsolide Olmayan Sorumluluk Beyanı",
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1693412"
+      },
+      {
+        "no": 1693411,
+        "zaman": "2026-11-05T18:46:55",
+        "tur": "FR",
+        "konu": "Faaliyet Raporu (Konsolide Olmayan)",
+        "ozet": "30 Eylül 2026 Konsolide Olmayan Ara Dönem Faaliyet Raporu",
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1693411"
+      },
+      {
+        "no": 1693410,
+        "zaman": "2026-11-05T18:46:31",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1693410"
+      }
+    ],
     "YIGIT": [
       {
         "no": 1690378,
@@ -248,7 +379,7 @@
     ]
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1555,
+  "toplam_piyasa_satiri": 1838,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 7
+  "bildirimli_kod_sayisi": 8
 }
