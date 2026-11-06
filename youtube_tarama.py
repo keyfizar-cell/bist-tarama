@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_tarama.py  v2.0  (2026-11-06)
+# youtube_tarama.py  v2.1  (2026-11-06)
 # "Emir Bozkurt | Stratejik Yatirim" (@stratejik.yatirim) kanalinin EN YENI
 # videosunu bulur, Turkce transkriptini alir ve data/youtube_emir.json yazar.
 #
@@ -10,17 +10,15 @@
 # anahtari ile:
 #   VIDEO LISTESI : 1) kanal RSS  2) uploads-playlist RSS  3) YouTube Data API v3
 #                   (playlistItems.list, 1 birim/cagri; 10.000 birim/gun ucretsiz)
-#   TRANSKRIPT    : 1) youtube-transcript-api (varsa proxy)  2) Gemini API'ye
-#                   YouTube URL'si (videoyu Google kendi sunucusunda isler, IP
-#                   engeli yok; ucretsiz katman gunde 8 saat video)
+#   TRANSKRIPT    : Gemini API'ye YouTube URL'si (videoyu Google kendi
+#                   sunucusunda isler, IP engeli yok; ucretsiz katman gunde 8 saat video)
+# v2.1: youtube-transcript-api + proxy yolu kaldirildi (Actions IP'lerinden her
+#       seferinde RequestBlocked/429 veriyordu; 06.11 itibariyla Gemini calisiyor).
 # Secret'lar (GitHub -> Settings -> Secrets -> Actions):
-#   GOOGLE_API_KEY   : Google AI Studio anahtari (Gemini). Zorunlu degil ama
-#                      onerilen yol bu.
+#   GOOGLE_API_KEY   : Google AI Studio anahtari (Gemini). Transkript icin ZORUNLU.
 #   YOUTUBE_API_KEY  : (opsiyonel) Data API icin ayri anahtar; yoksa
 #                      GOOGLE_API_KEY denenir.
 #   GEMINI_MODEL     : (opsiyonel) zorla kullanilacak model adi.
-#   WEBSHARE_PROXY_USERNAME / WEBSHARE_PROXY_PASSWORD / YT_PROXY_URL (opsiyonel,
-#                      eski v1.2 proxy yolu; artik sart degil).
 # IZOLASYON (v1.2'den korunur): ana taramayi ASLA etkilemez; her yolda JSON
 # yazar, basarisizlikta onceki iyi veriyi korur, her zaman exit(0).
 import os
@@ -34,11 +32,10 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-SURUM = "2.0"
+SURUM = "2.1"
 CHANNEL_ID = "UChiWzAwOe7J67dd5PmmUnnA"
 UPLOADS_PLAYLIST = "UU" + CHANNEL_ID[2:]
 CHANNEL_ADI = "Emir Bozkurt | Stratejik Yatirim"
-DIL_ONCELIK = ["tr", "tr-TR", "en"]
 TRANSKRIPT_MAX_KARAKTER = 60000
 SON_VIDEO_BAGLAM = 8
 RSS_DENEME_BEKLEME = [0, 10, 30]  # saniye
@@ -192,40 +189,7 @@ def video_listesi():
     return [], None
 
 
-# ── 2a) TRANSKRIPT: youtube-transcript-api ──
-def _snippet_metni(snippets):
-    parcalar = []
-    for s in snippets:
-        t = getattr(s, "text", None)
-        if t is None and isinstance(s, dict):
-            t = s.get("text")
-        if t:
-            parcalar.append(t)
-    return re.sub(r"\s+", " ", " ".join(parcalar)).strip()
-
-
-def proxy_ayari():
-    ws_user = os.environ.get("WEBSHARE_PROXY_USERNAME", "").strip()
-    ws_pass = os.environ.get("WEBSHARE_PROXY_PASSWORD", "").strip()
-    if ws_user and ws_pass:
-        from youtube_transcript_api.proxies import WebshareProxyConfig
-        return WebshareProxyConfig(proxy_username=ws_user, proxy_password=ws_pass), "webshare"
-    url = os.environ.get("YT_PROXY_URL", "").strip()
-    if url:
-        from youtube_transcript_api.proxies import GenericProxyConfig
-        return GenericProxyConfig(http_url=url, https_url=url), "genel"
-    return None, None
-
-
-def transkript_api(video_id):
-    from youtube_transcript_api import YouTubeTranscriptApi
-    pcfg, ptur = proxy_ayari()
-    ytt = YouTubeTranscriptApi(proxy_config=pcfg)
-    f = ytt.fetch(video_id, languages=DIL_ONCELIK)
-    return _snippet_metni(f.snippets), getattr(f, "language_code", None), "youtube-transcript-api" + ("+" + ptur if ptur else "")
-
-
-# ── 2b) TRANSKRIPT: Gemini (YouTube URL) ──
+# ── 2) TRANSKRIPT: Gemini (YouTube URL) ──
 GEMINI_ISTEM = (
     "Bu YouTube videosundaki konusmalari TURKCE olarak yaziya dok. Kurallar: "
     "(1) 'transkript' alanina konusmaciin soylediklerini OLDUGU GIBI yaz; ozetleme, "
@@ -401,23 +365,13 @@ def main():
     else:
         hatalar = []
         try:
-            transkript, dil, kaynak = transkript_api(en_yeni["video_id"])
-            log("youtube-transcript-api: %d karakter" % len(transkript))
+            transkript, dil, kaynak, ozet, hisseler, bitis = gemini_transkript(en_yeni["url"])
             if len(transkript) < MIN_TRANSKRIPT:
-                hatalar.append("youtube-transcript-api kisa/bos (%d)" % len(transkript))
+                hatalar.append("gemini kisa/bos (%d)" % len(transkript))
                 transkript = ""
         except Exception as e:
-            hatalar.append("youtube-transcript-api: %s" % _hata_metni(e)[:160])
+            hatalar.append(_hata_metni(e)[:200])
             log(hatalar[-1])
-        if not transkript:
-            try:
-                transkript, dil, kaynak, ozet, hisseler, bitis = gemini_transkript(en_yeni["url"])
-                if len(transkript) < MIN_TRANSKRIPT:
-                    hatalar.append("gemini kisa/bos (%d)" % len(transkript))
-                    transkript = ""
-            except Exception as e:
-                hatalar.append(_hata_metni(e)[:200])
-                log(hatalar[-1])
         if not transkript:
             thata = " | ".join(hatalar) or "transkript alinamadi"
 

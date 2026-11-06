@@ -1,6 +1,7 @@
 name: YouTube Emir Bozkurt Takip
 
-# v2.0 (2026-11-06): Gemini + YouTube Data API yedekleri. GOOGLE_API_KEY secret'i eklendi.
+# v2.1 (2026-11-06): yalniz Gemini (transkript) + RSS/YouTube Data API (video listesi).
+# Harici paket gerekmez (yalniz Python standart kutuphanesi).
 on:
   workflow_run:
     workflows: ["BIST Emir Bozkurt Taraması"]
@@ -25,17 +26,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Bagimliliklar
-        run: pip install "youtube-transcript-api==1.2.4"
       - name: Taramayi calistir
         run: python youtube_tarama.py
         env:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
-          WEBSHARE_PROXY_USERNAME: ${{ secrets.WEBSHARE_PROXY_USERNAME }}
-          WEBSHARE_PROXY_PASSWORD: ${{ secrets.WEBSHARE_PROXY_PASSWORD }}
-          YT_PROXY_URL: ${{ secrets.YT_PROXY_URL }}
       - name: JSON'u commit et
         run: |
           git config user.name "github-actions[bot]"
