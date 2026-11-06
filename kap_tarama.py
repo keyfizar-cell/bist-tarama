@@ -1,7 +1,19 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.3)
+KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.4)
+
+v3.4 (2026-11-06): geri alım KÜMÜLATİF düzeltmesi (gerçek KAP belgeleriyle teşhis):
+  (1) Detay için yalnız "işlem" sınıfı değil, şirketin TÜM geri alım bildirimleri
+      (en yeni → eski) denenir. v3.3'te CANTE'nin 01.10 belgesi (ilk işlemi de içeren
+      güncelleme bildirimi) atlanıp 30.09 belgesi okunuyordu → 18.015.001 (doğrusu 25.000.000).
+  (2) ŞİRKET BEYANI öncelikli: "Ek Açıklamalar"daki "toplam ... X adet olmuş / X adede
+      ulaşmış" ve "toplam/bu payların ... sermayeye oranı %Y olmuştur" ifadeleri okunur
+      (TRALT 22.10: 160.125.000 / %5,00 — önceki programın 75 mn payı dahil; tablo yalnız
+      bu programı (85.125.000) verir). Yeni alanlar: kumulatif_kaynak
+      ("sirket_beyani" | "tablo_program"), program_kumulatif_lot, detay_bildirim_tarih,
+      detay_zincir_tutarli (tablonun "daha önce" sütunu satır satır tutarlı mı).
+  Bülten kuralı: kümülatif rakam YALNIZ kumulatif_kaynak="sirket_beyani" ise yazılır.
 
 v3.3: v3.2 ayrıştırıcısı 4 kapsam-içi (portföy+BIST30) geri-alım şirketinden 3'ünü
 çözdü; KRDMD çözülemedi. v3.3 yalnızca TANI ekler (ayrıştırma mantığı aynı):
@@ -333,6 +345,52 @@ def _buyback_detay_parse(metin: str) -> dict:
         return None
     out["azami_pay"] = _meta("azami pay")
     out["ayrilan_fon"] = _meta("ayrılan fon")
+    # zincir: daha_once[i] == daha_once[i-1] + nominal[i-1] (satır atlanmadı mı?)
+    zincir = True
+    for i in range(1, len(satirlar)):
+        onceki_n, _, _, onceki_d = satirlar[i - 1]
+        d = satirlar[i][3]
+        if d is None or onceki_d is None or abs((onceki_d + onceki_n) - d) > 0.5:
+            zincir = False
+            break
+    out["zincir_tutarli"] = zincir
+    out.update(_beyan_kumulatif(metin))
+    return out
+
+
+_BEYAN_LOT = [
+    re.compile(r"toplam(?:ı| pay adedi)?\s+([0-9]{1,3}(?:\.[0-9]{3})+(?:,[0-9]+)?|[0-9]+)\s+(?:adet|adede|TL nominal)[^.]{0,40}?(?:olmuş|ulaş)", re.I),
+]
+_BEYAN_ORAN = re.compile(
+    r"(?:toplam[^.%]{0,80}?|bu payların[^.%]{0,40}?)sermaye(?:sine|ye)?\s+oranı\s*%\s*([0-9]+(?:[.,][0-9]+)?)\s*(?:olmuş|'?[dt][ıi]r)",
+    re.I)
+
+
+def _oran_sayi(s):
+    s = s.strip()
+    if "," in s:
+        return float(s.replace(".", "").replace(",", "."))
+    return float(s)  # "%0.25" gibi noktalı ondalık
+
+
+def _beyan_kumulatif(metin: str) -> dict:
+    """Şirketin Ek Açıklamalar'da AÇIKÇA yazdığı toplam pay / sermaye oranı (yoksa None)."""
+    out = {"beyan_lot": None, "beyan_oran": None}
+    if not metin:
+        return out
+    duz = re.sub(r"\s+", " ", metin)
+    for desen in _BEYAN_LOT:
+        bul = desen.findall(duz)
+        if bul:
+            v = _tr_sayi(bul[-1])
+            if v and v > 0:
+                out["beyan_lot"] = v
+    m = _BEYAN_ORAN.findall(duz)
+    if m:
+        try:
+            out["beyan_oran"] = round(_oran_sayi(m[-1]), 5)
+        except ValueError:
+            pass
     return out
 
 
@@ -585,8 +643,9 @@ def _ga_fazi() -> None:
                     # İşlem bildirimleri (en yeni → eski; _ga_derle zaten sıraladı).
                     # Her bildirim programın TÜM geçmişini taşıdığından YALNIZ en güncel
                     # (parse edilebilen ilk) bildirim kullanılır — TOPLAMA YOK.
-                    islemler = [b for b in s["bildirimler"]
-                                if b.get("sinif") == "işlem" and b.get("no") is not None]
+                    # v3.4: tüm geri alım bildirimleri (işlem tablosu güncelleme/program
+                    # bildirimlerinde de olabilir); tablosuz belge lot=None döner → sıradaki.
+                    islemler = [b for b in s["bildirimler"] if b.get("no") is not None]
                     parse = None
                     indi = False  # en az bir belge metni geldi mi
                     for b in islemler[:GA_DETAY_DENEME]:
@@ -625,13 +684,23 @@ def _ga_fazi() -> None:
                     s["detay_durum"] = ("ok" if parse else ("satir_yok" if indi else "indirilemedi"))
                     if parse:
                         basari += 1
-                        s["kumulatif_lot"] = parse["lot"]
+                        s["program_kumulatif_lot"] = parse["lot"]
+                        s["detay_bildirim_tarih"] = parse.get("bildirim_tarih")
+                        s["detay_zincir_tutarli"] = parse.get("zincir_tutarli")
+                        if parse.get("beyan_lot"):
+                            s["kumulatif_lot"] = parse["beyan_lot"]
+                            s["kumulatif_kaynak"] = "sirket_beyani"
+                        else:
+                            s["kumulatif_lot"] = parse["lot"]
+                            s["kumulatif_kaynak"] = "tablo_program"
                         if parse.get("tutar") is not None:
                             s["kumulatif_tutar_tl"] = parse["tutar"]
                             pd = s.get("piyasa_degeri")
                             if isinstance(pd, (int, float)) and pd:
                                 s["piyasa_degeri_orani_yuzde"] = round(100.0 * parse["tutar"] / pd, 4)
-                        if parse.get("sermaye_orani") is not None:
+                        if parse.get("beyan_oran") is not None:
+                            s["sermaye_orani_yuzde"] = parse["beyan_oran"]
+                        elif parse.get("sermaye_orani") is not None:
                             s["sermaye_orani_yuzde"] = parse["sermaye_orani"]
         except Exception as e:
             cikti["notlar"].append(f"Tier-2 belge fazı hatası: {e!r}")
@@ -648,7 +717,10 @@ def _ga_fazi() -> None:
     cikti["portfoy_ozet"] = {
         k: {"toplam_bildirim": s["toplam_bildirim"], "islem_bildirim_sayisi": s["islem_bildirim_sayisi"],
             "son_bildirim_tarih": s["son_bildirim_tarih"], "kumulatif_lot": s["kumulatif_lot"],
-            "kumulatif_tutar_tl": s["kumulatif_tutar_tl"], "sermaye_orani_yuzde": s["sermaye_orani_yuzde"]}
+            "kumulatif_tutar_tl": s["kumulatif_tutar_tl"], "sermaye_orani_yuzde": s["sermaye_orani_yuzde"],
+            "kumulatif_kaynak": s.get("kumulatif_kaynak", "veri yok"),
+            "program_kumulatif_lot": s.get("program_kumulatif_lot", "veri yok"),
+            "detay_bildirim_tarih": s.get("detay_bildirim_tarih")}
         for k, s in sirketler.items() if s["portfoyde"]
     }
     if toplam_satir == 0:

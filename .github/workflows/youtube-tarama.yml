@@ -1,5 +1,6 @@
 name: YouTube Emir Bozkurt Takip
 
+# v2.0 (2026-11-06): Gemini + YouTube Data API yedekleri. GOOGLE_API_KEY secret'i eklendi.
 on:
   workflow_run:
     workflows: ["BIST Emir Bozkurt Taraması"]
@@ -16,6 +17,7 @@ concurrency:
 jobs:
   youtube:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,6 +30,9 @@ jobs:
       - name: Taramayi calistir
         run: python youtube_tarama.py
         env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
           WEBSHARE_PROXY_USERNAME: ${{ secrets.WEBSHARE_PROXY_USERNAME }}
           WEBSHARE_PROXY_PASSWORD: ${{ secrets.WEBSHARE_PROXY_PASSWORD }}
           YT_PROXY_URL: ${{ secrets.YT_PROXY_URL }}
