@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# sosyal_nabiz.py  v1.2  (2026-11-07)
+# sosyal_nabiz.py  v1.3  (2026-11-07)
 # Kucuk yatirimci nabzi (UCRETSIZ kaynaklar):
 #   (1) YouTube yorumlari: takip edilen videolar (youtube_emir/konuk/kanallar.json) + son 2 gunun en cok
 #       yorum alan "borsa" videolari -> yorumlarda gecen BIST kodlari sayilir (Data API: ~130 birim/gun).
@@ -21,7 +21,7 @@ import urllib.parse
 
 import youtube_tarama as yt
 
-SURUM = "1.2"
+SURUM = "1.3"
 OUT_PATH = os.path.join("data", "sosyal_nabiz.json")
 LATEST = os.path.join("data", "latest.json")
 ARAMA_SORGULARI = ["borsa hisse", "bist hisse analiz"]
@@ -169,6 +169,7 @@ def forum_nabiz(kodlar):
     son_hata = None
     # Google Search (grounding) ucretsiz katmanda cogu modelde 429 (kota 0). Basarisizsa bulten kendi WebSearch'u ile tarar.
     modeller = FORUM_MODELLERI + [m for m in yt.gemini_modelleri(anahtar) if m not in FORUM_MODELLERI]
+    kota_hatasi = 0
     for model in modeller:
         govde = {"contents": [{"role": "user", "parts": [{"text": FORUM_ISTEM}]}],
                  "tools": [{"google_search": {}}],
@@ -196,7 +197,11 @@ def forum_nabiz(kodlar):
                     "hisseler": hisseler if kaynaklar else [], "kaynaklar": kaynaklar[:15]}
         except Exception as e:
             son_hata = yt._hata_metni(e)
-            yt.log("Forum taramasi %s hata: %s" % (model, son_hata[:200]))  # 429'da da sonraki model denenir
+            yt.log("Forum taramasi %s hata: %s" % (model, son_hata[:200]))
+            if "429" in son_hata:
+                kota_hatasi += 1
+                if kota_hatasi >= 2:  # arama kotasi hesap genelinde yok; diger modelleri zorlama
+                    break
     return {"hata": "Gemini arama basarisiz: %s" % (son_hata or "")[:200], "ozet": [], "hisseler": [],
             "kaynaklar": []}
 
