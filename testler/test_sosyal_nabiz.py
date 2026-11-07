@@ -91,6 +91,23 @@ class Forum(unittest.TestCase):
             self.assertEqual(f["hisseler"], [])
             self.assertIn("dogrulanamaz", f["hata"])
 
+    def test_429da_sonraki_model_denenir(self):
+        import urllib.error
+        cagri = []
+
+        def post(url, govde, timeout=None):
+            cagri.append(url.split("/models/")[1].split(":")[0])
+            if len(cagri) == 1:
+                raise urllib.error.HTTPError(url, 429, "kota", {}, None)
+            return 200, json.dumps({"candidates": [{"content": {"parts": [{"text": '{"ozet": [], "hisseler": []}'}]},
+                                                    "groundingMetadata": {"groundingChunks": [{"web": {"uri": "https://u"}}]}}]})
+        with mock.patch.dict(os.environ, {"GOOGLE_API_KEY": "k"}), \
+                mock.patch.object(s.yt, "gemini_modelleri", return_value=["gemini-3-flash-preview"]), \
+                mock.patch.object(s.yt, "http_post_json", side_effect=post):
+            f = s.forum_nabiz(KODLAR)
+        self.assertEqual(cagri[:2], ["gemini-2.5-flash", "gemini-2.5-flash-lite"])
+        self.assertIsNone(f["hata"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# sosyal_nabiz.py  v1.0  (2026-11-07)
+# sosyal_nabiz.py  v1.1  (2026-11-07)
 # Kucuk yatirimci nabzi (UCRETSIZ kaynaklar):
 #   (1) YouTube yorumlari: takip edilen videolar (youtube_emir/konuk/kanallar.json) + son 2 gunun en cok
 #       yorum alan "borsa" videolari -> yorumlarda gecen BIST kodlari sayilir (Data API: ~130 birim/gun).
@@ -21,11 +21,12 @@ import urllib.parse
 
 import youtube_tarama as yt
 
-SURUM = "1.0"
+SURUM = "1.1"
 OUT_PATH = os.path.join("data", "sosyal_nabiz.json")
 LATEST = os.path.join("data", "latest.json")
 ARAMA_SORGULARI = ["borsa hisse", "bist hisse analiz"]
 ARAMA_GUN = 2
+FORUM_MODELLERI = ["gemini-2.5-flash", "gemini-2.5-flash-lite"]
 EN_FAZLA_ARAMA_VIDEO = 15
 YORUM_SAYFA = 100
 IPUCU_ESIK_YORUM = 3        # en az bu kadar FARKLI yorumda gecen kod ipucu sayilir
@@ -166,7 +167,9 @@ def forum_nabiz(kodlar):
     if not anahtar:
         return {"hata": "GOOGLE_API_KEY yok", "ozet": [], "hisseler": [], "kaynaklar": []}
     son_hata = None
-    for model in yt.gemini_modelleri(anahtar):
+    # Google Search (grounding) ucretsiz katmani 2.5 modellerinde var; Gemini 3 onizlemede 429 donuyor.
+    modeller = FORUM_MODELLERI + [m for m in yt.gemini_modelleri(anahtar) if m not in FORUM_MODELLERI]
+    for model in modeller:
         govde = {"contents": [{"role": "user", "parts": [{"text": FORUM_ISTEM}]}],
                  "tools": [{"google_search": {}}],
                  "generationConfig": {"temperature": 0, "maxOutputTokens": 4096}}
@@ -193,9 +196,7 @@ def forum_nabiz(kodlar):
                     "hisseler": hisseler if kaynaklar else [], "kaynaklar": kaynaklar[:15]}
         except Exception as e:
             son_hata = yt._hata_metni(e)
-            yt.log("Forum taramasi %s hata: %s" % (model, son_hata))
-            if "429" in son_hata:
-                break
+            yt.log("Forum taramasi %s hata: %s" % (model, son_hata[:200]))  # 429'da da sonraki model denenir
     return {"hata": "Gemini arama basarisiz: %s" % (son_hata or "")[:200], "ozet": [], "hisseler": [],
             "kaynaklar": []}
 
