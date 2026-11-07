@@ -33,13 +33,14 @@ KURALLAR = {
         "min": 25000,
         "zorunlu": ["TATİL KONTROLÜ", "📊 Günlük Portföy Bülteni — <GG.AA.YYYY>", "mcp__Gmail__send_message",
                     "{E_POSTA}", "send_later", "HARD DEADLINE", "7d · 🎥", "7e · 🎙️",
-                    "Yatırım tavsiyesi değildir", "{PORTFOY_DOSYA_ID}"],
+                    "Yatırım tavsiyesi değildir", "{PORTFOY_DOSYA_ID}", "7f · 📺",
+                    "KOÇ NOTLARI", "Yatırımcı Profili (Koç)"],
         "ek_yasak": True,
     },
     "saglik_nobeti.md": {
         "min": 6000,
         "zorunlu": ["trig_01UjjJQe3p9x4D5SZc484Ryt", "fire_trigger", "PushNotification",
-                    "Portföy Bülteni", "youtube_konuk", "youtube_kanallar", "KOÇ NOTLARI", "Yatırımcı Profili (Koç)"],
+                    "Portföy Bülteni", "youtube_konuk", "youtube_kanallar"],
         "ek_yasak": False,
     },
     "veri_kaynagi_arastirma.md": {
