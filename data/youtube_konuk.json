@@ -1,0 +1,19 @@
+{
+  "kisiler": {
+    "Işık Ökte": {
+      "ad": "Işık Ökte",
+      "not": "Not: Nisan 2026'da açıklanan Borsa İstanbul manipülasyon iddianamesinde şüpheliler arasında yer alıyor; iddianamede medya yorumlarıyla hisse yönlendirdiği iddia ediliyor (iddia, mahkeme kararı değil). Bahsettiği hisseler ihtiyatla değerlendirilmeli.",
+      "hata": "arama: HTTP 401 {\n  \"error\": {\n    \"code\": 401,\n    \"message\": \"API keys are not supported by this API. Expected OAuth2 access token or other authentication credentials that assert a principal. See https://c",
+      "son_basarili_utc": null,
+      "videolar": [],
+      "son_arama_utc": "2026-11-07T12:21:23.163941+00:00",
+      "aday_sayisi": 0
+    }
+  },
+  "hata": null,
+  "surum": "1.0",
+  "uretim_zamani_utc": "2026-11-07T12:21:23.163944+00:00",
+  "denemeler": [
+    "Işık Ökte arama hatasi: arama: HTTP 401 {\n  \"error\": {\n    \"code\": 401,\n    \"message\": \"API keys are not supported by this API. Expected OAuth2 access token or other authentication credentials that assert a principal. See https://c"
+  ]
+}
