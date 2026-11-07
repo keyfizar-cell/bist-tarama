@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# sosyal_nabiz.py  v1.1  (2026-11-07)
+# sosyal_nabiz.py  v1.2  (2026-11-07)
 # Kucuk yatirimci nabzi (UCRETSIZ kaynaklar):
 #   (1) YouTube yorumlari: takip edilen videolar (youtube_emir/konuk/kanallar.json) + son 2 gunun en cok
 #       yorum alan "borsa" videolari -> yorumlarda gecen BIST kodlari sayilir (Data API: ~130 birim/gun).
@@ -21,12 +21,12 @@ import urllib.parse
 
 import youtube_tarama as yt
 
-SURUM = "1.1"
+SURUM = "1.2"
 OUT_PATH = os.path.join("data", "sosyal_nabiz.json")
 LATEST = os.path.join("data", "latest.json")
 ARAMA_SORGULARI = ["borsa hisse", "bist hisse analiz"]
 ARAMA_GUN = 2
-FORUM_MODELLERI = ["gemini-2.5-flash", "gemini-2.5-flash-lite"]
+FORUM_MODELLERI = ["gemini-3.5-flash-lite", "gemini-3.8-flash"]  # 2.5 serisi yeni kullanicilara kapali (404)
 EN_FAZLA_ARAMA_VIDEO = 15
 YORUM_SAYFA = 100
 IPUCU_ESIK_YORUM = 3        # en az bu kadar FARKLI yorumda gecen kod ipucu sayilir
@@ -167,7 +167,7 @@ def forum_nabiz(kodlar):
     if not anahtar:
         return {"hata": "GOOGLE_API_KEY yok", "ozet": [], "hisseler": [], "kaynaklar": []}
     son_hata = None
-    # Google Search (grounding) ucretsiz katmani 2.5 modellerinde var; Gemini 3 onizlemede 429 donuyor.
+    # Google Search (grounding) ucretsiz katmanda cogu modelde 429 (kota 0). Basarisizsa bulten kendi WebSearch'u ile tarar.
     modeller = FORUM_MODELLERI + [m for m in yt.gemini_modelleri(anahtar) if m not in FORUM_MODELLERI]
     for model in modeller:
         govde = {"contents": [{"role": "user", "parts": [{"text": FORUM_ISTEM}]}],

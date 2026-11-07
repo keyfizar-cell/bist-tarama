@@ -105,7 +105,7 @@ class Forum(unittest.TestCase):
                 mock.patch.object(s.yt, "gemini_modelleri", return_value=["gemini-3-flash-preview"]), \
                 mock.patch.object(s.yt, "http_post_json", side_effect=post):
             f = s.forum_nabiz(KODLAR)
-        self.assertEqual(cagri[:2], ["gemini-2.5-flash", "gemini-2.5-flash-lite"])
+        self.assertEqual(cagri[:2], s.FORUM_MODELLERI)
         self.assertIsNone(f["hata"])
 
 
