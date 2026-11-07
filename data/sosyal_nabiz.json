@@ -8,14 +8,14 @@
         "kanal": "Emir Bozkurt",
         "kaynak": "takip",
         "video_id": "znl7qT4CDls",
-        "alinan_yorum": 6
+        "alinan_yorum": 0
       },
       {
         "baslik": "MSCI'DAN HİSSE ÇIKIŞI OLACAK MI? Yatırımcılar Hangi Hisselere Dikkat Etmeli? Işık Ökte Açıkladı",
         "kanal": "A Para",
         "kaynak": "takip",
         "video_id": "-hstCcG6RZo",
-        "alinan_yorum": 2
+        "alinan_yorum": 1
       },
       {
         "baslik": "Işık Ökte'den Altın Yatırımcılarına Kritik Uyarıları! | A Para",
@@ -71,7 +71,7 @@
         "kanal": "Kayıt Dışı İktisat",
         "kaynak": "arama",
         "video_id": "4x1Wp42Y6X4",
-        "alinan_yorum": 75
+        "alinan_yorum": 0
       },
       {
         "baslik": "420 Bin Yatırımcıya Ödeme YapıldI | Tera Mağdurları? | Mahmut Çiftçi | Ekonomi Ekranı",
@@ -127,7 +127,7 @@
         "kanal": "Dr. Başar Ergün ( EZBER DIŞI) ",
         "kaynak": "arama",
         "video_id": "9DUWwZGPCJY",
-        "alinan_yorum": 26
+        "alinan_yorum": 0
       },
       {
         "baslik": "Fatma Betül Sayan Kaya # Mizah amaçlıdır # Tutuklandı # Borsa Hırsızları # Hisse # Fon #",
@@ -151,7 +151,7 @@
         "alinan_yorum": 20
       }
     ],
-    "yorum_sayisi": 824,
+    "yorum_sayisi": 716,
     "kod_sayim": {
       "TUPRS": {
         "yorum": 3,
@@ -236,13 +236,6 @@
         ],
         "video": 1
       },
-      "THYAO": {
-        "yorum": 1,
-        "ornekler": [
-          "Zirvede satıp enflasyon döneminde mevduattan faydalanıp faizler düştüğünde hisseleri dipten toplayamazsan enflasyona yenilirsin. Yâni 0,30 pd/dd orana gelmişken"
-        ],
-        "video": 1
-      },
       "AKBNK": {
         "yorum": 1,
         "ornekler": [
@@ -257,17 +250,17 @@
         ],
         "video": 1
       },
+      "THYAO": {
+        "yorum": 1,
+        "ornekler": [
+          "Zirvede satıp enflasyon döneminde mevduattan faydalanıp faizler düştüğünde hisseleri dipten toplayamazsan enflasyona yenilirsin. Yâni 0,30 pd/dd orana gelmişken"
+        ],
+        "video": 1
+      },
       "GUBRF": {
         "yorum": 1,
         "ornekler": [
           "ahmet hocam gubrf 10 yıl tuttum 3 tl maliyetle...80 bin lot ile bekledim...altın madeni hikayesiyle tuttum...9-2,5 tl hareketini gördüm..çok az bir karla sattım"
-        ],
-        "video": 1
-      },
-      "BRYAT": {
-        "yorum": 1,
-        "ornekler": [
-          "Başar bey günaydın, BRYAT bilanço açıkladı, 2027 temettü beklentisi nasıl olur sizce? Rakamları sizin gibi yorumlayamadığum için soruyorum. Bununla ilgili bir v"
         ],
         "video": 1
       },
@@ -300,11 +293,10 @@
       "ENKAI": 1,
       "BRSAN": 1,
       "EKGYO": 1,
-      "THYAO": 1,
       "AKBNK": 1,
       "GARAN": 1,
+      "THYAO": 1,
       "GUBRF": 1,
-      "BRYAT": 1,
       "BIMAS": 1
     }
   },
@@ -352,13 +344,14 @@
       "ort_getiri_5g": null
     }
   },
-  "surum": "1.1",
-  "uretim_zamani_utc": "2026-11-07T17:40:04.852528+00:00",
+  "surum": "1.2",
+  "uretim_zamani_utc": "2026-11-07T17:41:15.159232+00:00",
   "denemeler": [
-    "Forum taramasi gemini-2.5-flash hata: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest f",
-    "Forum taramasi gemini-2.5-flash-lite hata: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash-lite is no longer available to new users. Please update your code to use models/gemini-3.5-flash-lite for th",
+    "Forum taramasi gemini-3.5-flash-lite hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog",
+    "Forum taramasi gemini-3.8-flash hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog",
     "Forum taramasi gemini-3-flash-preview hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog",
     "Forum taramasi gemini-flash-latest hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog",
+    "Forum taramasi gemini-2.5-flash hata: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest f",
     "Forum taramasi gemini-omni-flash-preview hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog",
     "Forum taramasi gemini-omni-1.2-flash hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog"
   ]
