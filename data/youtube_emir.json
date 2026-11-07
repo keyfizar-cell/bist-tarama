@@ -1,5 +1,5 @@
 {
-  "uretim_zamani_utc": "2026-11-07T12:21:23.036766+00:00",
+  "uretim_zamani_utc": "2026-11-07T13:34:43.035006+00:00",
   "kanal": "Emir Bozkurt | Stratejik Yatirim",
   "channel_id": "UChiWzAwOe7J67dd5PmmUnnA",
   "video_liste_kaynagi": "rss_kanal",
@@ -34,7 +34,7 @@
     ]
   },
   "transkript_var": true,
-  "son_basarili_utc": "2026-11-07T12:21:23.036784+00:00",
+  "son_basarili_utc": "2026-11-07T13:34:43.035031+00:00",
   "son_videolar": [
     {
       "baslik": "Tüpraş’ta Kâr Geri mi Dönüyor? Fonet’te Neler Değişti?",
@@ -80,6 +80,6 @@
   "hata": null,
   "surum": "2.2",
   "denemeler": [
-    "Gemini gemini-3-flash-preview: 15057 karakter, bitis=STOP"
+    "Ayni video icin transkript zaten var; yeniden cekilmedi."
   ]
 }
