@@ -93,8 +93,8 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 | Görev | ID | Zaman | Okur | Yazar / yapar |
 |---|---|---|---|---|
 | Sabah Portföy Brifingi | `trig_01DaVTFUontesJ7gXp78zAqV` | hafta içi 08:00 TR | latest/kap/fon/geri_alim.json, Drive portföy, web, Twelve Data (NVO, SPY/QQQ/DIA) | e-posta |
-| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim/youtube_emir.json, Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
-| BIST Tarama Sağlık Nöbeti | `trig_01KGyiz4sASMZ3jUXM67gce8` | hafta içi 00:30 TR | tüm data dosyaları, Gmail gönderilenler | push; bülten gitmediyse bülteni yeniden başlatır |
+| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
+| BIST Tarama Sağlık Nöbeti | `trig_01KGyiz4sASMZ3jUXM67gce8` | hafta içi 00:30 TR | latest/<tarih>/status + kap/geri_alim/fon/youtube_emir/youtube_konuk.json, Gmail gönderilenler | push; bülten gitmediyse bülteni yeniden başlatır |
 | BIST Veri Kaynağı Alternatif Araştırması | `trig_01ViuA5ZKASerVpJMqYkoeoz` | hafta içi 09:37 TR | tüm data dosyaları, web, pypi/github | bültenlerin EK bloğu (otomatik), e-posta, hafıza `/areas/bist-veri-hatti-alternatifleri.md` |
 
 **Bağlantılar (connector) — 06.11.2026 analizi:** Gerekli olanlar Gmail (hepsi), Google Drive
@@ -128,8 +128,8 @@ ama hiçbir göreve bağlı değil.
 
 1. `YOUTUBE_API_KEY` secret'ı eklenmeli (Google Cloud → YouTube Data API v3 etkinleştir →
    klasik API key). Eklenene kadar `youtube_konuk.json` → `hata: arama: HTTP 401`.
-2. Konuk uzman verisi (`youtube_konuk.json`) henüz hiçbir bültende gösterilmiyor; gösterim kararı
-   Alpay'ın.
+2. Akşam bülteni 7e (konuk uzman videoları) eklendi ama `YOUTUBE_API_KEY` eklenene kadar gösterecek
+   video olmayacak (alt bölüm kendiliğinden atlanır).
 3. Geri alım belgesi okunamayan kodlar: VAKBN, GARAN, GUBRF, SAHOL (`detay_durum: satir_yok`).
 4. Gereksiz bağlantıların görevlerden kaldırılması (Bölüm 5) — Alpay arayüzden yapacak.
 
@@ -139,7 +139,8 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
-| 07.11.2026 | `SISTEM_DURUMU.md` + `CLAUDE.md` eklendi; dört zamanlanmış göreve "önce bu dosyayı oku" bloğu eklendi; Araştırma görevinin (C) ve (F) bölümleri güncel duruma çekildi | Claude Code |
+| 07.11.2026 | `SISTEM_DURUMU.md` + `CLAUDE.md` eklendi; dört zamanlanmış göreve "önce bu dosyayı oku" bloğu eklendi (geri kalan metin birebir korundu); Araştırma görevinin (C) (v3.4 canlı) ve (F) (v2.2, yalnız Gemini, konuk takibi, KALDIRILANLAR, `YOUTUBE_API_KEY` notu) bölümleri ve bölüm numaraları (7e) güncel duruma çekildi | Claude Code |
+| 07.11.2026 | Akşam bültenine 7e "Konuk uzman videoları" (youtube_konuk.json) eklendi; Sağlık Nöbeti (E) adımına youtube_konuk.json bayatlık kontrolü eklendi | Başka bir Claude oturumu (12:07–12:09 UTC) |
 | 07.11.2026 | `youtube_tarama.py` v2.2 (Gemini çağrısı istem/şema/fps parametreli); `youtube_konuk.py` v1.0 + `konuk_takip.json` eklendi; iş akışına konuk adımı. Gelen v2.1 dosyası eski transkript yolunu geri getirdiği için birebir alınmadı, birleştirildi | Claude Code |
 | 06.11.2026 | `youtube_tarama.py` v2.1: youtube-transcript-api + proxy yolu kaldırıldı; iş akışından pip/proxy satırları çıktı | Claude Code |
 | 06.11.2026 | `youtube_tarama.py` v2.0 (Gemini + Data API yedeği) ve `kap_tarama.py` v3.4 (şirket beyanı kümülatif) kuruldu; `GOOGLE_API_KEY` eklendi, Gemini Actions'ta doğrulandı | Claude Code |
