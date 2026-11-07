@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_tarama.py  v2.1  (2026-11-06)
+# youtube_tarama.py  v2.2  (2026-11-07)
+# v2.2: Gemini cagrisi genellestirildi (istem/sema parametreli, videoMetadata fps=0.1 ile
+#       uzun videolarda token tasarrufu); youtube_konuk.py bu fonksiyonlari kullanir.
 # "Emir Bozkurt | Stratejik Yatirim" (@stratejik.yatirim) kanalinin EN YENI
 # videosunu bulur, Turkce transkriptini alir ve data/youtube_emir.json yazar.
 #
@@ -32,7 +34,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-SURUM = "2.1"
+SURUM = "2.2"
 CHANNEL_ID = "UChiWzAwOe7J67dd5PmmUnnA"
 UPLOADS_PLAYLIST = "UU" + CHANNEL_ID[2:]
 CHANNEL_ADI = "Emir Bozkurt | Stratejik Yatirim"
@@ -258,7 +260,7 @@ def _gemini_cevap_metni(txt):
     return metin, c.get("finishReason")
 
 
-def gemini_transkript(video_url):
+def gemini_transkript(video_url, istem=None, sema=None, fps=0.1):
     anahtar = os.environ.get("GOOGLE_API_KEY", "").strip()
     if not anahtar:
         raise RuntimeError("GOOGLE_API_KEY yok")
@@ -266,14 +268,14 @@ def gemini_transkript(video_url):
     for model in gemini_modelleri(anahtar):
         govde = {
             "contents": [{"role": "user", "parts": [
-                {"file_data": {"file_uri": video_url}},
-                {"text": GEMINI_ISTEM}]}],
+                {"fileData": {"fileUri": video_url}, "videoMetadata": {"fps": fps}},
+                {"text": istem or GEMINI_ISTEM}]}],
             "generationConfig": {
                 "temperature": 0,
                 "maxOutputTokens": 32768,
                 "mediaResolution": "MEDIA_RESOLUTION_LOW",
                 "responseMimeType": "application/json",
-                "responseSchema": GEMINI_SEMA,
+                "responseSchema": sema or GEMINI_SEMA,
             },
         }
         url = "%s/models/%s:generateContent?key=%s" % (GEMINI_TABAN, model, anahtar)
@@ -287,6 +289,9 @@ def gemini_transkript(video_url):
                 j = {"transkript": metin, "ozet": [], "bahsedilen_hisseler": []}
             tr = re.sub(r"\s+", " ", j.get("transkript") or "").strip()
             log("Gemini %s: %d karakter, bitis=%s" % (model, len(tr), bitis))
+            if sema is not None:
+                j["transkript"] = tr
+                return j, "gemini:" + model, bitis
             return tr, "tr", "gemini:" + model, j.get("ozet") or [], j.get("bahsedilen_hisseler") or [], bitis
         except urllib.error.HTTPError as e:
             son_hata = _hata_metni(e)

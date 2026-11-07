@@ -1,0 +1,13 @@
+{
+  "_aciklama": "youtube_konuk.py takip listesi. Yeni kisi eklemek icin bir blok kopyala: ad, sorgu (YouTube aramasi), eslesme (baslik/aciklamada aranacak kucuk harf parcalar), not (bultende kisinin basinda gosterilecek notr not; bossa yazilmaz).",
+  "gun_penceresi": 7,
+  "calisma_basina_en_fazla_yeni_video": 2,
+  "kisiler": [
+    {
+      "ad": "Işık Ökte",
+      "sorgu": "\"Işık Ökte\"",
+      "eslesme": ["ışık ökte", "isik okte", "ökte", "okte"],
+      "not": "Not: Nisan 2026'da açıklanan Borsa İstanbul manipülasyon iddianamesinde şüpheliler arasında yer alıyor; iddianamede medya yorumlarıyla hisse yönlendirdiği iddia ediliyor (iddia, mahkeme kararı değil). Bahsettiği hisseler ihtiyatla değerlendirilmeli."
+    }
+  ]
+}
