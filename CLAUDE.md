@@ -10,5 +10,5 @@ Kısa kurallar (ayrıntısı SISTEM_DURUMU.md Bölüm 1):
 - KALDIRILANLAR geri getirilmez (ör. youtube-transcript-api / proxy yolu).
 - Betikler ana taramayı bozmaz, her durumda JSON yazar ve `exit(0)` ile biter.
 - `data/` altını bot üretir; elle değiştirme.
-- Zamanlanmış görev talimatını değiştirmeden hemen önce yeniden oku; yalnız gereken bölümü değiştir.
+- Zamanlanmış görevlerin davranışı `gorevler/*.md` dosyalarında değiştirilir (görev her çalışmada `main`'den çeker); değişiklikten sonra `python araclar/gorev_kontrol.py` geçmeli. Görevdeki başlatıcıya/EK bloğuna dokunmadan hemen önce görevi yeniden oku.
 - Tüm yazışma Türkçe.

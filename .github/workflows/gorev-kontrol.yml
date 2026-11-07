@@ -1,0 +1,24 @@
+name: Görev Talimatı Kontrolü
+
+# gorevler/*.md zamanlanmis gorevler tarafindan her calismada main'den okunur.
+# Bozuk bir degisiklik main'e girmeden yakalansin diye push ve PR'da calisir.
+on:
+  push:
+    paths: ["gorevler/**", "araclar/gorev_kontrol.py", ".github/workflows/gorev-kontrol.yml"]
+  pull_request:
+    paths: ["gorevler/**", "araclar/gorev_kontrol.py", ".github/workflows/gorev-kontrol.yml"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  kontrol:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Talimat dosyalarini kontrol et
+        run: python araclar/gorev_kontrol.py

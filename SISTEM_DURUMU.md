@@ -19,10 +19,12 @@
    yalnız yeni işlevi güncel dosyaya eklenir. Bölüm 6'daki KALDIRILANLAR geri getirilmez.
 4. **Her değişiklikten sonra bu dosya aynı commit'te güncellenir**: Bölüm 3 sürüm tablosu
    ve Bölüm 8 değişiklik günlüğü (en yeni üstte).
-5. **Zamanlanmış görev talimatı değiştirilmeden hemen önce** görev `get_trigger` /
-   `list_triggers` ile YENİDEN okunur; talimat okunduktan sonra değiştiyse değişiklik
-   iptal edilip yeni hâl üzerinden yapılır. Yalnız gereken bölüm değişir, geri kalanı
-   birebir korunur.
+5. **Zamanlanmış görev talimatları repodadır: `gorevler/*.md`** (Aşama 1, 07.11.2026). Görevin
+   davranışı bu dosyalarda değiştirilir; her değişiklik commit'lenir ve `araclar/gorev_kontrol.py`
+   (iş akışı "Görev Talimatı Kontrolü") geçmelidir. Görevin kendisinde yalnız kısa **İNCE BAŞLATICI**
+   (metinleri: `gorevler/BASLATICILAR.md`) ve bültenlerde sondaki EK bloğu durur. Başlatıcı veya EK
+   bloğu değiştirilecekse görev hemen önce `get_trigger` ile YENİDEN okunur; okunduktan sonra
+   değiştiyse değişiklik iptal edilip yeni hâl üzerinden yapılır.
 6. Araştırma görevi bültenlerin yalnız "═══ EK ÜCRETSİZ KAYNAK ENTEGRASYONU" bloğunu
    otomatik değiştirebilir (Alpay yetkisi, 29.09.2026). O bloktan önceki metne,
    Sağlık Nöbeti'ne ve kendi talimatına dokunmaz.
@@ -62,6 +64,8 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 | `youtube_tarama.py` | **v2.2** | workflow_run + dispatch | `youtube_emir.json` | Video listesi: kanal RSS → playlist RSS → YouTube Data API. Transkript: **yalnız Gemini** (YouTube URL, `fps=0.1`). Aynı video tekrar işlenmez |
 | `youtube_konuk.py` + `konuk_takip.json` | **v1.0** | aynı iş akışında 2. adım | `youtube_konuk.json` | Konuk uzmanların (şu an: Işık Ökte) son 7 gün videoları: Data API arama + Gemini; kişi başı ≤2 yeni video/çalışma, 30 gün saklama |
 | `youtube-tarama.yml` ("YouTube Emir Bozkurt Takip") | v2.2 | workflow_run + dispatch | — | Harici paket yok (yalnız standart kütüphane) |
+| `gorevler/*.md` (4 görev talimatı) + `gorevler/BASLATICILAR.md` | 1 | — | — | Zamanlanmış görevler her çalışmada `main`'den çeker |
+| `araclar/gorev_kontrol.py` + `gorev-kontrol.yml` ("Görev Talimatı Kontrolü") | 1 | push/PR (gorevler/**) | — | Talimat dosyalarında zorunlu ifadeler, asgari uzunluk, EK bloğu yerinde mi |
 
 ### Secret'lar (GitHub → Settings → Secrets → Actions)
 | Secret | Durum | Kullanan |
@@ -89,6 +93,9 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 ---
 
 ## 5. ZAMANLANMIŞ GÖREVLER
+
+Talimat dosyaları: `gorevler/sabah_brifingi.md`, `gorevler/aksam_bulteni.md`, `gorevler/saglik_nobeti.md`,
+`gorevler/veri_kaynagi_arastirma.md`. Görevlerde yalnız İNCE BAŞLATICI (+ bültenlerde EK bloğu) var.
 
 | Görev | ID | Zaman | Okur | Yazar / yapar |
 |---|---|---|---|---|
@@ -139,6 +146,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 07.11.2026 | **Aşama 1:** dört görevin talimatı `gorevler/*.md` dosyalarına taşındı; görevlerde İNCE BAŞLATICI + (bültenlerde) EK bloğu kaldı; `araclar/gorev_kontrol.py` + "Görev Talimatı Kontrolü" iş akışı eklendi; Araştırma görevinin bülten düzenleme kontrolü başlatıcı yapısına uyarlandı | Claude Code |
 | 07.11.2026 | `SISTEM_DURUMU.md` + `CLAUDE.md` eklendi; dört zamanlanmış göreve "önce bu dosyayı oku" bloğu eklendi (geri kalan metin birebir korundu); Araştırma görevinin (C) (v3.4 canlı) ve (F) (v2.2, yalnız Gemini, konuk takibi, KALDIRILANLAR, `YOUTUBE_API_KEY` notu) bölümleri ve bölüm numaraları (7e) güncel duruma çekildi | Claude Code |
 | 07.11.2026 | Akşam bültenine 7e "Konuk uzman videoları" (youtube_konuk.json) eklendi; Sağlık Nöbeti (E) adımına youtube_konuk.json bayatlık kontrolü eklendi | Başka bir Claude oturumu (12:07–12:09 UTC) |
 | 07.11.2026 | `youtube_tarama.py` v2.2 (Gemini çağrısı istem/şema/fps parametreli); `youtube_konuk.py` v1.0 + `konuk_takip.json` eklendi; iş akışına konuk adımı. Gelen v2.1 dosyası eski transkript yolunu geri getirdiği için birebir alınmadı, birleştirildi | Claude Code |
