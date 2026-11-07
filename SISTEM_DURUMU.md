@@ -147,6 +147,11 @@ ama hiçbir göreve bağlı değil.
   07.11.2026 öğleden sonra birkaç saat talimat dosyalarında açık kaldı; git geçmişinde duruyor (geçmiş
   yeniden yazılmadı — Alpay kararı).
 - **Twelve Data:** yalnız NVO ve ABD ETF'leri için; BIST için çağrılmaz.
+- **Yatırım koçu (07.11.2026):** Akşam bülteninde "🧑‍🏫 KOÇ NOTLARI" (Piyasa Pusulası'ndan sonra). Profil Alpay'ın
+  Drive'ındaki **"Yatırımcı Profili (Koç)"** Google Docs belgesindedir; repo açık olduğu için içeriği repoya, `data/`'ya,
+  SISTEM_DURUMU'na YAZILMAZ. Görev belgeyi başlığıyla bulur. Öğrenme: Alpay bülten e-postasına "KOÇ: …" diye yanıt verir →
+  görev Gmail'de bulur → Drive aracı belge gövdesini düzenleyemediği için profili YENİ belge olarak yazar, eskisini çöpe atar.
+  Koç al/sat/miktar önerisi vermez; uyum, portföy bağlantısı, kör nokta, "kendine sor" türünde ≤4 kısa madde yazar.
 - Alpay manuel/tekrarlayan bakımdan hoşlanmaz → bakım yükünü azaltan çözüm önceliklidir.
 
 ---
@@ -158,8 +163,8 @@ ama hiçbir göreve bağlı değil.
    `calisma_basina_en_fazla_yeni_video`); kalanlar sonraki çalışmada işlenir.
 3. Geri alım belgesi okunamayan kodlar: VAKBN, GARAN, GUBRF, SAHOL (`detay_durum: satir_yok`).
 4. Gereksiz bağlantıların görevlerden kaldırılması (Bölüm 5) — Alpay arayüzden yapacak.
-5. **Yatırım koçu** (Alpay isteği 07.11.2026): video içeriklerini kişisel profile göre değerlendirip kısa
-   ipuçları veren bölüm — tasarım aşamasında. Profil repo açık olduğu için repoda TUTULMAZ (Drive'da).
+5. **Yatırım koçu** (07.11.2026 kuruldu): ilk gerçek akşam bülteninde "Koç Notları" ve profil okuma/güncelleme
+   adımlarının çalıştığı doğrulanacak.
 
 ---
 
@@ -167,6 +172,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 07.11.2026 | **Yatırım koçu:** akşam bültenine "KOÇ NOTLARI" (K1 profil okuma, K2 "KOÇ:" yanıtlarından öğrenme, K3 ≤4 ipucu); profil Drive'da "Yatırımcı Profili (Koç)" belgesi (Alpay'ın yanıtlarıyla oluşturuldu); gorev_kontrol zorunlu ifadelerine eklendi. Ek kanal takibi Actions'ta doğrulandı (Finansal Özgürlük: kanal kimliği çözüldü, 1 video Gemini ile işlendi) | Claude Code |
 | 07.11.2026 | **Ek kanal takibi:** `youtube_kanallar.py` v1.0 + `kanal_takip.json` (Finansal Özgürlük) + 7 test; iş akışı v2.3 (3. adım); akşam bültenine 7f "Takip edilen kanallar"; Sağlık Nöbeti'ne `youtube_kanallar.json` bayatlık/hata kontrolü | Claude Code |
 | 07.11.2026 | **Gizlilik düzeltmesi:** talimat dosyalarından e-posta, Drive kimliği, yedek pozisyon listesi ve gerçek işlem örneği çıkarıldı (yer tutucu); değerler görevlerin GİZLİ PARAMETRELER bloğuna taşındı; kontrol betiğine kişisel veri yasağı eklendi | Claude Code |
 | 07.11.2026 | **Aşama 2 (portföy):** `araclar/portfoy_hesapla.py` v1.0 + 9 test (kurgusal çalışma kitabı). Gerçek tabloyla yalnız oturum içinde doğrulandı (sonuçlar burada tutulmaz). Kapalı ve açık lotlar ayrı hesaplanır — eski bülten kuralı aynı kodda hem açık hem kapalı lot varsa yanlış sonuç verebiliyordu. Repo açık olduğu için portföy hesabı Actions'a taşınmadı; servis hesabı iptal | Claude Code |

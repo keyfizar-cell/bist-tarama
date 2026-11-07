@@ -39,7 +39,7 @@ KURALLAR = {
     "saglik_nobeti.md": {
         "min": 6000,
         "zorunlu": ["trig_01UjjJQe3p9x4D5SZc484Ryt", "fire_trigger", "PushNotification",
-                    "Portföy Bülteni", "youtube_konuk"],
+                    "Portföy Bülteni", "youtube_konuk", "youtube_kanallar", "KOÇ NOTLARI", "Yatırımcı Profili (Koç)"],
         "ek_yasak": False,
     },
     "veri_kaynagi_arastirma.md": {
