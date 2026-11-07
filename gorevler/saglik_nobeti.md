@@ -30,10 +30,11 @@ ADIMLAR:
    - Başka bir sorun bildirilecekse (A/B/C), bildirimin sonuna her durumda son Actions çalışmasının sonuc/zaman/url bilgisini ekle.
 
 9) (E) YAN DOSYALAR (kullanıcı kararı 06.11.2026; yalnız uyarı — yedek çalıştırma/fire_trigger YOK): Bash ile çek:
-   for f in kap geri_alim fon youtube_emir youtube_konuk; do curl -sS --max-time 30 -o /tmp/$f.json -w "$f:%{http_code}\n" "https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/$f.json?cb=$(date +%s%N)"; done
+   for f in kap geri_alim fon youtube_emir youtube_konuk youtube_kanallar; do curl -sS --max-time 30 -o /tmp/$f.json -w "$f:%{http_code}\n" "https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/$f.json?cb=$(date +%s%N)"; done
    • kap.json, geri_alim.json, fon.json: üst düzey "uretim_zamani_utc" alanının tarihi ile bugün arasındaki iş günü farkını 5. adımdaki yöntemle hesapla (tatiller hariç). Fark ≥2 → YAN DOSYA BAYAT (dosya adı + son üretim zamanı). fon.json'da hata_sayisi > basari_sayisi ise → YAN DOSYA HATALI. Bir dosya hiç çekilemezse (HTTP ≠ 200) → YAN DOSYA ERİŞİLEMEDİ.
    • youtube_emir.json: uretim_zamani_utc farkı ≥2 iş günü → YOUTUBE BAYAT. Ayrıca dosyada "son_basarili_utc" alanı VARSA (youtube_tarama.py v2.0+) ve bu tarih ile bugün arasındaki iş günü farkı ≥2 ise → YOUTUBE TRANSKRİPT YOK (hata alanının ilk 120 karakterini ekle). Alan YOKSA (eski v1.2) transkript için ayrı uyarı verme; yalnız başka bir bildirim zaten gidiyorsa sonuna "YouTube: transkript_var=<..>, hata=<ilk 80 karakter>" notu ekle.
    • youtube_konuk.json (konuk uzman takibi, 07.11.2026): dosya VARSA ve uretim_zamani_utc farkı ≥2 iş günü ise → YOUTUBE KONUK BAYAT; dosya yoksa (404) henüz kurulmamıştır → arıza SAYMA. Yeni video çıkmaması arıza değildir.
+   • youtube_kanallar.json (ek kanal takibi, 07.11.2026): dosya VARSA ve uretim_zamani_utc farkı ≥2 iş günü ise → YOUTUBE KANALLAR BAYAT; dosya yoksa (404) henüz kurulmamıştır → arıza SAYMA. Bir kanalın hata alanı 3 iş günüdür doluysa (son_basarili_utc eski) → KANAL HATASI: <ad> + hatanın ilk 80 karakteri. Yeni video çıkmaması arıza değildir.
    • Bu maddeler tek başına bülten yedek çalıştırmasını TETİKLEMEZ; yalnız bildirime eklenir.
 
 BİLDİRİM KURALI:

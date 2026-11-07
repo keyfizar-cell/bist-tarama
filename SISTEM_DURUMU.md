@@ -44,8 +44,9 @@
              └─ bitince (workflow_run) paralel:
                  ├─ "BIST KAP Bildirim Taraması"  (kap_tarama.py)  → data/kap.json, data/geri_alim.json
                  ├─ "BIST Fon Taraması"           (fon_tarama.py)  → data/fon.json
-                 ├─ "YouTube Emir Bozkurt Takip"  (youtube_tarama.py + youtube_konuk.py)
-                 │                                 → data/youtube_emir.json, data/youtube_konuk.json
+                 ├─ "YouTube Emir Bozkurt Takip"  (youtube_tarama.py + youtube_konuk.py + youtube_kanallar.py)
+                 │                                 → data/youtube_emir.json, data/youtube_konuk.json,
+                 │                                   data/youtube_kanallar.json
                  └─ "Bülten Girdisi Hazırla"      (bulten_hazirla.py; ana tarama VE KAP taraması sonrası)
                                                    → data/bulten_girdi.json
 19:05  Günlük Portföy Bülteni ── tarama inene kadar 15 dk'da bir bekler (son 23:45) → e-posta
@@ -65,7 +66,8 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 | `fon_tarama.py` + `fon-tarama.yml` | v1.0 | workflow_run + dispatch | `fon.json` | tefasmak 1.0.1 (+pytefas yedek) |
 | `youtube_tarama.py` | **v2.2** | workflow_run + dispatch | `youtube_emir.json` | Video listesi: kanal RSS → playlist RSS → YouTube Data API. Transkript: **yalnız Gemini** (YouTube URL, `fps=0.1`). Aynı video tekrar işlenmez |
 | `youtube_konuk.py` + `konuk_takip.json` | **v1.0** | aynı iş akışında 2. adım | `youtube_konuk.json` | Konuk uzmanların (şu an: Işık Ökte) son 7 gün videoları: Data API arama + Gemini; kişi başı ≤2 yeni video/çalışma, 30 gün saklama |
-| `youtube-tarama.yml` ("YouTube Emir Bozkurt Takip") | v2.2 | workflow_run + dispatch | — | Harici paket yok (yalnız standart kütüphane) |
+| `youtube_kanallar.py` + `kanal_takip.json` | **v1.0** | aynı iş akışında 3. adım | `youtube_kanallar.json` | Ek kanallar (şu an: Finansal Özgürlük @finansal_ozgurluk): kanal kimliği Data API `forHandle` ile bir kez bulunur ve saklanır; liste RSS → Data API; shorts (<3 dk) ve canlı yayın elenir; Gemini ile özet + ana mesaj + bahsedilen hisseler + konuşmacının kendi çekinceleri + içerik türü; kanal başı ≤2 yeni video/çalışma, 30 gün saklama |
+| `youtube-tarama.yml` ("YouTube Emir Bozkurt Takip") | v2.3 | workflow_run + dispatch | — | Harici paket yok (yalnız standart kütüphane) |
 | `gorevler/*.md` (4 görev talimatı) + `gorevler/BASLATICILAR.md` | 1 | — | — | Zamanlanmış görevler her çalışmada `main`'den çeker |
 | `araclar/gorev_kontrol.py` + `gorev-kontrol.yml` ("Görev Talimatı Kontrolü") | 1 | push/PR (gorevler/**) | — | Talimat dosyalarında zorunlu ifadeler, asgari uzunluk, EK bloğu yerinde mi |
 | `bulten_hazirla.py` + `bulten-hazirla.yml` ("Bülten Girdisi Hazırla") | **v1.0** | workflow_run (ana tarama, KAP) + dispatch | `bulten_girdi.json` | Aşama 2: akşam bülteninin kurallı hesapları (Emir Bozkurt 7a/7b + yakın adaylar, 7c geçmişi, BIST30, teknik plan, retail radar, geri alım özeti). Önce testler çalışır. **Bülten henüz bu dosyayı kullanmıyor** (gözlem dönemi) |
@@ -94,6 +96,7 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 | `fon.json` | `fonlar{KOD:{son_fiyat, fiyat_tarih, getiriler, icerik}}`, `basari_sayisi`, `hata_sayisi` |
 | `youtube_emir.json` | `surum`, `transkript_var`, `son_basarili_utc`, `video_liste_kaynagi`, `en_yeni_video{baslik, yayin_tarihi, url, transkript, transkript_kaynagi, ozet, bahsedilen_hisseler}`, `hata`, `denemeler` |
 | `bulten_girdi.json` | `kaynak{tarih, kapanis_verisi}`, `emir_bozkurt{7a_watchlist, 7b_diger, yakin_adaylar}`, `sinyal_gecmisi{satirlar, ozet}`, `bist30`, `teknik_plan{KOD:{giris, stop, tp1, tp2, h52_konum_yuzde, rsi, macd, tv_sinyal}}`, `retail_radar`, `geri_alim{satirlar}` (kümülatif yalnız şirket beyanıysa dolu), `hata` |
+| `youtube_kanallar.json` | `kanallar{AD:{handle, channel_id, kanal_adi, not, aday_sayisi, videolar[{baslik, yayin_tarihi, sure_dk, atlandi, ana_mesaj, ozet, bahsedilen_hisseler, konusmacinin_riskleri, icerik_turu, islendi_utc}], son_basarili_utc, hata}}` |
 | `youtube_konuk.json` | `kisiler{AD:{not, aday_sayisi, videolar[{baslik, kanal, kisi_konusuyor, atlandi, ozet, bahsedilen_hisseler}], son_basarili_utc, hata}}` |
 
 ---
@@ -106,8 +109,8 @@ Talimat dosyaları: `gorevler/sabah_brifingi.md`, `gorevler/aksam_bulteni.md`, `
 | Görev | ID | Zaman | Okur | Yazar / yapar |
 |---|---|---|---|---|
 | Sabah Portföy Brifingi | `trig_01DaVTFUontesJ7gXp78zAqV` | hafta içi 08:00 TR | latest/kap/fon/geri_alim.json, Drive portföy, web, Twelve Data (NVO, SPY/QQQ/DIA) | e-posta |
-| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
-| BIST Tarama Sağlık Nöbeti | `trig_01KGyiz4sASMZ3jUXM67gce8` | hafta içi 00:30 TR | latest/<tarih>/status + kap/geri_alim/fon/youtube_emir/youtube_konuk.json, Gmail gönderilenler | push; bülten gitmediyse bülteni yeniden başlatır |
+| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), youtube_kanallar.json (7f), Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
+| BIST Tarama Sağlık Nöbeti | `trig_01KGyiz4sASMZ3jUXM67gce8` | hafta içi 00:30 TR | latest/<tarih>/status + kap/geri_alim/fon/youtube_emir/youtube_konuk/youtube_kanallar.json, Gmail gönderilenler | push; bülten gitmediyse bülteni yeniden başlatır |
 | BIST Veri Kaynağı Alternatif Araştırması | `trig_01ViuA5ZKASerVpJMqYkoeoz` | hafta içi 09:37 TR | tüm data dosyaları, web, pypi/github | bültenlerin EK bloğu (otomatik), e-posta, hafıza `/areas/bist-veri-hatti-alternatifleri.md` |
 
 **Bağlantılar (connector) — 06.11.2026 analizi:** Gerekli olanlar Gmail (hepsi), Google Drive
@@ -155,6 +158,8 @@ ama hiçbir göreve bağlı değil.
    `calisma_basina_en_fazla_yeni_video`); kalanlar sonraki çalışmada işlenir.
 3. Geri alım belgesi okunamayan kodlar: VAKBN, GARAN, GUBRF, SAHOL (`detay_durum: satir_yok`).
 4. Gereksiz bağlantıların görevlerden kaldırılması (Bölüm 5) — Alpay arayüzden yapacak.
+5. **Yatırım koçu** (Alpay isteği 07.11.2026): video içeriklerini kişisel profile göre değerlendirip kısa
+   ipuçları veren bölüm — tasarım aşamasında. Profil repo açık olduğu için repoda TUTULMAZ (Drive'da).
 
 ---
 
@@ -162,6 +167,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 07.11.2026 | **Ek kanal takibi:** `youtube_kanallar.py` v1.0 + `kanal_takip.json` (Finansal Özgürlük) + 7 test; iş akışı v2.3 (3. adım); akşam bültenine 7f "Takip edilen kanallar"; Sağlık Nöbeti'ne `youtube_kanallar.json` bayatlık/hata kontrolü | Claude Code |
 | 07.11.2026 | **Gizlilik düzeltmesi:** talimat dosyalarından e-posta, Drive kimliği, yedek pozisyon listesi ve gerçek işlem örneği çıkarıldı (yer tutucu); değerler görevlerin GİZLİ PARAMETRELER bloğuna taşındı; kontrol betiğine kişisel veri yasağı eklendi | Claude Code |
 | 07.11.2026 | **Aşama 2 (portföy):** `araclar/portfoy_hesapla.py` v1.0 + 9 test (kurgusal çalışma kitabı). Gerçek tabloyla yalnız oturum içinde doğrulandı (sonuçlar burada tutulmaz). Kapalı ve açık lotlar ayrı hesaplanır — eski bülten kuralı aynı kodda hem açık hem kapalı lot varsa yanlış sonuç verebiliyordu. Repo açık olduğu için portföy hesabı Actions'a taşınmadı; servis hesabı iptal | Claude Code |
 | 07.11.2026 | **Aşama 2 (1. adım):** `bulten_hazirla.py` v1.0 + "Bülten Girdisi Hazırla" iş akışı + 13 birim testi + "Testler" iş akışı. 06.11 verisiyle doğrulandı: 5 sinyal (7a KTLEV; 7b GUNDG, LYDHO, HEDEF, BULGS) — taramanın 12'lik listesinden farkı bültenin ek güvenlik filtreleri (bb_alt>0, piyasa değeri ≥1 mlr). Akşam bülteni talimatı DEĞİŞMEDİ; dosya en az bir gerçek akşam doğrulandıktan sonra bağlanacak | Claude Code |

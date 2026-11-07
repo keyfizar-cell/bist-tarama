@@ -1,6 +1,7 @@
 name: YouTube Emir Bozkurt Takip
 
-# v2.2 (2026-11-07): Emir Bozkurt (youtube_tarama.py) + konuk uzman takibi (youtube_konuk.py, konuk_takip.json).
+# v2.3 (2026-11-07): Emir Bozkurt (youtube_tarama.py) + konuk uzman takibi (youtube_konuk.py, konuk_takip.json)
+#   + ek kanal takibi (youtube_kanallar.py, kanal_takip.json).
 # Secret: GOOGLE_API_KEY (opsiyonel YOUTUBE_API_KEY, GEMINI_MODEL).
 on:
   workflow_run:
@@ -38,11 +39,17 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+      - name: Ek kanal taramasi
+        run: python youtube_kanallar.py
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
       - name: JSON'u commit et
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/youtube_emir.json data/youtube_konuk.json || true
+          git add data/youtube_emir.json data/youtube_konuk.json data/youtube_kanallar.json || true
           if git diff --cached --quiet; then
             echo "Degisiklik yok."
             exit 0

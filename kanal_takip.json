@@ -1,0 +1,13 @@
+{
+  "_aciklama": "youtube_kanallar.py takip listesi (Emir Bozkurt ayri: youtube_tarama.py). Yeni kanal eklemek icin bir blok kopyala: ad (bultende gorunen ad), handle (youtube.com/@... kismi), channel_id (bos birak; ilk calismada Data API ile bulunur ve data/youtube_kanallar.json'da saklanir), not (bultende kanal basinda gosterilecek notr not; bossa yazilmaz).",
+  "gun_penceresi": 7,
+  "calisma_basina_en_fazla_yeni_video": 2,
+  "kanallar": [
+    {
+      "ad": "Finansal Özgürlük",
+      "handle": "finansal_ozgurluk",
+      "channel_id": "",
+      "not": ""
+    }
+  ]
+}
