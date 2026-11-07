@@ -1,0 +1,53 @@
+name: Sosyal Nabız
+
+# v1.0 (2026-11-07): sosyal_nabiz.py -> data/sosyal_nabiz.json
+# YouTube yorumlari (Data API) + forum/Reddit/Eksi taramasi (Gemini + Google Search) + ipucu takibi.
+# YouTube takibi bittikten sonra calisir (takip edilen videolarin yorumlari da okunur).
+# Secret: GOOGLE_API_KEY, YOUTUBE_API_KEY (opsiyonel GEMINI_MODEL).
+on:
+  workflow_run:
+    workflows: ["YouTube Emir Bozkurt Takip"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sosyal-nabiz
+  cancel-in-progress: false
+
+jobs:
+  nabiz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Sosyal nabzi olc
+        run: python sosyal_nabiz.py
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+      - name: JSON'u commit et
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/sosyal_nabiz.json || true
+          if git diff --cached --quiet; then
+            echo "Degisiklik yok."
+            exit 0
+          fi
+          git commit -m "sosyal nabiz guncelle [skip ci]" || true
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main || true
+            if git push origin HEAD:main; then echo "Push basarili."; break; fi
+            sleep 5
+          done

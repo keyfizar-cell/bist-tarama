@@ -47,6 +47,7 @@
                  ├─ "YouTube Emir Bozkurt Takip"  (youtube_tarama.py + youtube_konuk.py + youtube_kanallar.py)
                  │                                 → data/youtube_emir.json, data/youtube_konuk.json,
                  │                                   data/youtube_kanallar.json
+                 │    └─ bitince: "Sosyal Nabız" (sosyal_nabiz.py) → data/sosyal_nabiz.json
                  └─ "Bülten Girdisi Hazırla"      (bulten_hazirla.py; ana tarama VE KAP taraması sonrası)
                                                    → data/bulten_girdi.json
 19:05  Günlük Portföy Bülteni ── tarama inene kadar 15 dk'da bir bekler (son 23:45) → e-posta
@@ -66,7 +67,9 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 | `fon_tarama.py` + `fon-tarama.yml` | v1.0 | workflow_run + dispatch | `fon.json` | tefasmak 1.0.1 (+pytefas yedek) |
 | `youtube_tarama.py` | **v2.2** | workflow_run + dispatch | `youtube_emir.json` | Video listesi: kanal RSS → playlist RSS → YouTube Data API. Transkript: **yalnız Gemini** (YouTube URL, `fps=0.1`). Aynı video tekrar işlenmez |
 | `youtube_konuk.py` + `konuk_takip.json` | **v1.0** | aynı iş akışında 2. adım | `youtube_konuk.json` | Konuk uzmanların (şu an: Işık Ökte) son 7 gün videoları: Data API arama + Gemini; kişi başı ≤2 yeni video/çalışma, 30 gün saklama |
-| `youtube_kanallar.py` + `kanal_takip.json` | **v1.0** | aynı iş akışında 3. adım | `youtube_kanallar.json` | Ek kanallar (şu an: Finansal Özgürlük @finansal_ozgurluk): kanal kimliği Data API `forHandle` ile bir kez bulunur ve saklanır; liste RSS → Data API; shorts (<3 dk) ve canlı yayın elenir; Gemini ile özet + ana mesaj + bahsedilen hisseler + konuşmacının kendi çekinceleri + içerik türü; kanal başı ≤2 yeni video/çalışma, 30 gün saklama |
+| `youtube_kanallar.py` + `kanal_takip.json` | **v1.0** | aynı iş akışında 3. adım | `sosyal_nabiz.json` | `tarih`, `youtube{videolar, yorum_sayisi, kod_sayim{KOD:{yorum, video, ornekler}}, hata}`, `forum{ozet, hisseler[{kod, ne_konusuluyor, tur, kaynak}], kaynaklar, hata}`, `ipuclari[{kod, kaynaklar, isaret, kapanis, hacim_orani}]`, `ani_artis`, `gecmis_sayim` (30 gün), `ipucu_takip` (60 gün; getiri_5g/20g), `takip_ozeti` |
+| `youtube_kanallar.json` | Ek kanallar (şu an: Finansal Özgürlük @finansal_ozgurluk): kanal kimliği Data API `forHandle` ile bir kez bulunur ve saklanır; liste RSS → Data API; shorts (<3 dk) ve canlı yayın elenir; Gemini ile özet + ana mesaj + bahsedilen hisseler + konuşmacının kendi çekinceleri + içerik türü; kanal başı ≤2 yeni video/çalışma, 30 gün saklama |
+| `sosyal_nabiz.py` + `sosyal-nabiz.yml` ("Sosyal Nabız") | **v1.0** | YouTube takibi bitince (workflow_run) + dispatch | `sosyal_nabiz.json` | Ücretsiz: (1) takip edilen + son 2 günün en çok yorum alan borsa videolarının yorumlarında BIST kodu sayımı (Data API ~130 birim/gün; kelime olan kodlar yalnız #/$/"hisse" ile); (2) Gemini + Google Search ile Reddit/Ekşi/forum taraması (kaynaksız sonuç atılır); (3) ipucu işareti (hacim_orani ≥2 → 🔥) ve 5/20 işlem günü getiri karnesi. Kullanıcı adı saklanmaz |
 | `youtube-tarama.yml` ("YouTube Emir Bozkurt Takip") | v2.3 | workflow_run + dispatch | — | Harici paket yok (yalnız standart kütüphane) |
 | `gorevler/*.md` (4 görev talimatı) + `gorevler/BASLATICILAR.md` | 1 | — | — | Zamanlanmış görevler her çalışmada `main`'den çeker |
 | `araclar/gorev_kontrol.py` + `gorev-kontrol.yml` ("Görev Talimatı Kontrolü") | 1 | push/PR (gorevler/**) | — | Talimat dosyalarında zorunlu ifadeler, asgari uzunluk, EK bloğu yerinde mi |
@@ -109,8 +112,8 @@ Talimat dosyaları: `gorevler/sabah_brifingi.md`, `gorevler/aksam_bulteni.md`, `
 | Görev | ID | Zaman | Okur | Yazar / yapar |
 |---|---|---|---|---|
 | Sabah Portföy Brifingi | `trig_01DaVTFUontesJ7gXp78zAqV` | hafta içi 08:00 TR | latest/kap/fon/geri_alim.json, Drive portföy, web, Twelve Data (NVO, SPY/QQQ/DIA) | e-posta |
-| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), youtube_kanallar.json (7f), Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
-| BIST Tarama Sağlık Nöbeti | `trig_01KGyiz4sASMZ3jUXM67gce8` | hafta içi 00:30 TR | latest/<tarih>/status + kap/geri_alim/fon/youtube_emir/youtube_konuk/youtube_kanallar.json, Gmail gönderilenler | push; bülten gitmediyse bülteni yeniden başlatır |
+| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), youtube_kanallar.json (7f), sosyal_nabiz.json (8.5-4), Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
+| BIST Tarama Sağlık Nöbeti | `trig_01KGyiz4sASMZ3jUXM67gce8` | hafta içi 00:30 TR | latest/<tarih>/status + kap/geri_alim/fon/youtube_emir/youtube_konuk/youtube_kanallar/sosyal_nabiz.json, Gmail gönderilenler | push; bülten gitmediyse bülteni yeniden başlatır |
 | BIST Veri Kaynağı Alternatif Araştırması | `trig_01ViuA5ZKASerVpJMqYkoeoz` | hafta içi 09:37 TR | tüm data dosyaları, web, pypi/github | bültenlerin EK bloğu (otomatik), e-posta, hafıza `/areas/bist-veri-hatti-alternatifleri.md` |
 
 **Bağlantılar (connector) — 06.11.2026 analizi:** Gerekli olanlar Gmail (hepsi), Google Drive
@@ -146,6 +149,9 @@ ama hiçbir göreve bağlı değil.
   `araclar/gorev_kontrol.py` e-posta / Drive kimliği / pozisyon listesi görürse hata verir. Not: bu değerler
   07.11.2026 öğleden sonra birkaç saat talimat dosyalarında açık kaldı; git geçmişinde duruyor (geçmiş
   yeniden yazılmadı — Alpay kararı).
+- **Sosyal medya (07.11.2026):** X/Twitter kazınamaz; resmî X API ücretli (okunan gönderi başı ~$0,005), Grok `x_search`
+  ücretli (~$5/1.000 arama) → Alpay kararıyla ŞİMDİLİK YOK (istenirse `XAI_API_KEY` ile eklenebilir). Reddit girişsiz okuma
+  403, API onay istiyor → KULLANILMAZ; Reddit/Ekşi/forumlar Gemini + Google Search ile dolaylı taranır.
 - **Twelve Data:** yalnız NVO ve ABD ETF'leri için; BIST için çağrılmaz.
 - **Yatırım koçu (07.11.2026):** Akşam bülteninde "🧑‍🏫 KOÇ NOTLARI" (Piyasa Pusulası'ndan sonra). Profil Alpay'ın
   Drive'ındaki **"Yatırımcı Profili (Koç)"** Google Docs belgesindedir; repo açık olduğu için içeriği repoya, `data/`'ya,
@@ -175,6 +181,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 07.11.2026 | **Sosyal nabız (ücretsiz):** `sosyal_nabiz.py` v1.0 + "Sosyal Nabız" iş akışı + 9 test; akşam bülteni 8.5'e (4) "Yorum & Forum Nabzı" (🔥 konuşuluyor+hacim / 💬 yalnız konuşma / ⚠️ pompa olabilir, ipucu karnesi); koça kör nokta notu; Sağlık Nöbeti'ne bayatlık/hata kontrolü. X ve Reddit API kullanılmıyor (Bölüm 6) | Claude Code |
 | 07.11.2026 | **Koç — yatırımcılardan öğrenme:** akşam talimatına K2.5 (haftalık, kaynaklı ≤2 yöntem) + evrilme kuralı ([deneme]→[benimsendi]/[bırakıldı]); profil belgesine Bölüm 7 "Benimsenen yöntemler" (başlangıç: Marks, Druckenmiller, Dalio) eklendi | Claude Code |
 | 07.11.2026 | **Yatırım koçu:** akşam bültenine "KOÇ NOTLARI" (K1 profil okuma, K2 "KOÇ:" yanıtlarından öğrenme, K3 ≤4 ipucu); profil Drive'da "Yatırımcı Profili (Koç)" belgesi (Alpay'ın yanıtlarıyla oluşturuldu); gorev_kontrol zorunlu ifadelerine eklendi. Ek kanal takibi Actions'ta doğrulandı (Finansal Özgürlük: kanal kimliği çözüldü, 1 video Gemini ile işlendi) | Claude Code |
 | 07.11.2026 | **Ek kanal takibi:** `youtube_kanallar.py` v1.0 + `kanal_takip.json` (Finansal Özgürlük) + 7 test; iş akışı v2.3 (3. adım); akşam bültenine 7f "Takip edilen kanallar"; Sağlık Nöbeti'ne `youtube_kanallar.json` bayatlık/hata kontrolü | Claude Code |
