@@ -1,0 +1,46 @@
+name: Bülten Girdisi Hazırla
+
+# Aşama 2 (07.11.2026): akşam bülteninin kurallı hesaplarını (Emir Bozkurt sinyali,
+# 30 günlük sinyal geçmişi, BIST30, teknik plan, retail radar, geri alım özeti)
+# data/bulten_girdi.json dosyasına yazar. Ana tarama ve KAP taraması bitince çalışır
+# (geri_alim.json KAP taramasından geldiği için ikisinden sonra da tazelenir).
+on:
+  workflow_run:
+    workflows: ["BIST Emir Bozkurt Taraması", "BIST KAP Bildirim Taraması"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bulten-girdi
+  cancel-in-progress: false
+
+jobs:
+  hazirla:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Guncel main'i al
+        run: git pull --rebase origin main || true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Testler
+        run: python -m unittest discover -s testler -v
+      - name: Bulten girdisini hazirla
+        run: python bulten_hazirla.py
+      - name: JSON'u commit et
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/bulten_girdi.json || true
+          if git diff --cached --quiet; then echo "Degisiklik yok."; exit 0; fi
+          git commit -m "bulten_girdi.json guncelle [skip ci]" || true
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main || true
+            if git push origin HEAD:main; then echo "Push basarili."; break; fi
+            sleep 5
+          done
