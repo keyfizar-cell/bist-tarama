@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-11-06T15:21:53.945341+00:00",
-  "tarih": "2026-11-06",
+  "uretim_zamani_utc": "2026-11-07T12:20:32.876595+00:00",
+  "tarih": "2026-11-07",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-11-02",
+  "baslangic": "2026-11-03",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [],
@@ -63,6 +63,58 @@
     "CANTE": [],
     "ENKAI": [
       {
+        "no": 1694287,
+        "zaman": "2026-11-06T18:31:26",
+        "tur": "CA",
+        "konu": "Kar Payı Avansı Ödemesi İşlemlerine İlişkin Bildirim",
+        "ozet": "KAR PAYI AVANSI",
+        "sirket": "ENKA İNŞAAT VE SANAYİ A.Ş.",
+        "kodlar": "ENKAI",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694287"
+      },
+      {
+        "no": 1694280,
+        "zaman": "2026-11-06T18:30:48",
+        "tur": "FR",
+        "konu": "Sorumluluk Beyanı (Konsolide)",
+        "ozet": "Sorumluluk Beyanı 30.09.2026",
+        "sirket": "ENKA İNŞAAT VE SANAYİ A.Ş.",
+        "kodlar": "ENKAI",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694280"
+      },
+      {
+        "no": 1694277,
+        "zaman": "2026-11-06T18:30:31",
+        "tur": "FR",
+        "konu": "Faaliyet Raporu (Konsolide)",
+        "ozet": "Faaliyet Raporu 30.09.2026",
+        "sirket": "ENKA İNŞAAT VE SANAYİ A.Ş.",
+        "kodlar": "ENKAI",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694277"
+      },
+      {
+        "no": 1694275,
+        "zaman": "2026-11-06T18:30:12",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "ENKA İNŞAAT VE SANAYİ A.Ş.",
+        "kodlar": "ENKAI",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694275"
+      },
+      {
         "no": 1692260,
         "zaman": "2026-11-04T15:06:27",
         "tur": "ODA",
@@ -77,6 +129,71 @@
       }
     ],
     "HEKTS": [
+      {
+        "no": 1694463,
+        "zaman": "2026-11-06T21:13:57",
+        "tur": "DG",
+        "konu": "Şirket Genel Bilgi Formu",
+        "ozet": null,
+        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
+        "kodlar": "HEKTS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694463"
+      },
+      {
+        "no": 1694461,
+        "zaman": "2026-11-06T21:13:17",
+        "tur": "ODA",
+        "konu": "Özel Durum Açıklaması (Genel)",
+        "ozet": "Üst Yönetim Ataması Hakkında",
+        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
+        "kodlar": "HEKTS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694461"
+      },
+      {
+        "no": 1694459,
+        "zaman": "2026-11-06T21:12:04",
+        "tur": "FR",
+        "konu": "Sorumluluk Beyanı (Konsolide)",
+        "ozet": "Sorumluluk Beyanı",
+        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
+        "kodlar": "HEKTS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694459"
+      },
+      {
+        "no": 1694458,
+        "zaman": "2026-11-06T21:11:10",
+        "tur": "FR",
+        "konu": "Faaliyet Raporu (Konsolide)",
+        "ozet": "01.01.2026-30.09.2026 Dönemi Yönetim Kurulu Faaliyet Raporu",
+        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
+        "kodlar": "HEKTS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694458"
+      },
+      {
+        "no": 1694456,
+        "zaman": "2026-11-06T21:10:30",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
+        "kodlar": "HEKTS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694456"
+      },
       {
         "no": 1691624,
         "zaman": "2026-11-03T15:59:53",
@@ -102,19 +219,6 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1691300"
-      },
-      {
-        "no": 1691167,
-        "zaman": "2026-11-02T18:30:32",
-        "tur": "CA",
-        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-        "ozet": "TRFHEKTK2611 ISIN Kodlu Bononun Kupon Dönemine İlişkin Faiz Oranı Hakkında",
-        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
-        "kodlar": "HEKTS",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1691167"
       }
     ],
     "KRDMD": [
@@ -176,6 +280,19 @@
     ],
     "SOHOE": [],
     "TTKOM": [
+      {
+        "no": 1694263,
+        "zaman": "2026-11-06T18:27:08",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694263"
+      },
       {
         "no": 1694069,
         "zaman": "2026-11-06T18:12:38",
@@ -257,6 +374,19 @@
     ],
     "ULUUN": [
       {
+        "no": 1694402,
+        "zaman": "2026-11-06T19:36:38",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694402"
+      },
+      {
         "no": 1693455,
         "zaman": "2026-11-05T19:43:50",
         "tur": "CA",
@@ -307,19 +437,6 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1691969"
-      },
-      {
-        "no": 1691210,
-        "zaman": "2026-11-02T20:00:15",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "02.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1691210"
       }
     ],
     "VAKBN": [
@@ -431,7 +548,7 @@
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 2000,
+  "toplam_piyasa_satiri": 1764,
   "hisse_sayisi": 13,
   "bildirimli_kod_sayisi": 8
 }

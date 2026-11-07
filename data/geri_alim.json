@@ -1,6 +1,6 @@
 {
-  "uretim_zamani_utc": "2026-11-06T15:21:56.735328+00:00",
-  "tarih": "2026-11-06",
+  "uretim_zamani_utc": "2026-11-07T12:20:35.805419+00:00",
+  "tarih": "2026-11-07",
   "baslangic": "2026-09-01",
   "kaynak": "KAP (kap-client liste + BildirimPdf/Word belge dışa-aktarma)",
   "aciklama": "Tier-1 (güvenilir): bildirim listesi/sayısı/sınıfı/link. Tier-2 (ikinci yol): her 'işlem' bildiriminin KAP PDF/Word belgesinden lot/tutar/sermaye oranı; yalnız Actions'ta doğrulanır. İlk belgenin metni 'detay_ornek'te (tanı/ince ayar).",
@@ -22,8 +22,8 @@
     "kaynak": "pdf",
     "metin": "KAP'ta yayınlanma tarihi ve saati: 22.09.2026 18:32:42\nhttps://www.kap.org.tr/tr/Bildirim/1666798\nKAMUYU AYDINLATMA PLATFORMU\nTÜRKİYE VAKIFLAR BANKASI T.A.O.\nPayların Geri Alınmasına İlişkin Bildirim\nPayların Geri Alınmasına İlişkin Bildirim\nÖzet Bilgi Pay Alım Bildirimi\nYapılan Açıklama Güncelleme mi ? Evet\nYapılan Açıklama Düzeltme mi ? Hayır\nYapılan Açıklama Ertelenmiş Bir\nHayır\nAçıklama mı ?\nGeri Alım İşlemini Gerçekleştiren\nTÜRKİYE VAKIFLAR BANKASI T.A.O.\nOrtaklık\nGeri Alım İşlemine Konu Ortaklık TÜRKİYE VAKIFLAR BANKASI T.A.O.\nGeri Alım İşleminin Niteliği Geri Alım Programı Çerçevesinde\nYönetim Kurulu Karar Tarihi 20.03.2025\nVarsa Geri Alım Programının\n3 yıl\nUygulanacağı Süre\nGeri Alıma Konu Azami Pay Miktarı\n250.000.000\n(Nominal TL)\nGeri Alım İçin Ayrılan Fonun\n12.000.000.000\nToplam Tutarı (TL)\nGeri Alım İşlemlerinin Detayları\nİşlem İşleme Konu Payların Sermayeye İşlem Fiyatı (TL/ Program Çerçevesinde Daha Önce Geri Alınan Varsa Bu Paylara Bağlı\nİşleme Konu Pay\nTarihi Nominal Tutarı (TL) Oranı (%) Adet) Payların Nominal Tutarı (TL) İmtiyazlar\nD Grubu, VAKBN,\n21.05.2025 76.242 0,00077 23,24\nTREVKFB00019\nD Grubu, VAKBN,\n21.05.2025 200.000 0,00202 23,26\nTREVKFB00019\nD Grubu, VAKBN,\n21.05.2025 265.000 0,00267 23,28\nTREVKFB00019\nD Grubu, VAKBN,\n21.05.2025 35.000 0,00035 23,3\nTREVKFB00019\nD Grubu, VAKBN,\n21.05.2025 75.000 0,00076 23,32\nTREVKFB00019\nD Grubu, VAKBN,\n21.05.2025 5.000 0,00005 23,34\nTREVKFB00019\nD Grubu, VAKBN,\n21.05.2025 5.000 0,00005 23,36\nTREVKFB00019\nD Grubu, VAKBN,\n21.05.2025 30.000 0,0003 23,38\nTREVKFB00019\nD Grubu, VAKBN,\n21.05.2025 23.758 0,00024 23,46\nTREVKFB00019\nD Grubu, VAKBN,\n13.06.2025 50.000 0,0005 22,78\nTREVKFB00019\nD Grubu, VAKBN,\n13.06.2025 50.000 0,0005 22,8\nTREVKFB00019\nD Grubu, VAKBN,\n13.06.2025 50.000 0,0005 22,82\nTREVKFB00019\nD Grubu, VAKBN, 13.06.2025 50.000 0,0005 22,84\nTREVKFB00019\nD Grubu, VAKBN,\n13.06.2025 50.000 0,0005 22,86\nTREVKFB00019\nD Grubu, VAKBN,\n13.06.2025 50.000 0,0005 22,88\nTREVKFB00019\nD Grubu, VAKBN,\n13.06.2025 50.000 0,0005 22,9\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 100.000 0,00101 24,02\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 100.000 0,00101 24,04\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 300.000 0,00303 24,06\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 300.000 0,00303 24,08\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 600.000 0,00605 24,1\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 500.000 0,00504 24,12\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 400.000 0,00403 24,14\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 350.000 0,00353 24,16\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 350.000 0,00353 24,18\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 550.000 0,00555 24,2\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 350.000 0,00353 24,22\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 381.191 0,00384 24,24\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 391.048 0,00394 24,26\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 313.889 0,00317 24,28\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 787.194 0,00794 24,3\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 1.007.226 0,01016 24,32\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 829.228 0,00836 24,34\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 662.545 0,00668 24,36\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 200.000 0,00202 24,38\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 214.585 0,00216 24,4\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 586.657 0,00592 24,42\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 607.085 0,00612 24,44\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 5.185.399 0,05229 24,46\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 846.826 0,00854 24,48\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 734.816 0,00741 24,5\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 607.952 0,00613 24,52\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 700.000 0,00706 24,54\nTREVKFB00019\nD Grubu, VAKBN, 11.11.2025 500.000 0,00504 24,56\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 441.995 0,00446 24,58\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 727.224 0,00733 24,6\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 200.000 0,00202 24,62\nTREVKFB00019\nD Grubu, VAKBN,\n11.11.2025 500.000 0,00504 24,64\n"
   },
-  "toplam_piyasa_satiri": 17753,
-  "geri_alim_bildirim_sayisi": 1583,
+  "toplam_piyasa_satiri": 18034,
+  "geri_alim_bildirim_sayisi": 1613,
   "sirket_sayisi": 165,
   "sirketler": {
     "ORGE": {
@@ -231,6 +231,16 @@
       "portfoyde": false,
       "bist30": false,
       "bildirimler": [
+        {
+          "no": 1694401,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T19:36:11",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694401"
+        },
         {
           "no": 1691209,
           "tarih": "2026-11-02",
@@ -554,9 +564,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-02",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-02",
-      "toplam_bildirim": 32,
+      "toplam_bildirim": 33,
       "piyasa_degeri": 2531999969.0,
       "kapanis": 6.59,
       "kumulatif_lot": "veri yok",
@@ -2085,6 +2095,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694430,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T20:33:02",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694430"
+        },
+        {
           "no": 1693451,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T19:36:23",
@@ -2145,11 +2165,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1656933"
         }
       ],
-      "islem_bildirim_sayisi": 4,
+      "islem_bildirim_sayisi": 5,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-01",
-      "toplam_bildirim": 6,
+      "toplam_bildirim": 7,
       "piyasa_degeri": 2464000053.0,
       "kapanis": 4.75,
       "kumulatif_lot": "veri yok",
@@ -2242,6 +2262,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694268,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:28:41",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06 Kasım 2026 Tarihli Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694268"
+        },
+        {
           "no": 1693369,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T18:31:10",
@@ -2324,9 +2354,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-04",
-      "toplam_bildirim": 8,
+      "toplam_bildirim": 9,
       "piyasa_degeri": 5684034576.0,
       "kapanis": 3.36,
       "kumulatif_lot": "veri yok",
@@ -2529,6 +2559,16 @@
       "portfoyde": false,
       "bist30": false,
       "bildirimler": [
+        {
+          "no": 1694321,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:43:02",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Payların Geri Alınmasına İlişkin Bildirim",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694321"
+        },
         {
           "no": 1691963,
           "tarih": "2026-11-03",
@@ -2792,9 +2832,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-03",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-01",
-      "toplam_bildirim": 26,
+      "toplam_bildirim": 27,
       "piyasa_degeri": 5637549922.0,
       "kapanis": 7.9,
       "kumulatif_lot": "veri yok",
@@ -3681,6 +3721,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694412,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T19:57:51",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694412"
+        },
+        {
           "no": 1693441,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T19:22:25",
@@ -4041,11 +4091,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1662637"
         }
       ],
-      "islem_bildirim_sayisi": 35,
+      "islem_bildirim_sayisi": 36,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-14",
-      "toplam_bildirim": 36,
+      "toplam_bildirim": 37,
       "piyasa_degeri": 3497449746.0,
       "kapanis": 31.28,
       "kumulatif_lot": "veri yok",
@@ -4801,6 +4851,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694316,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:41:01",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Azami Pay Geri Alım Fiyatının 2026 İlk 9 Aylık Finansal Sonuçlarına Göre Güncellenmesi",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694316"
+        },
+        {
           "no": 1691120,
           "tarih": "2026-11-02",
           "zaman": "2026-11-02T18:12:13",
@@ -4903,9 +4963,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-02",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-21",
-      "toplam_bildirim": 10,
+      "toplam_bildirim": 11,
       "piyasa_degeri": 1743235486.0,
       "kapanis": 11.66,
       "kumulatif_lot": "veri yok",
@@ -5704,6 +5764,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694271,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:29:06",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Payların Geri Alınmasına İlşikin Bildirim",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694271"
+        },
+        {
           "no": 1692556,
           "tarih": "2026-11-04",
           "zaman": "2026-11-04T18:12:41",
@@ -5936,9 +6006,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-04",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-21",
-      "toplam_bildirim": 23,
+      "toplam_bildirim": 24,
       "piyasa_degeri": 8009999871.0,
       "kapanis": 1.87,
       "kumulatif_lot": "veri yok",
@@ -6599,6 +6669,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694414,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T20:04:17",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Pay Geri Alım İşlemi",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694414"
+        },
+        {
           "no": 1691848,
           "tarih": "2026-11-03",
           "zaman": "2026-11-03T18:21:23",
@@ -6711,9 +6791,9 @@
       ],
       "islem_bildirim_sayisi": 11,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-03",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-21",
-      "toplam_bildirim": 11,
+      "toplam_bildirim": 12,
       "piyasa_degeri": 1787583107.0,
       "kapanis": 3.22,
       "kumulatif_lot": "veri yok",
@@ -6727,6 +6807,16 @@
       "portfoyde": false,
       "bist30": false,
       "bildirimler": [
+        {
+          "no": 1694238,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:22:47",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "6.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694238"
+        },
         {
           "no": 1691843,
           "tarih": "2026-11-03",
@@ -7018,11 +7108,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1664409"
         }
       ],
-      "islem_bildirim_sayisi": 28,
+      "islem_bildirim_sayisi": 29,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-03",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-17",
-      "toplam_bildirim": 29,
+      "toplam_bildirim": 30,
       "piyasa_degeri": 9086999702.0,
       "kapanis": 2.39,
       "kumulatif_lot": "veri yok",
@@ -7405,6 +7495,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694325,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:47:13",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 tarihli Pay Geri Alım İşlemleri",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694325"
+        },
+        {
           "no": 1693436,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T19:06:13",
@@ -7595,11 +7695,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1665471"
         }
       ],
-      "islem_bildirim_sayisi": 19,
+      "islem_bildirim_sayisi": 20,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-18",
-      "toplam_bildirim": 19,
+      "toplam_bildirim": 20,
       "piyasa_degeri": 5486453304.0,
       "kapanis": 40.6,
       "kumulatif_lot": "veri yok",
@@ -7783,6 +7883,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694254,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:25:29",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Payların Geri Alınmasına İlişkin Bildirim",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694254"
+        },
+        {
           "no": 1693330,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T18:18:04",
@@ -7905,9 +8015,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-21",
-      "toplam_bildirim": 12,
+      "toplam_bildirim": 13,
       "piyasa_degeri": 22696628247.0,
       "kapanis": 48.8,
       "kumulatif_lot": "veri yok",
@@ -8429,6 +8539,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694395,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T19:26:34",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694395"
+        },
+        {
           "no": 1691924,
           "tarih": "2026-11-03",
           "zaman": "2026-11-03T19:08:53",
@@ -8679,11 +8799,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1664205"
         }
       ],
-      "islem_bildirim_sayisi": 24,
+      "islem_bildirim_sayisi": 25,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-03",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-16",
-      "toplam_bildirim": 25,
+      "toplam_bildirim": 26,
       "piyasa_degeri": 27900484944.0,
       "kapanis": 36.18,
       "kumulatif_lot": "veri yok",
@@ -9094,6 +9214,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694365,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T19:01:58",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Payların Geri Alınmasına İlişkin Bildirim",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694365"
+        },
+        {
           "no": 1693446,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T19:28:02",
@@ -9286,9 +9416,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 3,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-17",
-      "toplam_bildirim": 19,
+      "toplam_bildirim": 20,
       "piyasa_degeri": 11158300000.0,
       "kapanis": 119.5,
       "kumulatif_lot": "veri yok",
@@ -9669,6 +9799,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694244,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:23:48",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694244"
+        },
+        {
           "no": 1693359,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T18:28:12",
@@ -9719,11 +9859,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1669162"
         }
       ],
-      "islem_bildirim_sayisi": 3,
+      "islem_bildirim_sayisi": 4,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-28",
-      "toplam_bildirim": 5,
+      "toplam_bildirim": 6,
       "piyasa_degeri": 1353600037.0,
       "kapanis": 5.94,
       "kumulatif_lot": "veri yok",
@@ -9895,6 +10035,16 @@
       "portfoyde": false,
       "bist30": false,
       "bildirimler": [
+        {
+          "no": 1694258,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:25:57",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06/11/2026 Tarihli Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694258"
+        },
         {
           "no": 1692601,
           "tarih": "2026-11-04",
@@ -10078,9 +10228,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-04",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-23",
-      "toplam_bildirim": 18,
+      "toplam_bildirim": 19,
       "piyasa_degeri": 1604351972.0,
       "kapanis": 6.61,
       "kumulatif_lot": "veri yok",
@@ -10262,6 +10412,16 @@
       "portfoyde": false,
       "bist30": false,
       "bildirimler": [
+        {
+          "no": 1694235,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:22:31",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hakkında",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694235"
+        },
         {
           "no": 1693356,
           "tarih": "2026-11-05",
@@ -10473,11 +10633,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1666708"
         }
       ],
-      "islem_bildirim_sayisi": 19,
+      "islem_bildirim_sayisi": 20,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-22",
-      "toplam_bildirim": 21,
+      "toplam_bildirim": 22,
       "piyasa_degeri": 1831500000.0,
       "kapanis": 5.68,
       "kumulatif_lot": "veri yok",
@@ -10491,6 +10651,16 @@
       "portfoyde": false,
       "bist30": false,
       "bildirimler": [
+        {
+          "no": 1694293,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:31:51",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694293"
+        },
         {
           "no": 1692689,
           "tarih": "2026-11-04",
@@ -10632,11 +10802,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1667837"
         }
       ],
-      "islem_bildirim_sayisi": 13,
+      "islem_bildirim_sayisi": 14,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-04",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-24",
-      "toplam_bildirim": 14,
+      "toplam_bildirim": 15,
       "piyasa_degeri": 8593750000.0,
       "kapanis": 72.8,
       "kumulatif_lot": "veri yok",
@@ -11228,6 +11398,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694474,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T21:51:09",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694474"
+        },
+        {
           "no": 1693350,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T18:23:28",
@@ -11390,9 +11570,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-28",
-      "toplam_bildirim": 16,
+      "toplam_bildirim": 17,
       "piyasa_degeri": 7223762298.0,
       "kapanis": 6.57,
       "kumulatif_lot": "veri yok",
@@ -13138,6 +13318,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694404,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T19:42:24",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694404"
+        },
+        {
           "no": 1692758,
           "tarih": "2026-11-04",
           "zaman": "2026-11-04T19:23:26",
@@ -13348,11 +13538,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1672621"
         }
       ],
-      "islem_bildirim_sayisi": 20,
+      "islem_bildirim_sayisi": 21,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-04",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-10-05",
-      "toplam_bildirim": 21,
+      "toplam_bildirim": 22,
       "piyasa_degeri": 2775069934.0,
       "kapanis": 7.35,
       "kumulatif_lot": "veri yok",
@@ -13367,6 +13557,30 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694402,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T19:36:38",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694402",
+          "detay": {
+            "lot": 22599773.0,
+            "tutar": 146889817.82,
+            "sermaye_orani": 3.01391,
+            "satir": 273,
+            "azami_pay": 75000000.0,
+            "ayrilan_fon": 525000000.0,
+            "zincir_tutarli": false,
+            "beyan_lot": null,
+            "beyan_oran": null,
+            "kaynak": "pdf",
+            "bildirim_no": 1694402,
+            "bildirim_tarih": "2026-11-06"
+          }
+        },
+        {
           "no": 1692748,
           "tarih": "2026-11-04",
           "zaman": "2026-11-04T19:18:38",
@@ -13374,21 +13588,7 @@
           "konu": "Payların Geri Alınmasına İlişkin Bildirim",
           "ozet": "04.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
           "sinif": "işlem",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1692748",
-          "detay": {
-            "lot": 22360965.0,
-            "tutar": 145419984.38,
-            "sermaye_orani": 2.98206,
-            "satir": 267,
-            "azami_pay": 75000000.0,
-            "ayrilan_fon": 525000000.0,
-            "zincir_tutarli": false,
-            "beyan_lot": null,
-            "beyan_oran": null,
-            "kaynak": "pdf",
-            "bildirim_no": 1692748,
-            "bildirim_tarih": "2026-11-04"
-          }
+          "url": "https://www.kap.org.tr/tr/Bildirim/1692748"
         },
         {
           "no": 1691969,
@@ -13591,20 +13791,20 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1672620"
         }
       ],
-      "islem_bildirim_sayisi": 20,
+      "islem_bildirim_sayisi": 21,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-04",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-10-05",
-      "toplam_bildirim": 21,
+      "toplam_bildirim": 22,
       "piyasa_degeri": 4676993286.0,
       "kapanis": 6.33,
-      "kumulatif_lot": 22360965.0,
-      "kumulatif_tutar_tl": 145419984.38,
-      "sermaye_orani_yuzde": 2.98206,
-      "piyasa_degeri_orani_yuzde": 3.1093,
+      "kumulatif_lot": 22599773.0,
+      "kumulatif_tutar_tl": 146889817.82,
+      "sermaye_orani_yuzde": 3.01391,
+      "piyasa_degeri_orani_yuzde": 3.1407,
       "detay_durum": "ok",
-      "program_kumulatif_lot": 22360965.0,
-      "detay_bildirim_tarih": "2026-11-04",
+      "program_kumulatif_lot": 22599773.0,
+      "detay_bildirim_tarih": "2026-11-06",
       "detay_zincir_tutarli": false,
       "kumulatif_kaynak": "tablo_program"
     },
@@ -14836,6 +15036,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694309,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:35:50",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694309"
+        },
+        {
           "no": 1693392,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T18:40:36",
@@ -15088,9 +15298,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-30",
-      "toplam_bildirim": 25,
+      "toplam_bildirim": 26,
       "piyasa_degeri": null,
       "kapanis": null,
       "kumulatif_lot": "veri yok",
@@ -15105,6 +15315,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694309,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:35:50",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694309"
+        },
+        {
           "no": 1693392,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T18:40:36",
@@ -15357,9 +15577,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-09-30",
-      "toplam_bildirim": 25,
+      "toplam_bildirim": 26,
       "piyasa_degeri": 1774237507.0,
       "kapanis": 4.75,
       "kumulatif_lot": "veri yok",
@@ -15691,6 +15911,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694397,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T19:28:04",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Payların Geri Alınmasına İlişkin Bildirim",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694397"
+        },
+        {
           "no": 1693354,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T18:26:49",
@@ -15853,9 +16083,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-10-02",
-      "toplam_bildirim": 16,
+      "toplam_bildirim": 17,
       "piyasa_degeri": 12953999758.0,
       "kapanis": 21.48,
       "kumulatif_lot": "veri yok",
@@ -15869,6 +16099,16 @@
       "portfoyde": false,
       "bist30": false,
       "bildirimler": [
+        {
+          "no": 1694481,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T22:18:26",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694481"
+        },
         {
           "no": 1693292,
           "tarih": "2026-11-05",
@@ -16040,11 +16280,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1670756"
         }
       ],
-      "islem_bildirim_sayisi": 16,
+      "islem_bildirim_sayisi": 17,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-10-01",
-      "toplam_bildirim": 17,
+      "toplam_bildirim": 18,
       "piyasa_degeri": 3221999931.0,
       "kapanis": 21.12,
       "kumulatif_lot": "veri yok",
@@ -16107,6 +16347,16 @@
       "portfoyde": false,
       "bist30": false,
       "bildirimler": [
+        {
+          "no": 1694335,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:51:42",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Payların Geri Alınmasına İlişkin Bildirim",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694335"
+        },
         {
           "no": 1691845,
           "tarih": "2026-11-03",
@@ -16290,9 +16540,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-03",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-10-02",
-      "toplam_bildirim": 18,
+      "toplam_bildirim": 19,
       "piyasa_degeri": 5271713859.0,
       "kapanis": 47.64,
       "kumulatif_lot": "veri yok",
@@ -17616,6 +17866,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694464,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T21:14:00",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694464"
+        },
+        {
           "no": 1693503,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T22:59:01",
@@ -17698,9 +17958,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-10-19",
-      "toplam_bildirim": 8,
+      "toplam_bildirim": 9,
       "piyasa_degeri": 22405816928.0,
       "kapanis": 50.1,
       "kumulatif_lot": "veri yok",
@@ -18278,6 +18538,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694310,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:36:58",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 Tarihli Pay Geri Alım İşlemleri",
+          "sinif": "işlem",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694310"
+        },
+        {
           "no": 1693374,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T18:35:40",
@@ -18378,11 +18648,11 @@
           "url": "https://www.kap.org.tr/tr/Bildirim/1683695"
         }
       ],
-      "islem_bildirim_sayisi": 9,
+      "islem_bildirim_sayisi": 10,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-10-19",
-      "toplam_bildirim": 10,
+      "toplam_bildirim": 11,
       "piyasa_degeri": 12494400000.0,
       "kapanis": 92.9,
       "kumulatif_lot": "veri yok",
@@ -18525,6 +18795,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694440,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T20:50:21",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "6 Kasım 2026 Tarihli Pay Geri Alım İşlemlerine İlişkin Bildirim",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694440"
+        },
+        {
           "no": 1690374,
           "tarih": "2026-11-01",
           "zaman": "2026-11-01T17:14:12",
@@ -18567,9 +18847,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 0,
-      "son_bildirim_tarih": "2026-11-01",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-10-23",
-      "toplam_bildirim": 4,
+      "toplam_bildirim": 5,
       "piyasa_degeri": 4980122536.0,
       "kapanis": 12.85,
       "kumulatif_lot": "veri yok",
@@ -18831,6 +19111,16 @@
       "bist30": false,
       "bildirimler": [
         {
+          "no": 1694358,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T18:59:30",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "06.11.2026 tarihhli Pay geri alım işlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694358"
+        },
+        {
           "no": 1693351,
           "tarih": "2026-11-05",
           "zaman": "2026-11-05T18:23:30",
@@ -18893,9 +19183,9 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 2,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-10-23",
-      "toplam_bildirim": 6,
+      "toplam_bildirim": 7,
       "piyasa_degeri": 4934999800.0,
       "kapanis": 2.43,
       "kumulatif_lot": "veri yok",
@@ -19274,111 +19564,22 @@
       "sermaye_orani_yuzde": "veri yok",
       "piyasa_degeri_orani_yuzde": "veri yok"
     },
-    "GARAN": {
-      "kod": "GARAN",
-      "sirket": "TÜRKİYE GARANTİ BANKASI A.Ş.",
-      "portfoyde": false,
-      "bist30": true,
-      "bildirimler": [
-        {
-          "no": 1693480,
-          "tarih": "2026-11-05",
-          "zaman": "2026-11-05T20:49:20",
-          "tur": "CA",
-          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-          "ozet": "Günlük Pay Geri Alım İşlemleri",
-          "sinif": "diğer",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1693480"
-        },
-        {
-          "no": 1692814,
-          "tarih": "2026-11-04",
-          "zaman": "2026-11-04T20:10:36",
-          "tur": "CA",
-          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-          "ozet": "Günlük Pay Geri Alım İşlemleri",
-          "sinif": "diğer",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1692814"
-        },
-        {
-          "no": 1691943,
-          "tarih": "2026-11-03",
-          "zaman": "2026-11-03T19:54:06",
-          "tur": "CA",
-          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-          "ozet": "Pay Geri Alım Programı Başlatılması",
-          "sinif": "program/karar",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1691943"
-        }
-      ],
-      "islem_bildirim_sayisi": 0,
-      "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-05",
-      "ilk_bildirim_tarih": "2026-11-03",
-      "toplam_bildirim": 3,
-      "piyasa_degeri": 577500000000.0,
-      "kapanis": 144.3,
-      "kumulatif_lot": "veri yok",
-      "kumulatif_tutar_tl": "veri yok",
-      "sermaye_orani_yuzde": "veri yok",
-      "piyasa_degeri_orani_yuzde": "veri yok",
-      "detay_durum": "satir_yok"
-    },
-    "TGB": {
-      "kod": "TGB",
-      "sirket": "TÜRKİYE GARANTİ BANKASI A.Ş.",
-      "portfoyde": false,
-      "bist30": false,
-      "bildirimler": [
-        {
-          "no": 1693480,
-          "tarih": "2026-11-05",
-          "zaman": "2026-11-05T20:49:20",
-          "tur": "CA",
-          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-          "ozet": "Günlük Pay Geri Alım İşlemleri",
-          "sinif": "diğer",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1693480"
-        },
-        {
-          "no": 1692814,
-          "tarih": "2026-11-04",
-          "zaman": "2026-11-04T20:10:36",
-          "tur": "CA",
-          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-          "ozet": "Günlük Pay Geri Alım İşlemleri",
-          "sinif": "diğer",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1692814"
-        },
-        {
-          "no": 1691943,
-          "tarih": "2026-11-03",
-          "zaman": "2026-11-03T19:54:06",
-          "tur": "CA",
-          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-          "ozet": "Pay Geri Alım Programı Başlatılması",
-          "sinif": "program/karar",
-          "url": "https://www.kap.org.tr/tr/Bildirim/1691943"
-        }
-      ],
-      "islem_bildirim_sayisi": 0,
-      "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-05",
-      "ilk_bildirim_tarih": "2026-11-03",
-      "toplam_bildirim": 3,
-      "piyasa_degeri": null,
-      "kapanis": null,
-      "kumulatif_lot": "veri yok",
-      "kumulatif_tutar_tl": "veri yok",
-      "sermaye_orani_yuzde": "veri yok",
-      "piyasa_degeri_orani_yuzde": "veri yok"
-    },
     "DOFER": {
       "kod": "DOFER",
       "sirket": "DOFER YAPI MALZEMELERİ SANAYİ VE TİCARET A.Ş.",
       "portfoyde": false,
       "bist30": false,
       "bildirimler": [
+        {
+          "no": 1694424,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T20:26:01",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Payların Geri Alınması İşlemi hk.",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694424"
+        },
         {
           "no": 1693472,
           "tarih": "2026-11-05",
@@ -19402,11 +19603,130 @@
       ],
       "islem_bildirim_sayisi": 0,
       "program_bildirim_sayisi": 1,
-      "son_bildirim_tarih": "2026-11-05",
+      "son_bildirim_tarih": "2026-11-06",
       "ilk_bildirim_tarih": "2026-11-03",
-      "toplam_bildirim": 2,
+      "toplam_bildirim": 3,
       "piyasa_degeri": 1048657470.0000001,
       "kapanis": 18.32,
+      "kumulatif_lot": "veri yok",
+      "kumulatif_tutar_tl": "veri yok",
+      "sermaye_orani_yuzde": "veri yok",
+      "piyasa_degeri_orani_yuzde": "veri yok"
+    },
+    "GARAN": {
+      "kod": "GARAN",
+      "sirket": "TÜRKİYE GARANTİ BANKASI A.Ş.",
+      "portfoyde": false,
+      "bist30": true,
+      "bildirimler": [
+        {
+          "no": 1694394,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T19:25:16",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Günlük Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694394"
+        },
+        {
+          "no": 1693480,
+          "tarih": "2026-11-05",
+          "zaman": "2026-11-05T20:49:20",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Günlük Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1693480"
+        },
+        {
+          "no": 1692814,
+          "tarih": "2026-11-04",
+          "zaman": "2026-11-04T20:10:36",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Günlük Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1692814"
+        },
+        {
+          "no": 1691943,
+          "tarih": "2026-11-03",
+          "zaman": "2026-11-03T19:54:06",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Pay Geri Alım Programı Başlatılması",
+          "sinif": "program/karar",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1691943"
+        }
+      ],
+      "islem_bildirim_sayisi": 0,
+      "program_bildirim_sayisi": 1,
+      "son_bildirim_tarih": "2026-11-06",
+      "ilk_bildirim_tarih": "2026-11-03",
+      "toplam_bildirim": 4,
+      "piyasa_degeri": 577500000000.0,
+      "kapanis": 144.3,
+      "kumulatif_lot": "veri yok",
+      "kumulatif_tutar_tl": "veri yok",
+      "sermaye_orani_yuzde": "veri yok",
+      "piyasa_degeri_orani_yuzde": "veri yok",
+      "detay_durum": "satir_yok"
+    },
+    "TGB": {
+      "kod": "TGB",
+      "sirket": "TÜRKİYE GARANTİ BANKASI A.Ş.",
+      "portfoyde": false,
+      "bist30": false,
+      "bildirimler": [
+        {
+          "no": 1694394,
+          "tarih": "2026-11-06",
+          "zaman": "2026-11-06T19:25:16",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Günlük Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1694394"
+        },
+        {
+          "no": 1693480,
+          "tarih": "2026-11-05",
+          "zaman": "2026-11-05T20:49:20",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Günlük Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1693480"
+        },
+        {
+          "no": 1692814,
+          "tarih": "2026-11-04",
+          "zaman": "2026-11-04T20:10:36",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Günlük Pay Geri Alım İşlemleri",
+          "sinif": "diğer",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1692814"
+        },
+        {
+          "no": 1691943,
+          "tarih": "2026-11-03",
+          "zaman": "2026-11-03T19:54:06",
+          "tur": "CA",
+          "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+          "ozet": "Pay Geri Alım Programı Başlatılması",
+          "sinif": "program/karar",
+          "url": "https://www.kap.org.tr/tr/Bildirim/1691943"
+        }
+      ],
+      "islem_bildirim_sayisi": 0,
+      "program_bildirim_sayisi": 1,
+      "son_bildirim_tarih": "2026-11-06",
+      "ilk_bildirim_tarih": "2026-11-03",
+      "toplam_bildirim": 4,
+      "piyasa_degeri": null,
+      "kapanis": null,
       "kumulatif_lot": "veri yok",
       "kumulatif_tutar_tl": "veri yok",
       "sermaye_orani_yuzde": "veri yok",
@@ -19624,15 +19944,15 @@
       "detay_bildirim_tarih": "2026-10-26"
     },
     "ULUUN": {
-      "toplam_bildirim": 21,
-      "islem_bildirim_sayisi": 20,
-      "son_bildirim_tarih": "2026-11-04",
-      "kumulatif_lot": 22360965.0,
-      "kumulatif_tutar_tl": 145419984.38,
-      "sermaye_orani_yuzde": 2.98206,
+      "toplam_bildirim": 22,
+      "islem_bildirim_sayisi": 21,
+      "son_bildirim_tarih": "2026-11-06",
+      "kumulatif_lot": 22599773.0,
+      "kumulatif_tutar_tl": 146889817.82,
+      "sermaye_orani_yuzde": 3.01391,
       "kumulatif_kaynak": "tablo_program",
-      "program_kumulatif_lot": 22360965.0,
-      "detay_bildirim_tarih": "2026-11-04"
+      "program_kumulatif_lot": 22599773.0,
+      "detay_bildirim_tarih": "2026-11-06"
     },
     "CANTE": {
       "toplam_bildirim": 3,
