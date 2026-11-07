@@ -151,6 +151,9 @@ ama hiçbir göreve bağlı değil.
   Drive'ındaki **"Yatırımcı Profili (Koç)"** Google Docs belgesindedir; repo açık olduğu için içeriği repoya, `data/`'ya,
   SISTEM_DURUMU'na YAZILMAZ. Görev belgeyi başlığıyla bulur. Öğrenme: Alpay bülten e-postasına "KOÇ: …" diye yanıt verir →
   görev Gmail'de bulur → Drive aracı belge gövdesini düzenleyemediği için profili YENİ belge olarak yazar, eskisini çöpe atar.
+  Koç ayrıca haftanın son iş günü videolardaki ve tanınmış yatırımcıların (son 3 ay, kaynaklı) YÖNTEMLERİNDEN en fazla 2'sini
+  profilin Bölüm 7'sine [deneme] olarak ekler; Alpay'ın "KOÇ: benimse/bırak" yanıtına göre [benimsendi]/[bırakıldı] olur
+  (Alpay'ın tercihi her zaman önce gelir). Notlarda bu yöntemler düşünme merceği olarak kullanılır.
   Koç al/sat/miktar önerisi vermez; uyum, portföy bağlantısı, kör nokta, "kendine sor" türünde ≤4 kısa madde yazar.
 - Alpay manuel/tekrarlayan bakımdan hoşlanmaz → bakım yükünü azaltan çözüm önceliklidir.
 
@@ -172,6 +175,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 07.11.2026 | **Koç — yatırımcılardan öğrenme:** akşam talimatına K2.5 (haftalık, kaynaklı ≤2 yöntem) + evrilme kuralı ([deneme]→[benimsendi]/[bırakıldı]); profil belgesine Bölüm 7 "Benimsenen yöntemler" (başlangıç: Marks, Druckenmiller, Dalio) eklendi | Claude Code |
 | 07.11.2026 | **Yatırım koçu:** akşam bültenine "KOÇ NOTLARI" (K1 profil okuma, K2 "KOÇ:" yanıtlarından öğrenme, K3 ≤4 ipucu); profil Drive'da "Yatırımcı Profili (Koç)" belgesi (Alpay'ın yanıtlarıyla oluşturuldu); gorev_kontrol zorunlu ifadelerine eklendi. Ek kanal takibi Actions'ta doğrulandı (Finansal Özgürlük: kanal kimliği çözüldü, 1 video Gemini ile işlendi) | Claude Code |
 | 07.11.2026 | **Ek kanal takibi:** `youtube_kanallar.py` v1.0 + `kanal_takip.json` (Finansal Özgürlük) + 7 test; iş akışı v2.3 (3. adım); akşam bültenine 7f "Takip edilen kanallar"; Sağlık Nöbeti'ne `youtube_kanallar.json` bayatlık/hata kontrolü | Claude Code |
 | 07.11.2026 | **Gizlilik düzeltmesi:** talimat dosyalarından e-posta, Drive kimliği, yedek pozisyon listesi ve gerçek işlem örneği çıkarıldı (yer tutucu); değerler görevlerin GİZLİ PARAMETRELER bloğuna taşındı; kontrol betiğine kişisel veri yasağı eklendi | Claude Code |
