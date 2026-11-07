@@ -137,6 +137,12 @@ ama hiçbir göreve bağlı değil.
   günlüğüne, testlere veya bu belgeye yazılmaz; portföy hesabı yalnız zamanlanmış görevin kendi oturumunda
   `araclar/portfoy_hesapla.py` ile yapılır. Testler yalnız kurgusal veri kullanır. (Bu nedenle Actions için
   kurulan Google servis hesabı `GDRIVE_SA_JSON` iptal edildi.)
+- **Kişisel değerler (07.11.2026):** e-posta adresi, portföy tablosu Drive kimliği ve yedek pozisyon listesi
+  talimat dosyalarında `{E_POSTA}`, `{PORTFOY_DOSYA_ID}`, `{YEDEK_LISTE}` yer tutucularıyla geçer; gerçek
+  değerler yalnız görevlerin GİZLİ PARAMETRELER bloğundadır (`gorevler/BASLATICILAR.md`).
+  `araclar/gorev_kontrol.py` e-posta / Drive kimliği / pozisyon listesi görürse hata verir. Not: bu değerler
+  07.11.2026 öğleden sonra birkaç saat talimat dosyalarında açık kaldı; git geçmişinde duruyor (geçmiş
+  yeniden yazılmadı — Alpay kararı).
 - **Twelve Data:** yalnız NVO ve ABD ETF'leri için; BIST için çağrılmaz.
 - Alpay manuel/tekrarlayan bakımdan hoşlanmaz → bakım yükünü azaltan çözüm önceliklidir.
 
@@ -156,6 +162,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 07.11.2026 | **Gizlilik düzeltmesi:** talimat dosyalarından e-posta, Drive kimliği, yedek pozisyon listesi ve gerçek işlem örneği çıkarıldı (yer tutucu); değerler görevlerin GİZLİ PARAMETRELER bloğuna taşındı; kontrol betiğine kişisel veri yasağı eklendi | Claude Code |
 | 07.11.2026 | **Aşama 2 (portföy):** `araclar/portfoy_hesapla.py` v1.0 + 9 test (kurgusal çalışma kitabı). Gerçek tabloyla yalnız oturum içinde doğrulandı (sonuçlar burada tutulmaz). Kapalı ve açık lotlar ayrı hesaplanır — eski bülten kuralı aynı kodda hem açık hem kapalı lot varsa yanlış sonuç verebiliyordu. Repo açık olduğu için portföy hesabı Actions'a taşınmadı; servis hesabı iptal | Claude Code |
 | 07.11.2026 | **Aşama 2 (1. adım):** `bulten_hazirla.py` v1.0 + "Bülten Girdisi Hazırla" iş akışı + 13 birim testi + "Testler" iş akışı. 06.11 verisiyle doğrulandı: 5 sinyal (7a KTLEV; 7b GUNDG, LYDHO, HEDEF, BULGS) — taramanın 12'lik listesinden farkı bültenin ek güvenlik filtreleri (bb_alt>0, piyasa değeri ≥1 mlr). Akşam bülteni talimatı DEĞİŞMEDİ; dosya en az bir gerçek akşam doğrulandıktan sonra bağlanacak | Claude Code |
 | 07.11.2026 | `YOUTUBE_API_KEY` eklendi (Alpay); konuk takibi Actions'ta doğrulandı (Işık Ökte: 4 aday, 2 video Gemini ile işlendi — 7.075 ve 4.702 karakter); Araştırma talimatındaki "AÇIK SORUN" kapatıldı | Claude Code |

@@ -2,7 +2,25 @@
 
 Her zamanlanmış görevin prompt'u yalnız aşağıdaki kısa başlatıcıdır; asıl talimat `gorevler/<dosya>.md` içindedir.
 Bülten görevlerinde başlatıcının ALTINA, Araştırma görevinin otomatik yönettiği `═══ EK ÜCRETSİZ KAYNAK ENTEGRASYONU` bloğu gelir (o blok yalnız görevde durur, burada değil).
-Bir görev yeniden kurulursa (ör. bağlantı temizliği) prompt = aşağıdaki başlatıcı + (bültenlerde) görevdeki güncel EK bloğu.
+Bir görev yeniden kurulursa (ör. bağlantı temizliği) prompt = aşağıdaki başlatıcı + GİZLİ PARAMETRELER bloğu + (bültenlerde) görevdeki güncel EK bloğu.
+
+## GİZLİ PARAMETRELER (07.11.2026)
+Repo herkese açık olduğu için talimat dosyalarında kişisel değerler yer tutucuyla geçer. Gerçek değerler
+YALNIZ zamanlanmış görevin kendi prompt'unda, başlatıcının hemen altındaki şu blokta durur
+(değerler bu dosyaya, repoya veya GitHub'a YAZILMAZ; görevden `get_trigger` ile okunur):
+
+```text
+═══ GİZLİ PARAMETRELER (yalnız bu görevde; talimat dosyasındaki yer tutucuları bu değerlerle değiştirerek uygula; bu değerleri hiçbir repo dosyasına, GitHub'a veya e-posta dışı bir çıktıya yazma) ═══
+{E_POSTA} = <alıcı e-posta adresi>
+{PORTFOY_DOSYA_ID} = <Google Drive portföy tablosu kimliği>        (yalnız bültenlerde)
+{YEDEK_LISTE} = <tarih + türe göre açık pozisyon kodları>          (yalnız bültenlerde)
+```
+| Görev | E_POSTA | PORTFOY_DOSYA_ID | YEDEK_LISTE |
+|---|---|---|---|
+| Sabah Portföy Brifingi | ✓ | ✓ | ✓ |
+| Günlük Portföy Bülteni | ✓ | ✓ | ✓ |
+| BIST Veri Kaynağı Alternatif Araştırması | ✓ | — | — |
+| BIST Tarama Sağlık Nöbeti | — | — | — |
 
 ## Sabah Portföy Brifingi
 - Görev ID: `trig_01DaVTFUontesJ7gXp78zAqV`

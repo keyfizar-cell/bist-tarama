@@ -24,10 +24,10 @@ Genel kurallar:
  • Emin olmadığın bilgiyi uydurma; "veri yok" yaz.
 
 ═══ ADIM 0: AÇIK POZİSYONLARI PORTFÖY DOSYASINDAN OKU ═══
-Kaynak: Google Drive "Alpay - Porfoy Takip" (fileId: 10_TjaYt3hZA57kLTFYFyR6t7zdwOlnzls_yfzuYsUjY). mcp__Google_Drive__read_file_content ile çek; çıktı büyüktür ve dosyaya kaydedilir → Bash+Python ile ayrıştır. NOT: read_file_content yalnızca ÖRNEK/kısmi satır döndürebilir; tam pozisyon listesi için mcp__Google_Drive__download_file_content(exportMimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") ile xlsx indir, base64 çöz, openpyxl ile "Kar-Zarar" (A sütunu "İlk Alım" DOLU=açık) ve "DB - VEri" (Pay/Ortalama/Maliyet/Güncel/KZ) sayfalarını oku. DB-VEri "GüncelFiy" bayat olabilir → yalnızca Pay, Ortalama maliyet ve maliyete göre K/Z% (=K/Z TL / Maliyet TL) güvenilir.
+Kaynak: Google Drive "Alpay - Porfoy Takip" (fileId: {PORTFOY_DOSYA_ID}). mcp__Google_Drive__read_file_content ile çek; çıktı büyüktür ve dosyaya kaydedilir → Bash+Python ile ayrıştır. NOT: read_file_content yalnızca ÖRNEK/kısmi satır döndürebilir; tam pozisyon listesi için mcp__Google_Drive__download_file_content(exportMimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") ile xlsx indir, base64 çöz, openpyxl ile "Kar-Zarar" (A sütunu "İlk Alım" DOLU=açık) ve "DB - VEri" (Pay/Ortalama/Maliyet/Güncel/KZ) sayfalarını oku. DB-VEri "GüncelFiy" bayat olabilir → yalnızca Pay, Ortalama maliyet ve maliyete göre K/Z% (=K/Z TL / Maliyet TL) güvenilir.
  • AÇIK POZİSYON = "Kar-Zarar" tablosunda "İlk Alım" hücresi DOLU olan satırlar. Boşsa kapanmış pozisyondur (ör. BTC) → alma.
  • "DB - VEri" sayfasından: Ağırlık (Pay %), Ortalama maliyet, Maliyet/Güncel TL. (AVAX bu tabloda olmayabilir; "Veri" işlem tablosundan Sonuç="Açık" satırından al.)
- • Okunamazsa YEDEK LİSTE (24.09.2026 teyitli, 22 pozisyon): HİSSE (14) AKBNK, BLUME, CANTE, ENKAI, HEKTS, KRDMD, NVO(NYSE), OBAMS, PAPIL, SOHOE, TTKOM, ULUUN, VAKBN, YIGIT · KRİPTO (3) AVAX, XRP, FLOKI · FON (5) IAM, IBB, IJC, TI2, ZBJ — ve e-posta başına "⚠️ portföy dosyası okunamadı" yaz.
+ • Okunamazsa YEDEK LİSTE: {YEDEK_LISTE} (başlatıcının GİZLİ PARAMETRELER bloğundaki yedek pozisyon listesi; yalnız portföy dosyası okunamazsa kullanılır) — ve e-posta başına "⚠️ portföy dosyası okunamadı" yaz.
  • Başlıktaki sayıları (X hisse, Y kripto, Z fon) listeden sayarak DOĞRU yaz.
 
 ═══ ADIM 1: DÜNKÜ KAPANIŞ VERİSİ ═══
@@ -71,7 +71,7 @@ Taslağı şu listeyle kontrol et ve düzelt:
 Tüm CSS inline, <style> yok. Tablo başlığı: <th bgcolor="#d9e2ec" style="background:#d9e2ec;color:#0f2b46;padding:7px;border:1px solid #b9c6d4;text-align:left">. Hücre padding:6px;border:1px solid #e2e8f0; zebra #fff/#f7f9fb; 12.5px Arial; max-width:720px. Pozitif % #0a7c2f, negatif #c0392b, kalın. Portföy kodları kalın. Kodlar TradingView linkli: BIST → https://tr.tradingview.com/chart/R7WkWdv4/?symbol=BIST%3A{KOD} · NVO → ...symbol=NYSE%3ANVO. Her tablonun altında kısa lejant.
 
 ═══ GÖNDERİM ═══
-mcp__Gmail__send_message → to: ["alpayaydemir@gmail.com"], subject: "🌅 Sabah Portföy Brifingi — <GG.AA.YYYY>", htmlBody: tüm bölümler, body: 5 satırlık düz metin özet ("Bugün 3 şey" + takvim). Başarısızsa bir kez daha dene.
+mcp__Gmail__send_message → to: ["{E_POSTA}"], subject: "🌅 Sabah Portföy Brifingi — <GG.AA.YYYY>", htmlBody: tüm bölümler, body: 5 satırlık düz metin özet ("Bugün 3 şey" + takvim). Başarısızsa bir kez daha dene.
 BIST tam gün tatilinde görev hiç çalışmaz (yukarıdaki TATİL KONTROLÜ).
 🔔 PushNotification (status:"proactive", <routine_summary> içinde) YALNIZCA: Gmail 2 denemede başarısız olursa veya iş tamamen durursa. Başarılı gönderimde push ATMA.
 Not: Yatırım danışmanı değilsin; al/sat tavsiyesi verme, tarafsız ve somut bilgi sun.
