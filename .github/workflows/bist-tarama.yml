@@ -4,7 +4,7 @@ name: BIST Emir Bozkurt Taraması
 # geciyor / bazen dusuyor. Bu yuzden schedule KALDIRILDI; is artik yalnizca
 # harici bir zamanlayicidan (cron-job.org) workflow_dispatch ile tetiklenir.
 # Not: schedule olmadigi icin "60 gun aktivite" otomatik devre disi kurali da
-# gecersizdir; ama harici tetigin AYAKTA kalmasi sart (rehber: KURULUM.md).
+# gecersizdir; ama harici tetigin AYAKTA kalmasi sart (guncel tetik ve akis: SISTEM_DURUMU.md).
 on:
   workflow_dispatch:
 
