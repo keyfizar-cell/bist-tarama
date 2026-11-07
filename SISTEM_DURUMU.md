@@ -44,8 +44,10 @@
              └─ bitince (workflow_run) paralel:
                  ├─ "BIST KAP Bildirim Taraması"  (kap_tarama.py)  → data/kap.json, data/geri_alim.json
                  ├─ "BIST Fon Taraması"           (fon_tarama.py)  → data/fon.json
-                 └─ "YouTube Emir Bozkurt Takip"  (youtube_tarama.py + youtube_konuk.py)
-                                                   → data/youtube_emir.json, data/youtube_konuk.json
+                 ├─ "YouTube Emir Bozkurt Takip"  (youtube_tarama.py + youtube_konuk.py)
+                 │                                 → data/youtube_emir.json, data/youtube_konuk.json
+                 └─ "Bülten Girdisi Hazırla"      (bulten_hazirla.py; ana tarama VE KAP taraması sonrası)
+                                                   → data/bulten_girdi.json
 19:05  Günlük Portföy Bülteni ── tarama inene kadar 15 dk'da bir bekler (son 23:45) → e-posta
 00:30  BIST Tarama Sağlık Nöbeti ── tazelik/kalite/bülten gitti mi; gitmediyse bülteni yeniden başlatır → push
 ```
@@ -66,6 +68,8 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 | `youtube-tarama.yml` ("YouTube Emir Bozkurt Takip") | v2.2 | workflow_run + dispatch | — | Harici paket yok (yalnız standart kütüphane) |
 | `gorevler/*.md` (4 görev talimatı) + `gorevler/BASLATICILAR.md` | 1 | — | — | Zamanlanmış görevler her çalışmada `main`'den çeker |
 | `araclar/gorev_kontrol.py` + `gorev-kontrol.yml` ("Görev Talimatı Kontrolü") | 1 | push/PR (gorevler/**) | — | Talimat dosyalarında zorunlu ifadeler, asgari uzunluk, EK bloğu yerinde mi |
+| `bulten_hazirla.py` + `bulten-hazirla.yml` ("Bülten Girdisi Hazırla") | **v1.0** | workflow_run (ana tarama, KAP) + dispatch | `bulten_girdi.json` | Aşama 2: akşam bülteninin kurallı hesapları (Emir Bozkurt 7a/7b + yakın adaylar, 7c geçmişi, BIST30, teknik plan, retail radar, geri alım özeti). Önce testler çalışır. **Bülten henüz bu dosyayı kullanmıyor** (gözlem dönemi) |
+| `testler/` + `testler.yml` ("Testler") | — | push/PR (*.py, testler/**) | — | `python -m unittest discover -s testler` |
 
 ### Secret'lar (GitHub → Settings → Secrets → Actions)
 | Secret | Durum | Kullanan |
@@ -88,6 +92,7 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 | `geri_alim.json` | 01.09.2026'dan piyasa geneli geri alım; `portfoy_ozet[KOD]`: `kumulatif_kaynak`, `kumulatif_lot`, `sermaye_orani_yuzde`, `detay_bildirim_tarih`. `kumulatif_tutar_tl` bültene YAZILMAZ |
 | `fon.json` | `fonlar{KOD:{son_fiyat, fiyat_tarih, getiriler, icerik}}`, `basari_sayisi`, `hata_sayisi` |
 | `youtube_emir.json` | `surum`, `transkript_var`, `son_basarili_utc`, `video_liste_kaynagi`, `en_yeni_video{baslik, yayin_tarihi, url, transkript, transkript_kaynagi, ozet, bahsedilen_hisseler}`, `hata`, `denemeler` |
+| `bulten_girdi.json` | `kaynak{tarih, kapanis_verisi}`, `emir_bozkurt{7a_watchlist, 7b_diger, yakin_adaylar}`, `sinyal_gecmisi{satirlar, ozet}`, `bist30`, `teknik_plan{KOD:{giris, stop, tp1, tp2, h52_konum_yuzde, rsi, macd, tv_sinyal}}`, `retail_radar`, `geri_alim{satirlar}` (kümülatif yalnız şirket beyanıysa dolu), `hata` |
 | `youtube_konuk.json` | `kisiler{AD:{not, aday_sayisi, videolar[{baslik, kanal, kisi_konusuyor, atlandi, ozet, bahsedilen_hisseler}], son_basarili_utc, hata}}` |
 
 ---
@@ -145,6 +150,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 07.11.2026 | **Aşama 2 (1. adım):** `bulten_hazirla.py` v1.0 + "Bülten Girdisi Hazırla" iş akışı + 13 birim testi + "Testler" iş akışı. 06.11 verisiyle doğrulandı: 5 sinyal (7a KTLEV; 7b GUNDG, LYDHO, HEDEF, BULGS) — taramanın 12'lik listesinden farkı bültenin ek güvenlik filtreleri (bb_alt>0, piyasa değeri ≥1 mlr). Akşam bülteni talimatı DEĞİŞMEDİ; dosya en az bir gerçek akşam doğrulandıktan sonra bağlanacak | Claude Code |
 | 07.11.2026 | `YOUTUBE_API_KEY` eklendi (Alpay); konuk takibi Actions'ta doğrulandı (Işık Ökte: 4 aday, 2 video Gemini ile işlendi — 7.075 ve 4.702 karakter); Araştırma talimatındaki "AÇIK SORUN" kapatıldı | Claude Code |
 | 07.11.2026 | **Aşama 1:** dört görevin talimatı `gorevler/*.md` dosyalarına taşındı; görevlerde İNCE BAŞLATICI + (bültenlerde) EK bloğu kaldı; `araclar/gorev_kontrol.py` + "Görev Talimatı Kontrolü" iş akışı eklendi; Araştırma görevinin bülten düzenleme kontrolü başlatıcı yapısına uyarlandı | Claude Code |
 | 07.11.2026 | `SISTEM_DURUMU.md` + `CLAUDE.md` eklendi; dört zamanlanmış göreve "önce bu dosyayı oku" bloğu eklendi (geri kalan metin birebir korundu); Araştırma görevinin (C) (v3.4 canlı) ve (F) (v2.2, yalnız Gemini, konuk takibi, KALDIRILANLAR, `YOUTUBE_API_KEY` notu) bölümleri ve bölüm numaraları (7e) güncel duruma çekildi | Claude Code |
