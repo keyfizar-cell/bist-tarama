@@ -72,7 +72,7 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 |---|---|---|
 | `TV_SESSIONID` | tanımlı | tarama.py |
 | `GOOGLE_API_KEY` | tanımlı (AI Studio `AQ.` anahtarı) | Gemini (her iki YouTube betiği) |
-| `YOUTUBE_API_KEY` | **EKSİK** — klasik `AIza…` anahtarı gerekir | YouTube Data API (konuk araması + Emir RSS yedeği). `AQ.` anahtarı Data API'de 401 veriyor |
+| `YOUTUBE_API_KEY` | tanımlı (07.11.2026; Google Cloud "My First Project", yalnız YouTube Data API v3 ile kısıtlı) | YouTube Data API (konuk araması + Emir RSS yedeği) |
 | `GEMINI_MODEL` | opsiyonel | model zorlamak için |
 | `WEBSHARE_PROXY_USERNAME/PASSWORD` | tanımlı ama **kullanılmıyor** — silinebilir | — |
 
@@ -133,10 +133,9 @@ ama hiçbir göreve bağlı değil.
 
 ## 7. AÇIK KONULAR
 
-1. `YOUTUBE_API_KEY` secret'ı eklenmeli (Google Cloud → YouTube Data API v3 etkinleştir →
-   klasik API key). Eklenene kadar `youtube_konuk.json` → `hata: arama: HTTP 401`.
-2. Akşam bülteni 7e (konuk uzman videoları) eklendi ama `YOUTUBE_API_KEY` eklenene kadar gösterecek
-   video olmayacak (alt bölüm kendiliğinden atlanır).
+1. ~~`YOUTUBE_API_KEY`~~ — 07.11.2026'da eklendi; konuk araması doğrulandı (Işık Ökte: 4 aday, 2'si işlendi).
+2. Konuk takibi çalışma başına kişi başı en fazla 2 yeni video işler (`konuk_takip.json` →
+   `calisma_basina_en_fazla_yeni_video`); kalanlar sonraki çalışmada işlenir.
 3. Geri alım belgesi okunamayan kodlar: VAKBN, GARAN, GUBRF, SAHOL (`detay_durum: satir_yok`).
 4. Gereksiz bağlantıların görevlerden kaldırılması (Bölüm 5) — Alpay arayüzden yapacak.
 
@@ -146,6 +145,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 07.11.2026 | `YOUTUBE_API_KEY` eklendi (Alpay); konuk takibi Actions'ta doğrulandı (Işık Ökte: 4 aday, 2 video Gemini ile işlendi — 7.075 ve 4.702 karakter); Araştırma talimatındaki "AÇIK SORUN" kapatıldı | Claude Code |
 | 07.11.2026 | **Aşama 1:** dört görevin talimatı `gorevler/*.md` dosyalarına taşındı; görevlerde İNCE BAŞLATICI + (bültenlerde) EK bloğu kaldı; `araclar/gorev_kontrol.py` + "Görev Talimatı Kontrolü" iş akışı eklendi; Araştırma görevinin bülten düzenleme kontrolü başlatıcı yapısına uyarlandı | Claude Code |
 | 07.11.2026 | `SISTEM_DURUMU.md` + `CLAUDE.md` eklendi; dört zamanlanmış göreve "önce bu dosyayı oku" bloğu eklendi (geri kalan metin birebir korundu); Araştırma görevinin (C) (v3.4 canlı) ve (F) (v2.2, yalnız Gemini, konuk takibi, KALDIRILANLAR, `YOUTUBE_API_KEY` notu) bölümleri ve bölüm numaraları (7e) güncel duruma çekildi | Claude Code |
 | 07.11.2026 | Akşam bültenine 7e "Konuk uzman videoları" (youtube_konuk.json) eklendi; Sağlık Nöbeti (E) adımına youtube_konuk.json bayatlık kontrolü eklendi | Başka bir Claude oturumu (12:07–12:09 UTC) |
