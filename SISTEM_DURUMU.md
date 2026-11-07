@@ -69,6 +69,7 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 | `gorevler/*.md` (4 görev talimatı) + `gorevler/BASLATICILAR.md` | 1 | — | — | Zamanlanmış görevler her çalışmada `main`'den çeker |
 | `araclar/gorev_kontrol.py` + `gorev-kontrol.yml` ("Görev Talimatı Kontrolü") | 1 | push/PR (gorevler/**) | — | Talimat dosyalarında zorunlu ifadeler, asgari uzunluk, EK bloğu yerinde mi |
 | `bulten_hazirla.py` + `bulten-hazirla.yml` ("Bülten Girdisi Hazırla") | **v1.0** | workflow_run (ana tarama, KAP) + dispatch | `bulten_girdi.json` | Aşama 2: akşam bülteninin kurallı hesapları (Emir Bozkurt 7a/7b + yakın adaylar, 7c geçmişi, BIST30, teknik plan, retail radar, geri alım özeti). Önce testler çalışır. **Bülten henüz bu dosyayı kullanmıyor** (gözlem dönemi) |
+| `araclar/portfoy_hesapla.py` | **v1.0** | yalnız görev oturumunda (yerel) | yerel `/tmp` dosyası | Portföy tablosundan açık pozisyonlar, ağırlık, maliyete göre K/Z, 7c "Portföy Kâr" (kapalı ve açık lotlar ayrı). **Gizlilik: çıktı repoya/data/'ya yazılamaz.** Bülten henüz kullanmıyor (gözlem dönemi) |
 | `testler/` + `testler.yml` ("Testler") | — | push/PR (*.py, testler/**) | — | `python -m unittest discover -s testler` |
 
 ### Secret'lar (GitHub → Settings → Secrets → Actions)
@@ -131,6 +132,11 @@ ama hiçbir göreve bağlı değil.
   yazılır; `kumulatif_tutar_tl` hiç yazılmaz.
 - **Sadeleştirme (24.10.2026):** fon tablosu, aracı kurum listeleri, temettü/bedelsiz/halka arz ve
   ekonomik takvim yalnız SABAH; geri alım detayı ve kapanış tablosu yalnız AKŞAM.
+- **GİZLİLİK (07.11.2026):** Repo HERKESE AÇIK (görevler veriyi şifresiz raw adresinden çeker). Portföy
+  verisi (pozisyon, maliyet, K/Z, hesap sahipleri) ASLA repoya, `data/` klasörüne, Actions'a, Actions
+  günlüğüne, testlere veya bu belgeye yazılmaz; portföy hesabı yalnız zamanlanmış görevin kendi oturumunda
+  `araclar/portfoy_hesapla.py` ile yapılır. Testler yalnız kurgusal veri kullanır. (Bu nedenle Actions için
+  kurulan Google servis hesabı `GDRIVE_SA_JSON` iptal edildi.)
 - **Twelve Data:** yalnız NVO ve ABD ETF'leri için; BIST için çağrılmaz.
 - Alpay manuel/tekrarlayan bakımdan hoşlanmaz → bakım yükünü azaltan çözüm önceliklidir.
 
@@ -150,6 +156,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 07.11.2026 | **Aşama 2 (portföy):** `araclar/portfoy_hesapla.py` v1.0 + 9 test (kurgusal çalışma kitabı). Gerçek tabloyla yalnız oturum içinde doğrulandı (sonuçlar burada tutulmaz). Kapalı ve açık lotlar ayrı hesaplanır — eski bülten kuralı aynı kodda hem açık hem kapalı lot varsa yanlış sonuç verebiliyordu. Repo açık olduğu için portföy hesabı Actions'a taşınmadı; servis hesabı iptal | Claude Code |
 | 07.11.2026 | **Aşama 2 (1. adım):** `bulten_hazirla.py` v1.0 + "Bülten Girdisi Hazırla" iş akışı + 13 birim testi + "Testler" iş akışı. 06.11 verisiyle doğrulandı: 5 sinyal (7a KTLEV; 7b GUNDG, LYDHO, HEDEF, BULGS) — taramanın 12'lik listesinden farkı bültenin ek güvenlik filtreleri (bb_alt>0, piyasa değeri ≥1 mlr). Akşam bülteni talimatı DEĞİŞMEDİ; dosya en az bir gerçek akşam doğrulandıktan sonra bağlanacak | Claude Code |
 | 07.11.2026 | `YOUTUBE_API_KEY` eklendi (Alpay); konuk takibi Actions'ta doğrulandı (Işık Ökte: 4 aday, 2 video Gemini ile işlendi — 7.075 ve 4.702 karakter); Araştırma talimatındaki "AÇIK SORUN" kapatıldı | Claude Code |
 | 07.11.2026 | **Aşama 1:** dört görevin talimatı `gorevler/*.md` dosyalarına taşındı; görevlerde İNCE BAŞLATICI + (bültenlerde) EK bloğu kaldı; `araclar/gorev_kontrol.py` + "Görev Talimatı Kontrolü" iş akışı eklendi; Araştırma görevinin bülten düzenleme kontrolü başlatıcı yapısına uyarlandı | Claude Code |
