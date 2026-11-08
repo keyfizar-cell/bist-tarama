@@ -50,7 +50,21 @@
         "kanal": "Çağkan Yapıcı",
         "kaynak": "takip",
         "video_id": "4JaMdxORyGo",
-        "alinan_yorum": 59
+        "alinan_yorum": 62
+      },
+      {
+        "baslik": "Borsa nedir, ne değildir?",
+        "kanal": "Çağkan Yapıcı",
+        "kaynak": "takip",
+        "video_id": "155IQ99kHzQ",
+        "alinan_yorum": 43
+      },
+      {
+        "baslik": "5 Kasım 2026 ABD Seçimi Sonrası Piyasa Yorumu",
+        "kanal": "Ahmet Beyefendi",
+        "kaynak": "takip",
+        "video_id": "Bt2tMf8Prjs",
+        "alinan_yorum": 20
       },
       {
         "baslik": "Son 6 Yılın En Büyük Düşüşü - Piyasa Analizi",
@@ -64,7 +78,14 @@
         "kanal": "Devrim Akyıl",
         "kaynak": "takip",
         "video_id": "Q2Wel_PS8X8",
-        "alinan_yorum": 54
+        "alinan_yorum": 62
+      },
+      {
+        "baslik": "Geliyor Gelmekte Olan…!",
+        "kanal": "Devrim Akyıl",
+        "kaynak": "takip",
+        "video_id": "AGD1s9MNt2g",
+        "alinan_yorum": 100
       },
       {
         "baslik": "Seçimin Maliyeti 4.5 Trilyon Dolar!",
@@ -88,6 +109,13 @@
         "alinan_yorum": 43
       },
       {
+        "baslik": "SATA SATA BİTİREMEDİNİZ | BİR GÜN MOLA BUGÜN YİNE DEVAM",
+        "kanal": "Kendine Yatırımcı",
+        "kaynak": "takip",
+        "video_id": "tfjX8OA9cX8",
+        "alinan_yorum": 13
+      },
+      {
         "baslik": "Finansman Şirketleri mi Banka Kredisi mi Kazançlı? İşte Güncel Oranlar",
         "kanal": "Kendine Milyoner",
         "kaynak": "takip",
@@ -99,7 +127,14 @@
         "kanal": "koraynomi",
         "kaynak": "takip",
         "video_id": "v4aybJeq5i0",
-        "alinan_yorum": 9
+        "alinan_yorum": 10
+      },
+      {
+        "baslik": "Altın Gümüş Toplama İşi Bitti! / Geçmiş Olsun!",
+        "kanal": "Selçuk Ergin ",
+        "kaynak": "takip",
+        "video_id": "tINTBvbilsI",
+        "alinan_yorum": 100
       },
       {
         "baslik": "BU YÜKSELİŞ TEPKİMİ? BORSANIN BUNDAN SONRA AKİBETİ",
@@ -109,11 +144,32 @@
         "alinan_yorum": 3
       },
       {
+        "baslik": "RALYH Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
+        "kanal": "Selim Aldemir | Finans Akademisi",
+        "kaynak": "takip",
+        "video_id": "Uf3AhPWsKrI",
+        "alinan_yorum": 1
+      },
+      {
+        "baslik": "KTLEV Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
+        "kanal": "Selim Aldemir | Finans Akademisi",
+        "kaynak": "takip",
+        "video_id": "EEtkx4VNNGs",
+        "alinan_yorum": 0
+      },
+      {
         "baslik": "HAFTA SONU SOHBETİ.....",
         "kanal": "TANSEL ÇİFTÇİ ",
         "kaynak": "takip",
         "video_id": "WPRVmE1CuVM",
         "alinan_yorum": 1
+      },
+      {
+        "baslik": "HANGİ HİSSELERDE ARTIŞ POTANSİYELİ VAR ?",
+        "kanal": "TANSEL ÇİFTÇİ ",
+        "kaynak": "takip",
+        "video_id": "6IgWWVNriME",
+        "alinan_yorum": 0
       },
       {
         "baslik": "BİST'te 500 Milyar Dolarlık Senaryo",
@@ -179,17 +235,17 @@
         "alinan_yorum": 27
       },
       {
-        "baslik": "Ahmet Mergen ile Hisse Teknik Analizleri | Borsa Teknik",
-        "kanal": "EKOTÜRK TV",
-        "kaynak": "arama",
-        "video_id": "xCqVjLLwdtI",
-        "alinan_yorum": 25
-      },
-      {
         "baslik": "​Tüpraş 2026/9 Bilanço Analizi: Dev Kâr, Güçlü Bilanço ve 2027 Temettü Beklentileri!",
         "kanal": "Dr. Başar Ergün ( EZBER DIŞI) ",
         "kaynak": "arama",
         "video_id": "9DUWwZGPCJY",
+        "alinan_yorum": 25
+      },
+      {
+        "baslik": "Ahmet Mergen ile Hisse Teknik Analizleri | Borsa Teknik",
+        "kanal": "EKOTÜRK TV",
+        "kaynak": "arama",
+        "video_id": "xCqVjLLwdtI",
         "alinan_yorum": 25
       },
       {
@@ -214,13 +270,21 @@
         "alinan_yorum": 17
       }
     ],
-    "yorum_sayisi": 893,
+    "yorum_sayisi": 1182,
     "kod_sayim": {
       "TUPRS": {
+        "yorum": 5,
+        "ornekler": [
+          "Abi tuprs sunum acikliyor marjlarda düşme var aydan aya ama yıllıkta hala iyi ama düştü mesela ikinci çeyrek bilanco öncesinde böyle olmuştu piyasanın hafızası ",
+          "Zirvede satıp enflasyon döneminde mevduattan faydalanıp faizler düştüğünde hisseleri dipten toplayamazsan enflasyona yenilirsin. Yâni 0,30 pd/dd orana gelmişken"
+        ],
+        "video": 4
+      },
+      "BRYAT": {
         "yorum": 4,
         "ornekler": [
-          "Zirvede satıp enflasyon döneminde mevduattan faydalanıp faizler düştüğünde hisseleri dipten toplayamazsan enflasyona yenilirsin. Yâni 0,30 pd/dd orana gelmişken",
-          "2023den bu yana 6 kat gitmis tuprs düşüş hedefi 280"
+          "BRYAT 2027 yili icinde muhtemelen yeni CAT distribütörlüğü anlaşması patlatir. Ukrayna Rusya Savaşı biterse muhtemelen Rusya’da kaybettiği yeri tekrardan alır..",
+          "Başar bey günaydın, BRYAT bilanço açıkladı, 2027 temettü beklentisi nasıl olur sizce? Rakamları sizin gibi yorumlayamadığum için soruyorum. Bununla ilgili bir v"
         ],
         "video": 3
       },
@@ -231,14 +295,6 @@
           "Teşekkürler hocam sağolasın, Enkai'yi tutup Kchol eklediğiniz için ayrıca teşekkürler...Holding ( Enkai- Kchol ) ve Banka ( Yapı Kredi - Garanti ) tarafında dev"
         ],
         "video": 1
-      },
-      "BRYAT": {
-        "yorum": 3,
-        "ornekler": [
-          "Başar bey günaydın, BRYAT bilanço açıkladı, 2027 temettü beklentisi nasıl olur sizce? Rakamları sizin gibi yorumlayamadığum için soruyorum. Bununla ilgili bir v",
-          "Hocam aksa Çelebi bryat ekleyin"
-        ],
-        "video": 2
       },
       "DOHOL": {
         "yorum": 2,
@@ -308,7 +364,7 @@
         ],
         "video": 1
       },
-      "TATGD": {
+      "KLKIM": {
         "yorum": 1,
         "ornekler": [
           "Hocam onceden bahsettiğiniz gelen bilancolardan kboru,klkim ,tatgd ve ekstra dan abd hikayesi de olan megmt den bahsedebilirmisiniz rica etsem?Çok değerli anali"
@@ -322,14 +378,14 @@
         ],
         "video": 1
       },
-      "KLKIM": {
+      "MEGMT": {
         "yorum": 1,
         "ornekler": [
           "Hocam onceden bahsettiğiniz gelen bilancolardan kboru,klkim ,tatgd ve ekstra dan abd hikayesi de olan megmt den bahsedebilirmisiniz rica etsem?Çok değerli anali"
         ],
         "video": 1
       },
-      "MEGMT": {
+      "TATGD": {
         "yorum": 1,
         "ornekler": [
           "Hocam onceden bahsettiğiniz gelen bilancolardan kboru,klkim ,tatgd ve ekstra dan abd hikayesi de olan megmt den bahsedebilirmisiniz rica etsem?Çok değerli anali"
@@ -378,6 +434,13 @@
         ],
         "video": 1
       },
+      "AKBNK": {
+        "yorum": 1,
+        "ornekler": [
+          "Zirvede satıp enflasyon döneminde mevduattan faydalanıp faizler düştüğünde hisseleri dipten toplayamazsan enflasyona yenilirsin. Yâni 0,30 pd/dd orana gelmişken"
+        ],
+        "video": 1
+      },
       "THYAO": {
         "yorum": 1,
         "ornekler": [
@@ -392,10 +455,10 @@
         ],
         "video": 1
       },
-      "AKBNK": {
+      "RGYAS": {
         "yorum": 1,
         "ornekler": [
-          "Zirvede satıp enflasyon döneminde mevduattan faydalanıp faizler düştüğünde hisseleri dipten toplayamazsan enflasyona yenilirsin. Yâni 0,30 pd/dd orana gelmişken"
+          "👍rgyas ta Citi % 17 yaptı takas sonra yüne % 21 topladı. Sektör hareketi ini bekliyor olduğunda füze attırır bence. :)sonra silerim yine bunu."
         ],
         "video": 1
       },
@@ -459,9 +522,9 @@
   },
   "gecmis_sayim": {
     "2026-11-06": {
-      "TUPRS": 4,
+      "TUPRS": 5,
+      "BRYAT": 4,
       "KCHOL": 3,
-      "BRYAT": 3,
       "DOHOL": 2,
       "ASTOR": 2,
       "ISMEN": 2,
@@ -471,19 +534,20 @@
       "SAHOL": 1,
       "ENTRA": 1,
       "FORTE": 1,
-      "TATGD": 1,
-      "KBORU": 1,
       "KLKIM": 1,
+      "KBORU": 1,
       "MEGMT": 1,
+      "TATGD": 1,
       "SAYAS": 1,
       "FROTO": 1,
       "MEDTR": 1,
       "PCILT": 1,
       "AYDEM": 1,
       "NTGAZ": 1,
+      "AKBNK": 1,
       "THYAO": 1,
       "GARAN": 1,
-      "AKBNK": 1,
+      "RGYAS": 1,
       "BRSAN": 1,
       "ENKAI": 1,
       "SUWEN": 1,
@@ -496,16 +560,16 @@
   "ani_artis": [
     {
       "kod": "TUPRS",
+      "bugun": 5,
+      "onceki_ortalama": 0
+    },
+    {
+      "kod": "BRYAT",
       "bugun": 4,
       "onceki_ortalama": 0
     },
     {
       "kod": "KCHOL",
-      "bugun": 3,
-      "onceki_ortalama": 0
-    },
-    {
-      "kod": "BRYAT",
       "bugun": 3,
       "onceki_ortalama": 0
     }
@@ -516,10 +580,21 @@
       "kaynaklar": [
         "youtube"
       ],
-      "youtube_yorum": 4,
+      "youtube_yorum": 5,
       "kapanis": 337.5,
       "gunluk_yuzde": 1.7332328560663148,
       "hacim_orani": 1.37,
+      "isaret": "yalniz_konusma"
+    },
+    {
+      "kod": "BRYAT",
+      "kaynaklar": [
+        "youtube"
+      ],
+      "youtube_yorum": 4,
+      "kapanis": 1311.0,
+      "gunluk_yuzde": 2.3419203747072603,
+      "hacim_orani": 0.96,
       "isaret": "yalniz_konusma"
     },
     {
@@ -531,17 +606,6 @@
       "kapanis": 206.1,
       "gunluk_yuzde": 1.8783984181907971,
       "hacim_orani": 1.28,
-      "isaret": "yalniz_konusma"
-    },
-    {
-      "kod": "BRYAT",
-      "kaynaklar": [
-        "youtube"
-      ],
-      "youtube_yorum": 3,
-      "kapanis": 1311.0,
-      "gunluk_yuzde": 2.3419203747072603,
-      "hacim_orani": 0.96,
       "isaret": "yalniz_konusma"
     }
   ],
@@ -590,7 +654,7 @@
     }
   },
   "surum": "1.3",
-  "uretim_zamani_utc": "2026-11-08T09:35:14.304411+00:00",
+  "uretim_zamani_utc": "2026-11-08T09:50:27.816290+00:00",
   "denemeler": [
     "Forum taramasi gemini-3.5-flash-lite hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog",
     "Forum taramasi gemini-3.8-flash hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog"
