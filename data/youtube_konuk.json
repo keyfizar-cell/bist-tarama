@@ -226,15 +226,12 @@
           "islendi_utc": "2026-11-07T17:16:04.351209+00:00"
         }
       ],
-      "son_arama_utc": "2026-11-07T17:16:04.351247+00:00",
+      "son_arama_utc": "2026-11-08T09:23:42.962661+00:00",
       "aday_sayisi": 4
     }
   },
   "hata": null,
   "surum": "1.0",
-  "uretim_zamani_utc": "2026-11-07T17:16:04.351254+00:00",
-  "denemeler": [
-    "Gemini gemini-3-flash-preview: 4699 karakter, bitis=STOP",
-    "Gemini gemini-3-flash-preview: 7113 karakter, bitis=STOP"
-  ]
+  "uretim_zamani_utc": "2026-11-08T09:23:42.962668+00:00",
+  "denemeler": []
 }

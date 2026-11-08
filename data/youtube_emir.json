@@ -1,5 +1,5 @@
 {
-  "uretim_zamani_utc": "2026-11-07T17:14:35.812878+00:00",
+  "uretim_zamani_utc": "2026-11-08T09:23:42.531516+00:00",
   "kanal": "Emir Bozkurt | Stratejik Yatirim",
   "channel_id": "UChiWzAwOe7J67dd5PmmUnnA",
   "video_liste_kaynagi": "rss_kanal",
@@ -31,7 +31,7 @@
     ]
   },
   "transkript_var": true,
-  "son_basarili_utc": "2026-11-07T17:14:35.812899+00:00",
+  "son_basarili_utc": "2026-11-08T09:23:42.531537+00:00",
   "son_videolar": [
     {
       "baslik": "Borusan Boru (BRSAN) Bilanço Analizi | ABD Tarafı Güçleniyor",
@@ -77,6 +77,6 @@
   "hata": null,
   "surum": "2.2",
   "denemeler": [
-    "Gemini gemini-3-flash-preview: 11297 karakter, bitis=STOP"
+    "Ayni video icin transkript zaten var; yeniden cekilmedi."
   ]
 }
