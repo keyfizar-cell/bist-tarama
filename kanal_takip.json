@@ -1,6 +1,6 @@
 {
-  "_aciklama": "youtube_kanallar.py takip listesi (Emir Bozkurt ayri: youtube_tarama.py). Yeni kanal eklemek icin bir blok kopyala: ad (bultende gorunen ad), handle (youtube.com/@... kismi), channel_id (bos birak; ilk calismada Data API ile bulunur ve data/youtube_kanallar.json'da saklanir), not (bultende kanal basinda gosterilecek notr not; bossa yazilmaz).",
-  "gun_penceresi": 7,
+  "_aciklama": "youtube_kanallar.py takip listesi (Emir Bozkurt ayri: youtube_tarama.py; konuk uzmanlar: konuk_takip.json). Yeni kanal eklemek icin bir blok kopyala: ad (JSON anahtari; bultende Data API'den gelen gercek kanal adi gosterilir), handle (youtube.com/@... kismi, kodlanmamis hali), channel_id (bos birak; ilk calismada bulunur), not (bultende kanal basinda gosterilecek notr not), zorla_takip (true ise gunluk yukleyen kurali uygulanmaz). Son 7 gunde gunluk_yukleyen_esigi kadar uzun video yukleyen kanal otomatik liste disi sayilir; kalici cikarilanlar 'liste_disi' dizisine tasinir ve hic taranmaz.",
+  "gun_penceresi": 4,
   "calisma_basina_en_fazla_yeni_video": 2,
   "kanallar": [
     {
@@ -8,6 +8,165 @@
       "handle": "finansal_ozgurluk",
       "channel_id": "",
       "not": ""
+    },
+    {
+      "ad": "@cybist",
+      "handle": "cybist",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@AhmetBeyefendi",
+      "handle": "AhmetBeyefendi",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@birhissebiranalizunverdoktrini",
+      "handle": "birhissebiranalizunverdoktrini",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@Burakaktasyt",
+      "handle": "Burakaktasyt",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@cevikfinance",
+      "handle": "cevikfinance",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@DevrimAkyıl",
+      "handle": "DevrimAkyıl",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@DrSerkanUnal",
+      "handle": "DrSerkanUnal",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@dragonomiYT",
+      "handle": "dragonomiYT",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@efeutkaner",
+      "handle": "efeutkaner",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@ekonomibiz",
+      "handle": "ekonomibiz",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@erdemkaynar",
+      "handle": "erdemkaynar",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@ErkanÖz-i5m",
+      "handle": "ErkanÖz-i5m",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@FinansLabGulsah",
+      "handle": "FinansLabGulsah",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@FxMatik",
+      "handle": "FxMatik",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@KARAOĞLUEKONOMİ",
+      "handle": "KARAOĞLUEKONOMİ",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@KendineYATIRIMCI",
+      "handle": "KendineYATIRIMCI",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@KendineMilyoner",
+      "handle": "KendineMilyoner",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@koraynomi",
+      "handle": "koraynomi",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@MentalYatirim",
+      "handle": "MentalYatirim",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@mr_rakun35",
+      "handle": "mr_rakun35",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@OkanYORGANCI",
+      "handle": "OkanYORGANCI",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@Selcoin",
+      "handle": "Selcoin",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@borsaciselim",
+      "handle": "borsaciselim",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@tanselciftci",
+      "handle": "tanselciftci",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@tuncay-tursucu",
+      "handle": "tuncay-tursucu",
+      "channel_id": "",
+      "not": ""
+    },
+    {
+      "ad": "@WallStDiaries",
+      "handle": "WallStDiaries",
+      "channel_id": "",
+      "not": ""
     }
-  ]
+  ],
+  "calisma_basina_toplam_video": 10,
+  "gunluk_yukleyen_esigi": 5,
+  "liste_disi": []
 }

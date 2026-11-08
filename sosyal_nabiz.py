@@ -80,7 +80,7 @@ def takip_videolari(gun=7):
         for ad, k in (yukle(os.path.join("data", dosya), {}).get(anahtar) or {}).items():
             for v in k.get("videolar") or []:
                 if v.get("video_id") and not v.get("atlandi") and (v.get("yayin_tarihi") or "")[:19] >= sinir:
-                    out[v["video_id"]] = {"baslik": v.get("baslik", ""), "kanal": v.get("kanal") or ad,
+                    out[v["video_id"]] = {"baslik": v.get("baslik", ""), "kanal": v.get("kanal") or v.get("kanal_adi") or ad,
                                           "kaynak": "takip"}
     return out
 

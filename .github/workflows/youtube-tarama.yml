@@ -1,7 +1,7 @@
 name: YouTube Emir Bozkurt Takip
 
 # v2.3 (2026-11-07): Emir Bozkurt (youtube_tarama.py) + konuk uzman takibi (youtube_konuk.py, konuk_takip.json)
-#   + ek kanal takibi (youtube_kanallar.py, kanal_takip.json).
+#   + ek kanal takibi (youtube_kanallar.py v1.1, kanal_takip.json; calisma basina toplam video butcesi).
 # Secret: GOOGLE_API_KEY (opsiyonel YOUTUBE_API_KEY, GEMINI_MODEL).
 on:
   workflow_run:
@@ -19,7 +19,7 @@ concurrency:
 jobs:
   youtube:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 75
     steps:
       - name: Checkout
         uses: actions/checkout@v4
