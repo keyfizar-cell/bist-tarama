@@ -28,12 +28,6 @@
       "not": ""
     },
     {
-      "ad": "@Burakaktasyt",
-      "handle": "Burakaktasyt",
-      "channel_id": "",
-      "not": ""
-    },
-    {
       "ad": "@cevikfinance",
       "handle": "cevikfinance",
       "channel_id": "",
@@ -60,12 +54,6 @@
     {
       "ad": "@efeutkaner",
       "handle": "efeutkaner",
-      "channel_id": "",
-      "not": ""
-    },
-    {
-      "ad": "@ekonomibiz",
-      "handle": "ekonomibiz",
       "channel_id": "",
       "not": ""
     },
@@ -168,5 +156,16 @@
   ],
   "calisma_basina_toplam_video": 10,
   "gunluk_yukleyen_esigi": 5,
-  "liste_disi": []
+  "liste_disi": [
+    {
+      "ad": "@Burakaktasyt",
+      "handle": "Burakaktasyt",
+      "neden": "her gün video yüklüyor (08.11.2026 ölçümü: son 7 günde 5 uzun video)"
+    },
+    {
+      "ad": "@ekonomibiz",
+      "handle": "ekonomibiz",
+      "neden": "her gün video yüklüyor (08.11.2026 ölçümü: son 7 günde 15 uzun video)"
+    }
+  ]
 }
