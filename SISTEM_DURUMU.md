@@ -56,12 +56,17 @@
 
 BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarında).
 
+**Hafta sonu (08.11.2026):** "YouTube Emir Bozkurt Takip" Cumartesi ve Pazar 13:17 TR'de (10:17 UTC, `schedule`)
+kendiliğinden çalışır — Gemini kotası 7 güne yayılır, Pazartesi bülteni hafta sonu videolarını özetli alır.
+Ardından "Sosyal Nabız" ÇALIŞMAZ (borsa kapalı; cuma verisinin üzerine yazmasın).
+
 ---
 
 ## 3. REPO BİLEŞENLERİ — GÜNCEL SÜRÜMLER
 
 | Bileşen | Sürüm | Tetik | Çıktı | Not |
 |---|---|---|---|---|
+| 08.11.2026 | YouTube takibi hafta sonu da çalışır (Ct/Pz 13:17 TR, Alpay kararı); Sosyal Nabız hafta sonu zamanlı çalışmanın ardından atlanır | Claude Code |
 | 08.11.2026 | **Gemini kota yedeği** (Alpay onayı, seçenek 1-2): `youtube_tarama.py` v2.3 (429'da sıradaki model, lite yedek, dakikalık sınırda bekleme) + 5 test; `youtube_kanallar.py` v1.2 (bütçe 20, `kota_gunlugu`); Sağlık Nöbeti'ne "GEMINI KOTASI YETMİYOR" (3 çalışma üst üste kota dolarsa). DeepSeek vb. metin modelleri video izleyemediği için eklenmedi | Claude Code |
 | 08.11.2026 | İlk ölçüm (Actions): 27 kanalın tümünün kimliği çözüldü; 10 video özetlendi, 9 bekliyor. Her gün yükleyen 2 kanal (EKONOMİBİZ 15, Burak Aktaş 5 video/7 gün) `kanal_takip.json` → `liste_disi`'ne taşındı | Claude Code |
 | 08.11.2026 | **26 YouTube kanalı eklendi** (Alpay listesi); `youtube_kanallar.py` v1.1: toplam video bütçesi + kanallar arası sıralı seçim + `bekleyenler`; her gün video yükleyen kanallar otomatik liste dışı (Alpay kararı); kanal videolarında tam transkript kaldırıldı; iş akışı süresi 75 dk; bülten 7f: en fazla 6 tam + kısa liste + bekleyenler; 8 test yeniden yazıldı | Claude Code |
@@ -73,7 +78,7 @@ BIST tam gün tatillerinde görevler çalışmaz (listeler görev talimatlarınd
 | `youtube_kanallar.py` + `kanal_takip.json` | **v1.2** | aynı iş akışında 3. adım | `youtube_kanallar.json` | 25 kanal (Finansal Özgürlük + 08.11.2026'da eklenen 26 kanaldan 24'ü; EKONOMİBİZ ve Burak Aktaş her gün yüklediği için `liste_disi`). Kanal kimliği Data API `forHandle` ile bir kez bulunur ve saklanır; liste RSS → Data API; shorts (<3 dk) ve canlı yayın elenir. **Bütçe:** çalışma başına TOPLAM ≤20 video (08.11.2026'da 10→20; gerçek kota `kota_gunlugu` ile ölçülüyor), kanallar arası sırayla (tur başına kanal başı 1, en yeni önce); işlenemeyenler `bekleyenler`'de başlık+link ile bekler. **Günlük yükleyen kuralı:** son 7 günde ≥5 uzun video yükleyen kanal `liste_disi` (işlenmez, bültene girmez); kalıcı çıkarılanlar `kanal_takip.json` → `liste_disi` dizisinde, hiç taranmaz; `zorla_takip: true` muaf. Tam transkript alınmaz (yalnız özet alanları) |
 | `youtube_kanallar.json` | Ek kanallar (şu an: Finansal Özgürlük @finansal_ozgurluk): kanal kimliği Data API `forHandle` ile bir kez bulunur ve saklanır; liste RSS → Data API; shorts (<3 dk) ve canlı yayın elenir; Gemini ile özet + ana mesaj + bahsedilen hisseler + konuşmacının kendi çekinceleri + içerik türü; kanal başı ≤2 yeni video/çalışma, 30 gün saklama |
 | `sosyal_nabiz.py` + `sosyal-nabiz.yml` ("Sosyal Nabız") | **v1.3** | YouTube takibi bitince (workflow_run) + dispatch | `sosyal_nabiz.json` | Ücretsiz: (1) takip edilen + son 2 günün en çok yorum alan borsa videolarının yorumlarında BIST kodu sayımı (Data API ~130 birim/gün; kelime olan kodlar yalnız #/$/"hisse" ile); (2) Gemini + Google Search ile Reddit/Ekşi/forum taraması (ücretsiz katmanda arama kotası 0 → 429 beklenir; o zaman akşam bülteni Reddit/Ekşi'yi kendi WebSearch'üyle tarar; 2.5 modelleri yeni kullanıcıya kapalı; kaynaksız sonuç atılır); (3) ipucu işareti (hacim_orani ≥2 → 🔥) ve 5/20 işlem günü getiri karnesi. Kullanıcı adı saklanmaz |
-| `youtube-tarama.yml` ("YouTube Emir Bozkurt Takip") | v2.3 | workflow_run + dispatch | — | Harici paket yok (yalnız standart kütüphane) |
+| `youtube-tarama.yml` ("YouTube Emir Bozkurt Takip") | v2.4 | workflow_run + dispatch + hafta sonu schedule (Ct/Pz 10:17 UTC) | — | Harici paket yok (yalnız standart kütüphane) |
 | `gorevler/*.md` (4 görev talimatı) + `gorevler/BASLATICILAR.md` | 1 | — | — | Zamanlanmış görevler her çalışmada `main`'den çeker |
 | `araclar/gorev_kontrol.py` + `gorev-kontrol.yml` ("Görev Talimatı Kontrolü") | 1 | push/PR (gorevler/**) | — | Talimat dosyalarında zorunlu ifadeler, asgari uzunluk, EK bloğu yerinde mi |
 | `bulten_hazirla.py` + `bulten-hazirla.yml` ("Bülten Girdisi Hazırla") | **v1.0** | workflow_run (ana tarama, KAP) + dispatch | `bulten_girdi.json` | Aşama 2: akşam bülteninin kurallı hesapları (Emir Bozkurt 7a/7b + yakın adaylar, 7c geçmişi, BIST30, teknik plan, retail radar, geri alım özeti). Önce testler çalışır. **Bülten henüz bu dosyayı kullanmıyor** (gözlem dönemi) |

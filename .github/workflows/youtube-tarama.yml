@@ -1,5 +1,6 @@
 name: YouTube Emir Bozkurt Takip
 
+# v2.4 (2026-11-08): hafta sonu zamanlamasi eklendi.
 # v2.3 (2026-11-07): Emir Bozkurt (youtube_tarama.py) + konuk uzman takibi (youtube_konuk.py, konuk_takip.json)
 #   + ek kanal takibi (youtube_kanallar.py v1.1, kanal_takip.json; calisma basina toplam video butcesi).
 # Secret: GOOGLE_API_KEY (opsiyonel YOUTUBE_API_KEY, GEMINI_MODEL).
@@ -8,6 +9,10 @@ on:
     workflows: ["BIST Emir Bozkurt Taraması"]
     types: [completed]
   workflow_dispatch:
+  schedule:
+    # Hafta sonu (Alpay karari 08.11.2026): Cumartesi + Pazar 13:17 TR (10:17 UTC).
+    # Gemini kotasi 5 yerine 7 gune yayilir; Pazartesi bultenine hafta sonu videolari ozetli gelir.
+    - cron: "17 10 * * 6,0"
 
 permissions:
   contents: write

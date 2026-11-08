@@ -19,6 +19,8 @@ concurrency:
 
 jobs:
   nabiz:
+    # Hafta sonu zamanlanmis YouTube calismasinin ardindan CALISMAZ (borsa kapali; cuma verisinin uzerine yazmasin).
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.event != 'schedule'
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
