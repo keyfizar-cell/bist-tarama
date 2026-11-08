@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_tarama.py  v2.2  (2026-11-07)
+# youtube_tarama.py  v2.3  (2026-11-08)
+# v2.3: Gemini kota yedegi — bir model GUNLUK kotaya (429) takilinca bu calismada atlanir ve siradaki
+#       modelle devam edilir (kotalar model basina); flash-lite modeller sona yedek eklenir; dakikalik
+#       sinirda 60 sn bekleyip bir kez tekrar denenir. Tum modeller bitince hata metninde 'HTTP 429' olur.
 # v2.2: Gemini cagrisi genellestirildi (istem/sema parametreli, videoMetadata fps=0.1 ile
 #       uzun videolarda token tasarrufu); youtube_konuk.py bu fonksiyonlari kullanir.
 # "Emir Bozkurt | Stratejik Yatirim" (@stratejik.yatirim) kanalinin EN YENI
@@ -34,7 +37,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-SURUM = "2.2"
+SURUM = "2.3"
 CHANNEL_ID = "UChiWzAwOe7J67dd5PmmUnnA"
 UPLOADS_PLAYLIST = "UU" + CHANNEL_ID[2:]
 CHANNEL_ADI = "Emir Bozkurt | Stratejik Yatirim"
@@ -55,6 +58,8 @@ YT_DATA_TABAN = "https://www.googleapis.com/youtube/v3"
 GEMINI_TERCIH = ["gemini-3-flash-preview", "gemini-flash-latest", "gemini-2.5-flash"]
 
 GUNLUK = []  # kisa deneme gunlugu -> JSON "denemeler"
+TUKENEN = set()  # bu calismada GUNLUK kotasi biten modeller (v2.3): atlanir, siradaki modelle devam edilir
+_MODEL_ONBELLEK = []
 
 
 def log(msg):
@@ -217,9 +222,13 @@ GEMINI_SEMA = {
 
 
 def gemini_modelleri(anahtar):
+    """Tercih sirasi: GEMINI_MODEL > GEMINI_TERCIH > diger flash'lar > (yedek) flash-lite'lar.
+    v2.3: lite modeller kota yedegi olarak sona eklenir; liste calisma boyunca onbellekte tutulur."""
+    if _MODEL_ONBELLEK:
+        return list(_MODEL_ONBELLEK)
     zorla = os.environ.get("GEMINI_MODEL", "").strip()
     adaylar = [zorla] if zorla else []
-    mevcut = []
+    mevcut, lite = [], []
     try:
         _, txt = http_get(GEMINI_TABAN + "/models?pageSize=200&key=" + anahtar,
                           headers={"Accept": "application/json"})
@@ -231,9 +240,9 @@ def gemini_modelleri(anahtar):
             kucuk = ad.lower()
             if "flash" not in kucuk:
                 continue
-            if any(x in kucuk for x in ("lite", "tts", "live", "image", "audio", "embedding", "transcribe")):
+            if any(x in kucuk for x in ("tts", "live", "image", "audio", "embedding", "transcribe")):
                 continue
-            mevcut.append(ad)
+            (lite if "lite" in kucuk else mevcut).append(ad)
     except Exception as e:
         log("Gemini model listesi alinamadi: %s" % _hata_metni(e))
     for t in GEMINI_TERCIH:
@@ -246,7 +255,13 @@ def gemini_modelleri(anahtar):
         if a and a not in goruldu:
             goruldu.add(a)
             sira.append(a)
-    return sira[:5]
+    sira = sira[:5]
+    for ad in sorted(lite, reverse=True)[:2]:
+        if ad not in sira:
+            sira.append(ad)
+    if mevcut or lite:
+        _MODEL_ONBELLEK[:] = sira
+    return sira
 
 
 def _gemini_cevap_metni(txt):
@@ -266,6 +281,8 @@ def gemini_transkript(video_url, istem=None, sema=None, fps=0.1):
         raise RuntimeError("GOOGLE_API_KEY yok")
     son_hata = None
     for model in gemini_modelleri(anahtar):
+        if model in TUKENEN:
+            continue
         govde = {
             "contents": [{"role": "user", "parts": [
                 {"fileData": {"fileUri": video_url}, "videoMetadata": {"fps": fps}},
@@ -280,7 +297,24 @@ def gemini_transkript(video_url, istem=None, sema=None, fps=0.1):
         }
         url = "%s/models/%s:generateContent?key=%s" % (GEMINI_TABAN, model, anahtar)
         try:
-            _, txt = http_post_json(url, govde)
+            try:
+                _, txt = http_post_json(url, govde)
+            except urllib.error.HTTPError as e429:
+                if e429.code != 429:
+                    raise
+                govde_metin = ""
+                try:
+                    govde_metin = e429.read().decode("utf-8", "replace")
+                except Exception:
+                    pass
+                if "PerMinute" in govde_metin and "PerDay" not in govde_metin:
+                    log("Gemini %s dakikalik sinir; 60 sn bekleyip tekrar" % model)
+                    time.sleep(60)
+                    _, txt = http_post_json(url, govde)
+                else:
+                    TUKENEN.add(model)
+                    log("Gemini %s gunluk kota doldu; siradaki model denenecek" % model)
+                    continue
             metin, bitis = _gemini_cevap_metni(txt)
             try:
                 j = json.loads(metin)
@@ -297,10 +331,13 @@ def gemini_transkript(video_url, istem=None, sema=None, fps=0.1):
             son_hata = _hata_metni(e)
             log("Gemini %s hata: %s" % (model, son_hata))
             if e.code == 429:
-                break  # kota: baska modelle israf etme
+                TUKENEN.add(model)  # ikinci denemede de 429: bu calismada bu modeli birak
+                son_hata = None
         except Exception as e:
             son_hata = _hata_metni(e)
             log("Gemini %s hata: %s" % (model, son_hata))
+    if TUKENEN and all(m in TUKENEN for m in gemini_modelleri(anahtar)):
+        raise RuntimeError("Gemini basarisiz: HTTP 429 tum modellerin kotasi doldu (%s)" % ", ".join(sorted(TUKENEN)))
     raise RuntimeError("Gemini basarisiz: %s" % son_hata)
 
 

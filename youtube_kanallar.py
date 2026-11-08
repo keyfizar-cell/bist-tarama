@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_kanallar.py  v1.1  (2026-11-08)
+# youtube_kanallar.py  v1.2  (2026-11-08)
+# v1.2: butce 20'ye cikarildi (gercek kota olcumu); `kota_gunlugu` her calismada islenen sayisini, kullanilan
+#       modelleri ve kota dolan modelleri kaydeder (son 30 calisma). Model yedegi youtube_tarama v2.3'te.
 # Ek YouTube KANALLARININ (Emir Bozkurt disinda) son videolarini bulur ve Gemini ile
 # ozet + ana mesaj + bahsedilen hisseler + konusmacinin kendi dile getirdigi riskleri cikarir.
 # Liste: kanal_takip.json   Cikti: data/youtube_kanallar.json
@@ -28,7 +30,7 @@ import urllib.parse
 import youtube_tarama as yt
 from youtube_konuk import sure_dk
 
-SURUM = "1.1"
+SURUM = "1.2"
 LISTE_YOLU = "kanal_takip.json"
 OUT_PATH = os.path.join("data", "youtube_kanallar.json")
 MIN_SURE_DK = 3
@@ -225,7 +227,7 @@ def main():
         return
     ayar = {"gun_penceresi": int(liste.get("gun_penceresi", 4)),
             "kanal_basina": int(liste.get("calisma_basina_en_fazla_yeni_video", 2)),
-            "toplam": int(liste.get("calisma_basina_toplam_video", 10)),
+            "toplam": int(liste.get("calisma_basina_toplam_video", 20)),
             "gunluk_esik": int(liste.get("gunluk_yukleyen_esigi", 5))}
     anahtar_data = os.environ.get("YOUTUBE_API_KEY", "").strip() or os.environ.get("GOOGLE_API_KEY", "").strip()
     kayitlar, cacheler, tum_adaylar = {}, {}, []
@@ -281,8 +283,15 @@ def main():
         cikti["kanallar"][ad] = kayit
     cikti["liste_disi"] = [{"ad": k.get("ad"), "handle": k.get("handle"), "neden": k.get("neden", "")}
                            for k in liste.get("liste_disi", [])]
+    kullanilan = {}
+    for ad, a in secim:
+        if a["video_id"] in secilen_idler:
+            m = (a.get("transkript_kaynagi") or "").replace("gemini:", "")
+            kullanilan[m] = kullanilan.get(m, 0) + 1
     cikti["butce"] = {"toplam_sinir": ayar["toplam"], "islenen": len(secilen_idler),
-                      "bekleyen": sum(len(k["bekleyenler"]) for k in kayitlar.values()), "kota_bitti": kota_bitti}
+                      "bekleyen": sum(len(k["bekleyenler"]) for k in kayitlar.values()), "kota_bitti": kota_bitti,
+                      "kullanilan_modeller": kullanilan, "kotasi_dolan_modeller": sorted(yt.TUKENEN)}
+    cikti["kota_gunlugu"] = ((eski.get("kota_gunlugu") or []) + [dict(cikti["butce"], zaman_utc=yt.now_utc())])[-30:]
     yaz(cikti)
 
 
