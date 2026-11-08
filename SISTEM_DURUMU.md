@@ -66,10 +66,11 @@ Ardından "Sosyal Nabız" ÇALIŞMAZ (borsa kapalı; cuma verisinin üzerine yaz
 
 | Bileşen | Sürüm | Tetik | Çıktı | Not |
 |---|---|---|---|---|
+| 08.11.2026 | Bülten 7f (B): kalan videolar tek satır yerine "önemli bilgi özeti" (ana mesaj + en önemli 2-3 madde + kod görüşleri + çekince) — Alpay kararı | Claude Code |
 | 08.11.2026 | YouTube takibi hafta sonu da çalışır (Ct/Pz 13:17 TR, Alpay kararı); Sosyal Nabız hafta sonu zamanlı çalışmanın ardından atlanır | Claude Code |
 | 08.11.2026 | **Gemini kota yedeği** (Alpay onayı, seçenek 1-2): `youtube_tarama.py` v2.3 (429'da sıradaki model, lite yedek, dakikalık sınırda bekleme) + 5 test; `youtube_kanallar.py` v1.2 (bütçe 20, `kota_gunlugu`); Sağlık Nöbeti'ne "GEMINI KOTASI YETMİYOR" (3 çalışma üst üste kota dolarsa). DeepSeek vb. metin modelleri video izleyemediği için eklenmedi | Claude Code |
 | 08.11.2026 | İlk ölçüm (Actions): 27 kanalın tümünün kimliği çözüldü; 10 video özetlendi, 9 bekliyor. Her gün yükleyen 2 kanal (EKONOMİBİZ 15, Burak Aktaş 5 video/7 gün) `kanal_takip.json` → `liste_disi`'ne taşındı | Claude Code |
-| 08.11.2026 | **26 YouTube kanalı eklendi** (Alpay listesi); `youtube_kanallar.py` v1.1: toplam video bütçesi + kanallar arası sıralı seçim + `bekleyenler`; her gün video yükleyen kanallar otomatik liste dışı (Alpay kararı); kanal videolarında tam transkript kaldırıldı; iş akışı süresi 75 dk; bülten 7f: en fazla 6 tam + kısa liste + bekleyenler; 8 test yeniden yazıldı | Claude Code |
+| 08.11.2026 | **26 YouTube kanalı eklendi** (Alpay listesi); `youtube_kanallar.py` v1.1: toplam video bütçesi + kanallar arası sıralı seçim + `bekleyenler`; her gün video yükleyen kanallar otomatik liste dışı (Alpay kararı); kanal videolarında tam transkript kaldırıldı; iş akışı süresi 75 dk; bülten 7f: en fazla 6 tam + önemli bilgi özeti + bekleyenler; 8 test yeniden yazıldı | Claude Code |
 | `tarama.py` + `bist-tarama.yml` ("BIST Emir Bozkurt Taraması") | — | workflow_dispatch (Cloudflare Worker, 15:20 UTC) | `latest.json`, `<tarih>.json`, `status.json` | TradingView screener birincil; yfinance/isyatirimhisse yedek. Secret: `TV_SESSIONID` |
 | `kap_tarama.py` + `kap-tarama.yml` | **v3.4** | workflow_run + dispatch | `kap.json`, `geri_alim.json` | Kümülatif geri alım: `kumulatif_kaynak` = `sirket_beyani` \| `tablo_program`. Bültene YALNIZ `sirket_beyani` yazılır |
 | `fon_tarama.py` + `fon-tarama.yml` | v1.0 | workflow_run + dispatch | `fon.json` | tefasmak 1.0.1 (+pytefas yedek) |
