@@ -66,6 +66,7 @@ Ardından "Sosyal Nabız" ÇALIŞMAZ (borsa kapalı; cuma verisinin üzerine yaz
 
 | Bileşen | Sürüm | Tetik | Çıktı | Not |
 |---|---|---|---|---|
+| 09.11.2026 | Pazartesi kontrolü: akşam bülteni bulten_girdi.json ile birebir (7a/7b LYDHO, 7c 42/22/20/−%0,04, BIST30 30/30); Koç Notları ve 8.5(4) çalıştı; 7f'de kalan 14 video yine tek satır verilmişti → talimata açık yasak eklendi | Claude Code |
 | 08.11.2026 | Bülten 7f (B): kalan videolar tek satır yerine "önemli bilgi özeti" (ana mesaj + en önemli 2-3 madde + kod görüşleri + çekince) — Alpay kararı | Claude Code |
 | 08.11.2026 | YouTube takibi hafta sonu da çalışır (Ct/Pz 13:17 TR, Alpay kararı); Sosyal Nabız hafta sonu zamanlı çalışmanın ardından atlanır | Claude Code |
 | 08.11.2026 | **Gemini kota yedeği** (Alpay onayı, seçenek 1-2): `youtube_tarama.py` v2.3 (429'da sıradaki model, lite yedek, dakikalık sınırda bekleme) + 5 test; `youtube_kanallar.py` v1.2 (bütçe 20, `kota_gunlugu`); Sağlık Nöbeti'ne "GEMINI KOTASI YETMİYOR" (3 çalışma üst üste kota dolarsa). DeepSeek vb. metin modelleri video izleyemediği için eklenmedi | Claude Code |
