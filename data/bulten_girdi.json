@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-09T15:21:19.813763+00:00",
+ "uretim_zamani_utc": "2026-11-09T15:22:24.656446+00:00",
  "kaynak": {
   "tarih": "2026-11-09",
   "uretim_zamani_utc": "2026-11-09T15:20:57+00:00",
@@ -9073,7 +9073,7 @@
  ],
  "geri_alim": {
   "var": true,
-  "uretim_zamani_utc": "2026-11-07T12:20:35.805419+00:00",
+  "uretim_zamani_utc": "2026-11-09T15:21:25.044134+00:00",
   "satirlar": [
    {
     "kod": "BLUME",
