@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-11-07T12:20:32.876595+00:00",
-  "tarih": "2026-11-07",
+  "uretim_zamani_utc": "2026-11-09T15:21:21.123496+00:00",
+  "tarih": "2026-11-09",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-11-03",
+  "baslangic": "2026-11-05",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [],
@@ -113,19 +113,6 @@
         "duzeltme": false,
         "ek_var": true,
         "url": "https://www.kap.org.tr/tr/Bildirim/1694275"
-      },
-      {
-        "no": 1692260,
-        "zaman": "2026-11-04T15:06:27",
-        "tur": "ODA",
-        "konu": "Kurumsal Yönetim İlkelerine Uyum Derecelendirmesi",
-        "ozet": "Kurumsal Yönetim Derecelendirme Not Bildirimi",
-        "sirket": "ENKA İNŞAAT VE SANAYİ A.Ş.",
-        "kodlar": "ENKAI",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1692260"
       }
     ],
     "HEKTS": [
@@ -193,93 +180,52 @@
         "duzeltme": false,
         "ek_var": true,
         "url": "https://www.kap.org.tr/tr/Bildirim/1694456"
-      },
-      {
-        "no": 1691624,
-        "zaman": "2026-11-03T15:59:53",
-        "tur": "CA",
-        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-        "ozet": "TRFHEKTK2611 ISIN Kodlu Finansman Bonosu İtfası",
-        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
-        "kodlar": "HEKTS",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1691624"
-      },
-      {
-        "no": 1691300,
-        "zaman": "2026-11-03T09:17:42",
-        "tur": "CA",
-        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
-        "ozet": "TRFHEKT42715 ISIN Kodlu Finansman Bonosu İhracı",
-        "sirket": "HEKTAŞ TİCARET T.A.Ş.",
-        "kodlar": "HEKTS",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1691300"
       }
     ],
-    "KRDMD": [
-      {
-        "no": 1692703,
-        "zaman": "2026-11-04T18:41:18",
-        "tur": "FR",
-        "konu": "Sorumluluk Beyanı (Konsolide)",
-        "ozet": "Sorumluluk Beyanı",
-        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "KRDMA, KRDMB, KRDMD",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1692703"
-      },
-      {
-        "no": 1692699,
-        "zaman": "2026-11-04T18:40:58",
-        "tur": "FR",
-        "konu": "Faaliyet Raporu (Konsolide)",
-        "ozet": "Faaliyet Raporu",
-        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "KRDMA, KRDMB, KRDMD",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1692699"
-      },
-      {
-        "no": 1692694,
-        "zaman": "2026-11-04T18:40:38",
-        "tur": "FR",
-        "konu": "Finansal Rapor",
-        "ozet": null,
-        "sirket": "KARDEMİR KARABÜK DEMİR ÇELİK SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "KRDMA, KRDMB, KRDMD",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1692694"
-      }
-    ],
+    "KRDMD": [],
     "OBAMS": [],
-    "PAPIL": [
+    "PAPIL": [],
+    "SOHOE": [],
+    "TTKOM": [
       {
-        "no": 1692575,
-        "zaman": "2026-11-04T18:17:49",
+        "no": 1694824,
+        "zaman": "2026-11-09T11:52:47",
+        "tur": "DG",
+        "konu": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
+        "ozet": "Kurumsal Yönetim Bilgi Formu Güncelleme",
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694824"
+      },
+      {
+        "no": 1694753,
+        "zaman": "2026-11-09T11:16:27",
         "tur": "DG",
         "konu": "Şirket Genel Bilgi Formu",
         "ozet": null,
-        "sirket": "PAPİLON SAVUNMA TEKNOLOJİ VE TİCARET A.Ş.",
-        "kodlar": "PAPIL",
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
         "gecikmeli": false,
         "duzeltme": false,
         "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1692575"
-      }
-    ],
-    "SOHOE": [],
-    "TTKOM": [
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694753"
+      },
+      {
+        "no": 1694741,
+        "zaman": "2026-11-09T11:04:54",
+        "tur": "ODA",
+        "konu": "Özel Durum Açıklaması (Genel)",
+        "ozet": "Yönetim Kurulu Üye İstifası",
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694741"
+      },
       {
         "no": 1694263,
         "zaman": "2026-11-06T18:27:08",
@@ -305,71 +251,6 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1694069"
-      },
-      {
-        "no": 1692812,
-        "zaman": "2026-11-04T20:04:29",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "2026 3. Çeyrek Konsolide Finansal ve Operasyonel Değerlendirme",
-        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
-        "kodlar": "TTKOM",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1692812"
-      },
-      {
-        "no": 1692811,
-        "zaman": "2026-11-04T20:03:43",
-        "tur": "FR",
-        "konu": "Sorumluluk Beyanı (Konsolide)",
-        "ozet": "2026 3. Çeyrek Sorumluluk Beyanı",
-        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
-        "kodlar": "TTKOM",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1692811"
-      },
-      {
-        "no": 1692810,
-        "zaman": "2026-11-04T20:03:29",
-        "tur": "FR",
-        "konu": "Faaliyet Raporu (Konsolide)",
-        "ozet": "2026 3. Çeyrek Faaliyet Raporu",
-        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
-        "kodlar": "TTKOM",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1692810"
-      },
-      {
-        "no": 1692808,
-        "zaman": "2026-11-04T20:03:12",
-        "tur": "FR",
-        "konu": "Finansal Rapor",
-        "ozet": null,
-        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
-        "kodlar": "TTKOM",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1692808"
-      },
-      {
-        "no": 1691934,
-        "zaman": "2026-11-03T19:27:38",
-        "tur": "ODA",
-        "konu": "Özel Durum Açıklaması (Genel)",
-        "ozet": "Eurobond İşlemleri Hakkında Açıklama",
-        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
-        "kodlar": "TTKOM",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1691934"
       }
     ],
     "ULUUN": [
@@ -411,35 +292,22 @@
         "duzeltme": false,
         "ek_var": true,
         "url": "https://www.kap.org.tr/tr/Bildirim/1693454"
-      },
-      {
-        "no": 1692748,
-        "zaman": "2026-11-04T19:18:38",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "04.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1692748"
-      },
-      {
-        "no": 1691969,
-        "zaman": "2026-11-03T21:23:20",
-        "tur": "CA",
-        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
-        "ozet": "03.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": false,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1691969"
       }
     ],
     "VAKBN": [
+      {
+        "no": 1694890,
+        "zaman": "2026-11-09T14:08:27",
+        "tur": "CA",
+        "konu": "Pay Dışında Sermaye Piyasası Aracı İşlemlerine İlişkin Bildirim (Faiz İçeren)",
+        "ozet": "Nitelikli Yatırımcılara Finansman Bonosu İhracının Tamamlanması",
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1694890"
+      },
       {
         "no": 1693614,
         "zaman": "2026-11-06T10:10:06",
@@ -548,7 +416,7 @@
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1764,
+  "toplam_piyasa_satiri": 1481,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 8
+  "bildirimli_kod_sayisi": 6
 }
