@@ -78,7 +78,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744136+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608558+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -254,7 +254,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744151+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608572+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -325,7 +325,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744159+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608578+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -341,7 +341,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744163+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608581+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -468,7 +468,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744169+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608585+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -721,9 +721,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744182+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608595+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -739,7 +739,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744186+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608596+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -755,7 +755,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744189+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608599+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -771,7 +771,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744192+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608601+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -787,7 +787,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744196+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608603+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -869,7 +869,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744203+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608608+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -923,7 +923,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744210+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608613+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -934,6 +934,16 @@
       "hata": null,
       "son_basarili_utc": null,
       "videolar": [
+        {
+          "video_id": "HHpBFA-GD98",
+          "baslik": "12.000$ Fonlama, 15.000$ Kâr! | XAUUSD 4140 Analizi",
+          "yayin_tarihi": "2026-11-09T14:10:34+00:00",
+          "url": "https://www.youtube.com/watch?v=HHpBFA-GD98",
+          "kanal_adi": "Fx Matik",
+          "sure_dk": 1.6,
+          "canli": false,
+          "atlandi": "sure 2 dk"
+        },
         {
           "video_id": "gO8mqLlcMfM",
           "baslik": "XAUUSD 3935’ten 4042’ye Geldi! Altında Ara Kanal Başladı",
@@ -948,9 +958,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744214+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608620+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -1017,7 +1027,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744220+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608625+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -1188,7 +1198,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744226+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608630+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -1246,7 +1256,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744232+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608635+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -1336,8 +1346,8 @@
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
-      "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744242+00:00"
+      "son7_uzun_video": 1,
+      "son_kontrol_utc": "2026-11-09T15:24:35.608642+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -1353,7 +1363,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744246+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608644+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -1369,7 +1379,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744249+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608646+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -1385,7 +1395,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744252+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608647+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -1394,8 +1404,67 @@
       "channel_id": "UCDmr51JwXxErCrTALTGokpQ",
       "kanal_adi": "Selçuk Ergin ",
       "hata": null,
-      "son_basarili_utc": "2026-11-08T09:48:20.650966+00:00",
+      "son_basarili_utc": "2026-11-09T15:23:03.638931+00:00",
       "videolar": [
+        {
+          "video_id": "_MFcWyadlgU",
+          "baslik": "Yarın Piyasalar Şok Yaşayabilir! Çünkü Bu Veri Gelmeyecek!",
+          "yayin_tarihi": "2026-11-09T13:03:24+00:00",
+          "url": "https://www.youtube.com/watch?v=_MFcWyadlgU",
+          "kanal_adi": "Selçuk Ergin ",
+          "sure_dk": 16.9,
+          "canli": false,
+          "ana_mesaj": "ABD enflasyon verileri ve Çin'deki maliyet artışları nedeniyle piyasalarda risklerin arttığı, yatırımcıların bu hafta temkinli kalarak nakit ağırlığını koruması gerektiği.",
+          "ozet": [
+            "ABD'de geçen yılki hükümet kapanması nedeniyle yıllık enflasyon verileri açıklanmayacak, piyasa sadece aylık verilere odaklanacak.",
+            "Aylık çekirdek enflasyonun %0,2 gelmesi yönetilebilir kabul edilirken, %0,4'lük bir veri piyasalarda sert satışlara yol açabilir.",
+            "Çin'de üretici enflasyonunun %5,7'ye yükselmesi, küresel enflasyon üzerinde yeni bir baskı unsuru oluşturuyor.",
+            "NASDAQ ve S&P 500 endekslerinde düşüş trendi devam ederken, S&P 500 tarafında kısa pozisyonların ağırlığı dikkat çekiyor.",
+            "Merkez bankalarının altın rezervlerini artırması, altın ve gümüşün hisse senedi piyasalarına göre daha dirençli kalmasını sağlıyor.",
+            "Bitcoin 81.500 dolar direncini aşamadığı için düşüş eğilimini sürdürüyor ve 74.800 dolar desteğinin altına sarkmış durumda.",
+            "Kripto para piyasasında Bitcoin dominansının artması, küçük altcoinler için ciddi düşüş riskleri barındırıyor.",
+            "Bu hafta özelinde kaldıraçlı pozisyonlardan kaçınılması ve yeni alımlar için enflasyon verilerinin beklenmesi öneriliyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "NDX",
+              "ne_dedi": "Ekim ayında başlayan düşüş trendi sürüyor; yatırımcılar teknoloji tarafında pozisyon artırsa da enflasyon verileri bu tabloyu değiştirebilir."
+            },
+            {
+              "kod": "SPX",
+              "ne_dedi": "Pozisyonlanmalarda aşırı kısa (short) durumun ağırlıkta olduğu ve düşüş yönlü bahislerin yüksek olduğu görülüyor."
+            },
+            {
+              "kod": "XAU",
+              "ne_dedi": "Ons bazında 4100 dolar seviyesi direnç, 3900-4000 dolar bölgesi ise ana destek alanı olarak takip ediliyor."
+            },
+            {
+              "kod": "GAU",
+              "ne_dedi": "6200 TL seviyeleri dip alanlar olarak görülüyor ve merkez bankası alımlarıyla desteklenmeye devam ediyor."
+            },
+            {
+              "kod": "Gram Gümüş",
+              "ne_dedi": "79 TL bölgesi güçlü bir destek alanı olarak çalışıyor ve önümüzdeki dönemde de bu özelliğini koruması bekleniyor."
+            },
+            {
+              "kod": "BTC",
+              "ne_dedi": "81.500 dolar direncini aşamadı; 74.800 doların altına inilmesiyle 67.000 dolar seviyesi ana destek haline geldi."
+            },
+            {
+              "kod": "ETH",
+              "ne_dedi": "2300 dolar bölgesinin kaybedilmesinin ardından 2032 dolar seviyesi destek olarak izleniyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "ABD enflasyon verilerindeki küçük ondalık farkların piyasalarda büyük fiyatlamalara yol açma riski.",
+            "Çin'deki üretici maliyet artışlarının küresel enflasyonu tetikleme ihtimali.",
+            "Bitcoin dominansının yükselmesiyle küçük altcoinlerde yaşanabilecek sert kayıplar.",
+            "Kaldıraçlı pozisyonların yüksek volatilite döneminde tasfiye olma riski."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-09T15:23:03.638909+00:00"
+        },
         {
           "video_id": "tINTBvbilsI",
           "baslik": "Altın Gümüş Toplama İşi Bitti! / Geçmiş Olsun!",
@@ -1458,9 +1527,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744258+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608655+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -1469,8 +1538,162 @@
       "channel_id": "UCCSACnW1QVfSVfL-KSP0bhw",
       "kanal_adi": "Selim Aldemir | Finans Akademisi",
       "hata": null,
-      "son_basarili_utc": "2026-11-08T16:41:31.744108+00:00",
+      "son_basarili_utc": "2026-11-09T15:24:35.608531+00:00",
       "videolar": [
+        {
+          "video_id": "lVkBHQukb74",
+          "baslik": "ESCAR Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
+          "yayin_tarihi": "2026-11-09T14:30:07+00:00",
+          "url": "https://www.youtube.com/watch?v=lVkBHQukb74",
+          "kanal_adi": "Selim Aldemir | Finans Akademisi",
+          "sure_dk": 1.5,
+          "canli": false,
+          "atlandi": "sure 2 dk"
+        },
+        {
+          "video_id": "EoESYaO6VzI",
+          "baslik": "LIDER Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
+          "yayin_tarihi": "2026-11-09T13:30:29+00:00",
+          "url": "https://www.youtube.com/watch?v=EoESYaO6VzI",
+          "kanal_adi": "Selim Aldemir | Finans Akademisi",
+          "sure_dk": 1.8,
+          "canli": false,
+          "atlandi": "sure 2 dk"
+        },
+        {
+          "video_id": "drH61T8293g",
+          "baslik": "IMASM Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
+          "yayin_tarihi": "2026-11-09T12:30:32+00:00",
+          "url": "https://www.youtube.com/watch?v=drH61T8293g",
+          "kanal_adi": "Selim Aldemir | Finans Akademisi",
+          "sure_dk": 1.2,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "OatccjG_4OY",
+          "baslik": "LINK Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
+          "yayin_tarihi": "2026-11-09T11:30:25+00:00",
+          "url": "https://www.youtube.com/watch?v=OatccjG_4OY",
+          "kanal_adi": "Selim Aldemir | Finans Akademisi",
+          "sure_dk": 0.9,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "adfpVEr1Pa8",
+          "baslik": "AKYHO Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
+          "yayin_tarihi": "2026-11-09T10:30:09+00:00",
+          "url": "https://www.youtube.com/watch?v=adfpVEr1Pa8",
+          "kanal_adi": "Selim Aldemir | Finans Akademisi",
+          "sure_dk": 1.6,
+          "canli": false,
+          "atlandi": "sure 2 dk"
+        },
+        {
+          "video_id": "LoXmjJEoCmc",
+          "baslik": "BUCIM Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
+          "yayin_tarihi": "2026-11-09T09:30:29+00:00",
+          "url": "https://www.youtube.com/watch?v=LoXmjJEoCmc",
+          "kanal_adi": "Selim Aldemir | Finans Akademisi",
+          "sure_dk": 1.1,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "diN9PVznI0U",
+          "baslik": "BU YÜKSELİŞ NEZAMAN ? BU HAREKETE DİKKAT !",
+          "yayin_tarihi": "2026-11-09T08:19:55+00:00",
+          "url": "https://www.youtube.com/watch?v=diN9PVznI0U",
+          "kanal_adi": "Selim Aldemir | Finans Akademisi",
+          "sure_dk": 61.2,
+          "canli": false,
+          "ana_mesaj": "Borsa İstanbul endeksinde ve hisselerde kısa vadeli (Pazartesi günü için) bir tepki yükselişi beklense de, piyasanın genelinde güvensiz bir hava hakimdir ve orta vadede 10.000 seviyesinin altı dahil sert düzeltme riskleri devam etmektedir.",
+          "ozet": [
+            "Endekste yukarı yönlü ancak 'güvensiz' olarak nitelendirilen bir yükseliş hareketi gözlemleniyor.",
+            "Pazartesi günü endeksin yukarıdan açması ve direnç seviyelerini zorlaması bekleniyor.",
+            "Endeks için 10.000 destek seviyesi kritik önem taşıyor; bu seviyenin altına sarkma ihtimali masada duruyor.",
+            "Birçok hissede Pazartesi günü için alıcılı bir performans ve dirençlere doğru tepki yükselişi öngörülüyor.",
+            "Yükselişlerin kalıcı olmayabileceği, tepki sonrası hisselerin eski seviyelerinin altına düşebileceği uyarısı yapılıyor.",
+            "Yatırımcıların nakit ayırması ve piyasadaki sert dalgalanmalara karşı soğukkanlı olması tavsiye ediliyor.",
+            "Endeksin 8.000 seviyelerine kadar gerileme ihtimali teminat bölgesi olarak belirtiliyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "MEGAP",
+              "ne_dedi": "Performansı baskı altında, 1.30 direnci ve 0.60-0.65 teminat bölgesi ile sınırlı bir tepki ihtimali var."
+            },
+            {
+              "kod": "CONSE",
+              "ne_dedi": "Alıcılı bir performansı var, 1.50 ve 1.60 dirençleri beklenebilir; 1.00 TL seviyesi ise kritik alt sınır."
+            },
+            {
+              "kod": "KONTR",
+              "ne_dedi": "Tepki yükselişinde 3.00 TL direncine çok yakın, tavan yapabilir ancak sonrasında düzeltme beklenebilir."
+            },
+            {
+              "kod": "PKENT",
+              "ne_dedi": "110 ve 120 dirençlerine tepki yapabilir ancak 75-80 kuruş seviyelerine kadar düşüş riski sürüyor."
+            },
+            {
+              "kod": "TSPOR",
+              "ne_dedi": "Performansı nötr, endeksle beraber 0.80-0.85 dirençlerini zorlayabilir; 0.60 kuruş seviyeleri toplama bölgesi."
+            },
+            {
+              "kod": "USAK",
+              "ne_dedi": "Performansı güzel, 0.45 direnci ile tavan yapma potansiyeli var; 0.25-0.30 kuruşlara düşme riski mevcut."
+            },
+            {
+              "kod": "ESEN",
+              "ne_dedi": "2.30 direnci beklenebilir ancak yükseliş sonrası 1.00-1.50 seviyelerine kadar sert düzeltme yapabilir."
+            },
+            {
+              "kod": "BARMA",
+              "ne_dedi": "Yükseliş yeni başladı, 5.00 TL direnci hedeflenebilir ancak tepki sonrası geri çekilme riski var."
+            },
+            {
+              "kod": "YYLGD",
+              "ne_dedi": "7.00 TL direncini tekrar zorlayabilir ancak orta vadede düşüş trendi ve alt seviye riskleri devam ediyor."
+            },
+            {
+              "kod": "AGROT",
+              "ne_dedi": "Pazartesi 1.30-1.35 dirençlerine tepki verebilir ancak genel görünüm orta vadede düşüş yönünde."
+            },
+            {
+              "kod": "VESTL",
+              "ne_dedi": "12.00-12.50 desteğinden 15.00 TL direncine tepki verebilir; endeksle beraber hareket etmesi bekleniyor."
+            },
+            {
+              "kod": "ERBOS",
+              "ne_dedi": "110 TL direncine kadar tepki potansiyeli var, sonrasında 50-60 TL seviyelerine düşüş riski bulunuyor."
+            },
+            {
+              "kod": "YEŞİL",
+              "ne_dedi": "0.90-1.00 dirençlerine tepki verebilir ancak 0.40-0.50 kuruş seviyelerine düşme ihtimali masada."
+            },
+            {
+              "kod": "YYAPI",
+              "ne_dedi": "Performansı iyi, 0.60-0.70 dirençlerini görebilir ancak sonrasında 0.30-0.35 kuruşlara düşebilir."
+            },
+            {
+              "kod": "TABGD",
+              "ne_dedi": "220 direnci hedeflenebilir ancak direnç bölgesi tehlikeli, sonrasında sert düşüş yaşanabilir."
+            },
+            {
+              "kod": "HEKTS",
+              "ne_dedi": "Performansı baskılı, endeksle 2.00 TL'yi görebilir; 1.35 destek ve 1.00 TL teminat seviyeleri kritik."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Endeksin 10.000 seviyesinin altına sarkma ve 8.000-9.000 bandına gerileme riski.",
+            "Yükselişlerin sadece kısa vadeli tepki olarak kalıp sonrasında daha derin düşüşlerin gelmesi.",
+            "Hisselerin tepki yükselişi sonrası eski dip seviyelerinin bile altına inme ihtimali.",
+            "Piyasadaki ani dalgalanmalara ve sert düzeltmelere hazırlıksız yakalanma riski."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-09T15:24:35.608509+00:00"
+        },
         {
           "video_id": "qoUVF5516Do",
           "baslik": "BU YÜKSELİŞ TEPKİMİ? BORSANIN BUNDAN SONRA AKİBETİ",
@@ -1690,106 +1913,14 @@
           "icerik_turu": "piyasa_yorumu",
           "transkript_kaynagi": "gemini:gemini-3-flash-preview",
           "islendi_utc": "2026-11-08T09:50:04.499836+00:00"
-        },
-        {
-          "video_id": "kmsOgUBzQL4",
-          "baslik": "BERA Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
-          "yayin_tarihi": "2026-11-06T13:30:23+00:00",
-          "url": "https://www.youtube.com/watch?v=kmsOgUBzQL4",
-          "kanal_adi": "Selim Aldemir | Finans Akademisi",
-          "sure_dk": 1.8,
-          "canli": false,
-          "atlandi": "sure 2 dk"
-        },
-        {
-          "video_id": "oJNDo7EfYbk",
-          "baslik": "PATEK Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
-          "yayin_tarihi": "2026-11-06T12:30:35+00:00",
-          "url": "https://www.youtube.com/watch?v=oJNDo7EfYbk",
-          "kanal_adi": "Selim Aldemir | Finans Akademisi",
-          "sure_dk": 2.4,
-          "canli": false,
-          "atlandi": "sure 2 dk"
-        },
-        {
-          "video_id": "PRPgUGNi3bo",
-          "baslik": "NIBAS Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
-          "yayin_tarihi": "2026-11-06T11:30:28+00:00",
-          "url": "https://www.youtube.com/watch?v=PRPgUGNi3bo",
-          "kanal_adi": "Selim Aldemir | Finans Akademisi",
-          "sure_dk": 2.7,
-          "canli": false,
-          "atlandi": "sure 3 dk"
-        },
-        {
-          "video_id": "xW_php48itA",
-          "baslik": "EUHOL Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
-          "yayin_tarihi": "2026-11-06T10:30:16+00:00",
-          "url": "https://www.youtube.com/watch?v=xW_php48itA",
-          "kanal_adi": "Selim Aldemir | Finans Akademisi",
-          "sure_dk": 2.5,
-          "canli": false,
-          "atlandi": "sure 2 dk"
-        },
-        {
-          "video_id": "bGz4SnbJWfY",
-          "baslik": "LRSHO Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
-          "yayin_tarihi": "2026-11-06T09:30:12+00:00",
-          "url": "https://www.youtube.com/watch?v=bGz4SnbJWfY",
-          "kanal_adi": "Selim Aldemir | Finans Akademisi",
-          "sure_dk": 2.4,
-          "canli": false,
-          "atlandi": "sure 2 dk"
-        },
-        {
-          "video_id": "28sASfgYca0",
-          "baslik": "PAHOL Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
-          "yayin_tarihi": "2026-11-06T08:30:13+00:00",
-          "url": "https://www.youtube.com/watch?v=28sASfgYca0",
-          "kanal_adi": "Selim Aldemir | Finans Akademisi",
-          "sure_dk": 3.1,
-          "canli": false,
-          "ana_mesaj": "PAHOL hissesinin teknik analizi yapılarak destek ve direnç seviyeleri ile olası tepki yükselişleri değerlendirilmiştir.",
-          "ozet": [
-            "PAHOL hissesinin grafiğinin az olduğu belirtildi.",
-            "0.65 TL seviyesinde bir destek olduğu ve buradan tepki beklenebileceği ifade edildi.",
-            "Olası tepki yükselişinde 0.80, 0.90 ve 1.00 TL dirençleri paylaşıldı.",
-            "0.50 TL seviyesi teminat bölgesi olarak işaretlendi ancak buranın dip olmayabileceği uyarısı yapıldı.",
-            "Hissenin genel durumunun zayıf olduğu ve dikkatli olunması gerektiği vurgulandı.",
-            "Piyasa koşullarının olumlu seyretmesi durumunda %30-%50 arası bir tepki yükselişi ihtimali üzerinde duruldu."
-          ],
-          "bahsedilen_hisseler": [
-            {
-              "kod": "PAHOL",
-              "ne_dedi": "0.65 TL desteğinden 0.80, 0.90 ve 1.00 TL dirençlerine doğru bir tepki yükselişi bekleniyor; 0.50 TL teminat seviyesi olarak belirlendi."
-            }
-          ],
-          "konusmacinin_riskleri": [
-            "Hissenin grafiğinin az olması nedeniyle analiz kısıtı.",
-            "0.50 TL seviyesinin dip olmayabileceği ve altına sarkma ihtimali.",
-            "Hissenin genel zayıf görünümü."
-          ],
-          "icerik_turu": "piyasa_yorumu",
-          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
-          "islendi_utc": "2026-11-08T16:41:31.744088+00:00"
-        },
-        {
-          "video_id": "QQz775GL-fA",
-          "baslik": "DAPGM Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
-          "yayin_tarihi": "2026-11-05T17:00:06+00:00",
-          "url": "https://www.youtube.com/watch?v=QQz775GL-fA",
-          "kanal_adi": "Selim Aldemir | Finans Akademisi",
-          "sure_dk": 2.4,
-          "canli": false,
-          "atlandi": "sure 2 dk"
         }
       ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 7,
       "son7_uzun_video": 4,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744283+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608681+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -2068,10 +2199,10 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 2,
       "son7_uzun_video": 5,
       "liste_disi": "her gun video yukluyor (son 7 gunde 5 uzun video)",
-      "son_kontrol_utc": "2026-11-08T16:41:31.744301+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608694+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -2087,7 +2218,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744304+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608696+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -2103,7 +2234,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-08T16:41:31.744308+00:00"
+      "son_kontrol_utc": "2026-11-09T15:24:35.608697+00:00"
     }
   },
   "hata": null,
@@ -2151,10 +2282,21 @@
       },
       "kotasi_dolan_modeller": [],
       "zaman_utc": "2026-11-08T16:41:31.744326+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 2,
+      "bekleyen": 0,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-3-flash-preview": 2
+      },
+      "kotasi_dolan_modeller": [],
+      "zaman_utc": "2026-11-09T15:24:35.608713+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-08T16:41:31.744331+00:00",
+  "uretim_zamani_utc": "2026-11-09T15:24:35.608716+00:00",
   "denemeler": [
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP"
