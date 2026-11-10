@@ -1,8 +1,8 @@
 {
-  "uretim_zamani_utc": "2026-11-09T15:21:21.123496+00:00",
-  "tarih": "2026-11-09",
+  "uretim_zamani_utc": "2026-11-10T15:21:47.997215+00:00",
+  "tarih": "2026-11-10",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-11-05",
+  "baslangic": "2026-11-06",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [],
@@ -60,7 +60,60 @@
         "url": "https://www.kap.org.tr/tr/Bildirim/1694210"
       }
     ],
-    "CANTE": [],
+    "CANTE": [
+      {
+        "no": 1696081,
+        "zaman": "2026-11-09T22:52:13",
+        "tur": "ODA",
+        "konu": "Özel Durum Açıklaması (Genel)",
+        "ozet": "Finansal Sonuçlara İlişkin Açıklama",
+        "sirket": "ÇAN2 TERMİK A.Ş.",
+        "kodlar": "CANTE",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1696081"
+      },
+      {
+        "no": 1696080,
+        "zaman": "2026-11-09T22:51:53",
+        "tur": "FR",
+        "konu": "Sorumluluk Beyanı (Konsolide)",
+        "ozet": "SERMAYE PIYASASI KURULU'NUN \"SERMAYE PIYASASINDA FINANSAL RAPORLAMAYA İLIŞKIN ESASLAR TEBLIĞI'NIN İKINCI BÖLÜMÜNÜN 9. MADDESI GEREĞINCE SORUMLULUK BEYANI",
+        "sirket": "ÇAN2 TERMİK A.Ş.",
+        "kodlar": "CANTE",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1696080"
+      },
+      {
+        "no": 1696076,
+        "zaman": "2026-11-09T22:50:53",
+        "tur": "FR",
+        "konu": "Faaliyet Raporu (Konsolide)",
+        "ozet": "01.01.2026 - 30.09.2026 Dönemi Faaliyet Raporu",
+        "sirket": "ÇAN2 TERMİK A.Ş.",
+        "kodlar": "CANTE",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1696076"
+      },
+      {
+        "no": 1696074,
+        "zaman": "2026-11-09T22:50:40",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "ÇAN2 TERMİK A.Ş.",
+        "kodlar": "CANTE",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1696074"
+      }
+    ],
     "ENKAI": [
       {
         "no": 1694287,
@@ -183,7 +236,47 @@
       }
     ],
     "KRDMD": [],
-    "OBAMS": [],
+    "OBAMS": [
+      {
+        "no": 1695614,
+        "zaman": "2026-11-09T18:42:14",
+        "tur": "FR",
+        "konu": "Sorumluluk Beyanı (Konsolide)",
+        "ozet": "2026 Yılı 3.Çeyrek Ara Dönemi Sorumluluk Beyanı",
+        "sirket": "OBA MAKARNACILIK SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "OBAMS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1695614"
+      },
+      {
+        "no": 1695586,
+        "zaman": "2026-11-09T18:39:35",
+        "tur": "FR",
+        "konu": "Faaliyet Raporu (Konsolide)",
+        "ozet": "2026 Yılı 3.Çeyrek Dönemi Faaliyet Raporu",
+        "sirket": "OBA MAKARNACILIK SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "OBAMS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1695586"
+      },
+      {
+        "no": 1695563,
+        "zaman": "2026-11-09T18:36:37",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "OBA MAKARNACILIK SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "OBAMS",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1695563"
+      }
+    ],
     "PAPIL": [],
     "SOHOE": [],
     "TTKOM": [
@@ -255,6 +348,58 @@
     ],
     "ULUUN": [
       {
+        "no": 1696113,
+        "zaman": "2026-11-09T23:15:00",
+        "tur": "FR",
+        "konu": "Sorumluluk Beyanı (Konsolide)",
+        "ozet": "Sorumluluk Beyanı",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1696113"
+      },
+      {
+        "no": 1696110,
+        "zaman": "2026-11-09T23:13:29",
+        "tur": "FR",
+        "konu": "Faaliyet Raporu (Konsolide)",
+        "ozet": "Faaliyet Raporu",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1696110"
+      },
+      {
+        "no": 1696109,
+        "zaman": "2026-11-09T23:12:40",
+        "tur": "FR",
+        "konu": "Finansal Rapor",
+        "ozet": null,
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": true,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1696109"
+      },
+      {
+        "no": 1695707,
+        "zaman": "2026-11-09T19:02:29",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "09.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1695707"
+      },
+      {
         "no": 1694402,
         "zaman": "2026-11-06T19:36:38",
         "tur": "CA",
@@ -266,32 +411,6 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1694402"
-      },
-      {
-        "no": 1693455,
-        "zaman": "2026-11-05T19:43:50",
-        "tur": "CA",
-        "konu": "Genel Kurul İşlemlerine İlişkin Bildirim",
-        "ozet": "2025 Yılına Ait Olağan Genel Kurul Toplantısı Daveti Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1693455"
-      },
-      {
-        "no": 1693454,
-        "zaman": "2026-11-05T19:42:10",
-        "tur": "CA",
-        "konu": "Kar Payı Dağıtım İşlemlerine İlişkin Bildirim",
-        "ozet": "2025 Yılı Kar Payı Dağıtım Önerisi Hk.",
-        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
-        "kodlar": "ULUUN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1693454"
       }
     ],
     "VAKBN": [
@@ -333,90 +452,12 @@
         "duzeltme": false,
         "ek_var": false,
         "url": "https://www.kap.org.tr/tr/Bildirim/1693535"
-      },
-      {
-        "no": 1693416,
-        "zaman": "2026-11-05T18:55:54",
-        "tur": "FR",
-        "konu": "Sorumluluk Beyanı (Konsolide)",
-        "ozet": "30 Eylül 2026 Konsolide Sorumluluk Beyanı",
-        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
-        "kodlar": "TVB, VAKBN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1693416"
-      },
-      {
-        "no": 1693415,
-        "zaman": "2026-11-05T18:55:30",
-        "tur": "FR",
-        "konu": "Faaliyet Raporu (Konsolide)",
-        "ozet": "30 Eylül 2026 Konsolide Ara Dönem Faaliyet Raporu",
-        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
-        "kodlar": "TVB, VAKBN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1693415"
-      },
-      {
-        "no": 1693414,
-        "zaman": "2026-11-05T18:55:02",
-        "tur": "FR",
-        "konu": "Finansal Rapor",
-        "ozet": null,
-        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
-        "kodlar": "TVB, VAKBN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1693414"
-      },
-      {
-        "no": 1693412,
-        "zaman": "2026-11-05T18:47:17",
-        "tur": "FR",
-        "konu": "Sorumluluk Beyanı (Konsolide Olmayan)",
-        "ozet": "30 Eylül 2026 Konsolide Olmayan Sorumluluk Beyanı",
-        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
-        "kodlar": "TVB, VAKBN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1693412"
-      },
-      {
-        "no": 1693411,
-        "zaman": "2026-11-05T18:46:55",
-        "tur": "FR",
-        "konu": "Faaliyet Raporu (Konsolide Olmayan)",
-        "ozet": "30 Eylül 2026 Konsolide Olmayan Ara Dönem Faaliyet Raporu",
-        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
-        "kodlar": "TVB, VAKBN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1693411"
-      },
-      {
-        "no": 1693410,
-        "zaman": "2026-11-05T18:46:31",
-        "tur": "FR",
-        "konu": "Finansal Rapor",
-        "ozet": null,
-        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
-        "kodlar": "TVB, VAKBN",
-        "gecikmeli": false,
-        "duzeltme": false,
-        "ek_var": true,
-        "url": "https://www.kap.org.tr/tr/Bildirim/1693410"
       }
     ],
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1481,
+  "toplam_piyasa_satiri": 1981,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 6
+  "bildirimli_kod_sayisi": 8
 }
