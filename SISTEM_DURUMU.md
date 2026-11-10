@@ -159,7 +159,7 @@ ama hiçbir göreve bağlı değil.
 - **Twelve Data:** yalnız NVO ve ABD ETF'leri için; BIST için çağrılmaz.
 - **Yatırım koçu (07.11.2026):** Akşam bülteninde "🧑‍🏫 KOÇ NOTLARI" (Piyasa Pusulası'ndan sonra). Profil Alpay'ın
   Drive'ındaki **"Yatırımcı Profili (Koç)"** Google Docs belgesindedir; repo açık olduğu için içeriği repoya, `data/`'ya,
-  SISTEM_DURUMU'na YAZILMAZ. Görev belgeyi başlığıyla bulur. Öğrenme: Alpay bülten e-postasına "KOÇ: …" diye yanıt verir →
+  SISTEM_DURUMU'na YAZILMAZ. Görev belgeyi başlığıyla bulur. Öğrenme: Alpay bülten/brifing e-postasına "KOÇ: …" (veya "koç …") diye yanıt verir; SORU ise ertesi akşam "❓ Sorunun yanıtı" ile cevaplanır →
   görev Gmail'de bulur → Drive aracı belge gövdesini düzenleyemediği için profili YENİ belge olarak yazar, eskisini çöpe atar.
   Koç ayrıca haftanın son iş günü videolardaki ve tanınmış yatırımcıların (son 3 ay, kaynaklı) YÖNTEMLERİNDEN en fazla 2'sini
   profilin Bölüm 7'sine [deneme] olarak ekler; Alpay'ın "KOÇ: benimse/bırak" yanıtına göre [benimsendi]/[bırakıldı] olur
@@ -185,6 +185,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 10.11.2026 | Koç K2 düzeltmesi: Gmail araması yalnız "Re:" yanıtlarını sayar (bültenin kendi "KOÇ:" alt yazısı yanlış eşleşiyordu), sabah brifingi yanıtları ve "koç" (iki noktasız) da geçerli; SORU türü yanıtlar bir sonraki akşam bülteninde "❓ Sorunun yanıtı" olarak cevaplanır. Sabah 7.5(c) fon tablosuna "Alınabilir mi" sütunu (TEFAS'ta kapalı fonlar: TZV yalnız Ziraat, TSI yalnız İş Bankası Maksimum Hesap) | Claude Code |
 | 10.11.2026 | Değişiklik günlüğünün 6 satırı (08–09.11) yanlışlıkla Bölüm 3 tablosuna yazılmıştı → buraya taşındı. Claude Code oturumları için kişisel bulut ortamı "bist-tarama" oluşturuldu (izinli: bigpara, Yahoo query1/2, Mynet Finans, İş Yatırım); zamanlanmış görevlerin ortamı değişmedi. Portföy tablosunda ALTIN sertifikası için Google Finance desteği yok → Mynet IMPORTXML önerildi (tablo Alpay'da) | Claude Code |
 | 09.11.2026 | Pazartesi kontrolü: akşam bülteni bulten_girdi.json ile birebir (7a/7b LYDHO, 7c 42/22/20/−%0,04, BIST30 30/30); Koç Notları ve 8.5(4) çalıştı; 7f'de kalan 14 video yine tek satır verilmişti → talimata açık yasak eklendi | Claude Code |
 | 08.11.2026 | Bülten 7f (B): kalan videolar tek satır yerine "önemli bilgi özeti" (ana mesaj + en önemli 2-3 madde + kod görüşleri + çekince) — Alpay kararı | Claude Code |
