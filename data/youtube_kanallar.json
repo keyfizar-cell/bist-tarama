@@ -78,7 +78,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608558+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926901+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -254,7 +254,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608572+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926914+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -325,7 +325,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608578+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926919+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -341,7 +341,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608581+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926921+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -468,7 +468,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608585+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926926+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -723,7 +723,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608595+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926935+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -739,7 +739,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608596+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926938+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -755,7 +755,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608599+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926939+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -771,7 +771,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608601+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926941+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -787,7 +787,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608603+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926943+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -869,7 +869,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608608+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926948+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -880,6 +880,16 @@
       "hata": null,
       "son_basarili_utc": "2026-11-08T09:32:36.927540+00:00",
       "videolar": [
+        {
+          "video_id": "M1NlxNjSk4w",
+          "baslik": "TARİHİN EN ZOR SINAVI",
+          "yayin_tarihi": "2026-11-10T09:00:16+00:00",
+          "url": "https://www.youtube.com/watch?v=M1NlxNjSk4w",
+          "kanal_adi": "FinansLab | Gülşah Bıçkı",
+          "sure_dk": 0.8,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "L2rLb1PFuLU",
           "baslik": "Borsa 34 Yıl Bekledi: Her Ay Alanlar da Bekledi mi?",
@@ -921,9 +931,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608613+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926955+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -958,9 +968,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608620+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926960+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -1027,7 +1037,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608625+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926965+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -1198,7 +1208,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608630+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926969+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -1256,7 +1266,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608635+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926973+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -1347,7 +1357,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608642+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926980+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -1363,7 +1373,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608644+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926982+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -1379,7 +1389,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608646+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926983+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -1395,7 +1405,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608647+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926985+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -1527,9 +1537,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608655+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.926992+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -1918,9 +1928,10 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 7,
-      "son7_uzun_video": 4,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608681+00:00"
+      "aday_sayisi": 11,
+      "son7_uzun_video": 5,
+      "liste_disi": "her gun video yukluyor (son 7 gunde 5 uzun video)",
+      "son_kontrol_utc": "2026-11-10T15:23:09.927009+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -1929,8 +1940,135 @@
       "channel_id": "UC79Ph9UMRx83-qQe6n1rbCg",
       "kanal_adi": "TANSEL ÇİFTÇİ ",
       "hata": null,
-      "son_basarili_utc": "2026-11-08T09:46:48.009903+00:00",
+      "son_basarili_utc": "2026-11-10T15:23:09.926874+00:00",
       "videolar": [
+        {
+          "video_id": "Cpo6hffdzdw",
+          "baslik": "ABD ENFLASYON VERİSİ VE BORSA İSTANBUL....",
+          "yayin_tarihi": "2026-11-10T13:25:27+00:00",
+          "url": "https://www.youtube.com/watch?v=Cpo6hffdzdw",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 64.2,
+          "canli": false,
+          "ana_mesaj": "Borsa İstanbul'da 10.000 puan seviyesinin psikolojik ve teknik bir eşik olduğu, bu seviyenin aşılması için hacimli alımların gerektiği vurgulanmaktadır.",
+          "ozet": [
+            "Endeksin 9.800 desteği üzerinde tutunma çabası içinde olduğu belirtildi.",
+            "Faiz kararları öncesinde piyasada bekle-gör politikasının hakim olduğu ifade edildi.",
+            "Sanayi hisselerindeki zayıflığın endeks üzerinde baskı oluşturduğu dile getirildi.",
+            "Teknik göstergelerin aşırı satım bölgesinden dönüş sinyalleri verdiği paylaşıldı.",
+            "Orta vadeli yatırımcılar için kademeli alım fırsatlarının oluşabileceği söylendi.",
+            "Yabancı takas oranındaki değişimlerin yakından izlenmesi gerektiği vurgulandı."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "BIST100",
+              "ne_dedi": "10.200 direncinin geçilmesi durumunda yeni zirvelerin hedeflenebileceği belirtildi."
+            },
+            {
+              "kod": "THYAO",
+              "ne_dedi": "290 TL seviyesindeki gap boşluğunun dolma ihtimali üzerinde duruldu."
+            },
+            {
+              "kod": "SISE",
+              "ne_dedi": "48-50 TL bandında güçlü bir destek oluşturduğu ve uzun vade için uygun olduğu söylendi."
+            },
+            {
+              "kod": "ASELS",
+              "ne_dedi": "Savunma sanayii projeleriyle 60 TL [?] seviyelerinde kalıcılık aradığı belirtildi."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Kredi derecelendirme kuruluşlarından beklenen not artışlarının gelmemesi",
+            "Döviz kurundaki ani dalgalanmalar",
+            "Küresel piyasalardaki satış baskısının derinleşmesi"
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-10T15:22:29.941234+00:00"
+        },
+        {
+          "video_id": "gHEOnBPU7Ls",
+          "baslik": "ALTIN DİRENÇ SEVİYELERİNİ GEÇEBİLECDK Mİ ? #xauusd #altın #bist100 #keşfet #forex",
+          "yayin_tarihi": "2026-11-10T10:06:41+00:00",
+          "url": "https://www.youtube.com/watch?v=gHEOnBPU7Ls",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 1.0,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "oGiInBRNsLU",
+          "baslik": "#THYAO hissesinde yükseliş devam edecek mi ? #bist100 #borsa #keşfetteyiz #keşfet",
+          "yayin_tarihi": "2026-11-10T10:05:27+00:00",
+          "url": "https://www.youtube.com/watch?v=oGiInBRNsLU",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.8,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "o1qYAJ7_sow",
+          "baslik": "LAGARDE UYARDI… ENFLASYON YÜKSEK KALACAK… #enflasyon #faiz #xauusd #bist100 #keşfet",
+          "yayin_tarihi": "2026-11-09T11:05:46+00:00",
+          "url": "https://www.youtube.com/watch?v=o1qYAJ7_sow",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 1.0,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "yNcCbeKSHKc",
+          "baslik": "TÜRKİYE'DE ENFLASYONDA EN MANTIKLI YATIRIM NE ? KONUT MU TEMETTÜ MÜ ?",
+          "yayin_tarihi": "2026-11-08T13:00:16+00:00",
+          "url": "https://www.youtube.com/watch?v=yNcCbeKSHKc",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 10.2,
+          "canli": false,
+          "ana_mesaj": "Enflasyonist bir ortamda konut yatırımı, temettü yatırımına göre hem reel getiri hem de psikolojik sürdürülebilirlik açısından daha avantajlıdır.",
+          "ozet": [
+            "Enflasyonist ülkelerde konutun bir yatırım aracı olduğu ve özellikle ilk konutun her fiyattan alınabileceği belirtiliyor.",
+            "2018'de 66 bin dolar olan bir evin 2024'te 104 bin dolara satılarak dolar bazlı enflasyonun üzerinde getiri sağladığı örneklendiriliyor.",
+            "Konutun kira getirisi, hisse senetlerinin temettü verimine benzer bir pasif gelir kaynağı olarak sunuluyor.",
+            "Temettü yatırımcılığının; hisse düşüşü, siyasi gelişmeler, devalüasyon ve patron satışları gibi birçok risk barındırdığı vurgulanıyor.",
+            "Konut yatırımının psikolojik olarak daha kolay taşınabilir olduğu, insanların ev fiyatlarını hisse fiyatları gibi her gün kontrol etmediği ifade ediliyor.",
+            "Türkiye'de nüfus artışı, evlilikler, boşanmalar ve göç nedeniyle konut talebinin sürekli canlı kaldığı, buna karşın arzın yetersiz olduğu söyleniyor.",
+            "Faizler düştüğünde konut fiyatlarının hızla artabileceği, bu yüzden beklemenin fırsat maliyeti yaratabileceği uyarısı yapılıyor.",
+            "Türkiye piyasalarında TL bazlı uzun vadeli yatırım yapmanın ve finansal özgürlüğe ulaşmanın oldukça zor olduğu savunuluyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "KONUT",
+              "ne_dedi": "Enflasyona karşı koruma sağlayan, kira getirisiyle temettü benzeri gelir sunan ve uzun vadede dolar bazında reel kazanç getiren bir yatırım aracıdır."
+            },
+            {
+              "kod": "TUPRS",
+              "ne_dedi": "Temettü yatırımı denilince akla gelen ilk hisselerden biri olsa da, bir hisseyi 10 yıl boyunca taşımanın büyük sabır gerektirdiği ve birçok riske açık olduğu belirtiliyor."
+            },
+            {
+              "kod": "EREGL",
+              "ne_dedi": "Temettü yatırımcısının riskleri kapsamında, hissenin düşüp düşmeyeceği veya bilançosunun nasıl geleceği konusunda belirsizlik taşıyan bir örnek olarak geçiyor."
+            },
+            {
+              "kod": "THYAO",
+              "ne_dedi": "Teknik anlamda dönüş görüldüğünde alım yapmayanların arkasından baktığı, konut piyasasındaki fırsat kaçırma durumuna benzer bir borsa örneği olarak veriliyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Hisse fiyatlarının düşmesi",
+            "Bilanço belirsizlikleri",
+            "Savaş riski",
+            "Devalüasyon",
+            "Merkez Bankası başkanı değişikliği",
+            "Siyasi gelişmeler",
+            "Patron satışları",
+            "Fon krizleri",
+            "Konut piyasasında arz sıkıntısı",
+            "Faizlerin düşmesiyle oluşabilecek ani fiyat artışları ve fırsatın kaçması"
+          ],
+          "icerik_turu": "kisisel_finans",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-10T15:23:09.926853+00:00"
+        },
         {
           "video_id": "bzYu-NAOudQ",
           "baslik": "Gümüşte %256 kazandıran twit….#xagusd #gümüş #xauusd #altın #bist100 #kesfet",
@@ -2199,10 +2337,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 2,
-      "son7_uzun_video": 5,
-      "liste_disi": "her gun video yukluyor (son 7 gunde 5 uzun video)",
-      "son_kontrol_utc": "2026-11-09T15:24:35.608694+00:00"
+      "aday_sayisi": 5,
+      "son7_uzun_video": 4,
+      "son_kontrol_utc": "2026-11-10T15:23:09.927026+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -2218,7 +2355,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608696+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.927028+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -2234,7 +2371,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-09T15:24:35.608697+00:00"
+      "son_kontrol_utc": "2026-11-10T15:23:09.927030+00:00"
     }
   },
   "hata": null,
@@ -2293,10 +2430,21 @@
       },
       "kotasi_dolan_modeller": [],
       "zaman_utc": "2026-11-09T15:24:35.608713+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 2,
+      "bekleyen": 0,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-3-flash-preview": 2
+      },
+      "kotasi_dolan_modeller": [],
+      "zaman_utc": "2026-11-10T15:23:09.927045+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-09T15:24:35.608716+00:00",
+  "uretim_zamani_utc": "2026-11-10T15:23:09.927048+00:00",
   "denemeler": [
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP"
