@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-degerleme.py  v1.0  (2026-11-11)  — BIST100 adil değer (otomatik, manuel dokunuş yok)
+degerleme.py  v1.1  (2026-11-11)  — BIST100 adil değer (otomatik, manuel dokunuş yok)
 
 Her akşam ana taramadan sonra GitHub Actions'ta çalışır:
   - TradingView tarama API'sinden (tradingview-screener) BIST100 üyeleri + tüm BIST (~620 hisse, eş grup
@@ -20,6 +20,9 @@ Her akşam ana taramadan sonra GitHub Actions'ta çalışır:
       Ters DCF : mevcut fiyatın ima ettiği 5 yıllık büyüme.
   - Güven marjı betaya göre otomatik (%15 + 5 puan × max(0, beta − 1), en fazla %30).
   - Uyarılar: değer tuzağı (ucuz + zayıf kalite), döngüsel zirve kârı, negatif FCF, veri eksik.
+v1.1: her hisseye "aday" (⭐ inceleme adayı = kapanış ≤ inceleme seviyesi + uyarılarda ⚠ yok + ≥3 yöntem;
+  tablodaki Apps Script ile AYNI kural) ve önceki çalışmaya göre "degisimler" listesi (durum/aday değişen
+  hisseler) — akşam bülteni ve Koç bunu kullanır.
 Çıktılar: data/adil_deger.json (bülten) ve data/adil_deger.csv (Google Sheets IMPORTDATA; sayılar ×100
 TAMSAYI → yerel ayar ondalık ayıracından etkilenmez).
 Ayarlar: degerleme_ayar.json (yalnız piyasa varsayımları; kişisel veri yok).
@@ -35,7 +38,7 @@ import sys
 import traceback
 import urllib.request
 
-SURUM = "1.0"
+SURUM = "1.1"
 VERI = "data"
 JSON_YOL = os.path.join(VERI, "adil_deger.json")
 CSV_YOL = os.path.join(VERI, "adil_deger.csv")
@@ -421,6 +424,28 @@ def durum(kapanis, baz, inceleme, iyimser):
     return "⚪ adil değer bandında"
 
 
+def aday_mi(s):
+    return bool(s.get("adil_baz") and s.get("inceleme_seviyesi") and s["kapanis"] <= s["inceleme_seviyesi"]
+                and not any("⚠" in u for u in s.get("uyarilar") or [])
+                and (s.get("yontemler") or "").count("%") >= 3)
+
+
+def degisimler(yeni, eski):
+    """Önceki çalışmaya göre durum veya aday bilgisi değişen hisseler."""
+    once = {h.get("kod"): h for h in eski or [] if h.get("kod")}
+    out = []
+    for h in yeni:
+        o = once.get(h.get("kod"))
+        if not o or h.get("hata"):
+            continue
+        e_d, y_d = (o.get("durum") or "")[:1], (h.get("durum") or "")[:1]
+        if bool(o.get("aday")) != bool(h.get("aday")) or e_d != y_d:
+            out.append({"kod": h["kod"], "eski_durum": o.get("durum"), "yeni_durum": h.get("durum"),
+                        "eski_aday": bool(o.get("aday")), "yeni_aday": bool(h.get("aday")),
+                        "kapanis": h.get("kapanis"), "adil_baz": h.get("adil_baz")})
+    return out
+
+
 def degerle(bist100, tum, ayar):
     tablo = es_grup_tablosu(tum)
     satirlar = []
@@ -461,6 +486,7 @@ def degerle(bist100, tum, ayar):
             "durum": durum(kap, baz, inceleme, tl(d["iyimser"])),
             "uyarilar": uyarilar(r, d, tablo),
         })
+        satirlar[-1]["aday"] = aday_mi(satirlar[-1])
     return satirlar
 
 
@@ -496,6 +522,11 @@ def main():
     cikti = {"surum": SURUM, "uretim_zamani_utc": simdi(), "hata": None,
              "not": "Otomatik model çıktısıdır; yatırım tavsiyesi değildir. Tutarlar TL; DCF USD bazlı yapılıp TL fiyata oranlanır."}
     try:
+        with open(JSON_YOL, encoding="utf-8") as f:
+            eski_hisseler = json.load(f).get("hisseler") or []
+    except Exception:
+        eski_hisseler = []
+    try:
         ayar = ayar_oku()
         tr_usd_10y_guncelle(ayar)
         abd_10y_guncelle(ayar)
@@ -503,7 +534,8 @@ def main():
         bist100 = tv_cek("SYML:BIST;XU100")
         satirlar = degerle(bist100, tum, ayar)
         cikti.update({"ayar": ayar, "evren": {"bist100": len(bist100), "es_grup_evreni": len(tum)},
-                      "hisseler": satirlar})
+                      "hisseler": satirlar, "adaylar": [x["kod"] for x in satirlar if x.get("aday")],
+                      "degisimler": degisimler(satirlar, eski_hisseler)})
         csv_yaz(satirlar)
         print("YAZILDI:", JSON_YOL, CSV_YOL, len(satirlar), "hisse")
     except Exception:

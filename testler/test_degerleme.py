@@ -129,5 +129,24 @@ class Butun(unittest.TestCase):
                 int(v)
 
 
+class AdayVeDegisim(unittest.TestCase):
+    def test_aday_kurali(self):
+        s = {"kapanis": 8, "adil_baz": 10, "inceleme_seviyesi": 8.5, "uyarilar": [], "yontemler": "dcf %40, fk %20, pddd %10"}
+        self.assertTrue(d.aday_mi(s))
+        self.assertFalse(d.aday_mi(dict(s, uyarilar=["⚠️ Değer tuzağı riski: x"])))
+        self.assertFalse(d.aday_mi(dict(s, yontemler="pddd %25")))
+        self.assertFalse(d.aday_mi(dict(s, kapanis=9)))
+        self.assertTrue(d.aday_mi(dict(s, uyarilar=["Kalite: ROE düşük"])))  # ⚠ olmayan not engel değil
+
+    def test_degisimler(self):
+        eski = [{"kod": "A", "durum": "⚪ bant", "aday": False}, {"kod": "B", "durum": "🟢 x", "aday": True},
+                {"kod": "C", "durum": "🟡 y", "aday": False}]
+        yeni = [{"kod": "A", "durum": "🟢 x", "aday": True}, {"kod": "B", "durum": "🟢 x", "aday": True},
+                {"kod": "C", "durum": "🔴 z", "aday": False}, {"kod": "D", "durum": "🟢", "aday": True}]
+        dd = {x["kod"]: x for x in d.degisimler(yeni, eski)}
+        self.assertEqual(set(dd), {"A", "C"})  # B değişmedi, D'nin öncesi yok
+        self.assertTrue(dd["A"]["yeni_aday"])
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -67,7 +67,7 @@ Ardından "Sosyal Nabız" ÇALIŞMAZ (borsa kapalı; cuma verisinin üzerine yaz
 
 | Bileşen | Sürüm | Tetik | Çıktı | Not |
 |---|---|---|---|---|
-| `degerleme.py` + `degerleme_ayar.json` + `degerleme.yml` ("Adil Değer") | **v1.0** | workflow_run (ana tarama) + dispatch | `adil_deger.json`, `adil_deger.csv` | BIST100 adil değer, tamamen otomatik (Alpay kararı: manuel varsayım yok). Veri: TradingView tarama API (USD temel veriler; tüm BIST ~620 hisse eş grup için). Yöntemler sınıfa göre ağırlıklı: göreli F/K–PD/DD–FD/FAVÖK (eş grup %25/%50/%75 → kötümser/baz/iyimser), USD DCF (Damodaran Ke: ABD 10Y + β×(olgun prim + 1,5×TR eurotahvil spread'i); döngüsellerde zirve FCF %40 kırpılır), DDM, banka/sigortada ROE ayarlı PD/DD, ters DCF. Güven marjı betaya göre %15–30. ABD 10Y (Yahoo ^TNX) ve TR USD 10Y (Bondscovery) otomatik; okunamazsa ayar dosyası. Uyarılar: değer tuzağı, döngüsel zirve, veri az. Holding net varlık değeri 2. aşamada |
+| `degerleme.py` + `degerleme_ayar.json` + `degerleme.yml` ("Adil Değer") | **v1.1** | workflow_run (ana tarama) + dispatch | `adil_deger.json`, `adil_deger.csv` | BIST100 adil değer, tamamen otomatik (Alpay kararı: manuel varsayım yok). Veri: TradingView tarama API (USD temel veriler; tüm BIST ~620 hisse eş grup için). Yöntemler sınıfa göre ağırlıklı: göreli F/K–PD/DD–FD/FAVÖK (eş grup %25/%50/%75 → kötümser/baz/iyimser), USD DCF (Damodaran Ke: ABD 10Y + β×(olgun prim + 1,5×TR eurotahvil spread'i); döngüsellerde zirve FCF %40 kırpılır), DDM, banka/sigortada ROE ayarlı PD/DD, ters DCF. Güven marjı betaya göre %15–30. ABD 10Y (Yahoo ^TNX) ve TR USD 10Y (Bondscovery) otomatik; okunamazsa ayar dosyası. Uyarılar: değer tuzağı, döngüsel zirve, veri az. Holding net varlık değeri 2. aşamada |
 | `tarama.py` + `bist-tarama.yml` ("BIST Emir Bozkurt Taraması") | — | workflow_dispatch (Cloudflare Worker, 15:20 UTC) | `latest.json`, `<tarih>.json`, `status.json` | TradingView screener birincil; yfinance/isyatirimhisse yedek. Secret: `TV_SESSIONID` |
 | `kap_tarama.py` + `kap-tarama.yml` | **v3.4** | workflow_run + dispatch | `kap.json`, `geri_alim.json` | Kümülatif geri alım: `kumulatif_kaynak` = `sirket_beyani` \| `tablo_program`. Bültene YALNIZ `sirket_beyani` yazılır |
 | `fon_tarama.py` + `fon-tarama.yml` | v1.0 | workflow_run + dispatch | `fon.json` | tefasmak 1.0.1 (+pytefas yedek) |
@@ -119,8 +119,8 @@ Talimat dosyaları: `gorevler/sabah_brifingi.md`, `gorevler/aksam_bulteni.md`, `
 | Görev | ID | Zaman | Okur | Yazar / yapar |
 |---|---|---|---|---|
 | Sabah Portföy Brifingi | `trig_01DaVTFUontesJ7gXp78zAqV` | hafta içi 08:00 TR | latest/kap/fon/geri_alim.json, Drive portföy, web, Twelve Data (NVO, SPY/QQQ/DIA) | e-posta |
-| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), youtube_kanallar.json (7f), sosyal_nabiz.json (8.5-4), Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
-| BIST Tarama Sağlık Nöbeti | `trig_01KGyiz4sASMZ3jUXM67gce8` | hafta içi 00:30 TR | latest/<tarih>/status + kap/geri_alim/fon/youtube_emir/youtube_konuk/youtube_kanallar/sosyal_nabiz.json, Gmail gönderilenler | push; bülten gitmediyse bülteni yeniden başlatır |
+| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), youtube_kanallar.json (7f), adil_deger.json (7g), sosyal_nabiz.json (8.5-4), Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
+| BIST Tarama Sağlık Nöbeti | `trig_01KGyiz4sASMZ3jUXM67gce8` | hafta içi 00:30 TR | latest/<tarih>/status + kap/geri_alim/fon/youtube_emir/youtube_konuk/youtube_kanallar/sosyal_nabiz/adil_deger.json, Gmail gönderilenler | push; bülten gitmediyse bülteni yeniden başlatır |
 | BIST Veri Kaynağı Alternatif Araştırması | `trig_01ViuA5ZKASerVpJMqYkoeoz` | hafta içi 09:37 TR | tüm data dosyaları, web, pypi/github | bültenlerin EK bloğu (otomatik), e-posta, hafıza `/areas/bist-veri-hatti-alternatifleri.md` |
 
 **Bağlantılar (connector) — 06.11.2026 analizi:** Gerekli olanlar Gmail (hepsi), Google Drive
@@ -188,6 +188,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 11.11.2026 | **Adil değer → bülten/Koç:** `degerleme.py` v1.1 (`aday` bayrağı = tablodaki ⭐ kuralı, `adaylar`, önceki çalışmaya göre `degisimler`) + 2 test; akşam bültenine 7g "Adil Değer" (portföy tablosu, değişimler, ⭐ adaylar); Koç K3'e (e) değerleme bağlantısı; Sağlık Nöbeti'ne adil_deger.json kontrolü | Claude Code |
 | 11.11.2026 | Apps Script v1.2 Alpay'ın tablosunda çalıştı. v1.3: Durum'a "⭐ inceleme adayı" (🟢 + uyarılarda ⚠ yok + ≥3 yöntem), koyu yeşil + kalın satır | Claude Code |
 | 11.11.2026 | Apps Script v1.2: Alpay'ın tablosunda `setFormulas` da yerel ayara (";") göre okuyor ("Formül ayrıştırma hatası") → ayırıcı her çalışmada deneme hücresiyle (BH1) otomatik bulunur, formüller ona çevrilir | Claude Code |
 | 11.11.2026 | Apps Script v1.1: formül sütunları `setFormulas` ile yazılıyor (v1.0'da `setValues` Türkçe yerel ayarda #ERROR! veriyordu). Alpay kurulumu yaptı; veri sütunları 97 hisseyle doğru geldi | Claude Code |
