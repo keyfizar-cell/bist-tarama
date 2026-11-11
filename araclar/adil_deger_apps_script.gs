@@ -1,6 +1,6 @@
 /**
  * Adil Değer sayfası — Google Apps Script (Alpay Portföy Takip dosyasına bir kez yapıştırılır)
- * Sürüm 1.4 (2026-11-11) — 5 yıllık F/K ve PD/DD ortancası + sonraki temettü sütunları; ⭐ aday; ayırıcı otomatik · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
+ * Sürüm 1.5 (2026-11-11) — Kod'a tıklayınca TradingView grafiği; 5 yıllık bantlar + temettü; ⭐ aday; ayırıcı otomatik · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
  *
  * KURULUM (tek sefer): Uzantılar → Apps Script → yeni dosya "AdilDeger" → bu metni yapıştır → Kaydet →
  * üstteki işlev listesinden "adilDegerKur" seç → Çalıştır → Google'ın izin ekranında İzin ver.
@@ -11,7 +11,7 @@
  * Canlı fiyat, potansiyel ve durum sayfada formülle (GOOGLEFINANCE) hesaplanır.
  * Model çıktısıdır, yatırım tavsiyesi değildir.
  */
-var AD_SURUM = '1.4';
+var AD_SURUM = '1.5';
 var AD_URL = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/adil_deger.csv';
 var AD_SAYFA = 'Adil Değer';
 var AD_SILINECEK = 'Risk Tablosu';
@@ -119,6 +119,11 @@ function adilDegerGuncelle() {
     return r.map(function (v, c) { return formulSutun.indexOf(c) >= 0 ? '' : v; });
   });
   alan.setValues(degerler);
+  // Kod sütunu: metin olarak kalır (formüller A sütununu okur), üzerine TradingView grafik bağlantısı eklenir
+  sh.getRange(AD_ILK, 1, satirlar.length, 1).setRichTextValues(satirlar.map(function (r) {
+    return [SpreadsheetApp.newRichTextValue().setText(String(r[0]))
+      .setLinkUrl('https://tr.tradingview.com/chart/?symbol=BIST%3A' + encodeURIComponent(r[0])).build()];
+  }));
   formulSutun.forEach(function (c) {
     sh.getRange(AD_ILK, c + 1, satirlar.length, 1).setFormulas(satirlar.map(function (r) { return [cevir(r[c], ayirici)]; }));
   });

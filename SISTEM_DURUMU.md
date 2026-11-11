@@ -190,6 +190,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 11.11.2026 | Apps Script v1.5: Kod hücresine TradingView grafik bağlantısı (zengin metin bağlantısı; hücre değeri düz kod kalır, formüller etkilenmez) — Alpay isteği | Claude Code |
 | 11.11.2026 | **Adil değer 2. aşama:** `degerleme_gecmis.py` v1.0 (haftalık 5 yıllık F/K–PD/DD bandı) + iş akışı; `degerleme.py` v1.2 (holdinglerde tarihsel PD/DD yöntemi — KCHOL gibi TradingView verisi eksik holdingler artık değerlenir; bant dışı F/K/PD/DD uyarısı; sonraki temettü tarihi); Apps Script v1.4 (3 yeni sütun); 6 yeni test | Claude Code |
 | 11.11.2026 | **Adil değer → bülten/Koç:** `degerleme.py` v1.1 (`aday` bayrağı = tablodaki ⭐ kuralı, `adaylar`, önceki çalışmaya göre `degisimler`) + 2 test; akşam bültenine 7g "Adil Değer" (portföy tablosu, değişimler, ⭐ adaylar); Koç K3'e (e) değerleme bağlantısı; Sağlık Nöbeti'ne adil_deger.json kontrolü | Claude Code |
 | 11.11.2026 | Apps Script v1.2 Alpay'ın tablosunda çalıştı. v1.3: Durum'a "⭐ inceleme adayı" (🟢 + uyarılarda ⚠ yok + ≥3 yöntem), koyu yeşil + kalın satır | Claude Code |
