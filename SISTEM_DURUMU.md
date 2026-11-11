@@ -188,6 +188,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 11.11.2026 | `araclar/adil_deger_apps_script.gs` v1.0: Alpay'ın portföy tablosuna bir kez yapıştırılan Apps Script — "Risk Tablosu"nu siler, "Adil Değer" sayfasını `adil_deger.csv`'den kurar (canlı fiyat/potansiyel/durum formülle), her gün 20:00 kendini günceller. Drive bağlantısı hücre yazamadığı ve IMPORTDATA ayrı dosyada izin/dil ayarına takıldığı için bu yol seçildi | Claude Code |
 | 11.11.2026 | **Adil değer (1. aşama):** `degerleme.py` v1.0 + `degerleme_ayar.json` + "Adil Değer" iş akışı + 15 test; BIST100 (97 hisse) yerel denemede: ortanca potansiyel %7. Bu oturumun ortamına scanner.tradingview.com eklendi | Claude Code |
 | 10.11.2026 | Koç K2 düzeltmesi: Gmail araması yalnız "Re:" yanıtlarını sayar (bültenin kendi "KOÇ:" alt yazısı yanlış eşleşiyordu), sabah brifingi yanıtları ve "koç" (iki noktasız) da geçerli; SORU türü yanıtlar bir sonraki akşam bülteninde "❓ Sorunun yanıtı" olarak cevaplanır. Sabah 7.5(c) fon tablosuna "Alınabilir mi" sütunu (TEFAS'ta kapalı fonlar: TZV yalnız Ziraat, TSI yalnız İş Bankası Maksimum Hesap) | Claude Code |
 | 10.11.2026 | Değişiklik günlüğünün 6 satırı (08–09.11) yanlışlıkla Bölüm 3 tablosuna yazılmıştı → buraya taşındı. Claude Code oturumları için kişisel bulut ortamı "bist-tarama" oluşturuldu (izinli: bigpara, Yahoo query1/2, Mynet Finans, İş Yatırım); zamanlanmış görevlerin ortamı değişmedi. Portföy tablosunda ALTIN sertifikası için Google Finance desteği yok → Mynet IMPORTXML önerildi (tablo Alpay'da) | Claude Code |
