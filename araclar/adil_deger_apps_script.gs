@@ -11,6 +11,7 @@
  * Canlı fiyat, potansiyel ve durum sayfada formülle (GOOGLEFINANCE) hesaplanır.
  * Model çıktısıdır, yatırım tavsiyesi değildir.
  */
+var AD_SURUM = '1.1';
 var AD_URL = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/adil_deger.csv';
 var AD_SAYFA = 'Adil Değer';
 var AD_SILINECEK = 'Risk Tablosu';
@@ -81,7 +82,7 @@ function adilDegerGuncelle() {
   var n = AD_KOLON.length;
   sh.getRange(1, 1).setValue('📐 ADİL DEĞER — BIST100 (otomatik)').setFontWeight('bold').setFontSize(14);
   sh.getRange(2, 1).setValue('Son güncelleme: ' + Utilities.formatDate(new Date(), 'Europe/Istanbul', 'dd.MM.yyyy HH:mm') +
-    ' · ' + veri.length + ' hisse · Yöntem: göreli çarpanlar (eş grup %25/%50/%75 = kötümser/baz/iyimser) + USD DCF + DDM + bankalarda ROE ayarlı PD/DD + ters DCF. Model çıktısıdır, yatırım tavsiyesi değildir.');
+    ' · script v' + AD_SURUM + ' · ' + veri.length + ' hisse · Yöntem: göreli çarpanlar (eş grup %25/%50/%75 = kötümser/baz/iyimser) + USD DCF + DDM + bankalarda ROE ayarlı PD/DD + ters DCF. Model çıktısıdır, yatırım tavsiyesi değildir.');
   sh.getRange(3, 1).setValue('🟢 fiyat güven marjlı inceleme seviyesinin altında · 🟡 baz adil değerin altında · ⚪ bant içinde · 🔴 iyimser senaryonun üstünde · 🔵 portföyde');
   sh.getRange(4, 1, 1, n).setValues([AD_KOLON.map(function (k) { return k[0]; })])
     .setFontWeight('bold').setBackground('#DCE6F1').setWrap(true).setVerticalAlignment('middle');
