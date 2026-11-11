@@ -1,0 +1,49 @@
+name: Adil Değer
+
+# v1.0 (2026-11-11): degerleme.py -> data/adil_deger.json + data/adil_deger.csv (BIST100 adil deger, otomatik).
+# Ana tarama bittikten sonra calisir; elle de calistirilabilir. Ana taramayi etkilemez.
+on:
+  workflow_run:
+    workflows: ["BIST Emir Bozkurt Taraması"]
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: adil-deger
+  cancel-in-progress: false
+
+jobs:
+  degerle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Bagimliliklar
+        run: pip install --quiet tradingview-screener pandas
+      - name: Adil degeri hesapla
+        run: python degerleme.py
+      - name: Ciktilari commit et
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/adil_deger.json data/adil_deger.csv || true
+          if git diff --cached --quiet; then
+            echo "Degisiklik yok."
+            exit 0
+          fi
+          git commit -m "adil deger guncelle [skip ci]" || true
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main || true
+            if git push origin HEAD:main; then echo "Push basarili."; break; fi
+            sleep 5
+          done

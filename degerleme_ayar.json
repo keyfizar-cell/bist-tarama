@@ -1,0 +1,15 @@
+{
+  "_aciklama": "degerleme.py piyasa varsayimlari (kisisel veri yok). tr_usd_10y ve abd_10y her calismada otomatik guncellenmeye calisilir (Bondscovery / Yahoo ^TNX); okunamazsa buradaki deger kullanilir. Senaryo buyumeleri USD bazli yillik %: [kotumser, baz, iyimser].",
+  "tr_usd_10y_yuzde": 7.64,
+  "tr_usd_10y_kaynak": "Bondscovery TR USD eurotahvil 10Y (26.10.2026)",
+  "abd_10y_yuzde": 4.98,
+  "abd_10y_kaynak": "Yahoo ^TNX (11.11.2026)",
+  "olgun_piyasa_primi_yuzde": 4.5,
+  "ulke_primi_carpani": 1.5,
+  "uc_buyume_yuzde": 2.5,
+  "borc_maliyeti_ek_yuzde": 2.0,
+  "vergi_orani_yuzde": 25.0,
+  "dongusel_fcf_kirpma": 0.6,
+  "tek_yontem_ust_sinir": 3.0,
+  "senaryo_buyume_yuzde": {"buyume": [2.0, 7.0, 12.0], "savunmaci": [0.0, 3.0, 6.0], "dongusel": [-3.0, 2.0, 6.0], "normal": [0.0, 4.0, 8.0]}
+}
