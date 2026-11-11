@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-11T15:21:41.545122+00:00",
+ "uretim_zamani_utc": "2026-11-11T15:22:47.236325+00:00",
  "kaynak": {
   "tarih": "2026-11-11",
   "uretim_zamani_utc": "2026-11-11T15:21:19+00:00",
@@ -9167,7 +9167,7 @@
  ],
  "geri_alim": {
   "var": true,
-  "uretim_zamani_utc": "2026-11-10T15:21:50.504077+00:00",
+  "uretim_zamani_utc": "2026-11-11T15:21:55.761403+00:00",
   "satirlar": [
    {
     "kod": "BLUME",
@@ -9185,13 +9185,13 @@
     "kod": "CANTE",
     "portfoyde": true,
     "bist30": false,
-    "toplam_bildirim": 3,
+    "toplam_bildirim": 4,
     "islem_bildirim_sayisi": 1,
-    "son_bildirim_tarih": "2026-10-01",
-    "kumulatif_lot": 25000000.0,
-    "sermaye_orani_yuzde": 0.25,
-    "kumulatif_etiket": "2026-10-01 itibarıyla, şirket beyanı (KAP)",
-    "kumulatif_yazilmaz_neden": null
+    "son_bildirim_tarih": "2026-11-11",
+    "kumulatif_lot": null,
+    "sermaye_orani_yuzde": null,
+    "kumulatif_etiket": null,
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "EKGYO",
@@ -9221,9 +9221,9 @@
     "kod": "GUBRF",
     "portfoyde": false,
     "bist30": true,
-    "toplam_bildirim": 4,
+    "toplam_bildirim": 5,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-02",
+    "son_bildirim_tarih": "2026-11-10",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9293,9 +9293,9 @@
     "kod": "ULUUN",
     "portfoyde": true,
     "bist30": false,
-    "toplam_bildirim": 21,
-    "islem_bildirim_sayisi": 20,
-    "son_bildirim_tarih": "2026-11-09",
+    "toplam_bildirim": 22,
+    "islem_bildirim_sayisi": 21,
+    "son_bildirim_tarih": "2026-11-10",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
