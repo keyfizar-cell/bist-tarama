@@ -190,6 +190,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 11.11.2026 | Apps Script v1.7: koşullu renk kuralı formülleri de otomatik ayırıcıdan geçiyor (v1.3–1.6'da TR ayarında hiçbir satır boyanmıyordu); F/K–PD/DD–FD/FAVÖK–ROE–5 yıllık sütun çiftleri açık mavi, satır renkleri bu sütunlara yazmaz | Claude Code |
 | 11.11.2026 | Apps Script v1.6: ⭐ inceleme adayı satırları açık gri (#D9D9D9) + kalın — Alpay isteği | Claude Code |
 | 11.11.2026 | Apps Script v1.5: Kod hücresine TradingView grafik bağlantısı (zengin metin bağlantısı; hücre değeri düz kod kalır, formüller etkilenmez) — Alpay isteği | Claude Code |
 | 11.11.2026 | **Adil değer 2. aşama:** `degerleme_gecmis.py` v1.0 (haftalık 5 yıllık F/K–PD/DD bandı) + iş akışı; `degerleme.py` v1.2 (holdinglerde tarihsel PD/DD yöntemi — KCHOL gibi TradingView verisi eksik holdingler artık değerlenir; bant dışı F/K/PD/DD uyarısı; sonraki temettü tarihi); Apps Script v1.4 (3 yeni sütun); 6 yeni test | Claude Code |

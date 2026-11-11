@@ -1,6 +1,6 @@
 /**
  * Adil Değer sayfası — Google Apps Script (Alpay Portföy Takip dosyasına bir kez yapıştırılır)
- * Sürüm 1.6 (2026-11-11) — ⭐ satırları açık gri; Kod'a tıklayınca TradingView grafiği; 5 yıllık bantlar + temettü; ⭐ aday; ayırıcı otomatik · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
+ * Sürüm 1.7 (2026-11-11) — renk kuralları yerel ayara uygun (TR); karşılaştırma sütunları açık mavi; ⭐ satırları açık gri; Kod'a tıklayınca TradingView grafiği; 5 yıllık bantlar + temettü; ⭐ aday; ayırıcı otomatik · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
  *
  * KURULUM (tek sefer): Uzantılar → Apps Script → yeni dosya "AdilDeger" → bu metni yapıştır → Kaydet →
  * üstteki işlev listesinden "adilDegerKur" seç → Çalıştır → Google'ın izin ekranında İzin ver.
@@ -11,7 +11,7 @@
  * Canlı fiyat, potansiyel ve durum sayfada formülle (GOOGLEFINANCE) hesaplanır.
  * Model çıktısıdır, yatırım tavsiyesi değildir.
  */
-var AD_SURUM = '1.6';
+var AD_SURUM = '1.7';
 var AD_URL = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/adil_deger.csv';
 var AD_SAYFA = 'Adil Değer';
 var AD_SILINECEK = 'Risk Tablosu';
@@ -134,14 +134,37 @@ function adilDegerGuncelle() {
   genislik.forEach(function (w, c) { sh.setColumnWidth(c + 1, w); });
   sh.setFrozenRows(4);
   sh.setFrozenColumns(1);
-  var kural = function (metin, renk) {
-    return SpreadsheetApp.newConditionalFormatRule()
-      .whenFormulaSatisfied('=ISNUMBER(SEARCH("' + metin + '",$K' + AD_ILK + '))')
-      .setBackground(renk).setRanges([alan]).build();
+  // Karşılaştırma sütunları (şirket / sektör / 5 yıllık): çift çift iki ton açık mavi, başlık dahil.
+  var MAVI = [['F/K', 'Sektör F/K', '#DDEBF7'], ['PD/DD', 'Sektör PD/DD', '#EAF1FB'],
+              ['FD/FAVÖK', 'Sektör FD/FAVÖK', '#DDEBF7'], ['ROE', 'Sektör ROE', '#EAF1FB'],
+              ['F/K 5 yıllık ortanca', 'PD/DD 5 yıllık ortanca', '#DDEBF7']];
+  var basliklar = AD_KOLON.map(function (k) { return k[0]; });
+  var maviSutun = [];
+  MAVI.forEach(function (m) {
+    [m[0], m[1]].forEach(function (ad) {
+      var c = basliklar.indexOf(ad);
+      if (c >= 0) {
+        maviSutun.push(c + 1);
+        sh.getRange(4, c + 1, satirlar.length + 1, 1).setBackground(m[2]);
+      }
+    });
+  });
+  // Satır renkleri mavi sütunların ÜSTÜNE yazmasın: mavi olmayan sütun blokları ayrı aralık olarak verilir.
+  var araliklar = [], bas = null;
+  for (var c = 1; c <= n + 1; c++) {
+    var mavi = maviSutun.indexOf(c) >= 0 || c > n;
+    if (!mavi && bas === null) bas = c;
+    if (mavi && bas !== null) { araliklar.push(sh.getRange(AD_ILK, bas, satirlar.length, c - bas)); bas = null; }
+  }
+  // Renk kuralı formülleri de tablonun yerel ayarına göre (";" / ",") yazılmalı.
+  var kural = function (metin, renk, kalin) {
+    var b = SpreadsheetApp.newConditionalFormatRule()
+      .whenFormulaSatisfied(cevir('=ISNUMBER(SEARCH("' + metin + '",$K' + AD_ILK + '))', ayirici))
+      .setBackground(renk).setRanges(araliklar);
+    if (kalin) b = b.setBold(true);
+    return b.build();
   };
-  var aday = SpreadsheetApp.newConditionalFormatRule()
-    .whenFormulaSatisfied('=ISNUMBER(SEARCH("inceleme adayı",$K' + AD_ILK + '))')
-    .setBackground('#D9D9D9').setBold(true).setRanges([alan]).build();
+  var aday = kural('inceleme adayı', '#D9D9D9', true);
   sh.setConditionalFormatRules([
     aday,
     kural('güven marjının altında', '#D9EAD3'),
