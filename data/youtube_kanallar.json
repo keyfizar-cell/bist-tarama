@@ -78,7 +78,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926901+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512907+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -87,8 +87,110 @@
       "channel_id": "UCf-58-J8D5eXmEpSdyZ0XJA",
       "kanal_adi": "Çağkan Yapıcı",
       "hata": null,
-      "son_basarili_utc": "2026-11-08T09:49:51.160090+00:00",
+      "son_basarili_utc": "2026-11-11T15:29:27.512879+00:00",
       "videolar": [
+        {
+          "video_id": "U5Q5NFEJ3J0",
+          "baslik": "Son gün bilançolarını yorumladım",
+          "yayin_tarihi": "2026-11-10T16:52:12+00:00",
+          "url": "https://www.youtube.com/watch?v=U5Q5NFEJ3J0",
+          "kanal_adi": "Çağkan Yapıcı",
+          "sure_dk": 42.7,
+          "canli": false,
+          "ana_mesaj": "Bilanço sezonu sonunda şirketlerin finansal tabloları, sermaye tahsisi kararları ve enflasyon muhasebesinin etkileri piyasa beklentileri ışığında değerlendirilmektedir.",
+          "ozet": [
+            "Bilanço sezonunun son gününde açıklanan veriler, şirketlerin operasyonel başarısı ile finansal yönetim becerileri arasındaki farkı ortaya koydu.",
+            "Tuborg, daralan bira pazarına rağmen pazar payı kazanarak ve marjlarını artırarak Anadolu Efes'ten daha iyi bir performans sergiledi.",
+            "Turcas, Shell ortaklığı ve güçlü nakit pozisyonu ile dikkat çekerken, Astor operasyonel başarısını finansal yatırımlardaki zararla gölgeledi.",
+            "PC İletişim ve Orge gibi şirketlerde nakit üretimi ve iş yükü (backlog) artışı, marj daralmalarına rağmen pozitif unsurlar olarak öne çıktı.",
+            "Enflasyon muhasebesi (TMS 29) nedeniyle şirketlerin reel büyüme rakamlarının ve hisse fiyatlarının enflasyon karşısındaki durumunun dikkatli analiz edilmesi gerektiği vurgulandı.",
+            "Piyasadaki panik fiyatlamaların aksine, uzun vadeli iş modeline ve sermaye tahsisine odaklanmanın önemi belirtildi."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "TBORG",
+              "ne_dedi": "Sektörel daralmaya rağmen pazar payı kazanan, reel büyüme sağlayan ve %10 civarı temettü verimi beklenen başarılı bir şirket."
+            },
+            {
+              "kod": "TRCAS",
+              "ne_dedi": "Shell ve elektrik üretim santrali katkısıyla güçlü nakit üreten, 1.5 milyar TL nakit pozisyonuna ulaşması beklenen ucuz bir yapı."
+            },
+            {
+              "kod": "PNLSN",
+              "ne_dedi": "Yatırımcı sunumundaki beklentilere paralel gelen bilançosuyla piyasayı şaşırtan ve haftalık %40 getiri sağlayan hisse."
+            },
+            {
+              "kod": "PCILT",
+              "ne_dedi": "Brüt kâr marjı düşse de nakit üretimi ve tahsilat hızı çok güçlü olan, temettü potansiyeli yüksek bir şirket."
+            },
+            {
+              "kod": "CLEBI",
+              "ne_dedi": "Euro bazlı hasılatı %10 artsa da marjları daralan ve enflasyon muhasebesi nedeniyle büyümesi yanıltıcı algılanabilen bir şirket."
+            },
+            {
+              "kod": "ORZAX",
+              "ne_dedi": "Yeni halka arz olan, kış sezonu ürünleri nedeniyle Q4 ve Q1'de daha güçlü performans beklenen, ihracatı reel anlamda katlanan firma."
+            },
+            {
+              "kod": "TRGYO",
+              "ne_dedi": "Konut teslimatları ve kira gelirleriyle büyüyen, yaklaşık 24 milyar TL net nakit pozisyonu bulunan güçlü bir GYO."
+            },
+            {
+              "kod": "ASTOR",
+              "ne_dedi": "Güç trafosu işinde dünyada talep gören ancak finansal yatırımlardan 1.8 milyar TL zarar yazarak sermaye tahsisini kötü yöneten şirket."
+            },
+            {
+              "kod": "ORGE",
+              "ne_dedi": "İş yükü (backlog) 6 milyar TL'ye katlanan ancak fon çıkış baskısı nedeniyle fiyatı baskılanan, veri merkezi tarafı önemli olan şirket."
+            },
+            {
+              "kod": "GRSEL",
+              "ne_dedi": "Okul taşımacılığı ödemeleri nedeniyle nakdi artan ancak beklentilerin altında kaldığı için piyasada negatif fiyatlanan hisse."
+            },
+            {
+              "kod": "KRVGD",
+              "ne_dedi": "Finansal giderlerin yüksekliği ve kârlılıktaki sert düşüş nedeniyle negatif değerlendirilen, borçluluğu sorun teşkil eden bir bilanço."
+            },
+            {
+              "kod": "BAKAB",
+              "ne_dedi": "Brüt kâr marjındaki dalgalanmalara piyasanın çok sert tepki verdiği, defter değerinin altında işlem gören bir şirket."
+            },
+            {
+              "kod": "LOGO",
+              "ne_dedi": "Beklentilere paralel, enflasyon kadar büyüyen ancak yapay zeka riskleri nedeniyle geleceği piyasa tarafından tartışılan yazılım şirketi."
+            },
+            {
+              "kod": "INDES",
+              "ne_dedi": "Net nakit pozisyonuna rağmen dönem içi kredi kullanımı nedeniyle yüksek finansal gider yazan, temettü odaklı takip edilen şirket."
+            },
+            {
+              "kod": "DGATE",
+              "ne_dedi": "Vodafone iş birliğiyle operasyonel olarak büyüyen ancak grup içi diğer şirketlerin kaybından etkilenen firma."
+            },
+            {
+              "kod": "EGEEN",
+              "ne_dedi": "Bilançosu iyi gelen ve piyasada tavan fiyatla karşılık bulan, güçlü şirketlerden biri."
+            },
+            {
+              "kod": "MRKIM",
+              "ne_dedi": "Üç farklı iş kolunda da şirket beklentilerinin üzerinde performans gösteren ve fiyatı düştüğü için takibe alınan hisse."
+            },
+            {
+              "kod": "INTET",
+              "ne_dedi": "Bilançosundaki büyüme dikkat çekici bulunan ve yeni incelenmeye başlanan halka arz şirketlerinden biri."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Şirketlerin kazandıkları parayı yanlış alanlarda değerlendirmesi (kötü sermaye tahsisi).",
+            "Yapay zekanın Logo Yazılım gibi geleneksel yazılım şirketlerinin iş modellerine yönelik oluşturabileceği uzun vadeli tehditler.",
+            "TV reklam pazarındaki daralmanın PC İletişim gibi şirketlerin marjları üzerindeki olumsuz etkisi.",
+            "Piyasadaki panik atak fiyatlamalar ve sabırsız yatırımcıların kısa vadeli dalgalanmalarda para kaybetme riski.",
+            "Enflasyon muhasebesi nedeniyle nominal ve reel büyüme rakamlarının yatırımcılar tarafından yanlış yorumlanması."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-11T15:29:27.512862+00:00"
+        },
         {
           "video_id": "4JaMdxORyGo",
           "baslik": "Bilanço sezonu: Tüpraş'tan Migros'a 23 şirketi tek tek değerlendirdim",
@@ -252,9 +354,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926914+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512926+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -325,7 +427,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926919+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512933+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -341,7 +443,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926921+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512936+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -468,7 +570,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926926+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512943+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -723,7 +825,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926935+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512954+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -739,7 +841,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926938+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512957+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -755,7 +857,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926939+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512960+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -771,7 +873,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926941+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512963+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -787,7 +889,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926943+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512966+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -869,7 +971,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926948+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512972+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -880,6 +982,16 @@
       "hata": null,
       "son_basarili_utc": "2026-11-08T09:32:36.927540+00:00",
       "videolar": [
+        {
+          "video_id": "YxC_j_OvR20",
+          "baslik": "19 YILLIK BEKLEYİŞ ZARARDAN KARA",
+          "yayin_tarihi": "2026-11-11T09:00:34+00:00",
+          "url": "https://www.youtube.com/watch?v=YxC_j_OvR20",
+          "kanal_adi": "FinansLab | Gülşah Bıçkı",
+          "sure_dk": 0.7,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "M1NlxNjSk4w",
           "baslik": "TARİHİN EN ZOR SINAVI",
@@ -933,7 +1045,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926955+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512982+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -944,6 +1056,16 @@
       "hata": null,
       "son_basarili_utc": null,
       "videolar": [
+        {
+          "video_id": "o37RgLXFRjE",
+          "baslik": "3 Ayda 15.000$ Kâr! Altında 4140 Ana Direnç",
+          "yayin_tarihi": "2026-11-11T13:36:23+00:00",
+          "url": "https://www.youtube.com/watch?v=o37RgLXFRjE",
+          "kanal_adi": "Fx Matik",
+          "sure_dk": 1.8,
+          "canli": false,
+          "atlandi": "sure 2 dk"
+        },
         {
           "video_id": "HHpBFA-GD98",
           "baslik": "12.000$ Fonlama, 15.000$ Kâr! | XAUUSD 4140 Analizi",
@@ -968,9 +1090,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926960+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512990+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -1037,7 +1159,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926965+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.512996+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -1046,8 +1168,106 @@
       "channel_id": "UCGVHUcHKphNmbCuBjMihbSw",
       "kanal_adi": "Kendine Yatırımcı",
       "hata": null,
-      "son_basarili_utc": "2026-11-08T09:44:05.976909+00:00",
+      "son_basarili_utc": "2026-11-11T15:27:29.749104+00:00",
       "videolar": [
+        {
+          "video_id": "Zgd3wav3nTA",
+          "baslik": "BORSADA TOPARLANMA ÇABALARI 2026/9 BİLANÇO ASTOR GESAN ENKAI ISMEN TRGYO BIMAS ORGE TCELL AKSEN",
+          "yayin_tarihi": "2026-11-11T07:04:22+00:00",
+          "url": "https://www.youtube.com/watch?v=Zgd3wav3nTA",
+          "kanal_adi": "Kendine Yatırımcı",
+          "sure_dk": 88.5,
+          "canli": false,
+          "ana_mesaj": "Borsa İstanbul'da toparlanma çabaları devam ederken, 2026 yılı 9 aylık bilançoların hisse bazlı ayrışmalara ve sert fiyat hareketlerine neden olduğu vurgulanıyor.",
+          "ozet": [
+            "BIST 100 endeksinde 11.600 puan seviyesinin üzerinde kalınması toparlanma için kritik önem taşıyor.",
+            "Dolar bazlı grafikte 220 dolar seviyesi dip olarak kabul edilirken, 250 dolar seviyesi güçlü bir direnç olarak görülüyor.",
+            "ASTOR ve GESAN gibi şirketlerin bilançoları beklentilerin altında kalarak piyasada negatif fiyatlamalara yol açtı.",
+            "Gayrimenkul Yatırım Ortaklıkları (GYO), kira gelirlerindeki artışla temel anlamda güçlü bir duruş sergiliyor.",
+            "Enerji sektöründe ekipman üreticileri ile panel üreticileri arasında karlılık açısından belirgin farklar oluşmaya başladı.",
+            "Otomotiv sektöründe yüksek borçluluk ve zayıf bilançolar temettü verimliliği beklentilerini aşağı çekiyor.",
+            "Altın fiyatlarında 4.000 dolar seviyesinin altındaki seyir, uzun vadeli yatırımlar için temkinli olmayı gerektiriyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "ASTOR",
+              "ne_dedi": "9 milyar TL nakit kaybı ve 3 milyar TL çeyreklik zarar ile hayal kırıklığı yaratan bir bilanço açıkladı."
+            },
+            {
+              "kod": "GESAN",
+              "ne_dedi": "Borç yükünün 7,5 milyar TL'ye yükselmesi ve zayıf kar rakamı nedeniyle piyasada sert satış yedi."
+            },
+            {
+              "kod": "ENKAI",
+              "ne_dedi": "Kasasındaki 200 milyar TL nakit gücü ve ucuz çarpanlarıyla uzun vadeli güvenli liman olarak görülüyor."
+            },
+            {
+              "kod": "ISMEN",
+              "ne_dedi": "Beklentilerden iyi gelen bilançosu ve artan nakit akışıyla 35 TL seviyelerini hedefleyebilir."
+            },
+            {
+              "kod": "TRGYO",
+              "ne_dedi": "Aylık 1 milyar TL'ye ulaşan kira geliri ve yeni AVM alımlarıyla temel anlamda çok ucuz kalmış durumda."
+            },
+            {
+              "kod": "ORGE",
+              "ne_dedi": "Borçsuz yapısı ve düzenli iş akışıyla 25-30 TL bandına doğru toparlanma potansiyeli taşıyor."
+            },
+            {
+              "kod": "BIMAS",
+              "ne_dedi": "Güçlü nakit akışına rağmen yıl başından beri yaptığı primle şu an için ederinde fiyatlanıyor."
+            },
+            {
+              "kod": "TCELL",
+              "ne_dedi": "Yüksek finansman giderlerine rağmen 0,65 PD/DD oranıyla orta vadede 130-140 TL hedefine sahip."
+            },
+            {
+              "kod": "AKSEN",
+              "ne_dedi": "Artan borç yükü ve %10'un altında kalan karlılığıyla eski cazibesini yitirmiş görünüyor."
+            },
+            {
+              "kod": "DOAS",
+              "ne_dedi": "Gayrimenkul alımı sonrası artan borçluluk ve çeyreklik zarar nedeniyle temettü verimi düşebilir."
+            },
+            {
+              "kod": "TBORG",
+              "ne_dedi": "Kira ve satış gelirlerindeki artışla 150 TL hedef fiyatla ucuz kategorisinde değerlendiriliyor."
+            },
+            {
+              "kod": "CWENE",
+              "ne_dedi": "Panel üretimindeki düşük marjlar ve 10 milyar TL'lik borç yükü nedeniyle negatif fiyatlanıyor."
+            },
+            {
+              "kod": "INDES",
+              "ne_dedi": "12,5 TL direncini aşması durumunda 18 TL seviyelerini hedefleyebilecek ucuz bir teknoloji hissesi."
+            },
+            {
+              "kod": "SASA",
+              "ne_dedi": "Yüksek borçluluğa rağmen 1,50 TL seviyelerinde uzun vadeli toplama bölgesi olarak görülüyor."
+            },
+            {
+              "kod": "ULKER",
+              "ne_dedi": "Çeyreklik zarar açıklaması ve borç yükünü azaltamaması nedeniyle yatırım kriterlerini karşılamıyor."
+            },
+            {
+              "kod": "EGEEN",
+              "ne_dedi": "Uzun süre sonra gelen pozitif bilançosuyla 6.000 TL seviyelerine doğru bir hareket başlatabilir."
+            },
+            {
+              "kod": "TRALT",
+              "ne_dedi": "Kasasındaki altına rağmen 26 F/K oranıyla konuşmacı tarafından pahalı bulunuyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Borsa hacimlerinin çok düşük olması ve piyasada nakit sıkıntısı yaşanması.",
+            "Bazı şirketlerin bilançolarındaki nakit değişimlerinin net bir şekilde açıklanamaması.",
+            "Şirketlerin artan finansman giderlerinin net karları baskılaması.",
+            "Altın fiyatlarında 20 yıllık yatay seyir sonrası gelen yükselişin ardından uzun süreli bir durgunluk riski."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-11T15:27:29.749084+00:00"
+        },
         {
           "video_id": "tfjX8OA9cX8",
           "baslik": "SATA SATA BİTİREMEDİNİZ | BİR GÜN MOLA BUGÜN YİNE DEVAM",
@@ -1206,9 +1426,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926969+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 2,
+      "son_kontrol_utc": "2026-11-11T15:29:27.513005+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -1266,7 +1486,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926973+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.513010+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -1357,7 +1577,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926980+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.513018+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -1373,7 +1593,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926982+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.513021+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -1389,7 +1609,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926983+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.513024+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -1405,7 +1625,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926985+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.513027+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -1539,7 +1759,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-10T15:23:09.926992+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.513035+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -1928,10 +2148,10 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 11,
-      "son7_uzun_video": 5,
-      "liste_disi": "her gun video yukluyor (son 7 gunde 5 uzun video)",
-      "son_kontrol_utc": "2026-11-10T15:23:09.927009+00:00"
+      "aday_sayisi": 15,
+      "son7_uzun_video": 7,
+      "liste_disi": "her gun video yukluyor (son 7 gunde 7 uzun video)",
+      "son_kontrol_utc": "2026-11-11T15:29:27.513061+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -1942,6 +2162,56 @@
       "hata": null,
       "son_basarili_utc": "2026-11-10T15:23:09.926874+00:00",
       "videolar": [
+        {
+          "video_id": "Gq93CsRkOFQ",
+          "baslik": "GÜMÜŞTE YENİ YÜKSELİŞ İÇİN TAKİP ETTİĞİM SEVİYELER…. #xagusd #xauusd #keşfet #keşfetteyiz #forex",
+          "yayin_tarihi": "2026-11-11T14:07:02+00:00",
+          "url": "https://www.youtube.com/watch?v=Gq93CsRkOFQ",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.7,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "twrGMP84BY4",
+          "baslik": "#THYAO da trendi takip etmeye devam ediyoruz #bist100 #borsa #pgsus #keşfet",
+          "yayin_tarihi": "2026-11-11T11:09:49+00:00",
+          "url": "https://www.youtube.com/watch?v=twrGMP84BY4",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.7,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "WxsAQRZDaAU",
+          "baslik": "Borsa İstanbul….#xauusd #altın #gramaltın #bist100 #kesfet #forex",
+          "yayin_tarihi": "2026-11-11T08:22:02+00:00",
+          "url": "https://www.youtube.com/watch?v=WxsAQRZDaAU",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.6,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "jM12fCVnN-4",
+          "baslik": "Bugün altında takip edeceğim seviyeler….#xauusd #altın #gramaltın #bist100 #kesfet #forex",
+          "yayin_tarihi": "2026-11-11T08:20:15+00:00",
+          "url": "https://www.youtube.com/watch?v=jM12fCVnN-4",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.5,
+          "canli": false,
+          "atlandi": "sure 0 dk"
+        },
+        {
+          "video_id": "FFX28LGa-bM",
+          "baslik": "ENFLASYON RAPORU TOPLANTISI #bist100 #enflasyon #faiz #keşfet #keşfetteyiz",
+          "yayin_tarihi": "2026-11-10T17:40:47+00:00",
+          "url": "https://www.youtube.com/watch?v=FFX28LGa-bM",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 1.0,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "Cpo6hffdzdw",
           "baslik": "ABD ENFLASYON VERİSİ VE BORSA İSTANBUL....",
@@ -2214,132 +2484,14 @@
           "sure_dk": 0.9,
           "canli": false,
           "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "soMqbc0_qNY",
-          "baslik": "THYAO HİSSESİNDE YÜKSELİŞİN DEVAM  ETME ŞARTLARI… #thyao #bist100 #borsa #keşfet #keşfetteyiz",
-          "yayin_tarihi": "2026-11-06T07:13:26+00:00",
-          "url": "https://www.youtube.com/watch?v=soMqbc0_qNY",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 1.2,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "yCUMBsUlHOs",
-          "baslik": "ALTIN DİRENÇLERİNİ KIRIP YÜKSELİŞİNE DEVAM EDECEK Mİ ? #xauusd #altın #kesfet #kesfetteyiz #forex",
-          "yayin_tarihi": "2026-11-06T07:11:39+00:00",
-          "url": "https://www.youtube.com/watch?v=yCUMBsUlHOs",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.9,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "6IgWWVNriME",
-          "baslik": "HANGİ HİSSELERDE ARTIŞ POTANSİYELİ VAR ?",
-          "yayin_tarihi": "2026-11-05T22:03:01+00:00",
-          "url": "https://www.youtube.com/watch?v=6IgWWVNriME",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 137.3,
-          "canli": false,
-          "ana_mesaj": "Piyasalardaki güncel gelişmeleri değerlendirerek, özellikle Türkiye'de temettü yatırımcılığının enflasyon karşısındaki zorluklarını ve ABD borsalarındaki fırsatları vurguluyor.",
-          "ozet": [
-            "ABD seçim sonuçlarının piyasalara yansıması ve Trump'ın etkisinin azalmasıyla değişen piyasa dinamikleri tartışıldı.",
-            "Türkiye'deki yüksek enflasyon ortamında TL bazlı birikim yapmanın ve temettü emekliliğinin zorlukları anlatıldı.",
-            "ABD borsalarındaki ETF'lerin uzun vadeli yatırım ve dolar bazlı temettü geliri için daha güvenli bir liman olduğu belirtildi.",
-            "SPK'nın BIST 30 hisselerine yönelik fon satış düzenlemesinin piyasayı tutma ve düşüşü engelleme amacı taşıdığı ifade edildi.",
-            "TSKB ve THYAO gibi hisselerdeki teknik al sinyalleri ve sonrasındaki kısa vadeli yükselişler grafiklerle örneklendirildi.",
-            "İran'ın nükleer savaş açıklaması gibi jeopolitik risklerin ABD borsaları ve emtialar üzerindeki ani satış etkisi vurgulandı.",
-            "Konut ve toprak yatırımının Türkiye'de enflasyona karşı reel kazanç sağlayan en güçlü alternatiflerden biri olduğu 10 yıllık verilerle açıklandı."
-          ],
-          "bahsedilen_hisseler": [
-            {
-              "kod": "TSKB",
-              "ne_dedi": "2 Kasım'da 9.14 TL'den gelen al sinyali sonrası 10.24 TL'ye yükselerek kısa sürede %12 kazanç sağladığı belirtildi."
-            },
-            {
-              "kod": "THYAO",
-              "ne_dedi": "252 TL'den al sinyali paylaşıldıktan sonra 297 TL'ye çıktığı, ancak 10 dolar hedefinin teknik olarak düşen trendde olduğu ifade edildi."
-            },
-            {
-              "kod": "EREGL",
-              "ne_dedi": "10 yıl önceki dolar bazlı fiyatının (0.45 cent) çok az üzerinde olduğu (0.62 cent) ve temettü yatırımcılığının reel kazanç sağlamadığı eleştirildi."
-            },
-            {
-              "kod": "XAUUSD",
-              "ne_dedi": "3900-4100 seviyelerindeki destek ve direnç noktaları teknik olarak analiz edilerek jeopolitik risklerle yükseliş eğiliminde olduğu söylendi."
-            },
-            {
-              "kod": "BRENT",
-              "ne_dedi": "Temmuz ayından beri süregelen yükseliş trendinin kırıldığı ve haber akışlarıyla %3.60 civarında volatilite yaşandığı belirtildi."
-            },
-            {
-              "kod": "BTC",
-              "ne_dedi": "Anlık olarak %6 civarında bir düşüş yaşadığı piyasa ekranından paylaşıldı."
-            },
-            {
-              "kod": "ETH",
-              "ne_dedi": "Anlık olarak %7 civarında sert bir düşüş yaşadığı belirtildi."
-            },
-            {
-              "kod": "XRP",
-              "ne_dedi": "Anlık olarak %5.5 civarında değer kaybettiği görüldü."
-            },
-            {
-              "kod": "SPX",
-              "ne_dedi": "ABD borsalarındaki satış baskısıyla %4 civarında sert bir düşüş yaşadığı vurgulandı."
-            },
-            {
-              "kod": "NDX",
-              "ne_dedi": "Nasdaq endeksinin %6 civarında çok sert bir geri çekilme yaşadığı anlık olarak gösterildi."
-            },
-            {
-              "kod": "DJI",
-              "ne_dedi": "Dow Jones endeksinin %3 civarında negatif seyrettiği belirtildi."
-            },
-            {
-              "kod": "TP2 PRY",
-              "ne_dedi": "Fonun tasfiye sürecinde olduğu ve içeride kalan para oranında ödeme yapılacağı ancak miktarın belirsiz olduğu ifade edildi."
-            }
-          ],
-          "konusmacinin_riskleri": [
-            "Türkiye'deki yüksek enflasyonun TL bazlı yatırımları ve temettü gelirlerini reel olarak eritme riski.",
-            "İran'ın nükleer açıklaması gibi jeopolitik gerginliklerin piyasalarda ani ve kontrol edilemez düşüşlere yol açması.",
-            "Teknik analizlerin beklenmedik haber akışları karşısında boşa düşme ve stop seviyelerinin altına inme ihtimali.",
-            "Yatırımcıların 'düştükçe alırım' mantığıyla hareket ederken sermayelerini tamamen kaybetme veya uzun süre zararda bekleme riski."
-          ],
-          "icerik_turu": "piyasa_yorumu",
-          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
-          "islendi_utc": "2026-11-08T09:46:48.009885+00:00"
-        },
-        {
-          "video_id": "ZgUjQDWySAw",
-          "baslik": "ALTIN YÜKSELİŞİNİ DEVAM ETTİRECEK Mİ ? #altın #xauusd #keşfet #keşfetteyiz #forex",
-          "yayin_tarihi": "2026-11-05T10:12:51+00:00",
-          "url": "https://www.youtube.com/watch?v=ZgUjQDWySAw",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.9,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "8v9kHIgmvD4",
-          "baslik": "BRENT PETROLDE DÜŞÜŞ BAŞLADI MI ? #brent #petrol #forex #keşfet #kefetteyiz",
-          "yayin_tarihi": "2026-11-05T08:22:40+00:00",
-          "url": "https://www.youtube.com/watch?v=8v9kHIgmvD4",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 1.2,
-          "canli": false,
-          "atlandi": "sure 1 dk"
         }
       ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 5,
-      "son7_uzun_video": 4,
-      "son_kontrol_utc": "2026-11-10T15:23:09.927026+00:00"
+      "son7_uzun_video": 3,
+      "son_kontrol_utc": "2026-11-11T15:29:27.513095+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -2355,7 +2507,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.927028+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.513098+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -2371,7 +2523,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-10T15:23:09.927030+00:00"
+      "son_kontrol_utc": "2026-11-11T15:29:27.513101+00:00"
     }
   },
   "hata": null,
@@ -2441,10 +2593,21 @@
       },
       "kotasi_dolan_modeller": [],
       "zaman_utc": "2026-11-10T15:23:09.927045+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 2,
+      "bekleyen": 0,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-3-flash-preview": 2
+      },
+      "kotasi_dolan_modeller": [],
+      "zaman_utc": "2026-11-11T15:29:27.513119+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-10T15:23:09.927048+00:00",
+  "uretim_zamani_utc": "2026-11-11T15:29:27.513124+00:00",
   "denemeler": [
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP"
