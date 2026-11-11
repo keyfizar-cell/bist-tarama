@@ -1,6 +1,6 @@
 /**
  * Adil Değer sayfası — Google Apps Script (Alpay Portföy Takip dosyasına bir kez yapıştırılır)
- * Sürüm 1.0 (2026-11-11) · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
+ * Sürüm 1.1 (2026-11-11) — formüller setFormulas ile (TR yerel ayarında #ERROR! düzeltmesi) · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
  *
  * KURULUM (tek sefer): Uzantılar → Apps Script → yeni dosya "AdilDeger" → bu metni yapıştır → Kaydet →
  * üstteki işlev listesinden "adilDegerKur" seç → Çalıştır → Google'ın izin ekranında İzin ver.
@@ -104,7 +104,17 @@ function adilDegerGuncelle() {
     });
   });
   var alan = sh.getRange(AD_ILK, 1, satirlar.length, n);
-  alan.setValues(satirlar);
+  // Formüller setValues ile yazılırsa tablonun yerel ayarına (TR: ";") göre okunur ve #ERROR! verir.
+  // setFormulas her zaman İngilizce sözdizimini (",") kabul eder → formül sütunları ayrıca yazılır.
+  var formulSutun = [];
+  AD_KOLON.forEach(function (k, c) { if (!k[1]) formulSutun.push(c); });
+  var degerler = satirlar.map(function (r) {
+    return r.map(function (v, c) { return formulSutun.indexOf(c) >= 0 ? '' : v; });
+  });
+  alan.setValues(degerler);
+  formulSutun.forEach(function (c) {
+    sh.getRange(AD_ILK, c + 1, satirlar.length, 1).setFormulas(satirlar.map(function (r) { return [r[c]]; }));
+  });
   AD_KOLON.forEach(function (k, c) {
     if (k[3]) sh.getRange(AD_ILK, c + 1, satirlar.length, 1).setNumberFormat(k[3]);
   });
