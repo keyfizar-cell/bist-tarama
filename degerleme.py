@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-degerleme.py  v1.2  (2026-11-11)  — BIST100 adil değer (otomatik, manuel dokunuş yok)
+degerleme.py  v1.3  (2026-11-11)  — BIST100 adil değer (otomatik, manuel dokunuş yok)
 
 Her akşam ana taramadan sonra GitHub Actions'ta çalışır:
   - TradingView tarama API'sinden (tradingview-screener) BIST100 üyeleri + tüm BIST (~620 hisse, eş grup
@@ -26,6 +26,10 @@ v1.1: her hisseye "aday" (⭐ inceleme adayı = kapanış ≤ inceleme seviyesi 
 v1.2: data/degerleme_gecmis.json (haftalık, İş Yatırım) varsa 5 yıllık F/K ve PD/DD bandı eklenir; holdinglerde
   "tarihsel PD/DD" yöntemi (fiyat × 5 yıllık ortanca PD/DD / güncel PD/DD; holding iskontosunun kendi geçmişine
   dönüşü) — TradingView'da PD/DD yoksa İş Yatırım son yıl PD/DD'si kullanılır. Temettü tarihleri (TradingView).
+v1.3: "one_cikanlar" — Koç için her akşam en fazla 3 hisse (önce ⭐ adaylar, yetmezse uyarısız 🟢) ve her biri için
+  en belirgin 3 "öne çıkan alan" (sektöre/5 yıllık banda göre ucuzluk, kalite, ters DCF, temettü). Sıralama puanı:
+  potansiyel (en fazla %100 sayılır) + kalite artıları − döngüsel/düşük güven eksileri; potansiyeli %150'yi aşan
+  (aşırı uç, veri hatası şüphesi) seçilmez.
 Çıktılar: data/adil_deger.json (bülten) ve data/adil_deger.csv (Google Sheets IMPORTDATA; sayılar ×100
 TAMSAYI → yerel ayar ondalık ayıracından etkilenmez).
 Ayarlar: degerleme_ayar.json (yalnız piyasa varsayımları; kişisel veri yok).
@@ -41,7 +45,7 @@ import sys
 import traceback
 import urllib.request
 
-SURUM = "1.2"
+SURUM = "1.3"
 VERI = "data"
 JSON_YOL = os.path.join(VERI, "adil_deger.json")
 CSV_YOL = os.path.join(VERI, "adil_deger.csv")
@@ -454,6 +458,66 @@ def aday_mi(s):
                 and (s.get("yontemler") or "").count("%") >= 3)
 
 
+def _oran(a, b):
+    return a / b if a is not None and b not in (None, 0) and a > 0 and b > 0 else None
+
+
+def one_cikan_alanlar(s):
+    """(önem, metin) listesi → en belirgin 3 metin."""
+    a = []
+    for alan, sek, ad in (("fk", "fk_sektor", "F/K"), ("pddd", "pddd_sektor", "PD/DD"),
+                          ("fd_favok", "fd_favok_sektor", "FD/FAVÖK")):
+        o = _oran(s.get(alan), s.get(sek))
+        if o and o < 0.75:
+            a.append((1 - o, "%s %.1f, sektör ortancası %.1f (%%%d daha düşük)" % (ad, s[alan], s[sek], round((1 - o) * 100))))
+    for alan, ort, ad in (("fk", "fk_5y_ortanca", "F/K"), ("pddd", "pddd_5y_ortanca", "PD/DD")):
+        o = _oran(s.get(alan), s.get(ort))
+        if o and o < 0.8:
+            a.append((0.8 * (1 - o), "%s kendi 5 yıllık ortancasının altında (%.1f / %.1f)" % (ad, s[alan], s[ort])))
+    o = _oran(s.get("roe_yuzde"), s.get("roe_sektor"))
+    if o and o > 1.3:
+        a.append((min(o - 1, 1.0) * 0.9, "ROE %%%.1f, sektörün %.1f katı" % (s["roe_yuzde"], o)))
+    t = s.get("ters_dcf_buyume_yuzde")
+    if t is not None and t <= 2:
+        a.append((0.6 + max(0, -t) / 50, ("fiyat yıllık %%%.0f küçülme varsayıyor (ters DCF)" % -t) if t < 0
+                  else ("fiyat yalnız yıllık %%%.1f büyüme varsayıyor (ters DCF)" % t)))
+    tv = s.get("temettu_verimi_yuzde")
+    if tv and tv >= 5:
+        a.append((tv / 20, "temettü verimi %%%.1f" % tv))
+    fc = s.get("fcf_kar_donusum")
+    if fc and fc >= 0.8 and s.get("sinif") not in ("banka", "sigorta", "araci"):
+        a.append((0.4, "kârın nakde dönüşümü güçlü (FCF/kâr %.2f)" % fc))
+    a.sort(key=lambda x: -x[0])
+    return [m for _, m in a[:3]]
+
+
+def one_cikanlar(satirlar, n=3):
+    def puan(s):
+        p = min(s.get("potansiyel_yuzde") or 0, 100)
+        if (s.get("roe_yuzde") or 0) > (s.get("roe_sektor") or 1e9):
+            p += 10
+        if (s.get("fcf_kar_donusum") or 0) >= 0.7:
+            p += 5
+        if s.get("sinif") == "dongusel":
+            p -= 10
+        p += 3 * (s.get("yontemler") or "").count("%")
+        return p
+    uygun = [s for s in satirlar if s.get("adil_baz") and (s.get("potansiyel_yuzde") or 0) <= 150]
+    adaylar = sorted([s for s in uygun if s.get("aday")], key=lambda s: -puan(s))
+    yedek = sorted([s for s in uygun if not s.get("aday") and (s.get("durum") or "").startswith("🟢")
+                    and not any("⚠" in u for u in s.get("uyarilar") or [])], key=lambda s: -puan(s))
+    out = []
+    for s in (adaylar + yedek)[:n]:
+        out.append({"kod": s["kod"], "ad": s.get("ad"), "sektor": s.get("sektor"), "sinif": s.get("sinif"),
+                    "aday": bool(s.get("aday")), "kapanis": s.get("kapanis"), "adil_kotumser": s.get("adil_kotumser"),
+                    "adil_baz": s.get("adil_baz"), "adil_iyimser": s.get("adil_iyimser"),
+                    "potansiyel_yuzde": s.get("potansiyel_yuzde"), "inceleme_seviyesi": s.get("inceleme_seviyesi"),
+                    "one_cikan_alanlar": one_cikan_alanlar(s), "uyarilar": s.get("uyarilar") or [],
+                    "sonraki_bilanco": s.get("sonraki_bilanco"), "sonraki_temettu": s.get("sonraki_temettu"),
+                    "puan": round(puan(s), 1)})
+    return out
+
+
 def degisimler(yeni, eski):
     """Önceki çalışmaya göre durum veya aday bilgisi değişen hisseler."""
     once = {h.get("kod"): h for h in eski or [] if h.get("kod")}
@@ -478,9 +542,9 @@ def bant_notu(guncel, bant, ad):
     if guncel is None or not bant or guncel <= 0:
         return None
     if guncel < bant["min"]:
-        return "%s 5 yıllık bandının altında (%.1f < en düşük %.1f)" % (ad, guncel, bant["min"])
+        return "%s 5 yıllık bandının altında (%.2f < en düşük %.2f)" % (ad, guncel, bant["min"])
     if guncel > bant["max"]:
-        return "%s 5 yıllık bandının üstünde (%.1f > en yüksek %.1f)" % (ad, guncel, bant["max"])
+        return "%s 5 yıllık bandının üstünde (%.2f > en yüksek %.2f)" % (ad, guncel, bant["max"])
     return None
 
 
@@ -589,6 +653,7 @@ def main():
         satirlar = degerle(bist100, tum, ayar, gecmis)
         cikti.update({"ayar": ayar, "evren": {"bist100": len(bist100), "es_grup_evreni": len(tum)},
                       "hisseler": satirlar, "adaylar": [x["kod"] for x in satirlar if x.get("aday")],
+                      "one_cikanlar": one_cikanlar(satirlar),
                       "degisimler": degisimler(satirlar, eski_hisseler)})
         csv_yaz(satirlar)
         print("YAZILDI:", JSON_YOL, CSV_YOL, len(satirlar), "hisse")

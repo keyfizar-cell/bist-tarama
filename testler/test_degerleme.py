@@ -156,6 +156,31 @@ class Gecmis(unittest.TestCase):
         self.assertIsNone(d.bant_notu(5.0, b, "F/K"))
 
 
+class OneCikanlar(unittest.TestCase):
+    def s(self, kod, **kw):
+        x = {"kod": kod, "adil_baz": 12, "kapanis": 10, "potansiyel_yuzde": 20, "aday": True, "durum": "🟢 x",
+             "uyarilar": [], "yontemler": "dcf %40, fk %20, pddd %10", "sinif": "sanayi", "fk": 5, "fk_sektor": 10,
+             "pddd": 1, "pddd_sektor": 1.1, "roe_yuzde": 30, "roe_sektor": 15, "fcf_kar_donusum": 0.9,
+             "temettu_verimi_yuzde": 6, "ters_dcf_buyume_yuzde": -5, "fk_5y_ortanca": 8, "pddd_5y_ortanca": 1.0}
+        x.update(kw)
+        return x
+
+    def test_en_fazla_uc_ve_once_aday(self):
+        ss = [self.s("A", potansiyel_yuzde=30), self.s("B", potansiyel_yuzde=50), self.s("C", aday=False, potansiyel_yuzde=90),
+              self.s("D", potansiyel_yuzde=10), self.s("E", potansiyel_yuzde=200)]
+        o = [x["kod"] for x in d.one_cikanlar(ss)]
+        self.assertEqual(o, ["B", "A", "D"])  # E aşırı uç → dışarıda; C aday değil, adaylar yetince girmez
+
+    def test_aday_yetmezse_uyarisiz_yesil(self):
+        ss = [self.s("A"), self.s("B", aday=False), self.s("C", aday=False, uyarilar=["⚠️ x"])]
+        self.assertEqual([x["kod"] for x in d.one_cikanlar(ss)], ["A", "B"])
+
+    def test_alanlar(self):
+        al = d.one_cikan_alanlar(self.s("A"))
+        self.assertEqual(len(al), 3)
+        self.assertTrue(any("F/K" in a and "sektör" in a for a in al))
+
+
 class AdayVeDegisim(unittest.TestCase):
     def test_aday_kurali(self):
         s = {"kapanis": 8, "adil_baz": 10, "inceleme_seviyesi": 8.5, "uyarilar": [], "yontemler": "dcf %40, fk %20, pddd %10"}
