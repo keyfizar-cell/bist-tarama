@@ -1,6 +1,6 @@
 /**
  * Adil Değer sayfası — Google Apps Script (Alpay Portföy Takip dosyasına bir kez yapıştırılır)
- * Sürüm 1.2 (2026-11-11) — formül ayırıcısı (, / ;) tablonun yerel ayarına göre otomatik bulunur · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
+ * Sürüm 1.3 (2026-11-11) — ⭐ inceleme adayı (🟢 + uyarısız + ≥3 yöntem) koyu yeşil; ayırıcı otomatik · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
  *
  * KURULUM (tek sefer): Uzantılar → Apps Script → yeni dosya "AdilDeger" → bu metni yapıştır → Kaydet →
  * üstteki işlev listesinden "adilDegerKur" seç → Çalıştır → Google'ın izin ekranında İzin ver.
@@ -11,7 +11,7 @@
  * Canlı fiyat, potansiyel ve durum sayfada formülle (GOOGLEFINANCE) hesaplanır.
  * Model çıktısıdır, yatırım tavsiyesi değildir.
  */
-var AD_SURUM = '1.2';
+var AD_SURUM = '1.3';
 var AD_URL = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/adil_deger.csv';
 var AD_SAYFA = 'Adil Değer';
 var AD_SILINECEK = 'Risk Tablosu';
@@ -83,7 +83,7 @@ function adilDegerGuncelle() {
   sh.getRange(1, 1).setValue('📐 ADİL DEĞER — BIST100 (otomatik)').setFontWeight('bold').setFontSize(14);
   sh.getRange(2, 1).setValue('Son güncelleme: ' + Utilities.formatDate(new Date(), 'Europe/Istanbul', 'dd.MM.yyyy HH:mm') +
     ' · script v' + AD_SURUM + ' · ' + veri.length + ' hisse · Yöntem: göreli çarpanlar (eş grup %25/%50/%75 = kötümser/baz/iyimser) + USD DCF + DDM + bankalarda ROE ayarlı PD/DD + ters DCF. Model çıktısıdır, yatırım tavsiyesi değildir.');
-  sh.getRange(3, 1).setValue('🟢 fiyat güven marjlı inceleme seviyesinin altında · 🟡 baz adil değerin altında · ⚪ bant içinde · 🔴 iyimser senaryonun üstünde · 🔵 portföyde');
+  sh.getRange(3, 1).setValue('⭐ inceleme adayı = 🟢 + uyarı (⚠️) yok + en az 3 yöntem · 🟢 fiyat güven marjlı inceleme seviyesinin altında · 🟡 baz adil değerin altında · ⚪ bant içinde · 🔴 iyimser senaryonun üstünde · 🔵 portföyde');
   sh.getRange(4, 1, 1, n).setValues([AD_KOLON.map(function (k) { return k[0]; })])
     .setFontWeight('bold').setBackground('#DCE6F1').setWrap(true).setVerticalAlignment('middle');
   sh.setRowHeight(4, 48);
@@ -97,7 +97,9 @@ function adilDegerGuncelle() {
       if (ad === 'Portföy') return '=IFERROR(IF(COUNTIF(' + "'" + AD_PORTFOY_SAYFA + "'" + '!A:A,A' + row + ')>0,"🔵",""),"")';
       if (ad === 'Canlı Fiyat') return '=IFERROR(GOOGLEFINANCE("IST:"&A' + row + ',"price"),' + kolHarf(kapCol) + row + ')';
       if (ad === 'Potansiyel (canlı)') return '=IF(OR(G' + row + '="",E' + row + '=""),"",G' + row + '/E' + row + '-1)';
-      if (ad === 'Durum (canlı)') return '=IF(G' + row + '="","⚪ veri yok",IF(E' + row + '<=I' + row + ',"🟢 güven marjının altında",IF(E' + row +
+      if (ad === 'Durum (canlı)') return '=IF(G' + row + '="","⚪ veri yok",IF(E' + row + '<=I' + row +
+        ',IF(AND(ISERROR(SEARCH("⚠",AD' + row + ')),LEN(AC' + row + ')-LEN(SUBSTITUTE(AC' + row + ',"%",""))>=3),' +
+        '"⭐ inceleme adayı","🟢 güven marjının altında"),IF(E' + row +
         '<=G' + row + ',"🟡 adil değerin altında",IF(E' + row + '>H' + row + ',"🔴 iyimser senaryonun üstünde","⚪ adil değer bandında"))))';
       var v = r[idx[k[1]]];
       if (v === undefined || v === '') return '';
@@ -129,7 +131,11 @@ function adilDegerGuncelle() {
       .whenFormulaSatisfied('=ISNUMBER(SEARCH("' + metin + '",$K' + AD_ILK + '))')
       .setBackground(renk).setRanges([alan]).build();
   };
+  var aday = SpreadsheetApp.newConditionalFormatRule()
+    .whenFormulaSatisfied('=ISNUMBER(SEARCH("inceleme adayı",$K' + AD_ILK + '))')
+    .setBackground('#93C47D').setBold(true).setRanges([alan]).build();
   sh.setConditionalFormatRules([
+    aday,
     kural('güven marjının altında', '#D9EAD3'),
     kural('adil değerin altında', '#FFF2CC'),
     kural('iyimser senaryonun üstünde', '#F4CCCC')
