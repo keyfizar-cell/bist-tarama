@@ -1,0 +1,51 @@
+name: Adil Değer Geçmiş Bant
+
+# v1.0 (2026-11-11): degerleme_gecmis.py -> data/degerleme_gecmis.json (BIST100 5 yillik F/K ve PD/DD bandi,
+# Is Yatirim). Haftalik (Pazar 06:17 UTC) + elle. Ardindan "Adil Değer" yeniden calistirilir.
+on:
+  schedule:
+    - cron: "17 6 * * 0"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: adil-deger-gecmis
+  cancel-in-progress: false
+
+jobs:
+  gecmis:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Python kur
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Gecmis bandi hesapla
+        run: python degerleme_gecmis.py
+      - name: Ciktiyi commit et
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/degerleme_gecmis.json || true
+          if git diff --cached --quiet; then
+            echo "Degisiklik yok."
+            exit 0
+          fi
+          git commit -m "adil deger gecmis bant guncelle [skip ci]" || true
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main || true
+            if git push origin HEAD:main; then echo "Push basarili."; break; fi
+            sleep 5
+          done
+      - name: Adil Değer'i yeniden calistir
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: gh workflow run degerleme.yml --ref main || true

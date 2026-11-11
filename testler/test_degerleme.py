@@ -129,6 +129,32 @@ class Butun(unittest.TestCase):
                 int(v)
 
 
+class Gecmis(unittest.TestCase):
+    G = {"KCHOL": {"pddd_bant": {"min": 0.5, "ortanca": 0.6, "max": 1.1}, "yillar": {"2024": {"pddd": 0.8}, "2025": {"pddd": 0.5}}}}
+
+    def test_tarihsel_pddd_tv_varsa(self):
+        r = sirket("KCHOL", price_book_fq=0.4)
+        self.assertAlmostEqual(d.tarihsel_pddd_oran(r, self.G), 1.5)
+
+    def test_tarihsel_pddd_tv_yoksa_son_yil(self):
+        r = sirket("KCHOL", price_book_fq=None)
+        self.assertAlmostEqual(d.tarihsel_pddd_oran(r, self.G), 1.2)  # 0.6 / 0.5 (2025)
+
+    def test_holding_tv_verisi_eksikken_deger_uretir(self):
+        r = sirket("KCHOL", price_book_fq=None, price_earnings_ttm=None, ebitda=None,
+                   enterprise_value_ebitda_ttm=None, free_cash_flow=None, dividends_yield_current=0)
+        s = d.degerle([r], evren(), AYAR, self.G)[0]
+        self.assertEqual(s["sinif"], "holding")
+        self.assertAlmostEqual(s["adil_baz"], 12.0, places=1)  # yalnız tarihsel PD/DD → 10 × 1.2
+        self.assertEqual(s["pddd_5y_ortanca"], 0.6)
+
+    def test_bant_notu(self):
+        b = {"min": 3.0, "ortanca": 6.0, "max": 9.0}
+        self.assertIn("altında", d.bant_notu(2.0, b, "F/K"))
+        self.assertIn("üstünde", d.bant_notu(12.0, b, "F/K"))
+        self.assertIsNone(d.bant_notu(5.0, b, "F/K"))
+
+
 class AdayVeDegisim(unittest.TestCase):
     def test_aday_kurali(self):
         s = {"kapanis": 8, "adil_baz": 10, "inceleme_seviyesi": 8.5, "uyarilar": [], "yontemler": "dcf %40, fk %20, pddd %10"}

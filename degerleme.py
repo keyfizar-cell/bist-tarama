@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-degerleme.py  v1.1  (2026-11-11)  — BIST100 adil değer (otomatik, manuel dokunuş yok)
+degerleme.py  v1.2  (2026-11-11)  — BIST100 adil değer (otomatik, manuel dokunuş yok)
 
 Her akşam ana taramadan sonra GitHub Actions'ta çalışır:
   - TradingView tarama API'sinden (tradingview-screener) BIST100 üyeleri + tüm BIST (~620 hisse, eş grup
@@ -23,6 +23,9 @@ Her akşam ana taramadan sonra GitHub Actions'ta çalışır:
 v1.1: her hisseye "aday" (⭐ inceleme adayı = kapanış ≤ inceleme seviyesi + uyarılarda ⚠ yok + ≥3 yöntem;
   tablodaki Apps Script ile AYNI kural) ve önceki çalışmaya göre "degisimler" listesi (durum/aday değişen
   hisseler) — akşam bülteni ve Koç bunu kullanır.
+v1.2: data/degerleme_gecmis.json (haftalık, İş Yatırım) varsa 5 yıllık F/K ve PD/DD bandı eklenir; holdinglerde
+  "tarihsel PD/DD" yöntemi (fiyat × 5 yıllık ortanca PD/DD / güncel PD/DD; holding iskontosunun kendi geçmişine
+  dönüşü) — TradingView'da PD/DD yoksa İş Yatırım son yıl PD/DD'si kullanılır. Temettü tarihleri (TradingView).
 Çıktılar: data/adil_deger.json (bülten) ve data/adil_deger.csv (Google Sheets IMPORTDATA; sayılar ×100
 TAMSAYI → yerel ayar ondalık ayıracından etkilenmez).
 Ayarlar: degerleme_ayar.json (yalnız piyasa varsayımları; kişisel veri yok).
@@ -38,16 +41,18 @@ import sys
 import traceback
 import urllib.request
 
-SURUM = "1.1"
+SURUM = "1.2"
 VERI = "data"
 JSON_YOL = os.path.join(VERI, "adil_deger.json")
 CSV_YOL = os.path.join(VERI, "adil_deger.csv")
 AYAR_YOL = "degerleme_ayar.json"
+GECMIS_YOL = os.path.join(VERI, "degerleme_gecmis.json")
 
 ALANLAR = ["name", "description", "close", "sector", "industry", "market_cap_basic", "price_earnings_ttm",
            "price_book_fq", "enterprise_value_ebitda_ttm", "return_on_equity", "debt_to_equity",
            "free_cash_flow", "net_income", "ebitda", "net_debt", "total_debt", "dividends_yield_current",
-           "dividend_payout_ratio_ttm", "beta_1_year", "earnings_release_next_date"]
+           "dividend_payout_ratio_ttm", "beta_1_year", "earnings_release_next_date",
+           "ex_dividend_date_upcoming", "dividend_payment_date_upcoming"]
 
 SEKTOR_TR = {
     "Communications": "İletişim", "Consumer Durables": "Dayanıklı Tüketim",
@@ -74,7 +79,7 @@ AGIRLIK = {
     "banka":    {"roe_pddd": 0.4, "pddd": 0.3, "fk": 0.2, "ddm": 0.1},
     "sigorta":  {"roe_pddd": 0.3, "pddd": 0.3, "fk": 0.3, "ddm": 0.1},
     "araci":    {"roe_pddd": 0.3, "pddd": 0.3, "fk": 0.3, "ddm": 0.1},
-    "holding":  {"pddd": 0.5, "fk": 0.3, "ddm": 0.2},
+    "holding":  {"tarihsel_pddd": 0.35, "pddd": 0.3, "fk": 0.2, "ddm": 0.15},
     "gyo":      {"pddd": 0.8, "ddm": 0.2},
     "dongusel": {"dcf": 0.3, "fd_favok": 0.3, "pddd": 0.25, "fk": 0.15},
     "sanayi":   {"dcf": 0.4, "fd_favok": 0.2, "fk": 0.2, "pddd": 0.1, "ddm": 0.1},
@@ -325,6 +330,22 @@ def roe_pddd_oran(r, tablo, dilim):
     return hedef / pb
 
 
+def tarihsel_pddd_oran(r, gecmis):
+    """Güncel PD/DD'nin 5 yıllık ortancaya dönüşü: hedef / güncel."""
+    g = (gecmis or {}).get(r.get("kod")) or {}
+    bant = g.get("pddd_bant")
+    if not bant or not bant.get("ortanca"):
+        return None
+    pb = r.get("price_book_fq")
+    if not pb or pb <= 0:
+        yillar = g.get("yillar") or {}
+        son = yillar.get(max(yillar)) if yillar else None
+        pb = (son or {}).get("pddd")
+    if not pb or pb <= 0:
+        return None
+    return bant["ortanca"] / pb
+
+
 def harmanla(oranlar, agirlik, ust=3.0):
     # Yalnız temettü modeli kalan hisse (ör. TradingView'da bilanço verisi eksik) için değer üretme
     if not any(oranlar.get(k) for k in agirlik if k != "ddm"):
@@ -338,7 +359,7 @@ def harmanla(oranlar, agirlik, ust=3.0):
     return (toplam / w) if w > 0 else None
 
 
-def hisse_degerle(r, tablo, ayar):
+def hisse_degerle(r, tablo, ayar, gecmis=None):
     s = sinif(r)
     g_uc = ayar["uc_buyume_yuzde"] / 100.0
     ke, beta = ke_hesapla(r, ayar)
@@ -356,7 +377,7 @@ def hisse_degerle(r, tablo, ayar):
         o = {"fk": goreli_oran(r, tablo, "fk", dilim), "pddd": goreli_oran(r, tablo, "pddd", dilim),
              "fd_favok": goreli_oran(r, tablo, "fd_favok", dilim),
              "dcf": dcf_oran(r, sen[i], wacc, g_uc, fcf_c), "ddm": ddm_oran(r, ke, min(sen[i], g_uc)),
-             "roe_pddd": roe_pddd_oran(r, tablo, dilim)}
+             "roe_pddd": roe_pddd_oran(r, tablo, dilim), "tarihsel_pddd": tarihsel_pddd_oran(r, gecmis)}
         sonuc[ad] = harmanla(o, agirlik, ust)
         if ad == "baz":
             kullanilan = {k for k in agirlik if o.get(k)}
@@ -372,7 +393,8 @@ def hisse_degerle(r, tablo, ayar):
         w2 = wacc_hesapla(r, ke2, ayar)
         o2 = {"fk": goreli_oran(r, tablo, "fk", "p50"), "pddd": goreli_oran(r, tablo, "pddd", "p50"),
               "fd_favok": goreli_oran(r, tablo, "fd_favok", "p50"), "dcf": dcf_oran(r, sen[1], w2, g_uc, fcf_c),
-              "ddm": ddm_oran(r, ke2, min(sen[1], g_uc)), "roe_pddd": roe_pddd_oran(r, tablo, "p50")}
+              "ddm": ddm_oran(r, ke2, min(sen[1], g_uc)), "roe_pddd": roe_pddd_oran(r, tablo, "p50"),
+              "tarihsel_pddd": tarihsel_pddd_oran(r, gecmis)}
         duy[etiket] = harmanla(o2, agirlik, ust)
     gm = min(0.30, 0.15 + 0.05 * max(0.0, (r.get("beta_1_year") or 1.0) - 1.0))
     ters = ters_dcf(r, wacc, g_uc) if s in ("sanayi", "dongusel") else None
@@ -408,7 +430,7 @@ def uyarilar(r, d, tablo):
     if len(d.get("kullanilan") or []) <= 1:
         u.append("Veri az: tek yöntemle hesaplandı, güven düşük")
     if d["sinif"] == "holding":
-        u.append("Holding: iştirak bazlı net varlık değeri henüz eklenmedi (2. aşama)")
+        u.append("Holding: tarihsel PD/DD (kendi holding iskontosu) ağırlıklı; iştirak bazlı net varlık değeri yok")
     return u
 
 
@@ -446,7 +468,21 @@ def degisimler(yeni, eski):
     return out
 
 
-def degerle(bist100, tum, ayar):
+def tarih(ts):
+    return dt.datetime.fromtimestamp(ts, dt.timezone.utc).strftime("%Y-%m-%d") if ts else None
+
+
+def bant_notu(guncel, bant, ad):
+    if guncel is None or not bant or guncel <= 0:
+        return None
+    if guncel < bant["min"]:
+        return "%s 5 yıllık bandının altında (%.1f < en düşük %.1f)" % (ad, guncel, bant["min"])
+    if guncel > bant["max"]:
+        return "%s 5 yıllık bandının üstünde (%.1f > en yüksek %.1f)" % (ad, guncel, bant["max"])
+    return None
+
+
+def degerle(bist100, tum, ayar, gecmis=None):
     tablo = es_grup_tablosu(tum)
     satirlar = []
     for r in sorted(bist100, key=lambda x: x["kod"]):
@@ -454,7 +490,7 @@ def degerle(bist100, tum, ayar):
         if not kap:
             continue
         try:
-            d = hisse_degerle(r, tablo, ayar)
+            d = hisse_degerle(r, tablo, ayar, gecmis)
         except Exception as e:
             satirlar.append({"kod": r["kod"], "hata": str(e)[:120]})
             continue
@@ -485,7 +521,16 @@ def degerle(bist100, tum, ayar):
             "sonraki_bilanco": dt.datetime.fromtimestamp(nxt, dt.timezone.utc).strftime("%Y-%m-%d") if nxt else None,
             "durum": durum(kap, baz, inceleme, tl(d["iyimser"])),
             "uyarilar": uyarilar(r, d, tablo),
+            "sonraki_temettu": tarih(r.get("ex_dividend_date_upcoming")),
+            "temettu_odeme": tarih(r.get("dividend_payment_date_upcoming")),
         })
+        g = (gecmis or {}).get(r["kod"]) or {}
+        fb, pb = g.get("fk_bant"), g.get("pddd_bant")
+        satirlar[-1].update({"fk_5y_ortanca": (fb or {}).get("ortanca"), "pddd_5y_ortanca": (pb or {}).get("ortanca"),
+                             "fk_5y_bant": fb, "pddd_5y_bant": pb})
+        for n_ in (bant_notu(r.get("price_earnings_ttm"), fb, "F/K"), bant_notu(r.get("price_book_fq"), pb, "PD/DD")):
+            if n_:
+                satirlar[-1]["uyarilar"].append(n_)
         satirlar[-1]["aday"] = aday_mi(satirlar[-1])
     return satirlar
 
@@ -493,8 +538,10 @@ def degerle(bist100, tum, ayar):
 CSV_SAYI = ["kapanis", "adil_kotumser", "adil_baz", "adil_iyimser", "inceleme_seviyesi", "guven_marji_yuzde",
             "potansiyel_yuzde", "duyarlilik_ke_eksi2", "duyarlilik_ke_arti2", "ters_dcf_buyume_yuzde", "fk",
             "fk_sektor", "pddd", "pddd_sektor", "fd_favok", "fd_favok_sektor", "roe_yuzde", "roe_sektor",
-            "borc_ozk", "fcf_kar_donusum", "temettu_verimi_yuzde", "beta", "ozkaynak_maliyeti_usd_yuzde"]
-CSV_METIN = ["kod", "ad", "sektor", "alt_sektor", "sinif", "durum", "yontemler", "sonraki_bilanco", "uyari"]
+            "borc_ozk", "fcf_kar_donusum", "temettu_verimi_yuzde", "beta", "ozkaynak_maliyeti_usd_yuzde",
+            "fk_5y_ortanca", "pddd_5y_ortanca"]
+CSV_METIN = ["kod", "ad", "sektor", "alt_sektor", "sinif", "durum", "yontemler", "sonraki_bilanco", "uyari",
+             "sonraki_temettu"]
 
 
 def csv_yaz(satirlar, yol=CSV_YOL):
@@ -508,7 +555,7 @@ def csv_yaz(satirlar, yol=CSV_YOL):
                 continue
             sayilar = ["" if s.get(c) is None else str(int(round(s[c] * 100))) for c in CSV_SAYI]
             metin2 = [s.get("durum") or "", s.get("yontemler") or "", s.get("sonraki_bilanco") or "",
-                      " | ".join(s.get("uyarilar") or [])]
+                      " | ".join(s.get("uyarilar") or []), s.get("sonraki_temettu") or ""]
             w.writerow([s.get(c) or "" for c in CSV_METIN[:5]] + sayilar + metin2)
 
 
@@ -532,7 +579,12 @@ def main():
         abd_10y_guncelle(ayar)
         tum = tv_cek()
         bist100 = tv_cek("SYML:BIST;XU100")
-        satirlar = degerle(bist100, tum, ayar)
+        try:
+            with open(GECMIS_YOL, encoding="utf-8") as f:
+                gecmis = json.load(f).get("hisseler") or {}
+        except Exception:
+            gecmis = {}
+        satirlar = degerle(bist100, tum, ayar, gecmis)
         cikti.update({"ayar": ayar, "evren": {"bist100": len(bist100), "es_grup_evreni": len(tum)},
                       "hisseler": satirlar, "adaylar": [x["kod"] for x in satirlar if x.get("aday")],
                       "degisimler": degisimler(satirlar, eski_hisseler)})

@@ -1,6 +1,6 @@
 /**
  * Adil Değer sayfası — Google Apps Script (Alpay Portföy Takip dosyasına bir kez yapıştırılır)
- * Sürüm 1.3 (2026-11-11) — ⭐ inceleme adayı (🟢 + uyarısız + ≥3 yöntem) koyu yeşil; ayırıcı otomatik · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
+ * Sürüm 1.4 (2026-11-11) — 5 yıllık F/K ve PD/DD ortancası + sonraki temettü sütunları; ⭐ aday; ayırıcı otomatik · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
  *
  * KURULUM (tek sefer): Uzantılar → Apps Script → yeni dosya "AdilDeger" → bu metni yapıştır → Kaydet →
  * üstteki işlev listesinden "adilDegerKur" seç → Çalıştır → Google'ın izin ekranında İzin ver.
@@ -11,7 +11,7 @@
  * Canlı fiyat, potansiyel ve durum sayfada formülle (GOOGLEFINANCE) hesaplanır.
  * Model çıktısıdır, yatırım tavsiyesi değildir.
  */
-var AD_SURUM = '1.3';
+var AD_SURUM = '1.4';
 var AD_URL = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/adil_deger.csv';
 var AD_SAYFA = 'Adil Değer';
 var AD_SILINECEK = 'Risk Tablosu';
@@ -51,6 +51,9 @@ var AD_KOLON = [
   ['Yöntemler (ağırlık)', 'yontemler', 0, null],
   ['Uyarılar', 'uyari', 0, null],
   ['Şirket', 'ad', 0, null],
+  ['F/K 5 yıllık ortanca', 'fk_5y_ortanca_x100', 100, '0.0'],
+  ['PD/DD 5 yıllık ortanca', 'pddd_5y_ortanca_x100', 100, '0.00'],
+  ['Sonraki Temettü (hak kullanım)', 'sonraki_temettu', 0, null],
   ['Kapanış (veri)', 'kapanis_x100', 100, '#,##0.00']
 ];
 
@@ -122,7 +125,7 @@ function adilDegerGuncelle() {
   AD_KOLON.forEach(function (k, c) {
     if (k[3]) sh.getRange(AD_ILK, c + 1, satirlar.length, 1).setNumberFormat(k[3]);
   });
-  var genislik = [70, 60, 160, 80, 85, 95, 95, 95, 110, 85, 200, 70, 110, 95, 95, 60, 70, 60, 70, 70, 80, 60, 70, 70, 70, 70, 55, 95, 220, 380, 240, 85];
+  var genislik = [70, 60, 160, 80, 85, 95, 95, 95, 110, 85, 200, 70, 110, 95, 95, 60, 70, 60, 70, 70, 80, 60, 70, 70, 70, 70, 55, 95, 220, 380, 240, 80, 80, 110, 85];
   genislik.forEach(function (w, c) { sh.setColumnWidth(c + 1, w); });
   sh.setFrozenRows(4);
   sh.setFrozenColumns(1);
