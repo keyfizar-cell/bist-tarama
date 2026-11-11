@@ -1,6 +1,6 @@
 /**
  * Adil Değer sayfası — Google Apps Script (Alpay Portföy Takip dosyasına bir kez yapıştırılır)
- * Sürüm 1.1 (2026-11-11) — formüller setFormulas ile (TR yerel ayarında #ERROR! düzeltmesi) · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
+ * Sürüm 1.2 (2026-11-11) — formül ayırıcısı (, / ;) tablonun yerel ayarına göre otomatik bulunur · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
  *
  * KURULUM (tek sefer): Uzantılar → Apps Script → yeni dosya "AdilDeger" → bu metni yapıştır → Kaydet →
  * üstteki işlev listesinden "adilDegerKur" seç → Çalıştır → Google'ın izin ekranında İzin ver.
@@ -11,7 +11,7 @@
  * Canlı fiyat, potansiyel ve durum sayfada formülle (GOOGLEFINANCE) hesaplanır.
  * Model çıktısıdır, yatırım tavsiyesi değildir.
  */
-var AD_SURUM = '1.1';
+var AD_SURUM = '1.2';
 var AD_URL = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/adil_deger.csv';
 var AD_SAYFA = 'Adil Değer';
 var AD_SILINECEK = 'Risk Tablosu';
@@ -105,8 +105,9 @@ function adilDegerGuncelle() {
     });
   });
   var alan = sh.getRange(AD_ILK, 1, satirlar.length, n);
-  // Formüller setValues ile yazılırsa tablonun yerel ayarına (TR: ";") göre okunur ve #ERROR! verir.
-  // setFormulas her zaman İngilizce sözdizimini (",") kabul eder → formül sütunları ayrıca yazılır.
+  // Tablo Türkçe yerel ayardaysa formül ayırıcısı ";" olmalı (aksi hâlde "Formül ayrıştırma hatası").
+  // Ayırıcı her çalışmada boş bir hücrede denenerek bulunur; formüller ona çevrilip yazılır.
+  var ayirici = ayiriciBul(sh);
   var formulSutun = [];
   AD_KOLON.forEach(function (k, c) { if (!k[1]) formulSutun.push(c); });
   var degerler = satirlar.map(function (r) {
@@ -114,7 +115,7 @@ function adilDegerGuncelle() {
   });
   alan.setValues(degerler);
   formulSutun.forEach(function (c) {
-    sh.getRange(AD_ILK, c + 1, satirlar.length, 1).setFormulas(satirlar.map(function (r) { return [r[c]]; }));
+    sh.getRange(AD_ILK, c + 1, satirlar.length, 1).setFormulas(satirlar.map(function (r) { return [cevir(r[c], ayirici)]; }));
   });
   AD_KOLON.forEach(function (k, c) {
     if (k[3]) sh.getRange(AD_ILK, c + 1, satirlar.length, 1).setNumberFormat(k[3]);
@@ -133,6 +134,30 @@ function adilDegerGuncelle() {
     kural('adil değerin altında', '#FFF2CC'),
     kural('iyimser senaryonun üstünde', '#F4CCCC')
   ]);
+}
+
+function ayiriciBul(sh) {
+  var hucre = sh.getRange(1, 60);  // BH1: geçici deneme hücresi
+  var sonuc = ';';
+  try {
+    hucre.setFormula('=SUM(1,2)');
+    SpreadsheetApp.flush();
+    if (hucre.getValue() === 3) sonuc = ',';
+  } catch (e) { /* ";" ile devam */ }
+  hucre.clearContent();
+  return sonuc;
+}
+
+// Tırnak içindeki metinlere dokunmadan virgülleri ayırıcıya çevirir.
+function cevir(formul, ayirici) {
+  if (ayirici === ',') return formul;
+  var out = '', tirnak = false;
+  for (var i = 0; i < formul.length; i++) {
+    var ch = formul.charAt(i);
+    if (ch === '"') tirnak = !tirnak;
+    out += (!tirnak && ch === ',') ? ayirici : ch;
+  }
+  return out;
 }
 
 function kolHarf(c) {

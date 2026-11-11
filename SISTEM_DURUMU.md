@@ -188,6 +188,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 11.11.2026 | Apps Script v1.2: Alpay'ın tablosunda `setFormulas` da yerel ayara (";") göre okuyor ("Formül ayrıştırma hatası") → ayırıcı her çalışmada deneme hücresiyle (BH1) otomatik bulunur, formüller ona çevrilir | Claude Code |
 | 11.11.2026 | Apps Script v1.1: formül sütunları `setFormulas` ile yazılıyor (v1.0'da `setValues` Türkçe yerel ayarda #ERROR! veriyordu). Alpay kurulumu yaptı; veri sütunları 97 hisseyle doğru geldi | Claude Code |
 | 11.11.2026 | `araclar/adil_deger_apps_script.gs` v1.0: Alpay'ın portföy tablosuna bir kez yapıştırılan Apps Script — "Risk Tablosu"nu siler, "Adil Değer" sayfasını `adil_deger.csv`'den kurar (canlı fiyat/potansiyel/durum formülle), her gün 20:00 kendini günceller. Drive bağlantısı hücre yazamadığı ve IMPORTDATA ayrı dosyada izin/dil ayarına takıldığı için bu yol seçildi | Claude Code |
 | 11.11.2026 | **Adil değer (1. aşama):** `degerleme.py` v1.0 + `degerleme_ayar.json` + "Adil Değer" iş akışı + 15 test; BIST100 (97 hisse) yerel denemede: ortanca potansiyel %7. Bu oturumun ortamına scanner.tradingview.com eklendi | Claude Code |
