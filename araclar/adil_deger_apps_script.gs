@@ -1,6 +1,6 @@
 /**
  * Adil Değer sayfası — Google Apps Script (Alpay Portföy Takip dosyasına bir kez yapıştırılır)
- * Sürüm 1.5 (2026-11-11) — Kod'a tıklayınca TradingView grafiği; 5 yıllık bantlar + temettü; ⭐ aday; ayırıcı otomatik · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
+ * Sürüm 1.6 (2026-11-11) — ⭐ satırları açık gri; Kod'a tıklayınca TradingView grafiği; 5 yıllık bantlar + temettü; ⭐ aday; ayırıcı otomatik · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/adil_deger_apps_script.gs
  *
  * KURULUM (tek sefer): Uzantılar → Apps Script → yeni dosya "AdilDeger" → bu metni yapıştır → Kaydet →
  * üstteki işlev listesinden "adilDegerKur" seç → Çalıştır → Google'ın izin ekranında İzin ver.
@@ -11,7 +11,7 @@
  * Canlı fiyat, potansiyel ve durum sayfada formülle (GOOGLEFINANCE) hesaplanır.
  * Model çıktısıdır, yatırım tavsiyesi değildir.
  */
-var AD_SURUM = '1.5';
+var AD_SURUM = '1.6';
 var AD_URL = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/adil_deger.csv';
 var AD_SAYFA = 'Adil Değer';
 var AD_SILINECEK = 'Risk Tablosu';
@@ -141,7 +141,7 @@ function adilDegerGuncelle() {
   };
   var aday = SpreadsheetApp.newConditionalFormatRule()
     .whenFormulaSatisfied('=ISNUMBER(SEARCH("inceleme adayı",$K' + AD_ILK + '))')
-    .setBackground('#93C47D').setBold(true).setRanges([alan]).build();
+    .setBackground('#D9D9D9').setBold(true).setRanges([alan]).build();
   sh.setConditionalFormatRules([
     aday,
     kural('güven marjının altında', '#D9EAD3'),
