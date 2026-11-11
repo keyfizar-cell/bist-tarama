@@ -216,6 +216,8 @@ def es_grup(tablo, alan, r):
 # ── SINIF ──
 def sinif(r):
     ind, sek, kod = r.get("industry"), r.get("sector"), r.get("kod", "")
+    if kod.endswith("HOL"):  # SAHOL gibi bankayı konsolide eden holdingler de holding sayılır
+        return "holding"
     if ind in BANKA:
         return "banka"
     if ind in SIGORTA:

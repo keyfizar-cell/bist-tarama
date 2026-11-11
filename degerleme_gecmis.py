@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-degerleme_gecmis.py  v1.0  (2026-11-11) — BIST100 için 5 yıllık F/K ve PD/DD bandı (haftalık)
+degerleme_gecmis.py  v1.1  (2026-11-11) — BIST100 için 5 yıllık F/K ve PD/DD bandı (haftalık)
 
 Kaynak: İş Yatırım veri servisi (giriş gerekmez)
   - MaliTablo (yıllık, dönem 12): 3Z = ana ortaklık / dönem net kârı, 2O = (ana ortaklık) özkaynak.
@@ -11,6 +11,9 @@ Her yıl için F/K = PD / net kâr (kâr > 0 ise), PD/DD = PD / özkaynak. Bant:
 NOT: 2023'ten itibaren TMS 29 (enflasyon muhasebesi) uygulandığı için eski yıllar doğrudan kıyaslanamayabilir;
 bant bilgi amaçlıdır, adil değer harmanına katılmaz.
 Çıktı: data/degerleme_gecmis.json (degerleme.py okur). Hisse listesi data/adil_deger.json'dan alınır.
+v1.1: fiyat yalnız her yılın 20–31 Aralık aralığı için istenir (5 yıllık günlük veri ~700 KB'lık tek istekte
+  zaman aşımı / yarım okuma veriyordu); her istek 3 kez yeniden denenir; başarılı eski kayıtlar korunur.
+  Yalnız eksik / hatalı / 25 günden eski kayıtlar yenilenir (yıllık veri yılda bir değişir).
 GÜVENLİK: hata olsa da JSON yazar, eski kayıtları korur, exit(0).
 """
 import datetime as dt
@@ -22,18 +25,26 @@ import time
 import traceback
 import urllib.request
 
-SURUM = "1.0"
+SURUM = "1.1"
 CIKTI = os.path.join("data", "degerleme_gecmis.json")
 GIRDI = os.path.join("data", "adil_deger.json")
 TABAN = "https://www.isyatirim.com.tr/_layouts/15/IsYatirim.Website/Common/Data.aspx/"
 YIL_SAYISI = 5
 BEKLE = 0.4
+TAZE_GUN = 25
 
 
-def http_json(url):
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (bist-tarama/degerleme_gecmis)"})
-    with urllib.request.urlopen(req, timeout=40) as r:
-        return json.loads(r.read().decode("utf-8", "replace"))
+def http_json(url, deneme=3):
+    son = None
+    for i in range(deneme):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (bist-tarama/degerleme_gecmis)"})
+            with urllib.request.urlopen(req, timeout=40) as r:
+                return json.loads(r.read().decode("utf-8", "replace"))
+        except Exception as e:
+            son = e
+            time.sleep(2 * (i + 1))
+    raise son
 
 
 def mali_tablo(kod, yillar, grup):
@@ -76,10 +87,13 @@ def finansallar(kod, yillar):
 
 
 def yil_sonu_pd(kod, yillar):
-    bas, son = "20-12-%d" % min(yillar), "31-12-%d" % max(yillar)
-    d = http_json(TABAN + "HisseTekil?hisse=%s&startdate=%s&enddate=%s" % (kod, bas, son))
+    satirlar = []
+    for y in yillar:
+        d = http_json(TABAN + "HisseTekil?hisse=%s&startdate=20-12-%d&enddate=31-12-%d" % (kod, y, y))
+        satirlar.extend(d.get("value") or [])
+        time.sleep(BEKLE)
     son_gun = {}
-    for r in d.get("value") or []:
+    for r in satirlar:
         try:
             t = dt.datetime.strptime(r["HGDG_TARIH"], "%d-%m-%Y")
         except Exception:
@@ -111,7 +125,7 @@ def hisse_isle(kod, yillar):
         if fk is not None and not (0 < fk < 200):
             fk = None
         yil[str(y)] = {"fk": round(fk, 2) if fk else None, "pddd": round(pb, 2) if pb else None}
-    return {"grup": grup, "yillar": yil,
+    return {"grup": grup, "yillar": yil, "guncelleme": dt.date.today().isoformat(),
             "fk_bant": bant([v["fk"] for v in yil.values()]),
             "pddd_bant": bant([v["pddd"] for v in yil.values()])}
 
@@ -131,14 +145,19 @@ def main():
         bu_yil = dt.date.today().year
         yillar = list(range(bu_yil - YIL_SAYISI, bu_yil))
         hatalar = 0
+        sinir = (dt.date.today() - dt.timedelta(days=TAZE_GUN)).isoformat()
         for kod in kodlar:
+            e = cikti["hisseler"].get(kod) or {}
+            if e.get("pddd_bant") and (e.get("guncelleme") or "") >= sinir and \
+                    str(max(yillar)) in (e.get("yillar") or {}):
+                continue  # taze ve tam
             try:
                 cikti["hisseler"][kod] = hisse_isle(kod, yillar)
             except Exception as e:
                 hatalar += 1
                 print(kod, "hata:", type(e).__name__, str(e)[:100])
         cikti["yillar"] = yillar
-        cikti["basari"] = len(kodlar) - hatalar
+        cikti["basari"] = sum(1 for k in kodlar if (cikti["hisseler"].get(k) or {}).get("pddd_bant"))
         cikti["hata_sayisi"] = hatalar
     except Exception:
         traceback.print_exc()

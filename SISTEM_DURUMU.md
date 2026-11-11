@@ -67,7 +67,7 @@ Ardından "Sosyal Nabız" ÇALIŞMAZ (borsa kapalı; cuma verisinin üzerine yaz
 
 | Bileşen | Sürüm | Tetik | Çıktı | Not |
 |---|---|---|---|---|
-| `degerleme_gecmis.py` + `degerleme-gecmis.yml` ("Adil Değer Geçmiş Bant") | **v1.0** | haftalık Pazar 06:17 UTC + dispatch; bitince "Adil Değer"i tetikler | `degerleme_gecmis.json` | BIST100 5 yıllık F/K ve PD/DD bandı: İş Yatırım MaliTablo (3Z net kâr, 2O özkaynak; XI_29 → UFRS) + HisseTekil yıl sonu PD. 2023+ TMS 29 nedeniyle eski yıllarla kıyas sınırlı; holdinglerde tarihsel PD/DD yöntemi olarak kullanılır |
+| `degerleme_gecmis.py` + `degerleme-gecmis.yml` ("Adil Değer Geçmiş Bant") | **v1.1** | haftalık Pazar 06:17 UTC + dispatch; bitince "Adil Değer"i tetikler | `degerleme_gecmis.json` | BIST100 5 yıllık F/K ve PD/DD bandı: İş Yatırım MaliTablo (3Z net kâr, 2O özkaynak; XI_29 → UFRS) + HisseTekil yıl sonu PD. 2023+ TMS 29 nedeniyle eski yıllarla kıyas sınırlı; holdinglerde tarihsel PD/DD yöntemi olarak kullanılır |
 | `degerleme.py` + `degerleme_ayar.json` + `degerleme.yml` ("Adil Değer") | **v1.2** | workflow_run (ana tarama) + dispatch | `adil_deger.json`, `adil_deger.csv` | BIST100 adil değer, tamamen otomatik (Alpay kararı: manuel varsayım yok). Veri: TradingView tarama API (USD temel veriler; tüm BIST ~620 hisse eş grup için). Yöntemler sınıfa göre ağırlıklı: göreli F/K–PD/DD–FD/FAVÖK (eş grup %25/%50/%75 → kötümser/baz/iyimser), USD DCF (Damodaran Ke: ABD 10Y + β×(olgun prim + 1,5×TR eurotahvil spread'i); döngüsellerde zirve FCF %40 kırpılır), DDM, banka/sigortada ROE ayarlı PD/DD, ters DCF. Güven marjı betaya göre %15–30. ABD 10Y (Yahoo ^TNX) ve TR USD 10Y (Bondscovery) otomatik; okunamazsa ayar dosyası. Uyarılar: değer tuzağı, döngüsel zirve, veri az. Holding net varlık değeri 2. aşamada |
 | `tarama.py` + `bist-tarama.yml` ("BIST Emir Bozkurt Taraması") | — | workflow_dispatch (Cloudflare Worker, 15:20 UTC) | `latest.json`, `<tarih>.json`, `status.json` | TradingView screener birincil; yfinance/isyatirimhisse yedek. Secret: `TV_SESSIONID` |
 | `kap_tarama.py` + `kap-tarama.yml` | **v3.4** | workflow_run + dispatch | `kap.json`, `geri_alim.json` | Kümülatif geri alım: `kumulatif_kaynak` = `sirket_beyani` \| `tablo_program`. Bültene YALNIZ `sirket_beyani` yazılır |
@@ -190,6 +190,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 11.11.2026 | İlk geçmiş bant çalışması: 97 hisseden 57'si (40'ında 5 yıllık günlük fiyat indirmesi zaman aşımı/yarım okuma). `degerleme_gecmis.py` v1.1: fiyat yalnız yıl sonu aralıkları, 3 deneme, yalnız eksik/25 günden eski kayıtlar yenilenir, süre 90 dk. `degerleme.py`: "…HOL" kodlu şirketler her zaman holding (SAHOL banka sınıfına düşüyordu) | Claude Code |
 | 11.11.2026 | Apps Script v1.7: koşullu renk kuralı formülleri de otomatik ayırıcıdan geçiyor (v1.3–1.6'da TR ayarında hiçbir satır boyanmıyordu); F/K–PD/DD–FD/FAVÖK–ROE–5 yıllık sütun çiftleri açık mavi, satır renkleri bu sütunlara yazmaz | Claude Code |
 | 11.11.2026 | Apps Script v1.6: ⭐ inceleme adayı satırları açık gri (#D9D9D9) + kalın — Alpay isteği | Claude Code |
 | 11.11.2026 | Apps Script v1.5: Kod hücresine TradingView grafik bağlantısı (zengin metin bağlantısı; hücre değeri düz kod kalır, formüller etkilenmez) — Alpay isteği | Claude Code |

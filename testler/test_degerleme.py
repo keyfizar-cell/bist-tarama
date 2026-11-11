@@ -94,6 +94,7 @@ class Butun(unittest.TestCase):
     def test_siniflar_ve_sira(self):
         self.assertEqual(d.sinif(sirket("AKBNK", "Finance", "Major Banks")), "banka")
         self.assertEqual(d.sinif(sirket("KCHOL")), "holding")
+        self.assertEqual(d.sinif(sirket("SAHOL", "Finance", "Major Banks")), "holding")
         self.assertEqual(d.sinif(sirket("EKGYO")), "gyo")
         self.assertEqual(d.sinif(sirket("EREGL", "Non-Energy Minerals", "Steel")), "dongusel")
         satir = d.degerle([sirket("SAN2"), sirket("BNK1", "Finance", "Major Banks", price_book_fq=1.0,
