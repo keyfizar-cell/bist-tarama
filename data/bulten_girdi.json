@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-12T15:21:32.775911+00:00",
+ "uretim_zamani_utc": "2026-11-12T15:22:39.321402+00:00",
  "kaynak": {
   "tarih": "2026-11-12",
   "uretim_zamani_utc": "2026-11-12T15:21:12+00:00",
@@ -9075,7 +9075,7 @@
  ],
  "geri_alim": {
   "var": true,
-  "uretim_zamani_utc": "2026-11-11T15:21:55.761403+00:00",
+  "uretim_zamani_utc": "2026-11-12T15:21:39.270552+00:00",
   "satirlar": [
    {
     "kod": "BLUME",
@@ -9129,9 +9129,9 @@
     "kod": "GUBRF",
     "portfoyde": false,
     "bist30": true,
-    "toplam_bildirim": 5,
+    "toplam_bildirim": 6,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-10",
+    "son_bildirim_tarih": "2026-11-11",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9201,9 +9201,9 @@
     "kod": "ULUUN",
     "portfoyde": true,
     "bist30": false,
-    "toplam_bildirim": 22,
-    "islem_bildirim_sayisi": 21,
-    "son_bildirim_tarih": "2026-11-10",
+    "toplam_bildirim": 23,
+    "islem_bildirim_sayisi": 22,
+    "son_bildirim_tarih": "2026-11-11",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
