@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-faktor_skor.py  v1.0  (2026-11-12) — 5 faktörlü skor modeli + örnek model sepet (eğitim amaçlı)
+faktor_skor.py  v1.1  (2026-11-12) — 5 faktörlü skor modeli + örnek model sepet (eğitim amaçlı)
 
 Yöntem (Alpay'ın paylaştığı Emir Bozkurt "Gelişmiş Model" videosundan uyarlandı, 12.11.2026):
   Büyüme %40   : satış, FAVÖK ve net kâr büyümesi (yıllık, son 12 ay), ROE, ROIC
@@ -14,8 +14,11 @@ Yöntem (Alpay'ın paylaştığı Emir Bozkurt "Gelişmiş Model" videosundan uy
   Kapsam: banka, sigorta, aracı kurum, GYO ve gayrimenkul geliştirme HARİÇ tüm BIST (Emir: modele uymuyor).
   Ana liste: piyasa değeri ≥ 5 mlr TL (~100 mn USD); küçük ölçek ayrı listelenir (sığ tahta uyarısı).
   NOT: TradingView toplu (set_markets) sorgusu tutarları TL verir; oranlar para biriminden bağımsızdır.
-FARKLAR (bilinçli): TMS 29 arındırması YOK ("enflasyon dahil" sıralama) ve marj değişimi yok — ikisi için
-  geçmiş çeyrek kalemleri gerekir; 2. aşamada İş Yatırım mali tablolarından eklenebilir.
+v1.1 TMS 29 (KISMİ) + MARJ: data/tms29.json (tms29_duzeltme.py, haftalık, İş Yatırım) varsa o şirket için
+  net kâr = ertelenmiş vergiden arındırılmış son 12 ay kârı → F/K, ROE, net kâr büyümesi ve İşletme nakit/net kâr
+  bu düzeltilmiş kârla hesaplanır; büyüme faktörüne brüt marj ve FAVÖK marjı değişimi (yıllık, puan) eklenir.
+  Net parasal pozisyon İş Yatırım şablonunda ayrı satır olmadığından ÇIKARILMAZ → "kısmi arındırma".
+  Düzeltme verisi olmayan şirket TradingView rakamlarıyla (enflasyon dahil) değerlenir; marj metrikleri 0 puan.
 Sıra değişimi: haftalık anlık görüntüler saklanır; ~90 gün önceki (yoksa en eski) sırayla kıyaslanır.
 
 ÖRNEK MODEL SEPET (yatırım tavsiyesi DEĞİLDİR; Koç'un eğitim/izleme amaçlı kâğıt portföyü):
@@ -31,11 +34,12 @@ import statistics
 import sys
 import traceback
 
-SURUM = "1.0"
+SURUM = "1.1"
 VERI = "data"
 SKOR_YOL = os.path.join(VERI, "faktor_skor.json")
 SEPET_YOL = os.path.join(VERI, "model_sepet.json")
 ADIL_YOL = os.path.join(VERI, "adil_deger.json")
+TMS_YOL = os.path.join(VERI, "tms29.json")
 
 AGIRLIK = {"buyume": 0.40, "nakit": 0.20, "degerleme": 0.20, "borc": 0.10, "momentum": 0.10}
 ANA_LISTE_TL = 5e9  # TradingView toplu sorgu tutarları TL döndürür
@@ -120,11 +124,14 @@ def bol(a, b):
     return a / b if a is not None and b not in (None, 0) else None
 
 
-def metrikler(r):
-    """(değer, yön) — yön +1: büyük iyi, −1: küçük iyi. None = eksik (0 puan)."""
-    ni = r.get("net_income")
+def metrikler(r, t=None):
+    """(değer, yön) — yön +1: büyük iyi, −1: küçük iyi. None = eksik (0 puan). t: tms29.json kaydı (varsa)."""
+    t = t if t and t.get("duz_net_kar_ttm") is not None else None
+    ni = t["duz_net_kar_ttm"] if t else r.get("net_income")
     zarar = ni is None or ni <= 0
-    pe, ev = r.get("price_earnings_ttm"), r.get("enterprise_value_ebitda_ttm")
+    pe = (r["market_cap_basic"] / ni if not zarar and r.get("market_cap_basic") else None) if t \
+        else r.get("price_earnings_ttm")
+    ev = r.get("enterprise_value_ebitda_ttm")
     eb = r.get("ebitda")
     nd = r.get("net_debt")
     py, p1 = r.get("Perf.Y"), r.get("Perf.1M")
@@ -132,8 +139,10 @@ def metrikler(r):
     sfq = r.get("free_cash_flow_fq")
     return {
         "buyume": [(r.get("total_revenue_yoy_growth_ttm"), 1), (r.get("ebitda_yoy_growth_ttm"), 1),
-                   (None if zarar else r.get("net_income_yoy_growth_ttm"), 1),
-                   (r.get("return_on_equity"), 1), (r.get("return_on_invested_capital"), 1)],
+                   (None if zarar else (t.get("duz_net_kar_buyume_yuzde") if t else r.get("net_income_yoy_growth_ttm")), 1),
+                   ((t.get("duz_roe_yuzde") if t else r.get("return_on_equity")), 1),
+                   (r.get("return_on_invested_capital"), 1),
+                   ((t or {}).get("brut_marj_degisim_puan"), 1), ((t or {}).get("favok_marj_degisim_puan"), 1)],
         "nakit": [(None if zarar else bol(r.get("cash_f_operating_activities_ttm"), ni), 1),
                   (bol(r.get("free_cash_flow"), r.get("total_revenue")), 1),
                   (None if sfq is None else (1.0 if sfq > 0 else 0.0), 1)],
@@ -163,8 +172,9 @@ def yuzdelik(degerler, yon):
     return out
 
 
-def skorla(evren):
-    m = [metrikler(r) for r in evren]
+def skorla(evren, tms=None):
+    tms = tms or {}
+    m = [metrikler(r, tms.get(r["kod"])) for r in evren]
     faktor = {f: [0.0] * len(evren) for f in AGIRLIK}
     for f in AGIRLIK:
         alt_sayi = len(m[0][f]) if m else 0
@@ -180,7 +190,8 @@ def skorla(evren):
         toplam = round(sum(AGIRLIK[f] * fs[f] for f in AGIRLIK), 1)
         sonuc.append({"kod": r["kod"], "ad": r.get("description"), "sektor": SEKTOR_TR.get(r.get("sector"), r.get("sector")),
                       "kapanis": r.get("close"), "pd_mlr_tl": round((r.get("market_cap_basic") or 0) / 1e9, 2),
-                      "ana_liste": (r.get("market_cap_basic") or 0) >= ANA_LISTE_TL, **fs, "toplam": toplam})
+                      "ana_liste": (r.get("market_cap_basic") or 0) >= ANA_LISTE_TL, **fs, "toplam": toplam,
+                      "tms29_duzeltildi": bool((tms.get(r["kod"]) or {}).get("duz_net_kar_ttm") is not None)})
     sonuc.sort(key=lambda x: -x["toplam"])
     for s, x in enumerate(sonuc, 1):
         x["sira"] = s
@@ -258,12 +269,15 @@ def sepet_guncelle(sepet_d, skorlar, adil, xu100):
 def main():
     eski = yukle(SKOR_YOL, {})
     cikti = {"surum": SURUM, "tarih": bugun(), "hata": None, "agirlik": AGIRLIK,
-             "not": "Emir Bozkurt 5 faktör yönteminden uyarlandı; TMS 29 arındırması ve marj değişimi YOK (enflasyon dahil)."}
+             "not": "Emir Bozkurt 5 faktör yönteminden uyarlandı. TMS 29 KISMİ arındırma (ertelenmiş vergi çıkarıldı; "
+                    "net parasal pozisyon çıkarılamadı) + marj değişimi; düzeltme verisi olmayan şirketler enflasyon dahil."}
     try:
         tum = tv_cek()
         evren = [r for r in tum if r.get("industry") not in HARIC_ALT and not r["kod"].endswith("GYO")
                  and r.get("market_cap_basic") and r.get("close")]
-        skorlar = skorla(evren)
+        tms = (yukle(TMS_YOL, {}).get("hisseler") or {})
+        skorlar = skorla(evren, tms)
+        cikti["tms29_kapsam"] = sum(1 for x in skorlar if x.get("tms29_duzeltildi"))
         anliklar = dict(eski.get("anliklar") or {})
         once, once_t = eski_sira(anliklar)
         for x in skorlar:
@@ -286,7 +300,8 @@ def main():
             "en_cok_yukselen": sorted(degisen, key=lambda x: -x["sira_degisim"])[:10],
             "en_cok_gerileyen": sorted(degisen, key=lambda x: x["sira_degisim"])[:10],
             "tum": {x["kod"]: {k: x[k] for k in ("sira", "toplam", "buyume", "nakit", "degerleme", "borc",
-                                                  "momentum", "ana_liste", "sira_degisim")} for x in skorlar},
+                                                  "momentum", "ana_liste", "sira_degisim", "tms29_duzeltildi")}
+                    for x in skorlar},
             "anliklar": anliklar,
         })
         adil = yukle(ADIL_YOL, {}).get("hisseler") or []

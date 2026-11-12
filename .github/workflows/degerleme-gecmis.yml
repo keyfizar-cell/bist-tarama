@@ -1,5 +1,6 @@
 name: Adil Değer Geçmiş Bant
 
+# v1.1 (2026-11-12): + tms29_duzeltme.py (data/tms29.json; 5 faktor skor icin).
 # v1.0 (2026-11-11): degerleme_gecmis.py -> data/degerleme_gecmis.json (BIST100 5 yillik F/K ve PD/DD bandi,
 # Is Yatirim). Haftalik (Pazar 06:17 UTC) + elle. Ardindan "Adil Değer" yeniden calistirilir.
 on:
@@ -18,7 +19,7 @@ concurrency:
 jobs:
   gecmis:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 170
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,11 +31,13 @@ jobs:
           python-version: "3.12"
       - name: Gecmis bandi hesapla
         run: python degerleme_gecmis.py
+      - name: TMS 29 kismi arindirma + marj (faktor skor icin)
+        run: python tms29_duzeltme.py
       - name: Ciktiyi commit et
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/degerleme_gecmis.json || true
+          git add data/degerleme_gecmis.json data/tms29.json || true
           if git diff --cached --quiet; then
             echo "Degisiklik yok."
             exit 0

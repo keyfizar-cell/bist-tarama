@@ -54,6 +54,32 @@ class Skor(unittest.TestCase):
         self.assertFalse(s["KUCUK"]["ana_liste"])
 
 
+class Tms29(unittest.TestCase):
+    def test_duzeltilmis_kar_kullanilir(self):
+        t = {"duz_net_kar_ttm": 50.0, "duz_net_kar_buyume_yuzde": 5.0, "duz_roe_yuzde": 7.0,
+             "brut_marj_degisim_puan": 2.0, "favok_marj_degisim_puan": -1.0}
+        m = f.metrikler(sirket("X", market_cap_basic=1000.0), t)
+        self.assertAlmostEqual(m["degerleme"][0][0], 20.0)  # 1000 / 50
+        self.assertEqual(m["buyume"][2][0], 5.0)
+        self.assertEqual(m["buyume"][3][0], 7.0)
+        self.assertEqual((m["buyume"][5][0], m["buyume"][6][0]), (2.0, -1.0))
+        self.assertAlmostEqual(m["nakit"][0][0], 2.0)  # CFO 100 / 50
+
+    def test_duzeltilmis_zarar_fk_bos(self):
+        m = f.metrikler(sirket("X"), {"duz_net_kar_ttm": -10.0})
+        self.assertIsNone(m["degerleme"][0][0])
+
+    def test_veri_yoksa_tv_rakamlari_ve_marj_bos(self):
+        m = f.metrikler(sirket("X"), None)
+        self.assertEqual(m["degerleme"][0][0], 10)
+        self.assertIsNone(m["buyume"][5][0])
+
+    def test_skorda_bayrak(self):
+        s = {x["kod"]: x for x in f.skorla([sirket("A"), sirket("B")], {"A": {"duz_net_kar_ttm": 80.0}})}
+        self.assertTrue(s["A"]["tms29_duzeltildi"])
+        self.assertFalse(s["B"]["tms29_duzeltildi"])
+
+
 class Sepet(unittest.TestCase):
     def skorlar(self):
         out = []
