@@ -21,7 +21,7 @@ import os, sys, json, datetime, traceback
 # Portföy fonları + sabah bülteni 7.5c eurobond/TL-borçlanma fonları.
 FON_KODLARI = [
     # portföy
-    "IAM", "IBB", "IJC", "TI2", "ZBJ",
+    "IAM", "IBB", "IJC", "TI2", "ZBJ", "DIP", "VPS",   # DIP, VPS: 12.11.2026 (Alpay onayı; tablo fiyat önbelleği için)
     # eurobond (USD) fonları
     "DBH", "FPE", "GPA", "YBE", "FUB", "AKE", "IPV", "TPL",
     # TL borçlanma araçları
