@@ -121,7 +121,7 @@ Talimat dosyaları: `gorevler/sabah_brifingi.md`, `gorevler/aksam_bulteni.md`, `
 | Görev | ID | Zaman | Okur | Yazar / yapar |
 |---|---|---|---|---|
 | Sabah Portföy Brifingi | `trig_01DaVTFUontesJ7gXp78zAqV` | hafta içi 08:00 TR | latest/kap/fon/geri_alim.json, Drive portföy, web, Twelve Data (NVO, SPY/QQQ/DIA) | e-posta |
-| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), youtube_kanallar.json (7f), adil_deger.json (7g), sosyal_nabiz.json (8.5-4), Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
+| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), youtube_kanallar.json (7f), adil_deger.json (7g), Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
 | BIST Tarama Sağlık Nöbeti | `trig_01KGyiz4sASMZ3jUXM67gce8` | hafta içi 00:30 TR | latest/<tarih>/status + kap/geri_alim/fon/youtube_emir/youtube_konuk/youtube_kanallar/sosyal_nabiz/adil_deger.json, Gmail gönderilenler | push; bülten gitmediyse bülteni yeniden başlatır |
 | BIST Veri Kaynağı Alternatif Araştırması | `trig_01ViuA5ZKASerVpJMqYkoeoz` | hafta içi 09:37 TR | tüm data dosyaları, web, pypi/github | bültenlerin EK bloğu (otomatik), e-posta, hafıza `/areas/bist-veri-hatti-alternatifleri.md` |
 
@@ -183,6 +183,7 @@ ama hiçbir göreve bağlı değil.
 4. Gereksiz bağlantıların görevlerden kaldırılması (Bölüm 5) — Alpay arayüzden yapacak.
 5. **Yatırım koçu** (07.11.2026 kuruldu): ilk gerçek akşam bülteninde "Koç Notları" ve profil okuma/güncelleme
    adımlarının çalıştığı doğrulanacak.
+6. **Akşam bülteninden çıkarılanlar (12.11.2026, Alpay kararı):** Bölüm 6 (BIST 30 Günlük Görünüm), 8 (Radar Dışı Gündem), 8.5 (Sosyal & Yatırımcı Nabzı). "Sosyal Nabız" iş akışı veri toplamaya devam eder (ipucu karnesi birikir); daha doyurucu bir kaynak/yöntem bulunursa bölüm yeniden değerlendirilir. `bulten_hazirla.py`'nin `bist30`/`retail_radar` alanları da şimdilik kullanılmıyor.
 
 ---
 
@@ -190,6 +191,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 12.11.2026 | **Akşam bülteni sadeleşti (Alpay kararı):** Bölüm 6 BIST 30, 8 Radar Dışı ve 8.5 Sosyal Nabız kaldırıldı (ADIM 4 dahil); 7c sinyal geçmişi tabloda son 10 kod (özet tüm sinyaller üzerinden); yeni "OKUNABİLİRLİK KURALLARI" (bölümler ayrı başlıklı, birleştirme ve 'tablolar ekte' yasak, 3+ öğe tablo/liste, uzarsa içerik kısaltılır biçim değil); gorev_kontrol zorunlu ifadeleri güncellendi | Claude Code |
 | 12.11.2026 | Sabah brifingi Bölüm 8 (Aracı kurum listeleri) okunabilir biçim: özet tablo (kurum başına 1 satır) + portföydekiler tablosu (bizim adil değer durumuyla) + tam listede kurum başına sektör gruplu, potansiyele göre sıralı tablo; tek hücrede art arda yazım yasak — Alpay isteği | Claude Code |
 | 11.11.2026 | **Koç ← Adil Değer:** `degerleme.py` v1.3 `one_cikanlar` (en fazla 3 hisse: önce ⭐, yetmezse uyarısız 🟢; puan = potansiyel + kalite − döngüsel; %150 üstü potansiyel elenir; her biri için en belirgin 3 "öne çıkan alan") + 3 test; akşam bülteni Koç Notları'na K4 "📐 Öne çıkan 3 hisse" alt bloğu (seçim kodda, Koç yalnız profile bağlar). İkinci geçmiş bant çalışması: 88/97 hisse, hata 0; 97 hissenin tamamı değerlendi | Claude Code |
 | 11.11.2026 | İlk geçmiş bant çalışması: 97 hisseden 57'si (40'ında 5 yıllık günlük fiyat indirmesi zaman aşımı/yarım okuma). `degerleme_gecmis.py` v1.1: fiyat yalnız yıl sonu aralıkları, 3 deneme, yalnız eksik/25 günden eski kayıtlar yenilenir, süre 90 dk. `degerleme.py`: "…HOL" kodlu şirketler her zaman holding (SAHOL banka sınıfına düşüyordu) | Claude Code |

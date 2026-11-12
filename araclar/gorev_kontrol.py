@@ -34,8 +34,7 @@ KURALLAR = {
         "zorunlu": ["TATİL KONTROLÜ", "📊 Günlük Portföy Bülteni — <GG.AA.YYYY>", "mcp__Gmail__send_message",
                     "{E_POSTA}", "send_later", "HARD DEADLINE", "7d · 🎥", "7e · 🎙️",
                     "Yatırım tavsiyesi değildir", "{PORTFOY_DOSYA_ID}", "7f · 📺",
-                    "KOÇ NOTLARI", "Yatırımcı Profili (Koç)", "YATIRIMCILARDAN ÖĞREN", "7g · 📐", "adil_deger.json", "ÖNE ÇIKAN 3 HİSSE",
-                    "sosyal_nabiz.json"],
+                    "KOÇ NOTLARI", "Yatırımcı Profili (Koç)", "YATIRIMCILARDAN ÖĞREN", "7g · 📐", "adil_deger.json", "ÖNE ÇIKAN 3 HİSSE", "OKUNABİLİRLİK KURALLARI", "son 10"],
         "ek_yasak": True,
     },
     "saglik_nobeti.md": {
