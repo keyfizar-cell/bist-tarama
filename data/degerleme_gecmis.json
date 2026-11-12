@@ -1,6 +1,6 @@
 {
  "surum": "1.1",
- "uretim_zamani_utc": "2026-11-11T12:19:44+00:00",
+ "uretim_zamani_utc": "2026-11-12T09:56:07+00:00",
  "hata": null,
  "hisseler": {
   "AHGAZ": {
@@ -620,7 +620,7 @@
      "pddd": 0.43
     }
    },
-   "guncelleme": "2026-11-11",
+   "guncelleme": "2026-11-12",
    "fk_bant": null,
    "pddd_bant": null
   },
@@ -670,7 +670,7 @@
      "pddd": 2.56
     }
    },
-   "guncelleme": "2026-11-11",
+   "guncelleme": "2026-11-12",
    "fk_bant": null,
    "pddd_bant": null
   },
@@ -909,7 +909,7 @@
      "pddd": 1.55
     }
    },
-   "guncelleme": "2026-11-11",
+   "guncelleme": "2026-11-12",
    "fk_bant": null,
    "pddd_bant": null
   },
@@ -1039,7 +1039,7 @@
      "pddd": 1.68
     }
    },
-   "guncelleme": "2026-11-11",
+   "guncelleme": "2026-11-12",
    "fk_bant": null,
    "pddd_bant": null
   },
@@ -1127,7 +1127,7 @@
      "pddd": 0.63
     }
    },
-   "guncelleme": "2026-11-11",
+   "guncelleme": "2026-11-12",
    "fk_bant": null,
    "pddd_bant": null
   },
@@ -1214,7 +1214,7 @@
      "pddd": 0.28
     }
    },
-   "guncelleme": "2026-11-11",
+   "guncelleme": "2026-11-12",
    "fk_bant": null,
    "pddd_bant": null
   },
@@ -1450,7 +1450,7 @@
      "pddd": 1.55
     }
    },
-   "guncelleme": "2026-11-11",
+   "guncelleme": "2026-11-12",
    "fk_bant": null,
    "pddd_bant": null
   },
@@ -2140,7 +2140,7 @@
      "pddd": 2.55
     }
    },
-   "guncelleme": "2026-11-11",
+   "guncelleme": "2026-11-12",
    "fk_bant": null,
    "pddd_bant": null
   },
@@ -2741,7 +2741,7 @@
      "pddd": 1.62
     }
    },
-   "guncelleme": "2026-11-11",
+   "guncelleme": "2026-11-12",
    "fk_bant": null,
    "pddd_bant": null
   },
