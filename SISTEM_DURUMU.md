@@ -174,6 +174,7 @@ ama hiçbir göreve bağlı değil.
   Koç ayrıca haftanın son iş günü videolardaki ve tanınmış yatırımcıların (son 3 ay, kaynaklı) YÖNTEMLERİNDEN en fazla 2'sini
   profilin Bölüm 7'sine [deneme] olarak ekler; Alpay'ın "KOÇ: benimse/bırak" yanıtına göre [benimsendi]/[bırakıldı] olur
   (Alpay'ın tercihi her zaman önce gelir). Notlarda bu yöntemler düşünme merceği olarak kullanılır.
+  Koç ayrıca haftanın son iş günü kanıtlı en fazla 3 SİSTEM geliştirme önerisi yazar (K6, profil belgesi "8. ÖNERİ DEFTERİ"); Alpay onaylarsa Claude Code oturumunda uygulanır.
   Koç al/sat/miktar önerisi vermez; uyum, portföy bağlantısı, kör nokta, "kendine sor" türünde ≤4 kısa madde yazar.
 - Alpay manuel/tekrarlayan bakımdan hoşlanmaz → bakım yükünü azaltan çözüm önceliklidir.
 
@@ -196,6 +197,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 12.11.2026 | **Koç geliştirme önerileri (K6):** haftanın son iş günü, verilerden (sepet karnesi, adil değer/skor çıktıları, tekrarlayan veri boşlukları, KOÇ: yanıtları) kanıtlı en fazla 3 sistem iyileştirme önerisi; profil belgesinde "8. ÖNERİ DEFTERİ" ([önerildi]/[onaylandı]/[reddedildi]/[uygulandı]); onay "KOÇ: öneri <id> onay"; onaylananları Claude Code oturumu uygular ("onaylı koç önerilerini uygula") — Alpay isteği | Claude Code |
 | 12.11.2026 | Portföy tablosu doğrulandı: _FonFiyat'ta açık 6 fon + ALTINS1 "✅ güncel" (GitHub/Mynet), Veri satırlarında 0 fiyat yok; GITHUB_TOKEN tanındı. Alpay tablosundaki Kod.gs v2.1'e temizlendi (getTEFASFiyat, getUSDRate, ALTINS1 kaldırıldı; içerik e-posta içerdiği için repoya konmadı) — Alpay kontrol etti, sorun yok | Claude Code |
 | 12.11.2026 | **Yeni fonlar otomatik:** `fon_tarama.py` `EK_KODLAR` girdisi + kalıcı `data/fon_ek_kodlar.json`; "BIST Fon Taraması"na `ek_kodlar` dispatch girdisi. Fon fiyat Apps Script v1.2: yalnız açık fonlar (Veri!R = Açık), kaynak sırası GitHub → TEFAS → fonlarca, GitHub'da olmayan açık fon için iş akışını kendisi tetikler (Alpay'ın Komut dosyası özelliklerindeki GITHUB_TOKEN ile; günde kod başı 1 kez) — Alpay kararı: portföye giren her fon ileride de otomatik eklensin | Claude Code |
 | 12.11.2026 | Fon kaynak testi (Apps Script, Google sunucusundan): TEFAS ve fonlarca ÇALIŞMIYOR, GitHub fon.json ve Mynet (ALTIN) çalışıyor. `fon_tarama.py` FON_KODLARI'na DIP ve VPS eklendi (Alpay onayı: kodlar açık repoda görünebilir) — tablodaki fon fiyat önbelleği artık tüm açık fonları GitHub'dan alır | Claude Code |
