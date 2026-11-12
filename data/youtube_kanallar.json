@@ -78,7 +78,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512907+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578737+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -354,9 +354,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512926+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578760+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -426,8 +426,8 @@
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
-      "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512933+00:00"
+      "son7_uzun_video": 0,
+      "son_kontrol_utc": "2026-11-12T15:28:02.578769+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -443,7 +443,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512936+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578773+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -570,7 +570,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512943+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578782+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -825,7 +825,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512954+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578796+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -841,7 +841,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512957+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578800+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -857,7 +857,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512960+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578804+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -873,7 +873,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512963+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578808+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -889,7 +889,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512966+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578812+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -971,7 +971,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512972+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578820+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -982,6 +982,16 @@
       "hata": null,
       "son_basarili_utc": "2026-11-08T09:32:36.927540+00:00",
       "videolar": [
+        {
+          "video_id": "WvZ3l3QJWP8",
+          "baslik": "SEN HANGİ YATIRIMCISIN",
+          "yayin_tarihi": "2026-11-12T09:00:21+00:00",
+          "url": "https://www.youtube.com/watch?v=WvZ3l3QJWP8",
+          "kanal_adi": "FinansLab | Gülşah Bıçkı",
+          "sure_dk": 0.9,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "YxC_j_OvR20",
           "baslik": "19 YILLIK BEKLEYİŞ ZARARDAN KARA",
@@ -1045,7 +1055,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512982+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578836+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -1056,6 +1066,16 @@
       "hata": null,
       "son_basarili_utc": null,
       "videolar": [
+        {
+          "video_id": "T7A8zo81HEE",
+          "baslik": "XAUUSD 3999’dan 3929’a Düştü! Scanner 76 Güç / 87 Kalite Gösterdi",
+          "yayin_tarihi": "2026-11-12T14:11:57+00:00",
+          "url": "https://www.youtube.com/watch?v=T7A8zo81HEE",
+          "kanal_adi": "Fx Matik",
+          "sure_dk": 2.9,
+          "canli": false,
+          "atlandi": "sure 3 dk"
+        },
         {
           "video_id": "o37RgLXFRjE",
           "baslik": "3 Ayda 15.000$ Kâr! Altında 4140 Ana Direnç",
@@ -1092,7 +1112,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512990+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578849+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -1159,7 +1179,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-11T15:29:27.512996+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578857+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -1426,9 +1446,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-11T15:29:27.513005+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578868+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -1486,7 +1506,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-11T15:29:27.513010+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578875+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -1495,8 +1515,119 @@
       "channel_id": "UCEirjSmtSFXJfMO0mTd2sBA",
       "kanal_adi": "koraynomi",
       "hata": null,
-      "son_basarili_utc": "2026-11-08T09:29:26.099626+00:00",
+      "son_basarili_utc": "2026-11-12T15:28:02.578701+00:00",
       "videolar": [
+        {
+          "video_id": "z5CyX2HUjY0",
+          "baslik": "Fon Krizinde Dava Açmadan Önce: Haklar, Sınırlar, Gri Alanlar | Av. Ahmet Oğuz Atalay",
+          "yayin_tarihi": "2026-11-12T15:00:36+00:00",
+          "url": "https://www.youtube.com/watch?v=z5CyX2HUjY0",
+          "kanal_adi": "koraynomi",
+          "sure_dk": 89.9,
+          "canli": false,
+          "ana_mesaj": "Fon krizinde yatırımcıların haklarını korumak için sermaye piyasası ve ceza hukukunun birlikte işletildiği hibrit bir model uygulanmakta olup, ana paraya kavuşma süreci tasfiye ve yasal geri kazanım mekanizmalarıyla yönetilmektedir.",
+          "ozet": [
+            "Süreç, nitelikli dolandırıcılık şüphesi nedeniyle ceza hukuku ile sermaye piyasası hukukunun birleştiği hibrit bir modelle yürütülmektedir.",
+            "Etkin pişmanlık hükümleri sayesinde şüphelilerden tahsil edilecek tutarların mağdurların ana paralarını karşılaması hedeflenmektedir.",
+            "Fonların tasfiye sürecinde 'pay blokajı' (PBLK) konulmuş olması, fonun temerrüde düşmesi durumunda ödemenin hemen yapılacağı anlamına gelmemektedir.",
+            "Ara ödemeler bir avans niteliğindedir ve nihai tasfiye sürecinde pay adetleri üzerinden mahsuplaşma yapılacaktır.",
+            "Para piyasası fonları (PPF) ile hisse senedi fonları arasında ara ödeme limitleri ve öncelik açısından farklılıklar bulunmaktadır.",
+            "Nitelikli yatırımcı statüsünün usulsüz verilmiş olması, idarenin denetim sorumluluğu ve hizmet kusuru tartışmalarını beraberinde getirmektedir.",
+            "TMSF ve YTM aracılığıyla, suçtan elde edilen gelirlerin ve gönüllü iadelerin mağdurlara dağıtılması süreci tasfiyeden sonra da devam edecektir."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "TMV",
+              "ne_dedi": "Fonun içeriğinde sorunlu hisseler bulunduğu ve tasfiye sürecine girdiği belirtildi."
+            },
+            {
+              "kod": "DOH",
+              "ne_dedi": "30 milyon TL yatırımı olanın ara ödemede sadece 1 milyon TL alabildiği örnek olarak verildi."
+            },
+            {
+              "kod": "DFI",
+              "ne_dedi": "1 milyon TL yatırımı olanın ara ödemede sadece 30 bin TL alabildiği, %97'lik bir kayıp olduğu belirtildi."
+            },
+            {
+              "kod": "THF",
+              "ne_dedi": "T+2 valörlü fonun pazartesi emir verilmesine rağmen çarşamba günü ödeme yapılamadığı anlatıldı."
+            },
+            {
+              "kod": "TP2",
+              "ne_dedi": "Tera portföy yönetimine ait bir fon olarak adı geçti."
+            },
+            {
+              "kod": "ANEL",
+              "ne_dedi": "TMV fonunun içeriğindeki sorunlu hisselerden biri olarak belirtildi."
+            },
+            {
+              "kod": "TRHOL",
+              "ne_dedi": "TMV fonunun içeriğindeki sorunlu hisselerden biri olarak belirtildi."
+            },
+            {
+              "kod": "OZATD [?]",
+              "ne_dedi": "TMV fonunun içeriğindeki sorunlu hisselerden biri olarak belirtildi."
+            },
+            {
+              "kod": "DSTEK [?]",
+              "ne_dedi": "TMV fonunun içeriğindeki sorunlu hisselerden biri olarak belirtildi."
+            },
+            {
+              "kod": "BIGEN [?]",
+              "ne_dedi": "TMV fonunun içeriğindeki sorunlu hisselerden biri olarak belirtildi."
+            },
+            {
+              "kod": "Albatros",
+              "ne_dedi": "Geçmişte temerrüde düşen ve kamu müdahalesiyle çözülen bir fon örneği olarak verildi."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "İlliyet bağı kurmanın zorluğu nedeniyle idareye karşı açılacak tam yargı davalarının riskli olabileceği.",
+            "Sosyal medyada paylaşılan ezbere dilekçe örneklerinin usul hatalarına yol açabileceği.",
+            "Danıştay'ın vereceği tek bir içtihadın tüm yerel mahkeme kararlarını geçersiz kılabileceği.",
+            "Nitelikli yatırımcı statüsünün usulsüz alınmış olmasının hukuki süreçte yatırımcı aleyhine kullanılabileceği."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-12T15:26:06.213348+00:00"
+        },
+        {
+          "video_id": "uXagiy5XVcg",
+          "baslik": "Faizi Sıfırladım, Evi Yine Alamadınız | 2027 Konut Masalı",
+          "yayin_tarihi": "2026-11-11T17:04:43+00:00",
+          "url": "https://www.youtube.com/watch?v=uXagiy5XVcg",
+          "kanal_adi": "koraynomi",
+          "sure_dk": 3.0,
+          "canli": false,
+          "ana_mesaj": "Konut fiyatlarının 2027'de faizlerin düşmesiyle uçacağı beklentisi, azalan alım gücü ve mevduat gibi güçlü alternatif getiriler nedeniyle gerçekçi görülmemektedir.",
+          "ozet": [
+            "2027'de faizler düşse bile konut fiyatlarının uçacağı iddiasına, alım gücü yetersizliği nedeniyle itiraz ediliyor.",
+            "7 milyon TL değerindeki bir ev için %0 faizle bile aylık 46.667 TL taksit ödenmesi gerektiği hesaplanıyor.",
+            "1.400.000 TL peşinat ve yüksek taksitleri ödeyebilecek hane sayısının harcanabilir gelirdeki düşüş nedeniyle azaldığı vurgulanıyor.",
+            "Tapu masrafı, taşınma ve tadilat gibi ek maliyetlerin konuta erişimi daha da zorlaştırdığı belirtiliyor.",
+            "30 milyon TL'lik bir konut yatırımının yıllık net kira getirisinin %4,6 (1.38 milyon TL) seviyesinde kaldığı gösteriliyor.",
+            "Mevduat faizi %25'e (bugünkünden 12 puan aşağı) düşse bile yıllık net getirinin 6.187.500 TL ile konutu geride bıraktığı ifade ediliyor.",
+            "Konut ve mevduat getirisi arasındaki devasa farkın kapanmasının uzun süreceği öngörülüyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "Konut",
+              "ne_dedi": "7 milyon TL'lik bir evde faiz %0 olsa dahi 46.667 TL'lik taksitlerin ödenemez olduğu ve 30 milyon TL'lik yatırımda %4,6 net kira getirisinin düşük kaldığı belirtiliyor."
+            },
+            {
+              "kod": "Mevduat",
+              "ne_dedi": "Faizler %25'e düşse bile 30 milyon TL için yıllık 6.187.500 TL net getiri ile konuttan çok daha avantajlı olduğu ifade ediliyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Temel ihtiyaçlardan artakalan harcanabilir paranın azalması",
+            "Konut fiyatı ile insanların alım gücü arasındaki mesafenin açılması",
+            "Yatırımcı için konutun kira getirisinin alternatif finansal araçların çok altında kalması"
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-12T15:28:02.578679+00:00"
+        },
         {
           "video_id": "v4aybJeq5i0",
           "baslik": "Borsa Düşmedi, İkiye Bölündü: Fon Krizi, XBANK, VakıfBank, Tüpraş",
@@ -1572,12 +1703,20 @@
           "atlandi": "sure 2 dk"
         }
       ],
-      "bekleyenler": [],
+      "bekleyenler": [
+        {
+          "video_id": "7u-KZ6J2nhY",
+          "baslik": "2027 Konut Masalı: Faiz Sıfır Olsa Bile Çoğu Kişi Evi Alamıyor",
+          "url": "https://www.youtube.com/watch?v=7u-KZ6J2nhY",
+          "yayin_tarihi": "2026-11-11T15:45:25+00:00",
+          "sure_dk": 24.8
+        }
+      ],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-11T15:29:27.513018+00:00"
+      "aday_sayisi": 3,
+      "son7_uzun_video": 4,
+      "son_kontrol_utc": "2026-11-12T15:28:02.578897+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -1593,7 +1732,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.513021+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578902+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -1609,7 +1748,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.513024+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578906+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -1625,7 +1764,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.513027+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578909+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -1634,8 +1773,66 @@
       "channel_id": "UCDmr51JwXxErCrTALTGokpQ",
       "kanal_adi": "Selçuk Ergin ",
       "hata": null,
-      "son_basarili_utc": "2026-11-09T15:23:03.638931+00:00",
+      "son_basarili_utc": "2026-11-12T15:27:15.925882+00:00",
       "videolar": [
+        {
+          "video_id": "UBnV8lqm0q8",
+          "baslik": "EV ALACAKLAR HAZIR OLUN! / UCUZ EV NASIL BULUNUR?",
+          "yayin_tarihi": "2026-11-12T13:30:04+00:00",
+          "url": "https://www.youtube.com/watch?v=UBnV8lqm0q8",
+          "kanal_adi": "Selçuk Ergin ",
+          "sure_dk": 16.6,
+          "canli": false,
+          "ana_mesaj": "Konut piyasasında reel değer kaybı yaşandığı bu dönemde, 2027-2028 yıllarında beklenen reel değerlenme öncesinde doğru fiyatlı mülkleri bulmanın stratejik bir fırsat olduğu savunulmaktadır.",
+          "ozet": [
+            "Türkiye'de konut fiyatları nominal olarak artsa da enflasyon karşısında reel olarak yaklaşık %5,7 değer kaybetmektedir.",
+            "2027 ve 2028 yıllarında konut piyasasında reel anlamda güçlü bir değerlenme süreci beklenmektedir.",
+            "Faizlerin düşmesini beklemek, artan talep nedeniyle konut fiyatlarının yükselmesine ve fırsatın kaçmasına neden olabilir.",
+            "İnşaat maliyetlerindeki %30'luk artış ve yapı ruhsatlarındaki azalma, gelecekte arz sıkıntısı yaşanabileceğine işaret etmektedir.",
+            "Bir konutun ucuz olup olmadığını anlamak için 200 aylık kira çarpanı yöntemi temel bir kriter olarak önerilmektedir.",
+            "ABD üretici enflasyonu (PPI) verileri, küresel piyasaların ve riskli varlıkların yönü için kritik öneme sahiptir.",
+            "Altın, gümüş ve kripto paralar mevcut seviyelerde ucuzluk bölgesinde değerlendirilmektedir."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "Konut",
+              "ne_dedi": "Reel olarak değer kaybetse de 2027-2028 döneminde güçlü bir reel değerlenme potansiyeli taşıdığı belirtiliyor."
+            },
+            {
+              "kod": "Altın",
+              "ne_dedi": "Piyasalardaki son satışlar sonrası ucuzluk vaat eden varlıklar arasında sayılıyor."
+            },
+            {
+              "kod": "Gümüş",
+              "ne_dedi": "Altın ile benzer şekilde satış baskısı sonrası alım için uygun seviyelerde görüldüğü ifade ediliyor."
+            },
+            {
+              "kod": "BTC",
+              "ne_dedi": "Kripto para piyasasındaki genel satışlarla birlikte ucuzluk bölgesine girmeye başladığı düşünülüyor."
+            },
+            {
+              "kod": "ETH",
+              "ne_dedi": "Ucuzluk bağlamında öne çıkan ve takip edilen kripto varlıklardan biri olarak belirtiliyor."
+            },
+            {
+              "kod": "XRP",
+              "ne_dedi": "Piyasadaki ucuzlama eğilimiyle birlikte dikkat çeken varlıklar arasında yer alıyor."
+            },
+            {
+              "kod": "NASDAQ",
+              "ne_dedi": "Kaldıraçlı pozisyonlar ve yapay zeka tarafındaki borçlanma maliyetleri nedeniyle dikkatli olunması gerektiği vurgulanıyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Faizlerin düşmesiyle birlikte konut fiyatlarının hızla yükselerek faiz avantajını yok etme riski.",
+            "Yüksek faizle çekilen kredilerin gelecekte düşük faizle yapılandırılamama ihtimali.",
+            "ABD enflasyon verilerinin beklenti üstü gelerek piyasalarda satış baskısını artırması.",
+            "Yapay zeka (AI) sektöründeki borçlanma maliyetlerinin teknoloji hisseleri üzerindeki olumsuz etkisi."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-12T15:27:15.925860+00:00"
+        },
         {
           "video_id": "_MFcWyadlgU",
           "baslik": "Yarın Piyasalar Şok Yaşayabilir! Çünkü Bu Veri Gelmeyecek!",
@@ -1757,9 +1954,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-11T15:29:27.513035+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578924+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -2151,7 +2348,7 @@
       "aday_sayisi": 15,
       "son7_uzun_video": 7,
       "liste_disi": "her gun video yukluyor (son 7 gunde 7 uzun video)",
-      "son_kontrol_utc": "2026-11-11T15:29:27.513061+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.578961+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -2162,6 +2359,26 @@
       "hata": null,
       "son_basarili_utc": "2026-11-10T15:23:09.926874+00:00",
       "videolar": [
+        {
+          "video_id": "691AyqeP5TQ",
+          "baslik": "YENİ ENFLASYON HEDEFLERİ VE HİSSELERİNİZ",
+          "yayin_tarihi": "2026-11-12T13:58:15+00:00",
+          "url": "https://www.youtube.com/watch?v=691AyqeP5TQ",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.0,
+          "canli": true,
+          "atlandi": "canli yayin"
+        },
+        {
+          "video_id": "ePgmWIB50fU",
+          "baslik": "MSCI Kasım 2026 endeks değişikliklerini açıkladı #ASTOR #SAHOL #BİST100 #KESFET #FOREX",
+          "yayin_tarihi": "2026-11-12T08:16:17+00:00",
+          "url": "https://www.youtube.com/watch?v=ePgmWIB50fU",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.6,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "Gq93CsRkOFQ",
           "baslik": "GÜMÜŞTE YENİ YÜKSELİŞ İÇİN TAKİP ETTİĞİM SEVİYELER…. #xagusd #xauusd #keşfet #keşfetteyiz #forex",
@@ -2464,34 +2681,14 @@
           "sure_dk": 0.9,
           "canli": false,
           "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "rHmkamS-IeI",
-          "baslik": "ALTININ YÜKSELİŞİ…. #xauusd #altın #keşfet #keşfetteyiz #forex",
-          "yayin_tarihi": "2026-11-06T07:21:10+00:00",
-          "url": "https://www.youtube.com/watch?v=rHmkamS-IeI",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.7,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "MVFEfRz1j-o",
-          "baslik": "ABD seçimlerinin olası borsalara etkisi…. #bist100 #borsa #keşfet #keşfetteyiz #forex",
-          "yayin_tarihi": "2026-11-06T07:18:30+00:00",
-          "url": "https://www.youtube.com/watch?v=MVFEfRz1j-o",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.9,
-          "canli": false,
-          "atlandi": "sure 1 dk"
         }
       ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 5,
+      "aday_sayisi": 2,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-11T15:29:27.513095+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.579005+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -2507,7 +2704,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.513098+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.579010+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -2523,7 +2720,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-11T15:29:27.513101+00:00"
+      "son_kontrol_utc": "2026-11-12T15:28:02.579015+00:00"
     }
   },
   "hata": null,
@@ -2541,11 +2738,11 @@
   ],
   "butce": {
     "toplam_sinir": 20,
-    "islenen": 2,
-    "bekleyen": 0,
+    "islenen": 3,
+    "bekleyen": 1,
     "kota_bitti": false,
     "kullanilan_modeller": {
-      "gemini-3-flash-preview": 2
+      "gemini-3-flash-preview": 3
     },
     "kotasi_dolan_modeller": []
   },
@@ -2604,11 +2801,23 @@
       },
       "kotasi_dolan_modeller": [],
       "zaman_utc": "2026-11-11T15:29:27.513119+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 3,
+      "bekleyen": 1,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-3-flash-preview": 3
+      },
+      "kotasi_dolan_modeller": [],
+      "zaman_utc": "2026-11-12T15:28:02.579040+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-11T15:29:27.513124+00:00",
+  "uretim_zamani_utc": "2026-11-12T15:28:02.579046+00:00",
   "denemeler": [
+    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP"
   ]
