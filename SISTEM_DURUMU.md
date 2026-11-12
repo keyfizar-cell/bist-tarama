@@ -190,6 +190,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 12.11.2026 | Sabah brifingi Bölüm 8 (Aracı kurum listeleri) okunabilir biçim: özet tablo (kurum başına 1 satır) + portföydekiler tablosu (bizim adil değer durumuyla) + tam listede kurum başına sektör gruplu, potansiyele göre sıralı tablo; tek hücrede art arda yazım yasak — Alpay isteği | Claude Code |
 | 11.11.2026 | **Koç ← Adil Değer:** `degerleme.py` v1.3 `one_cikanlar` (en fazla 3 hisse: önce ⭐, yetmezse uyarısız 🟢; puan = potansiyel + kalite − döngüsel; %150 üstü potansiyel elenir; her biri için en belirgin 3 "öne çıkan alan") + 3 test; akşam bülteni Koç Notları'na K4 "📐 Öne çıkan 3 hisse" alt bloğu (seçim kodda, Koç yalnız profile bağlar). İkinci geçmiş bant çalışması: 88/97 hisse, hata 0; 97 hissenin tamamı değerlendi | Claude Code |
 | 11.11.2026 | İlk geçmiş bant çalışması: 97 hisseden 57'si (40'ında 5 yıllık günlük fiyat indirmesi zaman aşımı/yarım okuma). `degerleme_gecmis.py` v1.1: fiyat yalnız yıl sonu aralıkları, 3 deneme, yalnız eksik/25 günden eski kayıtlar yenilenir, süre 90 dk. `degerleme.py`: "…HOL" kodlu şirketler her zaman holding (SAHOL banka sınıfına düşüyordu) | Claude Code |
 | 11.11.2026 | Apps Script v1.7: koşullu renk kuralı formülleri de otomatik ayırıcıdan geçiyor (v1.3–1.6'da TR ayarında hiçbir satır boyanmıyordu); F/K–PD/DD–FD/FAVÖK–ROE–5 yıllık sütun çiftleri açık mavi, satır renkleri bu sütunlara yazmaz | Claude Code |
