@@ -35,7 +35,7 @@ class Hesap(unittest.TestCase):
         self.assertAlmostEqual(r["duz_net_kar_buyume_yuzde"], -10.5, places=1)
         self.assertAlmostEqual(r["duz_roe_yuzde"], 8.5)
         self.assertAlmostEqual(r["brut_marj_degisim_puan"], 5.0)   # 30% − 25%
-        self.assertAlmostEqual(r["favok_marj_degisim_puan"], 1.9, places=1)  # 17.8 − 15.7
+        self.assertAlmostEqual(r["favok_marj_degisim_puan"], 2.06, places=2)  # 17.78 − 15.71
 
     def test_son_donem_yoksa_altiya_duser(self):
         def cek2(kod, donemler):
