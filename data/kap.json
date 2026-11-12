@@ -1,12 +1,26 @@
 {
-  "uretim_zamani_utc": "2026-11-11T15:21:53.641126+00:00",
-  "tarih": "2026-11-11",
+  "uretim_zamani_utc": "2026-11-12T15:21:36.900895+00:00",
+  "tarih": "2026-11-12",
   "gun_penceresi_gun": 4,
-  "baslangic": "2026-11-07",
+  "baslangic": "2026-11-08",
   "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
   "kodlar": {
     "AKBNK": [],
-    "BLUME": [],
+    "BLUME": [
+      {
+        "no": 1697321,
+        "zaman": "2026-11-11T19:04:22",
+        "tur": "ODA",
+        "konu": "Özel Durum Açıklaması (Genel)",
+        "ozet": "Tera Fon da bulunan BLUME METAL KİMYA hisse senetlerimizin TMSF den alınması hk.",
+        "sirket": "BLUME METAL KİMYA A.Ş.",
+        "kodlar": "BLUME",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1697321"
+      }
+    ],
     "CANTE": [
       {
         "no": 1696949,
@@ -122,6 +136,58 @@
     "SOHOE": [],
     "TTKOM": [
       {
+        "no": 1697756,
+        "zaman": "2026-11-12T18:21:33",
+        "tur": "ODA",
+        "konu": "Özel Durum Açıklaması (Genel)",
+        "ozet": "Eurobond İşlemleri Hakkında Açıklama",
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1697756"
+      },
+      {
+        "no": 1697414,
+        "zaman": "2026-11-11T23:32:08",
+        "tur": "DG",
+        "konu": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
+        "ozet": "Kurumsal Yönetim Bilgi Formu Güncelleme",
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1697414"
+      },
+      {
+        "no": 1697413,
+        "zaman": "2026-11-11T23:30:51",
+        "tur": "DG",
+        "konu": "Şirket Genel Bilgi Formu",
+        "ozet": null,
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1697413"
+      },
+      {
+        "no": 1697411,
+        "zaman": "2026-11-11T23:29:07",
+        "tur": "ODA",
+        "konu": "Özel Durum Açıklaması (Genel)",
+        "ozet": "Yönetim Kurulu Üye İstifası",
+        "sirket": "TÜRK TELEKOMÜNİKASYON A.Ş.",
+        "kodlar": "TTKOM",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1697411"
+      },
+      {
         "no": 1694824,
         "zaman": "2026-11-09T11:52:47",
         "tur": "DG",
@@ -162,6 +228,19 @@
       }
     ],
     "ULUUN": [
+      {
+        "no": 1697330,
+        "zaman": "2026-11-11T19:21:06",
+        "tur": "CA",
+        "konu": "Payların Geri Alınmasına İlişkin Bildirim",
+        "ozet": "11.11.2026 Tarihli Pay Geri Alım İşlemleri Hk.",
+        "sirket": "ULUSOY UN SANAYİ VE TİCARET A.Ş.",
+        "kodlar": "ULUUN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1697330"
+      },
       {
         "no": 1696745,
         "zaman": "2026-11-10T19:56:19",
@@ -230,6 +309,32 @@
     ],
     "VAKBN": [
       {
+        "no": 1697725,
+        "zaman": "2026-11-12T18:00:42",
+        "tur": "DG",
+        "konu": "Kurumsal Yönetim Bilgi Formu (Güncelleme) - Yönetim Kurulu-2",
+        "ozet": "Kurumsal Yönetim Bilgi Formu",
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1697725"
+      },
+      {
+        "no": 1697724,
+        "zaman": "2026-11-12T17:59:30",
+        "tur": "DG",
+        "konu": "Şirket Genel Bilgi Formu",
+        "ozet": null,
+        "sirket": "TÜRKİYE VAKIFLAR BANKASI T.A.O.",
+        "kodlar": "TVB, VAKBN",
+        "gecikmeli": false,
+        "duzeltme": false,
+        "ek_var": false,
+        "url": "https://www.kap.org.tr/tr/Bildirim/1697724"
+      },
+      {
         "no": 1694890,
         "zaman": "2026-11-09T14:08:27",
         "tur": "CA",
@@ -246,7 +351,7 @@
     "YIGIT": []
   },
   "notlar": [],
-  "toplam_piyasa_satiri": 1678,
+  "toplam_piyasa_satiri": 1937,
   "hisse_sayisi": 13,
-  "bildirimli_kod_sayisi": 5
+  "bildirimli_kod_sayisi": 6
 }
