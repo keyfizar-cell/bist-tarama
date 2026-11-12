@@ -196,6 +196,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 12.11.2026 | Fon fiyat Apps Script v1.1: ALTIN sertifikası da önbellekte (Mynet canlı → GitHub latest.json kapanışı → son bilinen; Kod.gs ALTINS1'in sabit 74,23 yedeği devre dışı kalır — M'deki =ALTINS1() ve Mynet IMPORTXML/LET bloğu DÜŞEYARA'ya çevrilir); `fonKaynakTesti` tanı fonksiyonu (TEFAS/GitHub/fonlarca/Mynet tek tek) | Claude Code |
 | 12.11.2026 | `araclar/fon_fiyat_apps_script.gs` v1.0: portföy tablosunda fon fiyatlarının 0 gelmesi düzeltmesi — fiyatlar arka planda 2 saatte bir "_FonFiyat" sayfasına (TEFAS resmi servis → GitHub fon.json → fonlarca; alınamazsa son fiyat korunur), Veri!M'deki getTEFASFiyat(Fxx) çağrıları DÜŞEYARA'ya çevrilir (dosya açılırken ağ isteği yok). Fon kodları repoya yazılmaz (script tablodan okur) | Claude Code |
 | 12.11.2026 | **5 faktör modeline TMS 29 (kısmi) + marj değişimi:** `tms29_duzeltme.py` v1.0 + 2 test; `faktor_skor.py` v1.1 + 4 test; haftalık iş akışına adım (süre 170 dk). Net parasal pozisyon İş Yatırım şablonunda ayrı satır olmadığı için çıkarılamıyor — dürüstçe "kısmi" etiketi. Örnek: KRDMD raporlanan son 12 ay kârı 3,92 mlr TL, ertelenmiş vergi geliri 2,53 mlr → düzeltilmiş 1,39 mlr, ROE %1,8 (Emir'in tespitiyle uyumlu) | Claude Code |
 | 12.11.2026 | Koç profili: öğrenme döngüsü çalışıyor (10–11.11 "KOÇ:" yanıtları işlenmiş) ama görev eski belgeyi silmemiş, 2 belge kalmıştı → tek belgeye indirildi (5 faktör yöntemi [benimsendi] eklendi); K2 talimatı: yeni belgeden sonra aynı adlı TÜM eski belgeler çöpe | Claude Code |

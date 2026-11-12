@@ -1,6 +1,6 @@
 /**
- * Fon Fiyat Önbelleği — Google Apps Script (Alpay Portföy Takip dosyasına ayrı dosya olarak eklenir)
- * Sürüm 1.0 (2026-11-12) · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/fon_fiyat_apps_script.gs
+ * Fon & Sertifika Fiyat Önbelleği — Google Apps Script (Alpay Portföy Takip dosyasına ayrı dosya olarak eklenir)
+ * Sürüm 1.1 (2026-11-12) — + ALTIN sertifikası (ALTINS1) önbelleğe alındı; + fonKaynakTesti tanı fonksiyonu · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/fon_fiyat_apps_script.gs
  *
  * SORUN: Eski getTEFASFiyat her hücrede, dosya her açıldığında fonlarca.com'a ayrı istek atıyordu; site Google
  * sunucularını sık engellediği / geç yanıt verdiği için fon fiyatları 0 geliyordu.
@@ -15,10 +15,17 @@
  *   fonKurulum: (a) fiyatları ilk kez çeker, (b) Veri sayfası M sütunundaki getTEFASFiyat(Fxx) çağrılarını
  *   _FonFiyat'tan okuyan DÜŞEYARA ile değiştirir (formülün geri kalanına dokunmaz), (c) her gün 09–21 arası
  *   2 saatte bir güncelleme tetikleyicisi kurar. Kod.gs'teki eski getTEFASFiyat silinmez (artık çağrılmaz).
+ *
+ * v1.1 ALTIN SERTİFİKASI: "ALTINS1" satırı da önbellekte tutulur (kaynak: Mynet canlı → GitHub latest.json son
+ *   kapanış → son bilinen). fonFormulDuzelt, M sütunundaki =ALTINS1() çağrılarını ve ALTIN.S1 için yazılmış
+ *   IMPORTXML/LET bloğunu DÜŞEYARA("ALTINS1"; _FonFiyat) ile değiştirir; Kod.gs'teki ALTINS1'in sabit 74,23 yedeği
+ *   böylece hiç kullanılmaz. TANI: "fonKaynakTesti" her kaynağı tek tek dener, sonucu _FonFiyat'ın altına yazar.
  */
 var FF_SAYFA = '_FonFiyat';
 var FF_VERI = 'Veri';
-var FF_SURUM = '1.0';
+var FF_SURUM = '1.1';
+var FF_ALTIN = 'ALTINS1';
+var FF_LATEST = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/latest.json';
 var FF_GITHUB = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/fon.json';
 
 function fonKurulum() {
@@ -95,6 +102,32 @@ function fonlarcaFiyat_(kod) {
   return f && f > 0 ? { fiyat: f, tarih: tarih_(new Date()), kaynak: 'fonlarca' } : null;
 }
 
+/** ALTIN sertifikası: 1) Mynet canlı  2) GitHub latest.json (taramanın son kapanışı, kod "ALTIN"). */
+function altinMynet_() {
+  var res = UrlFetchApp.fetch('https://finans.mynet.com/borsa/hisseler/altins1-darphane-altin-sertifikasi/', {
+    headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36',
+               'Accept-Language': 'tr-TR,tr;q=0.9' }, muteHttpExceptions: true });
+  if (res.getResponseCode() !== 200) return null;
+  var html = res.getContentText();
+  var m = html.match(/class="data-value"[^>]*>([\s\S]*?)<\/div>/i);
+  var f = m ? sayi_(m[1].replace(/<[^>]*>/g, '').trim()) : null;
+  if (!f || f <= 0) {
+    var m2 = html.match(/Son İşlem Fiyatı<\/span>\s*<span>([\d.,]+)<\/span>/i);
+    f = m2 ? sayi_(m2[1]) : null;
+  }
+  return f && f > 0 ? { fiyat: f, tarih: tarih_(new Date()), kaynak: 'Mynet (canlı)' } : null;
+}
+
+function altinGithub_() {
+  var res = UrlFetchApp.fetch(FF_LATEST + '?cb=' + Date.now(), { muteHttpExceptions: true });
+  if (res.getResponseCode() !== 200) return null;
+  var d = JSON.parse(res.getContentText());
+  var h = (d.tum_hisseler || []).filter(function (x) { return x.kod === 'ALTIN'; })[0];
+  if (!h || !(h.kapanis > 0)) return null;
+  var t = String(d.tarih || '').split('-');
+  return { fiyat: h.kapanis, tarih: t.length === 3 ? t[2] + '.' + t[1] + '.' + t[0] : '', kaynak: 'GitHub tarama (kapanış)' };
+}
+
 function fonFiyatGuncelle() {
   var ss = SpreadsheetApp.getActiveSpreadsheet();
   var sh = ss.getSheetByName(FF_SAYFA) || ss.insertSheet(FF_SAYFA);
@@ -106,8 +139,18 @@ function fonFiyatGuncelle() {
   }
   var gh = githubFonlar_();
   var simdi = Utilities.formatDate(new Date(), 'Europe/Istanbul', 'dd.MM.yyyy HH:mm');
-  var satirlar = fonKodlari_().map(function (kod) {
+  var kodlar = fonKodlari_();
+  kodlar.push(FF_ALTIN);
+  var satirlar = kodlar.map(function (kod) {
     var s = null;
+    if (kod === FF_ALTIN) {
+      try { s = altinMynet_(); } catch (e) { s = null; }
+      if (!s) { try { s = altinGithub_(); } catch (e) { s = null; } }
+      var oa = eski[kod];
+      if (s) return [kod, s.fiyat, s.tarih, s.kaynak, simdi, '✅ güncel'];
+      if (oa && oa.fiyat > 0) return [kod, oa.fiyat, oa.tarih, oa.kaynak, simdi, '⚠️ eski (bugün alınamadı)'];
+      return [kod, '', '', '', simdi, '❌ hiç alınamadı'];
+    }
     try { s = tefasFiyat_(kod); } catch (e) { s = null; }
     if (!s && gh[kod] && gh[kod].son_fiyat > 0) {
       var t = String(gh[kod].fiyat_tarih || '').split('-');
@@ -126,8 +169,8 @@ function fonFiyatGuncelle() {
     sh.getRange(2, 1, satirlar.length, 6).setValues(satirlar);
     sh.getRange(2, 2, satirlar.length, 1).setNumberFormat('0.000000');
   }
-  sh.getRange(satirlar.length + 3, 1).setValue('Fon fiyat önbelleği v' + FF_SURUM +
-    ' · 2 saatte bir otomatik · kaynak sırası: TEFAS → GitHub fon.json → fonlarca · alınamazsa son fiyat korunur');
+  sh.getRange(satirlar.length + 3, 1).setValue('Fiyat önbelleği v' + FF_SURUM +
+    ' · 2 saatte bir otomatik · fonlar: TEFAS → GitHub fon.json → fonlarca · ALTINS1: Mynet → GitHub kapanış · alınamazsa son fiyat korunur');
 }
 
 // ── Formül dönüştürme: getTEFASFiyat(Fxx) → DÜŞEYARA(Fxx; _FonFiyat!A:B; 2; 0) ──
@@ -147,19 +190,61 @@ function fonFormulDuzelt() {
   var rng = sh.getRange(2, 13, son - 1, 1);  // M sütunu
   var f = rng.getFormulas();
   var degisen = 0;
+  var altinRef = 'VLOOKUP("' + FF_ALTIN + '"' + s + "'" + FF_SAYFA + "'!$A:$B" + s + '2' + s + '0)';
   var yeni = f.map(function (r) {
-    var x = r[0];
+    var x = r[0], once = x;
     if (x && /getTEFASFiyat\(/i.test(x)) {
       x = x.replace(/getTEFASFiyat\(\s*([A-Z]+\$?\d+)\s*\)/gi,
                     "VLOOKUP($1" + s + "'" + FF_SAYFA + "'!$A:$B" + s + "2" + s + "0)");
-      degisen++;
     }
+    if (x && /ALTINS1\(\s*\)/i.test(x)) x = x.replace(/ALTINS1\(\s*\)/gi, altinRef);
+    if (x && /altins1-darphane/i.test(x)) x = blokDegistir_(x, altinRef);
+    if (x !== once) degisen++;
     return [x];
   });
-  if (!degisen) { Logger.log('Dönüştürülecek getTEFASFiyat formülü yok (zaten dönüştürülmüş olabilir).'); return; }
+  if (!degisen) { Logger.log('Dönüştürülecek formül yok (zaten dönüştürülmüş olabilir).'); return; }
   // Formülü olmayan hücreleri (elle girilmiş değerler) koru: yalnız formül olan satırlar yazılır
   for (var i = 0; i < yeni.length; i++) {
     if (f[i][0] && f[i][0] !== yeni[i][0]) sh.getRange(i + 2, 13).setFormula(yeni[i][0]);
   }
   Logger.log('✅ ' + degisen + ' formül dönüştürüldü.');
+}
+
+/** Mynet adresini içeren LET(...) ya da IMPORTXML(...) bloğunu (parantez dengesiyle) altinRef ile değiştirir. */
+function blokDegistir_(x, altinRef) {
+  var i = x.search(/altins1-darphane/i);
+  var bas = Math.max(x.lastIndexOf('LET(', i), x.lastIndexOf('IFERROR(VALUE(', i), x.lastIndexOf('IMPORTXML(', i));
+  if (bas < 0) return x;
+  var d = 0;
+  for (var j = x.indexOf('(', bas); j < x.length; j++) {
+    if (x.charAt(j) === '(') d++;
+    else if (x.charAt(j) === ')') { d--; if (d === 0) return x.substring(0, bas) + altinRef + x.substring(j + 1); }
+  }
+  return x;
+}
+
+/** TANI: her kaynağı tek tek dener; sonucu _FonFiyat sayfasının altına ve günlüğe yazar. */
+function fonKaynakTesti() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sh = ss.getSheetByName(FF_SAYFA) || ss.insertSheet(FF_SAYFA);
+  var kod = fonKodlari_()[0] || 'IBB';
+  var deneme = function (ad, fn) {
+    var t0 = Date.now();
+    try { var r = fn(); return [ad, kod, r ? r.fiyat : '', r ? r.tarih : '', r ? '✅ çalışıyor' : '❌ sonuç yok', (Date.now() - t0) + ' ms']; }
+    catch (e) { return [ad, kod, '', '', '❌ hata: ' + String(e.message).substring(0, 80), (Date.now() - t0) + ' ms']; }
+  };
+  var gh = githubFonlar_();
+  var sonuc = [
+    deneme('TEFAS resmi servis', function () { return tefasFiyat_(kod); }),
+    deneme('GitHub fon.json', function () { var g = gh[kod]; return g && g.son_fiyat > 0 ? { fiyat: g.son_fiyat, tarih: g.fiyat_tarih } : null; }),
+    deneme('fonlarca.com', function () { return fonlarcaFiyat_(kod); })
+  ];
+  kod = FF_ALTIN;
+  sonuc.push(deneme('ALTIN · Mynet', altinMynet_));
+  sonuc.push(deneme('ALTIN · GitHub kapanış', altinGithub_));
+  var bas = sh.getLastRow() + 2;
+  sh.getRange(bas, 1).setValue('KAYNAK TESTİ · ' + Utilities.formatDate(new Date(), 'Europe/Istanbul', 'dd.MM.yyyy HH:mm')).setFontWeight('bold');
+  sh.getRange(bas + 1, 1, 1, 6).setValues([['Kaynak', 'Kod', 'Fiyat', 'Tarih', 'Sonuç', 'Süre']]).setFontWeight('bold');
+  sh.getRange(bas + 2, 1, sonuc.length, 6).setValues(sonuc);
+  sonuc.forEach(function (r) { Logger.log(r.join(' | ')); });
 }
