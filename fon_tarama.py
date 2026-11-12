@@ -28,6 +28,30 @@ FON_KODLARI = [
     "TZV", "TSI",
 ]
 
+# Otomatik eklenen fonlar (12.11.2026): portföy tablosundaki Apps Script, GitHub'da olmayan açık bir fon görünce
+# bu iş akışını EK_KODLAR girdisiyle tetikler; kodlar data/fon_ek_kodlar.json'a kalıcı yazılır ve her taramada
+# FON_KODLARI'na eklenir. Elle bakım gerekmez.
+EK_DOSYA = os.path.join("data", "fon_ek_kodlar.json")
+
+
+def ek_kodlar():
+    """Kalıcı ek liste + bu çalışmadaki EK_KODLAR girdisi (yalnız 2–5 harf/rakam kodlar kabul edilir)."""
+    try:
+        with open(EK_DOSYA, encoding="utf-8") as f:
+            kalici = json.load(f).get("kodlar") or []
+    except Exception:
+        kalici = []
+    yeni = [k.strip().upper() for k in os.environ.get("EK_KODLAR", "").replace(";", ",").split(",")]
+    gecerli = lambda k: 2 <= len(k) <= 5 and k.isalnum()
+    tum = sorted({k for k in kalici + yeni if gecerli(k)} - set(FON_KODLARI))
+    if set(tum) != set(kalici):
+        os.makedirs("data", exist_ok=True)
+        with open(EK_DOSYA, "w", encoding="utf-8") as f:
+            json.dump({"kodlar": tum, "guncelleme": datetime.date.today().isoformat(),
+                       "not": "Portföy tablosundaki Apps Script tarafından otomatik eklenir."}, f, ensure_ascii=False, indent=1)
+    return tum
+
+
 ICERIK_ISTENEN = True   # portföy dağılımı da çekilsin mi (biraz daha yavaş)
 
 
@@ -111,7 +135,8 @@ def main():
         "fonlar": {},
     }
     basari = hata = 0
-    for kod in FON_KODLARI:
+    kodlar = FON_KODLARI + ek_kodlar()
+    for kod in kodlar:
         try:
             kayit = fon_cek(kod)
         except Exception as e:
@@ -127,7 +152,7 @@ def main():
     os.makedirs("data", exist_ok=True)
     with open(os.path.join("data", "fon.json"), "w", encoding="utf-8") as f:
         json.dump(cikti, f, ensure_ascii=False, indent=2)
-    print(f"fon.json yazıldı: {basari} başarı / {hata} hata / {len(FON_KODLARI)} fon")
+    print(f"fon.json yazıldı: {basari} başarı / {hata} hata / {len(kodlar)} fon")
 
 
 if __name__ == "__main__":

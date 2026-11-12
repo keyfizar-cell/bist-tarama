@@ -1,12 +1,12 @@
 /**
  * Fon & Sertifika Fiyat Önbelleği — Google Apps Script (Alpay Portföy Takip dosyasına ayrı dosya olarak eklenir)
- * Sürüm 1.1 (2026-11-12) — + ALTIN sertifikası (ALTINS1) önbelleğe alındı; + fonKaynakTesti tanı fonksiyonu · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/fon_fiyat_apps_script.gs
+ * Sürüm 1.2 (2026-11-12) — yalnız AÇIK fon pozisyonları; GitHub'da olmayan fon otomatik eklenir (GITHUB_TOKEN ile) · kaynak: github.com/keyfizar-cell/bist-tarama → araclar/fon_fiyat_apps_script.gs
  *
  * SORUN: Eski getTEFASFiyat her hücrede, dosya her açıldığında fonlarca.com'a ayrı istek atıyordu; site Google
  * sunucularını sık engellediği / geç yanıt verdiği için fon fiyatları 0 geliyordu.
  * ÇÖZÜM: Fiyatlar ARKA PLANDA (günde birkaç kez) çekilip "_FonFiyat" sayfasına yazılır; Veri sayfasındaki formüller
  * fiyatı o sayfadan DÜŞEYARA ile okur (dosya açılırken internete hiç gidilmez). Her fon için kaynak sırası:
- *   1) TEFAS resmi tarihsel veri servisi  2) GitHub data/fon.json (bist-tarama fon taraması)  3) fonlarca.com
+ *   1) GitHub data/fon.json (bist-tarama fon taraması)  2) TEFAS resmi servis  3) fonlarca.com (v1.2'den beri bu sıra)
  * Hiçbiri olmazsa SON BİLİNEN fiyat korunur (asla 0'a düşmez) ve "Durum" sütununa "eski" yazılır.
  *
  * KURULUM (tek sefer):
@@ -20,10 +20,19 @@
  *   kapanış → son bilinen). fonFormulDuzelt, M sütunundaki =ALTINS1() çağrılarını ve ALTIN.S1 için yazılmış
  *   IMPORTXML/LET bloğunu DÜŞEYARA("ALTINS1"; _FonFiyat) ile değiştirir; Kod.gs'teki ALTINS1'in sabit 74,23 yedeği
  *   böylece hiç kullanılmaz. TANI: "fonKaynakTesti" her kaynağı tek tek dener, sonucu _FonFiyat'ın altına yazar.
+ *
+ * v1.2 (12.11.2026 kaynak testi: Google sunucusundan TEFAS ve fonlarca ÇALIŞMIYOR, GitHub fon.json çalışıyor):
+ *   - Yalnız AÇIK pozisyonu olan fonlar izlenir (Veri sayfası R sütunu = "Açık"); kapanmış eski fonlar listeden çıkar.
+ *   - Açık bir fon GitHub fon.json'da yoksa, Komut dosyası özelliklerinde GITHUB_TOKEN tanımlıysa, GitHub'daki
+ *     "BIST Fon Taraması" iş akışı o kodla tetiklenir (kod kalıcı listeye girer; ~10 dk sonra fiyat GitHub'a gelir,
+ *     bir sonraki 2 saatlik güncellemede tabloya yansır). Aynı kod için günde en fazla 1 tetikleme.
+ *   GITHUB_TOKEN: github.com → Settings → Developer settings → Fine-grained tokens → yalnız bist-tarama reposu,
+ *     izin: Actions = Read and write. Apps Script → Proje Ayarları (dişli) → Komut dosyası özellikleri → GITHUB_TOKEN.
  */
 var FF_SAYFA = '_FonFiyat';
 var FF_VERI = 'Veri';
-var FF_SURUM = '1.1';
+var FF_SURUM = '1.2';
+var FF_REPO = 'keyfizar-cell/bist-tarama';
 var FF_ALTIN = 'ALTINS1';
 var FF_LATEST = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/latest.json';
 var FF_GITHUB = 'https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/fon.json';
@@ -38,17 +47,39 @@ function fonKurulum() {
   Logger.log('✅ Fon fiyat önbelleği kuruldu; 2 saatte bir güncellenecek.');
 }
 
-/** Veri sayfasındaki tüm fon kodlarını (Tür = Fon) toplar. */
+/** Veri sayfasında AÇIK pozisyonu olan fon kodları (G = Fon, R = Açık). */
 function fonKodlari_() {
   var sh = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(FF_VERI);
   var son = sh.getLastRow();
   if (son < 2) return [];
-  var v = sh.getRange(2, 6, son - 1, 2).getValues();  // F: kod, G: tür
+  var v = sh.getRange(2, 6, son - 1, 13).getValues();  // F..R → 0: kod, 1: tür, 12: durum
   var set = {};
   v.forEach(function (r) {
-    if (String(r[1]).trim() === 'Fon' && String(r[0]).trim()) set[String(r[0]).trim().toUpperCase()] = true;
+    if (String(r[1]).trim() === 'Fon' && String(r[0]).trim() && String(r[12]).trim() === 'Açık')
+      set[String(r[0]).trim().toUpperCase()] = true;
   });
   return Object.keys(set).sort();
+}
+
+/** GitHub'da olmayan fonlar için fon taramasını tetikler (GITHUB_TOKEN gerekli). Tetiklenen kodları döndürür. */
+function githubaEkle_(kodlar) {
+  var props = PropertiesService.getScriptProperties();
+  var token = props.getProperty('GITHUB_TOKEN');
+  if (!token || !kodlar.length) return [];
+  var bugun = Utilities.formatDate(new Date(), 'Europe/Istanbul', 'yyyy-MM-dd');
+  var gonderilecek = kodlar.filter(function (k) { return props.getProperty('FF_EKLENDI_' + k) !== bugun; });
+  if (!gonderilecek.length) return kodlar;
+  var res = UrlFetchApp.fetch('https://api.github.com/repos/' + FF_REPO + '/actions/workflows/fon-tarama.yml/dispatches', {
+    method: 'post', muteHttpExceptions: true, contentType: 'application/json',
+    headers: { Authorization: 'Bearer ' + token, Accept: 'application/vnd.github+json' },
+    payload: JSON.stringify({ ref: 'main', inputs: { ek_kodlar: gonderilecek.join(',') } })
+  });
+  if (res.getResponseCode() === 204) {
+    gonderilecek.forEach(function (k) { props.setProperty('FF_EKLENDI_' + k, bugun); });
+    return kodlar;
+  }
+  Logger.log('GitHub tetikleme başarısız: HTTP ' + res.getResponseCode() + ' ' + res.getContentText().substring(0, 200));
+  return [];
 }
 
 function sayi_(x) {
@@ -139,6 +170,9 @@ function fonFiyatGuncelle() {
   }
   var gh = githubFonlar_();
   var simdi = Utilities.formatDate(new Date(), 'Europe/Istanbul', 'dd.MM.yyyy HH:mm');
+  var eksik = fonKodlari_().filter(function (k) { return !(gh[k] && gh[k].son_fiyat > 0); });
+  var tetiklenen = {};
+  githubaEkle_(eksik).forEach(function (k) { tetiklenen[k] = true; });
   var kodlar = fonKodlari_();
   kodlar.push(FF_ALTIN);
   var satirlar = kodlar.map(function (kod) {
@@ -151,14 +185,16 @@ function fonFiyatGuncelle() {
       if (oa && oa.fiyat > 0) return [kod, oa.fiyat, oa.tarih, oa.kaynak, simdi, '⚠️ eski (bugün alınamadı)'];
       return [kod, '', '', '', simdi, '❌ hiç alınamadı'];
     }
-    try { s = tefasFiyat_(kod); } catch (e) { s = null; }
-    if (!s && gh[kod] && gh[kod].son_fiyat > 0) {
+    if (gh[kod] && gh[kod].son_fiyat > 0) {
       var t = String(gh[kod].fiyat_tarih || '').split('-');
       s = { fiyat: gh[kod].son_fiyat, tarih: t.length === 3 ? t[2] + '.' + t[1] + '.' + t[0] : '', kaynak: 'GitHub fon.json' };
     }
+    if (!s) { try { s = tefasFiyat_(kod); } catch (e) { s = null; } }
     if (!s) { try { s = fonlarcaFiyat_(kod); } catch (e) { s = null; } }
     if (s) return [kod, s.fiyat, s.tarih, s.kaynak, simdi, '✅ güncel'];
     var o = eski[kod];
+    if (tetiklenen[kod]) return [kod, o && o.fiyat > 0 ? o.fiyat : '', o ? o.tarih : '', o ? o.kaynak : '', simdi,
+                                 '⏳ GitHub fon listesine eklendi; ~2 saat içinde gelir'];
     if (o && o.fiyat > 0) return [kod, o.fiyat, o.tarih, o.kaynak, simdi, '⚠️ eski (bugün alınamadı)'];
     return [kod, '', '', '', simdi, '❌ hiç alınamadı'];
   });
@@ -170,7 +206,8 @@ function fonFiyatGuncelle() {
     sh.getRange(2, 2, satirlar.length, 1).setNumberFormat('0.000000');
   }
   sh.getRange(satirlar.length + 3, 1).setValue('Fiyat önbelleği v' + FF_SURUM +
-    ' · 2 saatte bir otomatik · fonlar: TEFAS → GitHub fon.json → fonlarca · ALTINS1: Mynet → GitHub kapanış · alınamazsa son fiyat korunur');
+    ' · 2 saatte bir otomatik · yalnız açık fonlar · kaynak: GitHub fon.json (TEFAS/fonlarca yedek) · ALTINS1: Mynet → GitHub kapanış · alınamazsa son fiyat korunur' +
+    (PropertiesService.getScriptProperties().getProperty('GITHUB_TOKEN') ? ' · yeni fonlar otomatik eklenir' : ' · ⚠️ GITHUB_TOKEN yok: yeni fonlar otomatik eklenmez'));
 }
 
 // ── Formül dönüştürme: getTEFASFiyat(Fxx) → DÜŞEYARA(Fxx; _FonFiyat!A:B; 2; 0) ──

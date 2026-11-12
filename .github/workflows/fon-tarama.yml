@@ -10,6 +10,11 @@ on:
     workflows: ["BIST Emir Bozkurt Taraması"]
     types: [completed]
   workflow_dispatch:
+    inputs:
+      ek_kodlar:
+        description: "Eklenecek fon kodlari (virgulle). Portfoy tablosundaki Apps Script otomatik doldurur."
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -38,12 +43,14 @@ jobs:
 
       - name: Fon taraması
         run: python3 fon_tarama.py   # her durumda exit 0, data/fon.json yazar
+        env:
+          EK_KODLAR: ${{ github.event.inputs.ek_kodlar }}
 
       - name: fon.json'u commit et
         run: |
           git config user.name "bist-fon-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data/fon.json
+          git add data/fon.json data/fon_ek_kodlar.json 2>/dev/null || git add data/fon.json
           if git diff --cached --quiet; then
             echo "değişiklik yok"
           else
