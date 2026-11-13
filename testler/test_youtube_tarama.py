@@ -105,22 +105,35 @@ class KisaYanit(unittest.TestCase):
         return 200, json.dumps({"candidates": [{"content": {"parts": [{"text": json.dumps(
             {"transkript": "a" * uzunluk, "ozet": ["o"], "bahsedilen_hisseler": []})}]}, "finishReason": "STOP"}]})
 
-    def test_kisa_yanitta_siradaki_model_ve_vurgulu_istem(self):
+    def test_kisa_yanitta_siradaki_model_yalniz_transkript(self):
         cagri = []
 
         def post(url, govde, timeout=None):
-            cagri.append((url.split("/models/")[1].split(":")[0], govde["contents"][0]["parts"][1]["text"]))
-            return self.yanit(400 if len(cagri) == 1 else 5000)
+            cagri.append((url.split("/models/")[1].split(":")[0], govde["contents"][0]["parts"][1]["text"],
+                          govde["generationConfig"]))
+            if len(cagri) == 1:
+                return self.yanit(400)
+            return 200, json.dumps({"candidates": [{"content": {"parts": [{"text": "b" * 5000}]}, "finishReason": "STOP"}]})
         with mock.patch.object(yt, "http_post_json", side_effect=post):
-            tr, _, kaynak, _, _, _ = yt.gemini_transkript("v", min_karakter=1000)
+            tr, _, kaynak, ozet, _, _ = yt.gemini_transkript("v", min_karakter=1000)
         self.assertEqual(len(tr), 5000)
-        self.assertEqual(kaynak, "gemini:m2")
+        self.assertEqual(kaynak, "gemini:m2 (yalniz transkript)")
+        self.assertEqual(ozet, ["o"])  # ozet ilk (semali) yanittan korunur
         self.assertNotIn("ONEMLI", cagri[0][1])
         self.assertIn("ONEMLI", cagri[1][1])
+        self.assertEqual(cagri[0][2]["responseMimeType"], "application/json")
+        self.assertEqual(cagri[1][2]["responseMimeType"], "text/plain")
+        self.assertNotIn("responseSchema", cagri[1][2])
 
     def test_hepsi_kisa_ise_en_uzunu_ve_deneme_siniri(self):
         uz = iter([300, 700, 500])
-        with mock.patch.object(yt, "http_post_json", side_effect=lambda *a, **k: self.yanit(next(uz))) as p:
+
+        def post(url, govde, timeout=None):
+            n = next(uz)
+            if govde["generationConfig"]["responseMimeType"] == "text/plain":
+                return 200, json.dumps({"candidates": [{"content": {"parts": [{"text": "a" * n}]}, "finishReason": "STOP"}]})
+            return self.yanit(n)
+        with mock.patch.object(yt, "http_post_json", side_effect=post) as p:
             tr, *_ = yt.gemini_transkript("v", min_karakter=1000)
         self.assertEqual(len(tr), 700)
         self.assertEqual(p.call_count, 1 + yt.KISA_YENIDEN_DENEME)
@@ -133,6 +146,10 @@ class KisaYanit(unittest.TestCase):
 
 
 class ModelListesi(unittest.TestCase):
+    def test_38_flash_once(self):
+        self.assertEqual(yt.GEMINI_TERCIH[0], "gemini-3.8-flash")
+        self.assertNotIn("gemini-2.5-flash", yt.GEMINI_TERCIH)
+
     def test_lite_modeller_sona_yedek(self):
         yt._MODEL_ONBELLEK[:] = []
         modeller = {"models": [{"name": "models/" + n, "supportedGenerationMethods": ["generateContent"]}

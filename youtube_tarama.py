@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_tarama.py  v2.4  (2026-11-13)
+# youtube_tarama.py  v2.5  (2026-11-13)
+# v2.5: (1) gemini-3.8-flash tercih listesinin basinda (Google 404 mesajinin onerdigi model; 2.5-flash yeni
+#       kullanicilara kapali, listeden cikti). (2) KISA YANITTA YALNIZ TRANSKRIPT: 13.11.2026 dogrulamasinda farkli
+#       modeller ayni videoda ~435 karakterde durdu (ozet+hisse+transkript tek istekte); kisa yanittan sonraki
+#       denemeler semasiz, duz metin "yalniz transkript" istemiyle yapilir; ozet ve hisseler ilk yanittan korunur.
 # v2.4: KISA YANIT YEDEGI — Gemini STOP ile bitirip transkripti MIN_TRANSKRIPT'ten kisa donerse
 #       (10-12.11.2026: gemini-3-flash-preview 555/437 karakter; ozet dolu, transkript yok) basarili
 #       sayilmaz: ayni calismada siradaki modele (en fazla KISA_YENIDEN_DENEME kez) "ozetleme, tamamini
@@ -41,7 +45,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-SURUM = "2.4"
+SURUM = "2.5"
 CHANNEL_ID = "UChiWzAwOe7J67dd5PmmUnnA"
 UPLOADS_PLAYLIST = "UU" + CHANNEL_ID[2:]
 CHANNEL_ADI = "Emir Bozkurt | Stratejik Yatirim"
@@ -60,7 +64,7 @@ TARAYICI_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                "(KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36")
 GEMINI_TABAN = "https://generativelanguage.googleapis.com/v1beta"
 YT_DATA_TABAN = "https://www.googleapis.com/youtube/v3"
-GEMINI_TERCIH = ["gemini-3-flash-preview", "gemini-flash-latest", "gemini-2.5-flash"]
+GEMINI_TERCIH = ["gemini-3.8-flash", "gemini-3-flash-preview", "gemini-flash-latest"]
 
 GUNLUK = []  # kisa deneme gunlugu -> JSON "denemeler"
 TUKENEN = set()  # bu calismada GUNLUK kotasi biten modeller (v2.3): atlanir, siradaki modelle devam edilir
@@ -211,9 +215,13 @@ GEMINI_ISTEM = (
     "dayanarak yaz. (3) 'bahsedilen_hisseler' alanina videoda adi gecen her hisse/varlik icin "
     "kod ve konusmacinin o hisse hakkinda soyledigini (seviye, beklenti, risk) tek cumleyle yaz; "
     "yalniz videoda gecenleri yaz.")
-GEMINI_KISA_EK = (  # v2.4: kisa yanit sonrasi ek vurgu
-    " ONEMLI: Onceki denemede transkript cok kisa geldi. 'transkript' alanina videonun BASINDAN "
+GEMINI_KISA_EK = (  # v2.4: kisa yanit sonrasi ek vurgu (v2.5'te yalniz-transkript istemine eklenir)
+    " ONEMLI: Onceki denemede transkript cok kisa geldi. Videonun BASINDAN "
     "SONUNA kadar TUM konusmayi yaz; ozet veya kisaltma YAPMA. Uzun videolarda metin binlerce kelime olabilir.")
+GEMINI_YALNIZ_TRANSKRIPT = (  # v2.5: kisa yanittan sonra semasiz, duz metin istem
+    "Bu YouTube videosundaki TUM konusmalari TURKCE olarak, videonun basindan sonuna kadar kelimesi kelimesine "
+    "yaziya dok. YALNIZ konusma metnini yaz: baslik, ozet, madde, yorum, zaman damgasi veya JSON EKLEME. "
+    "Hisse kodlarini ve rakamlari duydugun gibi yaz; emin olmadigin kelimeyi [?] ile isaretle.")
 
 GEMINI_SEMA = {
     "type": "OBJECT",
@@ -294,17 +302,19 @@ def gemini_transkript(video_url, istem=None, sema=None, fps=0.1, min_karakter=No
     for model in gemini_modelleri(anahtar):
         if model in TUKENEN:
             continue
+        duz = bool(kisa_deneme) and sema is None  # v2.5: kisa yanittan sonra yalniz transkript, duz metin
+        uretim = {"temperature": 0, "maxOutputTokens": 32768, "mediaResolution": "MEDIA_RESOLUTION_LOW"}
+        if duz:
+            uretim["responseMimeType"] = "text/plain"
+            metin_istem = GEMINI_YALNIZ_TRANSKRIPT + GEMINI_KISA_EK
+        else:
+            uretim.update({"responseMimeType": "application/json", "responseSchema": sema or GEMINI_SEMA})
+            metin_istem = istem or GEMINI_ISTEM
         govde = {
             "contents": [{"role": "user", "parts": [
                 {"fileData": {"fileUri": video_url}, "videoMetadata": {"fps": fps}},
-                {"text": (istem or GEMINI_ISTEM) + (GEMINI_KISA_EK if kisa_deneme else "")}]}],
-            "generationConfig": {
-                "temperature": 0,
-                "maxOutputTokens": 32768,
-                "mediaResolution": "MEDIA_RESOLUTION_LOW",
-                "responseMimeType": "application/json",
-                "responseSchema": sema or GEMINI_SEMA,
-            },
+                {"text": metin_istem}]}],
+            "generationConfig": uretim,
         }
         url = "%s/models/%s:generateContent?key=%s" % (GEMINI_TABAN, model, anahtar)
         try:
@@ -328,6 +338,8 @@ def gemini_transkript(video_url, istem=None, sema=None, fps=0.1, min_karakter=No
                     continue
             metin, bitis = _gemini_cevap_metni(txt)
             try:
+                if duz:
+                    raise ValueError("duz metin")
                 j = json.loads(metin)
             except ValueError:
                 # JSON yarim kaldiysa (MAX_TOKENS) ham metni transkript say
@@ -337,7 +349,10 @@ def gemini_transkript(video_url, istem=None, sema=None, fps=0.1, min_karakter=No
             if sema is not None:
                 j["transkript"] = tr
                 return j, "gemini:" + model, bitis
-            donus = (tr, "tr", "gemini:" + model, j.get("ozet") or [], j.get("bahsedilen_hisseler") or [], bitis)
+            ozet_j, hisse_j = j.get("ozet") or [], j.get("bahsedilen_hisseler") or []
+            if duz and en_iyi is not None:  # v2.5: ozet/hisseler ilk (semali) yanittan korunur
+                ozet_j, hisse_j = en_iyi[1][3], en_iyi[1][4]
+            donus = (tr, "tr", "gemini:" + model + (" (yalniz transkript)" if duz else ""), ozet_j, hisse_j, bitis)
             if min_karakter and len(tr) < min_karakter:
                 if en_iyi is None or len(tr) > en_iyi[0]:
                     en_iyi = (len(tr), donus)
