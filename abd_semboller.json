@@ -1,0 +1,4 @@
+{
+ "aciklama": "abd_fiyat.py'nin cektigi ABD sembolleri (Twelve Data yerine). SPY/QQQ/DIA = ABD endeks vekilleri.",
+ "semboller": ["NVO", "SPY", "QQQ", "DIA"]
+}

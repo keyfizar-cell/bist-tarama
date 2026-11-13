@@ -1,0 +1,41 @@
+name: ABD Fiyatlari
+
+# v1.0 (2026-11-13): Twelve Data baglayicisinin yerine (Alpay karari). abd_fiyat.py -> data/abd.json
+# Zaman: 07:07 TR (04:07 UTC; ABD kapanisi sonrasi, sabah brifinginden once) ve
+#        18:37 TR (15:37 UTC; aksam bulteninden once, ABD seansi acik — "piyasa_durumu" alaninda gorunur).
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "7 4 * * 1-5"
+    - cron: "37 15 * * 1-5"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: abd-fiyat
+  cancel-in-progress: false
+
+jobs:
+  abd:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: ABD fiyatlarini cek
+        run: python abd_fiyat.py
+      - name: JSON'u commit et
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/abd.json || true
+          if git diff --cached --quiet; then echo "Degisiklik yok."; exit 0; fi
+          git commit -m "abd fiyatlari guncelle [skip ci]" || true
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main || true
+            if git push origin HEAD:main; then echo "Push basarili."; break; fi
+            sleep 5
+          done

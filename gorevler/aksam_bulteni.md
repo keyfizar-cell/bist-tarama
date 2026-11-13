@@ -46,7 +46,7 @@ NVO = Novo Nordisk (NYSE → TradingView linki symbol=NYSE%3ANVO). Diğer hissel
 
 ⛔ ORTAM KISITI (test edildi): Bash'ten çoğu dış API kapalı (yahoo, coingecko-api, isyatirim, tefas, investing, scanner.tradingview.com → 403). Bunları BASH'TEN DENEME — ancak bu siteler WebSearch→WebFetch ile çalışır.
 ✅ Bash'ten ERİŞİLEBİLEN: github.com, raw.githubusercontent.com, pypi.org. (api.github.com bu repo için 403 dönüyor; Actions sonucu için data/status.json'u kullan.)
-✅ Ayrıca WebFetch/WebSearch ve MCP bağlayıcıları (Gmail, Google Drive, Twelve Data) çalışıyor.
+✅ Ayrıca WebFetch/WebSearch ve MCP bağlayıcıları (Gmail, Google Drive) çalışıyor. (Twelve Data 13.11.2026'da KALDIRILDI — ABD verisi data/abd.json'dan.)
 
 --- ADIM 1: ANA VERİ KAYNAĞI — GitHub taraması ---
 GitHub Actions BIST'i TradingView'in resmî tarayıcı API'siyle tarıyor (Cloudflare Worker (bist-tetik) tetiği 18:20 TR; gecikirse yukarıdaki AKILLI BEKLEME protokolü devreye girer).
@@ -73,7 +73,7 @@ Bu dosya şunları KARŞILAR: portföy BIST hisselerinin kapanış+günlük%'si,
 Başsız oturumda WebFetch yalnızca WebSearch sonuçlarında GÖRÜNEN URL'leri çekebilir → önce WebSearch yap.
 
 --- ADIM 3: GitHub'ın KAPSAMADIĞI veriler ---
-  • NVO: mcp__Twelve_Data__get_quote(symbol="NVO") → kapanış + 52 hafta aralığı. (Twelve Data ücretsiz plan BIST vermiyor — BIST için ÇAĞRI YAPMA.) Twelve Data bağlı değilse NVO fiyatını web'den (WebSearch→WebFetch, ör. digrin/stockanalysis) çek ve NVO teknik göstergelerini "veri yok" yaz; kapsam kutusunda "Twelve Data bağlayıcısı bağlı değil" notu koy.
+  • NVO (ve gerekirse SPY/QQQ/DIA): Bash: curl -sS --max-time 30 "https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/abd.json?cb=$(date +%s%N)" -o /tmp/abd.json (abd_fiyat.py, Yahoo; 18:37 TR'de güncellenir, ABD seansı açıksa "piyasa_durumu" REGULAR ve fiyat anlıktır — bültende "anlık" diye belirt). veriler.NVO: son, gunluk_yuzde, h52_zirve/dip, zirveye_uzaklik_yuzde, rsi14, macd{yon,histogram}. Twelve Data bağlayıcısı 13.11.2026'da KALDIRILDI — çağırma. Dosya 1 günden eski ya da "bayat" ise NVO fiyatını WebSearch→WebFetch (stockanalysis) ile al, teknik hücrelere "veri yok" yaz ve kapsam kutusuna "abd.json bayat" notu koy.
   • BIST 100 endeksi: finans.mynet.com/borsa/ + gün-sonu haberleri (kapanış puanı, günlük %, artan/azalan sayısı, hacim). Bölüm 6'daki "Endekse Göre" hesabı bu %'yi kullanır.
   • Kripto (ADIM 0'daki açık kriptolar): coingecko.com/en/coins/{avalanche-2|ripple|floki} WebFetch ile çalışıyor (AVAX=avalanche-2, XRP=ripple; BTC kapalı pozisyon, çekme); FLOKI için alternatif paribu.com/fiyat/floki. (WebFetch provenance için önce WebSearch yap.)
   • Kur/altın/Brent: gün-sonu haber sayfaları (politikam/halktv/ekonomim/bloomberght "<gün> ... gün sonu"), genelpara.com; "Brent petrol varil fiyatı <tarih>".
@@ -116,7 +116,7 @@ KAYNAK ÖNCELİĞİ (haber): 1) KAP 2) Aracı kurum raporları (İş, Ak, Garant
 3) PORTFÖY ÖZET TABLOSU: Sıcaklık | Kod | Kapanış | Günlük % | Ağırlık % | Ort. Maliyet | Maliyete Göre K/Z % | Katalizör. Sıcaklık: 🔥 somut katalizör/sert hareket · 🟡 orta · ⚪ sakin. ADIM 0'daki TÜM açık hisseler. Ağırlık/Ort. Maliyet dosyadan; Maliyete Göre K/Z %'yi bugünkü kapanış ile ortalama maliyetten YENİDEN hesapla. Tablonun altına tek satır portföy toplamı: toplam maliyet TL, toplam güncel TL, toplam K/Z (dosyanın "Aktif Portföy" özetinden, tarihini belirt).
 
 4) PORTFÖY TEKNİK PLAN: Kod | Kapanış | 52H Konumu | RSI | MACD | Giriş | Stop | TP1 | TP2 | TV Sinyal
-   - RSI/MACD/52H/TV sinyal JSON'dan GERÇEK değerle gelir. NVO için Twelve Data. hala_eksik kodlarda teknik hücreler "veri yok".
+   - RSI/MACD/52H/TV sinyal JSON'dan GERÇEK değerle gelir. NVO için data/abd.json (rsi14, macd, h52). hala_eksik kodlarda teknik hücreler "veri yok".
    - Seviye formülü (mekanik): Giriş = son kapanış · Stop = kapanış −%7 (52H dip daha yakınsa o) · TP1 = +%8 (52H zirveyi aşmaz) · TP2 = +%15 · İnvalidasyon = stop altında günlük kapanış.
    - Lejantta net yaz: "Bu seviyeler öneri değil, açıklanan kuralın mekanik uygulamasıdır."
 

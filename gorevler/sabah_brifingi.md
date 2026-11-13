@@ -34,7 +34,7 @@ Kaynak: Google Drive "Alpay - Porfoy Takip" (fileId: {PORTFOY_DOSYA_ID}). mcp__G
 Bash: curl -sS --max-time 30 "https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/latest.json?cb=$(date +%s%N)" -o /tmp/bist.json
  • "tarih" = son iş günü VE "uretim_zamani_utc" o gün 15:15 UTC sonrası ise geçerli kapanış verisidir. tum_hisseler[] → portföy BIST hisselerinin kapanış, gunluk_yuzde, rsi, h52_zirve/dip, hacim_orani, tv_sinyal.
  • Dosyada olmayan (hala_eksik) veya bayat ise: bigpara tekil detay sayfası (https://bigpara.hurriyet.com.tr/borsa/hisse-fiyatlari/{KOD}-detay/) — önce WebSearch, sonra WebFetch. Toplu liste sayfalarını (canli-borsa) KULLANMA.
- • NVO: mcp__Twelve_Data__get_quote(symbol="NVO"). ABD endeksleri için ETF vekilleri: SPY, QQQ, DIA (Twelve Data get_quote). Twelve Data'yı BIST için çağırma.
+ • NVO ve ABD endeks vekilleri (SPY, QQQ, DIA): Bash: curl -sS --max-time 30 "https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/abd.json?cb=$(date +%s%N)" -o /tmp/abd.json (abd_fiyat.py, Yahoo; 07:07 TR'de ABD kapanışıyla güncellenir — Twelve Data bağlayıcısı 13.11.2026'da KALDIRILDI, çağırma). veriler{SEMBOL}: son, onceki_kapanis, gunluk_yuzde, h52_zirve/dip, rsi14, macd.yon, son_mum_tarihi, bayat. Dosya 1 günden eski ya da sembol "bayat" ise WebSearch→WebFetch (stockanalysis.com) ile fiyatı al ve "abd.json bayat" notu düş.
  ⛔ Bash'ten yahoo/coingecko-api/isyatirim/tefas/investing/scanner.tradingview → 403; deneme. WebSearch/WebFetch ve MCP'ler çalışıyor.
 
 ═══ ADIM 2: ARAŞTIRMA (her açık pozisyon için AYRI arama) ═══

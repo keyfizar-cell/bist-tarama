@@ -76,6 +76,7 @@ Ardından "Sosyal Nabız" ÇALIŞMAZ (borsa kapalı; cuma verisinin üzerine yaz
 | `fon_tarama.py` + `fon-tarama.yml` | v1.0 | workflow_run + dispatch | `fon.json` | tefasmak 1.0.1 (+pytefas yedek) |
 | `youtube_tarama.py` | **v2.6** | workflow_run + dispatch | `youtube_emir.json` | Video listesi: kanal RSS → playlist RSS → YouTube Data API. Transkript: **yalnız Gemini** (YouTube URL, `fps=0.1`). Aynı video tekrar işlenmez. **v2.3 kota yedeği:** günlük kotası dolan model o çalışmada atlanır, sıradaki modelle (en sonda flash-lite) devam edilir; dakikalık sınırda 60 sn bekler. Konuk ve kanal betikleri de bunu kullanır. **v2.4 kısa yanıt yedeği:** Emir videosunda Gemini STOP ile bitip transkripti 1.000 karakterden kısa dönerse sıradaki modele (en fazla 2 ek) "tamamını yaz" vurgulu istemle geçilir, en uzunu tutulur; konuk/kanal (şemalı) çağrılar etkilenmez. **v2.5:** tercih sırası gemini-3.8-flash → 3-flash-preview → flash-latest (2.5-flash kapalı); kısa yanıttan sonraki denemeler şemasız düz metin "yalnız transkript" istemiyle, özet/hisseler ilk yanıttan korunur. **v2.6 süreye göre eşik:** video süresi Data API'den alınır; 180 sn'den kısa videoda eşik süre×8 karakter (en az 100); `en_yeni_video.sure_sn`, `kisa_video` |
 | `youtube_konuk.py` + `konuk_takip.json` | **v1.0** | aynı iş akışında 2. adım | `youtube_konuk.json` | Konuk uzmanların (şu an: Işık Ökte) son 7 gün videoları: Data API arama + Gemini; kişi başı ≤2 yeni video/çalışma, 30 gün saklama |
+| `abd_fiyat.py` + `abd_semboller.json` | **v1.0** | hafta içi 07:07 ve 18:37 TR + dispatch ("ABD Fiyatlari") | `abd.json` | Twelve Data yerine: NVO, SPY, QQQ, DIA için Yahoo chart (1y günlük) → son, günlük %, 52H zirve/dip, RSI14, MACD, piyasa durumu; hatalı sembolde önceki veri `bayat` işaretiyle korunur |
 | `youtube_deney.py` | **v1.1** | her gün 07:13 UTC + dispatch ("YouTube Transkript Deneyi") | `youtube_deney.json` | Transkript sorunu çözülene kadar aynı videoda alternatif yolları dener: Gemini teşhis + 10 dk'lık parçalar, yt-dlp altyazı/ses (çerezsiz), Çin modelleri (Qwen DashScope, GLM Z.ai, SiliconFlow SenseVoice, Kimi; DeepSeek uygunluk kontrolü). Anahtarsız deney "anahtar_yok" yazılır, atlanmaz. 2 ayrı günde Türkçe ≥1.000 karakter → `cozum_adaylari`. Ana hattı değiştirmez |
 | `youtube_kanallar.py` + `kanal_takip.json` | **v1.2** | aynı iş akışında 3. adım | `degerleme_gecmis.json` | `hisseler{KOD:{grup, yillar{YYYY:{fk, pddd}}, fk_bant, pddd_bant{min, ortanca, max, n}}}` |
 | `tms29.json` | `hisseler{KOD:{donem, net_kar_ttm, ertelenmis_vergi_ttm, duz_net_kar_ttm, duz_net_kar_buyume_yuzde, duz_roe_yuzde, brut_marj(_degisim_puan), favok_marj(_degisim_puan), guncelleme}}`, `kapsam`, `evren` |
@@ -126,15 +127,15 @@ Talimat dosyaları: `gorevler/sabah_brifingi.md`, `gorevler/aksam_bulteni.md`, `
 
 | Görev | ID | Zaman | Okur | Yazar / yapar |
 |---|---|---|---|---|
-| Sabah Portföy Brifingi | `trig_01DaVTFUontesJ7gXp78zAqV` | hafta içi 08:00 TR | latest/kap/fon/geri_alim.json, Drive portföy, web, Twelve Data (NVO, SPY/QQQ/DIA) | e-posta |
-| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), youtube_kanallar.json (7f), adil_deger.json (7g), Drive, web, Twelve Data (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
+| Sabah Portföy Brifingi | `trig_01DaVTFUontesJ7gXp78zAqV` | hafta içi 08:00 TR | latest/kap/fon/geri_alim.json, Drive portföy, web, abd.json (NVO, SPY/QQQ/DIA) | e-posta |
+| Günlük Portföy Bülteni | `trig_01UjjJQe3p9x4D5SZc484Ryt` | hafta içi 19:05 TR | latest/<tarih>/kap/geri_alim.json, youtube_emir.json (7d), youtube_konuk.json (7e), youtube_kanallar.json (7f), adil_deger.json (7g), Drive, web, abd.json (NVO) | e-posta (konu satırı sabit: "📊 Günlük Portföy Bülteni — GG.AA.YYYY") |
 | BIST Tarama Sağlık Nöbeti | `trig_01KGyiz4sASMZ3jUXM67gce8` | hafta içi 00:30 TR | latest/<tarih>/status + kap/geri_alim/fon/youtube_emir/youtube_konuk/youtube_kanallar/sosyal_nabiz/adil_deger.json, Gmail gönderilenler | push; bülten gitmediyse bülteni yeniden başlatır |
 | BIST Veri Kaynağı Alternatif Araştırması | `trig_01ViuA5ZKASerVpJMqYkoeoz` | hafta içi 09:37 TR | tüm data dosyaları, web, pypi/github | bültenlerin EK bloğu (otomatik), e-posta, hafıza `/areas/bist-veri-hatti-alternatifleri.md` |
 
 **Bağlantılar (connector) — 06.11.2026 analizi:** Gerekli olanlar Gmail (hepsi), Google Drive
-(iki bülten), Claude Code Remote (akşam bülteni, Sağlık Nöbeti, Araştırma), Twelve Data (iki
-bülten). Descript, Splice, Canva, Superhuman Docs, Claude Docs hiçbir görevde kullanılmıyor;
-Twelve Data Sağlık Nöbeti ve Araştırma'da gereksiz. Bağlantılar yalnız claude.ai arayüzünden
+(iki bülten), Claude Code Remote (akşam bülteni, Sağlık Nöbeti, Araştırma). Twelve Data 13.11.2026'da
+kaldırıldı (bağlı değildi; yerine `abd_fiyat.py` → `data/abd.json`). Descript, Splice, Canva, Superhuman Docs, Claude Docs hiçbir görevde kullanılmıyor;
+Bağlantılar yalnız claude.ai arayüzünden
 düzenlenebilir (araçla değil). Borsa MCP (saidsurucu) talimatlarda "ekliyse" yedeği olarak geçiyor
 ama hiçbir göreve bağlı değil.
 
@@ -142,6 +143,7 @@ ama hiçbir göreve bağlı değil.
 
 ## 6. KALICI KARARLAR ve KALDIRILANLAR (geri getirme)
 
+- **KALDIRILDI (13.11.2026):** Twelve Data bağlayıcısı (bültenlerde bağlı değildi) → ABD verisi `data/abd.json`.
 - **KALDIRILDI (06.11.2026):** `youtube-transcript-api` ve Webshare/genel proxy ile transkript
   yolu. GitHub Actions IP'lerinden her seferinde RequestBlocked/429 veriyordu. Transkript yalnız
   Gemini ile alınır. `pip install youtube-transcript-api` ve `WEBSHARE_*`/`YT_PROXY_URL` env
@@ -167,7 +169,7 @@ ama hiçbir göreve bağlı değil.
 - **Sosyal medya (07.11.2026):** X/Twitter kazınamaz; resmî X API ücretli (okunan gönderi başı ~$0,005), Grok `x_search`
   ücretli (~$5/1.000 arama) → Alpay kararıyla ŞİMDİLİK YOK (istenirse `XAI_API_KEY` ile eklenebilir). Reddit girişsiz okuma
   403, API onay istiyor → KULLANILMAZ; Reddit/Ekşi/forumlar Gemini + Google Search ile dolaylı taranır.
-- **Twelve Data:** yalnız NVO ve ABD ETF'leri için; BIST için çağrılmaz.
+- **Twelve Data:** KALDIRILDI (13.11.2026) — bültenlerde bağlı değildi. NVO ve SPY/QQQ/DIA artık `abd_fiyat.py` (Yahoo, GitHub Actions) → `data/abd.json`; geri getirme.
 - **Yatırım koçu (07.11.2026):** Akşam bülteninde "🧑‍🏫 KOÇ NOTLARI" (Piyasa Pusulası'ndan sonra). Profil Alpay'ın
   Drive'ındaki **"Yatırımcı Profili (Koç)"** Google Docs belgesindedir; repo açık olduğu için içeriği repoya, `data/`'ya,
   SISTEM_DURUMU'na YAZILMAZ. Görev belgeyi başlığıyla bulur. Öğrenme: Alpay bülten/brifing e-postasına "KOÇ: …" (veya "koç …") diye yanıt verir; SORU ise ertesi akşam "❓ Sorunun yanıtı" ile cevaplanır →
@@ -198,6 +200,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 13.11.2026 | **Twelve Data kaldırıldı** (Alpay kararı: bültenlerde bağlı değildi). Yerine `abd_fiyat.py` v1.0 + `abd_semboller.json` + `abd-fiyat.yml` (hafta içi 07:07/18:37 TR) → `data/abd.json`; sabah ADIM 1 ve akşam ADIM 3 NVO/SPY/QQQ/DIA'yı bu dosyadan okur, bayatsa web yedeği; testler eklendi | Claude Code |
 | 13.11.2026 | **Kök neden bulundu (youtube_deney ilk çalışma):** Emir'in en yeni videosu (XBSj569TEyQ) Data API'ye göre **26 saniyelik** tanıtım videosu; ~435 karakterlik transkript TAMDI, model hatası yoktu. `youtube_tarama.py` v2.6 (süreye göre eşik) + `youtube_deney.py` v1.1 (aynı eşik). Aynı çalışmada: yt-dlp altyazı/ses GitHub Actions'ta "Sign in to confirm you're not a bot" ile engellendi (çerezsiz yol kapalı); Çin modelleri anahtar_yok; DeepSeek uygulanamaz. Deney hattı uzun videolarda alternatifleri ölçmek için açık kalır | Claude Code |
 | 13.11.2026 | v2.5 doğrulaması: gemini-3.8-flash 503 (yoğunluk), diğer modeller düz metin istemiyle de ~435 karakterde durdu. Alpay kararı: çözülene kadar GitHub ve Çin modellerinde araştırma + düzenli deneme → `youtube_deney.py` v1.0 + `youtube-deney.yml` (günlük) + testler; Araştırma görevi (F) 3b "deney hattı" (her çalışmada sonuç tablosu, Salı/Cuma GitHub + Çin modelleri araştırması, Çin modelleri atlanmaz) | Claude Code |
 | 13.11.2026 | Araştırma görevine (G) "Aracı kurum tavsiye & model portföy kaynakları": her çalışmada Foreks Son Eklenenler canlılık kontrolü; Salı/Cuma kurum araştırma sayfaları, toplu derlemeler, ekledi/çıkardı haberleri aranıp test edilir (kabul: kod+kurum+tarih, ≤30 gün, anahtarsız, JS'siz); doğrulanan kaynak sabah EK bloğuna Bölüm 8 etiketiyle otomatik; kalıcı otomasyon gerekiyorsa yalnız önerilir — Alpay isteği | Claude Code |

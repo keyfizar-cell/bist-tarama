@@ -38,6 +38,7 @@ ADIMLAR:
    • sosyal_nabiz.json (yorum & forum nabzı, 07.11.2026): dosya VARSA ve uretim_zamani_utc farkı ≥2 iş günü ise → SOSYAL NABIZ BAYAT; dosya yoksa (404) arıza SAYMA. youtube.hata VE forum.hata ikisi birden doluysa → SOSYAL NABIZ HATALI (ikisinin ilk 60 karakteri). Yalnız forum.hata doluysa arıza sayma (Gemini arama kotası olabilir).
    • adil_deger.json (adil değer, 11.11.2026): dosya VARSA ve uretim_zamani_utc farkı ≥2 iş günü ise → ADİL DEĞER BAYAT; hata alanı doluysa → ADİL DEĞER HATALI (ilk 80 karakter); hisseler[] 50'den azsa → ADİL DEĞER EKSİK (<n> hisse). Dosya yoksa (404) arıza SAYMA.
    • faktor_skor.json (5 faktör skor + örnek sepet, 12.11.2026): dosya VARSA ve tarih alanı ≥2 iş günü eskiyse → FAKTÖR SKOR BAYAT; hata doluysa → FAKTÖR SKOR HATALI (ilk 80 karakter); evren 300'den azsa → FAKTÖR SKOR EKSİK. Dosya yoksa (404) arıza SAYMA.
+   • abd.json (ABD fiyatları — Twelve Data yerine, 13.11.2026): dosya VARSA ve uretim_zamani_utc farkı ≥2 iş günü ise → ABD FİYAT BAYAT; hatalar{} doluysa → ABD FİYAT HATALI (sembol listesi); "bayat": true işaretli sembol varsa adlarını yaz. Dosya yoksa (404) arıza SAYMA.
    • Bu maddeler tek başına bülten yedek çalıştırmasını TETİKLEMEZ; yalnız bildirime eklenir.
 
 BİLDİRİM KURALI:
