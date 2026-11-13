@@ -88,6 +88,50 @@ class KotaYedegi(unittest.TestCase):
         self.assertEqual(yt.TUKENEN, set())
 
 
+class KisaYanit(unittest.TestCase):
+    """v2.4: Emir yolu (sema=None) kısa transkriptte sıradaki modeli dener; konuk/kanal (sema) etkilenmez."""
+    def setUp(self):
+        yt.TUKENEN.clear()
+        self.env = mock.patch.dict(os.environ, {"GOOGLE_API_KEY": "k", "GEMINI_MODEL": ""})
+        self.env.start()
+        self.liste = mock.patch.object(yt, "gemini_modelleri", return_value=["m1", "m2", "m3"])
+        self.liste.start()
+
+    def tearDown(self):
+        self.env.stop()
+        self.liste.stop()
+
+    def yanit(self, uzunluk):
+        return 200, json.dumps({"candidates": [{"content": {"parts": [{"text": json.dumps(
+            {"transkript": "a" * uzunluk, "ozet": ["o"], "bahsedilen_hisseler": []})}]}, "finishReason": "STOP"}]})
+
+    def test_kisa_yanitta_siradaki_model_ve_vurgulu_istem(self):
+        cagri = []
+
+        def post(url, govde, timeout=None):
+            cagri.append((url.split("/models/")[1].split(":")[0], govde["contents"][0]["parts"][1]["text"]))
+            return self.yanit(400 if len(cagri) == 1 else 5000)
+        with mock.patch.object(yt, "http_post_json", side_effect=post):
+            tr, _, kaynak, _, _, _ = yt.gemini_transkript("v", min_karakter=1000)
+        self.assertEqual(len(tr), 5000)
+        self.assertEqual(kaynak, "gemini:m2")
+        self.assertNotIn("ONEMLI", cagri[0][1])
+        self.assertIn("ONEMLI", cagri[1][1])
+
+    def test_hepsi_kisa_ise_en_uzunu_ve_deneme_siniri(self):
+        uz = iter([300, 700, 500])
+        with mock.patch.object(yt, "http_post_json", side_effect=lambda *a, **k: self.yanit(next(uz))) as p:
+            tr, *_ = yt.gemini_transkript("v", min_karakter=1000)
+        self.assertEqual(len(tr), 700)
+        self.assertEqual(p.call_count, 1 + yt.KISA_YENIDEN_DENEME)
+
+    def test_sema_yolu_etkilenmez(self):
+        with mock.patch.object(yt, "http_post_json", return_value=self.yanit(50)) as p:
+            j, kaynak, _ = yt.gemini_transkript("v", sema={"type": "OBJECT"})
+        self.assertEqual(p.call_count, 1)
+        self.assertEqual(kaynak, "gemini:m1")
+
+
 class ModelListesi(unittest.TestCase):
     def test_lite_modeller_sona_yedek(self):
         yt._MODEL_ONBELLEK[:] = []

@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_tarama.py  v2.3  (2026-11-08)
+# youtube_tarama.py  v2.4  (2026-11-13)
+# v2.4: KISA YANIT YEDEGI — Gemini STOP ile bitirip transkripti MIN_TRANSKRIPT'ten kisa donerse
+#       (10-12.11.2026: gemini-3-flash-preview 555/437 karakter; ozet dolu, transkript yok) basarili
+#       sayilmaz: ayni calismada siradaki modele (en fazla KISA_YENIDEN_DENEME kez) "ozetleme, tamamini
+#       yaz" vurgulu istemle gecilir; en uzun sonuc tutulur. Konuk/kanal cagrilari (sema verilen) ETKILENMEZ.
 # v2.3: Gemini kota yedegi — bir model GUNLUK kotaya (429) takilinca bu calismada atlanir ve siradaki
 #       modelle devam edilir (kotalar model basina); flash-lite modeller sona yedek eklenir; dakikalik
 #       sinirda 60 sn bekleyip bir kez tekrar denenir. Tum modeller bitince hata metninde 'HTTP 429' olur.
@@ -37,7 +41,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-SURUM = "2.3"
+SURUM = "2.4"
 CHANNEL_ID = "UChiWzAwOe7J67dd5PmmUnnA"
 UPLOADS_PLAYLIST = "UU" + CHANNEL_ID[2:]
 CHANNEL_ADI = "Emir Bozkurt | Stratejik Yatirim"
@@ -47,6 +51,7 @@ RSS_DENEME_BEKLEME = [0, 10, 30]  # saniye
 HTTP_ZAMAN_ASIMI = 60
 GEMINI_ZAMAN_ASIMI = 600
 MIN_TRANSKRIPT = 1000  # bundan kisa metin "basarili" sayilmaz
+KISA_YENIDEN_DENEME = 2  # v2.4: kisa yanitta en fazla bu kadar ek model denenir (kota korunur)
 
 OUT_PATH = os.path.join("data", "youtube_emir.json")
 RSS_KANAL = "https://www.youtube.com/feeds/videos.xml?channel_id=" + CHANNEL_ID
@@ -206,6 +211,9 @@ GEMINI_ISTEM = (
     "dayanarak yaz. (3) 'bahsedilen_hisseler' alanina videoda adi gecen her hisse/varlik icin "
     "kod ve konusmacinin o hisse hakkinda soyledigini (seviye, beklenti, risk) tek cumleyle yaz; "
     "yalniz videoda gecenleri yaz.")
+GEMINI_KISA_EK = (  # v2.4: kisa yanit sonrasi ek vurgu
+    " ONEMLI: Onceki denemede transkript cok kisa geldi. 'transkript' alanina videonun BASINDAN "
+    "SONUNA kadar TUM konusmayi yaz; ozet veya kisaltma YAPMA. Uzun videolarda metin binlerce kelime olabilir.")
 
 GEMINI_SEMA = {
     "type": "OBJECT",
@@ -275,7 +283,10 @@ def _gemini_cevap_metni(txt):
     return metin, c.get("finishReason")
 
 
-def gemini_transkript(video_url, istem=None, sema=None, fps=0.1):
+def gemini_transkript(video_url, istem=None, sema=None, fps=0.1, min_karakter=None):
+    """v2.4: min_karakter verilirse (yalniz sema=None yolu) kisa transkriptte siradaki model denenir."""
+    en_iyi = None  # (uzunluk, donus) — kisa yanitlarin en uzunu
+    kisa_deneme = 0
     anahtar = os.environ.get("GOOGLE_API_KEY", "").strip()
     if not anahtar:
         raise RuntimeError("GOOGLE_API_KEY yok")
@@ -286,7 +297,7 @@ def gemini_transkript(video_url, istem=None, sema=None, fps=0.1):
         govde = {
             "contents": [{"role": "user", "parts": [
                 {"fileData": {"fileUri": video_url}, "videoMetadata": {"fps": fps}},
-                {"text": istem or GEMINI_ISTEM}]}],
+                {"text": (istem or GEMINI_ISTEM) + (GEMINI_KISA_EK if kisa_deneme else "")}]}],
             "generationConfig": {
                 "temperature": 0,
                 "maxOutputTokens": 32768,
@@ -326,7 +337,17 @@ def gemini_transkript(video_url, istem=None, sema=None, fps=0.1):
             if sema is not None:
                 j["transkript"] = tr
                 return j, "gemini:" + model, bitis
-            return tr, "tr", "gemini:" + model, j.get("ozet") or [], j.get("bahsedilen_hisseler") or [], bitis
+            donus = (tr, "tr", "gemini:" + model, j.get("ozet") or [], j.get("bahsedilen_hisseler") or [], bitis)
+            if min_karakter and len(tr) < min_karakter:
+                if en_iyi is None or len(tr) > en_iyi[0]:
+                    en_iyi = (len(tr), donus)
+                if kisa_deneme < KISA_YENIDEN_DENEME:
+                    kisa_deneme += 1
+                    log("Gemini %s kisa yanit (%d < %d); siradaki model denenecek (%d/%d)"
+                        % (model, len(tr), min_karakter, kisa_deneme, KISA_YENIDEN_DENEME))
+                    continue
+                return en_iyi[1]
+            return donus
         except urllib.error.HTTPError as e:
             son_hata = _hata_metni(e)
             log("Gemini %s hata: %s" % (model, son_hata))
@@ -336,6 +357,8 @@ def gemini_transkript(video_url, istem=None, sema=None, fps=0.1):
         except Exception as e:
             son_hata = _hata_metni(e)
             log("Gemini %s hata: %s" % (model, son_hata))
+    if en_iyi is not None:
+        return en_iyi[1]  # v2.4: hic yeterli yanit yok; en uzun kisa yaniti dondur (main kisa sayar)
     if TUKENEN and all(m in TUKENEN for m in gemini_modelleri(anahtar)):
         raise RuntimeError("Gemini basarisiz: HTTP 429 tum modellerin kotasi doldu (%s)" % ", ".join(sorted(TUKENEN)))
     raise RuntimeError("Gemini basarisiz: %s" % son_hata)
@@ -407,7 +430,7 @@ def main():
     else:
         hatalar = []
         try:
-            transkript, dil, kaynak, ozet, hisseler, bitis = gemini_transkript(en_yeni["url"])
+            transkript, dil, kaynak, ozet, hisseler, bitis = gemini_transkript(en_yeni["url"], min_karakter=MIN_TRANSKRIPT)
             if len(transkript) < MIN_TRANSKRIPT:
                 hatalar.append("gemini kisa/bos (%d)" % len(transkript))
                 transkript = ""
