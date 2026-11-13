@@ -277,18 +277,18 @@
         "alinan_yorum": 30
       },
       {
+        "baslik": "TCMB Enflasyon Raporu ve MSCI Karari Sonrasi Borsada Hisseler Icin Yeni Yol Haritasi",
+        "kanal": "KIDEMLİ ANALİST",
+        "kaynak": "arama",
+        "video_id": "oeKQVIxRKv0",
+        "alinan_yorum": 30
+      },
+      {
         "baslik": "Ahmet Mergen ile Hisse Teknik Analizleri | Borsa Teknik",
         "kanal": "EKOTÜRK TV",
         "kaynak": "arama",
         "video_id": "74bGUyBYd0g",
         "alinan_yorum": 29
-      },
-      {
-        "baslik": "TCMB Enflasyon Raporu ve MSCI Karari Sonrasi Borsada Hisseler Icin Yeni Yol Haritasi",
-        "kanal": "KIDEMLİ ANALİST",
-        "kaynak": "arama",
-        "video_id": "oeKQVIxRKv0",
-        "alinan_yorum": 27
       },
       {
         "baslik": "Bilançoları Güzel Gelen 5 Hisse Analizi!",
@@ -319,7 +319,7 @@
         "alinan_yorum": 19
       }
     ],
-    "yorum_sayisi": 1770,
+    "yorum_sayisi": 1773,
     "kod_sayim": {
       "ASTOR": {
         "yorum": 11,
@@ -401,6 +401,14 @@
         ],
         "video": 1
       },
+      "ANHYT": {
+        "yorum": 2,
+        "ornekler": [
+          "13-14 aydır çağkan hocamın hemen hemen her videosunu 2-3 kez tekrarlayarak izliyorum. Kendime bir portföy yaptım. Umarım yorumumu görüp portföyümü analiz eder 😊",
+          "GWIND, ANSGR, ANHYT. Teşekkürler."
+        ],
+        "video": 2
+      },
       "ENKAI": {
         "yorum": 2,
         "ornekler": [
@@ -414,14 +422,6 @@
         "ornekler": [
           "13-14 aydır çağkan hocamın hemen hemen her videosunu 2-3 kez tekrarlayarak izliyorum. Kendime bir portföy yaptım. Umarım yorumumu görüp portföyümü analiz eder 😊",
           "Zirvede satıp enflasyon döneminde mevduattan faydalanıp faizler düştüğünde hisseleri dipten toplayamazsan enflasyona yenilirsin. Yâni 0,30 pd/dd orana gelmişken"
-        ],
-        "video": 2
-      },
-      "ANHYT": {
-        "yorum": 2,
-        "ornekler": [
-          "13-14 aydır çağkan hocamın hemen hemen her videosunu 2-3 kez tekrarlayarak izliyorum. Kendime bir portföy yaptım. Umarım yorumumu görüp portföyümü analiz eder 😊",
-          "GWIND, ANSGR, ANHYT. Teşekkürler."
         ],
         "video": 2
       },
@@ -484,20 +484,6 @@
         ],
         "video": 1
       },
-      "PGSUS": {
-        "yorum": 1,
-        "ornekler": [
-          "13-14 aydır çağkan hocamın hemen hemen her videosunu 2-3 kez tekrarlayarak izliyorum. Kendime bir portföy yaptım. Umarım yorumumu görüp portföyümü analiz eder 😊"
-        ],
-        "video": 1
-      },
-      "MPARK": {
-        "yorum": 1,
-        "ornekler": [
-          "13-14 aydır çağkan hocamın hemen hemen her videosunu 2-3 kez tekrarlayarak izliyorum. Kendime bir portföy yaptım. Umarım yorumumu görüp portföyümü analiz eder 😊"
-        ],
-        "video": 1
-      },
       "TRGYO": {
         "yorum": 1,
         "ornekler": [
@@ -512,14 +498,28 @@
         ],
         "video": 1
       },
-      "MEGMT": {
+      "MPARK": {
+        "yorum": 1,
+        "ornekler": [
+          "13-14 aydır çağkan hocamın hemen hemen her videosunu 2-3 kez tekrarlayarak izliyorum. Kendime bir portföy yaptım. Umarım yorumumu görüp portföyümü analiz eder 😊"
+        ],
+        "video": 1
+      },
+      "PGSUS": {
+        "yorum": 1,
+        "ornekler": [
+          "13-14 aydır çağkan hocamın hemen hemen her videosunu 2-3 kez tekrarlayarak izliyorum. Kendime bir portföy yaptım. Umarım yorumumu görüp portföyümü analiz eder 😊"
+        ],
+        "video": 1
+      },
+      "KBORU": {
         "yorum": 1,
         "ornekler": [
           "Hocam onceden bahsettiğiniz gelen bilancolardan kboru,klkim ,tatgd ve ekstra dan abd hikayesi de olan megmt den bahsedebilirmisiniz rica etsem?Çok değerli anali"
         ],
         "video": 1
       },
-      "TATGD": {
+      "MEGMT": {
         "yorum": 1,
         "ornekler": [
           "Hocam onceden bahsettiğiniz gelen bilancolardan kboru,klkim ,tatgd ve ekstra dan abd hikayesi de olan megmt den bahsedebilirmisiniz rica etsem?Çok değerli anali"
@@ -533,7 +533,7 @@
         ],
         "video": 1
       },
-      "KBORU": {
+      "TATGD": {
         "yorum": 1,
         "ornekler": [
           "Hocam onceden bahsettiğiniz gelen bilancolardan kboru,klkim ,tatgd ve ekstra dan abd hikayesi de olan megmt den bahsedebilirmisiniz rica etsem?Çok değerli anali"
@@ -582,14 +582,14 @@
         ],
         "video": 1
       },
-      "ASELS": {
+      "GARAN": {
         "yorum": 1,
         "ornekler": [
           "Zirvede satıp enflasyon döneminde mevduattan faydalanıp faizler düştüğünde hisseleri dipten toplayamazsan enflasyona yenilirsin. Yâni 0,30 pd/dd orana gelmişken"
         ],
         "video": 1
       },
-      "GARAN": {
+      "ASELS": {
         "yorum": 1,
         "ornekler": [
           "Zirvede satıp enflasyon döneminde mevduattan faydalanıp faizler düştüğünde hisseleri dipten toplayamazsan enflasyona yenilirsin. Yâni 0,30 pd/dd orana gelmişken"
@@ -645,14 +645,14 @@
         ],
         "video": 1
       },
-      "PEKGY": {
+      "LYDHO": {
         "yorum": 1,
         "ornekler": [
           "SAHOL konusunda tamamen haklısınız. MSCI endekslerinden tamamen atılan 18 hisseden 3 tanesi bugün düşüşle, 15 tanesi yükselişle kapatmıştır. Yükselişle kapanan "
         ],
         "video": 1
       },
-      "PASEU": {
+      "ALKLC": {
         "yorum": 1,
         "ornekler": [
           "SAHOL konusunda tamamen haklısınız. MSCI endekslerinden tamamen atılan 18 hisseden 3 tanesi bugün düşüşle, 15 tanesi yükselişle kapatmıştır. Yükselişle kapanan "
@@ -666,27 +666,6 @@
         ],
         "video": 1
       },
-      "IEYHO": {
-        "yorum": 1,
-        "ornekler": [
-          "SAHOL konusunda tamamen haklısınız. MSCI endekslerinden tamamen atılan 18 hisseden 3 tanesi bugün düşüşle, 15 tanesi yükselişle kapatmıştır. Yükselişle kapanan "
-        ],
-        "video": 1
-      },
-      "TEHOL": {
-        "yorum": 1,
-        "ornekler": [
-          "SAHOL konusunda tamamen haklısınız. MSCI endekslerinden tamamen atılan 18 hisseden 3 tanesi bugün düşüşle, 15 tanesi yükselişle kapatmıştır. Yükselişle kapanan "
-        ],
-        "video": 1
-      },
-      "LYDHO": {
-        "yorum": 1,
-        "ornekler": [
-          "SAHOL konusunda tamamen haklısınız. MSCI endekslerinden tamamen atılan 18 hisseden 3 tanesi bugün düşüşle, 15 tanesi yükselişle kapatmıştır. Yükselişle kapanan "
-        ],
-        "video": 1
-      },
       "ODINE": {
         "yorum": 1,
         "ornekler": [
@@ -694,7 +673,28 @@
         ],
         "video": 1
       },
-      "ALKLC": {
+      "PEKGY": {
+        "yorum": 1,
+        "ornekler": [
+          "SAHOL konusunda tamamen haklısınız. MSCI endekslerinden tamamen atılan 18 hisseden 3 tanesi bugün düşüşle, 15 tanesi yükselişle kapatmıştır. Yükselişle kapanan "
+        ],
+        "video": 1
+      },
+      "IEYHO": {
+        "yorum": 1,
+        "ornekler": [
+          "SAHOL konusunda tamamen haklısınız. MSCI endekslerinden tamamen atılan 18 hisseden 3 tanesi bugün düşüşle, 15 tanesi yükselişle kapatmıştır. Yükselişle kapanan "
+        ],
+        "video": 1
+      },
+      "PASEU": {
+        "yorum": 1,
+        "ornekler": [
+          "SAHOL konusunda tamamen haklısınız. MSCI endekslerinden tamamen atılan 18 hisseden 3 tanesi bugün düşüşle, 15 tanesi yükselişle kapatmıştır. Yükselişle kapanan "
+        ],
+        "video": 1
+      },
+      "TEHOL": {
         "yorum": 1,
         "ornekler": [
           "SAHOL konusunda tamamen haklısınız. MSCI endekslerinden tamamen atılan 18 hisseden 3 tanesi bugün düşüşle, 15 tanesi yükselişle kapatmıştır. Yükselişle kapanan "
@@ -974,9 +974,9 @@
       "TBORG": 2,
       "TRCAS": 2,
       "ARSAN": 2,
+      "ANHYT": 2,
       "ENKAI": 2,
       "TUPRS": 2,
-      "ANHYT": 2,
       "THYAO": 2,
       "ARASE": 2,
       "RGYAS": 2,
@@ -985,22 +985,22 @@
       "ONCSM": 1,
       "ALKIM": 1,
       "MGROS": 1,
-      "PGSUS": 1,
-      "MPARK": 1,
       "TRGYO": 1,
       "AEFES": 1,
-      "MEGMT": 1,
-      "TATGD": 1,
-      "KLKIM": 1,
+      "MPARK": 1,
+      "PGSUS": 1,
       "KBORU": 1,
+      "MEGMT": 1,
+      "KLKIM": 1,
+      "TATGD": 1,
       "FROTO": 1,
       "ENTRA": 1,
       "CCOLA": 1,
       "FORTE": 1,
       "ISMEN": 1,
       "AKBNK": 1,
-      "ASELS": 1,
       "GARAN": 1,
+      "ASELS": 1,
       "ULKER": 1,
       "TAVHL": 1,
       "SAYAS": 1,
@@ -1008,14 +1008,14 @@
       "TSKB": 1,
       "ALTNY": 1,
       "GUBRF": 1,
-      "PEKGY": 1,
-      "PASEU": 1,
-      "MAGEN": 1,
-      "IEYHO": 1,
-      "TEHOL": 1,
       "LYDHO": 1,
-      "ODINE": 1,
       "ALKLC": 1,
+      "MAGEN": 1,
+      "ODINE": 1,
+      "PEKGY": 1,
+      "IEYHO": 1,
+      "PASEU": 1,
+      "TEHOL": 1,
       "SARAE": 1,
       "GLRMK": 1,
       "MEPET": 1,
@@ -1405,7 +1405,7 @@
     }
   },
   "surum": "1.3",
-  "uretim_zamani_utc": "2026-11-13T07:20:33.262726+00:00",
+  "uretim_zamani_utc": "2026-11-13T07:29:03.005389+00:00",
   "denemeler": [
     "Forum taramasi gemini-3.5-flash-lite hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog",
     "Forum taramasi gemini-3.8-flash hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog"
