@@ -56,6 +56,17 @@ def macd(kapanislar):
             "yon": "pozitif" if m[-1] > s[-1] else "negatif"}
 
 
+def piyasa_durumu(meta, simdi=None):
+    """Chart API marketState vermiyor: currentTradingPeriod.regular araligina gore REGULAR/KAPALI."""
+    if meta.get("marketState"):
+        return meta["marketState"]
+    reg = (meta.get("currentTradingPeriod") or {}).get("regular") or {}
+    simdi = simdi if simdi is not None else time.time()
+    if reg.get("start") and reg.get("end"):
+        return "REGULAR" if reg["start"] <= simdi <= reg["end"] else "KAPALI"
+    return ""
+
+
 def ozet(sembol, d):
     r = d["chart"]["result"][0]
     meta = r.get("meta") or {}
@@ -85,7 +96,7 @@ def ozet(sembol, d):
         "zirveye_uzaklik_yuzde": round((son / max(yuksek) - 1) * 100, 1) if yuksek else None,
         "rsi14": rsi(kap),
         "macd": macd(kap),
-        "piyasa_durumu": meta.get("marketState") or "",
+        "piyasa_durumu": piyasa_durumu(meta),
     }
 
 

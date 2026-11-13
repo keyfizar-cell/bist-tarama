@@ -31,5 +31,13 @@ class TestAbdFiyat(unittest.TestCase):
         self.assertAlmostEqual(o["gunluk_yuzde"], 1.45, places=2)
 
 
+class TestPiyasa(unittest.TestCase):
+    def test_durum(self):
+        m = {"currentTradingPeriod": {"regular": {"start": 100, "end": 200}}}
+        self.assertEqual(a.piyasa_durumu(m, 150), "REGULAR")
+        self.assertEqual(a.piyasa_durumu(m, 250), "KAPALI")
+        self.assertEqual(a.piyasa_durumu({}, 1), "")
+
+
 if __name__ == "__main__":
     unittest.main()
