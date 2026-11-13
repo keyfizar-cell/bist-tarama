@@ -1,12 +1,12 @@
 {
-  "uretim_zamani_utc": "2026-11-12T15:21:47.014667+00:00",
+  "uretim_zamani_utc": "2026-11-13T07:14:04.769653+00:00",
   "kanal": "Emir Bozkurt | Stratejik Yatirim",
   "channel_id": "UChiWzAwOe7J67dd5PmmUnnA",
-  "video_liste_kaynagi": "rss_kanal",
+  "video_liste_kaynagi": "youtube_data_api",
   "en_yeni_video": {
     "video_id": "XBSj569TEyQ",
     "baslik": "2026/3Ç Bilançoları Bitti: 3 Ay Takip Edeceğim 20 Hisse",
-    "yayin_tarihi": "2026-11-10T17:13:49+00:00",
+    "yayin_tarihi": "2026-11-10T17:13:49Z",
     "url": "https://www.youtube.com/watch?v=XBSj569TEyQ",
     "aciklama": "2026'nın üçüncü çeyrek bilanço dönemi sona erdi. 421 şirketin tamamını 5 faktörlü BIST Gelişmiş Modelimden yeniden geçirdim; piyasa değeri 100 milyon doların (≈5 milyar TL) üstündeki en yüksek skorlu 20 hisseyi bu videoda tek tek paylaşıyorum. Önümüzdeki 3 ay bu listeyi takip edeceğim.\n\nVideoda neler var?\n\n• Modelin 5 faktörü: Büyüme, Nakit Kalitesi, Değerleme, Borç, Momentum\n• Enflasyon muhasebesinin (TMS 29) etkisini nasıl arındırıyorum, konsolidasyon etkisini nasıl ayıklıyorum\n• 2026/09 bilançolarıyla ilk 20 hisse ve her faktörün lideri\n• Enflasyon muhasebesi dahil ve arındırılmış sıralama arasındaki farklar\n• 2026/06'ya göre sıralamada en çok yükselen ve gerileyen şirketler\n• Piyasa değeri küçük ama skoru yüksek şirketler\n• Takip listemdeki 7 hisse nerede?\n\n\nİlk 20'deki hisseler: TUPRS, INDES, YEOTK, FORTE, ARDYZ, ORGE, EGPRO, AHGAZ, ARASE, BASGZ, NTGAZ, NETCD, EGGUB, CLEBI, CCOLA, TCKRC, TRENJ, BESLR, LOGO, TBORG\nTakip listesi: GRSEL, ENJSA, TAVHL, BRSAN, MPARK, KRDMD, CVKMD\n\n📊 Katıl üyelerine özel: 421 şirketin güncel skorlarını, kendi ağırlıklarınla sıralama yapabileceğin Excel aracını ve 2026/06 – 2026/09 karşılaştırmasını üyelik sekmesinden indirebilirsin.\n\n   / @stratejik.yatirim  \n\n\n⚠️ Bu video eğitim ve bilgilendirme amaçlıdır; yatırım tavsiyesi değildir. Burada yer alan bilgi, yorum ve sıralamalar yatırım danışmanlığı kapsamında değildir. Model skorları geçmiş finansal verilere dayanır ve gelecekteki getiriyi garanti etmez. Yatırım kararlarınızı kendi risk ve getiri tercihlerinize göre vermelisiniz.\n\n#Borsaİstanbul #Hisse #ekonomi #nasdaq #bist100 #hisseanalizi #hissesenedi #borsa #dolar #temettü #yatırım #finans #altın #sp500",
     "transkript_dil": "tr",
@@ -27,48 +27,60 @@
   "son_videolar": [
     {
       "baslik": "2026/3Ç Bilançoları Bitti: 3 Ay Takip Edeceğim 20 Hisse",
-      "yayin_tarihi": "2026-11-10T17:13:49+00:00",
+      "yayin_tarihi": "2026-11-10T17:13:49Z",
       "url": "https://www.youtube.com/watch?v=XBSj569TEyQ"
     },
     {
       "baslik": "2026/3Ç Bilançoları Bitti: 3 Ay Takip Edeceğim 20 Hisse",
-      "yayin_tarihi": "2026-11-10T16:54:20+00:00",
+      "yayin_tarihi": "2026-11-10T16:54:20Z",
       "url": "https://www.youtube.com/watch?v=wT6LR3P-0sg"
     },
     {
       "baslik": "Tüpraş’ta Kâr Geri mi Dönüyor? Fonet’te Neler Değişti?",
-      "yayin_tarihi": "2026-11-10T04:30:18+00:00",
+      "yayin_tarihi": "2026-11-10T04:30:18Z",
       "url": "https://www.youtube.com/watch?v=KaedcYlgwds"
     },
     {
       "baslik": "Borusan Boru (BRSAN) Bilanço Analizi | ABD Tarafı Güçleniyor",
-      "yayin_tarihi": "2026-11-09T19:27:13+00:00",
+      "yayin_tarihi": "2026-11-09T19:27:13Z",
       "url": "https://www.youtube.com/watch?v=7XZWGotEaEw"
     },
     {
       "baslik": "Satışlar 3 Kat Arttı, Kâr Düştü! 4 Bilançoda Gizli Detay | AHGAZ, FORTE, SAYAS, DESA",
-      "yayin_tarihi": "2026-11-09T19:11:07+00:00",
+      "yayin_tarihi": "2026-11-09T19:11:07Z",
       "url": "https://www.youtube.com/watch?v=-KQXckmvpEQ"
     },
     {
       "baslik": "Satışlar 3 Kat Arttı, Kâr Düştü! 4 Bilançoda Gizli Detay | AHGAZ, FORTE, SAYAS, DESA",
-      "yayin_tarihi": "2026-11-08T16:56:40+00:00",
+      "yayin_tarihi": "2026-11-08T16:56:40Z",
       "url": "https://www.youtube.com/watch?v=_PAmUHIbVyk"
     },
     {
       "baslik": "Borusan Boru (BRSAN) Bilanço Analizi | ABD Tarafı Güçleniyor",
-      "yayin_tarihi": "2026-11-07T14:57:29+00:00",
+      "yayin_tarihi": "2026-11-07T14:57:29Z",
       "url": "https://www.youtube.com/watch?v=znl7qT4CDls"
     },
     {
       "baslik": "Tüpraş’ta Kâr Geri mi Dönüyor? Fonet’te Neler Değişti?",
-      "yayin_tarihi": "2026-11-06T17:54:10+00:00",
+      "yayin_tarihi": "2026-11-06T17:54:10Z",
       "url": "https://www.youtube.com/watch?v=yGbCybs9Lo0"
     }
   ],
   "hata": "gemini kisa/bos (437)",
-  "surum": "2.3",
+  "surum": "2.4",
   "denemeler": [
-    "Gemini gemini-3-flash-preview: 437 karakter, bitis=STOP"
+    "RSS 1/3 basarisiz (channel_id=UChiWzAwOe7J67dd5PmmUnnA): HTTP 404 <!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15",
+    "RSS 2/3 basarisiz (channel_id=UChiWzAwOe7J67dd5PmmUnnA): HTTP 404 <!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15",
+    "RSS 3/3 basarisiz (channel_id=UChiWzAwOe7J67dd5PmmUnnA): HTTP 404 <!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15",
+    "RSS 1/1 basarisiz (playlist_id=UUhiWzAwOe7J67dd5PmmUnnA): HTTP 500 <!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 500 (Server Error)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{fon",
+    "Gemini gemini-3-flash-preview: 437 karakter, bitis=STOP",
+    "Gemini gemini-3-flash-preview kisa yanit (437 < 1000); siradaki model denenecek (1/2)",
+    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-2.5-flash hata: HTTP 404 {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.8-flash for the latest features and improvements. We recommend you to use the Interactions API",
+    "Gemini gemini-omni-flash-preview gunluk kota doldu; siradaki model denenecek",
+    "Gemini gemini-omni-1.2-flash gunluk kota doldu; siradaki model denenecek",
+    "Gemini gemini-flash-lite-latest: 434 karakter, bitis=STOP",
+    "Gemini gemini-flash-lite-latest kisa yanit (434 < 1000); siradaki model denenecek (2/2)",
+    "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n"
   ]
 }

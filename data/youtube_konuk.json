@@ -226,12 +226,12 @@
           "islendi_utc": "2026-11-07T17:16:04.351209+00:00"
         }
       ],
-      "son_arama_utc": "2026-11-12T15:21:47.509624+00:00",
-      "aday_sayisi": 3
+      "son_arama_utc": "2026-11-13T07:14:05.159756+00:00",
+      "aday_sayisi": 2
     }
   },
   "hata": null,
   "surum": "1.0",
-  "uretim_zamani_utc": "2026-11-12T15:21:47.509634+00:00",
+  "uretim_zamani_utc": "2026-11-13T07:14:05.159764+00:00",
   "denemeler": []
 }
