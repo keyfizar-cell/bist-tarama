@@ -1,5 +1,5 @@
 {
-  "uretim_zamani_utc": "2026-11-13T07:26:20.192090+00:00",
+  "uretim_zamani_utc": "2026-11-13T07:43:02.051128+00:00",
   "kanal": "Emir Bozkurt | Stratejik Yatirim",
   "channel_id": "UChiWzAwOe7J67dd5PmmUnnA",
   "video_liste_kaynagi": "youtube_data_api",
@@ -12,7 +12,9 @@
     "transkript_dil": "tr",
     "transkript_kaynagi": "gemini:gemini-3-flash-preview",
     "transkript_kesildi": false,
-    "transkript": "",
+    "sure_sn": 26,
+    "kisa_video": true,
+    "transkript": "2024 yılı 3. çeyrek bilanço dönemi sona erdi. Kapsama dahil olan 421 şirketin tamamını 5 faktörlü gelişmiş model Excel'imden geçirdim ve piyasa değeri 100 milyon doların üzerindeki olan ilk 20 şirketi birazdan sizlerle birlikte inceleyeceğiz. Özellikle bir önceki bilanço dönemine göre sıralamasında ciddi değişiklik olan şirketler var. Olumlu ya da olumsuz yönde de ilk 10 şirketini de size birazdan göstereceğim. Hazırsanız başlayalım.",
     "ozet": [
       "2024 yılı üçüncü çeyrek bilanço döneminin tamamlandığı açıklandı.",
       "Analiz kapsamına 421 farklı şirketin dahil edildiği belirtildi.",
@@ -23,8 +25,8 @@
     ],
     "bahsedilen_hisseler": []
   },
-  "transkript_var": false,
-  "son_basarili_utc": "2026-11-09T15:22:20.052777+00:00",
+  "transkript_var": true,
+  "son_basarili_utc": "2026-11-13T07:43:02.051148+00:00",
   "son_videolar": [
     {
       "baslik": "2026/3Ç Bilançoları Bitti: 3 Ay Takip Edeceğim 20 Hisse",
@@ -67,21 +69,15 @@
       "url": "https://www.youtube.com/watch?v=yGbCybs9Lo0"
     }
   ],
-  "hata": "gemini kisa/bos (437)",
-  "surum": "2.5",
+  "hata": null,
+  "surum": "2.6",
   "denemeler": [
     "RSS 1/3 basarisiz (channel_id=UChiWzAwOe7J67dd5PmmUnnA): HTTP 404 <!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15",
     "RSS 2/3 basarisiz (channel_id=UChiWzAwOe7J67dd5PmmUnnA): HTTP 404 <!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15",
     "RSS 3/3 basarisiz (channel_id=UChiWzAwOe7J67dd5PmmUnnA): HTTP 404 <!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:15",
     "RSS 1/1 basarisiz (playlist_id=UUhiWzAwOe7J67dd5PmmUnnA): HTTP 404 <!DOCTYPE html>\n<html lang=en>\n  <meta charset=utf-8>\n  <meta name=viewport content=\"initial-scale=1, minimum-scale=1, width=device-width\">\n  <title>Error 404 (Not Found)!!1</title>\n  <style>\n    *{margin:0;padding:0}html,code{font:1",
+    "Kisa video (26 sn): transkript esigi 208 karakter",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview: 437 karakter, bitis=STOP",
-    "Gemini gemini-3-flash-preview kisa yanit (437 < 1000); siradaki model denenecek (1/2)",
-    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-omni-flash-preview gunluk kota doldu; siradaki model denenecek",
-    "Gemini gemini-omni-1.2-flash gunluk kota doldu; siradaki model denenecek",
-    "Gemini gemini-flash-lite-latest: 434 karakter, bitis=STOP",
-    "Gemini gemini-flash-lite-latest kisa yanit (434 < 1000); siradaki model denenecek (2/2)",
-    "Gemini gemini-3.5-flash-lite: 435 karakter, bitis=STOP"
+    "Gemini gemini-3-flash-preview: 437 karakter, bitis=STOP"
   ]
 }
