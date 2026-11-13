@@ -25,7 +25,7 @@ KISISEL_DESENLER = [
 KURALLAR = {
     "sabah_brifingi.md": {
         "min": 11000,
-        "zorunlu": ["TATİL KONTROLÜ", "🌅 Sabah Portföy Brifingi", "mcp__Gmail__send_message",
+        "zorunlu": ["TATİL KONTROLÜ", "🌅 Sabah Portföy Brifingi", "mcp__Gmail__send_message", "YENİ GİRENLER",
                     "{E_POSTA}", "Yatırım tavsiyesi değildir", "{PORTFOY_DOSYA_ID}"],
         "ek_yasak": True,
     },
