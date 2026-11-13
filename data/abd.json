@@ -1,0 +1,92 @@
+{
+ "surum": "1.0",
+ "uretim_zamani_utc": "2026-11-13T18:21:20.771601+00:00",
+ "kaynak": "Yahoo Finance chart API",
+ "veriler": {
+  "NVO": {
+   "sembol": "NVO",
+   "ad": "Novo Nordisk A/S",
+   "para": "USD",
+   "son": 41.41,
+   "onceki_kapanis": 40.65,
+   "gunluk_yuzde": 1.87,
+   "son_mum_tarihi": "2026-11-13",
+   "h52_zirve": 64.16,
+   "h52_dip": 35.12,
+   "zirveye_uzaklik_yuzde": -35.5,
+   "rsi14": 57.0,
+   "macd": {
+    "macd": 0.368,
+    "sinyal": 0.145,
+    "histogram": 0.223,
+    "yon": "pozitif"
+   },
+   "piyasa_durumu": "",
+   "guncelleme_utc": "2026-11-13T18:21:20.771601+00:00"
+  },
+  "SPY": {
+   "sembol": "SPY",
+   "ad": "State Street SPDR S&P 500 ETF Trust",
+   "para": "USD",
+   "son": 751.77,
+   "onceki_kapanis": 757.12,
+   "gunluk_yuzde": -0.71,
+   "son_mum_tarihi": "2026-11-13",
+   "h52_zirve": 781.62,
+   "h52_dip": 629.28,
+   "zirveye_uzaklik_yuzde": -3.8,
+   "rsi14": 45.8,
+   "macd": {
+    "macd": -4.33,
+    "sinyal": -4.133,
+    "histogram": -0.197,
+    "yon": "negatif"
+   },
+   "piyasa_durumu": "",
+   "guncelleme_utc": "2026-11-13T18:21:20.771601+00:00"
+  },
+  "QQQ": {
+   "sembol": "QQQ",
+   "ad": "Invesco QQQ Trust",
+   "para": "USD",
+   "son": 676.98,
+   "onceki_kapanis": 688.17,
+   "gunluk_yuzde": -1.63,
+   "son_mum_tarihi": "2026-11-13",
+   "h52_zirve": 762.86,
+   "h52_dip": 555.6,
+   "zirveye_uzaklik_yuzde": -11.3,
+   "rsi14": 42.0,
+   "macd": {
+    "macd": -13.148,
+    "sinyal": -12.876,
+    "histogram": -0.272,
+    "yon": "negatif"
+   },
+   "piyasa_durumu": "",
+   "guncelleme_utc": "2026-11-13T18:21:20.771601+00:00"
+  },
+  "DIA": {
+   "sembol": "DIA",
+   "ad": "State Street SPDR Dow Jones Industrial Average ETF Trust",
+   "para": "USD",
+   "son": 521.92,
+   "onceki_kapanis": 522.47,
+   "gunluk_yuzde": -0.11,
+   "son_mum_tarihi": "2026-11-13",
+   "h52_zirve": 546.75,
+   "h52_dip": 450.44,
+   "zirveye_uzaklik_yuzde": -4.5,
+   "rsi14": 51.0,
+   "macd": {
+    "macd": 0.589,
+    "sinyal": 0.481,
+    "histogram": 0.108,
+    "yon": "pozitif"
+   },
+   "piyasa_durumu": "",
+   "guncelleme_utc": "2026-11-13T18:21:20.771601+00:00"
+  }
+ },
+ "hatalar": {}
+}
