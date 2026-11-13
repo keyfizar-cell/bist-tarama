@@ -1,0 +1,60 @@
+name: YouTube Transkript Deneyi
+
+# v1.0 (2026-11-13): Alpay karari — transkript sorunu cozulene kadar her gun alternatif yollar denenir
+# (Gemini parcali, yt-dlp altyazi/ses, Cin modelleri Qwen/GLM/SiliconFlow/Kimi, DeepSeek kontrolu).
+# Ana hatti degistirmez; yalniz data/youtube_deney.json yazar.
+# Zaman: her gun 10:13 TR (07:13 UTC) — Gemini gunluk kotasi 08:00 UTC'de yenilenir; onceki gunun
+# artan kotasi kullanilir, ana hattin kotasina dokunulmaz.
+# Secret'lar (anahtari olmayan deney "anahtar_yok" diye kaydedilir): GOOGLE_API_KEY, YOUTUBE_API_KEY,
+# DASHSCOPE_API_KEY, ZAI_API_KEY, SILICONFLOW_API_KEY, MOONSHOT_API_KEY, DEEPSEEK_API_KEY.
+on:
+  workflow_dispatch:
+    inputs:
+      video_url:
+        description: "Denenecek video (bos = Emir Bozkurt'un en yeni videosu)"
+        required: false
+  schedule:
+    - cron: "13 7 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: youtube-deney
+  cancel-in-progress: false
+
+jobs:
+  deney:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: yt-dlp kur (deney icin; basarisiz olursa deney "hata" yazar)
+        run: pip install -q -U yt-dlp || true
+      - name: Deneyleri calistir
+        run: python youtube_deney.py
+        env:
+          VIDEO_URL: ${{ github.event.inputs.video_url }}
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+          DASHSCOPE_API_KEY: ${{ secrets.DASHSCOPE_API_KEY }}
+          ZAI_API_KEY: ${{ secrets.ZAI_API_KEY }}
+          SILICONFLOW_API_KEY: ${{ secrets.SILICONFLOW_API_KEY }}
+          MOONSHOT_API_KEY: ${{ secrets.MOONSHOT_API_KEY }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      - name: JSON'u commit et
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/youtube_deney.json || true
+          if git diff --cached --quiet; then echo "Degisiklik yok."; exit 0; fi
+          git commit -m "youtube deney sonucu [skip ci]" || true
+          for i in 1 2 3; do
+            git pull --rebase --autostash origin main || true
+            if git push origin HEAD:main; then echo "Push basarili."; break; fi
+            sleep 5
+          done
