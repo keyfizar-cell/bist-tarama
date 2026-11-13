@@ -1,6 +1,6 @@
 {
  "surum": "1.1",
- "guncelleme": "2026-11-12",
+ "guncelleme": "2026-11-13",
  "sepetler": [
   {
    "hafta": "2026-H46",
@@ -14,8 +14,8 @@
      "skor": 89.6,
      "sira": 1,
      "agirlik_yuzde": 20.0,
-     "guncel": 357.0,
-     "getiri_yuzde": 0.71
+     "guncel": 359.0,
+     "getiri_yuzde": 1.27
     },
     {
      "kod": "ARDYZ",
@@ -24,8 +24,8 @@
      "skor": 77.9,
      "sira": 4,
      "agirlik_yuzde": 20.0,
-     "guncel": 53.25,
-     "getiri_yuzde": -0.28
+     "guncel": 52.6,
+     "getiri_yuzde": -1.5
     },
     {
      "kod": "NTGAZ",
@@ -34,8 +34,8 @@
      "skor": 76.6,
      "sira": 6,
      "agirlik_yuzde": 20.0,
-     "guncel": 8.5,
-     "getiri_yuzde": 2.04
+     "guncel": 8.43,
+     "getiri_yuzde": 1.2
     },
     {
      "kod": "ATATP",
@@ -44,8 +44,8 @@
      "skor": 76.1,
      "sira": 7,
      "agirlik_yuzde": 20.0,
-     "guncel": 200.3,
-     "getiri_yuzde": -1.38
+     "guncel": 190.8,
+     "getiri_yuzde": -6.06
     },
     {
      "kod": "AHGAZ",
@@ -54,19 +54,19 @@
      "skor": 76.0,
      "sira": 8,
      "agirlik_yuzde": 20.0,
-     "guncel": 46.2,
-     "getiri_yuzde": 1.54
+     "guncel": 46.24,
+     "getiri_yuzde": 1.63
     }
    ],
-   "sepet_getiri_yuzde": 0.53,
-   "xu100_getiri_yuzde": -0.09,
-   "fark_puan": 0.62
+   "sepet_getiri_yuzde": -0.69,
+   "xu100_getiri_yuzde": 0.18,
+   "fark_puan": -0.87
   }
  ],
  "karne": {
   "sepet_sayisi": 1,
-  "endeksi_gecen": 1,
-  "ort_fark_puan": 0.62
+  "endeksi_gecen": 0,
+  "ort_fark_puan": -0.87
  },
  "not": "Örnek model sepet — eğitim/izleme amaçlı kâğıt portföy; yatırım tavsiyesi değildir."
 }
