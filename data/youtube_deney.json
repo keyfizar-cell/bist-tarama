@@ -1,0 +1,201 @@
+{
+ "surum": "1.0",
+ "uretim_zamani_utc": "2026-11-13T07:38:54.057973+00:00",
+ "video": {
+  "video_id": "XBSj569TEyQ",
+  "baslik": "2026/3Ç Bilançoları Bitti: 3 Ay Takip Edeceğim 20 Hisse",
+  "sure_sn": 26
+ },
+ "deneyler": [
+  {
+   "ad": "gemini_teshis",
+   "durum": "kisa",
+   "karakter": 437,
+   "turkce": true,
+   "sure_sn": 36.5,
+   "not": "model=gemini-3-flash-preview bitis=STOP",
+   "onizleme": "2023 yılı 3. çeyrek bilanço dönemi sona erdi. Kapsama dahil olan 421 şirketin tamamını 5 faktörlü gelişmiş model Excel'imden geçirdim ve piyasa değeri 100 milyon doların üzerindeki olan ilk 20 şirketi birazdan sizlerle birlikte inceleyeceğiz. Özellikle bir önceki bilanço dönemine göre sıralamasında ciddi değişiklik olan şirketler var. Olumlu ya da olumsuz yönde de ilk 10 şirketini de size birazdan"
+  },
+  {
+   "ad": "gemini_parca",
+   "durum": "kisa",
+   "karakter": 437,
+   "turkce": true,
+   "sure_sn": 61.0,
+   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem",
+   "onizleme": "2023 yılı 3. çeyrek bilanço dönemi sona erdi. Kapsama dahil olan 421 şirketin tamamını 5 faktörlü gelişmiş model Excel'imden geçirdim ve piyasa değeri 100 milyon doların üzerindeki olan ilk 20 şirketi birazdan sizlerle birlikte inceleyeceğiz. Özellikle bir önceki bilanço dönemine göre sıralamasında ciddi değişiklik olan şirketler var. Olumlu ya da olumsuz yönde de ilk 10 şirketini de size birazdan",
+   "parcalar": [
+    {
+     "bas": 0,
+     "bit": 26,
+     "model": "gemini-3-flash-preview",
+     "karakter": 437,
+     "bitis": "STOP"
+    }
+   ]
+  },
+  {
+   "ad": "ytdlp_altyazi",
+   "durum": "hata",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 2.2,
+   "not": "] XBSj569TEyQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "onizleme": ""
+  },
+  {
+   "ad": "ytdlp_ses",
+   "durum": "hata",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 1.3,
+   "not": "] XBSj569TEyQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "onizleme": ""
+  },
+  {
+   "ad": "qwen_url",
+   "durum": "anahtar_yok",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 0.0,
+   "not": "DASHSCOPE_API_KEY secret'i tanimli degil",
+   "onizleme": ""
+  },
+  {
+   "ad": "qwen_ses",
+   "durum": "anahtar_yok",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 0.0,
+   "not": "DASHSCOPE_API_KEY secret'i tanimli degil",
+   "onizleme": ""
+  },
+  {
+   "ad": "glm_url",
+   "durum": "anahtar_yok",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 0.0,
+   "not": "ZAI_API_KEY secret'i tanimli degil",
+   "onizleme": ""
+  },
+  {
+   "ad": "glm_ses",
+   "durum": "anahtar_yok",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 0.0,
+   "not": "ZAI_API_KEY secret'i tanimli degil",
+   "onizleme": ""
+  },
+  {
+   "ad": "siliconflow_ses",
+   "durum": "anahtar_yok",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 0.0,
+   "not": "SILICONFLOW_API_KEY secret'i tanimli degil",
+   "onizleme": ""
+  },
+  {
+   "ad": "kimi_url",
+   "durum": "anahtar_yok",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 0.0,
+   "not": "MOONSHOT_API_KEY secret'i tanimli degil",
+   "onizleme": ""
+  },
+  {
+   "ad": "deepseek",
+   "durum": "uygulanamaz",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 0.0,
+   "not": "DeepSeek API yalniz metin kabul ediyor (video/ses girdisi yok); anahtar da yok",
+   "onizleme": ""
+  }
+ ],
+ "basarili_yollar": [],
+ "gecmis": {
+  "gemini_teshis": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "kisa",
+    "karakter": 437
+   }
+  ],
+  "gemini_parca": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "kisa",
+    "karakter": 437
+   }
+  ],
+  "ytdlp_altyazi": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "hata",
+    "karakter": 0
+   }
+  ],
+  "ytdlp_ses": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "hata",
+    "karakter": 0
+   }
+  ],
+  "qwen_url": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   }
+  ],
+  "qwen_ses": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   }
+  ],
+  "glm_url": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   }
+  ],
+  "glm_ses": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   }
+  ],
+  "siliconflow_ses": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   }
+  ],
+  "kimi_url": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   }
+  ],
+  "deepseek": [
+   {
+    "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "uygulanamaz",
+    "karakter": 0
+   }
+  ]
+ },
+ "cozum_adaylari": [],
+ "hata": null
+}
