@@ -164,5 +164,16 @@ class ModelListesi(unittest.TestCase):
         yt._MODEL_ONBELLEK[:] = []
 
 
+
+class TestSureEsigi(unittest.TestCase):
+    def test_esik(self):
+        import youtube_tarama as y
+        self.assertEqual(y.transkript_esigi(None), y.MIN_TRANSKRIPT)
+        self.assertEqual(y.transkript_esigi(2700), y.MIN_TRANSKRIPT)
+        self.assertEqual(y.transkript_esigi(26), 208)
+        self.assertEqual(y.transkript_esigi(5), 100)
+        self.assertEqual(y.transkript_esigi(179), y.MIN_TRANSKRIPT)  # 179*8=1432 -> tavan
+        self.assertEqual(y.sure_iso_sn("PT26S"), 26)
+
 if __name__ == "__main__":
     unittest.main()

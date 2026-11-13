@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_tarama.py  v2.5  (2026-11-13)
+# youtube_tarama.py  v2.6  (2026-11-13)
+# v2.6: SUREYE GORE ESIK — youtube_deney.py teshisi: 10-13.11.2026'daki "~435 karakter" sorunu model hatasi
+#       DEGILDI; video (XBSj569TEyQ) Data API'ye gore 26 saniyelik bir tanitim videosuydu ve transkript tamdi.
+#       Video suresi YouTube Data API'den (YOUTUBE_API_KEY) alinir; KISA_VIDEO_SN'den kisa videolarda esik
+#       sure x KARAKTER_PER_SN'ye (en az 100) iner. en_yeni_video'ya sure_sn ve kisa_video eklenir.
 # v2.5: (1) gemini-3.8-flash tercih listesinin basinda (Google 404 mesajinin onerdigi model; 2.5-flash yeni
 #       kullanicilara kapali, listeden cikti). (2) KISA YANITTA YALNIZ TRANSKRIPT: 13.11.2026 dogrulamasinda farkli
 #       modeller ayni videoda ~435 karakterde durdu (ozet+hisse+transkript tek istekte); kisa yanittan sonraki
@@ -45,7 +49,7 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
-SURUM = "2.5"
+SURUM = "2.6"
 CHANNEL_ID = "UChiWzAwOe7J67dd5PmmUnnA"
 UPLOADS_PLAYLIST = "UU" + CHANNEL_ID[2:]
 CHANNEL_ADI = "Emir Bozkurt | Stratejik Yatirim"
@@ -55,6 +59,8 @@ RSS_DENEME_BEKLEME = [0, 10, 30]  # saniye
 HTTP_ZAMAN_ASIMI = 60
 GEMINI_ZAMAN_ASIMI = 600
 MIN_TRANSKRIPT = 1000  # bundan kisa metin "basarili" sayilmaz
+KISA_VIDEO_SN = 180  # v2.6: bundan kisa videoda esik sureye gore
+KARAKTER_PER_SN = 8  # v2.6: Turkce konusma ~12-15 krk/sn; temkinli alt sinir
 KISA_YENIDEN_DENEME = 2  # v2.4: kisa yanitta en fazla bu kadar ek model denenir (kota korunur)
 
 OUT_PATH = os.path.join("data", "youtube_emir.json")
@@ -203,6 +209,37 @@ def video_listesi():
     else:
         log("Data API atlandi: GOOGLE_API_KEY/YOUTUBE_API_KEY yok")
     return [], None
+
+
+def sure_iso_sn(s):
+    """v2.6: ISO 8601 sure (PT1H2M3S) -> saniye; cozulemezse None."""
+    m = re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$", s or "")
+    if not m:
+        return None
+    h, dk, sn = (int(x or 0) for x in m.groups())
+    return h * 3600 + dk * 60 + sn
+
+
+def video_suresi(video_id):
+    """v2.6: Data API'den video suresi (sn). Anahtar yoksa/hata olursa None (esik degismez)."""
+    anahtar = os.environ.get("YOUTUBE_API_KEY", "").strip()
+    if not anahtar or not video_id:
+        return None
+    try:
+        q = urllib.parse.urlencode({"part": "contentDetails", "id": video_id, "key": anahtar})
+        _, txt = http_get(YT_DATA_TABAN + "/videos?" + q, headers={"Accept": "application/json"})
+        items = json.loads(txt).get("items") or []
+        return sure_iso_sn(items[0]["contentDetails"]["duration"]) if items else None
+    except Exception as e:
+        log("Video suresi alinamadi: %s" % _hata_metni(e))
+        return None
+
+
+def transkript_esigi(sure_sn):
+    """v2.6: kisa videoda (< KISA_VIDEO_SN) beklenen transkript uzunlugu sureyle orantili."""
+    if sure_sn and sure_sn < KISA_VIDEO_SN:
+        return min(MIN_TRANSKRIPT, max(100, int(sure_sn * KARAKTER_PER_SN)))
+    return MIN_TRANSKRIPT
 
 
 # ── 2) TRANSKRIPT: Gemini (YouTube URL) ──
@@ -430,10 +467,14 @@ def main():
            for v in vids[:SON_VIDEO_BAGLAM]]
     en_yeni = vids[0]
     onceki_v = (onceki or {}).get("en_yeni_video") or {}
+    sure_sn = video_suresi(en_yeni["video_id"])
+    esik = transkript_esigi(sure_sn)
+    if esik < MIN_TRANSKRIPT:
+        log("Kisa video (%s sn): transkript esigi %d karakter" % (sure_sn, esik))
 
     transkript, dil, kaynak, ozet, hisseler, thata, bitis = "", None, None, [], [], None, None
     ayni_video_hazir = (onceki_v.get("video_id") == en_yeni["video_id"]
-                        and len(onceki_v.get("transkript") or "") >= MIN_TRANSKRIPT)
+                        and len(onceki_v.get("transkript") or "") >= esik)
     if ayni_video_hazir:
         # ayni video zaten yazildi: kota/istek harcama, onceki transkripti kullan
         log("Ayni video icin transkript zaten var; yeniden cekilmedi.")
@@ -445,8 +486,8 @@ def main():
     else:
         hatalar = []
         try:
-            transkript, dil, kaynak, ozet, hisseler, bitis = gemini_transkript(en_yeni["url"], min_karakter=MIN_TRANSKRIPT)
-            if len(transkript) < MIN_TRANSKRIPT:
+            transkript, dil, kaynak, ozet, hisseler, bitis = gemini_transkript(en_yeni["url"], min_karakter=esik)
+            if len(transkript) < esik:
                 hatalar.append("gemini kisa/bos (%d)" % len(transkript))
                 transkript = ""
         except Exception as e:
@@ -455,7 +496,7 @@ def main():
         if not transkript:
             thata = " | ".join(hatalar) or "transkript alinamadi"
 
-    tvar = len(transkript or "") >= MIN_TRANSKRIPT
+    tvar = len(transkript or "") >= esik
     kesildi = False
     if transkript and len(transkript) > TRANSKRIPT_MAX_KARAKTER:
         transkript = transkript[:TRANSKRIPT_MAX_KARAKTER]
@@ -476,6 +517,8 @@ def main():
             "transkript_dil": dil,
             "transkript_kaynagi": kaynak,
             "transkript_kesildi": kesildi,
+            "sure_sn": sure_sn,
+            "kisa_video": bool(sure_sn and sure_sn < KISA_VIDEO_SN),
             "transkript": transkript,
             "ozet": ozet,
             "bahsedilen_hisseler": hisseler,

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_deney.py  v1.0  (2026-11-13)
+# youtube_deney.py  v1.1  (2026-11-13)
+# v1.1: basari esigi video suresine gore (youtube_tarama.transkript_esigi); ilk calisma 26 sn'lik videoyu gosterdi.
 # YouTube transkript DENEY HATTI (Alpay karari 13.11.2026: "cozum bulana kadar ara ara deneyelim,
 # Cin modellerini atlama"). Ana hatti (youtube_tarama.py) DEGISTIRMEZ; yalniz ayni videoda farkli
 # yollari dener ve sonucu data/youtube_deney.json'a yazar. Her durumda JSON yazar, exit(0).
@@ -18,7 +19,7 @@
 #   kimi_url        : Moonshot Kimi, YouTube baglantisi video_url olarak
 #   deepseek        : DeepSeek API video/ses girdisi kabul etmez -> "uygulanamaz" (her calismada
 #                     model listesinden yeniden kontrol edilir; anahtar varsa liste cekilir)
-# Kanit standardi: Turkce ve >= MIN_TRANSKRIPT karakter. Iki ayri gunde basarili yol "cozum adayi".
+# Kanit standardi: Turkce ve >= esik karakter (uzun videoda MIN_TRANSKRIPT, kisa videoda sureyle orantili). Iki ayri gunde basarili yol "cozum adayi".
 # Kisisel veri YOK: yalniz herkese acik video kimligi/basligi, karakter sayilari, kisa onizleme.
 import base64
 import datetime
@@ -35,7 +36,7 @@ import urllib.request
 
 import youtube_tarama as yt
 
-SURUM = "1.0"
+SURUM = "1.1"
 OUT_PATH = os.path.join("data", "youtube_deney.json")
 MIN_TRANSKRIPT = yt.MIN_TRANSKRIPT
 PARCA_DK = 10
@@ -80,6 +81,9 @@ def turkce_mu(metin):
     return ozel / harf > 0.02 and len(kelimeler & sik) >= 3
 
 
+ESIK = [MIN_TRANSKRIPT]  # calistir() video suresine gore gunceller
+
+
 def sonuc(ad, durum, metin="", not_="", sure=0.0, ek=None):
     metin = metin or ""
     d = {"ad": ad, "durum": durum, "karakter": len(metin), "turkce": turkce_mu(metin),
@@ -87,7 +91,7 @@ def sonuc(ad, durum, metin="", not_="", sure=0.0, ek=None):
     if ek:
         d.update(ek)
     if durum == "deneniyor":
-        d["durum"] = "basarili" if (len(metin) >= MIN_TRANSKRIPT and d["turkce"]) else "kisa"
+        d["durum"] = "basarili" if (len(metin) >= ESIK[0] and d["turkce"]) else "kisa"
     return d
 
 
@@ -151,25 +155,8 @@ def video_sec():
     return None
 
 
-def sure_iso_sn(s):
-    m = re.match(r"PT(?:(\d+)H)?(?:(\d+)M)?(?:(\d+)S)?$", s or "")
-    if not m:
-        return None
-    h, dk, sn = (int(x or 0) for x in m.groups())
-    return h * 3600 + dk * 60 + sn
-
-
-def video_suresi(video_id):
-    k = anahtar("YOUTUBE_API_KEY")
-    if not k:
-        return None
-    try:
-        _, txt = yt.http_get("%s/videos?part=contentDetails&id=%s&key=%s" % (yt.YT_DATA_TABAN, video_id, k),
-                             headers={"Accept": "application/json"})
-        items = json.loads(txt).get("items") or []
-        return sure_iso_sn(items[0]["contentDetails"]["duration"]) if items else None
-    except Exception:
-        return None
+sure_iso_sn = yt.sure_iso_sn
+video_suresi = yt.video_suresi
 
 
 def parca_planla(sure_sn, parca_dk=PARCA_DK, en_fazla=EN_FAZLA_PARCA):
@@ -432,6 +419,7 @@ def calistir():
         return {"surum": SURUM, "uretim_zamani_utc": simdi, "hata": "video bulunamadi",
                 "deneyler": [], "gecmis": eski.get("gecmis", {}), "cozum_adaylari": eski.get("cozum_adaylari", [])}
     sure_sn = video_suresi(video["video_id"])
+    ESIK[0] = yt.transkript_esigi(sure_sn)
     deneyler = []
 
     def guvenli(fonk, *a):
@@ -468,7 +456,7 @@ def calistir():
 
     gecmis = gecmis_guncelle(eski.get("gecmis"), deneyler, simdi)
     return {"surum": SURUM, "uretim_zamani_utc": simdi,
-            "video": {"video_id": video["video_id"], "baslik": video.get("baslik", ""), "sure_sn": sure_sn},
+            "video": {"video_id": video["video_id"], "baslik": video.get("baslik", ""), "sure_sn": sure_sn, "esik": ESIK[0]},
             "deneyler": deneyler, "basarili_yollar": [d["ad"] for d in deneyler if d["durum"] == "basarili"],
             "gecmis": gecmis, "cozum_adaylari": cozum_adaylari(gecmis), "hata": None}
 
