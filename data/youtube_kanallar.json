@@ -7,8 +7,86 @@
       "channel_id": "UCyZ6rBoyPpQ3MQI8iNJWr1Q",
       "kanal_adi": "Mert - Finansal Özgürlük",
       "hata": null,
-      "son_basarili_utc": "2026-11-07T17:17:06.868101+00:00",
+      "son_basarili_utc": "2026-11-14T16:51:27.999251+00:00",
       "videolar": [
+        {
+          "video_id": "pML9-TMIitM",
+          "baslik": "Portföyüm büyüme beklentileri. Bütün şirketler.",
+          "yayin_tarihi": "2026-11-14T07:07:07+00:00",
+          "url": "https://www.youtube.com/watch?v=pML9-TMIitM",
+          "kanal_adi": "Mert - Finansal Özgürlük",
+          "sure_dk": 23.9,
+          "canli": false,
+          "ana_mesaj": "Portföydeki şirketlerin 2027 yılı nakit akışı beklentileri ve tarihsel çarpanları üzerinden gelecek fiyat potansiyellerinin senaryo bazlı analiz edilmesi.",
+          "ozet": [
+            "Koyfin platformu kullanılarak şirketlerin tarihsel Fiyat/Faaliyet Nakit Akışı (Price/CFO) çarpanları ve standart sapmaları analiz ediliyor.",
+            "Analistlerin 2027 yılı için öngördüğü nakit akışı rakamları baz alınarak düşük, orta ve yüksek getiri senaryoları oluşturuluyor.",
+            "Google (GOOGL) hissesinin tarihsel çarpanlarının zirvesinde olması nedeniyle matematiksel olarak düşük getiri potansiyeli sunduğu hesaplanıyor.",
+            "Amazon (AMZN) ve Microsoft (MSFT) gibi dev şirketlerin tarihsel çarpanlarına göre iskontolu veya makul seviyelerde olduğu vurgulanıyor.",
+            "AMD ve Manhattan Associates (MANH) gibi büyüme odaklı şirketlerde %100'ün üzerinde getiri potansiyeli öngörülüyor.",
+            "LandBridge (LB) gibi yüksek borçluluk riski taşıyan ancak yüksek büyüme beklenen şirketlerin getiri potansiyeli inceleniyor.",
+            "Yatırım stratejisi olarak 'çiçekleri koparıp yabani otları sulamamak' yani kazandıran hisseleri satıp kaybedenlere ekleme yapmama prensibi hatırlatılıyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "GOOGL",
+              "ne_dedi": "Tarihsel çarpanlarının zirvesinde olduğu için 2027 orta senaryoda sadece %8.76 getiri potansiyeli sunuyor."
+            },
+            {
+              "kod": "AMD",
+              "ne_dedi": "2027'ye kadar nakit akışının iki katına çıkması bekleniyor ve orta senaryoda %117.07 getiri potansiyeli mevcut."
+            },
+            {
+              "kod": "MSFT",
+              "ne_dedi": "Tarihsel çarpanlarının alt sınırında işlem görüyor ve orta senaryoda %72.33 getiri potansiyeli barındırıyor."
+            },
+            {
+              "kod": "AMZN",
+              "ne_dedi": "Son 10 yılın en düşük çarpan seviyelerinde işlem görüyor ve orta senaryoda %103.32 getiri potansiyeli öngörülüyor."
+            },
+            {
+              "kod": "MA",
+              "ne_dedi": "Orta senaryoda %48.19 getiri potansiyeli sunuyor ve Visa'ya göre daha çok tercih ediliyor."
+            },
+            {
+              "kod": "V",
+              "ne_dedi": "Orta senaryoda %29.98 getiri potansiyeli ile Mastercard'ın gerisinde kalıyor."
+            },
+            {
+              "kod": "MELI",
+              "ne_dedi": "Orta senaryoda %93.05 getiri potansiyeli ile yüksek büyüme beklentisi sunan şirketler arasında."
+            },
+            {
+              "kod": "CRM",
+              "ne_dedi": "Orta senaryoda %90.25 getiri potansiyeli ile portföyde güçlü bir beklentiye sahip."
+            },
+            {
+              "kod": "MANH",
+              "ne_dedi": "Orta senaryoda %113.65 getiri potansiyeli ile portföyün en yüksek beklentili şirketlerinden biri."
+            },
+            {
+              "kod": "LB",
+              "ne_dedi": "Orta senaryoda %141.20 getiri potansiyeli sunsa da yüksek borçluluk ve hisse satışı riskleri taşıyor."
+            },
+            {
+              "kod": "TXRH",
+              "ne_dedi": "Orta senaryoda %19.27 getiri potansiyeli ile diğer portföy şirketlerine göre daha düşük beklenti sunuyor."
+            },
+            {
+              "kod": "CDNS",
+              "ne_dedi": "Orta senaryoda %35.60 getiri potansiyeli sunuyor ve çarpanları Synopsys (SNPS) ile benzer seviyelerde."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Amazon için yüksek Capex (sermaye harcaması) harcamalarının nakit akışını baskılama riski.",
+            "LandBridge (LB) için yüksek borçluluk ve piyasaya sürekli yeni hisse sürülerek ortaklık payının seyrelmesi riski.",
+            "Analistlerin gelecek dönem nakit akışı beklentilerini aşağı yönlü revize etme ihtimali.",
+            "İyi performans gösteren hisseleri satıp kötü gidenlere ekleme yapma (çiçekleri budayıp yabani otları sulama) hatası."
+          ],
+          "icerik_turu": "egitim",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-14T16:51:27.999234+00:00"
+        },
         {
           "video_id": "dJz-ZC_6SCE",
           "baslik": "Momentum ETF'leri SPMO ve diğerleri uzun vadede başarılı mı?",
@@ -76,9 +154,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942732+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781520+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -356,7 +434,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942749+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781538+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -427,7 +505,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942756+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781545+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -443,7 +521,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942759+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781549+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -569,8 +647,8 @@
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
-      "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942766+00:00"
+      "son7_uzun_video": 0,
+      "son_kontrol_utc": "2026-11-14T16:57:18.781555+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -825,7 +903,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942777+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781566+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -841,7 +919,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942780+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781569+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -857,7 +935,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942783+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781573+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -866,14 +944,98 @@
       "channel_id": "UCzANlYNW38QH4gchvUk3IsQ",
       "kanal_adi": "Efe Utkaner",
       "hata": null,
-      "son_basarili_utc": null,
-      "videolar": [],
+      "son_basarili_utc": "2026-11-14T16:55:23.005884+00:00",
+      "videolar": [
+        {
+          "video_id": "hbffbIMlv1Q",
+          "baslik": "Perakende Bilançoları #BIMAS #MGROS #CRFSA #GMTAS #MOPAS #KIMMR #CITAS #EBEBK #TKNSA #SSAAT",
+          "yayin_tarihi": "2026-11-14T12:24:07+00:00",
+          "url": "https://www.youtube.com/watch?v=hbffbIMlv1Q",
+          "kanal_adi": "Efe Utkaner",
+          "sure_dk": 0.0,
+          "canli": true,
+          "atlandi": "canli yayin"
+        },
+        {
+          "video_id": "Xp_4sWF-SF0",
+          "baslik": "GYO Bilançoları #TRGYO #RGYAS #AKSGY #AVPGY #PAGYO #YGGYO #AKMGY #OZKGY #OZGYO #HLGYO #AAGYO",
+          "yayin_tarihi": "2026-11-13T20:04:15+00:00",
+          "url": "https://www.youtube.com/watch?v=Xp_4sWF-SF0",
+          "kanal_adi": "Efe Utkaner",
+          "sure_dk": 54.7,
+          "canli": false,
+          "ana_mesaj": "Gayrimenkul yatırım ortaklıklarının (GYO) 9 aylık bilançoları, kira gelirleri, borç durumları ve temettü potansiyelleri incelenerek detaylı bir portföy analizi yapılmıştır.",
+          "ozet": [
+            "Torunlar GYO portföy büyüklüğü, kira gelirleri, borçluluk durumu ve temettü projeksiyonları detaylıca incelendi.",
+            "Rönesans Gayrimenkul'ün konsolide bilançosu, döviz pozisyonu ve portföy dağılımı analiz edildi.",
+            "Akış GYO'nun AVM portföyü, kira gelirleri ve borç yapıları değerlendirildi.",
+            "Avrupakent GYO'nun konut ve AVM projeleri, kira gelirleri ve net nakit pozisyonu ele alındı.",
+            "Panora GYO ve Yeni GİMAT GYO'nun finansal tabloları ve temettü ödeme alışkanlıkları incelendi.",
+            "Özderici GYO ve Ahlatcı Doğuş GYO'nun gayrimenkul projeleri, borçları ve kira gelirleri paylaşıldı.",
+            "Ağaoğlu GYO'nun portföy büyüklüğü, konut ve ofis projeleri ile halka arz sonrası durumu değerlendirildi."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "TRGYO",
+              "ne_dedi": "Torunlar GYO, ilk 9 ayda elde ettiği kira gelirleri, güçlü AVM performansı ve temettü dağıtma potansiyeliyle dikkat çekmektedir."
+            },
+            {
+              "kod": "RGYAS",
+              "ne_dedi": "Rönesans Gayrimenkul, halka arz olalı çok uzun zaman olmamasına rağmen epey bir yatırım yapmıştır ve döviz borcu bulunmaktadır."
+            },
+            {
+              "kod": "AKSGY",
+              "ne_dedi": "Akış GYO, İstanbul'daki AVM'leri ve güçlü kiracı portföyü ile dikkat çekmekte olup temettü dağıtma potansiyeli bulunmaktadır."
+            },
+            {
+              "kod": "AVPGY",
+              "ne_dedi": "Avrupakent GYO, güçlü net nakit pozisyonu, İstanbul'daki konut ve ofis projeleriyle kira gelirlerini artırmaktadır."
+            },
+            {
+              "kod": "PAGYO",
+              "ne_dedi": "Panora GYO, tek bir AVM ile faaliyet gösterse de enflasyon üstü kira geliri artışı ve düzenli temettü ödemesiyle öne çıkmaktadır."
+            },
+            {
+              "kod": "YGGYO",
+              "ne_dedi": "Yeni GİMAT GYO, Ankara'daki AVM'si ve oteli ile kira gelirleri elde etmekte olup düzenli temettü ödemektedir."
+            },
+            {
+              "kod": "OZGYO",
+              "ne_dedi": "Özderici GYO, yurt dışı yatırımları ve Dubai projeleriyle bilinmekte olup uzun yıllar sonra temettü dağıtmaya başlamıştır."
+            },
+            {
+              "kod": "AKMGY",
+              "ne_dedi": "Akmerkez GYO, İstanbul Beşiktaş'taki köklü AVM'si ile düzenli temettü dağıtan ve güçlü ortaklık yapısına sahip bir şirkettir."
+            },
+            {
+              "kod": "DZGYO",
+              "ne_dedi": "Özakat Gayrimenkul, konut ve ofis projeleriyle portföyünü genişletmekte ve döviz cinsi borçlarını yönetmektedir."
+            },
+            {
+              "kod": "HLGYO",
+              "ne_dedi": "Halk GYO, portföyündeki AVM ve ofis projeleriyle kira gelirleri elde etmekte olup Halkbank iştirakidir."
+            },
+            {
+              "kod": "AAGYO",
+              "ne_dedi": "Ağaoğlu GYO, Maslak, Ataşehir ve Ümraniye'deki prestijli projeleri ve güçlü portföy büyüklüğü ile dikkat çekmektedir."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Şirketlerin döviz cinsi borçlarının kur dalgalanmalarından olumsuz etkilenme riski.",
+            "Yüksek faiz ortamının borçlanma maliyetlerini artırması.",
+            "Konut ve gayrimenkul projelerinin maliyetlerinin artması ve tamamlama sürelerinin uzaması riski."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-flash-lite-latest",
+          "islendi_utc": "2026-11-14T16:55:23.005867+00:00"
+        }
+      ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942786+00:00"
+      "aday_sayisi": 2,
+      "son7_uzun_video": 1,
+      "son_kontrol_utc": "2026-11-14T16:57:18.781581+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -889,7 +1051,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942788+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781585+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -970,8 +1132,8 @@
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
-      "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942794+00:00"
+      "son7_uzun_video": 0,
+      "son_kontrol_utc": "2026-11-14T16:57:18.781590+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -980,8 +1142,43 @@
       "channel_id": "UCGafAOiXbT2XgX-WK5AC4zg",
       "kanal_adi": "FinansLab | Gülşah Bıçkı",
       "hata": null,
-      "son_basarili_utc": "2026-11-08T09:32:36.927540+00:00",
+      "son_basarili_utc": "2026-11-14T16:57:18.781488+00:00",
       "videolar": [
+        {
+          "video_id": "-9G4RX4kxG0",
+          "baslik": "Tüpraş’ın Kasası Gerçekten Dolu mu?",
+          "yayin_tarihi": "2026-11-13T18:00:29+00:00",
+          "url": "https://www.youtube.com/watch?v=-9G4RX4kxG0",
+          "kanal_adi": "FinansLab | Gülşah Bıçkı",
+          "sure_dk": 6.0,
+          "canli": false,
+          "ana_mesaj": "Tüpraş'ın bilançosundaki yüksek nakit varlığının, bloke tutarlar ve ticari borçlar gibi yükümlülüklerle birlikte analiz edilerek şirketin gerçek finansal durumunun anlaşılması hedeflenmektedir.",
+          "ozet": [
+            "Tüpraş'ın bilançosunda 255,5 milyar TL nakit bulunmasına rağmen, bunun 43 milyar TL'si türev işlemler ve petrol stoku için bloke edilmiştir.",
+            "Şirketin toplam finansal borcu 51,4 milyar TL iken, kısa vadeli ticari borçları 255,5 milyar TL ile nakit mevcuduyla neredeyse aynı seviyededir.",
+            "2026 yılının ilk 9 ayında konsolide kâr, enflasyona göre düzeltilmiş rakamlarla 122,1 milyar TL'ye ulaşarak geçen yılın 4,3 katına çıkmıştır.",
+            "Rafineri marjı beklentileri varil başına 13-15 dolardan 20-22 dolara yükseltilerek kârlılık görünümü iyileşmiştir.",
+            "Ekim ayında 13 milyar TL temettü ödemesi yapılmış ve 20 milyar TL'ye kadar yeni tahvil ihracı için izin alınmıştır.",
+            "Şirket bu yıl 700 milyon dolar yatırım planlamakta olup, İzmit ve İzmir'deki propilen ünitelerinin 2027'de devreye alınması öngörülmektedir."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "TUPRS",
+              "ne_dedi": "Yüksek nakit varlığına karşın ticari borçlarının da yüksek olduğu, rafineri marjlarındaki artışla kârlılığını önemli ölçüde artırdığı ve 2027 yatırımlarına odaklandığı belirtiliyor."
+            },
+            {
+              "kod": "EREGL",
+              "ne_dedi": "Bir sonraki videoda kısa vadeli finansal borçlarındaki 40 milyar TL'den 72 milyar TL'ye varan artışın inceleneceği duyuruluyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Akaryakıt ve ham petrol fiyatları arasındaki makas aralığının daralması durumunda nakit üretiminin azalması.",
+            "Müşterilerden tahsilatın gecikmesi veya tedarikçi ödeme vadelerinin kısalması sonucu oluşabilecek nakit baskısı."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-14T16:57:18.781471+00:00"
+        },
         {
           "video_id": "WvZ3l3QJWP8",
           "baslik": "SEN HANGİ YATIRIMCISIN",
@@ -1053,9 +1250,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942804+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781604+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -1112,7 +1309,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942812+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781613+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -1178,8 +1375,8 @@
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
-      "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942818+00:00"
+      "son7_uzun_video": 0,
+      "son_kontrol_utc": "2026-11-14T16:57:18.781618+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -1535,7 +1732,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942828+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781628+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -1651,9 +1848,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942836+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781635+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -1904,7 +2101,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 4,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942852+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781651+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -1920,7 +2117,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942855+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781654+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -1936,7 +2133,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942858+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781657+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -1952,7 +2149,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942862+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781659+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -2144,7 +2341,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942872+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781669+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -2533,10 +2730,10 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 15,
+      "aday_sayisi": 14,
       "son7_uzun_video": 7,
       "liste_disi": "her gun video yukluyor (son 7 gunde 7 uzun video)",
-      "son_kontrol_utc": "2026-11-13T15:30:37.942895+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781734+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -2547,6 +2744,16 @@
       "hata": null,
       "son_basarili_utc": "2026-11-10T15:23:09.926874+00:00",
       "videolar": [
+        {
+          "video_id": "5tBzx4Tmb5I",
+          "baslik": "#THYAO da kazanmaya ve kazandırmaya devam ediyoruz #bist100 #pgsus #borsa #kesfet #forex",
+          "yayin_tarihi": "2026-11-14T09:46:50+00:00",
+          "url": "https://www.youtube.com/watch?v=5tBzx4Tmb5I",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 1.1,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "4R-DNh_8Rdo",
           "baslik": "HAFTAYI VE SEANSI BERABER KAPATIYORUZ....",
@@ -2720,67 +2927,14 @@
           "sure_dk": 1.0,
           "canli": false,
           "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "yNcCbeKSHKc",
-          "baslik": "TÜRKİYE'DE ENFLASYONDA EN MANTIKLI YATIRIM NE ? KONUT MU TEMETTÜ MÜ ?",
-          "yayin_tarihi": "2026-11-08T13:00:16+00:00",
-          "url": "https://www.youtube.com/watch?v=yNcCbeKSHKc",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 10.2,
-          "canli": false,
-          "ana_mesaj": "Enflasyonist bir ortamda konut yatırımı, temettü yatırımına göre hem reel getiri hem de psikolojik sürdürülebilirlik açısından daha avantajlıdır.",
-          "ozet": [
-            "Enflasyonist ülkelerde konutun bir yatırım aracı olduğu ve özellikle ilk konutun her fiyattan alınabileceği belirtiliyor.",
-            "2018'de 66 bin dolar olan bir evin 2024'te 104 bin dolara satılarak dolar bazlı enflasyonun üzerinde getiri sağladığı örneklendiriliyor.",
-            "Konutun kira getirisi, hisse senetlerinin temettü verimine benzer bir pasif gelir kaynağı olarak sunuluyor.",
-            "Temettü yatırımcılığının; hisse düşüşü, siyasi gelişmeler, devalüasyon ve patron satışları gibi birçok risk barındırdığı vurgulanıyor.",
-            "Konut yatırımının psikolojik olarak daha kolay taşınabilir olduğu, insanların ev fiyatlarını hisse fiyatları gibi her gün kontrol etmediği ifade ediliyor.",
-            "Türkiye'de nüfus artışı, evlilikler, boşanmalar ve göç nedeniyle konut talebinin sürekli canlı kaldığı, buna karşın arzın yetersiz olduğu söyleniyor.",
-            "Faizler düştüğünde konut fiyatlarının hızla artabileceği, bu yüzden beklemenin fırsat maliyeti yaratabileceği uyarısı yapılıyor.",
-            "Türkiye piyasalarında TL bazlı uzun vadeli yatırım yapmanın ve finansal özgürlüğe ulaşmanın oldukça zor olduğu savunuluyor."
-          ],
-          "bahsedilen_hisseler": [
-            {
-              "kod": "KONUT",
-              "ne_dedi": "Enflasyona karşı koruma sağlayan, kira getirisiyle temettü benzeri gelir sunan ve uzun vadede dolar bazında reel kazanç getiren bir yatırım aracıdır."
-            },
-            {
-              "kod": "TUPRS",
-              "ne_dedi": "Temettü yatırımı denilince akla gelen ilk hisselerden biri olsa da, bir hisseyi 10 yıl boyunca taşımanın büyük sabır gerektirdiği ve birçok riske açık olduğu belirtiliyor."
-            },
-            {
-              "kod": "EREGL",
-              "ne_dedi": "Temettü yatırımcısının riskleri kapsamında, hissenin düşüp düşmeyeceği veya bilançosunun nasıl geleceği konusunda belirsizlik taşıyan bir örnek olarak geçiyor."
-            },
-            {
-              "kod": "THYAO",
-              "ne_dedi": "Teknik anlamda dönüş görüldüğünde alım yapmayanların arkasından baktığı, konut piyasasındaki fırsat kaçırma durumuna benzer bir borsa örneği olarak veriliyor."
-            }
-          ],
-          "konusmacinin_riskleri": [
-            "Hisse fiyatlarının düşmesi",
-            "Bilanço belirsizlikleri",
-            "Savaş riski",
-            "Devalüasyon",
-            "Merkez Bankası başkanı değişikliği",
-            "Siyasi gelişmeler",
-            "Patron satışları",
-            "Fon krizleri",
-            "Konut piyasasında arz sıkıntısı",
-            "Faizlerin düşmesiyle oluşabilecek ani fiyat artışları ve fırsatın kaçması"
-          ],
-          "icerik_turu": "kisisel_finans",
-          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
-          "islendi_utc": "2026-11-10T15:23:09.926853+00:00"
         }
       ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 3,
+      "aday_sayisi": 1,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942926+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781762+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -2796,7 +2950,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942930+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781766+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -2812,7 +2966,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-13T15:30:37.942933+00:00"
+      "son_kontrol_utc": "2026-11-14T16:57:18.781769+00:00"
     }
   },
   "hata": null,
@@ -2830,13 +2984,17 @@
   ],
   "butce": {
     "toplam_sinir": 20,
-    "islenen": 1,
+    "islenen": 3,
     "bekleyen": 0,
     "kota_bitti": false,
     "kullanilan_modeller": {
-      "gemini-3-flash-preview": 1
+      "gemini-3-flash-preview": 2,
+      "gemini-flash-lite-latest": 1
     },
-    "kotasi_dolan_modeller": []
+    "kotasi_dolan_modeller": [
+      "gemini-omni-1.2-flash",
+      "gemini-omni-flash-preview"
+    ]
   },
   "kota_gunlugu": [
     {
@@ -2944,11 +3102,34 @@
       },
       "kotasi_dolan_modeller": [],
       "zaman_utc": "2026-11-13T15:30:37.942949+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 3,
+      "bekleyen": 0,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-3-flash-preview": 2,
+        "gemini-flash-lite-latest": 1
+      },
+      "kotasi_dolan_modeller": [
+        "gemini-omni-1.2-flash",
+        "gemini-omni-flash-preview"
+      ],
+      "zaman_utc": "2026-11-14T16:57:18.781788+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-13T15:30:37.942953+00:00",
+  "uretim_zamani_utc": "2026-11-14T16:57:18.781793+00:00",
   "denemeler": [
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-omni-flash-preview gunluk kota doldu; siradaki model denenecek",
+    "Gemini gemini-omni-1.2-flash gunluk kota doldu; siradaki model denenecek",
+    "Gemini gemini-flash-lite-latest: 0 karakter, bitis=STOP",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP"
   ]
