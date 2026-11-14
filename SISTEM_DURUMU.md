@@ -149,6 +149,7 @@ ama hiçbir göreve bağlı değil.
   Gemini ile alınır. `pip install youtube-transcript-api` ve `WEBSHARE_*`/`YT_PROXY_URL` env
   satırları iş akışına geri eklenmez.
 - **SEÇİLMEDİ:** ücretli Residential proxy, YouTube çerezi (hesap ban riski).
+- **SEÇİLMEDİ (14.11.2026):** Apify MCP (kullanıma göre ücretli; kurulmadı). Genel kural: ücretli araçlar Alpay onayı olmadan kurulmaz (CLAUDE.md).
 - **Tetik:** GitHub schedule cron yerine Cloudflare Worker + GitHub App (PAT emekli). Yeni tetik
   mimarisi önerilmez.
 - **Geri alım:** kümülatif lot/oran bültene yalnız `kumulatif_kaynak == "sirket_beyani"` ise
@@ -200,6 +201,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 14.11.2026 | Apify MCP kurulmadı (kullanıma göre ücretli). `CLAUDE.md`'ye "Ücretli araçlar" kuralı: ücretli/kullanıma göre faturalanan hiçbir şey Alpay'ın açık onayı olmadan kurulmaz | Claude Code |
 | 14.11.2026 | `.claude/skills/` altına addyosmani/agent-skills'in 25 skill'i kuruldu (MIT, commit 39b723c; Alpay isteği). İçerik okundu; yalnız skills/ alındı, hooks/ ve commands/ kurulmadı. `CLAUDE.md` skill eşleşme listesine Türkçe tetikleyiciler eklendi | Claude Code |
 | 14.11.2026 | `CLAUDE.md`'ye "Skill kullanımı" kuralı (Alpay kararı): Türkçe kelimelerden ihtiyaç anlaşılırsa uygun skill sormadan kullanılır; örnek eşleşme listesi eklendi | Claude Code |
 | 14.11.2026 | Deney 2. çalışma (yeni uzun video B83YHTTFRYw): Gemini tüm video 30.768 krk Türkçe ✅, parçalı 30.883 ✅ (3.8-flash yine 503/zaman aşımı); yt-dlp yine bot engeli; GLM: glm-5.3-flash ücretli ("Insufficient balance") → listeden çıkarıldı, glm-4.6v-flash 429 "geçici yoğunluk" → günlük deneyde yeniden denenecek | Claude Code |

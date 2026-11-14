@@ -26,3 +26,7 @@ Alpay bir skill'in adını söylemese bile, Türkçe yazdığı kelimelerden iht
 - "her X dakikada bir", "düzenli kontrol et" (bu oturum içinde) → `loop`
 - Yazılım geliştirme işleri (`.claude/skills/`, addyosmani/agent-skills, 14.11.2026): "fikri geliştir" → `idea-refine` · "şartname/spec yaz" → `spec-driven-development` · "planla, görevlere böl" → `planning-and-task-breakdown` · "test yazarak geliştir" → `test-driven-development` · "hatayı ayıkla, neden bozuldu" → `debugging-and-error-recovery` · "Actions/CI" → `ci-cd-and-automation` · "performans, yavaş" → `performance-optimization` · "loglama, izleme" → `observability-and-instrumentation` · "eskiyi kaldır, taşı" → `deprecation-and-migration` · "belgele, karar kaydı" → `documentation-and-adrs` · "beni sorgula/röportaj" → `interview-me`. Bu repodaki kurallar (SISTEM_DURUMU, exit(0), Türkçe, kişisel veri yasağı) bu skill'lerin genel önerilerinden ÖNCE gelir.
 Skill yalnızca kullanıcının açıkça çağırmasını şart koşuyorsa (ör. `anthropic-skills:morning`) bu kural onu aşmaz. Hangi skill'in kullanıldığı yanıtta tek satırla belirtilir.
+
+## Ücretli araçlar (Alpay kararı 14.11.2026)
+Ücretli ya da kullanıma göre faturalanan (ücretsiz kredisi olsa bile) hiçbir servis, bağlayıcı, API, model veya paket **Alpay'ın açık onayı olmadan kurulmaz/eklenmez**. Önce ne olduğu, ücreti ve ücretsiz alternatifi tek mesajda söylenir; "onaylıyorum" denirse kurulur. Ücretsiz yol varsa o tercih edilir.
+
