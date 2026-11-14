@@ -1,35 +1,57 @@
 {
- "surum": "1.0",
- "uretim_zamani_utc": "2026-11-13T07:38:54.057973+00:00",
+ "surum": "1.2",
+ "uretim_zamani_utc": "2026-11-14T11:17:01.227485+00:00",
  "video": {
-  "video_id": "XBSj569TEyQ",
-  "baslik": "2026/3Ç Bilançoları Bitti: 3 Ay Takip Edeceğim 20 Hisse",
-  "sure_sn": 26
+  "video_id": "B83YHTTFRYw",
+  "baslik": "Hisse Almadan Önce Bu 8 Soruyu Soruyorum! | Temel Analiz",
+  "sure_sn": 1960,
+  "esik": 1000
  },
  "deneyler": [
   {
    "ad": "gemini_teshis",
-   "durum": "kisa",
-   "karakter": 437,
+   "durum": "basarili",
+   "karakter": 30768,
    "turkce": true,
-   "sure_sn": 36.5,
+   "sure_sn": 665.3,
    "not": "model=gemini-3-flash-preview bitis=STOP",
-   "onizleme": "2023 yılı 3. çeyrek bilanço dönemi sona erdi. Kapsama dahil olan 421 şirketin tamamını 5 faktörlü gelişmiş model Excel'imden geçirdim ve piyasa değeri 100 milyon doların üzerindeki olan ilk 20 şirketi birazdan sizlerle birlikte inceleyeceğiz. Özellikle bir önceki bilanço dönemine göre sıralamasında ciddi değişiklik olan şirketler var. Olumlu ya da olumsuz yönde de ilk 10 şirketini de size birazdan"
+   "onizleme": "Herkese merhaba, Stratejik Yatırım YouTube kanalındasınız. Bugün kanalda en çok sorulan sorulardan birini yanıtlayacağım. Bir şirketi gerçekten nasıl analiz ediyorum? Bir hisseyi neden aldığımı veya neden almadığımı, hangi sırayla neye baktığımı baştan sona birlikte inceleyeceğiz. Şimdi size bir soru. Bir şirketin satışları 3 yılda 100 liradan 240 liraya çıkmış olsun. Yani yılda ortalama %34 kadar"
   },
   {
    "ad": "gemini_parca",
-   "durum": "kisa",
-   "karakter": 437,
+   "durum": "basarili",
+   "karakter": 30883,
    "turkce": true,
-   "sure_sn": 61.0,
-   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem",
-   "onizleme": "2023 yılı 3. çeyrek bilanço dönemi sona erdi. Kapsama dahil olan 421 şirketin tamamını 5 faktörlü gelişmiş model Excel'imden geçirdim ve piyasa değeri 100 milyon doların üzerindeki olan ilk 20 şirketi birazdan sizlerle birlikte inceleyeceğiz. Özellikle bir önceki bilanço dönemine göre sıralamasında ciddi değişiklik olan şirketler var. Olumlu ya da olumsuz yönde de ilk 10 şirketini de size birazdan",
+   "sure_sn": 1036.0,
+   "not": "gemini-3.8-flash: TimeoutError: The read operation timed out; gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem",
+   "onizleme": "Herkese merhaba. Stratejik Yatırım YouTube kanalındasınız. Bugün kanalda en çok sorulan sorulardan birini yanıtlayacağım. Bir şirketi gerçekten nasıl analiz ediyorum? Bir hisseyi neden aldığımı veya neden almadığımı, hangi sırayla neye baktığımı baştan sona birlikte inceleyeceğiz. Şimdi size bir soru. Bir şirketin satışları 3 yılda 100 liradan 240 liraya çıkmış olsun. Yani yılda ortalama %34 kadar",
    "parcalar": [
     {
      "bas": 0,
-     "bit": 26,
+     "bit": 600,
+     "model": "gemini-3.8-flash",
+     "karakter": 9563,
+     "bitis": "STOP"
+    },
+    {
+     "bas": 600,
+     "bit": 1200,
      "model": "gemini-3-flash-preview",
-     "karakter": 437,
+     "karakter": 9379,
+     "bitis": "STOP"
+    },
+    {
+     "bas": 1200,
+     "bit": 1800,
+     "model": "gemini-3-flash-preview",
+     "karakter": 9445,
+     "bitis": "STOP"
+    },
+    {
+     "bas": 1800,
+     "bit": 1960,
+     "model": "gemini-3-flash-preview",
+     "karakter": 2493,
      "bitis": "STOP"
     }
    ]
@@ -39,8 +61,8 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 2.2,
-   "not": "] XBSj569TEyQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "sure_sn": 1.1,
+   "not": "] B83YHTTFRYw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
   {
@@ -48,8 +70,8 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 1.3,
-   "not": "] XBSj569TEyQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "sure_sn": 1.1,
+   "not": "] B83YHTTFRYw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
   {
@@ -72,20 +94,20 @@
   },
   {
    "ad": "glm_url",
-   "durum": "anahtar_yok",
+   "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 0.0,
-   "not": "ZAI_API_KEY secret'i tanimli degil",
+   "sure_sn": 0.7,
+   "not": "model=glm-5.3-flash HTTP 429 {\"error\":{\"code\":\"1113\",\"message\":\"Insufficient balance or no resource package. Please recharge.\"}}; model=glm-4.6v-flash HTTP 429 {\"error\":{\"code\":\"1305\",\"message\":\"The service may be temporarily overloaded, please try again later\"}}",
    "onizleme": ""
   },
   {
    "ad": "glm_ses",
-   "durum": "anahtar_yok",
+   "durum": "ses_yok",
    "karakter": 0,
    "turkce": false,
    "sure_sn": 0.0,
-   "not": "ZAI_API_KEY secret'i tanimli degil",
+   "not": "ytdlp_ses basarisiz; ses parcasi olmadan denenemedi",
    "onizleme": ""
   },
   {
@@ -116,13 +138,21 @@
    "onizleme": ""
   }
  ],
- "basarili_yollar": [],
+ "basarili_yollar": [
+  "gemini_teshis",
+  "gemini_parca"
+ ],
  "gecmis": {
   "gemini_teshis": [
    {
     "tarih": "2026-11-13T07:38:54.057973+00:00",
     "durum": "kisa",
     "karakter": 437
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
+    "durum": "basarili",
+    "karakter": 30768
    }
   ],
   "gemini_parca": [
@@ -130,11 +160,21 @@
     "tarih": "2026-11-13T07:38:54.057973+00:00",
     "durum": "kisa",
     "karakter": 437
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
+    "durum": "basarili",
+    "karakter": 30883
    }
   ],
   "ytdlp_altyazi": [
    {
     "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -144,11 +184,21 @@
     "tarih": "2026-11-13T07:38:54.057973+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "qwen_url": [
    {
     "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -158,12 +208,22 @@
     "tarih": "2026-11-13T07:38:54.057973+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "glm_url": [
    {
     "tarih": "2026-11-13T07:38:54.057973+00:00",
     "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
+    "durum": "hata",
     "karakter": 0
    }
   ],
@@ -172,11 +232,21 @@
     "tarih": "2026-11-13T07:38:54.057973+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
+    "durum": "ses_yok",
+    "karakter": 0
    }
   ],
   "siliconflow_ses": [
    {
     "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -186,11 +256,21 @@
     "tarih": "2026-11-13T07:38:54.057973+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "deepseek": [
    {
     "tarih": "2026-11-13T07:38:54.057973+00:00",
+    "durum": "uygulanamaz",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-14T11:17:01.227485+00:00",
     "durum": "uygulanamaz",
     "karakter": 0
    }
