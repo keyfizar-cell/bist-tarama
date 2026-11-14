@@ -45,7 +45,7 @@ KURALLAR = {
     },
     "veri_kaynagi_arastirma.md": {
         "min": 18000,
-        "zorunlu": ["KULLANICI YETKİSİ", "İNCE BAŞLATICI", EK_BASLIK, "GÜVENLİK KURALLARI", "(G) ARACI KURUM TAVSİYE", "(H) \"AWESOME\" LİSTELERİNDEN",
+        "zorunlu": ["KULLANICI YETKİSİ", "İNCE BAŞLATICI", EK_BASLIK, "GÜVENLİK KURALLARI", "(G) ARACI KURUM TAVSİYE", "(H) \"AWESOME\" LİSTELERİNDEN", "(I) KOÇ OKUMA PROGRAMI — KIYIDA KÖŞEDE",
                     "{E_POSTA}", "KALDIRILANLAR"],
         "ek_yasak": False,
     },
