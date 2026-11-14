@@ -200,6 +200,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 14.11.2026 | `CLAUDE.md`'ye "Skill kullanımı" kuralı (Alpay kararı): Türkçe kelimelerden ihtiyaç anlaşılırsa uygun skill sormadan kullanılır; örnek eşleşme listesi eklendi | Claude Code |
 | 14.11.2026 | Deney 2. çalışma (yeni uzun video B83YHTTFRYw): Gemini tüm video 30.768 krk Türkçe ✅, parçalı 30.883 ✅ (3.8-flash yine 503/zaman aşımı); yt-dlp yine bot engeli; GLM: glm-5.3-flash ücretli ("Insufficient balance") → listeden çıkarıldı, glm-4.6v-flash 429 "geçici yoğunluk" → günlük deneyde yeniden denenecek | Claude Code |
 | 14.11.2026 | `ZAI_API_KEY` secret'i eklendi (Alpay). `youtube_deney.py` v1.2: URL deneylerinde model listesi; GLM sırası glm-5.3-flash → glm-4.6v-flash | Claude Code |
 | 13.11.2026 | **Twelve Data kaldırıldı** (Alpay kararı: bültenlerde bağlı değildi). Yerine `abd_fiyat.py` v1.0 + `abd_semboller.json` + `abd-fiyat.yml` (hafta içi 07:07/18:37 TR) → `data/abd.json`; sabah ADIM 1 ve akşam ADIM 3 NVO/SPY/QQQ/DIA'yı bu dosyadan okur, bayatsa web yedeği; testler eklendi | Claude Code |
