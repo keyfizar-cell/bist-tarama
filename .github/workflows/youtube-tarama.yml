@@ -1,5 +1,6 @@
 name: YouTube Emir Bozkurt Takip
 
+# v2.5 (2026-11-14): youtube_arsiv.py (koc okuma programi, arsiv_takip.json) 4. adim.
 # v2.4 (2026-11-08): hafta sonu zamanlamasi eklendi.
 # v2.3 (2026-11-07): Emir Bozkurt (youtube_tarama.py) + konuk uzman takibi (youtube_konuk.py, konuk_takip.json)
 #   + ek kanal takibi (youtube_kanallar.py v1.1, kanal_takip.json; calisma basina toplam video butcesi).
@@ -50,11 +51,17 @@ jobs:
           GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
           YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
           GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
+      - name: Arsiv (koc okuma programi)
+        run: python youtube_arsiv.py
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          GEMINI_MODEL: ${{ secrets.GEMINI_MODEL }}
       - name: JSON'u commit et
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/youtube_emir.json data/youtube_konuk.json data/youtube_kanallar.json || true
+          git add data/youtube_emir.json data/youtube_konuk.json data/youtube_kanallar.json data/youtube_arsiv.json || true
           if git diff --cached --quiet; then
             echo "Degisiklik yok."
             exit 0

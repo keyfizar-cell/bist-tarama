@@ -1,0 +1,12 @@
+{
+  "_aciklama": "youtube_arsiv.py listesi (Koc okuma programi). Yeni video beklenmeyen kisilerin eski videolari tarihten bagimsiz bulunur, her calismada en fazla calisma_basina_video tanesi islenir (ilkeler + ozet). Blok: ad, sorgu, eslesme, not.",
+  "calisma_basina_video": 1,
+  "kisiler": [
+    {
+      "ad": "Yaşar Erdinç",
+      "sorgu": "\"Yaşar Erdinç\" borsa",
+      "eslesme": ["yaşar erdinç", "yasar erdinc", "erdinç hoca", "erdinc hoca"],
+      "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz."
+    }
+  ]
+}
