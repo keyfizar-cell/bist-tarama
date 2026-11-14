@@ -201,6 +201,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 14.11.2026 | Araştırma görevine (H) "Awesome listelerinden ücretsiz araç keşfi" (Alpay isteği): Çarşamba, sindresorhus/awesome + finans/MCP/skill listeleri dönüşümlü; yalnız ücretsiz ve uygulanabilir adaylar; ücretliler yalnız "💲 onay gerekir" diye bildirilir; repo otomatik değiştirilmez; agent-skills güncelleme kontrolü | Claude Code |
 | 14.11.2026 | Apify MCP kurulmadı (kullanıma göre ücretli). `CLAUDE.md`'ye "Ücretli araçlar" kuralı: ücretli/kullanıma göre faturalanan hiçbir şey Alpay'ın açık onayı olmadan kurulmaz | Claude Code |
 | 14.11.2026 | `.claude/skills/` altına addyosmani/agent-skills'in 25 skill'i kuruldu (MIT, commit 39b723c; Alpay isteği). İçerik okundu; yalnız skills/ alındı, hooks/ ve commands/ kurulmadı. `CLAUDE.md` skill eşleşme listesine Türkçe tetikleyiciler eklendi | Claude Code |
 | 14.11.2026 | `CLAUDE.md`'ye "Skill kullanımı" kuralı (Alpay kararı): Türkçe kelimelerden ihtiyaç anlaşılırsa uygun skill sormadan kullanılır; örnek eşleşme listesi eklendi | Claude Code |
