@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# youtube_deney.py  v1.1  (2026-11-13)
+# youtube_deney.py  v1.2  (2026-11-14)
+# v1.2: url deneylerinde model listesi (GLM: glm-5.3-flash -> glm-4.6v-flash); ZAI_API_KEY eklendi.
 # v1.1: basari esigi video suresine gore (youtube_tarama.transkript_esigi); ilk calisma 26 sn'lik videoyu gosterdi.
 # YouTube transkript DENEY HATTI (Alpay karari 13.11.2026: "cozum bulana kadar ara ara deneyelim,
 # Cin modellerini atlama"). Ana hatti (youtube_tarama.py) DEGISTIRMEZ; yalniz ayni videoda farkli
@@ -36,7 +37,7 @@ import urllib.request
 
 import youtube_tarama as yt
 
-SURUM = "1.1"
+SURUM = "1.2"
 OUT_PATH = os.path.join("data", "youtube_deney.json")
 MIN_TRANSKRIPT = yt.MIN_TRANSKRIPT
 PARCA_DK = 10
@@ -296,18 +297,23 @@ def url_video_deneyi(ad, anahtar_adi, taban, model_env, varsayilan_model, akis=F
         return lambda video: sonuc(ad, "anahtar_yok", not_="%s secret'i tanimli degil" % anahtar_adi)
 
     def calis(video):
-        model = anahtar(model_env) or varsayilan_model
-        t0 = time.time()
-        govde = {"model": model, "temperature": 0, "messages": [{"role": "user", "content": [
-            {"type": "video_url", "video_url": {"url": video["url"]}}, {"type": "text", "text": ISTEM}]}]}
-        if akis:
-            govde["stream"] = True
-            govde["modalities"] = ["text"]
-        try:
-            txt = post_json(taban + "/chat/completions", govde, {"Authorization": "Bearer " + k})
-            return sonuc(ad, "deneniyor", openai_sohbet_metni(txt), "model=" + model, time.time() - t0)
-        except Exception as e:
-            return sonuc(ad, "hata", not_="model=%s %s" % (model, hata_metni(e)), sure=time.time() - t0)
+        # v1.2: varsayilan_model liste olabilir; sirayla denenir, ilk hatasiz yanit tutulur
+        modeller = [anahtar(model_env)] if anahtar(model_env) else (
+            list(varsayilan_model) if isinstance(varsayilan_model, (list, tuple)) else [varsayilan_model])
+        t0, notlar = time.time(), []
+        for model in modeller:
+            govde = {"model": model, "temperature": 0, "messages": [{"role": "user", "content": [
+                {"type": "video_url", "video_url": {"url": video["url"]}}, {"type": "text", "text": ISTEM}]}]}
+            if akis:
+                govde["stream"] = True
+                govde["modalities"] = ["text"]
+            try:
+                txt = post_json(taban + "/chat/completions", govde, {"Authorization": "Bearer " + k})
+                notlar.append("model=" + model)
+                return sonuc(ad, "deneniyor", openai_sohbet_metni(txt), "; ".join(notlar), time.time() - t0)
+            except Exception as e:
+                notlar.append("model=%s %s" % (model, hata_metni(e)[:180]))
+        return sonuc(ad, "hata", not_="; ".join(notlar), sure=time.time() - t0)
     return calis
 
 
@@ -443,7 +449,7 @@ def calistir():
         deneyler.append(guvenli(ses_deneyi("qwen_ses", "DASHSCOPE_API_KEY", "QWEN_ASR_MODEL",
                                            "qwen3-asr-flash", qwen_ses_parca), parcalar))
         deneyler.append(guvenli(url_video_deneyi("glm_url", "ZAI_API_KEY", ZAI_TABAN,
-                                                 "GLM_VIDEO_MODEL", "glm-4.6v-flash"), video))
+                                                 "GLM_VIDEO_MODEL", ["glm-5.3-flash", "glm-4.6v-flash"]), video))
         deneyler.append(guvenli(ses_deneyi(
             "glm_ses", "ZAI_API_KEY", "GLM_ASR_MODEL", "glm-asr",
             lambda k, m, y: transkripsiyon_post(ZAI_TABAN + "/audio/transcriptions", k, m, y)), parcalar))
