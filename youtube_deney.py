@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 # youtube_deney.py  v1.2  (2026-11-14)
-# v1.2: url deneylerinde model listesi (GLM: glm-5.3-flash -> glm-4.6v-flash); ZAI_API_KEY eklendi.
+# v1.2: url deneylerinde model listesi (GLM: glm-4.6v-flash (5.3-flash ucretli: "Insufficient balance", 14.11)); ZAI_API_KEY eklendi.
 # v1.1: basari esigi video suresine gore (youtube_tarama.transkript_esigi); ilk calisma 26 sn'lik videoyu gosterdi.
 # YouTube transkript DENEY HATTI (Alpay karari 13.11.2026: "cozum bulana kadar ara ara deneyelim,
 # Cin modellerini atlama"). Ana hatti (youtube_tarama.py) DEGISTIRMEZ; yalniz ayni videoda farkli
@@ -449,7 +449,7 @@ def calistir():
         deneyler.append(guvenli(ses_deneyi("qwen_ses", "DASHSCOPE_API_KEY", "QWEN_ASR_MODEL",
                                            "qwen3-asr-flash", qwen_ses_parca), parcalar))
         deneyler.append(guvenli(url_video_deneyi("glm_url", "ZAI_API_KEY", ZAI_TABAN,
-                                                 "GLM_VIDEO_MODEL", ["glm-5.3-flash", "glm-4.6v-flash"]), video))
+                                                 "GLM_VIDEO_MODEL", ["glm-4.6v-flash"]), video))
         deneyler.append(guvenli(ses_deneyi(
             "glm_ses", "ZAI_API_KEY", "GLM_ASR_MODEL", "glm-asr",
             lambda k, m, y: transkripsiyon_post(ZAI_TABAN + "/audio/transcriptions", k, m, y)), parcalar))
