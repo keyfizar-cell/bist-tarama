@@ -1,0 +1,233 @@
+{
+ "surum": "1.0",
+ "uretim_zamani_utc": "2026-11-14T17:54:18.631480+00:00",
+ "kisiler": {
+  "Yaşar Erdinç": {
+   "islenenler": [
+    {
+     "video_id": "qDJzZms-OyI",
+     "baslik": "Dr. Yaşar Erdinç - Yatırımcı Psikolojisi Eğitimi",
+     "kanal": "Aycan Demirel [Uzun Vadeli Yatırım, Borsa]",
+     "yayin_tarihi": "2014-06-20T04:23:48Z",
+     "url": "https://www.youtube.com/watch?v=qDJzZms-OyI",
+     "sure_dk": 115.8,
+     "islenme_utc": "2026-11-14T17:56:55.623538+00:00",
+     "kaynak": "gemini:gemini-3-flash-preview",
+     "ilkeler": [
+      "Beynin rasyonel karar verme konusundaki yanıltıcı etkilerinin ve psikolojik önyargıların farkında olunmalıdır.",
+      "Yatırım kararlarında duygusal tepkilerin azaltılması, trade performansını artırıcı bir etki yaratır.",
+      "İşlem yapmadan önce stop-loss (zarar kes) ve kar al seviyeleri mutlaka belirlenmeli ve bu seviyelere sadık kalınmalıdır.",
+      "Bir yatırım sistemine güvenmek için o sistemin en az 6 ay ile 1 yıl arasında tutarlı bir şekilde uygulanması gerekir.",
+      "Arka arkaya kazanılan işlemlerden sonra aşırı güvene kapılmamak için kazanılan para çekilmeli ve ana parayla devam edilmelidir.",
+      "Piyasa kapalıyken içten gelen sezgilere güvenilmeli, ancak piyasa açıkken duygusal kararlardan kaçınılmalıdır.",
+      "Zarar büyüdükçe artan stresin rasyonel karar vermeyi engellediği bilinmeli ve stres yönetimi yapılmalıdır.",
+      "Yatırım yaparken aşırı iyimserlikten kaçınılmalı, yetenekler ve piyasa koşulları objektif değerlendirilmelidir.",
+      "Geçmişteki fiyat seviyelerine (çıpalama) takılıp kalmak yerine güncel trend ve veriler takip edilmelidir.",
+      "Kazançlar ve ana para zihinsel olarak farklı kategorilere ayrılmamalı, her bir birim paranın değeri eşit görülmelidir.",
+      "Piyasadaki gürültü ve aşırı bilgi yüklemesinin kısa yoldan hatalı karar vermeye (heuristics) ittiği unutulmamalıdır.",
+      "Sürü psikolojisine kapılmak yerine, önceden belirlenmiş disiplinli bir stratejiye göre hareket edilmelidir."
+     ],
+     "ozet": [
+      "Davranışsal finans ve nöro-ekonomi çerçevesinde yatırımcıların neden biyolojik ve psikolojik olarak kaybetmeye programlı olduğu anlatılmaktadır.",
+      "Beynin amigdala ve prefrontal korteks bölgelerinin karar verme süreçlerindeki rolü ve stres anındaki çatışmaları ele alınmaktadır.",
+      "Aşırı güven, iyimserlik, çıpalama ve temsil sapması gibi bilişsel hataların yatırımcıları nasıl yanlış kararlara sürüklediği bilimsel deneylerle açıklanmaktadır.",
+      "Başarılı bir trader olmanın yolunun beynin zaaflarını tanımaktan ve duygulardan arındırılmış, disiplinli bir sistem uygulamaktan geçtiği vurgulanmaktadır.",
+      "Stop-loss kullanımının ve risk yönetiminin, beynin rasyonel olmayan tepkilerini dizginlemek için en kritik araçlar olduğu belirtilmektedir."
+     ],
+     "bahsedilen_hisseler": [
+      {
+       "kod": "EUR/USD",
+       "ne_dedi": "Parite üzerinde teknik analiz ve stop-loss örnekleri verilerek fiyatın sıkışık seyri yorumlanmıştır."
+      },
+      {
+       "kod": "ALTIN",
+       "ne_dedi": "1300 dolar seviyesinin üzerine çıkan sert yükselişin ardından 1298-1300 dolar seviyelerine geri çekilmelerde long pozisyon denenebileceği belirtilmiştir."
+      },
+      {
+       "kod": "BRENT",
+       "ne_dedi": "Petrol fiyatlarının 115 dolara ulaşarak güçlü bir yükseliş trendinde olduğu ifade edilmiştir."
+      },
+      {
+       "kod": "USD/TRY",
+       "ne_dedi": "2.14-2.15 seviyelerindeki dirençlerin önemi ve Merkez Bankası faiz kararı beklentisiyle olası yön değişimleri tartışılmıştır."
+      },
+      {
+       "kod": "VİOP",
+       "ne_dedi": "98.600 seviyesinin aşılması durumunda 100.000 hedefiyle long pozisyon açılabileceği, 96.600 altına ise dikkat edilmesi gerektiği söylenmiştir."
+      },
+      {
+       "kod": "TOASO",
+       "ne_dedi": "Model portföyde 14 TL seviyesinden kar satışı yapıldığına dair örnek olarak verilmiştir."
+      },
+      {
+       "kod": "TKFEN",
+       "ne_dedi": "Hisseyle ilgili gelen haberlerin fiyat üzerindeki etkileri ve model portföydeki durumu anılmıştır."
+      },
+      {
+       "kod": "ISCTR",
+       "ne_dedi": "Gedik Yatırım'ın model portföy listesinde yer alan hisselerden biri olarak gösterilmiştir."
+      },
+      {
+       "kod": "BIMAS",
+       "ne_dedi": "Model portföy listesinde yer alan ve takip edilen hisseler arasında zikredilmiştir."
+      }
+     ],
+     "konusmaci_dogrulandi": true,
+     "yaklasik_tarih": "2014"
+    }
+   ],
+   "hatali": {},
+   "adaylar": [
+    {
+     "video_id": "5jdPrBs8HpU",
+     "baslik": "YAŞAR ERDİNÇ VE HAP BORSA BİLGİLERİ (Güncel Taramalar ile)",
+     "kanal": "ibrahim Ethem Afacan",
+     "yayin_tarihi": "2022-04-15T09:25:02Z",
+     "url": "https://www.youtube.com/watch?v=5jdPrBs8HpU",
+     "sure_dk": 21.1
+    },
+    {
+     "video_id": "jsrYFSKqmI4",
+     "baslik": "(Fx Matik) Yaşar Erdinç ile Röportaj: Borsa Bitcoin Hakkında Konuştuk",
+     "kanal": "Fx Matik",
+     "yayin_tarihi": "2017-10-29T14:17:05Z",
+     "url": "https://www.youtube.com/watch?v=jsrYFSKqmI4",
+     "sure_dk": 8.2
+    },
+    {
+     "video_id": "fULrCZFKzx0",
+     "baslik": "Yaşar Erdinç Borsa Yatırımcısına Şu Tavsiyeleri Vermişti!",
+     "kanal": "DENEYİM GÜNLÜĞÜM",
+     "yayin_tarihi": "2022-06-21T16:00:21Z",
+     "url": "https://www.youtube.com/watch?v=fULrCZFKzx0",
+     "sure_dk": 6.9
+    },
+    {
+     "video_id": "yau4HnVsdKI",
+     "baslik": "Yaşar Erdinç - Nasrullah Ayan",
+     "kanal": "Adem Güleryüz",
+     "yayin_tarihi": "2021-05-29T20:30:12Z",
+     "url": "https://www.youtube.com/watch?v=yau4HnVsdKI",
+     "sure_dk": 12.6
+    },
+    {
+     "video_id": "qDJzZms-OyI",
+     "baslik": "Dr. Yaşar Erdinç - Yatırımcı Psikolojisi Eğitimi",
+     "kanal": "Aycan Demirel [Uzun Vadeli Yatırım, Borsa]",
+     "yayin_tarihi": "2014-06-20T04:23:48Z",
+     "url": "https://www.youtube.com/watch?v=qDJzZms-OyI",
+     "sure_dk": 115.8
+    },
+    {
+     "video_id": "8kAo6Vy1y94",
+     "baslik": "Dr. Yaşar Erdinç - İleri Düzey Teknik Analiz Eğitimi",
+     "kanal": "Aycan Demirel [Uzun Vadeli Yatırım, Borsa]",
+     "yayin_tarihi": "2014-06-20T04:23:19Z",
+     "url": "https://www.youtube.com/watch?v=8kAo6Vy1y94",
+     "sure_dk": 101.7
+    },
+    {
+     "video_id": "gTxxdnaDUSU",
+     "baslik": "YAŞAR ERDİNÇ Bir Hisseye Değer Biçmek",
+     "kanal": "YATIRIMCI SİZSİNİZ",
+     "yayin_tarihi": "2021-06-02T23:00:10Z",
+     "url": "https://www.youtube.com/watch?v=gTxxdnaDUSU",
+     "sure_dk": 10.4
+    },
+    {
+     "video_id": "8OtS78GCfqI",
+     "baslik": "Uluslararası Finansal Sistem ve Kriz Dinamikleri | Dr. Yaşar Erdinç",
+     "kanal": "Turing Kültür Sanat",
+     "yayin_tarihi": "2018-01-10T06:34:41Z",
+     "url": "https://www.youtube.com/watch?v=8OtS78GCfqI",
+     "sure_dk": 74.3
+    },
+    {
+     "video_id": "kQIB0IlpJoI",
+     "baslik": "YAŞAR ERDİNÇ VE HAP BORSA BİLGİLERİ 2",
+     "kanal": "ibrahim Ethem Afacan",
+     "yayin_tarihi": "2022-04-28T17:54:48Z",
+     "url": "https://www.youtube.com/watch?v=kQIB0IlpJoI",
+     "sure_dk": 18.7
+    },
+    {
+     "video_id": "8qs4y3sdfX8",
+     "baslik": "Dr  Yaşar Erdinç -Yatırımcı Psikolojisi Eğitimi",
+     "kanal": "İKTİSÂDÎ HAYAT",
+     "yayin_tarihi": "2023-01-21T16:13:44Z",
+     "url": "https://www.youtube.com/watch?v=8qs4y3sdfX8",
+     "sure_dk": 115.8
+    },
+    {
+     "video_id": "LAxpceeuAB8",
+     "baslik": "Dr  Yaşar Erdinç, Uzun Vade Hisse Senedi Yatırımı Neden Çok Kazandırır  Anlatıyor.Borsada Başarı",
+     "kanal": "İKTİSÂDÎ HAYAT",
+     "yayin_tarihi": "2023-01-21T21:08:37Z",
+     "url": "https://www.youtube.com/watch?v=LAxpceeuAB8",
+     "sure_dk": 10.0
+    },
+    {
+     "video_id": "7TE8v2KOC2Y",
+     "baslik": "Piyasa uzun vadede her şeyi doğru fiyatlar (Dr Yaşar Erdinç Hoca'dan inciler",
+     "kanal": "Genç Borsacı",
+     "yayin_tarihi": "2021-04-06T12:46:41Z",
+     "url": "https://www.youtube.com/watch?v=7TE8v2KOC2Y",
+     "sure_dk": 8.2
+    },
+    {
+     "video_id": "PHt2ufIeoUQ",
+     "baslik": "RAHMETLİ YAŞAR ERDİNÇ HOCAMIZIN BORSA İLE İLGİLİ BİZLERE NASİHATLERİ..MUTLAKA İZLE PİŞMAN OLMAZSIN.",
+     "kanal": "finans yunus",
+     "yayin_tarihi": "2021-02-24T11:48:02Z",
+     "url": "https://www.youtube.com/watch?v=PHt2ufIeoUQ",
+     "sure_dk": 7.7
+    },
+    {
+     "video_id": "6Y_Bqb1oaks",
+     "baslik": "YATIRIMCI TEKNİK ANALİZ SORGULANIYOR:  Yaşar ERDİNÇ",
+     "kanal": "FİNANSIN ŞİFRELERİ",
+     "yayin_tarihi": "2025-12-13T07:38:56Z",
+     "url": "https://www.youtube.com/watch?v=6Y_Bqb1oaks",
+     "sure_dk": 5.5
+    },
+    {
+     "video_id": "h7A1mjFU2ZQ",
+     "baslik": "Piyasadaki Borsa Eğitimleri : Yaşar Erdinç ve Gökhan Ugan",
+     "kanal": "Fx Matik",
+     "yayin_tarihi": "2017-10-21T15:01:17Z",
+     "url": "https://www.youtube.com/watch?v=h7A1mjFU2ZQ",
+     "sure_dk": 10.2
+    },
+    {
+     "video_id": "vuHakSb6RUg",
+     "baslik": "Yaşar Erdinç - Teknik Analiz Başlangıç ve Geliştirme Eğitimi",
+     "kanal": "Borfin",
+     "yayin_tarihi": "2020-07-10T15:30:06Z",
+     "url": "https://www.youtube.com/watch?v=vuHakSb6RUg",
+     "sure_dk": 6.3
+    },
+    {
+     "video_id": "ObsQDDIwSxY",
+     "baslik": "Fiyatı 1 tl ve kuruş olan hisselerden uzak durun -Yaşar Erdinç",
+     "kanal": "Genç Borsacı",
+     "yayin_tarihi": "2021-04-07T17:36:12Z",
+     "url": "https://www.youtube.com/watch?v=ObsQDDIwSxY",
+     "sure_dk": 8.2
+    },
+    {
+     "video_id": "kn7B4OF-Qn4",
+     "baslik": "Bazı coinlerin SONUNU bu olay getirecek !!! Dr. Yaşar Erdinç Uyarıyor",
+     "kanal": "Genç Borsacı",
+     "yayin_tarihi": "2021-03-31T18:04:25Z",
+     "url": "https://www.youtube.com/watch?v=kn7B4OF-Qn4",
+     "sure_dk": 8.5
+    }
+   ],
+   "aday_guncelleme_utc": "2026-11-14T17:54:19.688598+00:00",
+   "kalan_aday": 17,
+   "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz.",
+   "hata": null
+  }
+ },
+ "hata": null
+}
