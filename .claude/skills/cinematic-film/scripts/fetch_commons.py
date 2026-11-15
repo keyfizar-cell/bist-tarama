@@ -62,6 +62,7 @@ def info(page):
             "desc": g("ImageDescription")[:160]}
 
 
+STD_WIDTHS = [20, 40, 60, 120, 250, 330, 500, 960, 1280, 1920]   # Wikimedia standart küçük kopya genişlikleri
 IIPROP = dict(prop="imageinfo", iiprop="url|size|mime|extmetadata", iiurlwidth=1920)   # Wikimedia standart küçük kopya boyutu; orijinal indirmeler 429 ile sınırlanıyor
 
 
@@ -113,7 +114,11 @@ def cmd_get(a):
             ok = bool(FREE.search(d["license"] or ""))
             if not ok and not a.allow_nonfree:
                 print(f"{p['id']}: REFUSED, licence {d['license']!r} is not free ({d['source']})"); refused += 1; continue
-            url = d["thumb"] or d["url"]   # her zaman standart küçük kopya (tif/svg de jpg/png olarak gelir)
+            # Wikimedia yalnız standart küçük kopya boyutlarına izin veriyor (https://w.wiki/GHai); orijinal 429 alır.
+            step = max([x for x in STD_WIDTHS if x <= min(d["w"] or 0, 1920)] or [STD_WIDTHS[0]])
+            tp = (api(action="query", titles=title, prop="imageinfo", iiprop="url", iiurlwidth=step).get("query") or {}).get("pages", [{}])[0]
+            url = ((tp.get("imageinfo") or [{}])[0]).get("thumburl") or d["thumb"] or d["url"]
+            url = url.replace("://thumb.wikimedia.org/", "://upload.wikimedia.org/")   # aynı dosya, tek izinli adres
             ext = pathlib.Path(urllib.parse.urlparse(url).path).suffix.lower() or ".jpg"
             fname = p["file"] if have and not a.force else f"{p['id']}_{re.sub(r'[^A-Za-z0-9]+', '_', title[5:].rsplit('.', 1)[0])[:48]}{ext}"
             if not have or a.force:
