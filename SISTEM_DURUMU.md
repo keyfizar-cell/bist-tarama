@@ -202,6 +202,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 15.11.2026 | Stil seçimi kuralı (Alpay kararı): her videodan önce `icerik-uretim/stiller.md`'den numaralı stil listesi + 3 öneri gösterilir, seçilen numarayla üretilir; katalog: 1–8 KeyfiZar temaları, 9–107 Lemo-Opuscar, 108+ yeni | Claude Code |
 | 15.11.2026 | `CLAUDE.md`'ye Lemo-Opuscar stilleri kuralı (Alpay onayı): özel içerikte 99 koddan film stilinden biri; lisans sınırları, ücretli ✦ stiller hariç, her oturumda klonlanır. İlk film gölge oyunu (008); şablonu özel `icerik-uretim/sablonlar/golge-oyunu/` | Claude Code |
 | 15.11.2026 | Kanal markası `KeyfiZar` (Alpay kararı; yazım değişmez): cinematic-film'e `marka` yazı tipi rolü, altyazıda marka koruması ve `scripts/marka.py` (filigran + kapanış imzası); `CLAUDE.md`'ye üç katmanlı marka kuralı. Kuyruktaki iki short'a (Salı, Perşembe) filigran eklendi | Claude Code |
 | 15.11.2026 | cinematic-film `fetch_commons.py`: Wikimedia görselleri 1920 px standart küçük kopya olarak indirilir (orijinaller 429 veriyor). Ortama commons/upload.wikimedia.org izni eklendi (Alpay onayı) | Claude Code |
