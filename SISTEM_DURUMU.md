@@ -202,6 +202,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 15.11.2026 | HyperFrames kuruldu (heygen-com/hyperframes, Apache-2.0, Alpay isteği): 4 skill `.claude/skills/` altında (hyperframes, hyperframes-cli, hyperframes-registry, media-use); telemetri kapalı, GSAP yerel, ücretli HeyGen özellikleri onaya bağlı; deneme render'ı başarılı (10 sn dikey 9 sn'de). Remotion değerlendirildi, kurulmadı | Claude Code |
 | 15.11.2026 | Stil seçimi kuralı (Alpay kararı): her videodan önce `icerik-uretim/stiller.md`'den numaralı stil listesi + 3 öneri gösterilir, seçilen numarayla üretilir; katalog: 1–8 KeyfiZar temaları, 9–107 Lemo-Opuscar, 108+ yeni | Claude Code |
 | 15.11.2026 | `CLAUDE.md`'ye Lemo-Opuscar stilleri kuralı (Alpay onayı): özel içerikte 99 koddan film stilinden biri; lisans sınırları, ücretli ✦ stiller hariç, her oturumda klonlanır. İlk film gölge oyunu (008); şablonu özel `icerik-uretim/sablonlar/golge-oyunu/` | Claude Code |
 | 15.11.2026 | Kanal markası `KeyfiZar` (Alpay kararı; yazım değişmez): cinematic-film'e `marka` yazı tipi rolü, altyazıda marka koruması ve `scripts/marka.py` (filigran + kapanış imzası); `CLAUDE.md`'ye üç katmanlı marka kuralı. Kuyruktaki iki short'a (Salı, Perşembe) filigran eklendi | Claude Code |
