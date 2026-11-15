@@ -15,7 +15,7 @@ import urllib.request
 
 OUT = os.path.join("data", "x_deney.json")
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0 Safari/537.36"
-ORNEK_TWEET = os.environ.get("X_ORNEK_TWEET", "https://x.com/XDevelopers/status/1785041262183936150")
+ORNEK_TWEET = os.environ.get("X_ORNEK_TWEET", "https://twitter.com/jack/status/20")
 ORNEK_HESAP = os.environ.get("X_ORNEK_HESAP", "borsacoo")
 ORNEK_TELEGRAM = os.environ.get("X_ORNEK_TELEGRAM", "durov")
 
