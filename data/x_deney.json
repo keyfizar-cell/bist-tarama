@@ -1,0 +1,39 @@
+{
+ "surum": "1.0",
+ "uretim_zamani_utc": "2026-11-15T18:42:37.418272+00:00",
+ "deneyler": [
+  {
+   "ad": "x_oembed",
+   "http": 404,
+   "basarili": false,
+   "onizleme": "<!DOCTYPE html>\n<html lang=\"en\" class=\"dog\">\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>X / ?</title>\n    <meta name=\"version\" content=\"1\">\n    <link href=\"https://abs.twimg.co"
+  },
+  {
+   "ad": "x_syndication_tweet",
+   "http": 404,
+   "basarili": false,
+   "onizleme": "<!DOCTYPE html>\n<html lang=\"en\" class=\"dog\">\n  <head>\n    <meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>X / ?</title>\n    <meta name=\"version\" content=\"1\">\n    <link href=\"https://abs.twimg.co"
+  },
+  {
+   "ad": "x_syndication_profil",
+   "http": 429,
+   "basarili": false,
+   "tweet_sayisi": 0,
+   "onizleme": "Rate limit exceeded\n"
+  },
+  {
+   "ad": "telegram_onizleme",
+   "http": 200,
+   "basarili": true,
+   "mesaj_sayisi": 21
+  },
+  {
+   "ad": "bluesky_arama",
+   "http": 403,
+   "basarili": false,
+   "gonderi_sayisi": 0,
+   "onizleme": "<html><head><title>403 Forbidden</title><link href='//fonts.bunny.net/css?family=Rubik:300,400,500' rel='stylesheet' type='text/css'><style>html, body { width: 100%; margin: 0; padding: 0; text-align: center; font-family: 'Rubik'; background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0i"
+  }
+ ],
+ "hata": null
+}
