@@ -203,6 +203,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 15.11.2026 | x_deney sonuçları (Actions, hesapsız): X oEmbed ✅ ve syndication tek tweet ✅ (URL biliniyorsa tam metin+görsel), profil zaman çizelgesi ❌ 429, Bluesky arama ❌ 403, Telegram t.me/s ✅. Araştırma (E) bölümüne bulgular + ücretsiz yol görevleri (site:x.com dizinlenme, X hesaplarının Telegram/web aynaları) eklendi | Claude Code |
 | 15.11.2026 | Alpay kararı: X ücretsiz yollarla. `araclar/x_deney.py` v1.0 + `x-deney.yml` (yalnız dispatch): X oEmbed, X embed syndication (tweet/profil), Telegram t.me/s önizleme, Bluesky açık arama yoklaması → `data/x_deney.json`. Hesap/çerez/ücretli API yok | Claude Code |
 | 15.11.2026 | Agent-Reach (Panniantong) değerlendirildi, kurulmadı: X/Reddit giriş + tarayıcı çerezi istiyor, bulutta çalışmıyor → SEÇİLMEDİ listesine eklendi | Claude Code |
 | 15.11.2026 | HyperFrames kuruldu (heygen-com/hyperframes, Apache-2.0, Alpay isteği): 4 skill `.claude/skills/` altında (hyperframes, hyperframes-cli, hyperframes-registry, media-use); telemetri kapalı, GSAP yerel, ücretli HeyGen özellikleri onaya bağlı; deneme render'ı başarılı (10 sn dikey 9 sn'de). Remotion değerlendirildi, kurulmadı | Claude Code |
