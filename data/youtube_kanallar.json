@@ -156,7 +156,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564649+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613301+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -165,8 +165,86 @@
       "channel_id": "UCf-58-J8D5eXmEpSdyZ0XJA",
       "kanal_adi": "Çağkan Yapıcı",
       "hata": null,
-      "son_basarili_utc": "2026-11-11T15:29:27.512879+00:00",
+      "son_basarili_utc": "2026-11-15T17:29:54.281317+00:00",
       "videolar": [
+        {
+          "video_id": "CyBQp1r4XvQ",
+          "baslik": "Haftalık Borsa Haberleri #67 | MSCI çıkışları & Doco bilançosu ve diğerleri",
+          "yayin_tarihi": "2026-11-15T06:30:36+00:00",
+          "url": "https://www.youtube.com/watch?v=CyBQp1r4XvQ",
+          "kanal_adi": "Çağkan Yapıcı",
+          "sure_dk": 28.6,
+          "canli": false,
+          "ana_mesaj": "Haftalık borsa bülteninde DOCO bilançosu, Turcas verileri, varlık yönetim sektöründeki temerrüt ve tahsilat riskleri, Gen İlaç'ın ilişkili taraf satın alması ve şirketlerdeki nakit iskontoları ele alınmıştır.",
+          "ozet": [
+            "BIST 100 endeksinde dipten dönüşün devam ettiği haftada DOCO'nun olumlu karşılanan yarıyıl finansalları değerlendirildi.",
+            "Turizm istatistiklerinde kısmi iyileşme görülse de güçlü TL sebebiyle kısa vadede sert bir toparlanma beklenmediği ifade edildi.",
+            "Turcas'ın Shell ortaklığında akaryakıt satış hacmi ve bayi marjlarının güçlü kaldığı, ancak doğal gaz santrali tarafında üretimin zayıf seyrettiği aktarıldı.",
+            "MSCI Türkiye endeks güncellemelerinde SAHOL ve ASTOR'un standart endeksten çıkarıldığı belirtildi.",
+            "Dünya Varlık Yönetimi'nin kupon ödemesinde temerrüde düşmesi üzerinden varlık yönetim sektörü ve fon krizinin zincirleme bulaşıcılık riskleri incelendi.",
+            "Gen İlaç'ın patronuna ait şirketi 5,03 milyar TL bedelle alacağa mahsuben devralması ve şirketlerdeki nakdin hissedara dönmemesi eleştirildi.",
+            "Gülermak pay devirleri, Pusula Portföy fon tasfiyeleri ve Çelebi'nin bilanço dinamikleri yorumlandı."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "DOCO",
+              "ne_dedi": "Yarıyıl bilançosunda satış ve kârlılık büyümesini sürdürdüğü, havacılık dışı organizasyonlarda büyüdüğü ve marj artışlarının orta vadede devamının beklendiği belirtildi."
+            },
+            {
+              "kod": "OZKGY",
+              "ne_dedi": "Net aktif değerine göre %78 iskontolu olduğu, faiz indirim sürecinin hızlanması durumunda bu iskontoların daralabileceği ifade edildi."
+            },
+            {
+              "kod": "TRCAS",
+              "ne_dedi": "Shell & Turcas tarafında pazar payı ve marj artışlarının çok iyi gittiği, ancak Denizli RWE santralinde piyasa takas fiyatları baskısı nedeniyle üretimin olumsuz etkilendiği aktarıldı."
+            },
+            {
+              "kod": "BASGZ",
+              "ne_dedi": "Doğal gaz satış hacmi ve abone sayısı verilerinin bültende düzenli takip edildiği belirtildi."
+            },
+            {
+              "kod": "MGROS",
+              "ne_dedi": "Turist trafiğindeki değişimlerden etkilenen şirketlere örnek olarak adı geçti."
+            },
+            {
+              "kod": "SAHOL",
+              "ne_dedi": "MSCI Standart Endeksi'nden Small Cap endeksine düşürüldüğü bildirildi."
+            },
+            {
+              "kod": "ASTOR",
+              "ne_dedi": "MSCI Standart Endeksi'nden Small Cap endeksine düşürüldüğü bildirildi."
+            },
+            {
+              "kod": "GLCVY",
+              "ne_dedi": "Rakibi Dünya Varlık'ın temerrüde düşmesinin pazar payı fırsatı sunabileceği ancak mevcut ekonomik şartlarda tahsilat zorluğu nedeniyle kısa vadede sektörde iyileşme beklenmediği ifade edildi."
+            },
+            {
+              "kod": "GENIL",
+              "ne_dedi": "Patrona ait Seleda şirketini nakit çıkışı olmadan 5,03 milyar TL alacağa mahsuben satın almasının küçük yatırımcı aleyhine bir ilişkili taraf işlemi olduğu savunuldu."
+            },
+            {
+              "kod": "DOHOL",
+              "ne_dedi": "Kasasındaki yüksek nakdin yurt dışında tutulduğu ve temettü olarak ortaklara dağıtılmadığı için piyasada haklı bir iskonto ile fiyatlandığı belirtildi."
+            },
+            {
+              "kod": "GLRMK",
+              "ne_dedi": "Pusula Portföy fon tasfiyesi kapsamında payların devri ve tahtadaki sert satış süreçleri değerlendirildi."
+            },
+            {
+              "kod": "CLEBI",
+              "ne_dedi": "Enflasyon muhasebesi uygulanmayan bilançolarda ciro artışlarının yüksek görünmesine yönelik önceki yorumuna açıklık getirildi."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Güçlü TL politikasının turizm gelirleri ve turizmle ilişkili sektörler üzerinde yarattığı baskı.",
+            "Varlık yönetim şirketlerinde gecikmiş alacak portföylerinin tahsilat zorluğu ve geçmişte yüksek maliyetle alınan ihalelerin temerrüt yaratma riski.",
+            "Fon krizlerinin finansal sistemde zincirleme borç ödeyememe ve harcamaları kısma gibi bulaşıcı riskler doğurabilmesi.",
+            "Borsada kural eksikliğinden ziyade kuralların denetlenmemesi ve şirketlerdeki nakdin ilişkili taraf işlemleriyle yatırımcıdan uzaklaştırılması riski."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3.8-flash",
+          "islendi_utc": "2026-11-15T17:29:54.281300+00:00"
+        },
         {
           "video_id": "U5Q5NFEJ3J0",
           "baslik": "Son gün bilançolarını yorumladım",
@@ -432,9 +510,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564663+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613320+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -505,7 +583,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564669+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613326+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -521,7 +599,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564671+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613329+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -648,7 +726,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564676+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613336+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -657,8 +735,146 @@
       "channel_id": "UCDou5HvsE1AgL8yXzijbfxg",
       "kanal_adi": "Devrim Akyıl",
       "hata": null,
-      "son_basarili_utc": "2026-11-08T16:41:14.721078+00:00",
+      "son_basarili_utc": "2026-11-15T17:31:16.613268+00:00",
       "videolar": [
+        {
+          "video_id": "z-T37SDcNNE",
+          "baslik": "Altın & Gümüş Düzeltmede Uzatmaları Oynuyor!",
+          "yayin_tarihi": "2026-11-15T12:00:15+00:00",
+          "url": "https://www.youtube.com/watch?v=z-T37SDcNNE",
+          "kanal_adi": "Devrim Akyıl",
+          "sure_dk": 20.3,
+          "canli": false,
+          "ana_mesaj": "ABD'nin sürdürülemez borç yükü ve BRICS'in altına dayalı yeni finansal hamleleri karşısında, altın ve gümüşün orta-uzun vadede yeni zirveler için dip oluşumunu tamamladığı öngörülmektedir.",
+          "ozet": [
+            "Fed'in faiz kararlarından bağımsız olarak altın ve gümüşün orta-uzun vadede yükseliş trendinde olduğu belirtiliyor.",
+            "BRICS ülkelerinin altına dayalı dijital para birimiyle enerji ticareti denemeleri yaptığı vurgulanıyor.",
+            "ABD'nin bütçe açığı, borç stoku ve savunma harcamalarındaki aşırı artışın sürdürülemez olduğu ifade ediliyor.",
+            "ABD hazinesinin borç sorununu çözmek için altın rezervlerini yeniden değerleme (50.000 dolar seviyesine) ihtimali tartışılıyor.",
+            "Merkez bankalarının altın alımlarının 2026'da rekor seviyelere ulaştığı verilerle destekleniyor.",
+            "Teknik analizlerde altın ve gümüşte kısa vadeli geri çekilmelerin alım fırsatı olduğu ve dip oluşumunun sürdüğü söyleniyor.",
+            "Altın/Gümüş rasyosunda 77 seviyesinin aşağı kırılmasının gümüş lehine büyük bir ralliyi tetikleyeceği öngörülüyor.",
+            "Nasdaq'taki aşırı değerlenmenin tahvil faizleri üzerindeki baskısı ve olası çöküş senaryosu ele alınıyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "XAUUSD",
+              "ne_dedi": "4000 dolar üzerine çıkıldığında yükselişin hızlanacağı, 3852 dolar seviyelerinin dip oluşumu için kritik olduğu belirtiliyor."
+            },
+            {
+              "kod": "XAGUSD",
+              "ne_dedi": "48.48 dolar seviyelerine kadar olan geri çekilmenin alım fırsatı olduğu ve 121 dolar hedefli dev bir çanak formasyonu oluştuğu ifade ediliyor."
+            },
+            {
+              "kod": "XPTUSD",
+              "ne_dedi": "1542 dolar üzerine çıkılması durumunda al sinyali üreteceği belirtiliyor."
+            },
+            {
+              "kod": "COPPER",
+              "ne_dedi": "6.34 ve 6.26 dolar seviyelerinin altında kaldığı sürece düşüş eğiliminin devam edeceği öngörülüyor."
+            },
+            {
+              "kod": "WHEAT",
+              "ne_dedi": "612 ve 622 dolar üzerindeki kapanışların dip oluşumunu teyit edeceği, miktar artırımı yapıldığı söyleniyor."
+            },
+            {
+              "kod": "BRENT",
+              "ne_dedi": "95.60 ve 104 dolar bandında hareket ettiği, teknik olarak aşağı yönlü ihtimalin daha yüksek olduğu belirtiliyor."
+            },
+            {
+              "kod": "NATGAS",
+              "ne_dedi": "3.21 dolar desteği üzerinde kaldığı sürece yukarı yönlü rallinin devam edeceği, 3.02 doların stop seviyesi olduğu ifade ediliyor."
+            },
+            {
+              "kod": "EURUSD",
+              "ne_dedi": "1.1069 seviyesinin kritik olduğu, bu seviyenin altında sarkmaların devam edebileceği ancak genel olarak zorlama bir düşüş olduğu düşünülüyor."
+            },
+            {
+              "kod": "USDJPY",
+              "ne_dedi": "160.50 yukarıda, 159.51 aşağıda olmak üzere bu bandın kırılımına göre yön tayin edileceği belirtiliyor."
+            },
+            {
+              "kod": "US10Y",
+              "ne_dedi": "5.0 ve 4.93 seviyelerinin üzerinde risklerin devam ettiği ancak bir tepe oluşumu ihtimalinin de bulunduğu söyleniyor."
+            },
+            {
+              "kod": "NASDAQ",
+              "ne_dedi": "30.000 seviyelerinden sert bir çöküş gelmesi durumunda tahvil faizlerinin aşağı gelebileceği, riskli bir bölgede olduğu vurgulanıyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "ABD tahvil faizlerinin yüksek kalmaya devam etmesi durumunda borç çevirme sorununun derinleşmesi.",
+            "Nasdaq'ta beklenen çöküşün gerçekleşmemesi durumunda tahvil faizlerinin yukarı gitmeye devam etmesi.",
+            "Altın ve gümüşte kısa vadeli teknik seviyelerin aşağı yönlü kırılma ihtimali."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-15T17:24:17.590945+00:00"
+        },
+        {
+          "video_id": "54hA9xrFc3Q",
+          "baslik": "ABD Borsaları’nda Nvidia Kabusu!",
+          "yayin_tarihi": "2026-11-15T08:00:16+00:00",
+          "url": "https://www.youtube.com/watch?v=54hA9xrFc3Q",
+          "kanal_adi": "Devrim Akyıl",
+          "sure_dk": 15.8,
+          "canli": false,
+          "ana_mesaj": "ABD borsalarında ve özellikle NVIDIA'da yapay zeka balonu kaynaklı ciddi bir çöküş beklentisi ve teknik seviyelerin takibi.",
+          "ozet": [
+            "NVIDIA'da muhasebe usulsüzlükleri ve yasa dışı işlemler olduğu iddia ediliyor.",
+            "Yapay zeka dünyasında açık kaynak ve kapalı kaynak modelleri arasında büyük bir rekabet var.",
+            "ABD borsalarının dünya piyasalarındaki %44'lük payı ekonomik gerçeklerle uyuşmuyor.",
+            "Nasdaq ve S&P 500 endekslerinde zirvelerin oluştuğu ve düşüş trendinin başlayabileceği öngörülüyor.",
+            "NVIDIA bilançosu öncesi hissede sert hareketler ve düşüş beklentisi hakim.",
+            "Bitcoin'de 5 dalgalık yükselişin bittiği ve yeni bir düşüş dalgasının başladığı savunuluyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "NVDA",
+              "ne_dedi": "184 ve 177 dolar seviyeleri kritik, bilanço sonrası düşüşün devamı bekleniyor."
+            },
+            {
+              "kod": "NAS100",
+              "ne_dedi": "27615 desteği kırılırsa yeni bir düşüş dalgası başlar, 28615 ise direnç seviyesi."
+            },
+            {
+              "kod": "SPX",
+              "ne_dedi": "7650 seviyesi aşılmadığı sürece zirvenin oluştuğu ve tepkilerin sınırlı kalacağı düşünülüyor."
+            },
+            {
+              "kod": "CRWV",
+              "ne_dedi": "Zarar eden bir şirket olmasına rağmen iyi rehberlik verdiği iddia ediliyor, 54 dolar altı riskli."
+            },
+            {
+              "kod": "PLTR",
+              "ne_dedi": "175 dolar seviyesi altında kaldığı sürece tepkilerin sınırlı kalması bekleniyor."
+            },
+            {
+              "kod": "PSQ",
+              "ne_dedi": "Nasdaq'ın düşüşüne odaklı bir fon, 26.50 destek ve 27.30 direnç seviyeleri takip ediliyor."
+            },
+            {
+              "kod": "MOS",
+              "ne_dedi": "20.77 dolar desteğiyle yukarı yönlü tepki potansiyeli taşıyor."
+            },
+            {
+              "kod": "NVO",
+              "ne_dedi": "40 dolar stop seviyesiyle yukarı yönlü trade edilmeye devam ediliyor."
+            },
+            {
+              "kod": "BTC",
+              "ne_dedi": "70000 dolar altında kaldığı sürece düşüş trendinin devam edeceği ve 57000 altının görülebileceği öngörülüyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "NVIDIA'da muhasebe usulsüzlükleri ve yasa dışı işlemler.",
+            "ABD borsalarındaki aşırı şişmiş fiyatlamalar ve balonun patlama riski.",
+            "Yapay zeka sektöründeki model savaşları ve regülasyon belirsizlikleri."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-15T17:31:16.613250+00:00"
+        },
         {
           "video_id": "PLoDiIctB2k",
           "baslik": "Fiziki Candır!",
@@ -898,12 +1114,20 @@
           "islendi_utc": "2026-11-08T09:40:07.743745+00:00"
         }
       ],
-      "bekleyenler": [],
+      "bekleyenler": [
+        {
+          "video_id": "Jd6vroULgiA",
+          "baslik": "Piyasa İyice Sıkıştı! Riskler Artıyor!",
+          "url": "https://www.youtube.com/watch?v=Jd6vroULgiA",
+          "yayin_tarihi": "2026-11-14T18:22:30+00:00",
+          "sure_dk": 14.9
+        }
+      ],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564685+00:00"
+      "aday_sayisi": 3,
+      "son7_uzun_video": 3,
+      "son_kontrol_utc": "2026-11-15T17:31:16.613352+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -919,7 +1143,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564687+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613354+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -935,7 +1159,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564689+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613357+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -1035,7 +1259,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564695+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613363+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -1044,14 +1268,69 @@
       "channel_id": "UC0D_87HAE2RiqaJo-w84gAg",
       "kanal_adi": "Erdem Kaynar",
       "hata": null,
-      "son_basarili_utc": null,
-      "videolar": [],
+      "son_basarili_utc": "2026-11-15T17:25:21.322780+00:00",
+      "videolar": [
+        {
+          "video_id": "1i03p2dr3Q8",
+          "baslik": "5 Hisse, 5 Farklı Hikaye",
+          "yayin_tarihi": "2026-11-15T08:30:20+00:00",
+          "url": "https://www.youtube.com/watch?v=1i03p2dr3Q8",
+          "kanal_adi": "Erdem Kaynar",
+          "sure_dk": 13.8,
+          "canli": false,
+          "ana_mesaj": "Mevcut bilanço döneminde finansal sonuçlarıyla öne çıkan ve operasyonel performansı beğenilen beş şirket Tüpraş, Ebebek, Kıraç Galvaniz, Borusan ve Yeo Teknoloji'dir.",
+          "ozet": [
+            "Tüpraş, artan petrol fiyatları ve rafineri marjları sayesinde net kârını katlamış olup 65 TL civarı temettü potansiyeline sahiptir; doğrudan hisse yerine Aygaz üzerinden dolaylı ortaklık iskonto sunmaktadır.",
+            "Ebebek, artan çocuk başına harcamalar ve operasyonel iyileşmelerle esas faaliyet kârını artırmış ve net nakit pozisyonuna geçmiştir ancak değerlenen TL ortamı sonrası olası kur şoklarına karşı hassastır.",
+            "Kıraç Galvaniz, yeni açtığı büyük tesis yatırımı ve güçlü ihracat payıyla esas faaliyet kârını ciddi oranda artırmıştır fakat nakit akışlarının negatif olması dikkat çekmektedir.",
+            "Borusan Boru'nun gelirlerinin yüzde 82'si ABD pazarından gelmekte, sondaj ve altyapı işlerindeki canlılık şirketi Türkiye risklerine karşı korunaklı kılmaktadır.",
+            "Yeo Teknoloji, güçlü sipariş büyüklüğü (backlog) ve yüksek ciro büyümesiyle dikkat çekse de önümüzdeki iki yıl için sunulan hedefler konuşmacı tarafından fazla iyimser bulunmaktadır.",
+            "Bitlo platformunda yeni üyelere özel 10 dolar değerinde RLUSD hediye kampanyası duyurulmuştur."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "TUPRS",
+              "ne_dedi": "Savaş etkisiyle kâr marjları zirve yapsa da normalleşme beklenmektedir; güçlü temettü potansiyeli (yaklaşık 65 TL) sayesinde sert geri çekilmeler beklemediğini ifade etmiştir."
+            },
+            {
+              "kod": "AYGAZ",
+              "ne_dedi": "Tüpraş'taki dolaylı ortaklık payı hesaplandığında, Tüpraş yatırımı yapmak isteyenler için Aygaz üzerinden pozisyon almanın ilave iskonto sunduğunu belirtmiştir."
+            },
+            {
+              "kod": "EBEBK",
+              "ne_dedi": "Kâr marjlarının yükseldiği, net nakit üreten ve güvenilir bir iş modeline sahip olduğunu; ancak yurt içi ağırlıklı yapısı nedeniyle kur şoku riskine açık olduğunu söylemiştir."
+            },
+            {
+              "kod": "Kıraç Galvaniz",
+              "ne_dedi": "Kapasite artıran yeni tesis hamlesiyle esas faaliyet kârını yüzde 500'ün üzerinde artıran şirketin çarpanlarını makul, ancak negatif nakit akışını endişe verici bulduğunu aktarmıştır."
+            },
+            {
+              "kod": "BRSAN",
+              "ne_dedi": "Gelirlerinin büyük bölümü ABD'den geldiği için Türkiye riskinden koruyan, çarpanları Borsa İstanbul'a göre pahalı fakat ABD benzerlerine göre iskontolu koruyucu bir hisse olduğunu dile getirmiştir."
+            },
+            {
+              "kod": "YEOTK",
+              "ne_dedi": "Siparişleri ve kârlılığı güçlü olsa da önümüzdeki 2 yıl için çizilen yüksek hedeflerin muhafazakar olmadığını ve şirket yönetimine temkinli yaklaştığını belirtmiştir."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Tüpraş için savaş kaynaklı aşırı yüksek kâr marjlarının kalıcı olmaması ve normalleşme sürecine girmesi.",
+            "Ebebek için gelirlerin neredeyse tamamının iç pazardan olması sebebiyle olası bir kur şoku ve devalüasyon riski.",
+            "Kıraç Galvaniz için işletme faaliyetlerinden gelen nakit akışlarının eksi olması ve yeni tesis kaynaklı sert finansal artışın gelecek yıl tekrarlanmama riski.",
+            "Borusan Boru için küresel petrol fiyatlarında yaşanabilecek olası sert düşüşlerin sondaj tarafını olumsuz etkileme riski.",
+            "Yeo Teknoloji için yönetimin açıkladığı 2 yıllık büyüme projeksiyonlarının aşırı iyimser olması ve hedeflerin tutturulamama ihtimali."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3.8-flash",
+          "islendi_utc": "2026-11-15T17:25:21.322762+00:00"
+        }
+      ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564697+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 1,
+      "son_kontrol_utc": "2026-11-15T17:31:16.613369+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -1060,8 +1339,59 @@
       "channel_id": "UC9PfAU8pdnTs7afxIXKhgVA",
       "kanal_adi": "Erkan Öz",
       "hata": null,
-      "son_basarili_utc": "2026-11-08T09:34:11.065644+00:00",
+      "son_basarili_utc": "2026-11-15T17:22:26.345946+00:00",
       "videolar": [
+        {
+          "video_id": "sc_Vq1ZDMiU",
+          "baslik": "Hangi Yatırım Araçları Trendini Kaybetti?",
+          "yayin_tarihi": "2026-11-15T13:00:21+00:00",
+          "url": "https://www.youtube.com/watch?v=sc_Vq1ZDMiU",
+          "kanal_adi": "Erkan Öz",
+          "sure_dk": 59.1,
+          "canli": false,
+          "ana_mesaj": "Küresel piyasalarda jeopolitik gerilimler ve likidite sorunları nedeniyle büyük bir belirsizlik hakimken, yatırımcıların trend göstergelerini takip ederek nakit varlıklarını korumaları ve risklerini çeşitlendirmeleri kritik önem taşımaktadır.",
+          "ozet": [
+            "Nvidia CEO'sunun karıştığı casusluk skandalı ve Çin ile yaşanan çip savaşlarının teknoloji hisseleri üzerindeki olumsuz etkileri tartışıldı.",
+            "ABD borsalarının aşırı şiştiği ve bir balon oluştuğu, trend göstergeleri bozulduğunda sert düşüşlerin yaşanabileceği uyarısı yapıldı.",
+            "Altın ve gümüşün 200 günlük ortalamalarının altında seyrettiği, trend pozitife dönmeden yeni alım yapmanın riskli olduğu belirtildi.",
+            "Bitcoin'in önemli ortalamalarını kaybettiği, güvenli bir giriş için 73.000-76.000 dolar seviyelerinin aşılmasının beklenmesi gerektiği ifade edildi.",
+            "ABD tahvil piyasasındaki güven kaybının küresel finansal sistemi çökertebilecek bir 'Finansal 3. Dünya Savaşı' çıkarma potansiyeli vurgulandı.",
+            "Türkiye'deki fon krizinin yarattığı güven kaybının Borsa İstanbul'da büyük zararlara yol açtığı ve reel ekonomiyi yavaşlattığı dile getirildi.",
+            "Yapay zeka teknolojisindeki hızlı gelişimin kitlesel işsizliğe yol açabileceği ve devletlerin 'evrensel temel gelir' gibi çözümlere yöneleceği öngörüldü.",
+            "Hürmüz Boğazı ve İran merkezli olası bir çatışmanın küresel enflasyonu ve petrol fiyatlarını tetikleyebileceği riskine dikkat çekildi."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "NVDA",
+              "ne_dedi": "Casusluk skandalı sonrası 200 günlük ortalamasını kaybetti ve borsada ciddi değer kaybı yaşadı."
+            },
+            {
+              "kod": "ALTIN",
+              "ne_dedi": "Ons bazında 4.450 dolar olan 200 günlük ortalamanın altında (3.900 dolar seviyelerinde) seyrediyor; trend pozitife dönmeden alım yapılması önerilmiyor."
+            },
+            {
+              "kod": "GÜMÜŞ",
+              "ne_dedi": "Trendin bozulduğu ve yatırımcıların aylar öncesinden pozisyon azaltması gereken bir dönemde olduğu belirtildi."
+            },
+            {
+              "kod": "BTC",
+              "ne_dedi": "200 ve 365 günlük ortalamalarını kaybetti; 73.000 doların üzerine çıkması güvenli giriş için bir sinyal olabilir."
+            },
+            {
+              "kod": "USD/TRY",
+              "ne_dedi": "Seçim ekonomisi nedeniyle baskılanmaya devam etse de kademeli bir artışın kaçınılmaz olduğu ifade edildi."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Hürmüz Boğazı'nın kapanması veya İran'a yönelik nükleer/konvansiyonel bir saldırı ihtimalinin küresel yıkım yaratması.",
+            "ABD tahvillerine olan talebin durması sonucu dolar sisteminin çökmesi ve hiperenflasyon dalgası.",
+            "Yapay zekanın yaratacağı kitlesel işsizlik dalgasının toplumsal huzursuzluklara yol açması.",
+            "Türkiye'deki fon krizinin yarattığı güven kaybının borsada kalıcı hasar bırakması ve likiditeyi kurutması."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-15T17:22:26.345929+00:00"
+        },
         {
           "video_id": "MS1E66GcqOo",
           "baslik": "Seçimin Maliyeti 4.5 Trilyon Dolar!",
@@ -1131,9 +1461,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564702+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 1,
+      "son_kontrol_utc": "2026-11-15T17:31:16.613377+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -1252,7 +1582,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564711+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613388+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -1309,7 +1639,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564717+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613395+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -1376,7 +1706,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564721+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613400+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -1732,7 +2062,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564729+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613409+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -1850,7 +2180,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564735+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613415+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -1859,8 +2189,46 @@
       "channel_id": "UCEirjSmtSFXJfMO0mTd2sBA",
       "kanal_adi": "koraynomi",
       "hata": null,
-      "son_basarili_utc": "2026-11-13T07:20:08.765708+00:00",
+      "son_basarili_utc": "2026-11-15T17:14:21.559743+00:00",
       "videolar": [
+        {
+          "video_id": "BdcBHahrN9Y",
+          "baslik": "TL'de Kalmanın Eşiği: Kur Bu Hızı Geçerse Kazanç Biter",
+          "yayin_tarihi": "2026-11-15T16:52:14+00:00",
+          "url": "https://www.youtube.com/watch?v=BdcBHahrN9Y",
+          "kanal_adi": "koraynomi",
+          "sure_dk": 10.6,
+          "canli": false,
+          "ana_mesaj": "TL faizinin döviz artışına karşı sunduğu getiri avantajı (makas) faiz indirimleri ve hızlanan kur nedeniyle daralmakta olup yatırımcıların başabaş eşiğini ve rezerv/mevduat sinyallerini yakından takip etmesi gerekmektedir.",
+          "ozet": [
+            "Ağustos-Ekim döneminde hanehalkı para piyasası fonlarından 17 milyar dolar çıkardı ancak dövize geçmeyip büyük oranda TL mevduatta kalarak yerli carry trade pozisyonunu korudu.",
+            "TL'de durmanın dolar bazlı yıllık getirisi 2024 başındaki %60'lı ve Mayıs'taki %12'lik seviyelerden günümüzde yaklaşık %8,4'e kadar gerilemiştir.",
+            "Merkez Bankası'nın faiz indirim sinyali vermesi ve reel değerlenmenin ihracatçı üzerindeki baskısını hafifletmek için kur artışının kontrollü biçimde aylık %1,8'e hızlandırılması makası iki taraftan daraltmaktadır.",
+            "Stopaj ve bileşik getiri hesabı yapıldığında %36 brüt faizin aylık başabaş eşiği %2,48'dir; dolar aylık bazda bu oranın altında kaldığı sürece TL faizi kazandırmaktadır.",
+            "Carry trade getirisinde 'kazanç merdivenle çıkar, kayıp asansörle iner' kuralı geçerlidir; kurdaki tek bir ani sıçrama bir yıllık faiz avantajını silebilir.",
+            "Fitch ve QNB gibi kurumların beklediği faiz indirimleri gerçekleştiğinde başabaş eşiği %1,75 - %2,13 bandına kadar inerek mevcut kur hızıyla kafa kafaya gelecektir.",
+            "Yatırımcıların döviz kararında Merkez Bankası rezervlerini, faiz kararlarını ve toplam mevduattaki döviz payını düzenli takip etmesi önerilmektedir."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "USD/TRY",
+              "ne_dedi": "Aylık %1,8 hızla artmakta olup mevcut faiz eşiği olan %2,48'in altında kaldığı sürece TL mevduat karşısında geride kalmaktadır ancak ani sıçrama riski taşımaktadır."
+            },
+            {
+              "kod": "Gram Altın",
+              "ne_dedi": "Ons altın fiyatı değişmese bile kur yükseldiği takdirde değer kazanmaya devam eden bir mekanizmaya sahiptir."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Kurda tek bir sabah yaşanabilecek ani bir yükselişin tüm yıllık faiz kazancını sıfırlama riski.",
+            "TCMB swap hariç net rezervlerinin fon çıkışları ve müdahaleler nedeniyle hızla erimesi kalkanının incelmesi.",
+            "Faiz indirimleriyle birlikte başabaş eşiğinin düşmesi ve kur artış hızıyla makasın tamamen kapanması tehlikesi.",
+            "Mevduatta döviz payının yeniden artışa geçmesi durumunda kur üzerindeki baskının kontrolden çıkma riski."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3.8-flash",
+          "islendi_utc": "2026-11-15T17:14:21.559725+00:00"
+        },
         {
           "video_id": "z5CyX2HUjY0",
           "baslik": "Fon Krizinde Dava Açmadan Önce: Haklar, Sınırlar, Gri Alanlar | Av. Ahmet Oğuz Atalay",
@@ -2099,9 +2467,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 4,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564746+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613432+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -2110,14 +2478,59 @@
       "channel_id": "UCuvtfHnaginER11Rcv3BOlg",
       "kanal_adi": "Mental Yatırım",
       "hata": null,
-      "son_basarili_utc": null,
-      "videolar": [],
+      "son_basarili_utc": "2026-11-15T17:17:53.104919+00:00",
+      "videolar": [
+        {
+          "video_id": "AVprH0Hg_fk",
+          "baslik": "BES Dahisiyle BES'i verimli Kullanmayı Konuşuyoruz",
+          "yayin_tarihi": "2026-11-15T13:25:48+00:00",
+          "url": "https://www.youtube.com/watch?v=AVprH0Hg_fk",
+          "kanal_adi": "Mental Yatırım",
+          "sure_dk": 47.1,
+          "canli": false,
+          "ana_mesaj": "Bireysel Emeklilik Sistemi (BES), sağladığı yüksek devlet katkısı, vergi avantajları ve çoklu sözleşme stratejileriyle uzun vadeli refah için güçlü bir birikim aracı sunarken, yatırımların aktif fon dağılımı ve makro döngülere uygun sepetlerle yönetilmesi gerekmektedir.",
+          "ozet": [
+            "BES fonlarının iç tüzük kuralları ve devlet garantisi sayesinde sert piyasa dalgalanmalarından daha az etkilendiği, TEFAS'taki %17,5 stopaja karşılık BES'te emeklilikte %5 stopaj avantajı bulunduğu vurgulanmıştır.",
+            "Bireysel emeklilikte yıllık devlet katkısı limitinin (bu yıl 396 bin TL) yıl sonuna doğru toplu ödemelerle tamamlanabileceği ve aşan tutarların sonraki yıllara devrettiği belirtilmiştir.",
+            "Yatırımcıların mevcut birikimlerinin fon dağılımı ile bundan sonra yatıracakları yeni tutarların fon dağılımını sistem üzerinden birbirinden bağımsız olarak belirleyebileceği ifade edilmiştir.",
+            "Emeklilik hakkı elde edildiğinde toplu para yerine 29 yıla kadar maaş alma seçeneğinin tercih edilebileceği, maaş alınırken de ihtiyaç halinde içeriden toplu çekim yapılabileceği aktarılmıştır.",
+            "Katılımcının vefatı durumunda birikimin ve devlet katkısının tamamının sadece %5 vergi kesintisiyle belirlenen lehtara veya yasal mirasçılara aktarıldığı açıklanmıştır.",
+            "Faiz indirimleri, enflasyon beklentileri ve döviz hareketleri paralelinde Türk borsasının (özellikle BIST 30 ve BIST 50) önümüzdeki dönemde önemli getiri fırsatları sunabileceği öngörülmüştür."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "Altın",
+              "ne_dedi": "Hikayesini bir miktar tamamladığı düşünülerek portföylerdeki altın ağırlığının düşürüldüğü ya da sıfırlandığı belirtilmiştir."
+            },
+            {
+              "kod": "Teknoloji Fonları",
+              "ne_dedi": "Yıl içinde iyi kazandırmış olsa da son dönemde dalgalandığı ve özellikle yurt dışı teknoloji fonlarının riskli görülerek ağırlığının azaltıldığı ifade edilmiştir."
+            },
+            {
+              "kod": "XU030",
+              "ne_dedi": "Enflasyonun altında kalmış değerlemeler ve beklenen faiz düşüşü döngüsüyle birlikte BIST 30 şirketlerinde güçlü bir yükseliş fırsatı beklendiği aktarılmıştır."
+            },
+            {
+              "kod": "XU050",
+              "ne_dedi": "Piyasadaki para bolluğu ve döngüsel toparlanmada BIST 50 hisselerinin radarda tutulması gereken önemli getiri potansiyeline sahip olduğu ifade edilmiştir."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Kısa vadeli piyasa zamanlaması (timing) yapmaya çalışmanın ve sık al-sat yapmanın sermaye erimesine ve piyasa getirisinin gerisinde kalınmasına yol açması.",
+            "Aracı kurumun kendi emeklilik fonunu kurup yönetmesi durumunda katılımcıyla yaşanabilecek potansiyel çıkar çatışması riski.",
+            "Yurt dışı piyasalar ve teknoloji hisselerindeki aşırı primlenme sonrası yaşanabilecek sert düzeltme riski."
+          ],
+          "icerik_turu": "kisisel_finans",
+          "transkript_kaynagi": "gemini:gemini-3.8-flash",
+          "islendi_utc": "2026-11-15T17:17:53.104901+00:00"
+        }
+      ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564748+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 1,
+      "son_kontrol_utc": "2026-11-15T17:31:16.613437+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -2133,7 +2546,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564750+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613440+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -2149,7 +2562,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564752+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613442+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -2341,7 +2754,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564760+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613450+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -2730,10 +3143,10 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 13,
-      "son7_uzun_video": 7,
-      "liste_disi": "her gun video yukluyor (son 7 gunde 7 uzun video)",
-      "son_kontrol_utc": "2026-11-14T17:54:18.564779+00:00"
+      "aday_sayisi": 15,
+      "son7_uzun_video": 9,
+      "liste_disi": "her gun video yukluyor (son 7 gunde 9 uzun video)",
+      "son_kontrol_utc": "2026-11-15T17:31:16.613472+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -2744,6 +3157,46 @@
       "hata": null,
       "son_basarili_utc": "2026-11-10T15:23:09.926874+00:00",
       "videolar": [
+        {
+          "video_id": "1Z3hKfQi34s",
+          "baslik": "#GARAN da yükseliş nereye kadar devam edecek ? #bist100 #borsa #kesfet #keşfetteyiz",
+          "yayin_tarihi": "2026-11-15T13:49:27+00:00",
+          "url": "https://www.youtube.com/watch?v=1Z3hKfQi34s",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 1.0,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "zMnzMGtf32M",
+          "baslik": "ALTIN VE BORSADA YENİ BİR YÜKSELİŞİN ŞARTLARI....",
+          "yayin_tarihi": "2026-11-15T13:20:06+00:00",
+          "url": "https://www.youtube.com/watch?v=zMnzMGtf32M",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.0,
+          "canli": true,
+          "atlandi": "canli yayin"
+        },
+        {
+          "video_id": "KLDMwEWkmfk",
+          "baslik": "ALTIN DESTEK￼ SEVİYELERİNDEN YENİ BİR YÜKSELİŞ YAPACAK MI ? #xauusd #altın #bist100 #keşfet #forex",
+          "yayin_tarihi": "2026-11-15T12:55:31+00:00",
+          "url": "https://www.youtube.com/watch?v=KLDMwEWkmfk",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 1.1,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "J1QgUv7ZJd8",
+          "baslik": "Gram altın yeni bir yükseliş için önemli bir destek bölgesinde #xauusd #kesfet #bist100 #forex",
+          "yayin_tarihi": "2026-11-15T07:19:18+00:00",
+          "url": "https://www.youtube.com/watch?v=J1QgUv7ZJd8",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.8,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "5tBzx4Tmb5I",
           "baslik": "#THYAO da kazanmaya ve kazandırmaya devam ediyoruz #bist100 #pgsus #borsa #kesfet #forex",
@@ -2853,88 +3306,14 @@
           "sure_dk": 1.0,
           "canli": false,
           "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "Cpo6hffdzdw",
-          "baslik": "ABD ENFLASYON VERİSİ VE BORSA İSTANBUL....",
-          "yayin_tarihi": "2026-11-10T13:25:27+00:00",
-          "url": "https://www.youtube.com/watch?v=Cpo6hffdzdw",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 64.2,
-          "canli": false,
-          "ana_mesaj": "Borsa İstanbul'da 10.000 puan seviyesinin psikolojik ve teknik bir eşik olduğu, bu seviyenin aşılması için hacimli alımların gerektiği vurgulanmaktadır.",
-          "ozet": [
-            "Endeksin 9.800 desteği üzerinde tutunma çabası içinde olduğu belirtildi.",
-            "Faiz kararları öncesinde piyasada bekle-gör politikasının hakim olduğu ifade edildi.",
-            "Sanayi hisselerindeki zayıflığın endeks üzerinde baskı oluşturduğu dile getirildi.",
-            "Teknik göstergelerin aşırı satım bölgesinden dönüş sinyalleri verdiği paylaşıldı.",
-            "Orta vadeli yatırımcılar için kademeli alım fırsatlarının oluşabileceği söylendi.",
-            "Yabancı takas oranındaki değişimlerin yakından izlenmesi gerektiği vurgulandı."
-          ],
-          "bahsedilen_hisseler": [
-            {
-              "kod": "BIST100",
-              "ne_dedi": "10.200 direncinin geçilmesi durumunda yeni zirvelerin hedeflenebileceği belirtildi."
-            },
-            {
-              "kod": "THYAO",
-              "ne_dedi": "290 TL seviyesindeki gap boşluğunun dolma ihtimali üzerinde duruldu."
-            },
-            {
-              "kod": "SISE",
-              "ne_dedi": "48-50 TL bandında güçlü bir destek oluşturduğu ve uzun vade için uygun olduğu söylendi."
-            },
-            {
-              "kod": "ASELS",
-              "ne_dedi": "Savunma sanayii projeleriyle 60 TL [?] seviyelerinde kalıcılık aradığı belirtildi."
-            }
-          ],
-          "konusmacinin_riskleri": [
-            "Kredi derecelendirme kuruluşlarından beklenen not artışlarının gelmemesi",
-            "Döviz kurundaki ani dalgalanmalar",
-            "Küresel piyasalardaki satış baskısının derinleşmesi"
-          ],
-          "icerik_turu": "piyasa_yorumu",
-          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
-          "islendi_utc": "2026-11-10T15:22:29.941234+00:00"
-        },
-        {
-          "video_id": "gHEOnBPU7Ls",
-          "baslik": "ALTIN DİRENÇ SEVİYELERİNİ GEÇEBİLECDK Mİ ? #xauusd #altın #bist100 #keşfet #forex",
-          "yayin_tarihi": "2026-11-10T10:06:41+00:00",
-          "url": "https://www.youtube.com/watch?v=gHEOnBPU7Ls",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 1.0,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "oGiInBRNsLU",
-          "baslik": "#THYAO hissesinde yükseliş devam edecek mi ? #bist100 #borsa #keşfetteyiz #keşfet",
-          "yayin_tarihi": "2026-11-10T10:05:27+00:00",
-          "url": "https://www.youtube.com/watch?v=oGiInBRNsLU",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.8,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "o1qYAJ7_sow",
-          "baslik": "LAGARDE UYARDI… ENFLASYON YÜKSEK KALACAK… #enflasyon #faiz #xauusd #bist100 #keşfet",
-          "yayin_tarihi": "2026-11-09T11:05:46+00:00",
-          "url": "https://www.youtube.com/watch?v=o1qYAJ7_sow",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 1.0,
-          "canli": false,
-          "atlandi": "sure 1 dk"
         }
       ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 4,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564796+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613500+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -2950,7 +3329,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564798+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613503+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -2966,7 +3345,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-14T17:54:18.564800+00:00"
+      "son_kontrol_utc": "2026-11-15T17:31:16.613505+00:00"
     }
   },
   "hata": null,
@@ -2984,10 +3363,13 @@
   ],
   "butce": {
     "toplam_sinir": 20,
-    "islenen": 0,
-    "bekleyen": 0,
+    "islenen": 7,
+    "bekleyen": 1,
     "kota_bitti": false,
-    "kullanilan_modeller": {},
+    "kullanilan_modeller": {
+      "gemini-3.8-flash": 4,
+      "gemini-3-flash-preview": 3
+    },
     "kotasi_dolan_modeller": []
   },
   "kota_gunlugu": [
@@ -3120,9 +3502,32 @@
       "kullanilan_modeller": {},
       "kotasi_dolan_modeller": [],
       "zaman_utc": "2026-11-14T17:54:18.564811+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 7,
+      "bekleyen": 1,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-3.8-flash": 4,
+        "gemini-3-flash-preview": 3
+      },
+      "kotasi_dolan_modeller": [],
+      "zaman_utc": "2026-11-15T17:31:16.613524+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-14T17:54:18.564815+00:00",
-  "denemeler": []
+  "uretim_zamani_utc": "2026-11-15T17:31:16.613528+00:00",
+  "denemeler": [
+    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP",
+    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP",
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
+    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP",
+    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP",
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP"
+  ]
 }

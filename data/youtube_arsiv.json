@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-14T17:54:18.631480+00:00",
+ "uretim_zamani_utc": "2026-11-15T17:31:16.681709+00:00",
  "kisiler": {
   "Yaşar Erdinç": {
    "islenenler": [
@@ -70,6 +70,59 @@
       {
        "kod": "BIMAS",
        "ne_dedi": "Model portföy listesinde yer alan ve takip edilen hisseler arasında zikredilmiştir."
+      }
+     ],
+     "konusmaci_dogrulandi": true,
+     "yaklasik_tarih": "2014"
+    },
+    {
+     "video_id": "8qs4y3sdfX8",
+     "baslik": "Dr  Yaşar Erdinç -Yatırımcı Psikolojisi Eğitimi",
+     "kanal": "İKTİSÂDÎ HAYAT",
+     "yayin_tarihi": "2023-01-21T16:13:44Z",
+     "url": "https://www.youtube.com/watch?v=8qs4y3sdfX8",
+     "sure_dk": 115.8,
+     "islenme_utc": "2026-11-15T17:40:51.453854+00:00",
+     "kaynak": "gemini:gemini-3.8-flash",
+     "ilkeler": [
+      "İşleme girmeden önce hangi vadede, ne kadar kâr hedeflendiği ve ne kadarlık zarara (stop) katlanılacağı önceden net olarak belirlenmelidir.",
+      "Bilinçaltının ve duyguların yanıltıcı etkilerinden kurtulmak için piyasada hislerle değil, test edilmiş kuralcı bir sistemle hareket edilmelidir.",
+      "Arka arkaya birkaç kez kâr edildiğinde aşırı güvene kapılıp pozisyon büyüklüğü artırılmamalı; kâr edilen miktar kenara çekilip ana sermaye ile devam edilmelidir.",
+      "Zararı kabullenmeyip 'battı balık yan gider' diyerek zararda ısrar edilmemeli (batık maliyet yanılgısı), stop seviyesine sadık kalınmalıdır.",
+      "Alış yaparken fiyatın geçmişte nereden düştüğüne, satış yaparken de daha önce nereye kadar çıktığına bakarak çıpalama (anchoring) hatasına düşülmemelidir.",
+      "Bir ticaret sisteminin başarısını ölçmek ve refleks haline getirmek için en az 6 ay ile 1 yıl boyunca kural dışına çıkmadan uygulanmalıdır.",
+      "Panik anlarında veya stres seviyesi en tepeye ulaştığında tabanda/dipte satış yapmaktan kaçınılmalı, stres anında verilen kararların beynin amigdala dürtülerinden kaynaklandığı unutulmamalıdır."
+     ],
+     "ozet": [
+      "İnsan beyni ve biyolojisi; aşırı güven, iyimserlik, çıpalama ve akli muhasebeleştirme gibi bilişsel zaaflar nedeniyle finansal piyasalarda rasyonel kararlar vermeye uygun programlanmamıştır.",
+      "Lo, Repin ve Steenbarger'ın traderlar üzerinde yaptığı klinik deneyler, aşırı duygusal tepkiler (korku ve hırs) ile ticaret performansı arasında belirgin bir negatif ilişki olduğunu kanıtlamıştır.",
+      "Stres ve zarar büyüdükçe amigdaladan gelen duygusal sinyaller beynin mantıklı karar veren ön korteksini baskılayarak yatırımcılara tam dipte satış yaptırmaktadır.",
+      "Bu zaafları yenmenin tek yolu, yatırım kararlarını önceden belirlenmiş hedefler, kesin stop-loss kuralları ve duygulardan arındırılmış mekanik sistemlere bağlamaktır."
+     ],
+     "bahsedilen_hisseler": [
+      {
+       "kod": "EURUSD",
+       "ne_dedi": "Hareketli ortalamalar üzerinden yön tahmininin zorluğunu göstermek için incelendi ve kısa vadede yatay-sıkışık seyrettiği belirtildi."
+      },
+      {
+       "kod": "XAUUSD",
+       "ne_dedi": "1300 doların üzerine sert yükseldiğini, 1298-1300 dolar seviyelerinde stop belirlenebiliyorsa long pozisyon açılabileceğini söyledi."
+      },
+      {
+       "kod": "USDTRY",
+       "ne_dedi": "2.1460-2.1470 direnç seviyesine stop konularak kısa pozisyon denenebileceğini, burası aşılırsa 2.1534 seviyesine kadar çıkabileceğini belirtti."
+      },
+      {
+       "kod": "BRENT",
+       "ne_dedi": "115 dolar seviyesine yükselerek çok sert bir yukarı hareket sergilediğini ifade etti."
+      },
+      {
+       "kod": "VIOP",
+       "ne_dedi": "98.600 geçilirse 100.000 hedefiyle long açılabileceğini, geri çekilmelerde ise 96.600 veya 96.300 seviyelerinden stoplu long düşünülebileceğini belirtti."
+      },
+      {
+       "kod": "TOASO",
+       "ne_dedi": "Gedik Yatırım model portföyünden 14.00 TL fiyattan 500 lot satış yapıldığını örnek portföy tablosunda gösterdi."
       }
      ],
      "konusmaci_dogrulandi": true,
@@ -224,7 +277,7 @@
     }
    ],
    "aday_guncelleme_utc": "2026-11-14T17:54:19.688598+00:00",
-   "kalan_aday": 17,
+   "kalan_aday": 16,
    "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz.",
    "hata": null
   }
