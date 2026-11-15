@@ -54,9 +54,16 @@ def chunks_for(timing, style):
 
 
 
+MARKA = "KeyfiZar"   # kanal markası: büyük harfe çevrilmez, küçük harfli yazı tipiyle basılır
+
+
 def tr_upper(s):
-    """Türkçe büyük harf: i→İ (Python'un upper()'ı i→I yapar)."""
-    return s.replace("i", "İ").upper()
+    """Türkçe büyük harf: i→İ (Python'un upper()'ı i→I yapar). "KeyfiZar" geçen kelimeler olduğu gibi kalır."""
+    return " ".join(w if MARKA.lower() in w.lower() else w.replace("i", "İ").upper() for w in s.split(" "))
+
+
+def kelime_font(w, f):
+    return "marka" if MARKA.lower() in w.lower() else f
 
 class Captions:
     def __init__(self, style, width, height, timing, fonts_dir=None):
@@ -93,7 +100,7 @@ class Captions:
         k = self.k; size = 66 * k; y = self.H * (0.76 if self.dikey else 0.897); f = "cond"
         words = [tr_upper(w) for w, _ in c["words"]]
         gap = size * 0.28
-        widths = [text_width(self.res, w, size, f, 0.03) for w in words]
+        widths = [text_width(self.res, w, size, kelime_font(w, f), 0.03) for w in words]
         total = sum(widths) + gap * (len(words) - 1)
         x = self.W / 2 - total / 2
         a = ramp(t, c["t0"] - 0.05, 0.12)
@@ -105,16 +112,16 @@ class Captions:
                 # white word underneath; the yellow swipe reveals it in black only where the swipe has reached
                 u = ease_out_cubic(ramp(t, c["words"][i][1], 0.12))
                 box = skia.Rect.MakeXYWH(x - 10 * k, y - size * 0.78, (wd + 20 * k) * u, size * 0.92)
-                draw_text(cv, self.res, w, x, y, size, f, (250, 247, 240), a, 0.03)
+                draw_text(cv, self.res, w, x, y, size, kelime_font(w, f), (250, 247, 240), a, 0.03)
                 cv.drawRect(box, paint(HILITE, 0.95 * a))
                 cv.save(); cv.clipRect(box)
-                draw_text(cv, self.res, w, x, y, size, f, (18, 16, 14), a, 0.03)
+                draw_text(cv, self.res, w, x, y, size, kelime_font(w, f), (18, 16, 14), a, 0.03)
                 cv.restore()
             else:
                 cv.save(); cv.translate(3 * k, 4 * k)
-                draw_text(cv, self.res, w, x, y, size, f, (0, 0, 0), 0.6 * a, 0.03)
+                draw_text(cv, self.res, w, x, y, size, kelime_font(w, f), (0, 0, 0), 0.6 * a, 0.03)
                 cv.restore()
-                draw_text(cv, self.res, w, x, y, size, f, (250, 247, 240), a, 0.03)
+                draw_text(cv, self.res, w, x, y, size, kelime_font(w, f), (250, 247, 240), a, 0.03)
             x += wd + gap
 
     def _clean(self, cv, c, t):
