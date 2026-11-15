@@ -2,11 +2,11 @@
  "surum": "1.0",
  "hata": null,
  "not": "Kısmi TMS 29 arındırma: yalnız ertelenmiş vergi çıkarılır; net parasal pozisyon İş Yatırım şablonunda ayrı satır olmadığı için çıkarılamaz. Marj değişimi: yılbaşından bugüne, yıllık.",
- "islenen": 506,
+ "islenen": 10,
  "hata_sayisi": 0,
  "kapsam": 496,
  "evren": 506,
- "uretim_zamani_utc": "2026-11-12T10:25:23+00:00",
+ "uretim_zamani_utc": "2026-11-15T13:59:52+00:00",
  "hisseler": {
   "TUPRS": {
    "donem": "2026/09",
