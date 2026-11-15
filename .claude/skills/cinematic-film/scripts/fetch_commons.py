@@ -62,7 +62,7 @@ def info(page):
             "desc": g("ImageDescription")[:160]}
 
 
-IIPROP = dict(prop="imageinfo", iiprop="url|size|mime|extmetadata", iiurlwidth=3200)
+IIPROP = dict(prop="imageinfo", iiprop="url|size|mime|extmetadata", iiurlwidth=1920)   # Wikimedia standart küçük kopya boyutu; orijinal indirmeler 429 ile sınırlanıyor
 
 
 def show(pages):
@@ -113,9 +113,7 @@ def cmd_get(a):
             ok = bool(FREE.search(d["license"] or ""))
             if not ok and not a.allow_nonfree:
                 print(f"{p['id']}: REFUSED, licence {d['license']!r} is not free ({d['source']})"); refused += 1; continue
-            url = d["thumb"] if d["thumb"] and (d["w"] or 0) > 3200 and "svg" not in (d["mime"] or "") else d["url"]
-            if "svg" in (d["mime"] or ""):
-                url = d["thumb"]
+            url = d["thumb"] or d["url"]   # her zaman standart küçük kopya (tif/svg de jpg/png olarak gelir)
             ext = pathlib.Path(urllib.parse.urlparse(url).path).suffix.lower() or ".jpg"
             fname = p["file"] if have and not a.force else f"{p['id']}_{re.sub(r'[^A-Za-z0-9]+', '_', title[5:].rsplit('.', 1)[0])[:48]}{ext}"
             if not have or a.force:
