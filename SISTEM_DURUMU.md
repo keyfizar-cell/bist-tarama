@@ -203,6 +203,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 15.11.2026 | Alpay kararı: X ücretsiz yollarla. `araclar/x_deney.py` v1.0 + `x-deney.yml` (yalnız dispatch): X oEmbed, X embed syndication (tweet/profil), Telegram t.me/s önizleme, Bluesky açık arama yoklaması → `data/x_deney.json`. Hesap/çerez/ücretli API yok | Claude Code |
 | 15.11.2026 | Agent-Reach (Panniantong) değerlendirildi, kurulmadı: X/Reddit giriş + tarayıcı çerezi istiyor, bulutta çalışmıyor → SEÇİLMEDİ listesine eklendi | Claude Code |
 | 15.11.2026 | HyperFrames kuruldu (heygen-com/hyperframes, Apache-2.0, Alpay isteği): 4 skill `.claude/skills/` altında (hyperframes, hyperframes-cli, hyperframes-registry, media-use); telemetri kapalı, GSAP yerel, ücretli HeyGen özellikleri onaya bağlı; deneme render'ı başarılı (10 sn dikey 9 sn'de). Remotion değerlendirildi, kurulmadı | Claude Code |
 | 15.11.2026 | Stil seçimi kuralı (Alpay kararı): her videodan önce `icerik-uretim/stiller.md`'den numaralı stil listesi + 3 öneri gösterilir, seçilen numarayla üretilir; katalog: 1–8 KeyfiZar temaları, 9–107 Lemo-Opuscar, 108+ yeni | Claude Code |
