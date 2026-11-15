@@ -48,7 +48,10 @@ FONT_ROLES = {
              ("DejaVu Sans Condensed", 700), ("Impact", 400)],
     "label": [("Avenir Next", 800), ("Montserrat", 800), ("Helvetica Neue", 700), ("Arial", 700), ("DejaVu Sans", 700)],
     "labelm": [("Avenir Next", 700), ("Montserrat", 600), ("Helvetica Neue", 500), ("Arial", 400), ("DejaVu Sans", 400)],
+    # kanal markası "KeyfiZar": küçük harf destekli kalın yazı (Bebas/cond her şeyi büyük harf basar)
+    "marka": [("Inter", 800), ("Montserrat", 800), ("Helvetica Neue", 800), ("Arial", 700), ("DejaVu Sans", 700)],
 }
+MARKA = "KeyfiZar"     # her yerde tam bu yazımla (Alpay kararı 15.11.2026)
 
 # Looks: the board under everything plus the film finish. A scene picks one with Film(look=...).
 LOOKS = {

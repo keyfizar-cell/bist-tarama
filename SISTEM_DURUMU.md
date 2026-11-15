@@ -202,6 +202,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 15.11.2026 | Kanal markası `KeyfiZar` (Alpay kararı; yazım değişmez): cinematic-film'e `marka` yazı tipi rolü, altyazıda marka koruması ve `scripts/marka.py` (filigran + kapanış imzası); `CLAUDE.md`'ye üç katmanlı marka kuralı. Kuyruktaki iki short'a (Salı, Perşembe) filigran eklendi | Claude Code |
 | 15.11.2026 | cinematic-film `fetch_commons.py`: Wikimedia görselleri 1920 px standart küçük kopya olarak indirilir (orijinaller 429 veriyor). Ortama commons/upload.wikimedia.org izni eklendi (Alpay onayı) | Claude Code |
 | 15.11.2026 | Belgesel referans sesi Alpay'ın Drive'ına (`İçerik Üretim/BelgeselSesi.wav`) kaydedildi; `CLAUDE.md`'ye nasıl bulunacağı yazıldı (kimlik repoya yazılmadı) | Claude Code |
 | 15.11.2026 | cinematic-film `engine.py` `Counter`'a `sep` (binlik ayırıcı) parametresi: Türkçe sayılar "%1.000" biçiminde; varsayılan davranış aynı | Claude Code |
