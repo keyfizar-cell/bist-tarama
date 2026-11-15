@@ -53,10 +53,18 @@ def chunks_for(timing, style):
     return out
 
 
+
+def tr_upper(s):
+    """Türkçe büyük harf: i→İ (Python'un upper()'ı i→I yapar)."""
+    return s.replace("i", "İ").upper()
+
 class Captions:
     def __init__(self, style, width, height, timing, fonts_dir=None):
         self.style, self.W, self.H = style, width, height
         self.k = width / 1920.0
+        self.dikey = height > width          # dikey (Shorts): yazı ~1.85x büyük, Shorts arayüzünün üstünde
+        if self.dikey:
+            self.k *= 1.85
         self.res = Res(width / 3840.0, None, fonts_dir)
         self.chunks = chunks_for(timing, style)
         self.surface = skia.Surface.MakeRaster(skia.ImageInfo.Make(width, height, skia.ColorType.kRGBA_8888_ColorType, skia.AlphaType.kPremul_AlphaType))
@@ -79,11 +87,11 @@ class Captions:
 
     def _text(self, c, upper=False):
         txt = " ".join(w for w, _ in c["words"])
-        return txt.upper() if upper else txt
+        return tr_upper(txt) if upper else txt
 
     def _highlighter(self, cv, c, t):
-        k = self.k; size = 66 * k; y = self.H * 0.897; f = "cond"
-        words = [w.upper() for w, _ in c["words"]]
+        k = self.k; size = 66 * k; y = self.H * (0.76 if self.dikey else 0.897); f = "cond"
+        words = [tr_upper(w) for w, _ in c["words"]]
         gap = size * 0.28
         widths = [text_width(self.res, w, size, f, 0.03) for w in words]
         total = sum(widths) + gap * (len(words) - 1)

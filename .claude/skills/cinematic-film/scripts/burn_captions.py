@@ -41,7 +41,7 @@ def worker(args):
     import numpy as np
     from captions import Captions
     cap = Captions(style, w, h, timing, fonts)
-    y0 = int(h * 0.74)
+    y0 = int(h * (0.62 if h > w else 0.74))   # dikeyde altyazı daha yukarıda
     dec = subprocess.Popen(["ffmpeg", "-v", "error", "-ss", f"{f0 / fps:.4f}", "-i", str(video), "-frames:v", str(f1 - f0),
                             "-f", "rawvideo", "-pix_fmt", "rgb24", "-"], stdout=subprocess.PIPE)
     enc = subprocess.Popen(["ffmpeg", "-v", "error", "-y", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{w}x{h}", "-r", str(fps), "-i", "-",
