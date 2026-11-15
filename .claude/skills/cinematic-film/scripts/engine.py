@@ -798,8 +798,9 @@ class Counter(Item):
     z = 70
 
     def __init__(self, x, y, size, value, t_in, dur=1.3, prefix="", suffix="", caption=None, rgb=WHITE, t_out=None,
-                 font="cond", start=0, sfx=True):
+                 font="cond", start=0, sfx=True, sep=","):
         super().__init__(t_in, t_out, None, sfx)
+        self.sep = sep                  # binlik ayırıcı: Türkçe için "."
         self.x, self.y, self.size, self.value, self.dur = x, y, size, value, dur
         self.prefix, self.suffix, self.caption, self.rgb, self.font, self.start = prefix, suffix, caption, rgb, font, start
 
@@ -816,7 +817,7 @@ class Counter(Item):
             return
         u = ease_out_cubic(ramp(t, self.t_in, self.dur))
         v = int(round(self.start + (self.value - self.start) * u))
-        txt = f"{self.prefix}{v:,}{self.suffix}"
+        txt = f"{self.prefix}{v:,}{self.suffix}".replace(",", self.sep)
         c.saveLayerAlpha(None, 255)
         tw = draw_text(c, res, txt, self.x, self.y, self.size, self.font, self.rgb, a, 0.03, "center")
         wp = skia.Paint(); wp.setBlendMode(skia.BlendMode.kDstOut)

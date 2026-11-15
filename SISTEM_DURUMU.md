@@ -202,6 +202,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 15.11.2026 | cinematic-film `engine.py` `Counter`'a `sep` (binlik ayırıcı) parametresi: Türkçe sayılar "%1.000" biçiminde; varsayılan davranış aynı | Claude Code |
 | 15.11.2026 | İçerik üretimi (Alpay kararı): short/video biçimini süreye göre Claude seçer (≤60 sn dikey short, üstü yatay video + kapak); `icerik-uretim` yükleyicisine `tur` alanı, otomatik #shorts, kapak yükleme. cinematic-film skill'ine dikey altyazı + Türkçe İ düzeltmesi ve denetimli XTTS betiği (`scripts/xtts_say.py`) kalıcı eklendi; `CLAUDE.md` kuralı güncellendi | Claude Code |
 | 14.11.2026 | YouTube Shorts otomatik yayın (Alpay isteği): özel `icerik-uretim` reposu (yükleyici betik + Actions; YouTube Data API v3, ücretsiz kota) ve OAuth onay ekranı için `keyfizar-cell.github.io` (ana sayfa/gizlilik/koşullar). Anahtarlar yalnız `icerik-uretim` GitHub Secrets'ta. `CLAUDE.md` cinematic-film satırına yayın akışı eklendi | Claude Code |
 | 14.11.2026 | `.claude/skills/cinematic-film` kuruldu (Moh4696/cinematic-skill, MIT, commit bf43556; Alpay isteği: ileride içerik üretimi). İçerik okundu; yalnız skills/cinematic-film alındı, install.sh/eklenti manifestleri/examples kurulmadı. Bağımlılıklar (skia-python, numpy, pillow, ffmpeg) repo requirements'ına eklenmedi. Ücretli TTS/AI görsel onaya bağlı; `CLAUDE.md` eşleşme listesine "video/film/belgesel/içerik üret" tetikleyicileri eklendi | Claude Code |
