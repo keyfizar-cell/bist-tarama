@@ -1,57 +1,36 @@
 {
  "surum": "1.2",
- "uretim_zamani_utc": "2026-11-15T14:42:37.297763+00:00",
+ "uretim_zamani_utc": "2026-11-16T16:58:20.360067+00:00",
  "video": {
-  "video_id": "B83YHTTFRYw",
-  "baslik": "Hisse Almadan Önce Bu 8 Soruyu Soruyorum! | Temel Analiz",
-  "sure_sn": 1960,
+  "video_id": "CdDtwCcL99Q",
+  "baslik": "Borsa İstanbul’da 3. Haftada Satış Gelir mi? | Yükseliş Devam Edecek mi?",
+  "sure_sn": 578,
   "esik": 1000
  },
  "deneyler": [
   {
    "ad": "gemini_teshis",
    "durum": "basarili",
-   "karakter": 30952,
+   "karakter": 9369,
    "turkce": true,
-   "sure_sn": 1285.5,
-   "not": "model=gemini-flash-lite-latest bitis=STOP",
-   "onizleme": "Herkeze merhaba, Stratejik Yatırım YouTube kanaldasınız. Bugün kanalda en çok sorulan sorulardan birini yanıtlayacağım. Bir şirketi gerçekten nasıl analiz ediyorum? Bir hisseyi neden aldığımı veya neden almadığımı hangi sırayla neye baktığımı baştan sona birlikte inceleyeceğiz. Şimdi size bir soru. Bir şirketin satışları 3 yılda 100 liradan 240 liraya çıkmış olsun. Yani yılda ortalama %34 kadar bü"
+   "sure_sn": 179.9,
+   "not": "model=gemini-3-flash-preview bitis=STOP",
+   "onizleme": "Borsa İstanbul son iki haftada yaklaşık %10 yükseldi ki bu oldukça iyi bir haber. Ama şimdi daha önemli bir sorumuz var. Bu yükseliş gerçekten yeni bir trendin başlangıcı mı yoksa önümüzdeki hafta bir düşüş serisi başlayabilir mi? Çünkü endeks yükselirken ikinci haftada hacimler yükselmedi. Bankalar endeksin gerisinde kaldı ve 12.000 gibi bir direncimiz söz konusu. Üstelik MSCI tarafında 30 Kasım'"
   },
   {
    "ad": "gemini_parca",
    "durum": "basarili",
-   "karakter": 31003,
+   "karakter": 9373,
    "turkce": true,
-   "sure_sn": 1317.0,
-   "not": "gemini-3.8-flash: TimeoutError: The read operation timed out",
-   "onizleme": "Herkese merhaba. Stratejik Yatırım YouTube kanalındasınız. Bugün kanalda en çok sorulan sorulardan birini yanıtlayacağım. Bir şirketi gerçekten nasıl analiz ediyorum? Bir hisseyi neden aldığımı veya neden almadığımı hangi sırayla neye baktığımı baştan sona birlikte inceleyeceğiz. Şimdi size bir soru. Bir şirketin satışları 3 yılda 100 liradan 240 liraya çıkmış olsun. Yani yılda ortalama %34 kadar ",
+   "sure_sn": 49.9,
+   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem",
+   "onizleme": "Borsa İstanbul son iki haftada yaklaşık %10 yükseldi ki bu oldukça iyi bir haber. Ama şimdi daha önemli bir sorumuz var. Bu yükseliş gerçekten yeni bir trendin başlangıcı mı yoksa önümüzdeki hafta bir düşüş serisi başlayabilir mi? Çünkü endeks yükselirken ikinci haftada hacimler yükselmedi, bankalar endeksin gerisinde kaldı ve 12.000 gibi bir direncimiz söz konusu. Üstelik MSCI tarafında 30 Kasım'",
    "parcalar": [
     {
      "bas": 0,
-     "bit": 600,
+     "bit": 578,
      "model": "gemini-3-flash-preview",
-     "karakter": 9553,
-     "bitis": "STOP"
-    },
-    {
-     "bas": 600,
-     "bit": 1200,
-     "model": "gemini-3.8-flash",
-     "karakter": 9466,
-     "bitis": "STOP"
-    },
-    {
-     "bas": 1200,
-     "bit": 1800,
-     "model": "gemini-3.8-flash",
-     "karakter": 9465,
-     "bitis": "STOP"
-    },
-    {
-     "bas": 1800,
-     "bit": 1960,
-     "model": "gemini-3.8-flash",
-     "karakter": 2516,
+     "karakter": 9373,
      "bitis": "STOP"
     }
    ]
@@ -61,8 +40,8 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 1.6,
-   "not": "] B83YHTTFRYw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "sure_sn": 1.5,
+   "not": "ay also be missing\nERROR: [youtube] CdDtwCcL99Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
   {
@@ -70,8 +49,8 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 1.0,
-   "not": "] B83YHTTFRYw: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "sure_sn": 1.4,
+   "not": "ay also be missing\nERROR: [youtube] CdDtwCcL99Q: Sign in to confirm you’re not a bot. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
   {
@@ -97,7 +76,7 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 41.2,
+   "sure_sn": 41.3,
    "not": "model=glm-4.6v-flash HTTP 400 {\"error\":{\"code\":\"1210\",\"message\":\"图片输入格式/解析错误\"}}",
    "onizleme": ""
   },
@@ -163,6 +142,11 @@
     "tarih": "2026-11-15T14:42:37.297763+00:00",
     "durum": "basarili",
     "karakter": 30952
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
+    "durum": "basarili",
+    "karakter": 9369
    }
   ],
   "gemini_parca": [
@@ -185,6 +169,11 @@
     "tarih": "2026-11-15T14:42:37.297763+00:00",
     "durum": "basarili",
     "karakter": 31003
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
+    "durum": "basarili",
+    "karakter": 9373
    }
   ],
   "ytdlp_altyazi": [
@@ -205,6 +194,11 @@
    },
    {
     "tarih": "2026-11-15T14:42:37.297763+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -229,6 +223,11 @@
     "tarih": "2026-11-15T14:42:37.297763+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "qwen_url": [
@@ -249,6 +248,11 @@
    },
    {
     "tarih": "2026-11-15T14:42:37.297763+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -273,6 +277,11 @@
     "tarih": "2026-11-15T14:42:37.297763+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "glm_url": [
@@ -293,6 +302,11 @@
    },
    {
     "tarih": "2026-11-15T14:42:37.297763+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -317,6 +331,11 @@
     "tarih": "2026-11-15T14:42:37.297763+00:00",
     "durum": "ses_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
+    "durum": "ses_yok",
+    "karakter": 0
    }
   ],
   "siliconflow_ses": [
@@ -337,6 +356,11 @@
    },
    {
     "tarih": "2026-11-15T14:42:37.297763+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -361,6 +385,11 @@
     "tarih": "2026-11-15T14:42:37.297763+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "deepseek": [
@@ -381,6 +410,11 @@
    },
    {
     "tarih": "2026-11-15T14:42:37.297763+00:00",
+    "durum": "uygulanamaz",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-16T16:58:20.360067+00:00",
     "durum": "uygulanamaz",
     "karakter": 0
    }
