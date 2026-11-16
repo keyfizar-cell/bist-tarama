@@ -1,6 +1,6 @@
 {
  "surum": "1.1",
- "guncelleme": "2026-11-15",
+ "guncelleme": "2026-11-16",
  "sepetler": [
   {
    "hafta": "2026-H46",
@@ -14,8 +14,8 @@
      "skor": 89.6,
      "sira": 1,
      "agirlik_yuzde": 20.0,
-     "guncel": 359.0,
-     "getiri_yuzde": 1.27
+     "guncel": 356.0,
+     "getiri_yuzde": 0.42
     },
     {
      "kod": "ARDYZ",
@@ -24,8 +24,8 @@
      "skor": 77.9,
      "sira": 4,
      "agirlik_yuzde": 20.0,
-     "guncel": 52.6,
-     "getiri_yuzde": -1.5
+     "guncel": 52.7,
+     "getiri_yuzde": -1.31
     },
     {
      "kod": "NTGAZ",
@@ -34,8 +34,8 @@
      "skor": 76.6,
      "sira": 6,
      "agirlik_yuzde": 20.0,
-     "guncel": 8.43,
-     "getiri_yuzde": 1.2
+     "guncel": 8.62,
+     "getiri_yuzde": 3.48
     },
     {
      "kod": "ATATP",
@@ -44,8 +44,8 @@
      "skor": 76.1,
      "sira": 7,
      "agirlik_yuzde": 20.0,
-     "guncel": 190.8,
-     "getiri_yuzde": -6.06
+     "guncel": 191.5,
+     "getiri_yuzde": -5.71
     },
     {
      "kod": "AHGAZ",
@@ -54,19 +54,79 @@
      "skor": 76.0,
      "sira": 8,
      "agirlik_yuzde": 20.0,
-     "guncel": 46.24,
-     "getiri_yuzde": 1.63
+     "guncel": 46.28,
+     "getiri_yuzde": 1.71
     }
    ],
-   "sepet_getiri_yuzde": -0.69,
-   "xu100_getiri_yuzde": 0.18,
-   "fark_puan": -0.87
+   "sepet_getiri_yuzde": -0.28,
+   "xu100_getiri_yuzde": 0.17,
+   "fark_puan": -0.45
+  },
+  {
+   "hafta": "2026-H47",
+   "tarih": "2026-11-16",
+   "xu100_giris": 11841.81,
+   "hisseler": [
+    {
+     "kod": "TRENJ",
+     "sektor": "Enerji / Rafineri",
+     "giris": 79.4,
+     "skor": 86.3,
+     "sira": 1,
+     "agirlik_yuzde": 20.0,
+     "guncel": 79.4,
+     "getiri_yuzde": 0.0
+    },
+    {
+     "kod": "TUPRS",
+     "sektor": "Enerji / Rafineri",
+     "giris": 356.0,
+     "skor": 86.2,
+     "sira": 2,
+     "agirlik_yuzde": 20.0,
+     "guncel": 356.0,
+     "getiri_yuzde": 0.0
+    },
+    {
+     "kod": "TRMET",
+     "sektor": "Metal / Maden / Çimento",
+     "giris": 115.2,
+     "skor": 77.4,
+     "sira": 3,
+     "agirlik_yuzde": 20.0,
+     "guncel": 115.2,
+     "getiri_yuzde": 0.0
+    },
+    {
+     "kod": "ARDYZ",
+     "sektor": "Teknoloji Hizmetleri",
+     "giris": 52.7,
+     "skor": 75.2,
+     "sira": 9,
+     "agirlik_yuzde": 20.0,
+     "guncel": 52.7,
+     "getiri_yuzde": 0.0
+    },
+    {
+     "kod": "BASGZ",
+     "sektor": "Enerji Dağıtım / Üretim",
+     "giris": 37.24,
+     "skor": 75.1,
+     "sira": 10,
+     "agirlik_yuzde": 20.0,
+     "guncel": 37.24,
+     "getiri_yuzde": 0.0
+    }
+   ],
+   "sepet_getiri_yuzde": 0.0,
+   "xu100_getiri_yuzde": 0.0,
+   "fark_puan": 0.0
   }
  ],
  "karne": {
-  "sepet_sayisi": 1,
+  "sepet_sayisi": 2,
   "endeksi_gecen": 0,
-  "ort_fark_puan": -0.87
+  "ort_fark_puan": -0.23
  },
  "not": "Örnek model sepet — eğitim/izleme amaçlı kâğıt portföy; yatırım tavsiyesi değildir."
 }
