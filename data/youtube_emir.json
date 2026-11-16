@@ -1,5 +1,5 @@
 {
-  "uretim_zamani_utc": "2026-11-15T17:11:59.548231+00:00",
+  "uretim_zamani_utc": "2026-11-16T15:21:16.447616+00:00",
   "kanal": "Emir Bozkurt | Stratejik Yatirim",
   "channel_id": "UChiWzAwOe7J67dd5PmmUnnA",
   "video_liste_kaynagi": "rss_kanal",
@@ -35,7 +35,7 @@
     ]
   },
   "transkript_var": true,
-  "son_basarili_utc": "2026-11-15T17:11:59.548252+00:00",
+  "son_basarili_utc": "2026-11-16T15:21:16.447641+00:00",
   "son_videolar": [
     {
       "baslik": "Borsa İstanbul’da 3. Haftada Satış Gelir mi? | Yükseliş Devam Edecek mi?",
@@ -81,6 +81,6 @@
   "hata": null,
   "surum": "2.6",
   "denemeler": [
-    "Gemini gemini-3.8-flash: 9375 karakter, bitis=STOP"
+    "Ayni video icin transkript zaten var; yeniden cekilmedi."
   ]
 }

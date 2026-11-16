@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-15T17:31:16.681709+00:00",
+ "uretim_zamani_utc": "2026-11-16T15:31:04.378455+00:00",
  "kisiler": {
   "Yaşar Erdinç": {
    "islenenler": [
@@ -123,6 +123,47 @@
       {
        "kod": "TOASO",
        "ne_dedi": "Gedik Yatırım model portföyünden 14.00 TL fiyattan 500 lot satış yapıldığını örnek portföy tablosunda gösterdi."
+      }
+     ],
+     "konusmaci_dogrulandi": true,
+     "yaklasik_tarih": "2014"
+    },
+    {
+     "video_id": "8kAo6Vy1y94",
+     "baslik": "Dr. Yaşar Erdinç - İleri Düzey Teknik Analiz Eğitimi",
+     "kanal": "Aycan Demirel [Uzun Vadeli Yatırım, Borsa]",
+     "yayin_tarihi": "2014-06-20T04:23:19Z",
+     "url": "https://www.youtube.com/watch?v=8kAo6Vy1y94",
+     "sure_dk": 101.7,
+     "islenme_utc": "2026-11-16T15:42:13.248466+00:00",
+     "kaynak": "gemini:gemini-3-flash-preview",
+     "ilkeler": [
+      "Teknik analizde çok fazla gösterge kullanmak yerine en iyi bildiğiniz bir veya iki tanesine odaklanın.",
+      "Geliştirdiğiniz sistemi geriye dönük test edin ve sonuçları istatistiksel olarak değerlendirin.",
+      "Sisteminize sadık kalın; birkaç başarısız işlemden sonra sistemi terk etmeyin.",
+      "Yatırım kararlarında beyninizin veya duygularınızın değil, test edilmiş sisteminizin sesini dinleyin.",
+      "Kaldıraç oranını sistemin performansına ve risk toleransınıza göre dikkatli ayarlayın.",
+      "Stop-loss ve kar al seviyelerini sisteminize dahil edin ve bunlara harfiyen uyun.",
+      "Teknik analizde karmaşık formüller aramak yerine basit ve istikrarlı yöntemlere yönelin.",
+      "Piyasanın yönünü tahmin etmeye çalışmak yerine sistemin verdiği sinyallere göre hareket edin.",
+      "Sisteminizi farklı periyotlarda test ederek en optimal parametreleri bulmaya çalışın.",
+      "Başarılı bir yatırım için kuralda inatçı olmak ve disiplini elden bırakmamak gerekir."
+     ],
+     "ozet": [
+      "Teknik analizde sistem kurmanın ve bu sistemi geriye dönük verilerle test etmenin önemi vurgulanıyor.",
+      "Yatırımcı psikolojisinin sistem disiplini üzerindeki olumsuz etkileri ve beynin hatalı karar verme eğilimi anlatılıyor.",
+      "Hareketli ortalamalar ve stokastik gibi indikatörlerin farklı periyotlarda nasıl sonuçlar verdiği örneklerle gösteriliyor.",
+      "Kaldıraçlı işlemlerde risk yönetiminin ve istikrarın önemi üzerinde duruluyor.",
+      "Başarılı bir trader olmanın anahtarının karmaşık teknikler değil, disiplinli bir uygulama olduğu belirtiliyor."
+     ],
+     "bahsedilen_hisseler": [
+      {
+       "kod": "EUR/USD",
+       "ne_dedi": "Parite üzerinde farklı hareketli ortalama ve stokastik sistemleri test edilerek geçmiş performansları analiz edildi."
+      },
+      {
+       "kod": "Dow Jones",
+       "ne_dedi": "Fed açıklamaları sonrası endeksteki kısa vadeli hareketler gözlemlendi."
       }
      ],
      "konusmaci_dogrulandi": true,
@@ -277,7 +318,7 @@
     }
    ],
    "aday_guncelleme_utc": "2026-11-14T17:54:19.688598+00:00",
-   "kalan_aday": 16,
+   "kalan_aday": 15,
    "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz.",
    "hata": null
   }

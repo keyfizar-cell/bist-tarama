@@ -156,7 +156,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613301+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292920+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -510,9 +510,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613320+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292938+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -583,7 +583,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613326+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292944+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -599,7 +599,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613329+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292948+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -726,7 +726,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613336+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292953+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -735,7 +735,7 @@
       "channel_id": "UCDou5HvsE1AgL8yXzijbfxg",
       "kanal_adi": "Devrim Akyıl",
       "hata": null,
-      "son_basarili_utc": "2026-11-15T17:31:16.613268+00:00",
+      "son_basarili_utc": "2026-11-16T15:31:04.292890+00:00",
       "videolar": [
         {
           "video_id": "z-T37SDcNNE",
@@ -874,6 +874,60 @@
           "icerik_turu": "piyasa_yorumu",
           "transkript_kaynagi": "gemini:gemini-3-flash-preview",
           "islendi_utc": "2026-11-15T17:31:16.613250+00:00"
+        },
+        {
+          "video_id": "Jd6vroULgiA",
+          "baslik": "Piyasa İyice Sıkıştı! Riskler Artıyor!",
+          "yayin_tarihi": "2026-11-14T18:22:30+00:00",
+          "url": "https://www.youtube.com/watch?v=Jd6vroULgiA",
+          "kanal_adi": "Devrim Akyıl",
+          "sure_dk": 14.9,
+          "canli": false,
+          "ana_mesaj": "Mevcut ekonomi politikasının kuru baskılaması ve likidite sorunları nedeniyle dövizde bir ayarlama riski artarken, piyasalardaki geri çekilmeler fiziki altın, gümüş ve ucuz kalmış sanayi hisseleri için orta-uzun vadeli fırsatlar sunmaktadır.",
+          "ozet": [
+            "Türkiye'de son 3 yıldır uygulanan ekonomik programın geçmişte denenmiş ve başarısız olmuş modellere benzediği, enflasyonu kalıcı düşürmede yetersiz kaldığı belirtilmektedir.",
+            "Piyasada patlak veren fon/ponzi skandallarının sisteme olan güveni zedelediği ve ciddi bir likidite sıkışıklığı yarattığı ifade edilmektedir.",
+            "Dolar/TL tarafında kurun 49,15 TL üzerinde kaldığı sürece teknik potansiyelinin 90 TL üzerinde dengelenme yönünde olduğu, Ocak ayı sonuna kadar bir kur ayarlaması riskinin masada bulunduğu savunulmaktadır.",
+            "Gram altında yaşanan geri çekilmelerin dip arayışı ve alım fırsatı olduğu, 6.442 TL direnci aşıldığında alım sinyali üreteceği ve fiziki altın biriktirmeye devam edildiği aktarılmaktadır.",
+            "ALTIN.S1 Darphane Altın Sertifikası'nda 70,39 TL seviyesinin üzerine çıkılması halinde kısa vadeli al-sat işlemlerine devam edileceği, 73 TL seviyesinde direnç ve 200 günlük ortalamanın bulunduğu ifade edilmektedir.",
+            "Gram gümüşte 78 TL seviyelerine çekilme sonrası 83 TL üzerine çıkılması durumunda al sinyali oluşacağı ve fiziki alımların sürdüğü bildirilmektedir.",
+            "Borsa İstanbul'da tepki yükselişlerinin kalıcı bir dip teyidi vermediği, 11.547 ve 11.360 desteklerinin kırılması halinde yeni bir düşüş dalgası riski olduğu, döviz bazında 229$, 226$ ve altındaki seviyelerin izlendiği paylaşılmaktadır."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "USDTRY",
+              "ne_dedi": "49,15 TL üzerinde kaldığı sürece teknik hedeflerin yukarıda olduğu, adil dengenin 90 TL üzerinde bulunduğu ve Ocak sonuna kadar risklerin arttığı belirtilmiştir."
+            },
+            {
+              "kod": "GRAM ALTIN",
+              "ne_dedi": "Trend destek bölgesinde olduğu, 6.442 TL aşılırsa al sinyali üreteceği ve düşüşlerin fiziki alım fırsatı olarak değerlendirildiği ifade edilmiştir."
+            },
+            {
+              "kod": "ALTIN.S1",
+              "ne_dedi": "70,39 TL üzerine çıkması halinde kısa vadeli trade işlemlerine devam edileceği, 73 TL üzerinde 200 günlük ortalamanın direnç olarak izlendiği aktarılmıştır."
+            },
+            {
+              "kod": "GRAM GÜMÜŞ",
+              "ne_dedi": "Düşüş sonrası 78 TL seviyesine geldiği, 83 TL üzerine çıkması halinde yeni bir al sinyali üreteceği ve fiziki biriktirmenin sürdürüldüğü belirtilmiştir."
+            },
+            {
+              "kod": "XU100",
+              "ne_dedi": "11.547 ve 11.360 seviyelerinin altındaki kapanışların bir düşüş dalgası daha getirebileceği, dolar bazında 229$-226$ destekleri ile 212$ ve 190$ formasyon hedeflerinin bulunduğu dile getirilmiştir."
+            },
+            {
+              "kod": "THYAO",
+              "ne_dedi": "Yabancıların banka hisseleriyle birlikte yoğun alım yaptığı hisseler arasında adı geçmiştir."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Ekonomi yönetiminin kuru baskılama politikasının geçmişte olduğu gibi bir devalüasyon ve bankacılık krizi benzeri sıkışmaya yol açması riski.",
+            "Ponzi/fon skandalları nedeniyle sistemden likidite çekilmesi ve finansal güven kaybının derinleşmesi.",
+            "Aralık ve Ocak aylarında döviz kuru ayarlaması ve piyasalarda oynaklığın daha da artma ihtimali.",
+            "Borsa İstanbul'da 11.360-11.547 puan altı kapanışlarla beraber yeni bir dip ve düşüş dalgasının yaşanması riski."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3.8-flash",
+          "islendi_utc": "2026-11-16T15:31:04.292872+00:00"
         },
         {
           "video_id": "PLoDiIctB2k",
@@ -1114,20 +1168,12 @@
           "islendi_utc": "2026-11-08T09:40:07.743745+00:00"
         }
       ],
-      "bekleyenler": [
-        {
-          "video_id": "Jd6vroULgiA",
-          "baslik": "Piyasa İyice Sıkıştı! Riskler Artıyor!",
-          "url": "https://www.youtube.com/watch?v=Jd6vroULgiA",
-          "yayin_tarihi": "2026-11-14T18:22:30+00:00",
-          "sure_dk": 14.9
-        }
-      ],
+      "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 3,
+      "aday_sayisi": 1,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613352+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292970+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -1143,7 +1189,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613354+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292973+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -1159,7 +1205,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613357+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292976+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -1259,7 +1305,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613363+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292983+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -1328,9 +1374,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613369+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292989+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -1461,9 +1507,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613377+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.292997+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -1474,6 +1520,16 @@
       "hata": null,
       "son_basarili_utc": "2026-11-14T16:57:18.781488+00:00",
       "videolar": [
+        {
+          "video_id": "qn-GMpdypO4",
+          "baslik": "DÜZENLİ ALIM GÜVENLİ Mİ",
+          "yayin_tarihi": "2026-11-16T09:00:16+00:00",
+          "url": "https://www.youtube.com/watch?v=qn-GMpdypO4",
+          "kanal_adi": "FinansLab | Gülşah Bıçkı",
+          "sure_dk": 0.6,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "-9G4RX4kxG0",
           "baslik": "Tüpraş’ın Kasası Gerçekten Dolu mu?",
@@ -1580,9 +1636,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613388+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293012+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -1639,7 +1695,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613395+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293021+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -1706,7 +1762,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613400+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293027+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -2062,7 +2118,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613409+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293036+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -2180,7 +2236,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613415+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293049+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -2468,8 +2524,9 @@
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
-      "son7_uzun_video": 4,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613432+00:00"
+      "son7_uzun_video": 5,
+      "liste_disi": "her gun video yukluyor (son 7 gunde 5 uzun video)",
+      "son_kontrol_utc": "2026-11-16T15:31:04.293066+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -2528,9 +2585,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613437+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293071+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -2546,7 +2603,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613440+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293074+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -2562,7 +2619,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613442+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293077+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -2571,8 +2628,69 @@
       "channel_id": "UCDmr51JwXxErCrTALTGokpQ",
       "kanal_adi": "Selçuk Ergin ",
       "hata": null,
-      "son_basarili_utc": "2026-11-12T15:27:15.925882+00:00",
+      "son_basarili_utc": "2026-11-16T15:22:08.712199+00:00",
       "videolar": [
+        {
+          "video_id": "WEGPWn1L6RQ",
+          "baslik": "Büyük Para Operasyona Başladı! / Herkes Hazırlansın!",
+          "yayin_tarihi": "2026-11-16T14:15:38+00:00",
+          "url": "https://www.youtube.com/watch?v=WEGPWn1L6RQ",
+          "kanal_adi": "Selçuk Ergin ",
+          "sure_dk": 17.1,
+          "canli": false,
+          "ana_mesaj": "Piyasaların genelinde teknik ucuzluk sinyalleri oluşmaya başlarken, Morgan Stanley'nin küresel hisselerde ağırlık artırma tavsiyesiyle birlikte kademeli alım fırsatlarının doğduğu vurgulanıyor.",
+          "ozet": [
+            "Morgan Stanley, küresel hisse senetleri için tavsiyesini 'azami ağırlık artır' seviyesine yükselterek 2027 kârlarına odaklanılması gerektiğini belirtti.",
+            "Yarın akşam açıklanacak Nvidia bilançosu, teknoloji ve yapay zeka hisseleri başta olmak üzere piyasanın genel yönü için kritik önem taşıyor.",
+            "ABD enflasyon verileri (TÜFE ve ÜFE) sonrası piyasalarda satış baskısı sürse de Nasdaq ve Bitcoin gibi varlıklarda uzun süre sonra ilk kez ucuzluk sinyalleri görüldü.",
+            "Altın tarafında düşen kama formasyonu izlenirken, gram altın için 6000-6200 TL bölgesi potansiyel dip alanı olarak değerlendiriliyor.",
+            "Borsa İstanbul'da 12.958 direnci aşılmadığı sürece yükselişlerin kısa vadeli ve kısıtlı kalacağı öngörülüyor.",
+            "Bitcoin'de 65.000 dolar desteğinin test edilmesiyle birlikte teknik indikatörlerde alım yönlü sinyaller oluşmaya başladı.",
+            "Bitcoin dominansının %61 seviyesindeki direnci, küçük altcoinler üzerindeki baskının bir süre daha devam edebileceğini gösteriyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "SPX",
+              "ne_dedi": "Endeks bazında hala zirve bandında olduğu için henüz net bir ucuzluk emaresi göstermiyor."
+            },
+            {
+              "kod": "NDX",
+              "ne_dedi": "2025 Mart döneminden sonra ilk kez teknik olarak ucuzluk bölgesine girdiğine dair işaretler veriyor."
+            },
+            {
+              "kod": "NVDA",
+              "ne_dedi": "Yarınki bilançosu piyasanın genelini, özellikle yapay zeka ve teknoloji hisselerini derinden etkileyecek."
+            },
+            {
+              "kod": "XAUUSD",
+              "ne_dedi": "3800 dolar desteğini koruyup 4000 dolar direncini kırmasıyla yukarı yönlü trendin başlaması bekleniyor."
+            },
+            {
+              "kod": "GRAM ALTIN",
+              "ne_dedi": "6000-6200 TL seviyeleri potansiyel dip alanı olarak görülüyor ve dolar/TL beklentisiyle ucuz kabul ediliyor."
+            },
+            {
+              "kod": "XU100",
+              "ne_dedi": "10.500 seviyelerinden gelen tepki sonrası 12.958 direnci aşılmadıkça yükselişlerin kalıcı olması zor görünüyor."
+            },
+            {
+              "kod": "BTC",
+              "ne_dedi": "65.000 dolar desteğiyle birlikte üçlü dip oluşumu ve indikatörlerde ucuzluk sinyalleri mevcut; hedef 73.200 ve 87.000 dolar."
+            },
+            {
+              "kod": "ETH",
+              "ne_dedi": "1769 dolar desteği üzerinde tutunmaya çalışırken 2259 dolar seviyesi ilk direnç olarak izleniyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Nvidia bilançosunun beklentileri karşılayamaması durumunda piyasada oluşabilecek ek satış baskısı.",
+            "Borsa İstanbul'da yükselişlerin kalıcı olamama ve dirençlerden geri dönme riski.",
+            "Bitcoin dominansının yüksek kalması nedeniyle altcoinlerdeki ezilmenin bir süre daha devam etme ihtimali."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-16T15:22:08.712181+00:00"
+        },
         {
           "video_id": "UBnV8lqm0q8",
           "baslik": "EV ALACAKLAR HAZIR OLUN! / UCUZ EV NASIL BULUNUR?",
@@ -2752,9 +2870,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613450+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293091+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -3144,9 +3262,9 @@
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 15,
-      "son7_uzun_video": 9,
-      "liste_disi": "her gun video yukluyor (son 7 gunde 9 uzun video)",
-      "son_kontrol_utc": "2026-11-15T17:31:16.613472+00:00"
+      "son7_uzun_video": 13,
+      "liste_disi": "her gun video yukluyor (son 7 gunde 13 uzun video)",
+      "son_kontrol_utc": "2026-11-16T15:31:04.293115+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -3157,6 +3275,36 @@
       "hata": null,
       "son_basarili_utc": "2026-11-10T15:23:09.926874+00:00",
       "videolar": [
+        {
+          "video_id": "klQUOkJfdrU",
+          "baslik": "Gram altında yükselişin şartları…#altın #gramaltın #xauusd #kesfet #forex",
+          "yayin_tarihi": "2026-11-16T14:48:10+00:00",
+          "url": "https://www.youtube.com/watch?v=klQUOkJfdrU",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.5,
+          "canli": false,
+          "atlandi": "sure 0 dk"
+        },
+        {
+          "video_id": "lVeqTmIvqCw",
+          "baslik": "#TSKB hissesindeki %15 oranındaki yükselişi yakaladık #bist100 #borsa #kesfet #kesfetteyiz",
+          "yayin_tarihi": "2026-11-16T14:07:46+00:00",
+          "url": "https://www.youtube.com/watch?v=lVeqTmIvqCw",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.5,
+          "canli": false,
+          "atlandi": "sure 0 dk"
+        },
+        {
+          "video_id": "8DOwiIm5Qm0",
+          "baslik": "#GARAN hissesinde %17 yükseliş #bist100 #borsa #keşfet #keşfetteyiz",
+          "yayin_tarihi": "2026-11-16T13:35:10+00:00",
+          "url": "https://www.youtube.com/watch?v=8DOwiIm5Qm0",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.4,
+          "canli": false,
+          "atlandi": "sure 0 dk"
+        },
         {
           "video_id": "1Z3hKfQi34s",
           "baslik": "#GARAN da yükseliş nereye kadar devam edecek ? #bist100 #borsa #kesfet #keşfetteyiz",
@@ -3276,44 +3424,14 @@
           "sure_dk": 0.7,
           "canli": false,
           "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "WxsAQRZDaAU",
-          "baslik": "Borsa İstanbul….#xauusd #altın #gramaltın #bist100 #kesfet #forex",
-          "yayin_tarihi": "2026-11-11T08:22:02+00:00",
-          "url": "https://www.youtube.com/watch?v=WxsAQRZDaAU",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.6,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "jM12fCVnN-4",
-          "baslik": "Bugün altında takip edeceğim seviyeler….#xauusd #altın #gramaltın #bist100 #kesfet #forex",
-          "yayin_tarihi": "2026-11-11T08:20:15+00:00",
-          "url": "https://www.youtube.com/watch?v=jM12fCVnN-4",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.5,
-          "canli": false,
-          "atlandi": "sure 0 dk"
-        },
-        {
-          "video_id": "FFX28LGa-bM",
-          "baslik": "ENFLASYON RAPORU TOPLANTISI #bist100 #enflasyon #faiz #keşfet #keşfetteyiz",
-          "yayin_tarihi": "2026-11-10T17:40:47+00:00",
-          "url": "https://www.youtube.com/watch?v=FFX28LGa-bM",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 1.0,
-          "canli": false,
-          "atlandi": "sure 1 dk"
         }
       ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 4,
+      "aday_sayisi": 3,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613500+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293144+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -3329,7 +3447,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613503+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293148+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -3345,7 +3463,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-15T17:31:16.613505+00:00"
+      "son_kontrol_utc": "2026-11-16T15:31:04.293151+00:00"
     }
   },
   "hata": null,
@@ -3363,12 +3481,12 @@
   ],
   "butce": {
     "toplam_sinir": 20,
-    "islenen": 7,
-    "bekleyen": 1,
+    "islenen": 2,
+    "bekleyen": 0,
     "kota_bitti": false,
     "kullanilan_modeller": {
-      "gemini-3.8-flash": 4,
-      "gemini-3-flash-preview": 3
+      "gemini-3-flash-preview": 1,
+      "gemini-3.8-flash": 1
     },
     "kotasi_dolan_modeller": []
   },
@@ -3514,20 +3632,25 @@
       },
       "kotasi_dolan_modeller": [],
       "zaman_utc": "2026-11-15T17:31:16.613524+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 2,
+      "bekleyen": 0,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-3-flash-preview": 1,
+        "gemini-3.8-flash": 1
+      },
+      "kotasi_dolan_modeller": [],
+      "zaman_utc": "2026-11-16T15:31:04.293169+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-15T17:31:16.613528+00:00",
+  "uretim_zamani_utc": "2026-11-16T15:31:04.293174+00:00",
   "denemeler": [
-    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP",
-    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
-    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
-    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP",
-    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP",
-    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP"
+    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP"
   ]
 }
