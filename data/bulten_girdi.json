@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-16T15:21:20.083639+00:00",
+ "uretim_zamani_utc": "2026-11-16T15:22:18.810025+00:00",
  "kaynak": {
   "tarih": "2026-11-16",
   "uretim_zamani_utc": "2026-11-16T15:20:56+00:00",
@@ -9005,7 +9005,7 @@
  ],
  "geri_alim": {
   "var": true,
-  "uretim_zamani_utc": "2026-11-13T15:21:09.957991+00:00",
+  "uretim_zamani_utc": "2026-11-16T15:21:24.728490+00:00",
   "satirlar": [
    {
     "kod": "BLUME",
@@ -9080,6 +9080,18 @@
     "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
+    "kod": "PGSUS",
+    "portfoyde": false,
+    "bist30": true,
+    "toplam_bildirim": 1,
+    "islem_bildirim_sayisi": 0,
+    "son_bildirim_tarih": "2026-11-16",
+    "kumulatif_lot": null,
+    "sermaye_orani_yuzde": null,
+    "kumulatif_etiket": null,
+    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+   },
+   {
     "kod": "SAHOL",
     "portfoyde": false,
     "bist30": true,
@@ -9131,9 +9143,9 @@
     "kod": "ULUUN",
     "portfoyde": true,
     "bist30": false,
-    "toplam_bildirim": 24,
-    "islem_bildirim_sayisi": 23,
-    "son_bildirim_tarih": "2026-11-12",
+    "toplam_bildirim": 25,
+    "islem_bildirim_sayisi": 24,
+    "son_bildirim_tarih": "2026-11-13",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
