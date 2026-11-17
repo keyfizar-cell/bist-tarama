@@ -1,5 +1,5 @@
 {
-  "uretim_zamani_utc": "2026-11-16T15:21:16.447616+00:00",
+  "uretim_zamani_utc": "2026-11-17T15:21:27.137172+00:00",
   "kanal": "Emir Bozkurt | Stratejik Yatirim",
   "channel_id": "UChiWzAwOe7J67dd5PmmUnnA",
   "video_liste_kaynagi": "rss_kanal",
@@ -35,17 +35,12 @@
     ]
   },
   "transkript_var": true,
-  "son_basarili_utc": "2026-11-16T15:21:16.447641+00:00",
+  "son_basarili_utc": "2026-11-17T15:21:27.137189+00:00",
   "son_videolar": [
     {
       "baslik": "Borsa İstanbul’da 3. Haftada Satış Gelir mi? | Yükseliş Devam Edecek mi?",
       "yayin_tarihi": "2026-11-15T14:38:25+00:00",
       "url": "https://www.youtube.com/watch?v=CdDtwCcL99Q"
-    },
-    {
-      "baslik": "Hisse Almadan Önce Bu 8 Soruyu Soruyorum! | Temel Analiz",
-      "yayin_tarihi": "2026-11-13T14:59:08+00:00",
-      "url": "https://www.youtube.com/watch?v=B83YHTTFRYw"
     },
     {
       "baslik": "2026/3Ç Bilançoları Bitti: 3 Ay Takip Edeceğim 20 Hisse",
@@ -76,6 +71,11 @@
       "baslik": "Satışlar 3 Kat Arttı, Kâr Düştü! 4 Bilançoda Gizli Detay | AHGAZ, FORTE, SAYAS, DESA",
       "yayin_tarihi": "2026-11-08T16:56:40+00:00",
       "url": "https://www.youtube.com/watch?v=_PAmUHIbVyk"
+    },
+    {
+      "baslik": "Borusan Boru (BRSAN) Bilanço Analizi | ABD Tarafı Güçleniyor",
+      "yayin_tarihi": "2026-11-07T14:57:29+00:00",
+      "url": "https://www.youtube.com/watch?v=znl7qT4CDls"
     }
   ],
   "hata": null,

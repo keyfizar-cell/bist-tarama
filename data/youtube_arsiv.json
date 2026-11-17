@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-16T15:31:04.378455+00:00",
+ "uretim_zamani_utc": "2026-11-17T15:29:14.190001+00:00",
  "kisiler": {
   "Yaşar Erdinç": {
    "islenenler": [
@@ -168,6 +168,55 @@
      ],
      "konusmaci_dogrulandi": true,
      "yaklasik_tarih": "2014"
+    },
+    {
+     "video_id": "8OtS78GCfqI",
+     "baslik": "Uluslararası Finansal Sistem ve Kriz Dinamikleri | Dr. Yaşar Erdinç",
+     "kanal": "Turing Kültür Sanat",
+     "yayin_tarihi": "2018-01-10T06:34:41Z",
+     "url": "https://www.youtube.com/watch?v=8OtS78GCfqI",
+     "sure_dk": 74.3,
+     "islenme_utc": "2026-11-17T15:32:13.589006+00:00",
+     "kaynak": "gemini:gemini-3-flash-preview",
+     "ilkeler": [
+      "Bir konuyu gerçekten öğrenmiş sayılmak için o konunun zihinde görsel bir resminin çizilebilmesi gerekir.",
+      "Ekonomiyi kamu kesimi, reel sektör, ödemeler dengesi ve mali piyasalar olmak üzere dört ana ayak üzerinde yükselen bir sistem olarak analiz edin.",
+      "Ekonomideki güven unsurunu, sistemin dengesini sağlayan hassas bir kristal top gibi görün ve bu dengenin bozulmasını kriz sinyali olarak okuyun.",
+      "Döviz kurlarını ve faizleri, tüm ekonomik aktiviteyi ve beklentileri belirleyen temel fiyatlar olarak takip edin.",
+      "Varlık fiyatlarının matematiksel modellerle açıklanamayacak seviyelere çıkmasını ciddi bir kriz uyarısı olarak değerlendirin.",
+      "Döviz kurunun uzun vadeli seviyesini tahmin ederken ülkeler arasındaki enflasyon farklarını baz alın.",
+      "Yatırım kararı alırken sadece düşük faize değil, ekonomik istikrara ve geleceğin öngörülebilir olmasına odaklanın.",
+      "Portföyün en az %10-15'lik kısmını, sistemik risklere karşı sigorta işlevi görmesi için altın gibi varlıklarda tutun.",
+      "Borç büyüme hızının milli gelir büyüme hızından yüksek olmasını sürdürülemez bir durum ve kriz habercisi olarak görün.",
+      "İş hayatında başarılı olmak için gidilen kurumun departmanlarını ve işleyişini çok iyi öğrenip mülakatlarda teknik terimlerle yetkinliğinizi kanıtlayın."
+     ],
+     "ozet": [
+      "Ekonomi; kamu, reel sektör, dış ödemeler ve mali piyasalar arasındaki dengeler ve bu dengelerin merkezindeki güven unsuruyla işler.",
+      "Tarihteki büyük finansal krizler; aşırı iyimserlik, kontrolsüz kredi genişlemesi ve varlık balonlarının patlamasıyla benzer dinamikler sergiler.",
+      "Günümüz küresel finansal sistemi, tarihte eşi görülmemiş bir borç yükü ve para bolluğu nedeniyle enflasyonist bir çöküş riski taşımaktadır.",
+      "Döviz kurları ve faiz oranları, ekonomik aktörlerin beklentilerini şekillendiren ve sistemin dengesini sağlayan en kritik parametrelerdir.",
+      "Bireysel başarı ve finansal okuryazarlık için olayların mantığını kavramak, resmin bütününü görmek ve teknik bilgiyle donanmak şarttır."
+     ],
+     "bahsedilen_hisseler": [
+      {
+       "kod": "Altın",
+       "ne_dedi": "Küresel borç krizlerine ve kağıt paralara olan güvenin azalmasına karşı portföyde mutlaka bulunması gereken bir sigorta varlığıdır."
+      },
+      {
+       "kod": "Bitcoin",
+       "ne_dedi": "Teknolojik altyapısı bir yana, fiyatının sadece yükseleceği beklentisiyle alınmasını geçmişteki lale çılgınlığına benzer bir spekülatif balon olarak niteledi."
+      },
+      {
+       "kod": "Ripple",
+       "ne_dedi": "Bankalar arası transferlerde maliyeti düşüren bir teknoloji sunmasına rağmen, bireysel yatırımcıların ilgisiyle spekülatif bir fiyatlama içine girdiğini belirtti."
+      },
+      {
+       "kod": "Dolar",
+       "ne_dedi": "Uzun vadeli değerinin Türkiye ve ABD arasındaki enflasyon farkı üzerinden hesaplanması gerektiğini vurguladı."
+      }
+     ],
+     "konusmaci_dogrulandi": true,
+     "yaklasik_tarih": "2018"
     }
    ],
    "hatali": {},
@@ -318,7 +367,7 @@
     }
    ],
    "aday_guncelleme_utc": "2026-11-14T17:54:19.688598+00:00",
-   "kalan_aday": 15,
+   "kalan_aday": 14,
    "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz.",
    "hata": null
   }
