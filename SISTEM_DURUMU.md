@@ -1,6 +1,6 @@
 # BIST Portföy Otomasyonu — SİSTEM DURUMU (tek kaynak)
 
-> **Son güncelleme: 07.11.2026** · Bu dosya sistemin GÜNCEL hâlinin tek kaynağıdır.
+> **Son güncelleme: 19.11.2026** · Bu dosya sistemin GÜNCEL hâlinin tek kaynağıdır.
 > Claude Code oturumları ve zamanlanmış görevler işe başlamadan önce bunu okur.
 > Ham adres: `https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/SISTEM_DURUMU.md`
 > Buradaki bilgi bir görev talimatındaki veya başka bir sohbetten gelen dosyadaki
@@ -92,6 +92,7 @@ Ardından "Sosyal Nabız" ÇALIŞMAZ (borsa kapalı; cuma verisinin üzerine yaz
 | `araclar/gorev_kontrol.py` + `gorev-kontrol.yml` ("Görev Talimatı Kontrolü") | 1 | push/PR (gorevler/**) | — | Talimat dosyalarında zorunlu ifadeler, asgari uzunluk, EK bloğu yerinde mi |
 | `bulten_hazirla.py` + `bulten-hazirla.yml` ("Bülten Girdisi Hazırla") | **v1.0** | workflow_run (ana tarama, KAP) + dispatch | `bulten_girdi.json` | Aşama 2: akşam bülteninin kurallı hesapları (Emir Bozkurt 7a/7b + yakın adaylar, 7c geçmişi, BIST30, teknik plan, retail radar, geri alım özeti). Önce testler çalışır. **Bülten henüz bu dosyayı kullanmıyor** (gözlem dönemi) |
 | `araclar/portfoy_hesapla.py` | **v1.0** | yalnız görev oturumunda (yerel) | yerel `/tmp` dosyası | Portföy tablosundan açık pozisyonlar, ağırlık, maliyete göre K/Z, 7c "Portföy Kâr" (kapalı ve açık lotlar ayrı). **Gizlilik: çıktı repoya/data/'ya yazılamaz.** Bülten henüz kullanmıyor (gözlem dönemi) |
+| `.claude/skills/keyfizar-haftalik/SKILL.md` (KeyfiZar haftalık short partisi) | **v1.0** | bulut görevi, her Pazar (Alpay onayı 19.11.2026) | özel `icerik-uretim` deposuna 7 short (`videolar/<no>-<ad>/`) | Deyim/atasözü seçimi (yüklenenlerle çakışmaz), senaryo (uydurma köken yok), Drive'dan referans ses (depoya girmez), XTTS + Whisper, cinematic-film/HyperFrames dikey 1080x1920, 3 marka katmanı, kalite kontrolü, `meta.json` (`yayin_zamani` ertesi günden her gün 19:00, dolu günler atlanır), `stiller.md` ✅, push, Türkçe özet. Stili Claude seçer (CLAUDE.md haftalık parti istisnası); ücretli araç ve ✦ stil yok |
 | `testler/` + `testler.yml` ("Testler") | — | push/PR (*.py, testler/**) | — | `python -m unittest discover -s testler` |
 
 ### Secret'lar (GitHub → Settings → Secrets → Actions)
@@ -203,6 +204,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 19.11.2026 | KeyfiZar haftalık short partisi (Alpay onayı): `.claude/skills/keyfizar-haftalik/SKILL.md` v1.0 (bulut görevi her Pazar 7 short üretip günde bir 19:00'a zamanlar). `CLAUDE.md` stil seçimi kuralına **haftalık parti istisnası**: partide stili Claude seçer (hafta içinde tekrar yok, son 2 haftada kullanılanlar tercih edilmez, ✦ ücretli stiller yok), seçimler özette listelenir, Alpay değiştirirse o video yeniden üretilir; tek tek istenen videolarda eski kural aynen geçerli. Deneme short'u yerelde üretildi (icerik-uretim 013) | Claude Code |
 | 15.11.2026 | x_deney sonuçları (Actions, hesapsız): X oEmbed ✅ ve syndication tek tweet ✅ (URL biliniyorsa tam metin+görsel), profil zaman çizelgesi ❌ 429, Bluesky arama ❌ 403, Telegram t.me/s ✅. Araştırma (E) bölümüne bulgular + ücretsiz yol görevleri (site:x.com dizinlenme, X hesaplarının Telegram/web aynaları) eklendi | Claude Code |
 | 15.11.2026 | Alpay kararı: X ücretsiz yollarla. `araclar/x_deney.py` v1.0 + `x-deney.yml` (yalnız dispatch): X oEmbed, X embed syndication (tweet/profil), Telegram t.me/s önizleme, Bluesky açık arama yoklaması → `data/x_deney.json`. Hesap/çerez/ücretli API yok | Claude Code |
 | 15.11.2026 | Agent-Reach (Panniantong) değerlendirildi, kurulmadı: X/Reddit giriş + tarayıcı çerezi istiyor, bulutta çalışmıyor → SEÇİLMEDİ listesine eklendi | Claude Code |
