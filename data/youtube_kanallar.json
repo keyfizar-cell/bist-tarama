@@ -156,7 +156,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079110+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333464+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -559,9 +559,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079129+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333482+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -632,7 +632,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079135+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333487+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -648,7 +648,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079137+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333489+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -775,7 +775,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079143+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333493+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -1222,7 +1222,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079156+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333505+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -1238,7 +1238,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079159+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333507+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -1254,7 +1254,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079161+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333509+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -1263,8 +1263,42 @@
       "channel_id": "UCzANlYNW38QH4gchvUk3IsQ",
       "kanal_adi": "Efe Utkaner",
       "hata": null,
-      "son_basarili_utc": "2026-11-17T15:29:14.123219+00:00",
+      "son_basarili_utc": "2026-11-19T15:38:35.212233+00:00",
       "videolar": [
+        {
+          "video_id": "zigiIm16ftI",
+          "baslik": "Turcas Holding #TRCAS Temel Analizi",
+          "yayin_tarihi": "2026-11-18T18:38:13+00:00",
+          "url": "https://www.youtube.com/watch?v=zigiIm16ftI",
+          "kanal_adi": "Efe Utkaner",
+          "sure_dk": 14.5,
+          "canli": false,
+          "ana_mesaj": "Turcas Holding enerji disinda gayrimenkul ve girisim sermayesi yatirimlariyla buyuyen ve temettu dagitma potansiyeli yuksek bir yatirim platformudur.",
+          "ozet": [
+            "Turcas Holding, enerji alaninin yaninda gayrimenkul ve girisim sermayesi gibi farkli sektorlere yatirim yapmaktadir.",
+            "Sirket gelirlerinin onemli bir kismini Shell Turcas ve RWE Turcas ortakliklarindan elde ettigi temettulerden saglamaktadir.",
+            "2017 sonrasi borclanma sorunlari nedeniyle ara verilen temettu odemeleri borclarin bitirilmesiyle yeniden baslamistir.",
+            "Akaryakit dagitiminda Shell & Turcas JV pazar payi liderlerindendir ve hacim bazinda buyume kaydetmektedir.",
+            "RWE Turcas elektrik uretim sirketi, dogal gaz santraliyle faaliyet gostermekte olup enerji fiyatlarina bagli olarak kar [?] degiskenlik gostermektedir.",
+            "ABD'de Manhattan'da 242 East 71st Street projesi [?] yatirimi olarak baslatilmis ve 2027-2028 yillarinda tamamlanmasi hedeflenmektedir.",
+            "BEK Ventures girisim sermayesi fonu ile teknoloji ve yazilim girisimlerine yatirimlar yapilmaktadir.",
+            "Sirket gelecege donuk planlarinda net nakit pozisyonunu korumayi ve duzenli temettu dagitmayi hedeflemektedir."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "TRCAS",
+              "ne_dedi": "Enerji, gayrimenkul ve girisim sermayesi alanlarinda faaliyet gosteren, temettu odemelerine yeniden baslayan bir yatirim holdingidir."
+            },
+            {
+              "kod": "AKSOY",
+              "ne_dedi": "Turcas'in hakim ortagidir ve yurt disinda gayrimenkul ve girisim sermayesi alaninda yatirimlari bulunmaktadir."
+            }
+          ],
+          "konusmacinin_riskleri": [],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-flash-lite-latest",
+          "islendi_utc": "2026-11-19T15:38:35.212213+00:00"
+        },
         {
           "video_id": "zrF7iiOA8qk",
           "baslik": "Perakende Bilançoları #BIMAS #MGROS #CRFSA #GMTAS #MOPAS #KIMMR #CITAS #EBEBK #TKNSA #SSAAT",
@@ -1421,9 +1455,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079168+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 3,
+      "son_kontrol_utc": "2026-11-19T16:10:49.333522+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -1494,7 +1528,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079173+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333526+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -1503,8 +1537,55 @@
       "channel_id": "UC9PfAU8pdnTs7afxIXKhgVA",
       "kanal_adi": "Erkan Öz",
       "hata": null,
-      "son_basarili_utc": "2026-11-15T17:22:26.345946+00:00",
+      "son_basarili_utc": "2026-11-19T15:47:46.963601+00:00",
       "videolar": [
+        {
+          "video_id": "K92RbYDgnSw",
+          "baslik": "The Economist 2027 Kapağından Gizlenen Mesaj Ne?",
+          "yayin_tarihi": "2026-11-18T16:35:10+00:00",
+          "url": "https://www.youtube.com/watch?v=K92RbYDgnSw",
+          "kanal_adi": "Erkan Öz",
+          "sure_dk": 84.8,
+          "canli": false,
+          "ana_mesaj": "The Economist 2027 kapağı, yapay zeka merkezli bir dünya düzenine geçişi, jeopolitik çatışmaları ve küresel finansal sistemde köklü bir değişim ihtimalini simgeliyor.",
+          "ozet": [
+            "The Economist dergisinin hisse yapısındaki değişim ve Agnelli ailesinin dergi üzerindeki etkisi ele alınıyor.",
+            "2026 yılı kapağındaki tahminlerin (İran-İsrail çatışması, yapay zeka gelişmeleri vb.) büyük oranda gerçekleştiği belirtiliyor.",
+            "2027 kapağının merkezinde yapay zekanın yer alması, teknolojinin hayatın her alanına nüfuz edeceğini gösteriyor.",
+            "Kapakta yer alan semboller üzerinden Orta Doğu, Rusya ve Fransa'daki olası askeri ve siyasi gerilimler yorumlanıyor.",
+            "Türkiye'nin ay-yıldız sembolüyle Orta Doğu denklemine ve bölgesel çatışmalara daha fazla çekilebileceği öngörülüyor.",
+            "Finansal sistemde 'buzdağı' etkisi yaratacak beklenmedik bir olayın, mevcut kapitalist düzeni sarsabileceği vurgulanıyor.",
+            "Dijital finansal sistemlere yönelik siber saldırı ve hackleme risklerinin 2027'de zirve yapabileceği uyarısı yapılıyor.",
+            "Sistem risklerine karşı fiziksel altın ve Bitcoin'in uzun vadeli birer koruma kalkanı olarak önemi tartışılıyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "NVDA",
+              "ne_dedi": "Yapay zeka liderliği ve İsrail ile olan stratejik bağları nedeniyle küresel sistemde kritik bir aktör olarak görülüyor."
+            },
+            {
+              "kod": "Altın",
+              "ne_dedi": "Siber saldırı ve finansal sistem risklerine karşı fiziksel olarak tutulması gereken en önemli güvenli liman varlığı."
+            },
+            {
+              "kod": "Gümüş",
+              "ne_dedi": "Altınla benzer bir koruma işlevi görse de şu anki teknik görünümünün zayıf ve düşüş eğiliminde olduğu belirtiliyor."
+            },
+            {
+              "kod": "Bitcoin",
+              "ne_dedi": "Merkeziyetsiz yapısı sayesinde siber saldırılara karşı en güvenli ağlardan biri olarak serveti koruma aracı olarak değerlendiriliyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Bankacılık sistemine ve merkezi kripto borsalarına yönelik büyük çaplı siber saldırılar.",
+            "Küresel kapitalist düzenin çatırdaması ve mevcut finansal sistemin çöküş riski.",
+            "Bölgesel çatışmaların ve sıcak savaşların Türkiye'yi de içine alacak şekilde yayılması.",
+            "Yapay zekanın toplumlar üzerinde bir gözetim ve kontrol mekanizmasına dönüşmesi."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-19T15:47:46.963560+00:00"
+        },
         {
           "video_id": "sc_Vq1ZDMiU",
           "baslik": "Hangi Yatırım Araçları Trendini Kaybetti?",
@@ -1625,9 +1706,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079208+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 2,
+      "son_kontrol_utc": "2026-11-19T16:10:49.333534+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -1638,6 +1719,16 @@
       "hata": null,
       "son_basarili_utc": "2026-11-14T16:57:18.781488+00:00",
       "videolar": [
+        {
+          "video_id": "fHrK0BWsvUE",
+          "baslik": "SADECE KASAYA BAKMAK NE KADAR DOĞRU",
+          "yayin_tarihi": "2026-11-19T09:00:07+00:00",
+          "url": "https://www.youtube.com/watch?v=fHrK0BWsvUE",
+          "kanal_adi": "FinansLab | Gülşah Bıçkı",
+          "sure_dk": 0.4,
+          "canli": false,
+          "atlandi": "sure 0 dk"
+        },
         {
           "video_id": "83nBUAyCsoc",
           "baslik": "TÜPRAŞ RAPORUNDA GİZLİ DİPNOT",
@@ -1776,7 +1867,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079227+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333550+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -1787,6 +1878,16 @@
       "hata": null,
       "son_basarili_utc": null,
       "videolar": [
+        {
+          "video_id": "Q4OAdY37Iqo",
+          "baslik": "XAUUSD 430 Günlük Dipte! 3740 Altında 3691 Gelir mi?",
+          "yayin_tarihi": "2026-11-19T14:30:50+00:00",
+          "url": "https://www.youtube.com/watch?v=Q4OAdY37Iqo",
+          "kanal_adi": "Fx Matik",
+          "sure_dk": 2.0,
+          "canli": false,
+          "atlandi": "sure 2 dk"
+        },
         {
           "video_id": "DSXYQ6Tkliw",
           "baslik": "XAUUSD 3875’ten Yine Döndü! Altın 400 Günlük Dip Bölgesinde",
@@ -1841,9 +1942,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079235+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333558+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -1910,7 +2011,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079239+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333563+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -2266,7 +2367,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079247+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333570+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -2384,7 +2485,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079255+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333575+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -2393,8 +2494,59 @@
       "channel_id": "UCEirjSmtSFXJfMO0mTd2sBA",
       "kanal_adi": "koraynomi",
       "hata": null,
-      "son_basarili_utc": "2026-11-15T17:14:21.559743+00:00",
+      "son_basarili_utc": "2026-11-19T16:10:49.333433+00:00",
       "videolar": [
+        {
+          "video_id": "tj3_htID5g0",
+          "baslik": "2013'te Kaç Yaşındaydın? GTA 5'ten GTA 6'ya Türkiye'nin 13 Yıllık Fiyat Hafızası",
+          "yayin_tarihi": "2026-11-19T15:15:33+00:00",
+          "url": "https://www.youtube.com/watch?v=tj3_htID5g0",
+          "kanal_adi": "koraynomi",
+          "sure_dk": 2.7,
+          "canli": false,
+          "atlandi": "sure 3 dk"
+        },
+        {
+          "video_id": "rmebG-7IZNg",
+          "baslik": "Dolar mı TL mi? Kur Ayda %2,5'i Geçerse TL Kaybettirir",
+          "yayin_tarihi": "2026-11-15T19:07:57+00:00",
+          "url": "https://www.youtube.com/watch?v=rmebG-7IZNg",
+          "kanal_adi": "koraynomi",
+          "sure_dk": 3.0,
+          "canli": false,
+          "ana_mesaj": "Mevduat faizleri düşüp kur hızlanırken, TL'de kalmanın avantajını korumak için faiz getirisi ile kur artışı arasındaki aylık başabaş eşik hesabının yakından takip edilmesi gerekir.",
+          "ozet": [
+            "TL mevduat tutan yerli yatırımcı ile Londra'daki yabancı fon yöneticisi aynı carry trade mantığıyla faiz ve kur getirisini kıyaslamaktadır.",
+            "Son dönemde TL'de kalmak dolar bazında kazandırmış olsa da faizlerin düşüşe geçmesi ve kurun hızlanmasıyla bu dengeler değişmeye başlamıştır.",
+            "UBS, Goldman Sachs ve Citi raporları; Türkiye'nin rekabet gücünün düştüğünü, ihracat pazarlarında kayıp yaşandığını ve TL carry trade cazibesinin azaldığını vurgulamıştır.",
+            "Citi'nin 2 yıllık tahvil analizinde kur riski primi yüzde 12,6 olarak hesaplanmış olup bu oran 2018 kur şokundaki yüzde 7 seviyesinin neredeyse iki katıdır.",
+            "Kurda yaşanabilecek ani bir sıçrama, aylarca biriken faiz getirisini bir günde silebilecek niteliktedir.",
+            "Net aylık getiri eşiği; brüt mevduat faizinin stopaj sonrası katsayı olan 0,825 ile çarpılıp 12'ye bölünmesiyle hesaplanmaktadır.",
+            "Mevduat faizi yüzde 36 iken aylık eşik yüzde 2,48 seviyesindeyken, faizin yüzde 25,5'e inmesi durumunda eşik yüzde 1,75'e düşerek mevcut aylık kur artış hızının altında kalacaktır."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "USDTRY",
+              "ne_dedi": "Aylık artış hızının mevduat faizinden elde edilen başabaş eşik oranının üzerine çıkması durumunda TL yatırımcısına kaybettireceği ve tahvil kur riski priminin yüzde 12,6 seviyesinde olduğu belirtildi."
+            },
+            {
+              "kod": "TL MEVDUAT",
+              "ne_dedi": "Yıllık yüzde 36 brüt faiz oranında aylık net başabaş eşiğin yaklaşık yüzde 2,48 olduğu, faiz yüzde 25,5'e inerse eşiğin yüzde 1,75'e gerileyeceği ifade edildi."
+            },
+            {
+              "kod": "2 YILLIK TAHVİL",
+              "ne_dedi": "Piyasanın kur beklentisini en net fiyatladığı vade olduğu ve tahvillere yansıyan kur riski priminin yüzde 12,6 ile son 16 yılın en yüksek seviyelerinden birinde bulunduğu aktarıldı."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Kurdaki ani bir sıçramanın ('asansörle iniş') aylarca toplanan faiz getirisini tek bir günde silme riski.",
+            "TL'nin reel olarak aşırı değerlenmesi ve şişmesiyle birlikte piyasada düzeltme riskinin büyümesi.",
+            "Mevduat faizleri düştükçe aylık getiri eşiğinin kur artış hızının altında kalarak reel kayba yol açması ihtimali."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-flash-latest",
+          "islendi_utc": "2026-11-19T16:10:49.333412+00:00"
+        },
         {
           "video_id": "BdcBHahrN9Y",
           "baslik": "TL'de Kalmanın Eşiği: Kur Bu Hızı Geçerse Kazanç Biter",
@@ -2671,10 +2823,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
-      "son7_uzun_video": 5,
-      "liste_disi": "her gun video yukluyor (son 7 gunde 5 uzun video)",
-      "son_kontrol_utc": "2026-11-18T15:36:24.079268+00:00"
+      "aday_sayisi": 2,
+      "son7_uzun_video": 2,
+      "son_kontrol_utc": "2026-11-19T16:10:49.333623+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -2735,7 +2886,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079273+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333628+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -2751,7 +2902,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079275+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333630+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -2767,7 +2918,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079277+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333632+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -2775,7 +2926,7 @@
       "not": "",
       "channel_id": "UCDmr51JwXxErCrTALTGokpQ",
       "kanal_adi": "Selçuk Ergin ",
-      "hata": null,
+      "hata": "gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
       "son_basarili_utc": "2026-11-16T15:22:08.712199+00:00",
       "videolar": [
         {
@@ -3015,12 +3166,20 @@
           "islendi_utc": "2026-11-08T09:48:20.650947+00:00"
         }
       ],
-      "bekleyenler": [],
+      "bekleyenler": [
+        {
+          "video_id": "CRX9AieAh6g",
+          "baslik": "Adamlar Düğmeye Bastı! / Hayırlı Olsun 2027",
+          "url": "https://www.youtube.com/watch?v=CRX9AieAh6g",
+          "yayin_tarihi": "2026-11-19T14:00:25+00:00",
+          "sure_dk": 17.7
+        }
+      ],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079286+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333642+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -3412,7 +3571,7 @@
       "aday_sayisi": 15,
       "son7_uzun_video": 8,
       "liste_disi": "her gun video yukluyor (son 7 gunde 8 uzun video)",
-      "son_kontrol_utc": "2026-11-18T15:36:24.079318+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333662+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -3423,6 +3582,36 @@
       "hata": null,
       "son_basarili_utc": "2026-11-18T15:23:21.659936+00:00",
       "videolar": [
+        {
+          "video_id": "2v-k9xUyKG8",
+          "baslik": "#THYAO da satış zamanı mı ? #pgsus #bist100 #kesfet #kesfetteyiz",
+          "yayin_tarihi": "2026-11-19T14:07:59+00:00",
+          "url": "https://www.youtube.com/watch?v=2v-k9xUyKG8",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.8,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "lNCyBOTRsGw",
+          "baslik": "ANALİZ GRUBUMUZDA OLAN ARKADAŞLAR #THYAO DA %31 KAZANDI #bist100 #borsa #kesfet #kesfetteyiz",
+          "yayin_tarihi": "2026-11-19T10:28:07+00:00",
+          "url": "https://www.youtube.com/watch?v=lNCyBOTRsGw",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 1.0,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "tLye-SwuXGM",
+          "baslik": "Enflasyon, faiz ve borsalar için petrolu takip ediyoruz #brent #petrol #kesfet #kesfetteyiz #xauusd",
+          "yayin_tarihi": "2026-11-19T06:02:57+00:00",
+          "url": "https://www.youtube.com/watch?v=tLye-SwuXGM",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.9,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "XpNsb36mjyA",
           "baslik": "#bist100 düşüşüne başladı mı ? Yoksa bu bir fırsat mı ? #borsa #kesfet #kesfetteyiz",
@@ -3653,44 +3842,14 @@
           "sure_dk": 0.6,
           "canli": false,
           "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "2roXF5PGDTQ",
-          "baslik": "Ons altında son durum…#xauusd #altın #kesfet #kesfetteyiz #forex",
-          "yayin_tarihi": "2026-11-16T18:27:17+00:00",
-          "url": "https://www.youtube.com/watch?v=2roXF5PGDTQ",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.3,
-          "canli": false,
-          "atlandi": "sure 0 dk"
-        },
-        {
-          "video_id": "klQUOkJfdrU",
-          "baslik": "Gram altında yükselişin şartları…#altın #gramaltın #xauusd #kesfet #forex",
-          "yayin_tarihi": "2026-11-16T14:48:10+00:00",
-          "url": "https://www.youtube.com/watch?v=klQUOkJfdrU",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.5,
-          "canli": false,
-          "atlandi": "sure 0 dk"
-        },
-        {
-          "video_id": "lVeqTmIvqCw",
-          "baslik": "#TSKB hissesindeki %15 oranındaki yükselişi yakaladık #bist100 #borsa #kesfet #kesfetteyiz",
-          "yayin_tarihi": "2026-11-16T14:07:46+00:00",
-          "url": "https://www.youtube.com/watch?v=lVeqTmIvqCw",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.5,
-          "canli": false,
-          "atlandi": "sure 0 dk"
         }
       ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 8,
+      "aday_sayisi": 3,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079346+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333680+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -3706,7 +3865,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079349+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333683+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -3722,7 +3881,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-18T15:36:24.079351+00:00"
+      "son_kontrol_utc": "2026-11-19T16:10:49.333685+00:00"
     }
   },
   "hata": null,
@@ -3740,12 +3899,13 @@
   ],
   "butce": {
     "toplam_sinir": 20,
-    "islenen": 2,
-    "bekleyen": 0,
+    "islenen": 3,
+    "bekleyen": 1,
     "kota_bitti": false,
     "kullanilan_modeller": {
+      "gemini-flash-lite-latest": 1,
       "gemini-3-flash-preview": 1,
-      "gemini-flash-lite-latest": 1
+      "gemini-flash-latest": 1
     },
     "kotasi_dolan_modeller": [
       "gemini-omni-1.2-flash",
@@ -3932,18 +4092,43 @@
         "gemini-omni-flash-preview"
       ],
       "zaman_utc": "2026-11-18T15:36:24.079367+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 3,
+      "bekleyen": 1,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-flash-lite-latest": 1,
+        "gemini-3-flash-preview": 1,
+        "gemini-flash-latest": 1
+      },
+      "kotasi_dolan_modeller": [
+        "gemini-omni-1.2-flash",
+        "gemini-omni-flash-preview"
+      ],
+      "zaman_utc": "2026-11-19T16:10:49.333702+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-18T15:36:24.079371+00:00",
+  "uretim_zamani_utc": "2026-11-19T16:10:49.333706+00:00",
   "denemeler": [
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-latest hata: TimeoutError: The read operation timed out",
+    "Gemini gemini-omni-flash-preview gunluk kota doldu; siradaki model denenecek",
+    "Gemini gemini-omni-1.2-flash gunluk kota doldu; siradaki model denenecek",
+    "Gemini gemini-flash-lite-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "@Selcoin / CRX9AieAh6g Gemini hatasi: gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-lite-latest: 0 karakter, bitis=STOP",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3.8-flash hata: TimeoutError: The read operation timed out",
-    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-omni-flash-preview gunluk kota doldu; siradaki model denenecek",
-    "Gemini gemini-omni-1.2-flash gunluk kota doldu; siradaki model denenecek",
-    "Gemini gemini-flash-lite-latest: 0 karakter, bitis=STOP"
+    "Gemini gemini-3-flash-preview hata: TimeoutError: The read operation timed out",
+    "Gemini gemini-flash-latest: 0 karakter, bitis=STOP"
   ]
 }

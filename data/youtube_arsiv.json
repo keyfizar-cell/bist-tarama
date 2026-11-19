@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-18T15:36:24.140478+00:00",
+ "uretim_zamani_utc": "2026-11-19T16:10:49.393987+00:00",
  "kisiler": {
   "Yaşar Erdinç": {
    "islenenler": [
@@ -220,7 +220,7 @@
     }
    ],
    "hatali": {
-    "5jdPrBs8HpU": 1
+    "5jdPrBs8HpU": 2
    },
    "adaylar": [
     {
@@ -369,7 +369,7 @@
     }
    ],
    "aday_guncelleme_utc": "2026-11-14T17:54:19.688598+00:00",
-   "kalan_aday": 14,
+   "kalan_aday": 13,
    "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz.",
    "hata": "5jdPrBs8HpU: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in d"
   }
