@@ -1,6 +1,6 @@
 {
  "surum": "1.2",
- "uretim_zamani_utc": "2026-11-18T16:24:53.200074+00:00",
+ "uretim_zamani_utc": "2026-11-19T16:31:39.644727+00:00",
  "video": {
   "video_id": "CdDtwCcL99Q",
   "baslik": "Borsa İstanbul’da 3. Haftada Satış Gelir mi? | Yükseliş Devam Edecek mi?",
@@ -10,28 +10,28 @@
  "deneyler": [
   {
    "ad": "gemini_teshis",
-   "durum": "basarili",
-   "karakter": 9371,
-   "turkce": true,
-   "sure_sn": 49.2,
-   "not": "model=gemini-3-flash-preview bitis=STOP",
-   "onizleme": "Borsa İstanbul son iki haftada yaklaşık %10 yükseldi ki bu oldukça iyi bir haber. Ama şimdi daha önemli bir sorumuz var. Bu yükseliş gerçekten yeni bir trendin başlangıcı mı yoksa önümüzdeki hafta bir düşüş serisi başlayabilir mi? Çünkü endeks yükselirken ikinci haftada hacimler yükselmedi, bankalar endeksin gerisinde kaldı ve 12.000 gibi bir direncimiz söz konusu. Üstelik MSCI tarafında 30 Kasım'"
+   "durum": "hata",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 90.6,
+   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3-flash-preview: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-flash-latest: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing",
+   "onizleme": ""
   },
   {
    "ad": "gemini_parca",
-   "durum": "basarili",
-   "karakter": 9773,
-   "turkce": true,
-   "sure_sn": 43.4,
-   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem",
-   "onizleme": "Borsa İstanbul son iki haftada yaklaşık yüzde on yükseldi ki bu oldukça iyi bir haber ama şimdi daha önemli bir sorumuz var. Bu yükseliş gerçekten yeni bir trendin başlangıcı mı yoksa önümüzdeki hafta bir düşüş serisi başlayabilir mi? Çünkü endeks yükselirken ikinci haftada hacimler yükselmedi, bankalar endeksin gerisinde kaldı ve on iki bin gibi bir direncimiz söz konusu. Üstelik MSCI tarafında o",
+   "durum": "hata",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 50.3,
+   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3-flash-preview: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-flash-latest: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing",
+   "onizleme": "",
    "parcalar": [
     {
      "bas": 0,
      "bit": 578,
-     "model": "gemini-3-flash-preview",
-     "karakter": 9773,
-     "bitis": "STOP"
+     "model": null,
+     "karakter": 0,
+     "bitis": null
     }
    ]
   },
@@ -40,7 +40,7 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 1.1,
+   "sure_sn": 1.4,
    "not": "] CdDtwCcL99Q: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
@@ -76,8 +76,8 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 40.9,
-   "not": "model=glm-4.6v-flash HTTP 400 {\"error\":{\"code\":\"1210\",\"message\":\"图片输入格式/解析错误\"}}",
+   "sure_sn": 0.5,
+   "not": "model=glm-4.6v-flash HTTP 429 {\"error\":{\"code\":\"1305\",\"message\":\"The service may be temporarily overloaded, please try again later\"}}",
    "onizleme": ""
   },
   {
@@ -117,10 +117,7 @@
    "onizleme": ""
   }
  ],
- "basarili_yollar": [
-  "gemini_teshis",
-  "gemini_parca"
- ],
+ "basarili_yollar": [],
  "gecmis": {
   "gemini_teshis": [
    {
@@ -157,6 +154,11 @@
     "tarih": "2026-11-18T16:24:53.200074+00:00",
     "durum": "basarili",
     "karakter": 9371
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "gemini_parca": [
@@ -194,6 +196,11 @@
     "tarih": "2026-11-18T16:24:53.200074+00:00",
     "durum": "basarili",
     "karakter": 9773
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "ytdlp_altyazi": [
@@ -229,6 +236,11 @@
    },
    {
     "tarih": "2026-11-18T16:24:53.200074+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -268,6 +280,11 @@
     "tarih": "2026-11-18T16:24:53.200074+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "qwen_url": [
@@ -303,6 +320,11 @@
    },
    {
     "tarih": "2026-11-18T16:24:53.200074+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -342,6 +364,11 @@
     "tarih": "2026-11-18T16:24:53.200074+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "glm_url": [
@@ -377,6 +404,11 @@
    },
    {
     "tarih": "2026-11-18T16:24:53.200074+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -416,6 +448,11 @@
     "tarih": "2026-11-18T16:24:53.200074+00:00",
     "durum": "ses_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
+    "durum": "ses_yok",
+    "karakter": 0
    }
   ],
   "siliconflow_ses": [
@@ -451,6 +488,11 @@
    },
    {
     "tarih": "2026-11-18T16:24:53.200074+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -490,6 +532,11 @@
     "tarih": "2026-11-18T16:24:53.200074+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "deepseek": [
@@ -525,6 +572,11 @@
    },
    {
     "tarih": "2026-11-18T16:24:53.200074+00:00",
+    "durum": "uygulanamaz",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-19T16:31:39.644727+00:00",
     "durum": "uygulanamaz",
     "karakter": 0
    }
