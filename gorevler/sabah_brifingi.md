@@ -8,10 +8,10 @@ GÖREV: Alpay için SEANS ÖNCESİ (BIST açılışı 10:00 TR = 07:00 UTC) DOYU
 Önceki brifinglerde şu hatalar yapıldı, ASLA tekrarlama:
  ✗ "BofA'nın en çok işlem yaptığı ilk 10 hisse listesine Akbank dahil" → Liste verilmedi. 
  ✓ DOĞRUSU: Listenin TAMAMINI yaz (10 hissenin kodu + mümkünse net alım tutarı/lot), portföydeki hisseleri **kalın** işaretle, tarih ve kaynak linki ver, dönemi belirt (günlük mü haftalık mı), "portföyde 2/10: AKBNK, VAKBN" gibi özetle.
- ✗ "TTKOM geri alım yapan 28-29 şirket arasında" → Belirsiz sayı, rakam yok.
- ✓ DOĞRUSU: TTKOM'un kendi rakamları (tarih, adet, ortalama fiyat, toplam tutar, programın toplam bütçesi ve doluluk oranı, şirketin elindeki toplam pay / sermayeye oranı) + o gün geri alım yapan şirketlerin listesi (kodlarıyla; çoksa ilk 10 + "toplam N şirket").
- ✗ "BLUME — Blume ..." → Kısaltılmış/eksik şirket adı. ✓ Tam unvan yaz.
- ✗ YIGIT için "fon krizlerinin etkileri basında tartışılıyor", ZBJ için "para piyasası fonlarında hareketlilik" → Şirkete/fona ÖZGÜ olmayan dolgu metin.
+ ✗ "SAHOL geri alım yapan 28-29 şirket arasında" → Belirsiz sayı, rakam yok.
+ ✓ DOĞRUSU: SAHOL'un kendi rakamları (tarih, adet, ortalama fiyat, toplam tutar, programın toplam bütçesi ve doluluk oranı, şirketin elindeki toplam pay / sermayeye oranı) + o gün geri alım yapan şirketlerin listesi (kodlarıyla; çoksa ilk 10 + "toplam N şirket").
+ ✗ "SISE — Şişe ..." → Kısaltılmış/eksik şirket adı. ✓ Tam unvan yaz.
+ ✗ ASELS için "fon krizlerinin etkileri basında tartışılıyor", ABC fonu için "para piyasası fonlarında hareketlilik" → Şirkete/fona ÖZGÜ olmayan dolgu metin.
  ✓ DOĞRUSU: Şirkete özgü somut gelişme yoksa o kodu "Kayda değer gelişme yok" satırına koy. Genel piyasa haberini hisse başlığı altına yazma.
  ✗ "BIST 100: yön arayışı sürüyor" → Rakamsız yorum.
  ✓ DOĞRUSU: dünkü kapanış puanı, günlük %, hacim (TL), yabancı takas payı değişimi (bulunursa), kaynaklarda geçen destek/direnç seviyeleri, VİOP BIST30 vadeli akşam seansı kapanışı ve açılış beklentisi.
@@ -61,7 +61,7 @@ Haber bir listeye/sıralamaya atıfta bulunuyorsa, o listenin asıl kaynağını
    (d) Gedik / İş Yatırım gibi kısa listeler (≤8 hisse) tablo yerine tek satır: "Gedik haftalık (9–13 Kasım): CIMSA, SAHOL, TABGD, TAVHL, YKBNK — portföyle kesişim yok".
    Tablolarda Gmail stili kuralları (açık zeminli başlık, inline CSS) geçerlidir; sayıları kaynaktan AYNEN al, uydurma. Bulunamadıysa bölümü "Bugün erişilebilen liste yok" diye tek satırla kapat.
 9) 📡 RADAR DIŞI (portföy dışı, en fazla 5 madde): somut kod + rakam + kaynak. "15 şirket yeni iş ilişkisi" gibi toplu haberlerde şirket kodlarını ve sözleşme tutarlarını tablo halinde ver (en büyük 10).
-10) ✅ BUGÜN İZLE: 3-6 maddelik kontrol listesi (ör. "TTKOM: 54,00₺ geri alım fiyat bölgesi", "PAPIL: devre kesici sonrası ilk seans").
+10) ✅ BUGÜN İZLE: 3-6 maddelik kontrol listesi (ör. "SAHOL: 54,00₺ geri alım fiyat bölgesi", "PGSUS: devre kesici sonrası ilk seans").
 11) Dipnot: "Otomatik sabah brifingi · Pozisyonlar 'Alpay - Porfoy Takip' dosyasından okunur · Borsa MCP: <durum> · Yatırım tavsiyesi değildir." — <durum>: bu çalışmada mcp__saidsurucu_-_MCP__ ile başlayan araçlar mevcutsa ve en az biri veri döndürdüyse "kullanıldı", araç yoksa "bağlı değil", araç var ama hata verdiyse "bağlı ama hata verdi".
 
 ═══ GÖNDERMEDEN ÖNCE ÖZ-DENETİM (zorunlu) ═══

@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.4)
+KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.5)
+
+v3.5 (2026-11-20): gizlilik — portföy listesi koddan çıktı (Secret PORTFOY_KODLARI, yalnız sıralama);
+kap.json piyasa geneli (bildirimi olan tüm kodlar), geri_alim.json'da portfoyde/portfoy_ozet yok,
+belge detayı tüm geri alım şirketleri için (MAX_DETAY 400).
 
 v3.4 (2026-11-06): geri alım KÜMÜLATİF düzeltmesi (gerçek KAP belgeleriyle teşhis):
   (1) Detay için yalnız "işlem" sınıfı değil, şirketin TÜM geri alım bildirimleri
@@ -22,7 +26,7 @@ metni) + her kapsam-içi şirkete "detay_durum" (ok/satir_yok/indirilemedi). Bö
 KRDMD'nin KAP tablo düzeni görülüp ayrıştırıcı kesinleştirilebilir.
 
 İKİ ÇIKTI, HER İKİSİ DE BAĞIMSIZ VE AYRI DOSYA:
-  (1) data/kap.json       — v2 ile AYNI: portföy/ek kodlar için son N günün
+  (1) data/kap.json       — v3.5: piyasa geneli, bildirimi olan tüm kodlar için son N günün
                             KAP bildirimleri. Mantık/biçim DEĞİŞTİRİLMEDİ.
   (2) data/geri_alim.json — 01.09.2026'dan bugüne piyasa genelindeki TÜM
                             "Pay Geri Alım" bildirimlerini şirket bazında özetler.
@@ -62,11 +66,9 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 # ───────────────────────── AYARLAR (düzenlenebilir) ─────────────────────────
-PORTFOY: list[str] = [
-    "AKBNK", "BLUME", "CANTE", "ENKAI", "HEKTS", "KRDMD", "OBAMS",
-    "PAPIL", "SOHOE", "TTKOM", "ULUUN", "VAKBN", "YIGIT",
-]
-EK_KODLAR: list[str] = []
+# Portföy kodları repoya YAZILMAZ (repo herkese açık). Çıktılar piyasa genelidir; portföy yalnız
+# belge indirme SIRASINI öne almak için GitHub Secret PORTFOY_KODLARI'dan okunur, çıktıya etiket olarak girmez.
+PORTFOY: list[str] = [k.strip().upper() for k in os.environ.get("PORTFOY_KODLARI", "").split(",") if k.strip()]
 
 # BIST30 — YAKLAŞIK, düzenlenebilir; güncel endeks bileşimini teyit et.
 BIST30: list[str] = [
@@ -89,9 +91,9 @@ GA_BILDIRIM_LIMIT = 60
 
 # ── Tier-2 (lot/tutar ikinci yol: KAP belge dışa-aktarma) ──
 DETAY_DENE = True                 # kapatmak için False
-DETAY_KAPSAM = "portfoy_bist30"   # "portfoy_bist30" | "portfoy" | "yok"
+DETAY_KAPSAM = "tumu"             # "tumu" | "yok"
 DETAY_FORMAT = "pdf_sonra_word"   # "pdf_sonra_word" | "pdf" | "word"
-MAX_DETAY = 80                    # en fazla kaç belge indirilsin (kibar/hızlı)
+MAX_DETAY = 400                   # en fazla kaç belge indirilsin (~175 şirket; kibar bekleme ile ~10 dk)
 GA_DETAY_DENEME = 3               # şirket başına en güncelden kaç bildirim denensin (parse olana dek)
 DETAY_ORNEK_KAYDET = True         # ilk belgenin metnini (4000 krktr) tanı için kaydet
 BELGE_TIMEOUT = 25
@@ -182,13 +184,6 @@ def _kayit(d) -> dict:
 
 
 def _kap_fazi() -> None:
-    izleme: list[str] = []
-    for k in PORTFOY + EK_KODLAR:
-        k = (k or "").strip().upper()
-        if k and k not in izleme:
-            izleme.append(k)
-    izleme_set = set(izleme)
-
     bugun = date.today()
     baslangic = bugun - timedelta(days=GUN_PENCERESI)
 
@@ -197,8 +192,8 @@ def _kap_fazi() -> None:
         "tarih": bugun.isoformat(),
         "gun_penceresi_gun": GUN_PENCERESI,
         "baslangic": baslangic.isoformat(),
-        "kaynak": "KAP (kap-client, piyasa-geneli sorgu + stockCodes filtresi)",
-        "kodlar": {k: [] for k in izleme},
+        "kaynak": "KAP (kap-client, piyasa-geneli sorgu; bildirimi olan TÜM kodlar)",
+        "kodlar": {},
         "notlar": [],
     }
 
@@ -212,7 +207,7 @@ def _kap_fazi() -> None:
         from kap_client import Disclosure
     except Exception as e:
         cikti["notlar"].append(f"kap-client import edilemedi: {e!r}")
-        cikti["hisse_sayisi"] = len(izleme)
+        cikti["hisse_sayisi"] = 0
         cikti["bildirimli_kod_sayisi"] = 0
         cikti["toplam_piyasa_satiri"] = 0
         _kap_yaz(cikti)
@@ -235,8 +230,7 @@ def _kap_fazi() -> None:
                     continue
                 kodlar = [c.strip().upper() for c in (d.stock_codes or "").split(",") if c.strip()]
                 for kod in kodlar:
-                    if kod in izleme_set:
-                        cikti["kodlar"][kod].append(_kayit(d))
+                    cikti["kodlar"].setdefault(kod, []).append(_kayit(d))
         for kod, lst in cikti["kodlar"].items():
             lst.sort(key=lambda x: (x.get("zaman") or ""), reverse=True)
             cikti["kodlar"][kod] = lst[:KOD_BASI_LIMIT]
@@ -498,7 +492,7 @@ def _piyasa_degeri_haritasi() -> dict:
     return harita
 
 
-def _ga_derle(kayitlar: list, pd_harita: dict, portfoy_set: set, bist30_set: set) -> dict:
+def _ga_derle(kayitlar: list, pd_harita: dict, bist30_set: set) -> dict:
     sirketler: dict = {}
     for r in kayitlar:
         kodlar = [c.strip().upper() for c in (r.get("kodlar") or "").split(",") if c.strip()]
@@ -510,7 +504,7 @@ def _ga_derle(kayitlar: list, pd_harita: dict, portfoy_set: set, bist30_set: set
         for kod in kodlar:
             s = sirketler.setdefault(kod, {
                 "kod": kod, "sirket": r.get("sirket"),
-                "portfoyde": kod in portfoy_set, "bist30": kod in bist30_set,
+                "bist30": kod in bist30_set,
                 "bildirimler": [], "islem_bildirim_sayisi": 0, "program_bildirim_sayisi": 0,
             })
             if not s.get("sirket"):
@@ -562,7 +556,7 @@ def _ga_fazi() -> None:
         "detay_denendi": False, "detay_basari_sayisi": 0, "detay_kaynak_sayisi": {},
         "detay_ornek": None, "detay_ornek_basarisiz": None,
         "toplam_piyasa_satiri": 0, "geri_alim_bildirim_sayisi": 0,
-        "sirket_sayisi": 0, "sirketler": {}, "portfoy_ozet": {}, "notlar": [],
+        "sirket_sayisi": 0, "sirketler": {}, "notlar": [],
     }
 
     try:
@@ -576,7 +570,7 @@ def _ga_fazi() -> None:
         _ga_yaz(cikti)
         return
 
-    portfoy_set = {k.strip().upper() for k in PORTFOY}
+    oncelik = {k.strip().upper() for k in PORTFOY} | {k.strip().upper() for k in BIST30}
     bist30_set = {k.strip().upper() for k in BIST30}
     pd_harita = _piyasa_degeri_haritasi()
     if not pd_harita:
@@ -617,7 +611,7 @@ def _ga_fazi() -> None:
 
     cikti["toplam_piyasa_satiri"] = toplam_satir
     cikti["geri_alim_bildirim_sayisi"] = len(ga_kayitlar)
-    sirketler = _ga_derle(ga_kayitlar, pd_harita, portfoy_set, bist30_set)
+    sirketler = _ga_derle(ga_kayitlar, pd_harita, bist30_set)
 
     # ── Tier-2: KAP belge dışa-aktarma (ikinci yol) ──
     # Belge GET'leri için CANLI bir KAP oturumu (hdoc) açılır: önce bildirim-sorgu
@@ -625,7 +619,6 @@ def _ga_fazi() -> None:
     # Her şey try/except'le sarılı → bu faz patlasa bile dosya yine yazılır.
     if DETAY_DENE and DETAY_KAPSAM != "yok":
         cikti["detay_denendi"] = True
-        kapsam = portfoy_set if DETAY_KAPSAM == "portfoy" else (portfoy_set | bist30_set)
         basari = 0
         cekilen = 0
         kaynak_say: dict = {"pdf": 0, "word": 0}
@@ -637,9 +630,9 @@ def _ga_fazi() -> None:
                     hdoc.get_html(BASE_KAP + "/tr/bildirim-sorgu")
                 except Exception:
                     pass
-                for kod, s in sirketler.items():
-                    if kod not in kapsam:
-                        continue
+                # TÜM geri alım şirketleri denenir (yalnız bir alt kümenin detayı olsaydı portföy
+                # dışarıdan çıkarılabilirdi); portföy+BIST30 önce gelir ki MAX_DETAY dolarsa onlar kaçmasın.
+                for kod, s in sorted(sirketler.items(), key=lambda x: (x[0] not in oncelik, x[0])):
                     # İşlem bildirimleri (en yeni → eski; _ga_derle zaten sıraladı).
                     # Her bildirim programın TÜM geçmişini taşıdığından YALNIZ en güncel
                     # (parse edilebilen ilk) bildirim kullanılır — TOPLAMA YOK.
@@ -714,15 +707,6 @@ def _ga_fazi() -> None:
 
     cikti["sirketler"] = sirketler
     cikti["sirket_sayisi"] = len(sirketler)
-    cikti["portfoy_ozet"] = {
-        k: {"toplam_bildirim": s["toplam_bildirim"], "islem_bildirim_sayisi": s["islem_bildirim_sayisi"],
-            "son_bildirim_tarih": s["son_bildirim_tarih"], "kumulatif_lot": s["kumulatif_lot"],
-            "kumulatif_tutar_tl": s["kumulatif_tutar_tl"], "sermaye_orani_yuzde": s["sermaye_orani_yuzde"],
-            "kumulatif_kaynak": s.get("kumulatif_kaynak", "veri yok"),
-            "program_kumulatif_lot": s.get("program_kumulatif_lot", "veri yok"),
-            "detay_bildirim_tarih": s.get("detay_bildirim_tarih")}
-        for k, s in sirketler.items() if s["portfoyde"]
-    }
     if toplam_satir == 0:
         cikti["notlar"].append("Piyasa-geneli sorgu 0 satır — tarih aralığı/endpoint kontrol et.")
     _ga_yaz(cikti)

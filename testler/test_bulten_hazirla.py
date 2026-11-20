@@ -96,14 +96,13 @@ class SinyalGecmisi(unittest.TestCase):
 class GeriAlim(unittest.TestCase):
     def test_kumulatif_yalniz_sirket_beyani(self):
         ga = {"sirketler": {
-            "CANTE": {"portfoyde": True, "kumulatif_kaynak": "sirket_beyani", "kumulatif_lot": 25000000.0,
+            "AAAAA": {"kumulatif_kaynak": "sirket_beyani", "kumulatif_lot": 25000000.0,
                       "sermaye_orani_yuzde": 0.25, "detay_bildirim_tarih": "2026-10-01"},
-            "KRDMD": {"portfoyde": True, "kumulatif_kaynak": "tablo_program", "kumulatif_lot": 1175107.0},
-            "XYZ": {"portfoyde": False, "bist30": False}}}
+            "BBBBB": {"bist30": True, "kumulatif_kaynak": "tablo_program", "kumulatif_lot": 1175107.0}}}
         r = {s["kod"]: s for s in b.geri_alim_ozet(ga)["satirlar"]}
-        self.assertEqual(r["CANTE"]["kumulatif_lot"], 25000000.0)
-        self.assertIsNone(r["KRDMD"]["kumulatif_lot"])
-        self.assertNotIn("XYZ", r)
+        self.assertEqual(r["AAAAA"]["kumulatif_lot"], 25000000.0)
+        self.assertIsNone(r["BBBBB"]["kumulatif_lot"])
+        self.assertNotIn("portfoyde", r["AAAAA"])          # repo açık: çıktıda portföy etiketi olmaz
 
 
 class GercekVeri(unittest.TestCase):
