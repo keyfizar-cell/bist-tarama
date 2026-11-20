@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-19T16:10:49.393987+00:00",
+ "uretim_zamani_utc": "2026-11-20T15:36:38.305487+00:00",
  "kisiler": {
   "Yaşar Erdinç": {
    "islenenler": [
@@ -217,6 +217,66 @@
      ],
      "konusmaci_dogrulandi": true,
      "yaklasik_tarih": "2018"
+    },
+    {
+     "video_id": "kQIB0IlpJoI",
+     "baslik": "YAŞAR ERDİNÇ VE HAP BORSA BİLGİLERİ 2",
+     "kanal": "ibrahim Ethem Afacan",
+     "yayin_tarihi": "2022-04-28T17:54:48Z",
+     "url": "https://www.youtube.com/watch?v=kQIB0IlpJoI",
+     "sure_dk": 18.7,
+     "islenme_utc": "2026-11-20T15:37:39.189005+00:00",
+     "kaynak": "gemini:gemini-3-flash-preview",
+     "ilkeler": [
+      "Enflasyonist ortamlarda yerel paradan kaçış başlar ve reel varlıklara yönelim artar.",
+      "Yatırım yaparken işlem hacmindeki ani patlamalara ve fiyatın geri çekilme hareketlerine (spike) dikkat edilmelidir.",
+      "Teknik analiz göstergeleri %100 kazanç garantisi vermez; bu nedenle mutlaka stop-loss (zarar kes) seviyeleri belirlenmelidir.",
+      "Zararda beklemek rasyonel bir davranış değildir; belirlenen stop seviyesi aşağı kırıldığında satış yapılmalıdır.",
+      "Temettü emekliliği için alınan temettülerle tekrar aynı hisseden alınarak hisse sayısı sürekli artırılmalıdır.",
+      "Şirketlerin faaliyet raporları detaylıca okunmalı ve gerektiğinde yatırımcı ilişkileri bölümüyle iletişim kurulmalıdır.",
+      "Sadece düşük F/K oranına bakarak hisse alınmamalı; şirketin gelecekteki kârlılık potansiyeli de incelenmelidir.",
+      "Sürekli piyasayı izleyerek duygusal kararlarla işlem yapmak yerine stratejiye sadık kalınmalıdır.",
+      "Yatırımcı psikolojisindeki 'akli muhasebeleştirme' gibi rasyonel olmayan sapmalardan kaçınılmalıdır.",
+      "Sürekli bedelli sermaye artırımı yapan ve yatırımcıdan para talep eden şirketlerden uzak durulmalıdır.",
+      "Hisse senedi yatırımı yaparken şirketin net kâr marjı ve operasyonel verimliliği takip edilmelidir.",
+      "Borsaya dolar bazlı bakılarak tarihsel dip ve tepe seviyeleri analiz edilmelidir."
+     ],
+     "ozet": [
+      "Enflasyonun yatırım araçları, özellikle otomobil ve gayrimenkul üzerindeki etkileri ve tüketici davranışları ele alınmaktadır.",
+      "Teknik analizde yapılan hatalar, stop-loss kullanımının hayati önemi ve işlem hacmi analizleri anlatılmaktadır.",
+      "Yatırımcı psikolojisinin karar verme süreçlerini nasıl etkilediği ve rasyonel olmayan davranış kalıpları örneklendirilmektedir.",
+      "Temettü veren şirketler ile sürekli sermaye artıran şirketlerin uzun vadeli performans karşılaştırmaları yapılmaktadır.",
+      "Şirket analizi sürecinde faaliyet raporlarının önemi ve yatırımcı ilişkileriyle kurulan iletişimin değeri vurgulanmaktadır.",
+      "Borsa İstanbul'un dolar bazlı tarihsel gelişimi ve piyasanın ucuzluk/pahalılık durumları değerlendirilmektedir."
+     ],
+     "bahsedilen_hisseler": [
+      {
+       "kod": "BLCYT",
+       "ne_dedi": "İşlem hacmindeki ani artışlar ve fiyatın belirli seviyelerden geri dönmesi üzerinden teknik analiz hatası örneği olarak verilmiştir."
+      },
+      {
+       "kod": "FROTO",
+       "ne_dedi": "Temettü veren ve enflasyona karşı yatırımcısını uzun vadede koruyan başarılı şirketlere örnek olarak gösterilmiştir."
+      },
+      {
+       "kod": "KARSAN",
+       "ne_dedi": "Sürekli bedelli sermaye artırımı yaparak yatırımcısından para çeken şirketlere olumsuz bir örnek olarak sunulmuştur."
+      },
+      {
+       "kod": "VKING",
+       "ne_dedi": "Sürekli zarar eden ve sermaye artırımı yapan şirketlerin yatırımcıyı nasıl zarara uğrattığına dair örnek verilmiştir."
+      },
+      {
+       "kod": "VESBE",
+       "ne_dedi": "Yatırımcı ilişkileri bölümünün şeffaflığı ve yatırımcıların teknik sorularına verdiği detaylı yanıtlar nedeniyle övülmüştür."
+      },
+      {
+       "kod": "USD/TRY",
+       "ne_dedi": "Borsanın dolar bazlı ucuzluğu ve tarihsel dip seviyeleri üzerinden piyasa değerlendirmesi yapılmıştır."
+      }
+     ],
+     "konusmaci_dogrulandi": true,
+     "yaklasik_tarih": "2018"
     }
    ],
    "hatali": {
@@ -369,9 +429,9 @@
     }
    ],
    "aday_guncelleme_utc": "2026-11-14T17:54:19.688598+00:00",
-   "kalan_aday": 13,
+   "kalan_aday": 12,
    "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz.",
-   "hata": "5jdPrBs8HpU: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in d"
+   "hata": null
   }
  },
  "hata": null
