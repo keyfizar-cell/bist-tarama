@@ -204,6 +204,7 @@ ama hiçbir göreve bağlı değil.
 
 | Tarih | Ne değişti | Kim |
 |---|---|---|
+| 20.11.2026 | Ponytail skill'leri eklendi (`.claude/skills/ponytail`, `-review`, `-audit`, `-debt`, `-help`; MIT, DietrichGebert/ponytail); CLAUDE.md'ye kodlama işlerinde varsayılan açık kuralı yazıldı. Kod/veri hattı değişmedi. | Claude (Alpay isteği) |
 | 19.11.2026 | KeyfiZar haftalık short partisi (Alpay onayı): `.claude/skills/keyfizar-haftalik/SKILL.md` v1.0 (bulut görevi her Pazar 7 short üretip günde bir 19:00'a zamanlar). `CLAUDE.md` stil seçimi kuralına **haftalık parti istisnası**: partide stili Claude seçer (hafta içinde tekrar yok, son 2 haftada kullanılanlar tercih edilmez, ✦ ücretli stiller yok), seçimler özette listelenir, Alpay değiştirirse o video yeniden üretilir; tek tek istenen videolarda eski kural aynen geçerli. Deneme short'u yerelde üretildi (icerik-uretim 013) | Claude Code |
 | 15.11.2026 | x_deney sonuçları (Actions, hesapsız): X oEmbed ✅ ve syndication tek tweet ✅ (URL biliniyorsa tam metin+görsel), profil zaman çizelgesi ❌ 429, Bluesky arama ❌ 403, Telegram t.me/s ✅. Araştırma (E) bölümüne bulgular + ücretsiz yol görevleri (site:x.com dizinlenme, X hesaplarının Telegram/web aynaları) eklendi | Claude Code |
 | 15.11.2026 | Alpay kararı: X ücretsiz yollarla. `araclar/x_deney.py` v1.0 + `x-deney.yml` (yalnız dispatch): X oEmbed, X embed syndication (tweet/profil), Telegram t.me/s önizleme, Bluesky açık arama yoklaması → `data/x_deney.json`. Hesap/çerez/ücretli API yok | Claude Code |
