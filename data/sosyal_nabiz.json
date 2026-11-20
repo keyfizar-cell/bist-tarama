@@ -1,14 +1,14 @@
 {
-  "tarih": "2026-11-19",
+  "tarih": "2026-11-20",
   "hata": null,
   "youtube": {
     "videolar": [
       {
-        "baslik": "Borsa İstanbul’da 3. Haftada Satış Gelir mi? | Yükseliş Devam Edecek mi?",
+        "baslik": "Her Hisseye Aynı Rasyoyla Bakmak Hata! | 5 Sektörde Şirket Analizi",
         "kanal": "Emir Bozkurt",
         "kaynak": "takip",
-        "video_id": "CdDtwCcL99Q",
-        "alinan_yorum": 16
+        "video_id": "suKo2NmYXI4",
+        "alinan_yorum": 2
       },
       {
         "baslik": "Portföyüm büyüme beklentileri. Bütün şirketler.",
@@ -18,11 +18,18 @@
         "alinan_yorum": 22
       },
       {
+        "baslik": "Zararına yapılan bir satış, hayatınızın en karlı işlemi olabilir.",
+        "kanal": "Çağkan Yapıcı",
+        "kaynak": "takip",
+        "video_id": "h81Iw7H7DL4",
+        "alinan_yorum": 44
+      },
+      {
         "baslik": "Sigortacılık Sektörünü İncelerken Nelere Dikkat Etmeliyiz? | Konuk: J",
         "kanal": "Çağkan Yapıcı",
         "kaynak": "takip",
         "video_id": "wCLKP8m4v9U",
-        "alinan_yorum": 33
+        "alinan_yorum": 34
       },
       {
         "baslik": "Haftalık Borsa Haberleri #67 | MSCI çıkışları & Doco bilançosu ve diğerleri",
@@ -78,14 +85,14 @@
         "kanal": "Erdem Kaynar",
         "kaynak": "takip",
         "video_id": "1i03p2dr3Q8",
-        "alinan_yorum": 61
+        "alinan_yorum": 62
       },
       {
         "baslik": "The Economist 2027 Kapağından Gizlenen Mesaj Ne?",
         "kanal": "Erkan Öz",
         "kaynak": "takip",
         "video_id": "K92RbYDgnSw",
-        "alinan_yorum": 71
+        "alinan_yorum": 89
       },
       {
         "baslik": "Hangi Yatırım Araçları Trendini Kaybetti?",
@@ -99,21 +106,14 @@
         "kanal": "FinansLab | Gülşah Bıçkı",
         "kaynak": "takip",
         "video_id": "-9G4RX4kxG0",
-        "alinan_yorum": 25
+        "alinan_yorum": 26
       },
       {
-        "baslik": "UCUZ PİYASADA ILIMLI YÜKSELİŞ YAVAŞTAN DÖNÜYORUZ? 2026/9 BİLANÇO DÖNEMİ",
-        "kanal": "Kendine Yatırımcı",
-        "kaynak": "takip",
-        "video_id": "eW0MyNGOax8",
-        "alinan_yorum": 10
-      },
-      {
-        "baslik": "Borsada Yükseliş Başladı mı? Hangi Sektörler Öne Çıkabilir? 4 Uzmana Sordum!",
+        "baslik": "2026'da Ne Aldıysanız Kaybettiniz: 2027'de Paranız Ne Olacak?",
         "kanal": "Kendine Milyoner",
         "kaynak": "takip",
-        "video_id": "d6aZo5i9JtI",
-        "alinan_yorum": 34
+        "video_id": "QYC-OlWXCrQ",
+        "alinan_yorum": 1
       },
       {
         "baslik": "Dolar mı TL mi? Kur Ayda %2,5'i Geçerse TL Kaybettirir",
@@ -127,14 +127,21 @@
         "kanal": "koraynomi",
         "kaynak": "takip",
         "video_id": "BdcBHahrN9Y",
-        "alinan_yorum": 26
+        "alinan_yorum": 25
       },
       {
         "baslik": "BES Dahisiyle BES'i verimli Kullanmayı Konuşuyoruz",
         "kanal": "Mental Yatırım",
         "kaynak": "takip",
         "video_id": "AVprH0Hg_fk",
-        "alinan_yorum": 47
+        "alinan_yorum": 48
+      },
+      {
+        "baslik": "Adamlar Düğmeye Bastı! / Hayırlı Olsun 2027",
+        "kanal": "Selçuk Ergin ",
+        "kaynak": "takip",
+        "video_id": "CRX9AieAh6g",
+        "alinan_yorum": 100
       },
       {
         "baslik": "Büyük Para Operasyona Başladı! / Herkes Hazırlansın!",
@@ -151,11 +158,11 @@
         "alinan_yorum": 0
       },
       {
-        "baslik": "HİSSELERİNİZDE DÜŞÜŞLER BAŞLADI MI ?",
-        "kanal": "TANSEL ÇİFTÇİ ",
-        "kaynak": "takip",
-        "video_id": "PJiVN3bH3po",
-        "alinan_yorum": 0
+        "baslik": "ALARM DURUMU! OLAĞANÜSTÜ İŞLER OLUYOR! HAZIR OL | Emre ŞİRİN #borsa #altın #gümüş #dolar",
+        "kanal": "EMRE ŞİRİN",
+        "kaynak": "arama",
+        "video_id": "0kxZ5ogzje8",
+        "alinan_yorum": 100
       },
       {
         "baslik": "ALTIN GÜMÜŞ VE BORSADA TARİHİ TUZAK! Emre ŞİRİN #borsa #altın #gümüş #fon",
@@ -165,53 +172,74 @@
         "alinan_yorum": 99
       },
       {
-        "baslik": "FİTİLİ ATEŞLEDİLER! DAHA SERT HAREKETLERE HAZIR OL! Emre ŞİRİN #borsa #altın #gümüş #fon #dolar",
-        "kanal": "EMRE ŞİRİN",
+        "baslik": "Altın Gümüş Borsa ÇÖKÜYOR!  Ne yapacağız?  CANLI BORSA açılışı",
+        "kanal": "Burak Arslan",
         "kaynak": "arama",
-        "video_id": "EILI4s-3NSA",
-        "alinan_yorum": 97
-      },
-      {
-        "baslik": "Yatırımcıya Kazanç Kapılarını Kapattılar..! | Tüm Piyasalar Tatsız..! | #borsa #altın #dax #nasdaq",
-        "kanal": "Teknik Analist",
-        "kaynak": "arama",
-        "video_id": "Pnyiwzm0UTI",
-        "alinan_yorum": 98
+        "video_id": "zYu5dHKL-iY",
+        "alinan_yorum": 100
       },
       {
         "baslik": "Selçuk Gönençler ile Hisse Teknik Analizleri | Borsa Teknik",
         "kanal": "EKOTÜRK TV",
         "kaynak": "arama",
         "video_id": "Oz4Al81GXjc",
-        "alinan_yorum": 22
+        "alinan_yorum": 29
+      },
+      {
+        "baslik": "Uyanın! TEHLİKE VAR, Borsa Piyasa Altın",
+        "kanal": "EKONOMİBİZ",
+        "kaynak": "arama",
+        "video_id": "prDCggfjngE",
+        "alinan_yorum": 34
+      },
+      {
+        "baslik": "\"Altında Sihirbazlık Yok, Formül Var\" | Bilançoların Yıldızı Tüpraş | Tuncay Turşucu | QNB Invest",
+        "kanal": "QNB Invest",
+        "kaynak": "arama",
+        "video_id": "p5ffLgP1F90",
+        "alinan_yorum": 30
+      },
+      {
+        "baslik": "Para Kazandığınız Hisseyi Ne Zaman Satmalısınız? 8 - 21 - 50 EMA Formülü",
+        "kanal": "İbrahim Babadağı | Borsanın İzinden",
+        "kaynak": "arama",
+        "video_id": "J5A-bkjINDk",
+        "alinan_yorum": 30
       },
       {
         "baslik": "Ahmet Mergen ile Hisse Teknik Analizleri | Borsa Teknik",
         "kanal": "EKOTÜRK TV",
         "kaynak": "arama",
-        "video_id": "o5F3b2qSE-o",
-        "alinan_yorum": 33
+        "video_id": "Iz97shseM9A",
+        "alinan_yorum": 26
       },
       {
-        "baslik": "PİYASALAR DİKEN ÜSTÜNDE DESTEK KIRILDI SON YAYIN! #bist100 #borsa",
-        "kanal": "BORSA HEDEF",
+        "baslik": "Hisse Analiz I Fon Krizi 2027'ye Sarkar Mı?",
+        "kanal": "Yatırım 360",
         "kaynak": "arama",
-        "video_id": "PZbQwrjX07w",
-        "alinan_yorum": 20
+        "video_id": "hH4-x5RVn4E",
+        "alinan_yorum": 25
+      },
+      {
+        "baslik": "Tuncay Turşucu: Uzun Vadede Bilanço Ne Tarafa Gidiyorsa Hisse Fiyatı da O Yöne Doğru Gider!",
+        "kanal": "CNBC-e",
+        "kaynak": "arama",
+        "video_id": "XQf9SqNgQaA",
+        "alinan_yorum": 22
+      },
+      {
+        "baslik": "Borsa 2 Günde 330 Puan Düştü! Nvidia 115,8 Milyar $ Gelir | Dolar, Borsa, Altın, BTC Analizi",
+        "kanal": "FİNANS VE BORSA",
+        "kaynak": "arama",
+        "video_id": "SI77dlN-IOY",
+        "alinan_yorum": 22
       },
       {
         "baslik": "Borsa ve Altın Daha da Düşecek mi? | Anadolu Yatırım ile Piyasalarda Açılışa Doğru | 19 Kasım",
         "kanal": "Nasıl Bir Ekonomi TV",
         "kaynak": "arama",
         "video_id": "sOGhjgK-YiM",
-        "alinan_yorum": 17
-      },
-      {
-        "baslik": "Hisse Analiz I Borsa ve Fonda Sabır Sınavı!",
-        "kanal": "Yatırım 360",
-        "kaynak": "arama",
-        "video_id": "LHy1e3oF2eY",
-        "alinan_yorum": 15
+        "alinan_yorum": 18
       },
       {
         "baslik": "TAVAN TAVAN GİDECEK! KTLEV TEHOL DSTKF MİATK ARDYZ HİSSE ANALİZİ",
@@ -221,79 +249,83 @@
         "alinan_yorum": 14
       },
       {
-        "baslik": "🔴 CANLI | BIST 100 Yönünü Seçiyor! Bugün Ne Olacak?",
-        "kanal": "STFinans",
+        "baslik": "Borsada Kapanış Rakamları Destek Dirençler Tekrar Düşüş Başladı Yarın Devam Edecek Mi?",
+        "kanal": "Borsa Güney",
         "kaynak": "arama",
-        "video_id": "34Flc_f_DzA",
-        "alinan_yorum": 13
+        "video_id": "2kTSbHhE1-c",
+        "alinan_yorum": 11
       },
       {
         "baslik": "Düşen borsanın, yükselen hisseleri...",
         "kanal": "BORSA ekranı",
         "kaynak": "arama",
         "video_id": "MSCivj0Ngd0",
-        "alinan_yorum": 9
-      },
-      {
-        "baslik": "Borsada Kapanış Rakamları JP Morgan Hisselerimizde Al Tavsiyesi Verdi",
-        "kanal": "Borsa Güney",
-        "kaynak": "arama",
-        "video_id": "MmIe6p3hl0Y",
-        "alinan_yorum": 9
-      },
-      {
-        "baslik": "Para Bollaşıyor - 4 Sağlam Temettü Hissesi!",
-        "kanal": "FİNANS VE BORSA",
-        "kaynak": "arama",
-        "video_id": "viEGrTsmb_s",
-        "alinan_yorum": 8
-      },
-      {
-        "baslik": "Faiz mi, Borsa mı? Piyasalarda Nasıl Bir Seyir Bekleniyor? | Emrah Gürelli",
-        "kanal": "Matriks Trader",
-        "kaynak": "arama",
-        "video_id": "Z5MLlbmvzPg",
-        "alinan_yorum": 7
-      },
-      {
-        "baslik": "Borsa İçin SIRAT KÖPRÜSÜ Benzetmesi! “Grafik Çok Net Mesaj Veriyor”",
-        "kanal": "Nasıl Bir Ekonomi TV",
-        "kaynak": "arama",
-        "video_id": "Q-kgbE8z8l8",
-        "alinan_yorum": 9
+        "alinan_yorum": 10
       }
     ],
-    "yorum_sayisi": 1389,
+    "yorum_sayisi": 1597,
     "kod_sayim": {
+      "ARDYZ": {
+        "yorum": 3,
+        "ornekler": [
+          "Ardyz ve indes . Dediklerinizi düşündüm. Ama şu anda şirketler iyi de olsa satılıyor. Temelden koptu iş. Rekor satış artışı rekor kar bekleniyor ama hergün satı",
+          "Düşenlere var anlamsız diye düşünülen sise, sasa, cvkmd, eurpwer, ardyz, forte gibi. Yoksa düşmesi mi gerekiyor"
+        ],
+        "video": 2
+      },
+      "ISMEN": {
+        "yorum": 3,
+        "ornekler": [
+          "Ismen, Tofaş ve fordu işler kötü gitmesine rağmen satmadım. Bu kadar kötü olabileceğini hiç düşünmemiştim. Bu fiyatlardan satmak çok zoruma gider. Ders oldu.",
+          "Hocam çok şey anlatılıyor soru şu şu anda ne yapmak gerekiyor. Bir lafta herkes korkarken sen al. Şu anda herkes korkmakta hisseler düşüyor vs ne yapılmalı hiss"
+        ],
+        "video": 2
+      },
       "BRSAN": {
+        "yorum": 3,
+        "ornekler": [
+          "Hocam çok şey anlatılıyor soru şu şu anda ne yapmak gerekiyor. Bir lafta herkes korkarken sen al. Şu anda herkes korkmakta hisseler düşüyor vs ne yapılmalı hiss",
+          "Tüpraşıj en büyük hissedar khcol, en sağlam temettü de kchole gelecek. Onu da listeye almanızı beklerdim. Brsan çok güzel nokta atışı olmuş, amerikadaki berg pi"
+        ],
+        "video": 2
+      },
+      "TCKRC": {
+        "yorum": 3,
+        "ornekler": [
+          "Hocam çok şey anlatılıyor soru şu şu anda ne yapmak gerekiyor. Bir lafta herkes korkarken sen al. Şu anda herkes korkmakta hisseler düşüyor vs ne yapılmalı hiss",
+          "Tckrc %123 mü kâr yapmış iskontosu düşük mü 168 tl yi tekrar görür mü 50 tlye düşünce mi maliyetlenelim 🤔 yeotk 25 te mi alalım 45 te mi satalım 70 i görür mü g"
+        ],
+        "video": 2
+      },
+      "BIMAS": {
         "yorum": 2,
         "ornekler": [
-          "Tüpraşıj en büyük hissedar khcol, en sağlam temettü de kchole gelecek. Onu da listeye almanızı beklerdim. Brsan çok güzel nokta atışı olmuş, amerikadaki berg pi",
-          "TUPRAS - PRİMLİ BRSAN - PRİMLİ EBEBEK - PRİMLİ SAYILIR TCKRC - PRİMLİ SAYILIR YEOTK - DİĞERLERİNE GÖRE EN UCUZU AMA BUNU DA ALMAM SISECAM - TCELL BİLE BUNLARDAN"
+          "Hocam çok şey anlatılıyor soru şu şu anda ne yapmak gerekiyor. Bir lafta herkes korkarken sen al. Şu anda herkes korkmakta hisseler düşüyor vs ne yapılmalı hiss",
+          "Çağkan hocam, bu bahsettiğiniz genel olarak borsanın bugünki durumuundan kaynaklanıyor olabilir mi? mesela ntgaz, enkai, bimas, pcilt, lkmnh, anhyt, mavi, altny"
         ],
         "video": 1
+      },
+      "ENKAI": {
+        "yorum": 2,
+        "ornekler": [
+          "Çağkan hocam, bu bahsettiğiniz genel olarak borsanın bugünki durumuundan kaynaklanıyor olabilir mi? mesela ntgaz, enkai, bimas, pcilt, lkmnh, anhyt, mavi, altny",
+          "Enkai Tüpraş Migros Ford Doas İsmen"
+        ],
+        "video": 2
+      },
+      "ANHYT": {
+        "yorum": 2,
+        "ornekler": [
+          "Çağkan hocam, bu bahsettiğiniz genel olarak borsanın bugünki durumuundan kaynaklanıyor olabilir mi? mesela ntgaz, enkai, bimas, pcilt, lkmnh, anhyt, mavi, altny",
+          "Anladığım kadarıyla faaliyetlerinden elde ettiği kâr kadar mevcut paranın yönetimini daha çok önemli. Ansgr'nin teknik dengesi sürekli eksi yazıyor ( ama anladı"
+        ],
+        "video": 2
       },
       "YEOTK": {
         "yorum": 2,
         "ornekler": [
           "Tckrc %123 mü kâr yapmış iskontosu düşük mü 168 tl yi tekrar görür mü 50 tlye düşünce mi maliyetlenelim 🤔 yeotk 25 te mi alalım 45 te mi satalım 70 i görür mü g",
           "TUPRAS - PRİMLİ BRSAN - PRİMLİ EBEBEK - PRİMLİ SAYILIR TCKRC - PRİMLİ SAYILIR YEOTK - DİĞERLERİNE GÖRE EN UCUZU AMA BUNU DA ALMAM SISECAM - TCELL BİLE BUNLARDAN"
-        ],
-        "video": 1
-      },
-      "TCKRC": {
-        "yorum": 2,
-        "ornekler": [
-          "Tckrc %123 mü kâr yapmış iskontosu düşük mü 168 tl yi tekrar görür mü 50 tlye düşünce mi maliyetlenelim 🤔 yeotk 25 te mi alalım 45 te mi satalım 70 i görür mü g",
-          "TUPRAS - PRİMLİ BRSAN - PRİMLİ EBEBEK - PRİMLİ SAYILIR TCKRC - PRİMLİ SAYILIR YEOTK - DİĞERLERİNE GÖRE EN UCUZU AMA BUNU DA ALMAM SISECAM - TCELL BİLE BUNLARDAN"
-        ],
-        "video": 1
-      },
-      "MEGAP": {
-        "yorum": 2,
-        "ornekler": [
-          "Kaderli hoca süper megap ci kaderli",
-          "Megap Kaderli de gelmiş 😂😂😂"
         ],
         "video": 1
       },
@@ -305,14 +337,140 @@
         ],
         "video": 1
       },
-      "ANSGR": {
+      "INDES": {
         "yorum": 1,
         "ornekler": [
-          "Anladığım kadarıyla faaliyetlerinden elde ettiği kâr kadar mevcut paranın yönetimini daha çok önemli. Ansgr'nin teknik dengesi sürekli eksi yazıyor ( ama anladı"
+          "Ardyz ve indes . Dediklerinizi düşündüm. Ama şu anda şirketler iyi de olsa satılıyor. Temelden koptu iş. Rekor satış artışı rekor kar bekleniyor ama hergün satı"
         ],
         "video": 1
       },
-      "ANHYT": {
+      "MGROS": {
+        "yorum": 1,
+        "ornekler": [
+          "Abi mesela bu yıl başında online tarafında iyi gideceğini bekleyerek mgros almıştım, işler tam beklentideki gibi gitmedi ama şfiyat olması gerekenden daha düşük"
+        ],
+        "video": 1
+      },
+      "FORTE": {
+        "yorum": 1,
+        "ornekler": [
+          "Düşenlere var anlamsız diye düşünülen sise, sasa, cvkmd, eurpwer, ardyz, forte gibi. Yoksa düşmesi mi gerekiyor"
+        ],
+        "video": 1
+      },
+      "CVKMD": {
+        "yorum": 1,
+        "ornekler": [
+          "Düşenlere var anlamsız diye düşünülen sise, sasa, cvkmd, eurpwer, ardyz, forte gibi. Yoksa düşmesi mi gerekiyor"
+        ],
+        "video": 1
+      },
+      "CCOLA": {
+        "yorum": 1,
+        "ornekler": [
+          "Hocam çok şey anlatılıyor soru şu şu anda ne yapmak gerekiyor. Bir lafta herkes korkarken sen al. Şu anda herkes korkmakta hisseler düşüyor vs ne yapılmalı hiss"
+        ],
+        "video": 1
+      },
+      "TTKOM": {
+        "yorum": 1,
+        "ornekler": [
+          "Hocam çok şey anlatılıyor soru şu şu anda ne yapmak gerekiyor. Bir lafta herkes korkarken sen al. Şu anda herkes korkmakta hisseler düşüyor vs ne yapılmalı hiss"
+        ],
+        "video": 1
+      },
+      "FROTO": {
+        "yorum": 1,
+        "ornekler": [
+          "Hocam çok şey anlatılıyor soru şu şu anda ne yapmak gerekiyor. Bir lafta herkes korkarken sen al. Şu anda herkes korkmakta hisseler düşüyor vs ne yapılmalı hiss"
+        ],
+        "video": 1
+      },
+      "TRGYO": {
+        "yorum": 1,
+        "ornekler": [
+          "Hocam çok şey anlatılıyor soru şu şu anda ne yapmak gerekiyor. Bir lafta herkes korkarken sen al. Şu anda herkes korkmakta hisseler düşüyor vs ne yapılmalı hiss"
+        ],
+        "video": 1
+      },
+      "PCILT": {
+        "yorum": 1,
+        "ornekler": [
+          "Çağkan hocam, bu bahsettiğiniz genel olarak borsanın bugünki durumuundan kaynaklanıyor olabilir mi? mesela ntgaz, enkai, bimas, pcilt, lkmnh, anhyt, mavi, altny"
+        ],
+        "video": 1
+      },
+      "LKMNH": {
+        "yorum": 1,
+        "ornekler": [
+          "Çağkan hocam, bu bahsettiğiniz genel olarak borsanın bugünki durumuundan kaynaklanıyor olabilir mi? mesela ntgaz, enkai, bimas, pcilt, lkmnh, anhyt, mavi, altny"
+        ],
+        "video": 1
+      },
+      "NTGAZ": {
+        "yorum": 1,
+        "ornekler": [
+          "Çağkan hocam, bu bahsettiğiniz genel olarak borsanın bugünki durumuundan kaynaklanıyor olabilir mi? mesela ntgaz, enkai, bimas, pcilt, lkmnh, anhyt, mavi, altny"
+        ],
+        "video": 1
+      },
+      "ALTNY": {
+        "yorum": 1,
+        "ornekler": [
+          "Çağkan hocam, bu bahsettiğiniz genel olarak borsanın bugünki durumuundan kaynaklanıyor olabilir mi? mesela ntgaz, enkai, bimas, pcilt, lkmnh, anhyt, mavi, altny"
+        ],
+        "video": 1
+      },
+      "AGROT": {
+        "yorum": 1,
+        "ornekler": [
+          "AGROT, YİĞİT AKÜ batirdi bizleri dedikleriniz aynen bu hisselerde oldu."
+        ],
+        "video": 1
+      },
+      "GOLDA": {
+        "yorum": 1,
+        "ornekler": [
+          "Bir ara yan tahta hisselerindeydim birde salak gibi temettü hisselerinden çıkmıştım Şu fon krizi patladıktan kısa süre sonra sattım eğer satmamış olsaydım durum"
+        ],
+        "video": 1
+      },
+      "METEN": {
+        "yorum": 1,
+        "ornekler": [
+          "Bir ara yan tahta hisselerindeydim birde salak gibi temettü hisselerinden çıkmıştım Şu fon krizi patladıktan kısa süre sonra sattım eğer satmamış olsaydım durum"
+        ],
+        "video": 1
+      },
+      "GENKM": {
+        "yorum": 1,
+        "ornekler": [
+          "Bir ara yan tahta hisselerindeydim birde salak gibi temettü hisselerinden çıkmıştım Şu fon krizi patladıktan kısa süre sonra sattım eğer satmamış olsaydım durum"
+        ],
+        "video": 1
+      },
+      "ARFYE": {
+        "yorum": 1,
+        "ornekler": [
+          "Bir ara yan tahta hisselerindeydim birde salak gibi temettü hisselerinden çıkmıştım Şu fon krizi patladıktan kısa süre sonra sattım eğer satmamış olsaydım durum"
+        ],
+        "video": 1
+      },
+      "BRLSM": {
+        "yorum": 1,
+        "ornekler": [
+          "Bir ara yan tahta hisselerindeydim birde salak gibi temettü hisselerinden çıkmıştım Şu fon krizi patladıktan kısa süre sonra sattım eğer satmamış olsaydım durum"
+        ],
+        "video": 1
+      },
+      "FRMPL": {
+        "yorum": 1,
+        "ornekler": [
+          "Bir ara yan tahta hisselerindeydim birde salak gibi temettü hisselerinden çıkmıştım Şu fon krizi patladıktan kısa süre sonra sattım eğer satmamış olsaydım durum"
+        ],
+        "video": 1
+      },
+      "ANSGR": {
         "yorum": 1,
         "ornekler": [
           "Anladığım kadarıyla faaliyetlerinden elde ettiği kâr kadar mevcut paranın yönetimini daha çok önemli. Ansgr'nin teknik dengesi sürekli eksi yazıyor ( ama anladı"
@@ -368,45 +526,17 @@
         ],
         "video": 1
       },
-      "ULKER": {
+      "SOKM": {
         "yorum": 1,
         "ornekler": [
-          "Hocam bakın. ULKER zarar açıklamış görünse de , 2,86 milyar TL lik amortisman giderini düşündüğümüzde, normalde 2 milyar TL + da. Şu amortisman giderlerini lütf"
+          "Merhaba Sokm hisse rica edebilirmiyim"
         ],
         "video": 1
       },
-      "TAVHL": {
+      "BIGEN": {
         "yorum": 1,
         "ornekler": [
-          "TAVHL LİMANLARI YORUMLARSANIZ SEVİNİRİM EMEĞİNİZE SAĞLIK TEŞEKKÜRLER"
-        ],
-        "video": 1
-      },
-      "SAYAS": {
-        "yorum": 1,
-        "ornekler": [
-          "Sayas şimdi almam sonraki 75₺ de alıcam belki de son dip yaptı şimdi giderse uçarak gidecek gibi … ytd."
-        ],
-        "video": 1
-      },
-      "ASTOR": {
-        "yorum": 1,
-        "ornekler": [
-          "Teşekkürler üstad👍 Bende elimdekileri sattım , bi Astor kaldı onun işi zor gibi."
-        ],
-        "video": 1
-      },
-      "TEHOL": {
-        "yorum": 1,
-        "ornekler": [
-          "Ufak ufak 1, 3,t tehol katlev aldım meskale olsun,"
-        ],
-        "video": 1
-      },
-      "ENKAI": {
-        "yorum": 1,
-        "ornekler": [
-          "Emeğinize sağlık. ENKAİ için virman olma ihtimalini için haftasonu takasını merak ile bekliyorum. Teşekkürler.."
+          "E noldu şimdi Özata bigen ışıklar hepsi tavan tavan başladı yine bu nasıl bisey"
         ],
         "video": 1
       },
@@ -417,17 +547,10 @@
         ],
         "video": 1
       },
-      "MEPET": {
+      "DOHOL": {
         "yorum": 1,
         "ornekler": [
-          "Merhaba Perihan hanım iyi yayınlar hoca Mepet hisesi'ni yorumlarını heyecanla bekliyorum teşekkür ederim."
-        ],
-        "video": 1
-      },
-      "OBAMS": {
-        "yorum": 1,
-        "ornekler": [
-          "obams bakar mısınız"
+          "hocam sevgiler saygılar. dohol bakarmısınız"
         ],
         "video": 1
       },
@@ -438,13 +561,6 @@
         ],
         "video": 1
       },
-      "ARDYZ": {
-        "yorum": 1,
-        "ornekler": [
-          "Arkadaşlar ardyz nin patronunun geçmişi çok iyi değil diye biliyorum. İsterseniz araştırın"
-        ],
-        "video": 1
-      },
       "MEYSU": {
         "yorum": 1,
         "ornekler": [
@@ -452,31 +568,10 @@
         ],
         "video": 1
       },
-      "ISMEN": {
+      "IHLAS": {
         "yorum": 1,
         "ornekler": [
-          "Tüpraş/ ismen / Enerjisa/Anadolu Hayat / Froto / Torunlar GYO"
-        ],
-        "video": 1
-      },
-      "FROTO": {
-        "yorum": 1,
-        "ornekler": [
-          "Tüpraş/ ismen / Enerjisa/Anadolu Hayat / Froto / Torunlar GYO"
-        ],
-        "video": 1
-      },
-      "AKSA": {
-        "yorum": 1,
-        "ornekler": [
-          "TEMETTÜ HİSSELERİ TÜPRAŞ İŞMEN FORD AKSA ENERJİSA TOFAŞ ANDOLUHAYAT ENKA BUNLAR TEMMETTÜ İÇİN BÜYÜME İÇİN ASELSAN BİM BENİM FAVORİLERİM BUNLAR..."
-        ],
-        "video": 1
-      },
-      "BEGYO": {
-        "yorum": 1,
-        "ornekler": [
-          "Egeprofil, İsdemir Doas Tofaş Begyo"
+          "İyi de borsaci dede demezmiydi borsayı çakacaklari zaman ihlas VS... leş hisseleri de yukseltirler,onlar yükseldi mi kaçın borsadan diye,o zaman bu video neyin "
         ],
         "video": 1
       }
@@ -953,10 +1048,111 @@
       "FROTO": 1,
       "AKSA": 1,
       "BEGYO": 1
+    },
+    "2026-11-20": {
+      "ARDYZ": 3,
+      "ISMEN": 3,
+      "BRSAN": 3,
+      "TCKRC": 3,
+      "BIMAS": 2,
+      "ENKAI": 2,
+      "ANHYT": 2,
+      "YEOTK": 2,
+      "ALVES": 2,
+      "INDES": 1,
+      "MGROS": 1,
+      "FORTE": 1,
+      "CVKMD": 1,
+      "CCOLA": 1,
+      "TTKOM": 1,
+      "FROTO": 1,
+      "TRGYO": 1,
+      "PCILT": 1,
+      "LKMNH": 1,
+      "NTGAZ": 1,
+      "ALTNY": 1,
+      "AGROT": 1,
+      "GOLDA": 1,
+      "METEN": 1,
+      "GENKM": 1,
+      "ARFYE": 1,
+      "BRLSM": 1,
+      "FRMPL": 1,
+      "ANSGR": 1,
+      "AGESA": 1,
+      "BALSU": 1,
+      "ORZAX": 1,
+      "AYGAZ": 1,
+      "TUPRS": 1,
+      "PENTA": 1,
+      "TCELL": 1,
+      "SOKM": 1,
+      "BIGEN": 1,
+      "ENERY": 1,
+      "DOHOL": 1,
+      "LYDHO": 1,
+      "MEYSU": 1,
+      "IHLAS": 1
     }
   },
-  "ani_artis": [],
-  "ipuclari": [],
+  "ani_artis": [
+    {
+      "kod": "ISMEN",
+      "bugun": 3,
+      "onceki_ortalama": 0.9
+    },
+    {
+      "kod": "TCKRC",
+      "bugun": 3,
+      "onceki_ortalama": 0.9
+    }
+  ],
+  "ipuclari": [
+    {
+      "kod": "ARDYZ",
+      "kaynaklar": [
+        "youtube"
+      ],
+      "youtube_yorum": 3,
+      "kapanis": 45.78,
+      "gunluk_yuzde": -5.1388313302942334,
+      "hacim_orani": 0.85,
+      "isaret": "yalniz_konusma"
+    },
+    {
+      "kod": "ISMEN",
+      "kaynaklar": [
+        "youtube"
+      ],
+      "youtube_yorum": 3,
+      "kapanis": 25.8,
+      "gunluk_yuzde": -3.0075187969924837,
+      "hacim_orani": 0.87,
+      "isaret": "yalniz_konusma"
+    },
+    {
+      "kod": "BRSAN",
+      "kaynaklar": [
+        "youtube"
+      ],
+      "youtube_yorum": 3,
+      "kapanis": 616.0,
+      "gunluk_yuzde": -1.518784972022382,
+      "hacim_orani": 0.58,
+      "isaret": "yalniz_konusma"
+    },
+    {
+      "kod": "TCKRC",
+      "kaynaklar": [
+        "youtube"
+      ],
+      "youtube_yorum": 3,
+      "kapanis": 123.2,
+      "gunluk_yuzde": -1.4399999999999977,
+      "hacim_orani": 0.51,
+      "isaret": "yalniz_konusma"
+    }
+  ],
   "ipucu_takip": [
     {
       "tarih": "2026-11-06",
@@ -975,7 +1171,8 @@
         "2026-11-16": 356.0,
         "2026-11-17": 345.25,
         "2026-11-18": 345.75,
-        "2026-11-19": 334.75
+        "2026-11-19": 334.75,
+        "2026-11-20": 322.75
       },
       "getiri_5g": 6.37
     },
@@ -996,7 +1193,8 @@
         "2026-11-16": 205.5,
         "2026-11-17": 202.0,
         "2026-11-18": 195.4,
-        "2026-11-19": 193.7
+        "2026-11-19": 193.7,
+        "2026-11-20": 187.2
       },
       "getiri_5g": 0.68
     },
@@ -1017,7 +1215,8 @@
         "2026-11-16": 1240.0,
         "2026-11-17": 1225.0,
         "2026-11-18": 1190.0,
-        "2026-11-19": 1182.0
+        "2026-11-19": 1182.0,
+        "2026-11-20": 1147.0
       },
       "getiri_5g": -6.64
     },
@@ -1037,7 +1236,8 @@
         "2026-11-16": 91.85,
         "2026-11-17": 89.1,
         "2026-11-18": 88.1,
-        "2026-11-19": 89.35
+        "2026-11-19": 89.35,
+        "2026-11-20": 85.05
       },
       "getiri_5g": 4.32
     },
@@ -1057,7 +1257,8 @@
         "2026-11-16": 356.0,
         "2026-11-17": 345.25,
         "2026-11-18": 345.75,
-        "2026-11-19": 334.75
+        "2026-11-19": 334.75,
+        "2026-11-20": 322.75
       },
       "getiri_5g": 7.15
     },
@@ -1076,7 +1277,8 @@
         "2026-11-16": 38.14,
         "2026-11-17": 36.86,
         "2026-11-18": 34.98,
-        "2026-11-19": 34.82
+        "2026-11-19": 34.82,
+        "2026-11-20": 33.42
       },
       "getiri_5g": 6.22
     },
@@ -1095,7 +1297,8 @@
         "2026-11-16": 46.52,
         "2026-11-17": 45.22,
         "2026-11-18": 42.82,
-        "2026-11-19": 44.2
+        "2026-11-19": 44.2,
+        "2026-11-20": 42.46
       },
       "getiri_5g": 11.27
     },
@@ -1114,7 +1317,8 @@
         "2026-11-16": 163.2,
         "2026-11-17": 160.0,
         "2026-11-18": 152.1,
-        "2026-11-19": 152.9
+        "2026-11-19": 152.9,
+        "2026-11-20": 145.6
       },
       "getiri_5g": 1.85
     },
@@ -1133,7 +1337,8 @@
         "2026-11-16": 356.0,
         "2026-11-17": 345.25,
         "2026-11-18": 345.75,
-        "2026-11-19": 334.75
+        "2026-11-19": 334.75,
+        "2026-11-20": 322.75
       },
       "getiri_5g": 4.23
     },
@@ -1152,7 +1357,8 @@
         "2026-11-16": 13.05,
         "2026-11-17": 12.63,
         "2026-11-18": 12.18,
-        "2026-11-19": 12.2
+        "2026-11-19": 12.2,
+        "2026-11-20": 11.8
       },
       "getiri_5g": -5.39
     },
@@ -1170,7 +1376,8 @@
         "2026-11-16": 38.14,
         "2026-11-17": 36.86,
         "2026-11-18": 34.98,
-        "2026-11-19": 34.82
+        "2026-11-19": 34.82,
+        "2026-11-20": 33.42
       },
       "getiri_5g": 3.06
     },
@@ -1188,7 +1395,8 @@
         "2026-11-16": 163.2,
         "2026-11-17": 160.0,
         "2026-11-18": 152.1,
-        "2026-11-19": 152.9
+        "2026-11-19": 152.9,
+        "2026-11-20": 145.6
       },
       "getiri_5g": -5.59
     },
@@ -1206,7 +1414,8 @@
         "2026-11-16": 46.52,
         "2026-11-17": 45.22,
         "2026-11-18": 42.82,
-        "2026-11-19": 44.2
+        "2026-11-19": 44.2,
+        "2026-11-20": 42.46
       },
       "getiri_5g": 10.02
     },
@@ -1224,7 +1433,8 @@
         "2026-11-16": 3.72,
         "2026-11-17": 3.66,
         "2026-11-18": 3.52,
-        "2026-11-19": 3.46
+        "2026-11-19": 3.46,
+        "2026-11-20": 3.3
       },
       "getiri_5g": -2.76
     },
@@ -1242,7 +1452,8 @@
         "2026-11-16": 65.95,
         "2026-11-17": 64.9,
         "2026-11-18": 64.0,
-        "2026-11-19": 66.0
+        "2026-11-19": 66.0,
+        "2026-11-20": 67.6
       },
       "getiri_5g": -5.54
     },
@@ -1260,7 +1471,8 @@
         "2026-11-16": 52.7,
         "2026-11-17": 50.85,
         "2026-11-18": 49.38,
-        "2026-11-19": 48.26
+        "2026-11-19": 48.26,
+        "2026-11-20": 45.78
       },
       "getiri_5g": -4.12
     },
@@ -1278,7 +1490,8 @@
         "2026-11-16": 13.05,
         "2026-11-17": 12.63,
         "2026-11-18": 12.18,
-        "2026-11-19": 12.2
+        "2026-11-19": 12.2,
+        "2026-11-20": 11.8
       },
       "getiri_5g": -6.74
     },
@@ -1295,7 +1508,8 @@
         "2026-11-16": 163.2,
         "2026-11-17": 160.0,
         "2026-11-18": 152.1,
-        "2026-11-19": 152.9
+        "2026-11-19": 152.9,
+        "2026-11-20": 145.6
       },
       "getiri_5g": -13.71
     },
@@ -1312,7 +1526,8 @@
         "2026-11-16": 65.95,
         "2026-11-17": 64.9,
         "2026-11-18": 64.0,
-        "2026-11-19": 66.0
+        "2026-11-19": 66.0,
+        "2026-11-20": 67.6
       },
       "getiri_5g": -6.52
     },
@@ -1329,7 +1544,8 @@
         "2026-11-16": 52.7,
         "2026-11-17": 50.85,
         "2026-11-18": 49.38,
-        "2026-11-19": 48.26
+        "2026-11-19": 48.26,
+        "2026-11-20": 45.78
       },
       "getiri_5g": -9.37
     },
@@ -1346,7 +1562,8 @@
         "2026-11-16": 46.52,
         "2026-11-17": 45.22,
         "2026-11-18": 42.82,
-        "2026-11-19": 44.2
+        "2026-11-19": 44.2,
+        "2026-11-20": 42.46
       },
       "getiri_5g": 5.89
     },
@@ -1363,7 +1580,8 @@
         "2026-11-16": 38.14,
         "2026-11-17": 36.86,
         "2026-11-18": 34.98,
-        "2026-11-19": 34.82
+        "2026-11-19": 34.82,
+        "2026-11-20": 33.42
       },
       "getiri_5g": 0.58
     },
@@ -1380,7 +1598,8 @@
         "2026-11-16": 84.7,
         "2026-11-17": 83.0,
         "2026-11-18": 80.6,
-        "2026-11-19": 80.2
+        "2026-11-19": 80.2,
+        "2026-11-20": 78.5
       },
       "getiri_5g": -5.09
     },
@@ -1397,7 +1616,8 @@
         "2026-11-16": 34.72,
         "2026-11-17": 34.3,
         "2026-11-18": 32.5,
-        "2026-11-19": 32.26
+        "2026-11-19": 32.26,
+        "2026-11-20": 31.04
       },
       "getiri_5g": -4.39
     },
@@ -1413,8 +1633,10 @@
         "2026-11-16": 163.2,
         "2026-11-17": 160.0,
         "2026-11-18": 152.1,
-        "2026-11-19": 152.9
-      }
+        "2026-11-19": 152.9,
+        "2026-11-20": 145.6
+      },
+      "getiri_5g": -11.11
     },
     {
       "tarih": "2026-11-13",
@@ -1428,8 +1650,10 @@
         "2026-11-16": 65.95,
         "2026-11-17": 64.9,
         "2026-11-18": 64.0,
-        "2026-11-19": 66.0
-      }
+        "2026-11-19": 66.0,
+        "2026-11-20": 67.6
+      },
+      "getiri_5g": -0.73
     },
     {
       "tarih": "2026-11-13",
@@ -1443,8 +1667,10 @@
         "2026-11-16": 34.72,
         "2026-11-17": 34.3,
         "2026-11-18": 32.5,
-        "2026-11-19": 32.26
-      }
+        "2026-11-19": 32.26,
+        "2026-11-20": 31.04
+      },
+      "getiri_5g": -13.3
     },
     {
       "tarih": "2026-11-13",
@@ -1458,8 +1684,10 @@
         "2026-11-16": 84.7,
         "2026-11-17": 83.0,
         "2026-11-18": 80.6,
-        "2026-11-19": 80.2
-      }
+        "2026-11-19": 80.2,
+        "2026-11-20": 78.5
+      },
+      "getiri_5g": -7.86
     },
     {
       "tarih": "2026-11-16",
@@ -1472,7 +1700,8 @@
       "izleme": {
         "2026-11-17": 160.0,
         "2026-11-18": 152.1,
-        "2026-11-19": 152.9
+        "2026-11-19": 152.9,
+        "2026-11-20": 145.6
       }
     },
     {
@@ -1486,7 +1715,8 @@
       "izleme": {
         "2026-11-17": 64.9,
         "2026-11-18": 64.0,
-        "2026-11-19": 66.0
+        "2026-11-19": 66.0,
+        "2026-11-20": 67.6
       }
     },
     {
@@ -1500,7 +1730,8 @@
       "izleme": {
         "2026-11-17": 1.0,
         "2026-11-18": 1.09,
-        "2026-11-19": 1.02
+        "2026-11-19": 1.02,
+        "2026-11-20": 1.0
       }
     },
     {
@@ -1513,7 +1744,8 @@
       "ilk_kapanis": 160.0,
       "izleme": {
         "2026-11-18": 152.1,
-        "2026-11-19": 152.9
+        "2026-11-19": 152.9,
+        "2026-11-20": 145.6
       }
     },
     {
@@ -1526,7 +1758,8 @@
       "ilk_kapanis": 64.9,
       "izleme": {
         "2026-11-18": 64.0,
-        "2026-11-19": 66.0
+        "2026-11-19": 66.0,
+        "2026-11-20": 67.6
       }
     },
     {
@@ -1539,7 +1772,8 @@
       "ilk_kapanis": 27.38,
       "izleme": {
         "2026-11-18": 26.44,
-        "2026-11-19": 26.32
+        "2026-11-19": 26.32,
+        "2026-11-20": 26.22
       }
     },
     {
@@ -1552,7 +1786,8 @@
       "ilk_kapanis": 45.22,
       "izleme": {
         "2026-11-18": 42.82,
-        "2026-11-19": 44.2
+        "2026-11-19": 44.2,
+        "2026-11-20": 42.46
       }
     },
     {
@@ -1564,7 +1799,8 @@
       "isaret": "yalniz_konusma",
       "ilk_kapanis": 34.98,
       "izleme": {
-        "2026-11-19": 34.82
+        "2026-11-19": 34.82,
+        "2026-11-20": 33.42
       }
     },
     {
@@ -1576,7 +1812,8 @@
       "isaret": "yalniz_konusma",
       "ilk_kapanis": 641.0,
       "izleme": {
-        "2026-11-19": 625.5
+        "2026-11-19": 625.5,
+        "2026-11-20": 616.0
       }
     },
     {
@@ -1588,7 +1825,8 @@
       "isaret": "yalniz_konusma",
       "ilk_kapanis": 26.44,
       "izleme": {
-        "2026-11-19": 26.32
+        "2026-11-19": 26.32,
+        "2026-11-20": 26.22
       }
     },
     {
@@ -1600,20 +1838,61 @@
       "isaret": "yalniz_konusma",
       "ilk_kapanis": 42.82,
       "izleme": {
-        "2026-11-19": 44.2
+        "2026-11-19": 44.2,
+        "2026-11-20": 42.46
       }
+    },
+    {
+      "tarih": "2026-11-20",
+      "kod": "ARDYZ",
+      "kaynaklar": [
+        "youtube"
+      ],
+      "isaret": "yalniz_konusma",
+      "ilk_kapanis": 45.78,
+      "izleme": {}
+    },
+    {
+      "tarih": "2026-11-20",
+      "kod": "ISMEN",
+      "kaynaklar": [
+        "youtube"
+      ],
+      "isaret": "yalniz_konusma",
+      "ilk_kapanis": 25.8,
+      "izleme": {}
+    },
+    {
+      "tarih": "2026-11-20",
+      "kod": "BRSAN",
+      "kaynaklar": [
+        "youtube"
+      ],
+      "isaret": "yalniz_konusma",
+      "ilk_kapanis": 616.0,
+      "izleme": {}
+    },
+    {
+      "tarih": "2026-11-20",
+      "kod": "TCKRC",
+      "kaynaklar": [
+        "youtube"
+      ],
+      "isaret": "yalniz_konusma",
+      "ilk_kapanis": 123.2,
+      "izleme": {}
     }
   ],
   "takip_ozeti": {
     "youtube": {
-      "ipucu": 39,
-      "olculen_5g": 24,
-      "ort_getiri_5g": -0.59
+      "ipucu": 43,
+      "olculen_5g": 28,
+      "ort_getiri_5g": -1.69
     },
     "isaret:yalniz_konusma": {
-      "ipucu": 33,
-      "olculen_5g": 19,
-      "ort_getiri_5g": -1.29
+      "ipucu": 37,
+      "olculen_5g": 23,
+      "ort_getiri_5g": -2.5
     },
     "isaret:konusuluyor+hacim": {
       "ipucu": 6,
@@ -1622,7 +1901,7 @@
     }
   },
   "surum": "1.3",
-  "uretim_zamani_utc": "2026-11-19T16:12:49.357101+00:00",
+  "uretim_zamani_utc": "2026-11-20T15:38:12.314762+00:00",
   "denemeler": [
     "Forum taramasi gemini-3.5-flash-lite hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog",
     "Forum taramasi gemini-3.8-flash hata: HTTP 429 {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.goog"
