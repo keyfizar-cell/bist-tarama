@@ -3,7 +3,7 @@
 """
 KAP bildirim toplayıcı — keyfizar-cell/bist-tarama  (v3.5)
 
-v3.5 (2026-11-20): gizlilik — portföy listesi koddan çıktı (Secret PORTFOY_KODLARI, yalnız sıralama);
+v3.5 (2026-11-20): gizlilik — portföy listesi koddan çıktı (Secret da yok; öncelik yalnız BIST30);
 kap.json piyasa geneli (bildirimi olan tüm kodlar), geri_alim.json'da portfoyde/portfoy_ozet yok,
 belge detayı tüm geri alım şirketleri için (MAX_DETAY 400).
 
@@ -66,9 +66,7 @@ import urllib.request
 from datetime import date, datetime, timedelta, timezone
 
 # ───────────────────────── AYARLAR (düzenlenebilir) ─────────────────────────
-# Portföy kodları repoya YAZILMAZ (repo herkese açık). Çıktılar piyasa genelidir; portföy yalnız
-# belge indirme SIRASINI öne almak için GitHub Secret PORTFOY_KODLARI'dan okunur, çıktıya etiket olarak girmez.
-PORTFOY: list[str] = [k.strip().upper() for k in os.environ.get("PORTFOY_KODLARI", "").split(",") if k.strip()]
+# Portföy kodları repoda tutulmaz (repo herkese açık). Çıktılar piyasa genelidir; portföy süzmesi görevde.
 
 # BIST30 — YAKLAŞIK, düzenlenebilir; güncel endeks bileşimini teyit et.
 BIST30: list[str] = [
@@ -570,7 +568,7 @@ def _ga_fazi() -> None:
         _ga_yaz(cikti)
         return
 
-    oncelik = {k.strip().upper() for k in PORTFOY} | {k.strip().upper() for k in BIST30}
+    oncelik = {k.strip().upper() for k in BIST30}
     bist30_set = {k.strip().upper() for k in BIST30}
     pd_harita = _piyasa_degeri_haritasi()
     if not pd_harita:
@@ -631,7 +629,7 @@ def _ga_fazi() -> None:
                 except Exception:
                     pass
                 # TÜM geri alım şirketleri denenir (yalnız bir alt kümenin detayı olsaydı portföy
-                # dışarıdan çıkarılabilirdi); portföy+BIST30 önce gelir ki MAX_DETAY dolarsa onlar kaçmasın.
+                # dışarıdan çıkarılabilirdi); BIST30 önce gelir ki MAX_DETAY dolarsa onlar kaçmasın.
                 for kod, s in sorted(sirketler.items(), key=lambda x: (x[0] not in oncelik, x[0])):
                     # İşlem bildirimleri (en yeni → eski; _ga_derle zaten sıraladı).
                     # Her bildirim programın TÜM geçmişini taşıdığından YALNIZ en güncel
