@@ -37,11 +37,10 @@ OPSIYONEL = ["RSI", "SMA50", "SMA20", "SMA100", "SMA200"]
 MINI      = ["name", "close", "change"]
 
 # Taramada cikmazsa ticker ile ayrica denenecek semboller.
-# Portfoy kodlari repoya YAZILMAZ (repo herkese acik): GitHub Secret PORTFOY_KODLARI ("KOD1,KOD2,...").
-# Ciktida "portfoy" etiketi yok; bulten gorevi portfoyu kendi oturumunda bilir ve tum_hisseler'den suzer.
-PORTFOY = [k.strip().upper() for k in os.environ.get("PORTFOY_KODLARI", "").split(",") if k.strip()]
-
-ZORUNLU = PORTFOY + [
+# Portfoy kodlari repoda/Secret'ta TUTULMAZ (repo herkese acik, portfoy sik degisir). Portfoydeki bir hisse
+# taramadan duserse "dunku taramada vardi, bugun yok" kuralıyla yakalanir (dunden_eksikler); bulten gorevi
+# portfoyu Drive dosyasindan bilir ve tum_hisseler'den suzer.
+ZORUNLU = [
     "AKBNK","ENKAI","HEKTS","KRDMD","VAKBN",
     "AKSEN","ALARK","ASELS","ASTOR","BIMAS","BRSAN","EKGYO","EREGL","FROTO","GARAN",
     "GUBRF","HALKB","ISCTR","KCHOL","TRALT","MGROS","OYAKC","PGSUS","SAHOL","SASA",
@@ -104,8 +103,25 @@ def veri_cek():
     raise SystemExit("HATA: veri alinamadi. " + " | ".join(NOTLAR))
 
 
+DUN_SINIR = 60   # dunden bu kadardan fazlasi eksikse tarama genel arizadadir; yalniz ZORUNLU denenir
+
+
+def dunden_eksikler(mevcut, yol=os.path.join("data", "latest.json")):
+    """Onceki taramada olup bugun cikmayan kodlar (portfoy dahil her hisseyi listesiz korur)."""
+    try:
+        with open(yol, encoding="utf-8") as f:
+            dun = [h["kod"] for h in json.load(f).get("tum_hisseler", []) if h.get("kod")]
+    except Exception:
+        return []
+    eksik = [k for k in dun if k not in mevcut]
+    if len(eksik) > DUN_SINIR:
+        not_ekle(f"dunden eksik {len(eksik)} kod (> {DUN_SINIR}): genel ariza sayildi, yalniz ZORUNLU denenecek")
+        return []
+    return eksik
+
+
 def eksikleri_tamamla(df, alanlar):
-    """ZORUNLU'da olup taramada cikmayanlari ticker ile cekmeyi dener.
+    """ZORUNLU'da ya da dunku taramada olup bugun cikmayanlari ticker ile cekmeyi dener.
     Bir DENEME MATRISI calistirir; ilk gercek eksik dolduran kazanir.
     Basarisiz olursa sadece not duser — ana akisi bozmaz."""
     try:
@@ -113,7 +129,7 @@ def eksikleri_tamamla(df, alanlar):
     except Exception as e:
         not_ekle(f"eksik kontrolu yapilamadi: {e}")
         return df, [], []
-    eksik = [s for s in ZORUNLU if s not in mevcut]
+    eksik = list(dict.fromkeys([s for s in ZORUNLU if s not in mevcut] + dunden_eksikler(mevcut)))
     if not eksik:
         not_ekle("eksik sembol yok")
         return df, [], []

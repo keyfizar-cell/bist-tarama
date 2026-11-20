@@ -56,5 +56,24 @@ class TamKurulum(unittest.TestCase):
         self.assertFalse(tarama.degerlendir(satir(**{"BB.lower": 9.0, "RSI": 25}), False)["asiri_satim"])
 
 
+class DundenEksikler(unittest.TestCase):
+    def _yaz(self, kodlar):
+        import json, tempfile
+        f = tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8")
+        json.dump({"tum_hisseler": [{"kod": k} for k in kodlar]}, f)
+        f.close()
+        self.addCleanup(os.unlink, f.name)
+        return f.name
+
+    def test_dun_olup_bugun_olmayan_denenir(self):
+        yol = self._yaz(["AAAAA", "BBBBB", "CCCCC"])
+        self.assertEqual(tarama.dunden_eksikler({"AAAAA", "CCCCC"}, yol), ["BBBBB"])
+
+    def test_genel_arizada_ve_dosya_yoksa_bos(self):
+        yol = self._yaz([f"K{i:04d}" for i in range(tarama.DUN_SINIR + 5)])
+        self.assertEqual(tarama.dunden_eksikler(set(), yol), [])
+        self.assertEqual(tarama.dunden_eksikler(set(), "/yok/latest.json"), [])
+
+
 if __name__ == "__main__":
     unittest.main()
