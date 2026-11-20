@@ -14,7 +14,7 @@ Hesaplananlar (gorevler/aksam_bulteni.md'deki kuralların birebir kodu):
   - bist30         : Bölüm 6 tablo verisi (endekse göre farkı için BIST100 % bültende)
   - teknik_plan    : Bölüm 4 mekanik seviyeler (tüm hisseler; bülten portföy kodlarını seçer)
   - retail_radar   : Bölüm 8.5(1)
-  - geri_alim      : portföy + BIST30 özet; kümülatif YALNIZ şirket beyanıysa
+  - geri_alim      : piyasa geneli özet (portföy süzmesi görevde); kümülatif YALNIZ şirket beyanıysa
 
 Yapmadıkları (bültende kalır): portföy dosyası (Google Drive) ve "Portföy Kâr" sütunu,
 BIST100/kur/kripto/haber, yorum ve e-posta.
@@ -279,12 +279,10 @@ def geri_alim_ozet(ga):
         return {"var": False}
     sirketler = ga.get("sirketler") or {}
     satirlar = []
-    for kod, s in sorted(sirketler.items()):
-        if not (s.get("portfoyde") or s.get("bist30")):
-            continue
+    for kod, s in sorted(sirketler.items()):     # piyasa geneli; portföy süzmesi bülten görevinde
         beyan = s.get("kumulatif_kaynak") == "sirket_beyani"
         satirlar.append({
-            "kod": kod, "portfoyde": bool(s.get("portfoyde")), "bist30": bool(s.get("bist30")),
+            "kod": kod, "bist30": bool(s.get("bist30")),
             "toplam_bildirim": s.get("toplam_bildirim"), "islem_bildirim_sayisi": s.get("islem_bildirim_sayisi"),
             "son_bildirim_tarih": s.get("son_bildirim_tarih"),
             "kumulatif_lot": s.get("kumulatif_lot") if beyan else None,

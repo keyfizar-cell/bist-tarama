@@ -37,18 +37,16 @@ OPSIYONEL = ["RSI", "SMA50", "SMA20", "SMA100", "SMA200"]
 MINI      = ["name", "close", "change"]
 
 # Taramada cikmazsa ticker ile ayrica denenecek semboller.
-ZORUNLU = [
-    "AKBNK","BLUME","CANTE","ENKAI","HEKTS","KRDMD","OBAMS","PAPIL","SOHOE","TTKOM",
-    "ULUUN","VAKBN","YIGIT",
+# Portfoy kodlari repoya YAZILMAZ (repo herkese acik): GitHub Secret PORTFOY_KODLARI ("KOD1,KOD2,...").
+# Ciktida "portfoy" etiketi yok; bulten gorevi portfoyu kendi oturumunda bilir ve tum_hisseler'den suzer.
+PORTFOY = [k.strip().upper() for k in os.environ.get("PORTFOY_KODLARI", "").split(",") if k.strip()]
+
+ZORUNLU = PORTFOY + [
+    "AKBNK","ENKAI","HEKTS","KRDMD","VAKBN",
     "AKSEN","ALARK","ASELS","ASTOR","BIMAS","BRSAN","EKGYO","EREGL","FROTO","GARAN",
     "GUBRF","HALKB","ISCTR","KCHOL","TRALT","MGROS","OYAKC","PGSUS","SAHOL","SASA",
     "SISE","TCELL","THYAO","TOASO","TUPRS","YKBNK","KONTR","DOAS","PETKM",
 ]
-# Portfoydeki BIST hisseleri (detay analizi her gun yapilir).
-PORTFOY = ["AKBNK","BLUME","CANTE","ENKAI","HEKTS","KRDMD","OBAMS","PAPIL","SOHOE",
-           "TTKOM","ULUUN","VAKBN","YIGIT"]
-# Yabanci portfoy hisseleri: Yahoo sembolu .IS'siz. Sadece detay analizi.
-YABANCI = ["NVO"]
 
 # EMIR BOZKURT TEMEL WATCHLIST'i. ASIL KAYNAK Claude'un hafizasidir
 # (/areas/emir-bozkurt-taramasi.md); bulten yine kendi listesiyle filtreler.
@@ -202,7 +200,7 @@ def degerlendir(r, var_rsi):
     # keserse satim egilimi") -> teyit SAYILMAZ. Teyit = MACD sinyali yukari
     # kesmis olmali. (Detay analizinde pozitif uyumsuzluk da teyit sayilir.)
     donus_teyidi  = macd_yukseliyor and not dusen_bicak
-    hacim_elemesi = bool(hacim_orani is not None and not hacim_patlamasi)
+    hacim_elemesi = not hacim_patlamasi          # hacim verisi yoksa da elenir (teyitsiz tam kurulum olmaz)
     if macd is None or sinyal is None:
         macd_durum = "veri yok"
     elif macd > sinyal and macd > 0:
@@ -403,7 +401,7 @@ def isyatirim_ile_kurtar(hala_eksik, kayitlar):
 # icin FIYAT GECMISI gerekir: 5/8/13 gunluk ortalamalar, 2 gun ust uste 50MA
 # ustu kapanis, 50/200 Altin-Olum kesisimi, RSI & MACD uyumsuzluklari,
 # Fibonacci seviyeleri. Bunlari Yahoo'dan (~1 yil, bolunme/bedelsiz DUZELTILMIS)
-# yalnizca PORTFOY + WATCHLIST + gunun asiri satim adaylari icin hesaplariz.
+# tum hisseler icin hesaplanir (Yahoo toplu indirme, 100lu parcalar).
 # Hata olursa ana akis bozulmaz; ilgili alanlar bos kalir.
 FIB_ORANLARI = (0.236, 0.382, 0.5, 0.618, 0.786)
 DETAY_PENCERE = 40      # uyumsuzluk arama penceresi (is gunu)
@@ -558,15 +556,27 @@ def detay_analiz(kodlar):
         import yfinance as yf
     except Exception as e:
         not_ekle(f"detay: yfinance yok ({e})"); return sonuc
-    semboller = {k: (k if k in YABANCI else f"{k}.IS") for k in kodlar}
-    try:
-        df = yf.download(" ".join(semboller.values()), period="1y", interval="1d",
-                         group_by="ticker", auto_adjust=True, threads=True, progress=False)
-    except Exception as e:
-        not_ekle(f"detay: toplu indirme HATA {type(e).__name__}: {str(e)[:120]}"); return sonuc
+    semboller = {k: f"{k}.IS" for k in kodlar}
+    df = {}
+    liste = list(semboller.values())
+    for i in range(0, len(liste), 100):                     # 100'luk parcalar: bir parca coken digerini bozmaz
+        parca = liste[i:i + 100]
+        try:
+            d = yf.download(" ".join(parca), period="1y", interval="1d",
+                            group_by="ticker", auto_adjust=True, threads=True, progress=False)
+            for sem in parca:
+                if isinstance(d.columns, pd.MultiIndex):
+                    if sem in d.columns.get_level_values(0):
+                        df[sem] = d[sem]
+                elif len(parca) == 1 and not d.empty:
+                    df[sem] = d
+        except Exception as e:
+            not_ekle(f"detay: parca {i // 100 + 1} indirme HATA {type(e).__name__}: {str(e)[:120]}")
     for kod, sem in semboller.items():
         try:
-            h = df[sem] if isinstance(df.columns, pd.MultiIndex) else df
+            if sem not in df:
+                continue
+            h = df[sem]
             h = h.dropna(subset=["Close"])
             d = bozkurt_detay(h["Close"], h["Volume"] if "Volume" in h.columns else None)
             if d:
@@ -600,13 +610,10 @@ def main():
     if hala_eksik:
         hala_eksik = isyatirim_ile_kurtar(hala_eksik, kayitlar)
 
-    # --- v2: Bozkurt detay analizi (portfoy + watchlist + gunun adaylari) ---
+    # --- v2: Bozkurt detay analizi: TUM hisseler (yalniz bir alt kume olsaydi
+    # portfoy kodlari "detayi olan ama watchlist/aday olmayan" diye disaridan cikarilabilirdi) ---
     by = {k["kod"]: k for k in kayitlar}
-    adaylar = [k["kod"] for k in sorted(
-        [k for k in kayitlar if k["asiri_satim"] and not k["olasi_sermaye_islemi"]],
-        key=lambda x: -(x["hacim_orani"] or 0))][:30]
-    detay_set = list(dict.fromkeys(PORTFOY + WATCHLIST["A"] + WATCHLIST["B"] + adaylar))
-    detaylar = detay_analiz(detay_set + YABANCI)
+    detaylar = detay_analiz(list(by))
     for kod, d in detaylar.items():
         k = by.get(kod)
         if k is None:
@@ -635,10 +642,6 @@ def main():
     ozet = lambda k: {"kod": k["kod"], "kapanis": k["kapanis"], "gunluk_yuzde": k["gunluk_yuzde"],
                       "rsi": k["rsi"], "macd_durum": k["macd_durum"], "ma50": k.get("ma50"),
                       "watchlist": k.get("watchlist"), "detay": k.get("detay")}
-    portfoy_bozkurt = {kod: ozet(by[kod]) for kod in PORTFOY if kod in by}
-    for kod in YABANCI:
-        if kod in detaylar:
-            portfoy_bozkurt[kod] = {"kod": kod, "detay": detaylar[kod]}
     watchlist_durum = {kod: ozet(by[kod]) for kod in WATCHLIST["A"] + WATCHLIST["B"] if kod in by}
 
     cikti = {
@@ -660,11 +663,10 @@ def main():
         "kural_ozeti": ("TAM KURULUM = watchlist(A/B) + asiri satim (BB alt bandi alti VEYA RSI<30) "
                         "+ donus teyidi (MACD sinyali yukari kesmis VEYA RSI/MACD pozitif uyumsuzluk) "
                         "+ hacim >= 2x 10g ort + sermaye islemi degil. Dusen bicak elenir."),
-        "detay_kapsami": sorted(detaylar.keys()),
+        "detay_sayisi": len(detaylar),
         "tam_kurulum": tam,
         "tam_kurulum_watchlist_disi": tam_disi,
         "trend_baslangici": [ozet(k) for k in trend_bas],
-        "portfoy_bozkurt": portfoy_bozkurt,
         "watchlist_durum": watchlist_durum,
         "yakin_adaylar": yakin[:10],
         "tum_hisseler": kayitlar,
