@@ -99,7 +99,6 @@ Ardından "Sosyal Nabız" ÇALIŞMAZ (borsa kapalı; cuma verisinin üzerine yaz
 | Secret | Durum | Kullanan |
 |---|---|---|
 | `TV_SESSIONID` | tanımlı | tarama.py |
-| `PORTFOY_KODLARI` | **Alpay ekleyecek** (20.11.2026): portföydeki BIST kodları, virgülle (`KOD1,KOD2,...`). Boşsa tarama yine çalışır; yalnız eksik-sembol tamamlama ve KAP belge sırası için | tarama.py, kap_tarama.py |
 | `GOOGLE_API_KEY` | tanımlı (AI Studio `AQ.` anahtarı) | Gemini (her iki YouTube betiği) |
 | `YOUTUBE_API_KEY` | tanımlı (07.11.2026; Google Cloud "My First Project", yalnız YouTube Data API v3 ile kısıtlı) | YouTube Data API (konuk araması + Emir RSS yedeği) |
 | `GEMINI_MODEL` | opsiyonel | model zorlamak için |

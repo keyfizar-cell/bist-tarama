@@ -34,7 +34,6 @@ jobs:
       - name: Taramayi calistir
         env:
           TV_SESSIONID: ${{ secrets.TV_SESSIONID }}
-          PORTFOY_KODLARI: ${{ secrets.PORTFOY_KODLARI }}   # repoya yazilmaz; bossa tarama yine calisir
         run: python tarama.py
 
       - name: Sonucu repoya isle
