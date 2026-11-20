@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-20T15:21:42.447690+00:00",
+ "uretim_zamani_utc": "2026-11-20T15:33:47.557916+00:00",
  "kaynak": {
   "tarih": "2026-11-20",
   "uretim_zamani_utc": "2026-11-20T15:21:22+00:00",
@@ -8916,7 +8916,7 @@
  ],
  "geri_alim": {
   "var": true,
-  "uretim_zamani_utc": "2026-11-19T15:21:20.311951+00:00",
+  "uretim_zamani_utc": "2026-11-20T15:21:47.572132+00:00",
   "satirlar": [
    {
     "kod": "AAGYO",
@@ -8938,7 +8938,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "AGROT",
@@ -8949,14 +8949,14 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "AHGAZ",
     "bist30": false,
-    "toplam_bildirim": 41,
-    "islem_bildirim_sayisi": 35,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 42,
+    "islem_bildirim_sayisi": 36,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -8971,7 +8971,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "AKFIS",
@@ -8982,7 +8982,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "AKHAN",
@@ -9004,7 +9004,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "ALBTN",
@@ -9026,7 +9026,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "ALKLC",
@@ -9042,13 +9042,13 @@
    {
     "kod": "ARDYZ",
     "bist30": false,
-    "toplam_bildirim": 16,
+    "toplam_bildirim": 17,
     "islem_bildirim_sayisi": 10,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "ARMGD",
@@ -9059,7 +9059,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "ARSAN",
@@ -9067,10 +9067,10 @@
     "toplam_bildirim": 11,
     "islem_bildirim_sayisi": 0,
     "son_bildirim_tarih": "2026-11-12",
-    "kumulatif_lot": null,
-    "sermaye_orani_yuzde": null,
-    "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_lot": 135924241.608,
+    "sermaye_orani_yuzde": 1.32322,
+    "kumulatif_etiket": "2026-11-12 itibarıyla, şirket beyanı (KAP)",
+    "kumulatif_yazilmaz_neden": null
    },
    {
     "kod": "ASGYO",
@@ -9081,29 +9081,29 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "ATAKP",
     "bist30": false,
-    "toplam_bildirim": 26,
-    "islem_bildirim_sayisi": 26,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 27,
+    "islem_bildirim_sayisi": 27,
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "ATATP",
     "bist30": false,
-    "toplam_bildirim": 11,
+    "toplam_bildirim": 13,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-17",
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "ATLAS",
@@ -9141,13 +9141,13 @@
    {
     "kod": "AYES",
     "bist30": false,
-    "toplam_bildirim": 3,
-    "islem_bildirim_sayisi": 2,
+    "toplam_bildirim": 4,
+    "islem_bildirim_sayisi": 3,
     "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "AZTEK",
@@ -9155,15 +9155,15 @@
     "toplam_bildirim": 7,
     "islem_bildirim_sayisi": 7,
     "son_bildirim_tarih": "2026-11-02",
-    "kumulatif_lot": null,
-    "sermaye_orani_yuzde": null,
-    "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_lot": 2763719.0,
+    "sermaye_orani_yuzde": 0.27635,
+    "kumulatif_etiket": "2026-11-02 itibarıyla, şirket beyanı (KAP)",
+    "kumulatif_yazilmaz_neden": null
    },
    {
     "kod": "BAHKM",
     "bist30": false,
-    "toplam_bildirim": 11,
+    "toplam_bildirim": 12,
     "islem_bildirim_sayisi": 0,
     "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
@@ -9196,9 +9196,9 @@
    {
     "kod": "BASGZ",
     "bist30": false,
-    "toplam_bildirim": 4,
+    "toplam_bildirim": 5,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-17",
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9243,10 +9243,10 @@
     "toplam_bildirim": 12,
     "islem_bildirim_sayisi": 0,
     "son_bildirim_tarih": "2026-10-23",
-    "kumulatif_lot": 1036154.0,
-    "sermaye_orani_yuzde": 1.45,
-    "kumulatif_etiket": "2026-10-23 itibarıyla, şirket beyanı (KAP)",
-    "kumulatif_yazilmaz_neden": null
+    "kumulatif_lot": null,
+    "sermaye_orani_yuzde": null,
+    "kumulatif_etiket": null,
+    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "BMSCH",
@@ -9323,14 +9323,14 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "CATES",
     "bist30": false,
-    "toplam_bildirim": 7,
-    "islem_bildirim_sayisi": 7,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 8,
+    "islem_bildirim_sayisi": 8,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9350,9 +9350,9 @@
    {
     "kod": "CITAS",
     "bist30": false,
-    "toplam_bildirim": 14,
+    "toplam_bildirim": 15,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9372,9 +9372,9 @@
    {
     "kod": "DAGI",
     "bist30": false,
-    "toplam_bildirim": 40,
+    "toplam_bildirim": 41,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9427,9 +9427,9 @@
    {
     "kod": "DOFER",
     "bist30": false,
-    "toplam_bildirim": 7,
+    "toplam_bildirim": 8,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9438,9 +9438,9 @@
    {
     "kod": "DOFRB",
     "bist30": false,
-    "toplam_bildirim": 7,
-    "islem_bildirim_sayisi": 7,
-    "son_bildirim_tarih": "2026-10-22",
+    "toplam_bildirim": 8,
+    "islem_bildirim_sayisi": 8,
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9460,9 +9460,9 @@
    {
     "kod": "EFOR",
     "bist30": false,
-    "toplam_bildirim": 1,
-    "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 2,
+    "islem_bildirim_sayisi": 1,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9515,9 +9515,9 @@
    {
     "kod": "EKIM",
     "bist30": false,
-    "toplam_bildirim": 30,
+    "toplam_bildirim": 31,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9548,9 +9548,9 @@
    {
     "kod": "ENERY",
     "bist30": false,
-    "toplam_bildirim": 38,
-    "islem_bildirim_sayisi": 32,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 39,
+    "islem_bildirim_sayisi": 33,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9592,13 +9592,13 @@
    {
     "kod": "EUREN",
     "bist30": false,
-    "toplam_bildirim": 14,
+    "toplam_bildirim": 15,
     "islem_bildirim_sayisi": 1,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "EUYO",
@@ -9636,9 +9636,9 @@
    {
     "kod": "GARAN",
     "bist30": true,
-    "toplam_bildirim": 6,
+    "toplam_bildirim": 7,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9647,13 +9647,13 @@
    {
     "kod": "GEDIK",
     "bist30": false,
-    "toplam_bildirim": 34,
-    "islem_bildirim_sayisi": 33,
-    "son_bildirim_tarih": "2026-11-18",
-    "kumulatif_lot": null,
-    "sermaye_orani_yuzde": null,
-    "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "toplam_bildirim": 35,
+    "islem_bildirim_sayisi": 34,
+    "son_bildirim_tarih": "2026-11-20",
+    "kumulatif_lot": 102242635.386,
+    "sermaye_orani_yuzde": 1.39315,
+    "kumulatif_etiket": "2026-11-20 itibarıyla, şirket beyanı (KAP)",
+    "kumulatif_yazilmaz_neden": null
    },
    {
     "kod": "GEDZA",
@@ -9664,7 +9664,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "GENIL",
@@ -9675,7 +9675,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "GENTS",
@@ -9686,7 +9686,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "GIPTA",
@@ -9697,18 +9697,18 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "GLYHO",
     "bist30": false,
-    "toplam_bildirim": 6,
-    "islem_bildirim_sayisi": 6,
-    "son_bildirim_tarih": "2026-11-13",
+    "toplam_bildirim": 7,
+    "islem_bildirim_sayisi": 7,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "GOLDA",
@@ -9719,29 +9719,29 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "GRSEL",
     "bist30": false,
-    "toplam_bildirim": 16,
+    "toplam_bildirim": 17,
     "islem_bildirim_sayisi": 3,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "GRTHO",
     "bist30": false,
-    "toplam_bildirim": 21,
-    "islem_bildirim_sayisi": 20,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 22,
+    "islem_bildirim_sayisi": 21,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "GSDHO",
@@ -9757,9 +9757,9 @@
    {
     "kod": "GUBRF",
     "bist30": true,
-    "toplam_bildirim": 7,
+    "toplam_bildirim": 8,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9785,14 +9785,14 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "INFO",
     "bist30": false,
-    "toplam_bildirim": 5,
+    "toplam_bildirim": 6,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-19",
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9807,7 +9807,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "ISVEA",
@@ -9823,9 +9823,9 @@
    {
     "kod": "IYF",
     "bist30": false,
-    "toplam_bildirim": 5,
+    "toplam_bildirim": 6,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-19",
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9834,13 +9834,13 @@
    {
     "kod": "IZENR",
     "bist30": false,
-    "toplam_bildirim": 18,
+    "toplam_bildirim": 19,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "JANTS",
@@ -9851,7 +9851,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "KARCL",
@@ -9873,7 +9873,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "KGYO",
@@ -9895,7 +9895,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "KLRHO",
@@ -9906,14 +9906,14 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "KLSYN",
     "bist30": false,
-    "toplam_bildirim": 1,
-    "islem_bildirim_sayisi": 1,
-    "son_bildirim_tarih": "2026-09-22",
+    "toplam_bildirim": 2,
+    "islem_bildirim_sayisi": 2,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -9922,9 +9922,9 @@
    {
     "kod": "KLYPV",
     "bist30": false,
-    "toplam_bildirim": 13,
+    "toplam_bildirim": 14,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -10142,9 +10142,9 @@
    {
     "kod": "MAVI",
     "bist30": false,
-    "toplam_bildirim": 30,
-    "islem_bildirim_sayisi": 29,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 31,
+    "islem_bildirim_sayisi": 30,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -10175,9 +10175,9 @@
    {
     "kod": "MERCN",
     "bist30": false,
-    "toplam_bildirim": 17,
+    "toplam_bildirim": 18,
     "islem_bildirim_sayisi": 10,
-    "son_bildirim_tarih": "2026-11-19",
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -10197,9 +10197,9 @@
    {
     "kod": "METEN",
     "bist30": false,
-    "toplam_bildirim": 23,
+    "toplam_bildirim": 24,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-16",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -10219,9 +10219,9 @@
    {
     "kod": "MEYSU",
     "bist30": false,
-    "toplam_bildirim": 22,
+    "toplam_bildirim": 23,
     "islem_bildirim_sayisi": 3,
-    "son_bildirim_tarih": "2026-11-19",
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -10230,9 +10230,9 @@
    {
     "kod": "MNDRS",
     "bist30": false,
-    "toplam_bildirim": 4,
+    "toplam_bildirim": 5,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-19",
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -10274,9 +10274,9 @@
    {
     "kod": "NETCD",
     "bist30": false,
-    "toplam_bildirim": 16,
-    "islem_bildirim_sayisi": 15,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 17,
+    "islem_bildirim_sayisi": 16,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -10346,7 +10346,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "OSMEN",
@@ -10354,10 +10354,10 @@
     "toplam_bildirim": 27,
     "islem_bildirim_sayisi": 0,
     "son_bildirim_tarih": "2026-11-11",
-    "kumulatif_lot": null,
-    "sermaye_orani_yuzde": null,
-    "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_lot": 2802825.0,
+    "sermaye_orani_yuzde": 0.69849,
+    "kumulatif_etiket": "2026-11-11 itibarıyla, şirket beyanı (KAP)",
+    "kumulatif_yazilmaz_neden": null
    },
    {
     "kod": "OYLUM",
@@ -10368,7 +10368,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "OZGYO",
@@ -10379,7 +10379,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "OZYSR",
@@ -10390,7 +10390,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "PAHOL",
@@ -10398,10 +10398,10 @@
     "toplam_bildirim": 4,
     "islem_bildirim_sayisi": 4,
     "son_bildirim_tarih": "2026-09-29",
-    "kumulatif_lot": null,
-    "sermaye_orani_yuzde": null,
-    "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_lot": 37446277.0,
+    "sermaye_orani_yuzde": 0.18723,
+    "kumulatif_etiket": "2026-09-29 itibarıyla, şirket beyanı (KAP)",
+    "kumulatif_yazilmaz_neden": null
    },
    {
     "kod": "PASEU",
@@ -10420,21 +10420,21 @@
     "toplam_bildirim": 5,
     "islem_bildirim_sayisi": 4,
     "son_bildirim_tarih": "2026-10-13",
-    "kumulatif_lot": null,
-    "sermaye_orani_yuzde": null,
-    "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_lot": 4540033.0,
+    "sermaye_orani_yuzde": 0.6727,
+    "kumulatif_etiket": "2026-10-13 itibarıyla, şirket beyanı (KAP)",
+    "kumulatif_yazilmaz_neden": null
    },
    {
     "kod": "PCILT",
     "bist30": false,
-    "toplam_bildirim": 43,
-    "islem_bildirim_sayisi": 42,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 44,
+    "islem_bildirim_sayisi": 43,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "PGSUS",
@@ -10456,7 +10456,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "QUICK",
@@ -10483,9 +10483,9 @@
    {
     "kod": "RNPOL",
     "bist30": false,
-    "toplam_bildirim": 25,
+    "toplam_bildirim": 26,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -10511,18 +10511,18 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "SANKO",
     "bist30": false,
-    "toplam_bildirim": 23,
-    "islem_bildirim_sayisi": 22,
-    "son_bildirim_tarih": "2026-11-19",
+    "toplam_bildirim": 24,
+    "islem_bildirim_sayisi": 23,
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "SARAE",
@@ -10555,7 +10555,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "SKBNK",
@@ -10577,18 +10577,18 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "SUNTK",
     "bist30": false,
-    "toplam_bildirim": 2,
-    "islem_bildirim_sayisi": 1,
-    "son_bildirim_tarih": "2026-11-19",
+    "toplam_bildirim": 3,
+    "islem_bildirim_sayisi": 2,
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "SUWEN",
@@ -10599,7 +10599,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "SVGYO",
@@ -10610,7 +10610,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "TABGD",
@@ -10621,7 +10621,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "TATEN",
@@ -10654,7 +10654,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "TEZOL",
@@ -10665,14 +10665,14 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "TGB",
     "bist30": false,
-    "toplam_bildirim": 6,
+    "toplam_bildirim": 7,
     "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
@@ -10687,7 +10687,7 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "TKNKA",
@@ -10731,18 +10731,18 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "TUREX",
     "bist30": false,
-    "toplam_bildirim": 28,
-    "islem_bildirim_sayisi": 0,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 30,
+    "islem_bildirim_sayisi": 1,
+    "son_bildirim_tarih": "2026-11-20",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "TURSG",
@@ -10775,18 +10775,18 @@
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "ULUUN",
     "bist30": false,
-    "toplam_bildirim": 28,
-    "islem_bildirim_sayisi": 27,
-    "son_bildirim_tarih": "2026-11-18",
+    "toplam_bildirim": 29,
+    "islem_bildirim_sayisi": 28,
+    "son_bildirim_tarih": "2026-11-19",
     "kumulatif_lot": null,
     "sermaye_orani_yuzde": null,
     "kumulatif_etiket": null,
-    "kumulatif_yazilmaz_neden": "kaynak=tablo_program (yalnız sirket_beyani yazılır)"
+    "kumulatif_yazilmaz_neden": "kaynak=yok (yalnız sirket_beyani yazılır)"
    },
    {
     "kod": "UNLU",
