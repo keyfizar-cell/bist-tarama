@@ -80,7 +80,10 @@ Akış (cinematic-film, proje geçici dizinde, ör. `/tmp/kz/<sira>-<ad>/`):
 6. `render.py --cues` → `build_sfx.py` → `mix_soundtrack.py --sfx-db -6` → `render.py --size 1080x1920 --workers 3 --out out/temiz.mp4 --audio audio/mix.m4a`
    (4 çekirdekte 34 sn ≈ 5 dk).
 7. `burn_captions.py --project <proje> --video out/temiz.mp4 --audio audio/mix.m4a --style highlighter --out out/altyazili.mp4`
-   (**yollar proje köküne göre göreli verilir**; mutlak `--out` yolu betikte hata verir) →
+   (**yollar proje köküne göre göreli verilir**; mutlak `--out` yolu betikte hata verir). Dikeyde uzun Türkçe
+   kelimeler taşarsa `captions.chunks_for`'u daha kısa parçalarla (≤ 4 kelime / 24 harf) değiştiren küçük bir
+   sarmalayıcı yaz; `burn_captions` "spawn" havuzu kullandığı için yamayı modül düzeyinde bırak, `main()`'i
+   `if __name__ == "__main__":` altında çağır (yoksa alt süreçler sonsuz döngüye girer) →
    `marka.py --video <proje>/out/altyazili.mp4 --out <proje>/out/markali.mp4`.
 8. Son kodlama (boyut ve ses seviyesi, ~18 MB / 34 sn):
    `ffmpeg -i out/markali.mp4 -vf hqdn3d=3:3:4:4 -c:v libx264 -preset slow -crf 26 -pix_fmt yuv420p -af loudnorm=I=-14:TP=-1.5:LRA=11 -c:a aac -b:a 160k -ar 48000 -movflags +faststart video.mp4`
@@ -90,14 +93,21 @@ bir marka öğesi (ör. tahtada "KeyfiZar Tebeşir Dersi" başlığı, "KeyfiZar
 (3) kapanış cümlesinde "KeyfiZar'ı takip et". Yazım her yerde tam `KeyfiZar`. Açılışa logo konmaz.
 
 ### (f) Kalite kontrolü (her video, geçmeyen düzeltilir ya da atlanır)
+**Önce betik** (kota tasarrufu; yalnız ffmpeg + standart kitaplık, ~1–2 dk/video):
 ```bash
-ffprobe -v error -show_entries stream=width,height:format=duration -of default=nw=1 video.mp4   # 1080x1920, 20–45 sn
-ffmpeg -i video.mp4 -af loudnorm=print_format=summary -f null - 2>&1 | grep "Input Integrated"  # ≈ -14 LUFS (−16…−12)
-ffmpeg -v error -i video.mp4 -vf "fps=1/4,scale=540:-1,tile=4x3" -frames:v 1 kontrol.jpg         # kareler
+python3 bist-tarama/.claude/skills/cinematic-film/scripts/kalite_kontrol.py icerik-uretim/videolar/<no>-<ad> [...] --json /tmp/kz/kk.json
 ```
-- Kontrol karesine ve en az 4 tekil kareye (açılış, orta, anlam satırı, son 2 sn imza) **bak**: altyazı ve yazılar
-  kenardan/Shorts arayüz bölgesinden taşmıyor (sağ 12 %, alt 18 % boş kalmalı); "KeyfiZar" doğru yazılmış
-  (filigran, tema öğesi, imza); karanlık zeminde koyu yazı yok.
+Ölçer: 1080x1920 · 20–45 sn · −16…−12 LUFS ve true peak ≤ −1 dBTP · baş sessizlik ≤ 1 sn, son ≤ 3.5 sn ·
+siyah (imza hariç) ve ≥ 3 sn donmuş görüntü yok · kenar 8 px bantlarında ekranda kalan kesik yazı/altyazı izi yok
+(saniyede ~1 kare; çerçeve çizgileri ve kamera geçişi sayılmaz) · son 2 sn imza (kararma + ortada koyu kutu) ·
+`meta.json` alanları/uzunlukları/19:00+03:00/son etiket `KeyfiZar`/marka yazımı · başlık, açıklama, yorum ve
+etiketlerde sansürsüz küfür yok. Çıktı satır satır ✓/✗ + JSON; çıkış kodu 0 = hepsi ✓, 1 = ✗ var, 2 = girdi hatası.
+- **Betik ✓ verdiyse kareye bakılmaz.** ✗ verdiyse yalnız o video için **tek bir temas kartına** bak
+  (tek tek kare açma), sorunu düzelt, betiği yeniden çalıştır:
+  `ffmpeg -v error -i video.mp4 -vf "fps=1/3,scale=270:-1,tile=6x2" -frames:v 1 /tmp/kz/<ad>_kart.jpg`
+  Betiğin `kenar_kesik_yazi` ayrıntısındaki `t` saniyesi kartta hangi karenin şüpheli olduğunu söyler.
+- Betiğin ölçemedikleri (yeni stil/temada bir kez, temas kartında): Shorts arayüz bölgesi (sağ 12 %, alt 18 %),
+  karanlık zeminde koyu yazı, tema içi "KeyfiZar" yazımı.
 - Sesi Whisper ile metne karşı bir kez daha kontrol et (benzerlik ≥ 0.90); sessiz/kesik satır yok.
 - Kareler ve ara dosyalar depoya girmez.
 
