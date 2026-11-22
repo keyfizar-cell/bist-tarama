@@ -2,11 +2,11 @@
  "surum": "1.0",
  "hata": null,
  "not": "Kısmi TMS 29 arındırma: yalnız ertelenmiş vergi çıkarılır; net parasal pozisyon İş Yatırım şablonunda ayrı satır olmadığı için çıkarılamaz. Marj değişimi: yılbaşından bugüne, yıllık.",
- "islenen": 10,
+ "islenen": 506,
  "hata_sayisi": 0,
  "kapsam": 496,
  "evren": 506,
- "uretim_zamani_utc": "2026-11-15T13:59:52+00:00",
+ "uretim_zamani_utc": "2026-11-22T14:57:20+00:00",
  "hisseler": {
   "TUPRS": {
    "donem": "2026/09",
@@ -21,7 +21,7 @@
    "brut_marj_degisim_puan": 5.89,
    "favok_marj": 13.48,
    "favok_marj_degisim_puan": 6.73,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PCILT": {
    "donem": "2026/09",
@@ -36,7 +36,7 @@
    "brut_marj_degisim_puan": -0.05,
    "favok_marj": 7.13,
    "favok_marj_degisim_puan": -0.22,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SANEL": {
    "donem": "2026/09",
@@ -51,7 +51,7 @@
    "brut_marj_degisim_puan": 12.66,
    "favok_marj": 45.17,
    "favok_marj_degisim_puan": 1.3,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ARDYZ": {
    "donem": "2026/09",
@@ -66,7 +66,7 @@
    "brut_marj_degisim_puan": 1.16,
    "favok_marj": 51.7,
    "favok_marj_degisim_puan": 4.8,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FONET": {
    "donem": "2026/09",
@@ -81,7 +81,7 @@
    "brut_marj_degisim_puan": 9.61,
    "favok_marj": 50.02,
    "favok_marj_degisim_puan": 2.12,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "NTGAZ": {
    "donem": "2026/09",
@@ -96,7 +96,7 @@
    "brut_marj_degisim_puan": 2.44,
    "favok_marj": 23.48,
    "favok_marj_degisim_puan": 1.81,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ATATP": {
    "donem": "2026/09",
@@ -111,7 +111,7 @@
    "brut_marj_degisim_puan": -2.03,
    "favok_marj": 71.51,
    "favok_marj_degisim_puan": -0.92,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AHGAZ": {
    "donem": "2026/09",
@@ -126,7 +126,7 @@
    "brut_marj_degisim_puan": 10.6,
    "favok_marj": 37.63,
    "favok_marj_degisim_puan": 4.49,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PKART": {
    "donem": "2026/09",
@@ -141,7 +141,7 @@
    "brut_marj_degisim_puan": 1.96,
    "favok_marj": 7.64,
    "favok_marj_degisim_puan": 5.25,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "LOGO": {
    "donem": "2026/09",
@@ -156,7 +156,7 @@
    "brut_marj_degisim_puan": 0.7,
    "favok_marj": 40.48,
    "favok_marj_degisim_puan": -0.63,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "INDES": {
    "donem": "2026/09",
@@ -171,7 +171,7 @@
    "brut_marj_degisim_puan": 0.85,
    "favok_marj": 4.13,
    "favok_marj_degisim_puan": 0.62,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BASGZ": {
    "donem": "2026/09",
@@ -186,7 +186,7 @@
    "brut_marj_degisim_puan": 1.9,
    "favok_marj": 12.84,
    "favok_marj_degisim_puan": 1.37,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ARASE": {
    "donem": "2026/09",
@@ -201,7 +201,7 @@
    "brut_marj_degisim_puan": -0.29,
    "favok_marj": 23.62,
    "favok_marj_degisim_puan": -3.14,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KIMMR": {
    "donem": "2026/09",
@@ -216,7 +216,7 @@
    "brut_marj_degisim_puan": 0.27,
    "favok_marj": 6.96,
    "favok_marj_degisim_puan": 0.91,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BNTAS": {
    "donem": "2026/09",
@@ -231,7 +231,7 @@
    "brut_marj_degisim_puan": 0.95,
    "favok_marj": 29.73,
    "favok_marj_degisim_puan": 5.19,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DOHOL": {
    "donem": "2026/09",
@@ -246,7 +246,7 @@
    "brut_marj_degisim_puan": 12.83,
    "favok_marj": 34.9,
    "favok_marj_degisim_puan": 0.75,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MTRKS": {
    "donem": "2026/09",
@@ -261,7 +261,7 @@
    "brut_marj_degisim_puan": -7.58,
    "favok_marj": 22.45,
    "favok_marj_degisim_puan": -5.47,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EGGUB": {
    "donem": "2026/09",
@@ -276,7 +276,7 @@
    "brut_marj_degisim_puan": 9.65,
    "favok_marj": 50.89,
    "favok_marj_degisim_puan": 11.92,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AYGAZ": {
    "donem": "2026/09",
@@ -291,7 +291,7 @@
    "brut_marj_degisim_puan": 1.02,
    "favok_marj": 4.44,
    "favok_marj_degisim_puan": 0.47,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TRENJ": {
    "donem": "2026/09",
@@ -306,7 +306,7 @@
    "brut_marj_degisim_puan": 11.3,
    "favok_marj": 35.99,
    "favok_marj_degisim_puan": 8.91,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YUNSA": {
    "donem": "2026/09",
@@ -321,7 +321,7 @@
    "brut_marj_degisim_puan": 3.1,
    "favok_marj": 20.93,
    "favok_marj_degisim_puan": 3.8,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "RALYH": {
    "donem": "2026/06",
@@ -336,7 +336,7 @@
    "brut_marj_degisim_puan": -12.73,
    "favok_marj": 4.82,
    "favok_marj_degisim_puan": -34.85,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TCKRC": {
    "donem": "2026/09",
@@ -351,7 +351,7 @@
    "brut_marj_degisim_puan": 8.64,
    "favok_marj": 38.38,
    "favok_marj_degisim_puan": 21.31,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TTKOM": {
    "donem": "2026/09",
@@ -366,7 +366,7 @@
    "brut_marj_degisim_puan": -2.8,
    "favok_marj": 40.83,
    "favok_marj_degisim_puan": 0.15,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ESCOM": {
    "donem": "2026/09",
@@ -381,7 +381,7 @@
    "brut_marj_degisim_puan": 0.0,
    "favok_marj": 99.45,
    "favok_marj_degisim_puan": 717.14,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CCOLA": {
    "donem": "2026/09",
@@ -396,7 +396,7 @@
    "brut_marj_degisim_puan": 2.03,
    "favok_marj": 19.55,
    "favok_marj_degisim_puan": 1.37,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KRONT": {
    "donem": "2026/09",
@@ -411,7 +411,7 @@
    "brut_marj_degisim_puan": -1.63,
    "favok_marj": 45.83,
    "favok_marj_degisim_puan": -3.68,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GRSEL": {
    "donem": "2026/09",
@@ -426,7 +426,7 @@
    "brut_marj_degisim_puan": 2.36,
    "favok_marj": 33.93,
    "favok_marj_degisim_puan": -1.02,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ORGE": {
    "donem": "2026/09",
@@ -441,7 +441,7 @@
    "brut_marj_degisim_puan": -0.49,
    "favok_marj": 56.22,
    "favok_marj_degisim_puan": 0.3,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SAYAS": {
    "donem": "2026/09",
@@ -456,7 +456,7 @@
    "brut_marj_degisim_puan": 5.05,
    "favok_marj": 25.25,
    "favok_marj_degisim_puan": -0.32,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MAVI": {
    "donem": "2026/06",
@@ -471,7 +471,7 @@
    "brut_marj_degisim_puan": 1.76,
    "favok_marj": 18.62,
    "favok_marj_degisim_puan": 0.21,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EGPRO": {
    "donem": "2026/09",
@@ -486,7 +486,7 @@
    "brut_marj_degisim_puan": 5.06,
    "favok_marj": 24.66,
    "favok_marj_degisim_puan": 7.35,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TATGD": {
    "donem": "2026/09",
@@ -501,7 +501,7 @@
    "brut_marj_degisim_puan": 5.03,
    "favok_marj": 12.72,
    "favok_marj_degisim_puan": 4.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TCELL": {
    "donem": "2026/09",
@@ -516,7 +516,7 @@
    "brut_marj_degisim_puan": -1.98,
    "favok_marj": 49.75,
    "favok_marj_degisim_puan": -12.53,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TRALT": {
    "donem": "2026/09",
@@ -531,7 +531,7 @@
    "brut_marj_degisim_puan": 11.98,
    "favok_marj": 37.37,
    "favok_marj_degisim_puan": 9.49,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YEOTK": {
    "donem": "2026/09",
@@ -546,7 +546,7 @@
    "brut_marj_degisim_puan": 7.02,
    "favok_marj": 23.06,
    "favok_marj_degisim_puan": 5.82,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OYYAT": {
    "donem": "2026/09",
@@ -561,7 +561,7 @@
    "brut_marj_degisim_puan": 9.64,
    "favok_marj": 28.93,
    "favok_marj_degisim_puan": 5.89,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BRSAN": {
    "donem": "2026/09",
@@ -576,7 +576,7 @@
    "brut_marj_degisim_puan": 2.49,
    "favok_marj": 10.14,
    "favok_marj_degisim_puan": 2.28,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EBEBK": {
    "donem": "2026/09",
@@ -591,7 +591,7 @@
    "brut_marj_degisim_puan": 0.88,
    "favok_marj": 6.65,
    "favok_marj_degisim_puan": 1.12,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "LMKDC": {
    "donem": "2026/09",
@@ -606,7 +606,7 @@
    "brut_marj_degisim_puan": -8.09,
    "favok_marj": 33.24,
    "favok_marj_degisim_puan": -8.1,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TRMET": {
    "donem": "2026/09",
@@ -621,7 +621,7 @@
    "brut_marj_degisim_puan": 11.3,
    "favok_marj": 35.95,
    "favok_marj_degisim_puan": 8.88,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KRSTL": {
    "donem": "2026/09",
@@ -636,7 +636,7 @@
    "brut_marj_degisim_puan": -3.43,
    "favok_marj": 10.89,
    "favok_marj_degisim_puan": -4.2,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FORTE": {
    "donem": "2026/09",
@@ -651,7 +651,7 @@
    "brut_marj_degisim_puan": 8.83,
    "favok_marj": 21.97,
    "favok_marj_degisim_puan": 19.21,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GUBRF": {
    "donem": "2026/09",
@@ -666,7 +666,7 @@
    "brut_marj_degisim_puan": -1.75,
    "favok_marj": 18.8,
    "favok_marj_degisim_puan": -4.15,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FMIZP": {
    "donem": "2026/09",
@@ -681,7 +681,7 @@
    "brut_marj_degisim_puan": 9.3,
    "favok_marj": 23.33,
    "favok_marj_degisim_puan": 6.42,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MPARK": {
    "donem": "2026/09",
@@ -696,7 +696,7 @@
    "brut_marj_degisim_puan": -1.08,
    "favok_marj": 27.95,
    "favok_marj_degisim_puan": 1.45,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HDFGS": {
    "donem": "2026/09",
@@ -711,7 +711,7 @@
    "brut_marj_degisim_puan": 0.0,
    "favok_marj": -16.39,
    "favok_marj_degisim_puan": -101.74,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CVKMD": {
    "donem": "2026/09",
@@ -726,7 +726,7 @@
    "brut_marj_degisim_puan": 12.54,
    "favok_marj": 38.13,
    "favok_marj_degisim_puan": 12.41,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MACKO": {
    "donem": "2026/09",
@@ -741,7 +741,7 @@
    "brut_marj_degisim_puan": -6.55,
    "favok_marj": 54.91,
    "favok_marj_degisim_puan": -0.31,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "VBTYZ": {
    "donem": "2026/09",
@@ -756,7 +756,7 @@
    "brut_marj_degisim_puan": 0.25,
    "favok_marj": 19.9,
    "favok_marj_degisim_puan": -3.66,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AFYON": {
    "donem": "2026/09",
@@ -771,7 +771,7 @@
    "brut_marj_degisim_puan": 2.84,
    "favok_marj": 26.38,
    "favok_marj_degisim_puan": 2.65,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AYES": {
    "donem": "2026/06",
@@ -786,7 +786,7 @@
    "brut_marj_degisim_puan": 0.37,
    "favok_marj": 1.65,
    "favok_marj_degisim_puan": 0.75,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DGATE": {
    "donem": "2026/09",
@@ -801,7 +801,7 @@
    "brut_marj_degisim_puan": 0.61,
    "favok_marj": 5.27,
    "favok_marj_degisim_puan": -1.64,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GSDDE": {
    "donem": "2026/09",
@@ -816,7 +816,7 @@
    "brut_marj_degisim_puan": 12.25,
    "favok_marj": 62.98,
    "favok_marj_degisim_puan": 11.35,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TABGD": {
    "donem": "2026/09",
@@ -831,7 +831,7 @@
    "brut_marj_degisim_puan": -0.91,
    "favok_marj": 19.16,
    "favok_marj_degisim_puan": -0.47,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AKSA": {
    "donem": "2026/09",
@@ -846,7 +846,7 @@
    "brut_marj_degisim_puan": 0.87,
    "favok_marj": 17.5,
    "favok_marj_degisim_puan": -5.27,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DESA": {
    "donem": "2026/09",
@@ -861,7 +861,7 @@
    "brut_marj_degisim_puan": 0.66,
    "favok_marj": 25.16,
    "favok_marj_degisim_puan": -6.54,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "THYAO": {
    "donem": "2026/09",
@@ -876,7 +876,7 @@
    "brut_marj_degisim_puan": -5.93,
    "favok_marj": 13.41,
    "favok_marj_degisim_puan": -6.18,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OSMEN": {
    "donem": "2026/09",
@@ -891,7 +891,7 @@
    "brut_marj_degisim_puan": -1.56,
    "favok_marj": 2.74,
    "favok_marj_degisim_puan": -0.03,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BIMAS": {
    "donem": "2026/09",
@@ -906,7 +906,7 @@
    "brut_marj_degisim_puan": -0.03,
    "favok_marj": 5.84,
    "favok_marj_degisim_puan": 0.24,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OYAKC": {
    "donem": "2026/09",
@@ -921,7 +921,7 @@
    "brut_marj_degisim_puan": -1.15,
    "favok_marj": 26.73,
    "favok_marj_degisim_puan": -0.07,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TAVHL": {
    "donem": "2026/09",
@@ -936,7 +936,7 @@
    "brut_marj_degisim_puan": -1.69,
    "favok_marj": 34.8,
    "favok_marj_degisim_puan": 0.61,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SAFKR": {
    "donem": "2026/09",
@@ -951,7 +951,7 @@
    "brut_marj_degisim_puan": -13.19,
    "favok_marj": 10.43,
    "favok_marj_degisim_puan": -10.65,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TNZTP": {
    "donem": "2026/09",
@@ -966,7 +966,7 @@
    "brut_marj_degisim_puan": -11.54,
    "favok_marj": 27.61,
    "favok_marj_degisim_puan": -5.24,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PETUN": {
    "donem": "2026/09",
@@ -981,7 +981,7 @@
    "brut_marj_degisim_puan": -1.87,
    "favok_marj": 10.4,
    "favok_marj_degisim_puan": -2.06,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AKFYE": {
    "donem": "2026/09",
@@ -996,7 +996,7 @@
    "brut_marj_degisim_puan": -10.8,
    "favok_marj": 50.35,
    "favok_marj_degisim_puan": -2.49,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TBORG": {
    "donem": "2026/09",
@@ -1011,7 +1011,7 @@
    "brut_marj_degisim_puan": -0.74,
    "favok_marj": 30.33,
    "favok_marj_degisim_puan": -1.06,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "RYSAS": {
    "donem": "2026/09",
@@ -1026,7 +1026,7 @@
    "brut_marj_degisim_puan": -2.8,
    "favok_marj": 38.45,
    "favok_marj_degisim_puan": -3.03,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BESLR": {
    "donem": "2026/09",
@@ -1041,7 +1041,7 @@
    "brut_marj_degisim_puan": 0.48,
    "favok_marj": 9.3,
    "favok_marj_degisim_puan": 4.36,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ASTOR": {
    "donem": "2026/09",
@@ -1056,7 +1056,7 @@
    "brut_marj_degisim_puan": 2.75,
    "favok_marj": 36.43,
    "favok_marj_degisim_puan": 4.25,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DMRGD": {
    "donem": "2026/09",
@@ -1071,7 +1071,7 @@
    "brut_marj_degisim_puan": -1.24,
    "favok_marj": 25.44,
    "favok_marj_degisim_puan": 3.53,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GRTHO": {
    "donem": "2026/09",
@@ -1086,7 +1086,7 @@
    "brut_marj_degisim_puan": -1.52,
    "favok_marj": 7.05,
    "favok_marj_degisim_puan": -2.8,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GSDHO": {
    "donem": "2026/09",
@@ -1101,7 +1101,7 @@
    "brut_marj_degisim_puan": -20.41,
    "favok_marj": 136.37,
    "favok_marj_degisim_puan": -21.56,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PNLSN": {
    "donem": "2026/09",
@@ -1116,7 +1116,7 @@
    "brut_marj_degisim_puan": 1.21,
    "favok_marj": 14.31,
    "favok_marj_degisim_puan": 3.42,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ENERY": {
    "donem": "2026/09",
@@ -1131,7 +1131,7 @@
    "brut_marj_degisim_puan": 1.49,
    "favok_marj": 23.56,
    "favok_marj_degisim_puan": -3.68,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HTTBT": {
    "donem": "2026/09",
@@ -1146,7 +1146,7 @@
    "brut_marj_degisim_puan": -4.56,
    "favok_marj": 40.71,
    "favok_marj_degisim_puan": -3.67,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ENKAI": {
    "donem": "2026/09",
@@ -1161,7 +1161,7 @@
    "brut_marj_degisim_puan": -3.43,
    "favok_marj": 18.29,
    "favok_marj_degisim_puan": -4.24,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KLKIM": {
    "donem": "2026/09",
@@ -1176,7 +1176,7 @@
    "brut_marj_degisim_puan": -0.83,
    "favok_marj": 17.99,
    "favok_marj_degisim_puan": -3.31,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GOLTS": {
    "donem": "2026/09",
@@ -1191,7 +1191,7 @@
    "brut_marj_degisim_puan": -6.68,
    "favok_marj": 12.0,
    "favok_marj_degisim_puan": -4.59,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GLCVY": {
    "hata": "son dönem verisi yok"
@@ -1209,7 +1209,7 @@
    "brut_marj_degisim_puan": -635.36,
    "favok_marj": 51.52,
    "favok_marj_degisim_puan": -647.96,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DUNYH": {
    "donem": "2026/09",
@@ -1224,7 +1224,7 @@
    "brut_marj_degisim_puan": -15.17,
    "favok_marj": -1.91,
    "favok_marj_degisim_puan": 99.58,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AEFES": {
    "donem": "2026/09",
@@ -1239,7 +1239,7 @@
    "brut_marj_degisim_puan": 0.62,
    "favok_marj": 17.31,
    "favok_marj_degisim_puan": 0.3,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MGROS": {
    "donem": "2026/09",
@@ -1254,7 +1254,7 @@
    "brut_marj_degisim_puan": -0.88,
    "favok_marj": 1.72,
    "favok_marj_degisim_puan": -0.04,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ISDMR": {
    "donem": "2026/09",
@@ -1269,7 +1269,7 @@
    "brut_marj_degisim_puan": 1.83,
    "favok_marj": 11.25,
    "favok_marj_degisim_puan": 1.46,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TOASO": {
    "donem": "2026/09",
@@ -1284,7 +1284,7 @@
    "brut_marj_degisim_puan": 1.75,
    "favok_marj": 3.26,
    "favok_marj_degisim_puan": 0.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CWENE": {
    "donem": "2026/09",
@@ -1299,7 +1299,7 @@
    "brut_marj_degisim_puan": 0.63,
    "favok_marj": 18.65,
    "favok_marj_degisim_puan": -4.58,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "IHEVA": {
    "donem": "2026/09",
@@ -1314,22 +1314,22 @@
    "brut_marj_degisim_puan": -0.97,
    "favok_marj": 6.67,
    "favok_marj_degisim_puan": -1.94,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BFREN": {
-   "donem": "2026/06",
-   "net_kar_ttm": 233278651.0,
-   "ertelenmis_vergi_ttm": 29015198.0,
-   "duz_net_kar_ttm": 204263453.0,
-   "duz_net_kar_ttm_once": 110497064.0,
-   "duz_net_kar_buyume_yuzde": 84.9,
-   "ozkaynak": 805303229.0,
-   "duz_roe_yuzde": 25.4,
-   "brut_marj": 8.12,
-   "brut_marj_degisim_puan": -3.51,
-   "favok_marj": 11.02,
-   "favok_marj_degisim_puan": 4.3,
-   "guncelleme": "2026-11-12"
+   "donem": "2026/09",
+   "net_kar_ttm": 227984790.0,
+   "ertelenmis_vergi_ttm": 23556350.0,
+   "duz_net_kar_ttm": 204428440.0,
+   "duz_net_kar_ttm_once": 143385261.0,
+   "duz_net_kar_buyume_yuzde": 42.6,
+   "ozkaynak": 898857368.0,
+   "duz_roe_yuzde": 22.7,
+   "brut_marj": 7.98,
+   "brut_marj_degisim_puan": -4.56,
+   "favok_marj": 9.44,
+   "favok_marj_degisim_puan": 0.43,
+   "guncelleme": "2026-11-22"
   },
   "BRKSN": {
    "donem": "2026/09",
@@ -1344,7 +1344,7 @@
    "brut_marj_degisim_puan": 0.92,
    "favok_marj": 21.48,
    "favok_marj_degisim_puan": -0.36,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KCAER": {
    "donem": "2026/09",
@@ -1359,7 +1359,7 @@
    "brut_marj_degisim_puan": 1.4,
    "favok_marj": 11.71,
    "favok_marj_degisim_puan": -0.53,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ASELS": {
    "donem": "2026/09",
@@ -1374,7 +1374,7 @@
    "brut_marj_degisim_puan": 0.44,
    "favok_marj": 31.12,
    "favok_marj_degisim_puan": -1.92,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BRYAT": {
    "donem": "2026/09",
@@ -1389,7 +1389,7 @@
    "brut_marj_degisim_puan": 0.0,
    "favok_marj": 15.57,
    "favok_marj_degisim_puan": 80.69,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CLEBI": {
    "donem": "2026/09",
@@ -1404,7 +1404,7 @@
    "brut_marj_degisim_puan": -4.44,
    "favok_marj": 28.95,
    "favok_marj_degisim_puan": -4.88,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GENIL": {
    "donem": "2026/09",
@@ -1419,7 +1419,7 @@
    "brut_marj_degisim_puan": 7.04,
    "favok_marj": 17.82,
    "favok_marj_degisim_puan": 4.43,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PINSU": {
    "donem": "2026/09",
@@ -1434,7 +1434,7 @@
    "brut_marj_degisim_puan": 1.04,
    "favok_marj": 17.6,
    "favok_marj_degisim_puan": 4.15,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AGHOL": {
    "donem": "2026/09",
@@ -1449,7 +1449,7 @@
    "brut_marj_degisim_puan": -0.47,
    "favok_marj": 7.4,
    "favok_marj_degisim_puan": -0.24,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CIMSA": {
    "donem": "2026/09",
@@ -1464,7 +1464,7 @@
    "brut_marj_degisim_puan": -0.76,
    "favok_marj": 19.66,
    "favok_marj_degisim_puan": 0.81,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MOBTL": {
    "donem": "2026/09",
@@ -1479,7 +1479,7 @@
    "brut_marj_degisim_puan": -1.38,
    "favok_marj": 6.05,
    "favok_marj_degisim_puan": 0.66,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PLTUR": {
    "donem": "2026/09",
@@ -1494,7 +1494,7 @@
    "brut_marj_degisim_puan": -8.98,
    "favok_marj": 21.97,
    "favok_marj_degisim_puan": -6.64,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ONCSM": {
    "donem": "2026/09",
@@ -1509,7 +1509,7 @@
    "brut_marj_degisim_puan": 14.31,
    "favok_marj": 31.17,
    "favok_marj_degisim_puan": 11.18,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GENTS": {
    "donem": "2026/09",
@@ -1524,7 +1524,7 @@
    "brut_marj_degisim_puan": -8.73,
    "favok_marj": 8.67,
    "favok_marj_degisim_puan": -14.53,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CATES": {
    "donem": "2026/09",
@@ -1539,7 +1539,7 @@
    "brut_marj_degisim_puan": -23.99,
    "favok_marj": -5.85,
    "favok_marj_degisim_puan": -25.13,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MERIT": {
    "donem": "2026/09",
@@ -1554,7 +1554,7 @@
    "brut_marj_degisim_puan": 0.62,
    "favok_marj": 55.1,
    "favok_marj_degisim_puan": 3.33,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "LINK": {
    "donem": "2026/09",
@@ -1569,7 +1569,7 @@
    "brut_marj_degisim_puan": 43.65,
    "favok_marj": 64.98,
    "favok_marj_degisim_puan": 40.98,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "NUHCM": {
    "donem": "2026/09",
@@ -1584,7 +1584,7 @@
    "brut_marj_degisim_puan": -1.52,
    "favok_marj": 19.51,
    "favok_marj_degisim_puan": -1.4,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AKCNS": {
    "donem": "2026/09",
@@ -1599,7 +1599,7 @@
    "brut_marj_degisim_puan": -1.03,
    "favok_marj": 10.33,
    "favok_marj_degisim_puan": -0.97,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FADE": {
    "donem": "2026/09",
@@ -1614,7 +1614,7 @@
    "brut_marj_degisim_puan": -7.03,
    "favok_marj": 10.81,
    "favok_marj_degisim_puan": -6.94,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YATAS": {
    "donem": "2026/09",
@@ -1629,7 +1629,7 @@
    "brut_marj_degisim_puan": 0.21,
    "favok_marj": 10.59,
    "favok_marj_degisim_puan": -3.57,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GOKNR": {
    "donem": "2026/09",
@@ -1644,7 +1644,7 @@
    "brut_marj_degisim_puan": -0.77,
    "favok_marj": 18.04,
    "favok_marj_degisim_puan": -0.7,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FROTO": {
    "donem": "2026/09",
@@ -1659,7 +1659,7 @@
    "brut_marj_degisim_puan": -1.49,
    "favok_marj": 5.38,
    "favok_marj_degisim_puan": -1.91,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ARMGD": {
    "donem": "2026/09",
@@ -1674,7 +1674,7 @@
    "brut_marj_degisim_puan": 0.35,
    "favok_marj": 17.61,
    "favok_marj_degisim_puan": 3.77,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EREGL": {
    "donem": "2026/09",
@@ -1689,7 +1689,7 @@
    "brut_marj_degisim_puan": 1.04,
    "favok_marj": 10.79,
    "favok_marj_degisim_puan": 1.41,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ENJSA": {
    "donem": "2026/09",
@@ -1704,7 +1704,7 @@
    "brut_marj_degisim_puan": 4.09,
    "favok_marj": 23.27,
    "favok_marj_degisim_puan": 3.41,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KFEIN": {
    "donem": "2026/09",
@@ -1719,7 +1719,7 @@
    "brut_marj_degisim_puan": -0.79,
    "favok_marj": 4.91,
    "favok_marj_degisim_puan": 0.64,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EUPWR": {
    "donem": "2026/09",
@@ -1734,7 +1734,7 @@
    "brut_marj_degisim_puan": 1.02,
    "favok_marj": 19.61,
    "favok_marj_degisim_puan": -2.21,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GEDZA": {
    "donem": "2026/09",
@@ -1749,7 +1749,7 @@
    "brut_marj_degisim_puan": -3.38,
    "favok_marj": 26.72,
    "favok_marj_degisim_puan": -9.7,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TRHOL": {
    "donem": "2025/12",
@@ -1764,7 +1764,7 @@
    "brut_marj_degisim_puan": 95.71,
    "favok_marj": -30625.84,
    "favok_marj_degisim_puan": -30625.71,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GWIND": {
    "donem": "2026/09",
@@ -1779,7 +1779,7 @@
    "brut_marj_degisim_puan": -11.26,
    "favok_marj": 83.72,
    "favok_marj_degisim_puan": -3.99,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CEOEM": {
    "donem": "2026/09",
@@ -1794,7 +1794,7 @@
    "brut_marj_degisim_puan": 1.7,
    "favok_marj": 1.05,
    "favok_marj_degisim_puan": 0.13,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "LILAK": {
    "donem": "2026/09",
@@ -1809,7 +1809,7 @@
    "brut_marj_degisim_puan": -2.84,
    "favok_marj": 17.12,
    "favok_marj_degisim_puan": -7.22,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BAGFS": {
    "donem": "2026/09",
@@ -1824,7 +1824,7 @@
    "brut_marj_degisim_puan": -0.45,
    "favok_marj": 13.45,
    "favok_marj_degisim_puan": -8.07,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "A1YEN": {
    "donem": "2026/09",
@@ -1839,7 +1839,7 @@
    "brut_marj_degisim_puan": -7.54,
    "favok_marj": 52.81,
    "favok_marj_degisim_puan": 5.66,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GESAN": {
    "donem": "2026/09",
@@ -1854,7 +1854,7 @@
    "brut_marj_degisim_puan": -0.56,
    "favok_marj": 20.04,
    "favok_marj_degisim_puan": -3.11,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MEGMT": {
    "donem": "2026/09",
@@ -1869,7 +1869,7 @@
    "brut_marj_degisim_puan": -1.33,
    "favok_marj": 5.56,
    "favok_marj_degisim_puan": 0.82,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YYLGD": {
    "donem": "2026/09",
@@ -1884,7 +1884,7 @@
    "brut_marj_degisim_puan": 0.17,
    "favok_marj": 11.21,
    "favok_marj_degisim_puan": -1.51,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KRPLS": {
    "donem": "2026/09",
@@ -1899,7 +1899,7 @@
    "brut_marj_degisim_puan": 10.43,
    "favok_marj": 20.67,
    "favok_marj_degisim_puan": 8.58,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KRDMA": {
    "donem": "2026/09",
@@ -1914,7 +1914,7 @@
    "brut_marj_degisim_puan": 2.16,
    "favok_marj": 8.66,
    "favok_marj_degisim_puan": 3.86,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "INTEM": {
    "donem": "2026/09",
@@ -1929,7 +1929,7 @@
    "brut_marj_degisim_puan": 4.65,
    "favok_marj": 31.05,
    "favok_marj_degisim_puan": 8.51,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PKENT": {
    "donem": "2026/09",
@@ -1944,7 +1944,7 @@
    "brut_marj_degisim_puan": -5.54,
    "favok_marj": 25.96,
    "favok_marj_degisim_puan": -3.29,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "METRO": {
    "donem": "2026/09",
@@ -1959,7 +1959,7 @@
    "brut_marj_degisim_puan": null,
    "favok_marj": 5541.28,
    "favok_marj_degisim_puan": null,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KUTPO": {
    "donem": "2026/09",
@@ -1974,7 +1974,7 @@
    "brut_marj_degisim_puan": -8.93,
    "favok_marj": 14.19,
    "favok_marj_degisim_puan": -7.87,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MEPET": {
    "donem": "2026/09",
@@ -1989,7 +1989,7 @@
    "brut_marj_degisim_puan": -1.11,
    "favok_marj": 8.49,
    "favok_marj_degisim_puan": -0.98,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ULKER": {
    "donem": "2026/09",
@@ -2004,7 +2004,7 @@
    "brut_marj_degisim_puan": -5.32,
    "favok_marj": 12.67,
    "favok_marj_degisim_puan": -6.02,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KARSN": {
    "donem": "2026/09",
@@ -2019,7 +2019,7 @@
    "brut_marj_degisim_puan": -1.09,
    "favok_marj": 7.88,
    "favok_marj_degisim_puan": -9.25,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TGSAS": {
    "donem": "2026/09",
@@ -2034,7 +2034,7 @@
    "brut_marj_degisim_puan": 0.0,
    "favok_marj": 59.47,
    "favok_marj_degisim_puan": 21.15,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "VAKKO": {
    "donem": "2026/09",
@@ -2049,7 +2049,7 @@
    "brut_marj_degisim_puan": 0.65,
    "favok_marj": 13.65,
    "favok_marj_degisim_puan": 0.92,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GLRMK": {
    "donem": "2026/09",
@@ -2064,7 +2064,7 @@
    "brut_marj_degisim_puan": -3.29,
    "favok_marj": 14.03,
    "favok_marj_degisim_puan": -2.68,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BRKVY": {
    "hata": "son dönem verisi yok"
@@ -2082,7 +2082,7 @@
    "brut_marj_degisim_puan": 16.23,
    "favok_marj": 6.56,
    "favok_marj_degisim_puan": 10.35,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MNDRS": {
    "donem": "2026/09",
@@ -2097,22 +2097,22 @@
    "brut_marj_degisim_puan": -7.96,
    "favok_marj": 2.27,
    "favok_marj_degisim_puan": -14.85,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "LKMNH": {
-   "donem": "2026/06",
-   "net_kar_ttm": 125558071.0,
-   "ertelenmis_vergi_ttm": -166325172.0,
-   "duz_net_kar_ttm": 291883243.0,
-   "duz_net_kar_ttm_once": 285678310.0,
-   "duz_net_kar_buyume_yuzde": 2.2,
-   "ozkaynak": 2747006577.0,
-   "duz_roe_yuzde": 10.6,
-   "brut_marj": 18.25,
-   "brut_marj_degisim_puan": 2.04,
-   "favok_marj": 29.24,
-   "favok_marj_degisim_puan": 7.68,
-   "guncelleme": "2026-11-12"
+   "donem": "2026/09",
+   "net_kar_ttm": 866379680.0,
+   "ertelenmis_vergi_ttm": -127223067.0,
+   "duz_net_kar_ttm": 993602747.0,
+   "duz_net_kar_ttm_once": 251377092.0,
+   "duz_net_kar_buyume_yuzde": 295.3,
+   "ozkaynak": 3632823197.0,
+   "duz_roe_yuzde": 27.4,
+   "brut_marj": 17.15,
+   "brut_marj_degisim_puan": 0.25,
+   "favok_marj": 45.7,
+   "favok_marj_degisim_puan": 22.5,
+   "guncelleme": "2026-11-22"
   },
   "ULUUN": {
    "donem": "2026/09",
@@ -2127,7 +2127,7 @@
    "brut_marj_degisim_puan": -2.71,
    "favok_marj": 4.03,
    "favok_marj_degisim_puan": -2.1,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "NTHOL": {
    "donem": "2026/09",
@@ -2142,7 +2142,7 @@
    "brut_marj_degisim_puan": -14.15,
    "favok_marj": 29.24,
    "favok_marj_degisim_puan": -8.03,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ACSEL": {
    "donem": "2026/09",
@@ -2157,7 +2157,7 @@
    "brut_marj_degisim_puan": 16.17,
    "favok_marj": 14.5,
    "favok_marj_degisim_puan": 17.72,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KBORU": {
    "donem": "2026/09",
@@ -2172,22 +2172,22 @@
    "brut_marj_degisim_puan": 4.25,
    "favok_marj": 26.98,
    "favok_marj_degisim_puan": 9.8,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SAMAT": {
-   "donem": "2026/06",
-   "net_kar_ttm": 150425648.0,
-   "ertelenmis_vergi_ttm": 6285430.0,
-   "duz_net_kar_ttm": 144140218.0,
-   "duz_net_kar_ttm_once": -87406963.0,
+   "donem": "2026/09",
+   "net_kar_ttm": 204411919.0,
+   "ertelenmis_vergi_ttm": 5450098.0,
+   "duz_net_kar_ttm": 198961821.0,
+   "duz_net_kar_ttm_once": -89624156.0,
    "duz_net_kar_buyume_yuzde": null,
-   "ozkaynak": 744452531.0,
-   "duz_roe_yuzde": 19.4,
-   "brut_marj": -22.99,
-   "brut_marj_degisim_puan": -29.64,
-   "favok_marj": -85.4,
-   "favok_marj_degisim_puan": -22.92,
-   "guncelleme": "2026-11-12"
+   "ozkaynak": 785951500.0,
+   "duz_roe_yuzde": 25.3,
+   "brut_marj": 24.72,
+   "brut_marj_degisim_puan": 7.38,
+   "favok_marj": -23.94,
+   "favok_marj_degisim_puan": 25.44,
+   "guncelleme": "2026-11-22"
   },
   "AKSEN": {
    "donem": "2026/09",
@@ -2202,7 +2202,7 @@
    "brut_marj_degisim_puan": 6.42,
    "favok_marj": 38.21,
    "favok_marj_degisim_puan": 8.29,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CMENT": {
    "donem": "2026/09",
@@ -2217,7 +2217,7 @@
    "brut_marj_degisim_puan": -1.07,
    "favok_marj": 10.15,
    "favok_marj_degisim_puan": -3.2,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MAKIM": {
    "donem": "2026/09",
@@ -2232,7 +2232,7 @@
    "brut_marj_degisim_puan": 6.57,
    "favok_marj": 14.02,
    "favok_marj_degisim_puan": 5.35,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TRCAS": {
    "hata": "son dönem verisi yok"
@@ -2250,7 +2250,7 @@
    "brut_marj_degisim_puan": 3.98,
    "favok_marj": 12.55,
    "favok_marj_degisim_puan": 2.27,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PSDTC": {
    "donem": "2026/09",
@@ -2265,7 +2265,7 @@
    "brut_marj_degisim_puan": 1.99,
    "favok_marj": -24.05,
    "favok_marj_degisim_puan": -42.41,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OBASE": {
    "donem": "2026/09",
@@ -2280,7 +2280,7 @@
    "brut_marj_degisim_puan": -3.47,
    "favok_marj": 22.75,
    "favok_marj_degisim_puan": -1.95,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SISE": {
    "donem": "2026/09",
@@ -2295,7 +2295,7 @@
    "brut_marj_degisim_puan": -2.03,
    "favok_marj": 8.98,
    "favok_marj_degisim_puan": -1.89,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DNISI": {
    "donem": "2026/09",
@@ -2310,7 +2310,7 @@
    "brut_marj_degisim_puan": 0.93,
    "favok_marj": 16.01,
    "favok_marj_degisim_puan": 0.39,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AYEN": {
    "donem": "2026/09",
@@ -2325,7 +2325,7 @@
    "brut_marj_degisim_puan": 9.25,
    "favok_marj": 41.5,
    "favok_marj_degisim_puan": 15.64,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MERCN": {
    "donem": "2026/09",
@@ -2340,7 +2340,7 @@
    "brut_marj_degisim_puan": -1.51,
    "favok_marj": 13.28,
    "favok_marj_degisim_puan": -9.18,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BULGS": {
    "donem": "2026/09",
@@ -2355,7 +2355,7 @@
    "brut_marj_degisim_puan": 4.99,
    "favok_marj": -899.09,
    "favok_marj_degisim_puan": -1010.68,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SOKM": {
    "donem": "2026/09",
@@ -2370,7 +2370,7 @@
    "brut_marj_degisim_puan": 0.29,
    "favok_marj": 0.94,
    "favok_marj_degisim_puan": -0.11,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MARBL": {
    "donem": "2026/09",
@@ -2385,7 +2385,7 @@
    "brut_marj_degisim_puan": 1.06,
    "favok_marj": 17.11,
    "favok_marj_degisim_puan": 1.14,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BLCYT": {
    "donem": "2026/09",
@@ -2400,7 +2400,7 @@
    "brut_marj_degisim_puan": -15.67,
    "favok_marj": 12.86,
    "favok_marj_degisim_puan": -19.27,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ELITE": {
    "donem": "2026/09",
@@ -2415,7 +2415,7 @@
    "brut_marj_degisim_puan": -5.77,
    "favok_marj": 24.99,
    "favok_marj_degisim_puan": -0.69,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DOAS": {
    "donem": "2026/09",
@@ -2430,7 +2430,7 @@
    "brut_marj_degisim_puan": -1.73,
    "favok_marj": 4.58,
    "favok_marj_degisim_puan": -3.11,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EFOR": {
    "donem": "2026/09",
@@ -2445,7 +2445,7 @@
    "brut_marj_degisim_puan": -1.64,
    "favok_marj": 6.27,
    "favok_marj_degisim_puan": 1.55,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KONYA": {
    "donem": "2026/09",
@@ -2460,7 +2460,7 @@
    "brut_marj_degisim_puan": 1.58,
    "favok_marj": 15.97,
    "favok_marj_degisim_puan": 1.78,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OZSUB": {
    "donem": "2026/09",
@@ -2475,22 +2475,22 @@
    "brut_marj_degisim_puan": 5.4,
    "favok_marj": 23.33,
    "favok_marj_degisim_puan": 3.11,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "USHOL": {
    "donem": "2025/12",
-   "net_kar_ttm": 73314009.0,
-   "ertelenmis_vergi_ttm": 8458205.0,
-   "duz_net_kar_ttm": 64855804.0,
+   "net_kar_ttm": 77397349.0,
+   "ertelenmis_vergi_ttm": 8929298.0,
+   "duz_net_kar_ttm": 68468051.0,
    "duz_net_kar_ttm_once": 114389694.0,
-   "duz_net_kar_buyume_yuzde": -43.3,
-   "ozkaynak": 217292568.0,
+   "duz_net_kar_buyume_yuzde": -40.1,
+   "ozkaynak": 229395024.0,
    "duz_roe_yuzde": 29.8,
    "brut_marj": 42.62,
    "brut_marj_degisim_puan": -24.07,
    "favok_marj": -26.29,
    "favok_marj_degisim_puan": -90.35,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SARKY": {
    "donem": "2026/09",
@@ -2505,7 +2505,7 @@
    "brut_marj_degisim_puan": -0.05,
    "favok_marj": 3.12,
    "favok_marj_degisim_puan": -0.71,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ATEKS": {
    "donem": "2026/09",
@@ -2520,7 +2520,7 @@
    "brut_marj_degisim_puan": -26.25,
    "favok_marj": -57.4,
    "favok_marj_degisim_puan": -41.96,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DEVA": {
    "donem": "2026/09",
@@ -2535,7 +2535,7 @@
    "brut_marj_degisim_puan": 9.35,
    "favok_marj": 20.98,
    "favok_marj_degisim_puan": 8.41,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ISKPL": {
    "donem": "2026/09",
@@ -2550,7 +2550,7 @@
    "brut_marj_degisim_puan": 0.91,
    "favok_marj": 22.53,
    "favok_marj_degisim_puan": 1.61,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ALVES": {
    "donem": "2026/06",
@@ -2565,7 +2565,7 @@
    "brut_marj_degisim_puan": -4.0,
    "favok_marj": 14.87,
    "favok_marj_degisim_puan": -2.58,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DOFER": {
    "donem": "2026/09",
@@ -2580,7 +2580,7 @@
    "brut_marj_degisim_puan": -1.43,
    "favok_marj": 1.33,
    "favok_marj_degisim_puan": -1.11,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BASCM": {
    "donem": "2026/06",
@@ -2595,7 +2595,7 @@
    "brut_marj_degisim_puan": -6.18,
    "favok_marj": 5.3,
    "favok_marj_degisim_puan": -5.64,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KRTEK": {
    "donem": "2026/09",
@@ -2610,7 +2610,7 @@
    "brut_marj_degisim_puan": 1.93,
    "favok_marj": 9.56,
    "favok_marj_degisim_puan": -2.65,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SUNTK": {
    "donem": "2026/09",
@@ -2625,7 +2625,7 @@
    "brut_marj_degisim_puan": -5.08,
    "favok_marj": 8.32,
    "favok_marj_degisim_puan": -6.96,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GMTAS": {
    "donem": "2026/09",
@@ -2640,7 +2640,7 @@
    "brut_marj_degisim_puan": 1.13,
    "favok_marj": 9.14,
    "favok_marj_degisim_puan": 0.6,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YIGIT": {
    "donem": "2026/09",
@@ -2655,7 +2655,7 @@
    "brut_marj_degisim_puan": -0.2,
    "favok_marj": 7.05,
    "favok_marj_degisim_puan": 1.7,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BRKO": {
    "donem": "2026/09",
@@ -2670,7 +2670,7 @@
    "brut_marj_degisim_puan": 8.21,
    "favok_marj": 43.13,
    "favok_marj_degisim_puan": 83.51,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ODINE": {
    "donem": "2026/09",
@@ -2685,7 +2685,7 @@
    "brut_marj_degisim_puan": -5.37,
    "favok_marj": 1.35,
    "favok_marj_degisim_puan": 2.54,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EGEPO": {
    "donem": "2026/09",
@@ -2700,7 +2700,7 @@
    "brut_marj_degisim_puan": -10.92,
    "favok_marj": 7.73,
    "favok_marj_degisim_puan": -8.53,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SELEC": {
    "donem": "2026/09",
@@ -2715,7 +2715,7 @@
    "brut_marj_degisim_puan": 2.53,
    "favok_marj": 4.87,
    "favok_marj_degisim_puan": 3.31,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SOKE": {
    "donem": "2026/09",
@@ -2730,7 +2730,7 @@
    "brut_marj_degisim_puan": -0.33,
    "favok_marj": 3.65,
    "favok_marj_degisim_puan": -0.06,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OFSYM": {
    "donem": "2026/09",
@@ -2745,7 +2745,7 @@
    "brut_marj_degisim_puan": 0.66,
    "favok_marj": 11.96,
    "favok_marj_degisim_puan": -0.27,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KATMR": {
    "donem": "2026/09",
@@ -2760,7 +2760,7 @@
    "brut_marj_degisim_puan": -5.07,
    "favok_marj": 37.78,
    "favok_marj_degisim_puan": -5.93,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SEGMN": {
    "donem": "2026/09",
@@ -2775,7 +2775,7 @@
    "brut_marj_degisim_puan": -0.12,
    "favok_marj": 13.92,
    "favok_marj_degisim_puan": -2.31,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PENTA": {
    "donem": "2026/09",
@@ -2790,7 +2790,7 @@
    "brut_marj_degisim_puan": 0.38,
    "favok_marj": 3.76,
    "favok_marj_degisim_puan": 0.58,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PGSUS": {
    "donem": "2026/09",
@@ -2805,7 +2805,7 @@
    "brut_marj_degisim_puan": -8.81,
    "favok_marj": 18.26,
    "favok_marj_degisim_puan": -2.83,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KSTUR": {
    "donem": "2026/06",
@@ -2820,7 +2820,7 @@
    "brut_marj_degisim_puan": -23.87,
    "favok_marj": -41.32,
    "favok_marj_degisim_puan": -15.52,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BRISA": {
    "donem": "2026/09",
@@ -2835,7 +2835,7 @@
    "brut_marj_degisim_puan": 3.82,
    "favok_marj": 17.05,
    "favok_marj_degisim_puan": 2.99,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SANFM": {
    "donem": "2026/09",
@@ -2850,7 +2850,7 @@
    "brut_marj_degisim_puan": -17.51,
    "favok_marj": 13.75,
    "favok_marj_degisim_puan": -13.03,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SDTTR": {
    "donem": "2026/09",
@@ -2865,7 +2865,7 @@
    "brut_marj_degisim_puan": -14.15,
    "favok_marj": 10.9,
    "favok_marj_degisim_puan": -15.12,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KLRHO": {
    "donem": "2026/09",
@@ -2880,7 +2880,7 @@
    "brut_marj_degisim_puan": 22.13,
    "favok_marj": 38.55,
    "favok_marj_degisim_puan": 24.21,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AYDEM": {
    "donem": "2026/09",
@@ -2895,7 +2895,7 @@
    "brut_marj_degisim_puan": -3.25,
    "favok_marj": 42.69,
    "favok_marj_degisim_puan": 0.56,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BAKAB": {
    "donem": "2026/09",
@@ -2910,7 +2910,7 @@
    "brut_marj_degisim_puan": 3.3,
    "favok_marj": 9.41,
    "favok_marj_degisim_puan": 3.12,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "IHGZT": {
    "donem": "2026/09",
@@ -2925,7 +2925,7 @@
    "brut_marj_degisim_puan": -0.76,
    "favok_marj": -0.83,
    "favok_marj_degisim_puan": -5.58,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "RUBNS": {
    "donem": "2026/09",
@@ -2940,7 +2940,7 @@
    "brut_marj_degisim_puan": 1.82,
    "favok_marj": 20.03,
    "favok_marj_degisim_puan": -6.96,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MOPAS": {
    "donem": "2026/09",
@@ -2955,7 +2955,7 @@
    "brut_marj_degisim_puan": 2.34,
    "favok_marj": 6.16,
    "favok_marj_degisim_puan": 2.12,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BIGCH": {
    "donem": "2026/09",
@@ -2970,7 +2970,7 @@
    "brut_marj_degisim_puan": -0.28,
    "favok_marj": 22.41,
    "favok_marj_degisim_puan": 2.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TLMAN": {
    "donem": "2026/09",
@@ -2985,7 +2985,7 @@
    "brut_marj_degisim_puan": -19.11,
    "favok_marj": 17.78,
    "favok_marj_degisim_puan": -10.17,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EMNIS": {
    "donem": "2026/09",
@@ -3000,7 +3000,7 @@
    "brut_marj_degisim_puan": 6.97,
    "favok_marj": 9.11,
    "favok_marj_degisim_puan": 7.45,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EUREN": {
    "donem": "2026/09",
@@ -3015,7 +3015,7 @@
    "brut_marj_degisim_puan": -6.5,
    "favok_marj": 10.78,
    "favok_marj_degisim_puan": -13.63,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TEZOL": {
    "donem": "2026/09",
@@ -3030,7 +3030,7 @@
    "brut_marj_degisim_puan": -5.41,
    "favok_marj": 6.07,
    "favok_marj_degisim_puan": -5.92,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ALCTL": {
    "donem": "2026/09",
@@ -3045,7 +3045,7 @@
    "brut_marj_degisim_puan": -6.3,
    "favok_marj": -0.86,
    "favok_marj_degisim_puan": -2.79,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GSRAY": {
    "donem": "2025/12",
@@ -3060,7 +3060,7 @@
    "brut_marj_degisim_puan": 17.83,
    "favok_marj": 4.39,
    "favok_marj_degisim_puan": 18.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DERIM": {
    "donem": "2026/09",
@@ -3075,7 +3075,7 @@
    "brut_marj_degisim_puan": 0.46,
    "favok_marj": 3.88,
    "favok_marj_degisim_puan": 0.02,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SUMAS": {
    "donem": "2026/06",
@@ -3090,7 +3090,7 @@
    "brut_marj_degisim_puan": -0.93,
    "favok_marj": 10.63,
    "favok_marj_degisim_puan": 2.84,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ALTNY": {
    "donem": "2026/09",
@@ -3105,7 +3105,7 @@
    "brut_marj_degisim_puan": -2.99,
    "favok_marj": 34.59,
    "favok_marj_degisim_puan": 2.92,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SNICA": {
    "donem": "2026/09",
@@ -3120,7 +3120,7 @@
    "brut_marj_degisim_puan": 17.56,
    "favok_marj": 24.57,
    "favok_marj_degisim_puan": 18.68,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MTRYO": {
    "donem": "2026/09",
@@ -3135,7 +3135,7 @@
    "brut_marj_degisim_puan": -2.53,
    "favok_marj": 0.02,
    "favok_marj_degisim_puan": -3.88,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DAGI": {
    "donem": "2026/09",
@@ -3150,7 +3150,7 @@
    "brut_marj_degisim_puan": 3.31,
    "favok_marj": 21.76,
    "favok_marj_degisim_puan": 5.71,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ARSAN": {
    "donem": "2026/09",
@@ -3165,7 +3165,7 @@
    "brut_marj_degisim_puan": 38.34,
    "favok_marj": 89.38,
    "favok_marj_degisim_puan": -466.82,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BOSSA": {
    "donem": "2026/09",
@@ -3180,7 +3180,7 @@
    "brut_marj_degisim_puan": -9.1,
    "favok_marj": 9.57,
    "favok_marj_degisim_puan": -13.34,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KMPUR": {
    "donem": "2026/09",
@@ -3195,7 +3195,7 @@
    "brut_marj_degisim_puan": 1.54,
    "favok_marj": 14.36,
    "favok_marj_degisim_puan": -0.06,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SEYKM": {
    "donem": "2026/09",
@@ -3210,7 +3210,7 @@
    "brut_marj_degisim_puan": 3.17,
    "favok_marj": 1.73,
    "favok_marj_degisim_puan": 5.73,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SUWEN": {
    "donem": "2026/09",
@@ -3225,7 +3225,7 @@
    "brut_marj_degisim_puan": -0.87,
    "favok_marj": 17.26,
    "favok_marj_degisim_puan": -1.32,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YKSLN": {
    "donem": "2026/09",
@@ -3240,7 +3240,7 @@
    "brut_marj_degisim_puan": 10.12,
    "favok_marj": 19.14,
    "favok_marj_degisim_puan": 14.57,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BERA": {
    "donem": "2026/09",
@@ -3255,7 +3255,7 @@
    "brut_marj_degisim_puan": -0.11,
    "favok_marj": 12.07,
    "favok_marj_degisim_puan": 1.45,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ALFAS": {
    "donem": "2026/09",
@@ -3270,7 +3270,7 @@
    "brut_marj_degisim_puan": -2.07,
    "favok_marj": 3.36,
    "favok_marj_degisim_puan": -5.21,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YBTAS": {
    "donem": "2026/06",
@@ -3285,7 +3285,7 @@
    "brut_marj_degisim_puan": 0.45,
    "favok_marj": 16.98,
    "favok_marj_degisim_puan": 1.33,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TUKAS": {
    "donem": "2026/09",
@@ -3300,7 +3300,7 @@
    "brut_marj_degisim_puan": -9.12,
    "favok_marj": 23.52,
    "favok_marj_degisim_puan": -7.6,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ODAS": {
    "donem": "2026/09",
@@ -3315,7 +3315,7 @@
    "brut_marj_degisim_puan": -8.98,
    "favok_marj": 8.83,
    "favok_marj_degisim_puan": -35.33,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KRVGD": {
    "donem": "2026/09",
@@ -3330,7 +3330,7 @@
    "brut_marj_degisim_puan": 1.09,
    "favok_marj": 15.41,
    "favok_marj_degisim_puan": 2.87,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CGCAM": {
    "donem": "2026/09",
@@ -3345,7 +3345,7 @@
    "brut_marj_degisim_puan": -18.11,
    "favok_marj": 7.34,
    "favok_marj_degisim_puan": -12.88,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ERBOS": {
    "donem": "2026/09",
@@ -3360,7 +3360,7 @@
    "brut_marj_degisim_puan": -1.29,
    "favok_marj": 14.18,
    "favok_marj_degisim_puan": 1.5,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BORSK": {
    "donem": "2026/06",
@@ -3375,7 +3375,7 @@
    "brut_marj_degisim_puan": 3.13,
    "favok_marj": 8.65,
    "favok_marj_degisim_puan": 1.78,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SONME": {
    "donem": "2026/09",
@@ -3390,7 +3390,7 @@
    "brut_marj_degisim_puan": 0.0,
    "favok_marj": 21.06,
    "favok_marj_degisim_puan": -60.96,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "JANTS": {
    "donem": "2026/09",
@@ -3405,7 +3405,7 @@
    "brut_marj_degisim_puan": -0.65,
    "favok_marj": 8.35,
    "favok_marj_degisim_puan": -2.08,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ISBIR": {
    "donem": "2026/06",
@@ -3420,7 +3420,7 @@
    "brut_marj_degisim_puan": 4.29,
    "favok_marj": 15.21,
    "favok_marj_degisim_puan": 0.97,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ULUSE": {
    "donem": "2026/09",
@@ -3435,7 +3435,7 @@
    "brut_marj_degisim_puan": -2.49,
    "favok_marj": 3.67,
    "favok_marj_degisim_puan": -2.9,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DYOBY": {
    "donem": "2026/09",
@@ -3450,7 +3450,7 @@
    "brut_marj_degisim_puan": -0.49,
    "favok_marj": 10.08,
    "favok_marj_degisim_puan": 0.86,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BYDNR": {
    "donem": "2026/09",
@@ -3465,7 +3465,7 @@
    "brut_marj_degisim_puan": -0.05,
    "favok_marj": 14.46,
    "favok_marj_degisim_puan": 0.76,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BIGTK": {
    "donem": "2026/09",
@@ -3480,7 +3480,7 @@
    "brut_marj_degisim_puan": 17.27,
    "favok_marj": 31.31,
    "favok_marj_degisim_puan": 50.3,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AKFIS": {
    "donem": "2026/09",
@@ -3495,7 +3495,7 @@
    "brut_marj_degisim_puan": 6.1,
    "favok_marj": 120.17,
    "favok_marj_degisim_puan": -106.43,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KENT": {
    "donem": "2026/09",
@@ -3510,7 +3510,7 @@
    "brut_marj_degisim_puan": 1.68,
    "favok_marj": 6.58,
    "favok_marj_degisim_puan": 2.28,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OZYSR": {
    "donem": "2026/09",
@@ -3525,7 +3525,7 @@
    "brut_marj_degisim_puan": -0.04,
    "favok_marj": 6.73,
    "favok_marj_degisim_puan": -2.02,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ECILC": {
    "donem": "2026/09",
@@ -3540,7 +3540,7 @@
    "brut_marj_degisim_puan": 8.88,
    "favok_marj": 8.65,
    "favok_marj_degisim_puan": -6.29,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ATSYH": {
    "donem": "2026/06",
@@ -3555,7 +3555,7 @@
    "brut_marj_degisim_puan": -14.71,
    "favok_marj": 16.6,
    "favok_marj_degisim_puan": 2.01,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TTRAK": {
    "donem": "2026/09",
@@ -3570,7 +3570,7 @@
    "brut_marj_degisim_puan": -5.3,
    "favok_marj": 4.87,
    "favok_marj_degisim_puan": -4.81,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KORDS": {
    "donem": "2026/09",
@@ -3585,7 +3585,7 @@
    "brut_marj_degisim_puan": 3.92,
    "favok_marj": 12.75,
    "favok_marj_degisim_puan": 5.26,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KOTON": {
    "donem": "2026/09",
@@ -3600,7 +3600,7 @@
    "brut_marj_degisim_puan": -0.34,
    "favok_marj": 13.45,
    "favok_marj_degisim_puan": -4.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HOROZ": {
    "donem": "2026/09",
@@ -3615,7 +3615,7 @@
    "brut_marj_degisim_puan": -1.5,
    "favok_marj": 13.66,
    "favok_marj_degisim_puan": -1.44,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "RODRG": {
    "donem": "2026/09",
@@ -3630,7 +3630,7 @@
    "brut_marj_degisim_puan": 11.08,
    "favok_marj": -2.05,
    "favok_marj_degisim_puan": -3.39,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HRKET": {
    "donem": "2026/09",
@@ -3645,7 +3645,7 @@
    "brut_marj_degisim_puan": 2.78,
    "favok_marj": 27.1,
    "favok_marj_degisim_puan": 4.01,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BIENY": {
    "donem": "2026/09",
@@ -3660,7 +3660,7 @@
    "brut_marj_degisim_puan": 1.79,
    "favok_marj": 16.55,
    "favok_marj_degisim_puan": 1.96,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ATAKP": {
    "donem": "2026/09",
@@ -3675,7 +3675,7 @@
    "brut_marj_degisim_puan": -1.91,
    "favok_marj": 6.6,
    "favok_marj_degisim_puan": -3.99,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PAHOL": {
    "donem": "2026/09",
@@ -3690,7 +3690,7 @@
    "brut_marj_degisim_puan": 0.0,
    "favok_marj": -88.67,
    "favok_marj_degisim_puan": -185.98,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YAPRK": {
    "donem": "2026/09",
@@ -3705,7 +3705,7 @@
    "brut_marj_degisim_puan": 20.96,
    "favok_marj": 69.49,
    "favok_marj_degisim_puan": 14.63,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "NETAS": {
    "donem": "2026/09",
@@ -3720,7 +3720,7 @@
    "brut_marj_degisim_puan": 2.26,
    "favok_marj": 5.5,
    "favok_marj_degisim_puan": 3.49,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OYLUM": {
    "donem": "2026/09",
@@ -3735,22 +3735,22 @@
    "brut_marj_degisim_puan": 0.65,
    "favok_marj": 9.7,
    "favok_marj_degisim_puan": 3.15,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HUBVC": {
-   "donem": "2026/06",
-   "net_kar_ttm": -301762055.0,
+   "donem": "2026/09",
+   "net_kar_ttm": -297798851.0,
    "ertelenmis_vergi_ttm": 0.0,
-   "duz_net_kar_ttm": -301762055.0,
-   "duz_net_kar_ttm_once": -137006534.0,
+   "duz_net_kar_ttm": -297798851.0,
+   "duz_net_kar_ttm_once": -207356024.0,
    "duz_net_kar_buyume_yuzde": null,
-   "ozkaynak": 603475767.0,
-   "duz_roe_yuzde": -50.0,
+   "ozkaynak": 646149253.0,
+   "duz_roe_yuzde": -46.1,
    "brut_marj": 100.0,
    "brut_marj_degisim_puan": 0.0,
-   "favok_marj": -88.07,
-   "favok_marj_degisim_puan": 513.98,
-   "guncelleme": "2026-11-12"
+   "favok_marj": 28.76,
+   "favok_marj_degisim_puan": -8589.9,
+   "guncelleme": "2026-11-22"
   },
   "ENTRA": {
    "donem": "2026/09",
@@ -3765,7 +3765,7 @@
    "brut_marj_degisim_puan": -0.52,
    "favok_marj": 72.37,
    "favok_marj_degisim_puan": -7.16,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SEKUR": {
    "donem": "2026/09",
@@ -3780,7 +3780,7 @@
    "brut_marj_degisim_puan": -14.07,
    "favok_marj": -5.7,
    "favok_marj_degisim_puan": -13.5,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GEREL": {
    "donem": "2026/09",
@@ -3795,7 +3795,7 @@
    "brut_marj_degisim_puan": 44.87,
    "favok_marj": 27.11,
    "favok_marj_degisim_puan": 35.31,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "RNPOL": {
    "donem": "2026/09",
@@ -3810,7 +3810,7 @@
    "brut_marj_degisim_puan": -0.94,
    "favok_marj": 18.13,
    "favok_marj_degisim_puan": 4.38,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MAALT": {
    "donem": "2026/09",
@@ -3825,7 +3825,7 @@
    "brut_marj_degisim_puan": -1.44,
    "favok_marj": -3.45,
    "favok_marj_degisim_puan": -33.87,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KNFRT": {
    "donem": "2026/09",
@@ -3840,7 +3840,7 @@
    "brut_marj_degisim_puan": 2.51,
    "favok_marj": 1.96,
    "favok_marj_degisim_puan": 2.2,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BMSTL": {
    "donem": "2026/09",
@@ -3855,7 +3855,7 @@
    "brut_marj_degisim_puan": 5.25,
    "favok_marj": 6.9,
    "favok_marj_degisim_puan": -1.31,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "RUZYE": {
    "donem": "2026/09",
@@ -3870,7 +3870,7 @@
    "brut_marj_degisim_puan": -45.75,
    "favok_marj": -34.6,
    "favok_marj_degisim_puan": -51.59,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CASA": {
    "donem": "2025/12",
@@ -3885,7 +3885,7 @@
    "brut_marj_degisim_puan": null,
    "favok_marj": -10.05,
    "favok_marj_degisim_puan": null,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CEMTS": {
    "donem": "2026/09",
@@ -3900,7 +3900,7 @@
    "brut_marj_degisim_puan": -1.14,
    "favok_marj": 15.77,
    "favok_marj_degisim_puan": -2.55,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ARTMS": {
    "donem": "2026/09",
@@ -3915,7 +3915,7 @@
    "brut_marj_degisim_puan": -1.74,
    "favok_marj": 24.41,
    "favok_marj_degisim_puan": 13.15,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "INGRM": {
    "donem": "2026/09",
@@ -3930,7 +3930,7 @@
    "brut_marj_degisim_puan": -0.55,
    "favok_marj": 2.28,
    "favok_marj_degisim_puan": 0.46,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "IZENR": {
    "donem": "2026/09",
@@ -3945,7 +3945,7 @@
    "brut_marj_degisim_puan": -32.17,
    "favok_marj": -0.89,
    "favok_marj_degisim_puan": -23.45,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "LUKSK": {
    "donem": "2026/09",
@@ -3960,7 +3960,7 @@
    "brut_marj_degisim_puan": 5.73,
    "favok_marj": 10.18,
    "favok_marj_degisim_puan": -2.7,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SANKO": {
    "donem": "2026/09",
@@ -3975,7 +3975,7 @@
    "brut_marj_degisim_puan": -0.44,
    "favok_marj": -0.0,
    "favok_marj_degisim_puan": -1.72,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "A1CAP": {
    "donem": "2026/09",
@@ -3990,7 +3990,7 @@
    "brut_marj_degisim_puan": -19.11,
    "favok_marj": 1.55,
    "favok_marj_degisim_puan": -20.06,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "RTALB": {
    "donem": "2026/09",
@@ -4005,7 +4005,7 @@
    "brut_marj_degisim_puan": -11.44,
    "favok_marj": 2.74,
    "favok_marj_degisim_puan": 3.91,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TKFEN": {
    "donem": "2026/09",
@@ -4020,7 +4020,7 @@
    "brut_marj_degisim_puan": 6.22,
    "favok_marj": 3.22,
    "favok_marj_degisim_puan": 6.42,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CEMZY": {
    "donem": "2026/09",
@@ -4035,7 +4035,7 @@
    "brut_marj_degisim_puan": -1.72,
    "favok_marj": 20.88,
    "favok_marj_degisim_puan": -2.85,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PASEU": {
    "donem": "2026/09",
@@ -4050,7 +4050,7 @@
    "brut_marj_degisim_puan": 2.11,
    "favok_marj": 21.75,
    "favok_marj_degisim_puan": 4.04,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DOKTA": {
    "donem": "2026/09",
@@ -4065,7 +4065,7 @@
    "brut_marj_degisim_puan": 1.09,
    "favok_marj": 7.49,
    "favok_marj_degisim_puan": 0.38,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GATEG": {
    "donem": "2026/09",
@@ -4080,7 +4080,7 @@
    "brut_marj_degisim_puan": -87.32,
    "favok_marj": 14.42,
    "favok_marj_degisim_puan": -75.06,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DURDO": {
    "donem": "2026/09",
@@ -4095,7 +4095,7 @@
    "brut_marj_degisim_puan": 4.83,
    "favok_marj": 14.47,
    "favok_marj_degisim_puan": 6.18,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EPLAS": {
    "donem": "2026/09",
@@ -4110,7 +4110,7 @@
    "brut_marj_degisim_puan": 7.99,
    "favok_marj": 8.34,
    "favok_marj_degisim_puan": 4.61,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PNSUT": {
    "donem": "2026/09",
@@ -4125,7 +4125,7 @@
    "brut_marj_degisim_puan": 2.04,
    "favok_marj": 7.07,
    "favok_marj_degisim_puan": 2.09,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ETILR": {
    "donem": "2026/09",
@@ -4140,7 +4140,7 @@
    "brut_marj_degisim_puan": -3.54,
    "favok_marj": 3.59,
    "favok_marj_degisim_puan": -4.76,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DERHL": {
    "donem": "2026/09",
@@ -4155,7 +4155,7 @@
    "brut_marj_degisim_puan": 1.01,
    "favok_marj": 20.3,
    "favok_marj_degisim_puan": -2.74,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BEYAZ": {
    "donem": "2026/09",
@@ -4170,7 +4170,7 @@
    "brut_marj_degisim_puan": -0.72,
    "favok_marj": -0.07,
    "favok_marj_degisim_puan": -1.25,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CONSE": {
    "donem": "2026/09",
@@ -4185,7 +4185,7 @@
    "brut_marj_degisim_puan": -10.05,
    "favok_marj": 8.28,
    "favok_marj_degisim_puan": -17.06,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FLAP": {
    "donem": "2026/09",
@@ -4200,7 +4200,7 @@
    "brut_marj_degisim_puan": -1.93,
    "favok_marj": -18.24,
    "favok_marj_degisim_puan": -2.08,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OBAMS": {
    "donem": "2026/09",
@@ -4215,7 +4215,7 @@
    "brut_marj_degisim_puan": 0.75,
    "favok_marj": 6.38,
    "favok_marj_degisim_puan": -1.67,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BVSAN": {
    "donem": "2026/09",
@@ -4230,7 +4230,7 @@
    "brut_marj_degisim_puan": 0.33,
    "favok_marj": 10.95,
    "favok_marj_degisim_puan": -13.61,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BLUME": {
    "donem": "2026/09",
@@ -4245,7 +4245,7 @@
    "brut_marj_degisim_puan": -2.33,
    "favok_marj": 15.46,
    "favok_marj_degisim_puan": -15.16,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GOODY": {
    "donem": "2026/09",
@@ -4260,7 +4260,7 @@
    "brut_marj_degisim_puan": -1.78,
    "favok_marj": -0.26,
    "favok_marj_degisim_puan": 0.29,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KONKA": {
    "donem": "2026/09",
@@ -4275,7 +4275,7 @@
    "brut_marj_degisim_puan": -0.39,
    "favok_marj": 9.74,
    "favok_marj_degisim_puan": -1.09,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KOPOL": {
    "donem": "2026/09",
@@ -4290,7 +4290,7 @@
    "brut_marj_degisim_puan": -4.18,
    "favok_marj": 12.86,
    "favok_marj_degisim_puan": -4.76,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MRSHL": {
    "donem": "2026/09",
@@ -4305,7 +4305,7 @@
    "brut_marj_degisim_puan": 2.53,
    "favok_marj": 16.53,
    "favok_marj_degisim_puan": 7.76,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SNPAM": {
    "donem": "2026/09",
@@ -4320,7 +4320,7 @@
    "brut_marj_degisim_puan": -12.26,
    "favok_marj": 25.99,
    "favok_marj_degisim_puan": 0.76,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ORMA": {
    "donem": "2026/06",
@@ -4335,7 +4335,7 @@
    "brut_marj_degisim_puan": 5.26,
    "favok_marj": 12.69,
    "favok_marj_degisim_puan": 3.2,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PRDGS": {
    "donem": "2026/09",
@@ -4350,7 +4350,7 @@
    "brut_marj_degisim_puan": 0.0,
    "favok_marj": 107.86,
    "favok_marj_degisim_puan": -29.81,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SMART": {
    "donem": "2026/09",
@@ -4365,7 +4365,7 @@
    "brut_marj_degisim_puan": 7.75,
    "favok_marj": 80.41,
    "favok_marj_degisim_puan": 12.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EMKEL": {
    "donem": "2026/06",
@@ -4380,7 +4380,7 @@
    "brut_marj_degisim_puan": 9.98,
    "favok_marj": 22.27,
    "favok_marj_degisim_puan": -1.65,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KLSYN": {
    "donem": "2026/09",
@@ -4395,7 +4395,7 @@
    "brut_marj_degisim_puan": -0.01,
    "favok_marj": 5.68,
    "favok_marj_degisim_puan": -4.54,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BUCIM": {
    "donem": "2026/09",
@@ -4410,7 +4410,7 @@
    "brut_marj_degisim_puan": 4.29,
    "favok_marj": 13.92,
    "favok_marj_degisim_puan": 3.66,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "UNLU": {
    "hata": "son dönem verisi yok"
@@ -4428,7 +4428,7 @@
    "brut_marj_degisim_puan": -65.42,
    "favok_marj": -12.16,
    "favok_marj_degisim_puan": -4.97,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SILVR": {
    "donem": "2026/09",
@@ -4443,7 +4443,7 @@
    "brut_marj_degisim_puan": 6.44,
    "favok_marj": 6.78,
    "favok_marj_degisim_puan": 6.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BTCIM": {
    "donem": "2026/06",
@@ -4458,7 +4458,7 @@
    "brut_marj_degisim_puan": 5.63,
    "favok_marj": 10.64,
    "favok_marj_degisim_puan": 2.72,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "POLTK": {
    "donem": "2026/09",
@@ -4473,7 +4473,7 @@
    "brut_marj_degisim_puan": -4.41,
    "favok_marj": 5.77,
    "favok_marj_degisim_puan": -1.33,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FRIGO": {
    "donem": "2026/09",
@@ -4488,7 +4488,7 @@
    "brut_marj_degisim_puan": 25.73,
    "favok_marj": -1.71,
    "favok_marj_degisim_puan": 17.34,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MOGAN": {
    "donem": "2026/09",
@@ -4503,7 +4503,7 @@
    "brut_marj_degisim_puan": -20.41,
    "favok_marj": 53.33,
    "favok_marj_degisim_puan": 4.52,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ECZYT": {
    "hata": "son dönem verisi yok"
@@ -4521,7 +4521,7 @@
    "brut_marj_degisim_puan": -5.14,
    "favok_marj": -3.22,
    "favok_marj_degisim_puan": -10.59,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BSOKE": {
    "donem": "2026/09",
@@ -4536,7 +4536,7 @@
    "brut_marj_degisim_puan": 9.16,
    "favok_marj": 9.09,
    "favok_marj_degisim_puan": 5.26,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MIATK": {
    "donem": "2026/09",
@@ -4551,7 +4551,7 @@
    "brut_marj_degisim_puan": 20.84,
    "favok_marj": 98.83,
    "favok_marj_degisim_puan": 57.91,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CANTE": {
    "donem": "2026/09",
@@ -4566,7 +4566,7 @@
    "brut_marj_degisim_puan": -9.99,
    "favok_marj": -0.52,
    "favok_marj_degisim_puan": -25.96,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TATEN": {
    "donem": "2026/09",
@@ -4581,7 +4581,7 @@
    "brut_marj_degisim_puan": -10.35,
    "favok_marj": 60.21,
    "favok_marj_degisim_puan": 1.4,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TRILC": {
    "donem": "2026/09",
@@ -4596,7 +4596,7 @@
    "brut_marj_degisim_puan": 2.51,
    "favok_marj": 14.63,
    "favok_marj_degisim_puan": -8.07,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PRKAB": {
    "donem": "2026/09",
@@ -4611,7 +4611,7 @@
    "brut_marj_degisim_puan": -0.84,
    "favok_marj": 0.64,
    "favok_marj_degisim_puan": -0.24,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ALKIM": {
    "donem": "2026/09",
@@ -4626,7 +4626,7 @@
    "brut_marj_degisim_puan": -1.58,
    "favok_marj": 7.03,
    "favok_marj_degisim_puan": -1.6,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EGEEN": {
    "donem": "2026/09",
@@ -4641,7 +4641,7 @@
    "brut_marj_degisim_puan": 4.49,
    "favok_marj": 17.21,
    "favok_marj_degisim_puan": -1.8,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PENGD": {
    "donem": "2026/09",
@@ -4656,7 +4656,7 @@
    "brut_marj_degisim_puan": -3.14,
    "favok_marj": 5.86,
    "favok_marj_degisim_puan": 0.97,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OYAYO": {
    "donem": "2026/09",
@@ -4671,7 +4671,7 @@
    "brut_marj_degisim_puan": 0.79,
    "favok_marj": 6.57,
    "favok_marj_degisim_puan": -0.41,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "NETCD": {
    "donem": "2026/09",
@@ -4686,7 +4686,7 @@
    "brut_marj_degisim_puan": 1.05,
    "favok_marj": 76.68,
    "favok_marj_degisim_puan": -9.11,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KOCMT": {
    "donem": "2026/09",
@@ -4701,7 +4701,7 @@
    "brut_marj_degisim_puan": 2.03,
    "favok_marj": 5.0,
    "favok_marj_degisim_puan": 5.02,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TKNSA": {
    "donem": "2026/09",
@@ -4716,7 +4716,7 @@
    "brut_marj_degisim_puan": -1.78,
    "favok_marj": -0.28,
    "favok_marj_degisim_puan": -0.34,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OSTIM": {
    "donem": "2026/09",
@@ -4731,7 +4731,7 @@
    "brut_marj_degisim_puan": 5.4,
    "favok_marj": 4.06,
    "favok_marj_degisim_puan": 7.02,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "INTEK": {
    "donem": "2026/06",
@@ -4746,7 +4746,7 @@
    "brut_marj_degisim_puan": -0.34,
    "favok_marj": 30.69,
    "favok_marj_degisim_puan": -18.06,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ARFYE": {
    "donem": "2026/09",
@@ -4761,7 +4761,7 @@
    "brut_marj_degisim_puan": 6.64,
    "favok_marj": -12.05,
    "favok_marj_degisim_puan": 1.46,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KLMSN": {
    "donem": "2026/09",
@@ -4776,7 +4776,7 @@
    "brut_marj_degisim_puan": 2.34,
    "favok_marj": 9.17,
    "favok_marj_degisim_puan": 2.65,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TMPOL": {
    "donem": "2026/09",
@@ -4791,7 +4791,7 @@
    "brut_marj_degisim_puan": -4.77,
    "favok_marj": 11.32,
    "favok_marj_degisim_puan": 2.94,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AYCES": {
    "donem": "2026/09",
@@ -4806,7 +4806,7 @@
    "brut_marj_degisim_puan": -13.02,
    "favok_marj": 3.91,
    "favok_marj_degisim_puan": -12.61,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "INVES": {
    "donem": "2026/09",
@@ -4821,7 +4821,7 @@
    "brut_marj_degisim_puan": 1101.93,
    "favok_marj": 96.47,
    "favok_marj_degisim_puan": 1132.63,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SASA": {
    "donem": "2026/09",
@@ -4836,7 +4836,7 @@
    "brut_marj_degisim_puan": 4.09,
    "favok_marj": 19.53,
    "favok_marj_degisim_puan": 5.5,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BOBET": {
    "donem": "2026/09",
@@ -4851,7 +4851,7 @@
    "brut_marj_degisim_puan": -4.59,
    "favok_marj": 7.51,
    "favok_marj_degisim_puan": -7.03,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BAHKM": {
    "donem": "2026/09",
@@ -4866,7 +4866,7 @@
    "brut_marj_degisim_puan": 6.5,
    "favok_marj": 18.33,
    "favok_marj_degisim_puan": 2.35,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TSPOR": {
    "donem": "2025/12",
@@ -4881,7 +4881,7 @@
    "brut_marj_degisim_puan": 12.21,
    "favok_marj": -65.92,
    "favok_marj_degisim_puan": 88.32,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HUNER": {
    "donem": "2026/09",
@@ -4896,7 +4896,7 @@
    "brut_marj_degisim_puan": 4.76,
    "favok_marj": 62.24,
    "favok_marj_degisim_puan": -3.24,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MAKTK": {
    "donem": "2026/09",
@@ -4911,7 +4911,7 @@
    "brut_marj_degisim_puan": -13.31,
    "favok_marj": 14.01,
    "favok_marj_degisim_puan": -15.54,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SKTAS": {
    "donem": "2026/09",
@@ -4926,7 +4926,7 @@
    "brut_marj_degisim_puan": 1.86,
    "favok_marj": 8.51,
    "favok_marj_degisim_puan": 0.41,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KCHOL": {
    "donem": "2026/09",
@@ -4941,7 +4941,7 @@
    "brut_marj_degisim_puan": 1.21,
    "favok_marj": 12.59,
    "favok_marj_degisim_puan": 3.04,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PRKME": {
    "donem": "2026/09",
@@ -4956,7 +4956,7 @@
    "brut_marj_degisim_puan": -57.81,
    "favok_marj": 16.69,
    "favok_marj_degisim_puan": -48.38,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DESPC": {
    "donem": "2026/09",
@@ -4971,7 +4971,7 @@
    "brut_marj_degisim_puan": 3.85,
    "favok_marj": 8.27,
    "favok_marj_degisim_puan": -0.28,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EGSER": {
    "donem": "2026/09",
@@ -4986,7 +4986,7 @@
    "brut_marj_degisim_puan": 14.9,
    "favok_marj": 8.42,
    "favok_marj_degisim_puan": 18.28,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AKYHO": {
    "donem": "2026/09",
@@ -5001,7 +5001,7 @@
    "brut_marj_degisim_puan": -4.14,
    "favok_marj": 19.7,
    "favok_marj_degisim_puan": 7.37,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "QUAGR": {
    "donem": "2026/09",
@@ -5016,7 +5016,7 @@
    "brut_marj_degisim_puan": -5.1,
    "favok_marj": 19.06,
    "favok_marj_degisim_puan": -3.66,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "POLHO": {
    "donem": "2026/09",
@@ -5031,7 +5031,7 @@
    "brut_marj_degisim_puan": -11.52,
    "favok_marj": 23.02,
    "favok_marj_degisim_puan": 6.72,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DOFRB": {
    "donem": "2026/09",
@@ -5046,7 +5046,7 @@
    "brut_marj_degisim_puan": 1.55,
    "favok_marj": 18.72,
    "favok_marj_degisim_puan": -7.52,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SMRTG": {
    "donem": "2026/09",
@@ -5061,7 +5061,7 @@
    "brut_marj_degisim_puan": 1.65,
    "favok_marj": 20.02,
    "favok_marj_degisim_puan": 6.03,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GIPTA": {
    "donem": "2026/09",
@@ -5076,7 +5076,7 @@
    "brut_marj_degisim_puan": -4.46,
    "favok_marj": 9.26,
    "favok_marj_degisim_puan": -12.0,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HATEK": {
    "donem": "2026/09",
@@ -5091,7 +5091,7 @@
    "brut_marj_degisim_puan": 19.05,
    "favok_marj": -8.24,
    "favok_marj_degisim_puan": 10.42,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MEKAG": {
    "donem": "2026/09",
@@ -5106,7 +5106,7 @@
    "brut_marj_degisim_puan": 2.26,
    "favok_marj": 2.35,
    "favok_marj_degisim_puan": 2.55,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ESEN": {
    "donem": "2026/09",
@@ -5121,7 +5121,7 @@
    "brut_marj_degisim_puan": -8.26,
    "favok_marj": 47.4,
    "favok_marj_degisim_puan": 5.3,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "VSNMD": {
    "donem": "2026/09",
@@ -5136,7 +5136,7 @@
    "brut_marj_degisim_puan": -7.4,
    "favok_marj": 5.88,
    "favok_marj_degisim_puan": -15.77,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KTSKR": {
    "donem": "2026/09",
@@ -5151,7 +5151,7 @@
    "brut_marj_degisim_puan": 3.64,
    "favok_marj": -5.09,
    "favok_marj_degisim_puan": 4.24,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ISSEN": {
    "donem": "2026/09",
@@ -5166,7 +5166,7 @@
    "brut_marj_degisim_puan": -4.59,
    "favok_marj": 19.22,
    "favok_marj_degisim_puan": -0.82,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OZRDN": {
    "donem": "2026/09",
@@ -5181,7 +5181,7 @@
    "brut_marj_degisim_puan": 19.39,
    "favok_marj": 21.15,
    "favok_marj_degisim_puan": 19.91,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ARCLK": {
    "donem": "2026/09",
@@ -5196,7 +5196,7 @@
    "brut_marj_degisim_puan": 0.67,
    "favok_marj": 5.26,
    "favok_marj_degisim_puan": -1.3,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AKSUE": {
    "donem": "2026/09",
@@ -5211,7 +5211,7 @@
    "brut_marj_degisim_puan": -43.08,
    "favok_marj": 14.18,
    "favok_marj_degisim_puan": -17.79,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EKSUN": {
    "donem": "2026/09",
@@ -5226,7 +5226,7 @@
    "brut_marj_degisim_puan": 2.13,
    "favok_marj": 4.66,
    "favok_marj_degisim_puan": 2.15,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ALKLC": {
    "donem": "2026/09",
@@ -5241,7 +5241,7 @@
    "brut_marj_degisim_puan": -8.62,
    "favok_marj": 13.98,
    "favok_marj_degisim_puan": -9.11,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "LYDHO": {
    "donem": "2026/09",
@@ -5256,7 +5256,7 @@
    "brut_marj_degisim_puan": -159.81,
    "favok_marj": -239.49,
    "favok_marj_degisim_puan": -39.89,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ORCAY": {
    "donem": "2026/09",
@@ -5271,7 +5271,7 @@
    "brut_marj_degisim_puan": -9.64,
    "favok_marj": 15.68,
    "favok_marj_degisim_puan": -7.87,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "VKFYO": {
    "hata": "son dönem verisi yok"
@@ -5289,7 +5289,7 @@
    "brut_marj_degisim_puan": -6.02,
    "favok_marj": 8.38,
    "favok_marj_degisim_puan": -11.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ALKA": {
    "donem": "2026/09",
@@ -5304,7 +5304,7 @@
    "brut_marj_degisim_puan": -0.29,
    "favok_marj": -0.39,
    "favok_marj_degisim_puan": -5.42,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PETKM": {
    "donem": "2026/09",
@@ -5319,7 +5319,7 @@
    "brut_marj_degisim_puan": 5.68,
    "favok_marj": -0.05,
    "favok_marj_degisim_puan": 6.56,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FRMPL": {
    "donem": "2026/09",
@@ -5334,7 +5334,7 @@
    "brut_marj_degisim_puan": 0.83,
    "favok_marj": 19.6,
    "favok_marj_degisim_puan": -4.93,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ANGEN": {
    "donem": "2026/09",
@@ -5349,7 +5349,7 @@
    "brut_marj_degisim_puan": -6.72,
    "favok_marj": 15.85,
    "favok_marj_degisim_puan": -7.52,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "NIBAS": {
    "donem": "2026/09",
@@ -5364,7 +5364,7 @@
    "brut_marj_degisim_puan": -6.13,
    "favok_marj": -246.12,
    "favok_marj_degisim_puan": -247.53,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HKTM": {
    "donem": "2026/09",
@@ -5379,7 +5379,7 @@
    "brut_marj_degisim_puan": -14.96,
    "favok_marj": 9.74,
    "favok_marj_degisim_puan": -14.54,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YYAPI": {
    "donem": "2026/09",
@@ -5394,7 +5394,7 @@
    "brut_marj_degisim_puan": -67.22,
    "favok_marj": -735.03,
    "favok_marj_degisim_puan": 47.72,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EDATA": {
    "donem": "2026/09",
@@ -5409,7 +5409,7 @@
    "brut_marj_degisim_puan": -2.13,
    "favok_marj": 5.76,
    "favok_marj_degisim_puan": -5.08,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OTTO": {
    "donem": "2026/09",
@@ -5424,7 +5424,7 @@
    "brut_marj_degisim_puan": -23.83,
    "favok_marj": 7.96,
    "favok_marj_degisim_puan": -17.7,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GUNDG": {
    "donem": "2026/06",
@@ -5439,7 +5439,7 @@
    "brut_marj_degisim_puan": -21.41,
    "favok_marj": -17.93,
    "favok_marj_degisim_puan": -22.94,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DMSAS": {
    "donem": "2026/09",
@@ -5454,7 +5454,7 @@
    "brut_marj_degisim_puan": -0.72,
    "favok_marj": 6.31,
    "favok_marj_degisim_puan": -2.53,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TEKTU": {
    "donem": "2026/09",
@@ -5469,7 +5469,7 @@
    "brut_marj_degisim_puan": 3.37,
    "favok_marj": -8.09,
    "favok_marj_degisim_puan": 12.75,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DITAS": {
    "donem": "2026/09",
@@ -5484,7 +5484,7 @@
    "brut_marj_degisim_puan": 1.1,
    "favok_marj": 1.59,
    "favok_marj_degisim_puan": 3.46,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "IHAAS": {
    "donem": "2026/09",
@@ -5499,7 +5499,7 @@
    "brut_marj_degisim_puan": 1.01,
    "favok_marj": -14.97,
    "favok_marj_degisim_puan": 1.74,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KUVVA": {
    "donem": "2026/09",
@@ -5514,7 +5514,7 @@
    "brut_marj_degisim_puan": -2.44,
    "favok_marj": 142.51,
    "favok_marj_degisim_puan": 104.17,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BJKAS": {
    "donem": "2025/12",
@@ -5529,7 +5529,7 @@
    "brut_marj_degisim_puan": -44.79,
    "favok_marj": -73.3,
    "favok_marj_degisim_puan": -39.29,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BIGEN": {
    "donem": "2026/09",
@@ -5544,7 +5544,7 @@
    "brut_marj_degisim_puan": 12.33,
    "favok_marj": 60.45,
    "favok_marj_degisim_puan": 16.77,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KLYPV": {
    "donem": "2026/09",
@@ -5559,22 +5559,22 @@
    "brut_marj_degisim_puan": -3.83,
    "favok_marj": -8.0,
    "favok_marj_degisim_puan": -26.33,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DOGUB": {
-   "donem": "2026/06",
-   "net_kar_ttm": -36932189.0,
-   "ertelenmis_vergi_ttm": -12787570.0,
-   "duz_net_kar_ttm": -24144619.0,
-   "duz_net_kar_ttm_once": -52135363.0,
+   "donem": "2026/09",
+   "net_kar_ttm": -31847072.0,
+   "ertelenmis_vergi_ttm": -11737948.0,
+   "duz_net_kar_ttm": -20109124.0,
+   "duz_net_kar_ttm_once": -56818824.0,
    "duz_net_kar_buyume_yuzde": null,
-   "ozkaynak": 60275766.0,
-   "duz_roe_yuzde": -40.1,
-   "brut_marj": -1.18,
-   "brut_marj_degisim_puan": 10.09,
-   "favok_marj": -53.38,
-   "favok_marj_degisim_puan": 36.12,
-   "guncelleme": "2026-11-12"
+   "ozkaynak": 57264472.0,
+   "duz_roe_yuzde": -35.1,
+   "brut_marj": -10.16,
+   "brut_marj_degisim_puan": 5.35,
+   "favok_marj": -72.34,
+   "favok_marj_degisim_puan": 2.93,
+   "guncelleme": "2026-11-22"
   },
   "TUCLK": {
    "donem": "2026/09",
@@ -5589,7 +5589,7 @@
    "brut_marj_degisim_puan": -10.2,
    "favok_marj": 12.1,
    "favok_marj_degisim_puan": -10.41,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ONRYT": {
    "donem": "2026/09",
@@ -5604,7 +5604,7 @@
    "brut_marj_degisim_puan": 32.44,
    "favok_marj": 46.02,
    "favok_marj_degisim_puan": 25.94,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "IEYHO": {
    "donem": "2026/09",
@@ -5619,7 +5619,7 @@
    "brut_marj_degisim_puan": -1.11,
    "favok_marj": -34.85,
    "favok_marj_degisim_puan": -37.41,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BARMA": {
    "donem": "2026/09",
@@ -5634,7 +5634,7 @@
    "brut_marj_degisim_puan": -11.88,
    "favok_marj": 14.39,
    "favok_marj_degisim_puan": -3.3,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BALAT": {
    "donem": "2025/12",
@@ -5649,7 +5649,7 @@
    "brut_marj_degisim_puan": -187.76,
    "favok_marj": -561.45,
    "favok_marj_degisim_puan": -204.47,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SELVA": {
    "donem": "2026/09",
@@ -5664,7 +5664,7 @@
    "brut_marj_degisim_puan": -1.47,
    "favok_marj": 3.68,
    "favok_marj_degisim_puan": 3.35,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ZEDUR": {
    "donem": "2026/09",
@@ -5679,7 +5679,7 @@
    "brut_marj_degisim_puan": -13.76,
    "favok_marj": 30.12,
    "favok_marj_degisim_puan": -9.93,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GZNMI": {
    "donem": "2026/09",
@@ -5694,7 +5694,7 @@
    "brut_marj_degisim_puan": 1.56,
    "favok_marj": 8.25,
    "favok_marj_degisim_puan": -4.24,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ADEL": {
    "donem": "2026/09",
@@ -5709,7 +5709,7 @@
    "brut_marj_degisim_puan": -5.84,
    "favok_marj": 11.52,
    "favok_marj_degisim_puan": 5.94,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CELHA": {
    "donem": "2026/09",
@@ -5724,7 +5724,7 @@
    "brut_marj_degisim_puan": 3.72,
    "favok_marj": -3.48,
    "favok_marj_degisim_puan": -0.96,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "INVEO": {
    "donem": "2026/09",
@@ -5739,7 +5739,7 @@
    "brut_marj_degisim_puan": 18.03,
    "favok_marj": 118.56,
    "favok_marj_degisim_puan": 21.73,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "IZMDC": {
    "donem": "2026/09",
@@ -5754,7 +5754,7 @@
    "brut_marj_degisim_puan": -2.87,
    "favok_marj": -0.17,
    "favok_marj_degisim_puan": -4.69,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PRZMA": {
    "donem": "2026/09",
@@ -5769,7 +5769,7 @@
    "brut_marj_degisim_puan": -3.63,
    "favok_marj": -22.52,
    "favok_marj_degisim_puan": 0.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ENSRI": {
    "donem": "2026/09",
@@ -5784,7 +5784,7 @@
    "brut_marj_degisim_puan": 3.02,
    "favok_marj": 2.64,
    "favok_marj_degisim_puan": 5.82,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MNDTR": {
    "donem": "2026/09",
@@ -5799,7 +5799,7 @@
    "brut_marj_degisim_puan": -5.79,
    "favok_marj": 2.3,
    "favok_marj_degisim_puan": -3.79,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DURKN": {
    "donem": "2026/09",
@@ -5814,7 +5814,7 @@
    "brut_marj_degisim_puan": -15.6,
    "favok_marj": 14.24,
    "favok_marj_degisim_puan": -15.92,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "VERUS": {
    "donem": "2026/09",
@@ -5829,7 +5829,7 @@
    "brut_marj_degisim_puan": 7.13,
    "favok_marj": 72.79,
    "favok_marj_degisim_puan": -127.21,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KAREL": {
    "donem": "2026/09",
@@ -5844,7 +5844,7 @@
    "brut_marj_degisim_puan": 6.03,
    "favok_marj": 9.46,
    "favok_marj_degisim_puan": 3.33,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FENER": {
    "donem": "2025/12",
@@ -5859,7 +5859,7 @@
    "brut_marj_degisim_puan": -25.87,
    "favok_marj": -32.57,
    "favok_marj_degisim_puan": -13.13,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SKYLP": {
    "donem": "2026/09",
@@ -5874,7 +5874,7 @@
    "brut_marj_degisim_puan": -28.37,
    "favok_marj": 15.11,
    "favok_marj_degisim_puan": 8.79,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ATLAS": {
    "donem": "2026/09",
@@ -5889,7 +5889,7 @@
    "brut_marj_degisim_puan": -2.93,
    "favok_marj": -0.64,
    "favok_marj_degisim_puan": -4.3,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "LRSHO": {
    "donem": "2026/09",
@@ -5904,7 +5904,7 @@
    "brut_marj_degisim_puan": -2.82,
    "favok_marj": 0.44,
    "favok_marj_degisim_puan": -13.33,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FZLGY": {
    "donem": "2026/09",
@@ -5919,7 +5919,7 @@
    "brut_marj_degisim_puan": -61.32,
    "favok_marj": 3.14,
    "favok_marj_degisim_puan": -18.16,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SERNT": {
    "donem": "2026/09",
@@ -5934,7 +5934,7 @@
    "brut_marj_degisim_puan": 0.77,
    "favok_marj": 30.04,
    "favok_marj_degisim_puan": -1.21,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AVOD": {
    "donem": "2026/09",
@@ -5949,7 +5949,7 @@
    "brut_marj_degisim_puan": -7.97,
    "favok_marj": -1.74,
    "favok_marj_degisim_puan": -10.09,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GRNYO": {
    "donem": "2026/09",
@@ -5964,7 +5964,7 @@
    "brut_marj_degisim_puan": 13.82,
    "favok_marj": -7.54,
    "favok_marj_degisim_puan": -10.39,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PATEK": {
    "donem": "2026/09",
@@ -5979,7 +5979,7 @@
    "brut_marj_degisim_puan": -6.27,
    "favok_marj": -17.1,
    "favok_marj_degisim_puan": -14.36,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "IMASM": {
    "donem": "2026/09",
@@ -5994,7 +5994,7 @@
    "brut_marj_degisim_puan": 3.93,
    "favok_marj": 10.26,
    "favok_marj_degisim_puan": -11.76,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BANVT": {
    "donem": "2026/09",
@@ -6009,7 +6009,7 @@
    "brut_marj_degisim_puan": -0.84,
    "favok_marj": 1.68,
    "favok_marj_degisim_puan": 0.51,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PARSN": {
    "donem": "2026/09",
@@ -6024,7 +6024,7 @@
    "brut_marj_degisim_puan": -2.96,
    "favok_marj": 2.16,
    "favok_marj_degisim_puan": -2.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SODSN": {
    "donem": "2026/06",
@@ -6039,7 +6039,7 @@
    "brut_marj_degisim_puan": -5.04,
    "favok_marj": 6.6,
    "favok_marj_degisim_puan": -5.81,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YONGA": {
    "donem": "2026/06",
@@ -6054,7 +6054,7 @@
    "brut_marj_degisim_puan": -5.76,
    "favok_marj": -17.37,
    "favok_marj_degisim_puan": -19.13,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EKIZ": {
    "donem": "2026/09",
@@ -6069,7 +6069,7 @@
    "brut_marj_degisim_puan": 0.33,
    "favok_marj": 0.68,
    "favok_marj_degisim_puan": 2.44,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "IZFAS": {
    "donem": "2026/09",
@@ -6084,7 +6084,7 @@
    "brut_marj_degisim_puan": 2.09,
    "favok_marj": 5.12,
    "favok_marj_degisim_puan": 0.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HEDEF": {
    "donem": "2026/09",
@@ -6099,7 +6099,7 @@
    "brut_marj_degisim_puan": 0.0,
    "favok_marj": 109.82,
    "favok_marj_degisim_puan": 17.26,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ZOREN": {
    "donem": "2026/09",
@@ -6114,7 +6114,7 @@
    "brut_marj_degisim_puan": -6.08,
    "favok_marj": 29.02,
    "favok_marj_degisim_puan": -0.76,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ETYAT": {
    "donem": "2026/09",
@@ -6129,7 +6129,7 @@
    "brut_marj_degisim_puan": 14.24,
    "favok_marj": 7.03,
    "favok_marj_degisim_puan": 0.9,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BESTE": {
    "donem": "2026/09",
@@ -6144,7 +6144,7 @@
    "brut_marj_degisim_puan": -15.88,
    "favok_marj": 39.23,
    "favok_marj_degisim_puan": -14.11,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "REEDR": {
    "donem": "2026/09",
@@ -6159,7 +6159,7 @@
    "brut_marj_degisim_puan": -3.69,
    "favok_marj": -16.48,
    "favok_marj_degisim_puan": 51.29,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PAMEL": {
    "donem": "2026/09",
@@ -6174,7 +6174,7 @@
    "brut_marj_degisim_puan": -67.58,
    "favok_marj": -67.86,
    "favok_marj_degisim_puan": -269.49,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BAYRK": {
    "donem": "2026/09",
@@ -6189,7 +6189,7 @@
    "brut_marj_degisim_puan": 42.51,
    "favok_marj": 13.94,
    "favok_marj_degisim_puan": 27.59,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BMSCH": {
    "donem": "2026/09",
@@ -6204,22 +6204,22 @@
    "brut_marj_degisim_puan": -2.96,
    "favok_marj": 1.08,
    "favok_marj_degisim_puan": -1.95,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MARTI": {
-   "donem": "2025/12",
-   "net_kar_ttm": -406288002.0,
-   "ertelenmis_vergi_ttm": 144010999.0,
-   "duz_net_kar_ttm": -550299001.0,
-   "duz_net_kar_ttm_once": -327435574.0,
+   "donem": "2026/06",
+   "net_kar_ttm": -867873422.0,
+   "ertelenmis_vergi_ttm": 627701014.0,
+   "duz_net_kar_ttm": -1495574436.0,
+   "duz_net_kar_ttm_once": -249633260.0,
    "duz_net_kar_buyume_yuzde": null,
-   "ozkaynak": 7799504678.0,
-   "duz_roe_yuzde": -7.1,
-   "brut_marj": 32.5,
-   "brut_marj_degisim_puan": 7.6,
-   "favok_marj": 2.49,
-   "favok_marj_degisim_puan": -17.62,
-   "guncelleme": "2026-11-12"
+   "ozkaynak": 7630773515.0,
+   "duz_roe_yuzde": -19.6,
+   "brut_marj": 41.84,
+   "brut_marj_degisim_puan": -1.53,
+   "favok_marj": 20.78,
+   "favok_marj_degisim_puan": 6.67,
+   "guncelleme": "2026-11-22"
   },
   "BINHO": {
    "hata": "son dönem verisi yok"
@@ -6237,7 +6237,7 @@
    "brut_marj_degisim_puan": 2.2,
    "favok_marj": 6.39,
    "favok_marj_degisim_puan": 0.07,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CMBTN": {
    "donem": "2026/09",
@@ -6252,7 +6252,7 @@
    "brut_marj_degisim_puan": -5.47,
    "favok_marj": -0.6,
    "favok_marj_degisim_puan": -3.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KARTN": {
    "donem": "2026/09",
@@ -6267,7 +6267,7 @@
    "brut_marj_degisim_puan": 16.23,
    "favok_marj": -18.84,
    "favok_marj_degisim_puan": 12.62,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HURGZ": {
    "donem": "2026/09",
@@ -6282,7 +6282,7 @@
    "brut_marj_degisim_puan": -29.68,
    "favok_marj": -39.8,
    "favok_marj_degisim_puan": -28.88,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MERKO": {
    "donem": "2025/12",
@@ -6297,7 +6297,7 @@
    "brut_marj_degisim_puan": 2.62,
    "favok_marj": 1.0,
    "favok_marj_degisim_puan": -6.77,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AZTEK": {
    "donem": "2026/09",
@@ -6312,7 +6312,7 @@
    "brut_marj_degisim_puan": -4.63,
    "favok_marj": 6.03,
    "favok_marj_degisim_puan": -4.49,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AVHOL": {
    "donem": "2026/09",
@@ -6327,7 +6327,7 @@
    "brut_marj_degisim_puan": 19.42,
    "favok_marj": 19.98,
    "favok_marj_degisim_puan": 15.29,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CITAS": {
    "donem": "2026/09",
@@ -6342,7 +6342,7 @@
    "brut_marj_degisim_puan": -2.99,
    "favok_marj": 16.34,
    "favok_marj_degisim_puan": -2.32,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ENDAE": {
    "donem": "2026/09",
@@ -6357,7 +6357,7 @@
    "brut_marj_degisim_puan": 0.71,
    "favok_marj": 57.3,
    "favok_marj_degisim_puan": 4.7,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MAGEN": {
    "donem": "2026/09",
@@ -6372,7 +6372,7 @@
    "brut_marj_degisim_puan": -9.87,
    "favok_marj": 49.48,
    "favok_marj_degisim_puan": -0.39,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HEKTS": {
    "donem": "2026/09",
@@ -6387,7 +6387,7 @@
    "brut_marj_degisim_puan": 20.23,
    "favok_marj": -6.31,
    "favok_marj_degisim_puan": 17.46,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "LYDYE": {
    "donem": "2026/09",
@@ -6402,7 +6402,7 @@
    "brut_marj_degisim_puan": -188.78,
    "favok_marj": 23.04,
    "favok_marj_degisim_puan": 48.86,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "FORMT": {
    "donem": "2026/09",
@@ -6417,7 +6417,7 @@
    "brut_marj_degisim_puan": 18.96,
    "favok_marj": 8.49,
    "favok_marj_degisim_puan": 22.38,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BIOEN": {
    "donem": "2026/09",
@@ -6432,7 +6432,7 @@
    "brut_marj_degisim_puan": -14.39,
    "favok_marj": 3.62,
    "favok_marj_degisim_puan": -9.67,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KLSER": {
    "donem": "2026/09",
@@ -6447,7 +6447,7 @@
    "brut_marj_degisim_puan": 5.7,
    "favok_marj": 4.34,
    "favok_marj_degisim_puan": 8.09,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OZATD": {
    "donem": "2026/09",
@@ -6462,7 +6462,7 @@
    "brut_marj_degisim_puan": -16.34,
    "favok_marj": 17.17,
    "favok_marj_degisim_puan": -6.26,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BINBN": {
    "donem": "2026/09",
@@ -6477,7 +6477,7 @@
    "brut_marj_degisim_puan": 2.32,
    "favok_marj": -15.73,
    "favok_marj_degisim_puan": -53.92,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CUSAN": {
    "donem": "2026/09",
@@ -6492,7 +6492,7 @@
    "brut_marj_degisim_puan": -5.88,
    "favok_marj": -5.55,
    "favok_marj_degisim_puan": -8.38,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GENKM": {
    "donem": "2026/09",
@@ -6507,7 +6507,7 @@
    "brut_marj_degisim_puan": -0.57,
    "favok_marj": 16.1,
    "favok_marj_degisim_puan": -0.32,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CRFSA": {
    "donem": "2026/09",
@@ -6522,7 +6522,7 @@
    "brut_marj_degisim_puan": -1.71,
    "favok_marj": -4.96,
    "favok_marj_degisim_puan": -1.48,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "OTKAR": {
    "donem": "2026/09",
@@ -6537,7 +6537,7 @@
    "brut_marj_degisim_puan": -8.7,
    "favok_marj": -2.92,
    "favok_marj_degisim_puan": -12.12,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "HATSN": {
    "donem": "2026/09",
@@ -6552,7 +6552,7 @@
    "brut_marj_degisim_puan": -32.57,
    "favok_marj": -7.71,
    "favok_marj_degisim_puan": -25.73,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BIZIM": {
    "donem": "2026/09",
@@ -6567,7 +6567,7 @@
    "brut_marj_degisim_puan": 0.12,
    "favok_marj": -0.71,
    "favok_marj_degisim_puan": 0.76,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KONTR": {
    "donem": "2026/06",
@@ -6582,7 +6582,7 @@
    "brut_marj_degisim_puan": -13.42,
    "favok_marj": -17.19,
    "favok_marj_degisim_puan": -33.21,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "NATEN": {
    "donem": "2026/09",
@@ -6597,7 +6597,7 @@
    "brut_marj_degisim_puan": -5.36,
    "favok_marj": 38.54,
    "favok_marj_degisim_puan": 5.47,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BRMEN": {
    "donem": "2026/09",
@@ -6612,7 +6612,7 @@
    "brut_marj_degisim_puan": 9.77,
    "favok_marj": -8.92,
    "favok_marj_degisim_puan": 0.1,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YAYLA": {
    "donem": "2026/09",
@@ -6627,7 +6627,7 @@
    "brut_marj_degisim_puan": -5.04,
    "favok_marj": -13.32,
    "favok_marj_degisim_puan": -25.02,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EMPAE": {
    "donem": "2026/09",
@@ -6642,7 +6642,7 @@
    "brut_marj_degisim_puan": -2.43,
    "favok_marj": 12.05,
    "favok_marj_degisim_puan": -2.37,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MCARD": {
    "donem": "2026/09",
@@ -6657,7 +6657,7 @@
    "brut_marj_degisim_puan": 6.58,
    "favok_marj": 55.45,
    "favok_marj_degisim_puan": 4.74,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ALCAR": {
    "donem": "2026/09",
@@ -6672,22 +6672,22 @@
    "brut_marj_degisim_puan": -2.5,
    "favok_marj": 2.08,
    "favok_marj_degisim_puan": -4.22,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TMSN": {
-   "donem": "2026/06",
-   "net_kar_ttm": -5721072533.0,
-   "ertelenmis_vergi_ttm": -571602803.0,
-   "duz_net_kar_ttm": -5149469730.0,
-   "duz_net_kar_ttm_once": 8692284417.0,
+   "donem": "2026/09",
+   "net_kar_ttm": -6433578759.0,
+   "ertelenmis_vergi_ttm": -488287779.0,
+   "duz_net_kar_ttm": -5945290980.0,
+   "duz_net_kar_ttm_once": 10010694465.0,
    "duz_net_kar_buyume_yuzde": null,
-   "ozkaynak": 15182862757.0,
-   "duz_roe_yuzde": -33.9,
-   "brut_marj": -19.54,
-   "brut_marj_degisim_puan": -18.28,
-   "favok_marj": -24.9,
-   "favok_marj_degisim_puan": 23.38,
-   "guncelleme": "2026-11-12"
+   "ozkaynak": 15537659653.0,
+   "duz_roe_yuzde": -38.3,
+   "brut_marj": -7.61,
+   "brut_marj_degisim_puan": -10.67,
+   "favok_marj": -6.94,
+   "favok_marj_degisim_puan": 32.37,
+   "guncelleme": "2026-11-22"
   },
   "KERVN": {
    "donem": "2025/12",
@@ -6702,7 +6702,7 @@
    "brut_marj_degisim_puan": -40.9,
    "favok_marj": -132749.21,
    "favok_marj_degisim_puan": -115467.15,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ALBTN": {
    "donem": "2026/09",
@@ -6717,7 +6717,7 @@
    "brut_marj_degisim_puan": -3.72,
    "favok_marj": 14.35,
    "favok_marj_degisim_puan": -2.65,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ECOGR": {
    "donem": "2026/09",
@@ -6732,7 +6732,7 @@
    "brut_marj_degisim_puan": 8.49,
    "favok_marj": 25.2,
    "favok_marj_degisim_puan": -4.42,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AKENR": {
    "donem": "2026/09",
@@ -6747,7 +6747,7 @@
    "brut_marj_degisim_puan": -2.85,
    "favok_marj": 6.75,
    "favok_marj_degisim_puan": 2.18,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DIRIT": {
    "donem": "2026/09",
@@ -6762,7 +6762,7 @@
    "brut_marj_degisim_puan": 38.35,
    "favok_marj": -65.29,
    "favok_marj_degisim_puan": 3307.22,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MASFN": {
    "donem": "2026/09",
@@ -6777,7 +6777,7 @@
    "brut_marj_degisim_puan": -18.1,
    "favok_marj": 24.91,
    "favok_marj_degisim_puan": -23.95,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KAYSE": {
    "donem": "2025/12",
@@ -6792,7 +6792,7 @@
    "brut_marj_degisim_puan": -7.54,
    "favok_marj": -2.46,
    "favok_marj_degisim_puan": -8.81,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "IHYAY": {
    "donem": "2026/09",
@@ -6807,7 +6807,7 @@
    "brut_marj_degisim_puan": -0.54,
    "favok_marj": -11.98,
    "favok_marj_degisim_puan": -3.37,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ULAS": {
    "donem": "2026/09",
@@ -6822,7 +6822,7 @@
    "brut_marj_degisim_puan": -21.69,
    "favok_marj": 73.6,
    "favok_marj_degisim_puan": 1949447.74,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "INTET": {
    "donem": "2026/09",
@@ -6837,7 +6837,7 @@
    "brut_marj_degisim_puan": 14.68,
    "favok_marj": 31.35,
    "favok_marj_degisim_puan": 19.91,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AGROT": {
    "donem": "2026/09",
@@ -6852,37 +6852,37 @@
    "brut_marj_degisim_puan": 8.6,
    "favok_marj": -8.87,
    "favok_marj_degisim_puan": 2.2,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BURVA": {
-   "donem": "2026/06",
-   "net_kar_ttm": -30957264.0,
-   "ertelenmis_vergi_ttm": 7387926.0,
-   "duz_net_kar_ttm": -38345190.0,
-   "duz_net_kar_ttm_once": -22840376.0,
+   "donem": "2026/09",
+   "net_kar_ttm": -29712658.0,
+   "ertelenmis_vergi_ttm": 10209914.0,
+   "duz_net_kar_ttm": -39922572.0,
+   "duz_net_kar_ttm_once": -47197257.0,
    "duz_net_kar_buyume_yuzde": null,
-   "ozkaynak": 93672221.0,
-   "duz_roe_yuzde": -40.9,
-   "brut_marj": 9.85,
-   "brut_marj_degisim_puan": -12.14,
-   "favok_marj": -3.75,
-   "favok_marj_degisim_puan": 56.05,
-   "guncelleme": "2026-11-12"
+   "ozkaynak": 81309120.0,
+   "duz_roe_yuzde": -49.1,
+   "brut_marj": 8.19,
+   "brut_marj_degisim_puan": -2.34,
+   "favok_marj": -5.66,
+   "favok_marj_degisim_puan": 53.24,
+   "guncelleme": "2026-11-22"
   },
   "ARENA": {
-   "donem": "2025/12",
-   "net_kar_ttm": -1223628199.0,
-   "ertelenmis_vergi_ttm": 407015754.0,
-   "duz_net_kar_ttm": -1630643953.0,
-   "duz_net_kar_ttm_once": -811254323.0,
+   "donem": "2026/06",
+   "net_kar_ttm": -1644715813.0,
+   "ertelenmis_vergi_ttm": 215181722.0,
+   "duz_net_kar_ttm": -1859897535.0,
+   "duz_net_kar_ttm_once": -1393366861.0,
    "duz_net_kar_buyume_yuzde": null,
-   "ozkaynak": 2226290111.0,
-   "duz_roe_yuzde": -73.2,
-   "brut_marj": 4.74,
-   "brut_marj_degisim_puan": -1.08,
-   "favok_marj": 0.41,
-   "favok_marj_degisim_puan": -2.34,
-   "guncelleme": "2026-11-12"
+   "ozkaynak": 1174956240.0,
+   "duz_roe_yuzde": -158.3,
+   "brut_marj": 6.32,
+   "brut_marj_degisim_puan": 0.76,
+   "favok_marj": -4.83,
+   "favok_marj_degisim_puan": -5.36,
+   "guncelleme": "2026-11-22"
   },
   "USAK": {
    "donem": "2026/09",
@@ -6897,7 +6897,7 @@
    "brut_marj_degisim_puan": -14.14,
    "favok_marj": -8.44,
    "favok_marj_degisim_puan": -23.02,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BURCE": {
    "donem": "2026/09",
@@ -6912,7 +6912,7 @@
    "brut_marj_degisim_puan": -15.66,
    "favok_marj": -28.85,
    "favok_marj_degisim_puan": -17.11,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "VESBE": {
    "donem": "2026/09",
@@ -6927,7 +6927,7 @@
    "brut_marj_degisim_puan": -3.2,
    "favok_marj": -4.1,
    "favok_marj_degisim_puan": -4.54,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ANELE": {
    "donem": "2026/09",
@@ -6942,7 +6942,7 @@
    "brut_marj_degisim_puan": -35.46,
    "favok_marj": -113.1,
    "favok_marj_degisim_puan": -111.8,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "YESIL": {
    "hata": "son dönem verisi yok"
@@ -6960,7 +6960,7 @@
    "brut_marj_degisim_puan": -0.61,
    "favok_marj": 5.37,
    "favok_marj_degisim_puan": 3.19,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DENGE": {
    "donem": "2026/09",
@@ -6975,7 +6975,7 @@
    "brut_marj_degisim_puan": -11.31,
    "favok_marj": -25.93,
    "favok_marj_degisim_puan": -15.87,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MMCAS": {
    "donem": "2025/12",
@@ -6990,7 +6990,7 @@
    "brut_marj_degisim_puan": 31.2,
    "favok_marj": -15.68,
    "favok_marj_degisim_puan": -45.19,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ERCB": {
    "donem": "2026/09",
@@ -7005,7 +7005,7 @@
    "brut_marj_degisim_puan": -11.32,
    "favok_marj": 14.49,
    "favok_marj_degisim_puan": 2.1,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KAPLM": {
    "donem": "2026/09",
@@ -7020,7 +7020,7 @@
    "brut_marj_degisim_puan": 3.85,
    "favok_marj": 4.31,
    "favok_marj_degisim_puan": 2.88,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DGNMO": {
    "donem": "2026/09",
@@ -7035,7 +7035,7 @@
    "brut_marj_degisim_puan": 5.94,
    "favok_marj": 0.06,
    "favok_marj_degisim_puan": -0.09,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EKOS": {
    "donem": "2026/09",
@@ -7050,7 +7050,7 @@
    "brut_marj_degisim_puan": 0.51,
    "favok_marj": 1.93,
    "favok_marj_degisim_puan": 0.95,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "UCAYM": {
    "donem": "2026/09",
@@ -7065,7 +7065,7 @@
    "brut_marj_degisim_puan": 3.25,
    "favok_marj": 17.39,
    "favok_marj_degisim_puan": -0.38,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "COSMO": {
    "donem": "2026/09",
@@ -7080,7 +7080,7 @@
    "brut_marj_degisim_puan": 14.12,
    "favok_marj": -27.73,
    "favok_marj_degisim_puan": -37.96,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "CEMAS": {
    "donem": "2026/09",
@@ -7095,7 +7095,7 @@
    "brut_marj_degisim_puan": -5.21,
    "favok_marj": -22.21,
    "favok_marj_degisim_puan": 2.1,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "DCTTR": {
    "donem": "2026/09",
@@ -7110,7 +7110,7 @@
    "brut_marj_degisim_puan": 0.1,
    "favok_marj": 3.51,
    "favok_marj_degisim_puan": -6.3,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ARZUM": {
    "donem": "2026/09",
@@ -7125,7 +7125,7 @@
    "brut_marj_degisim_puan": 1.63,
    "favok_marj": 3.03,
    "favok_marj_degisim_puan": -2.2,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TARKM": {
    "donem": "2026/09",
@@ -7140,7 +7140,7 @@
    "brut_marj_degisim_puan": -3.45,
    "favok_marj": 25.94,
    "favok_marj_degisim_puan": 4.64,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KARCL": {
    "donem": "2026/09",
@@ -7155,7 +7155,7 @@
    "brut_marj_degisim_puan": -2.46,
    "favok_marj": 10.47,
    "favok_marj_degisim_puan": -0.81,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MEYSU": {
    "donem": "2026/09",
@@ -7170,7 +7170,7 @@
    "brut_marj_degisim_puan": -5.67,
    "favok_marj": 14.67,
    "favok_marj_degisim_puan": -9.05,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "AKHAN": {
    "donem": "2026/09",
@@ -7185,7 +7185,7 @@
    "brut_marj_degisim_puan": -3.48,
    "favok_marj": 7.99,
    "favok_marj_degisim_puan": -6.08,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ICUGS": {
    "hata": "son dönem verisi yok"
@@ -7203,7 +7203,7 @@
    "brut_marj_degisim_puan": 2.06,
    "favok_marj": 73.07,
    "favok_marj_degisim_puan": 24.28,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "BALSU": {
    "donem": "2025/12",
@@ -7218,7 +7218,7 @@
    "brut_marj_degisim_puan": 0.76,
    "favok_marj": 12.71,
    "favok_marj_degisim_puan": 0.93,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MANAS": {
    "donem": "2026/09",
@@ -7233,7 +7233,7 @@
    "brut_marj_degisim_puan": -28.41,
    "favok_marj": -54.45,
    "favok_marj_degisim_puan": -53.65,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "NETGL": {
    "donem": "2026/09",
@@ -7248,7 +7248,7 @@
    "brut_marj_degisim_puan": -2.25,
    "favok_marj": 21.23,
    "favok_marj_degisim_puan": -7.25,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "VESTL": {
    "donem": "2026/09",
@@ -7263,7 +7263,7 @@
    "brut_marj_degisim_puan": -1.11,
    "favok_marj": -14.94,
    "favok_marj_degisim_puan": -7.82,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "EKDMR": {
    "donem": "2026/09",
@@ -7278,7 +7278,7 @@
    "brut_marj_degisim_puan": -0.64,
    "favok_marj": 2.36,
    "favok_marj_degisim_puan": -1.69,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MZHLD": {
    "donem": "2026/09",
@@ -7293,7 +7293,7 @@
    "brut_marj_degisim_puan": 7.99,
    "favok_marj": 8.85,
    "favok_marj_degisim_puan": 4.09,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SOHOE": {
    "donem": "2026/09",
@@ -7308,7 +7308,7 @@
    "brut_marj_degisim_puan": 0.5,
    "favok_marj": 29.33,
    "favok_marj_degisim_puan": -4.34,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ISVEA": {
    "donem": "2026/09",
@@ -7323,7 +7323,7 @@
    "brut_marj_degisim_puan": -5.71,
    "favok_marj": 30.48,
    "favok_marj_degisim_puan": -3.07,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "ATATR": {
    "donem": "2026/09",
@@ -7338,7 +7338,7 @@
    "brut_marj_degisim_puan": -12.65,
    "favok_marj": 14.07,
    "favok_marj_degisim_puan": -22.36,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "MEGAP": {
    "donem": "2025/12",
@@ -7353,7 +7353,7 @@
    "brut_marj_degisim_puan": -3.71,
    "favok_marj": 3.81,
    "favok_marj_degisim_puan": -3.42,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "KPEKS": {
    "donem": "2026/09",
@@ -7368,7 +7368,7 @@
    "brut_marj_degisim_puan": -2.91,
    "favok_marj": 13.27,
    "favok_marj_degisim_puan": -4.38,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "PAPIL": {
    "donem": "2026/06",
@@ -7383,7 +7383,7 @@
    "brut_marj_degisim_puan": -221.95,
    "favok_marj": -404.18,
    "favok_marj_degisim_puan": -495.26,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "VEYAS": {
    "donem": "2026/09",
@@ -7398,7 +7398,7 @@
    "brut_marj_degisim_puan": -1.06,
    "favok_marj": 41.53,
    "favok_marj_degisim_puan": 2.25,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "VKING": {
    "donem": "2026/09",
@@ -7413,7 +7413,7 @@
    "brut_marj_degisim_puan": -18.14,
    "favok_marj": -72.44,
    "favok_marj_degisim_puan": -46.79,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "GOLDA": {
    "donem": "2026/09",
@@ -7428,7 +7428,7 @@
    "brut_marj_degisim_puan": -1.56,
    "favok_marj": 3.79,
    "favok_marj_degisim_puan": -1.46,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "TKNKA": {
    "donem": "2026/09",
@@ -7443,7 +7443,7 @@
    "brut_marj_degisim_puan": 0.28,
    "favok_marj": 21.19,
    "favok_marj_degisim_puan": 3.91,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SMRVA": {
    "hata": "son dönem verisi yok"
@@ -7461,7 +7461,7 @@
    "brut_marj_degisim_puan": -0.88,
    "favok_marj": 28.78,
    "favok_marj_degisim_puan": -2.0,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   },
   "SARAE": {
    "donem": "2026/09",
@@ -7476,7 +7476,7 @@
    "brut_marj_degisim_puan": -1.08,
    "favok_marj": 17.87,
    "favok_marj_degisim_puan": -14.31,
-   "guncelleme": "2026-11-12"
+   "guncelleme": "2026-11-22"
   }
  }
 }
