@@ -1,5 +1,7 @@
 """XTTS v2 ile bir take'in satırlarını referans sesle okut; satır aralarına sessizlik koy.
 Her satır Whisper ile denetlenir; metinle uyuşmazsa (uydurma ek, atlanan kelime) başka tohumla yeniden üretilir.
+Okunan metinde "KeyfiZar" → "Keyfizar" (ses_duzen.tts_metni); son kelimeden sonra ilk gerçek sessizlikte kesilir ve
+sonrasında hâlâ ses kalan (uydurma kuyruklu) tohumlar elenir (ses_duzen.kuyruk_kes).
 Kullanım: python3 xtts_say.py <ref.wav> <girdi.txt> <cikti.wav>  (satırlar boş satırla ayrılır)"""
 import difflib
 import os
@@ -14,8 +16,11 @@ import torch
 from faster_whisper import WhisperModel
 from TTS.api import TTS
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from ses_duzen import ESIK_DB, kuyruk_kes, son_kelime_basi, tts_metni  # noqa: E402
+
 ref, src, out = sys.argv[1:4]
-lines = [l.strip() for l in open(src, encoding="utf-8").read().split("\n\n") if l.strip()]
+lines = [tts_metni(l.strip()) for l in open(src, encoding="utf-8").read().split("\n\n") if l.strip()]
 tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to("cpu")
 asr = WhisperModel("small", device="cpu", compute_type="int8")
 SR = 24000
@@ -32,7 +37,7 @@ def check(wav, text):
     words = [w for s in segs for w in (s.words or [])]
     heard = " ".join(w.word for w in words)
     score = difflib.SequenceMatcher(None, norm(text), norm(heard)).ratio()
-    return score, heard, (words[-1].end if words else len(wav) / SR)
+    return score, heard, son_kelime_basi(text, [(w.word, w.start) for w in words])
 
 
 gap = np.zeros(int(0.8 * SR), dtype=np.float32)
@@ -43,14 +48,19 @@ for i, line in enumerate(lines):
         torch.manual_seed(seed)
         wav = np.asarray(tts.tts(text=line, speaker_wav=ref, language="tr", split_sentences=False,
                                  temperature=0.6, repetition_penalty=5.0), dtype=np.float32)
-        score, heard, end = check(wav, line)
-        print(f"  satır {i + 1} tohum {seed}: {score:.2f}  «{heard.strip()}»", file=sys.stderr)
-        if best is None or score > best[0]:
-            best = (score, wav, end)
-        if score >= 0.97:
+        score, heard, last_start = check(wav, line)
+        cut, residual, found = kuyruk_kes(wav, SR, last_start)
+        clean = found and residual < ESIK_DB                    # son kelimeden sonra uydurma ses yok
+        print(f"  satır {i + 1} tohum {seed}: {score:.2f}  kuyruk {'temiz' if clean else f'KİRLİ ({residual:.0f} dB)'}"
+              f"  «{heard.strip()}»", file=sys.stderr)
+        rank = (score >= 0.97, clean, score)                     # önce doğru metin, sonra temiz kuyruk
+        if best is None or rank > best[0]:
+            best = (rank, cut)
+        if clean and score >= 0.97:
             break
-    score, wav, end = best
-    wav = wav[: min(len(wav), int((end + 0.25) * SR))]          # son kelimeden sonraki uydurma kuyruğu kes
+    (_, clean, score), wav = best
+    if not clean:
+        print(f"  UYARI satır {i + 1}: temiz kuyruklu tohum yok; sessizlikte kesilip sönümlendi, dinle", file=sys.stderr)
     parts += ([gap] if i else []) + [wav]
 sf.write(out, np.concatenate(parts), SR)
 print("ok", out)

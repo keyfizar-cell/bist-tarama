@@ -29,8 +29,8 @@ gelir), `icerik-uretim/README.md` (meta.json alanları), `icerik-uretim/stiller.
 git -C bist-tarama pull --ff-only; git -C icerik-uretim pull --ff-only
 ```
 Kurulum (tümü ücretsiz): `pip install "torch==2.8.0" "torchaudio==2.8.0" --index-url https://download.pytorch.org/whl/cpu`
-(torch ≥ 2.9 coqui-tts için ayrıca torchcodec ister) + `pip install coqui-tts faster-whisper six skia-python numpy pillow
-soundfile scipy`; ilk XTTS çağrısı modeli (~1,8 GB) indirir; ffmpeg yoksa `apt-get install -y ffmpeg`. `python3 .claude/skills/cinematic-film/scripts/check_setup.py` çalıştır.
+(torch ≥ 2.9 coqui-tts için ayrıca torchcodec ister) + `pip install coqui-tts "transformers<5" faster-whisper six skia-python numpy pillow
+soundfile scipy` (coqui-tts transformers 5.x ile sentezde `get_seq_length` hatası verir; 4.57.x çalışıyor); ilk XTTS çağrısı modeli (~1,8 GB) indirir; ffmpeg yoksa `apt-get install -y ffmpeg`. `python3 .claude/skills/cinematic-film/scripts/check_setup.py` çalıştır.
 
 ### (b) 7 deyim / atasözü seç
 1. Kullanılmışları topla: `icerik-uretim/yuklenenler.json` anahtarları + `videolar/*/meta.json` (`baslik`, `aciklama`,
@@ -45,8 +45,9 @@ soundfile scipy`; ilk XTTS çağrısı modeli (~1,8 GB) indirir; ffmpeg yoksa `a
 - Akış: söz (kanca) → kısa sahne/hikâye → **anlamı** → (varsa) köken → izleyiciye soru + "KeyfiZar'ı takip et".
 - **Uydurma yok.** Köken belirsizse "rivayete göre" de; hiç bilinmiyorsa köken satırı konmaz. Her iddia için
   `fact_notes`'a kaynak notu yaz.
-- `spoken` alanı: sayılar yazıyla; "KeyfiZar" sesli okunurken `spoken`'da "Keyfi Zar" yazılır (ekranda/altyazıda yine
-  `KeyfiZar`). Küfür: `spoken`'da yer tutucu kelime ("tatata"), ekranda yıldız/`SANSÜR`, seste bip.
+- `spoken` alanı: sayılar yazıyla; kanal adı `spoken`'da da `KeyfiZar` yazılabilir: `xtts_say.py` okumadan önce onu
+  kendiliğinden tek kelime "Keyfizar" (ekleriyle, kesme işaretsiz: "Keyfizarı") yapar; "Keyfi Zar" diye AYRI YAZILMAZ
+  (araya duraksama girer). Ekranda/altyazıda/meta'da yine `KeyfiZar`. Küfür: `spoken`'da yer tutucu kelime ("tatata"), ekranda yıldız/`SANSÜR`, seste bip.
 
 ### (d) Referans ses
 Google Drive bağlayıcısıyla başlıkta `BelgeselSesi.wav` ara (`İçerik Üretim` klasörü), içeriğini indir,
@@ -67,7 +68,9 @@ Akış (cinematic-film, proje geçici dizinde, ör. `/tmp/kz/<sira>-<ad>/`):
 1. `script.json` → her take için satırları boş satırla ayrılmış bir `.txt`.
 2. Ses: `python3 scripts/xtts_say.py /tmp/kz-ref/BelgeselSesi.wav <take>.txt <proje>/audio/takes/<take>.wav`
    (XTTS v2 + Whisper denetimi; tohum puanı < 0.90 kalan satır varsa satırı sadeleştirip yeniden üret).
-   Tek take'te 7 satır CPU'da ~10 dk sürer. "Keyfi Zar'ı" satırı Whisper'da bitişik duyulduğu için ~0.86 alır; bu kabul edilir.
+   Tek take'te 7 satır CPU'da ~10 dk sürer. Betik her satırı son kelimeden sonraki ilk gerçek sessizlikte keser
+   (sönümlü) ve sonrasında hâlâ ses kalan tohumu (uydurma "gi" gibi kuyruk) eler; günlükte `kuyruk temiz/KİRLİ`
+   yazar. Kapanış satırı da artık ≥ 0.97 almalı; "UYARI … temiz kuyruklu tohum yok" çıkan satırı dinle ya da yeniden üret.
 3. `split_takes.py` → `build_narration.py` (zamanlama `audio/timing.json`).
 4. **Yazı tipleri (atlanırsa altyazı taşar):** `cond` rolü için Bebas Neue'yu her zaman dosya olarak koy:
    `curl -sSfL -o <proje>/fonts/cond.ttf https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/BebasNeue-Regular.ttf`
