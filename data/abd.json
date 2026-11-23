@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-20T22:20:33.572215+00:00",
+ "uretim_zamani_utc": "2026-11-23T14:16:33.566960+00:00",
  "kaynak": "Yahoo Finance chart API",
  "veriler": {
   "NVO": {
@@ -22,7 +22,7 @@
     "yon": "negatif"
    },
    "piyasa_durumu": "KAPALI",
-   "guncelleme_utc": "2026-11-20T22:20:33.572215+00:00"
+   "guncelleme_utc": "2026-11-23T14:16:33.566960+00:00"
   },
   "SPY": {
    "sembol": "SPY",
@@ -43,7 +43,7 @@
     "yon": "negatif"
    },
    "piyasa_durumu": "KAPALI",
-   "guncelleme_utc": "2026-11-20T22:20:33.572215+00:00"
+   "guncelleme_utc": "2026-11-23T14:16:33.566960+00:00"
   },
   "QQQ": {
    "sembol": "QQQ",
@@ -64,7 +64,7 @@
     "yon": "negatif"
    },
    "piyasa_durumu": "KAPALI",
-   "guncelleme_utc": "2026-11-20T22:20:33.572215+00:00"
+   "guncelleme_utc": "2026-11-23T14:16:33.566960+00:00"
   },
   "DIA": {
    "sembol": "DIA",
@@ -85,7 +85,7 @@
     "yon": "negatif"
    },
    "piyasa_durumu": "KAPALI",
-   "guncelleme_utc": "2026-11-20T22:20:33.572215+00:00"
+   "guncelleme_utc": "2026-11-23T14:16:33.566960+00:00"
   }
  },
  "hatalar": {}
