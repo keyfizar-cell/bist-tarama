@@ -225,7 +225,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313396+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064312+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -705,9 +705,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313423+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064336+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -778,7 +778,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313430+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064344+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -786,15 +786,23 @@
       "not": "",
       "channel_id": "UCA-I5hXhFOQixUOhKyPkH0g",
       "kanal_adi": "Bir Hisse Bir Analiz #unverdoktrini",
-      "hata": null,
+      "hata": "gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
       "son_basarili_utc": null,
       "videolar": [],
-      "bekleyenler": [],
+      "bekleyenler": [
+        {
+          "video_id": "bZyc-4VWsrw",
+          "baslik": "XU050 ANALİZİ 1 BÖLÜM",
+          "url": "https://www.youtube.com/watch?v=bZyc-4VWsrw",
+          "yayin_tarihi": "2026-11-23T04:24:04+00:00",
+          "sure_dk": 18.1
+        }
+      ],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313433+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 1,
+      "son_kontrol_utc": "2026-11-23T15:29:22.064350+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -802,7 +810,7 @@
       "not": "",
       "channel_id": "UCESHqafiDmI69IQwUKi2tUQ",
       "kanal_adi": "Cuma Cevik",
-      "hata": null,
+      "hata": "gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
       "son_basarili_utc": "2026-11-08T09:33:32.445648+00:00",
       "videolar": [
         {
@@ -916,12 +924,20 @@
           "islendi_utc": "2026-11-08T09:33:32.445627+00:00"
         }
       ],
-      "bekleyenler": [],
+      "bekleyenler": [
+        {
+          "video_id": "BfdL4BOVOXc",
+          "baslik": "Ayı Piyasası mı Başlıyor? - Haftalık Analiz",
+          "url": "https://www.youtube.com/watch?v=BfdL4BOVOXc",
+          "yayin_tarihi": "2026-11-22T18:04:35+00:00",
+          "sure_dk": 37.8
+        }
+      ],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313439+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 1,
+      "son_kontrol_utc": "2026-11-23T15:29:22.064356+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -929,7 +945,7 @@
       "not": "",
       "channel_id": "UCDou5HvsE1AgL8yXzijbfxg",
       "kanal_adi": "Devrim Akyıl",
-      "hata": null,
+      "hata": "gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
       "son_basarili_utc": "2026-11-22T18:16:50.313362+00:00",
       "videolar": [
         {
@@ -1494,9 +1510,9 @@
       ],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 3,
+      "aday_sayisi": 1,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313464+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064376+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -1512,7 +1528,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313467+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064379+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -1528,7 +1544,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313471+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064381+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -1536,7 +1552,7 @@
       "not": "",
       "channel_id": "UCzANlYNW38QH4gchvUk3IsQ",
       "kanal_adi": "Efe Utkaner",
-      "hata": null,
+      "hata": "gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
       "son_basarili_utc": "2026-11-21T17:35:37.548552+00:00",
       "videolar": [
         {
@@ -1788,12 +1804,20 @@
           "islendi_utc": "2026-11-14T16:55:23.005867+00:00"
         }
       ],
-      "bekleyenler": [],
+      "bekleyenler": [
+        {
+          "video_id": "sqYJ2L2YqjI",
+          "baslik": "Enka İnşaat #ENKAI Temel Analizi",
+          "url": "https://www.youtube.com/watch?v=sqYJ2L2YqjI",
+          "yayin_tarihi": "2026-11-22T20:21:39+00:00",
+          "sure_dk": 16.1
+        }
+      ],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313484+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 4,
+      "son_kontrol_utc": "2026-11-23T15:29:22.064395+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -1864,7 +1888,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313489+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064400+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -2044,7 +2068,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313499+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064409+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -2055,6 +2079,16 @@
       "hata": null,
       "son_basarili_utc": "2026-11-21T17:38:38.592115+00:00",
       "videolar": [
+        {
+          "video_id": "FukCmORp90s",
+          "baslik": "SADECE KASAYA BAKMAK NE KADAR DOĞRU",
+          "yayin_tarihi": "2026-11-23T09:00:09+00:00",
+          "url": "https://www.youtube.com/watch?v=FukCmORp90s",
+          "kanal_adi": "FinansLab | Gülşah Bıçkı",
+          "sure_dk": 0.4,
+          "canli": false,
+          "atlandi": "sure 0 dk"
+        },
         {
           "video_id": "3634kQ50nrU",
           "baslik": "Ereğli Defter Değerinin %32 altında I Gerçekten Ucuz Mu ?",
@@ -2250,9 +2284,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313520+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064446+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -2263,6 +2297,16 @@
       "hata": null,
       "son_basarili_utc": "2026-11-22T18:15:03.589802+00:00",
       "videolar": [
+        {
+          "video_id": "SX3ZLmjPTZg",
+          "baslik": "XAUUSD 3500’den 3620’ye Geldi! Bu Haftanın Pivotu 3620",
+          "yayin_tarihi": "2026-11-23T13:15:25+00:00",
+          "url": "https://www.youtube.com/watch?v=SX3ZLmjPTZg",
+          "kanal_adi": "Fx Matik",
+          "sure_dk": 2.4,
+          "canli": false,
+          "atlandi": "sure 2 dk"
+        },
         {
           "video_id": "xT1r90u3r34",
           "baslik": "Altın Eski Birikim Bölgesine Döndü! 3500–3940 Arası Yeni Oyun Planı",
@@ -2372,7 +2416,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313534+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064460+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -2501,7 +2545,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313541+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064466+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -2857,7 +2901,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313550+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064474+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -3032,7 +3076,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313562+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064485+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -3531,9 +3575,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
-      "son7_uzun_video": 4,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313588+00:00"
+      "aday_sayisi": 0,
+      "son7_uzun_video": 3,
+      "son_kontrol_utc": "2026-11-23T15:29:22.064506+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -3679,9 +3723,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313597+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064515+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -3697,7 +3741,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313600+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064517+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -3713,7 +3757,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313603+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064520+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -3721,7 +3765,7 @@
       "not": "",
       "channel_id": "UCDmr51JwXxErCrTALTGokpQ",
       "kanal_adi": "Selçuk Ergin ",
-      "hata": null,
+      "hata": "gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
       "son_basarili_utc": "2026-11-20T15:36:38.224812+00:00",
       "videolar": [
         {
@@ -4019,12 +4063,20 @@
           "islendi_utc": "2026-11-08T09:48:20.650947+00:00"
         }
       ],
-      "bekleyenler": [],
+      "bekleyenler": [
+        {
+          "video_id": "Vdfug4N3Xsc",
+          "baslik": "Onlar Parayı Vurdu! Sende Ucuzu Topla!",
+          "url": "https://www.youtube.com/watch?v=Vdfug4N3Xsc",
+          "yayin_tarihi": "2026-11-23T13:51:37+00:00",
+          "sure_dk": 17.1
+        }
+      ],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313616+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064532+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -4414,9 +4466,9 @@
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
-      "son7_uzun_video": 8,
-      "liste_disi": "her gun video yukluyor (son 7 gunde 8 uzun video)",
-      "son_kontrol_utc": "2026-11-22T18:16:50.313636+00:00"
+      "son7_uzun_video": 6,
+      "liste_disi": "her gun video yukluyor (son 7 gunde 6 uzun video)",
+      "son_kontrol_utc": "2026-11-23T15:29:22.064550+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -4425,8 +4477,104 @@
       "channel_id": "UC79Ph9UMRx83-qQe6n1rbCg",
       "kanal_adi": "TANSEL ÇİFTÇİ ",
       "hata": null,
-      "son_basarili_utc": "2026-11-18T15:23:21.659936+00:00",
+      "son_basarili_utc": "2026-11-23T15:25:24.226824+00:00",
       "videolar": [
+        {
+          "video_id": "8oUPb4syi4s",
+          "baslik": "#THYAO da trend devam ediyor mu ? #bist100 #borsa #kesfet #kesfetteyiz",
+          "yayin_tarihi": "2026-11-23T12:14:38+00:00",
+          "url": "https://www.youtube.com/watch?v=8oUPb4syi4s",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 1.4,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "fCd08t0Q9RY",
+          "baslik": "YENİ HAFTADA PİYASALAR VE HİSSELERİNİZ....",
+          "yayin_tarihi": "2026-11-23T08:28:43+00:00",
+          "url": "https://www.youtube.com/watch?v=fCd08t0Q9RY",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 68.9,
+          "canli": false,
+          "ana_mesaj": "Piyasaların yüksek volatilite ve enflasyon baskısı altında olduğu bir dönemde, teknik seviyelerin ve temel hikayelerin (VIX, Ons Altın, BIST destekleri) yakından takip edilmesi gerektiği vurgulanmaktadır.",
+          "ozet": [
+            "VIX Korku Endeksi'nin 35 seviyelerinde olması piyasalardaki tedirginliğin yüksek olduğunu göstermektedir.",
+            "Ons altında 3900 dolar seviyesi kritik bir destek noktası olarak izlenmektedir.",
+            "Gram altında 6200 TL seviyesinin altındaki kapanışlar satış baskısını derinleştirebilir.",
+            "Borsa İstanbul'da 11132 ve 10910 seviyeleri önemli Fibonacci destekleri olarak öne çıkmaktadır.",
+            "Yüksek faiz ortamının otomotiv ve beyaz eşya gibi sektörleri negatif etkilediği belirtilmektedir.",
+            "Perakende sektörünün (BIMAS gibi) yüksek enflasyon ortamından olumlu etkilendiği ifade edilmektedir.",
+            "Borsa İstanbul'un enflasyon karşısındaki getirisi sorgulanarak uzun vadeli yatırım aracı olma niteliği tartışılmaktadır."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "VIX",
+              "ne_dedi": "Korku endeksinin 35 seviyesinde olması piyasaların savaş çıkmışçasına tedirgin olduğunu gösteriyor."
+            },
+            {
+              "kod": "XAUUSD",
+              "ne_dedi": "3900 dolar desteği üzerinde kalıcılık sağlanırsa 4100-4200 dolar seviyeleri direnç olarak takip edilecek."
+            },
+            {
+              "kod": "XAUTRYG",
+              "ne_dedi": "6200 TL seviyesi kritik destek olup bu seviyenin altındaki kapanışlar satış baskısını artırabilir."
+            },
+            {
+              "kod": "VEYAS",
+              "ne_dedi": "54 TL'den gelen al sinyaliyle 82 TL'ye kadar yükselen hissede 68.5 TL desteği takip edilmelidir."
+            },
+            {
+              "kod": "BIGTK",
+              "ne_dedi": "Küçük hisselerde sadece teknik analizin yeterli olmadığı, hissenin geçmiş fiyat hareketlerinin dikkatle incelenmesi gerektiği belirtildi."
+            },
+            {
+              "kod": "BERA",
+              "ne_dedi": "9.5 TL'den gelen tepki yükselişinin güçlenmesi için 10.66 TL üzerinde kapanışlar yapması gerekiyor."
+            },
+            {
+              "kod": "FROTO",
+              "ne_dedi": "Yüksek faiz ve sıkılaşma döneminde otomotiv sektörünün zorlandığı ve TL bazlı getirilerin enflasyon karşısında eridiği vurgulandı."
+            },
+            {
+              "kod": "BIMAS",
+              "ne_dedi": "359 TL'den al sinyali veren hisse, perakende sektörünün enflasyonist ortamdaki avantajıyla 386 TL seviyelerini gördü."
+            },
+            {
+              "kod": "XU100",
+              "ne_dedi": "11132 ve 10910 seviyeleri güçlü destekler olup bu seviyelerin kırılması sert düşüşleri tetikleyebilir."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "VIX endeksinin 20'nin üzerinde (özellikle 35 seviyesinde) kalması.",
+            "Rusya-Ukrayna ve ABD-İran gerginlikleri gibi jeopolitik riskler.",
+            "Yüksek faiz oranlarının tüketim odaklı sektörler üzerindeki baskısı.",
+            "Borsa getirilerinin resmi ve kişisel enflasyonun altında kalma riski."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-23T15:25:24.226804+00:00"
+        },
+        {
+          "video_id": "V3wXQZW-6i0",
+          "baslik": "ALTINDA KISA VE ORTA VADE ALIM YAPILABİLİR Mİ ? #xauusd #altın #kesfet #kesfetteyiz #forex",
+          "yayin_tarihi": "2026-11-23T06:31:21+00:00",
+          "url": "https://www.youtube.com/watch?v=V3wXQZW-6i0",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 1.1,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "2mAHHAVUaHM",
+          "baslik": "#BİST100 de düşüş nerede ve ne zaman bitecek ? #borsa #kesdet #kesfetteyiz",
+          "yayin_tarihi": "2026-11-23T05:57:06+00:00",
+          "url": "https://www.youtube.com/watch?v=2mAHHAVUaHM",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.8,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "0U3UzzobcpA",
           "baslik": "#GARAN hissesindeki fırsatlar…#bist100 #borsa #kesfet #kesfetteyiz",
@@ -4536,54 +4684,14 @@
           "sure_dk": 0.7,
           "canli": false,
           "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "Yeew39b__E0",
-          "baslik": "#BIMAS da yukarı yönlü hareket bitti mi ? #bist100 #borsa #kesfet #kesfetteyizzz",
-          "yayin_tarihi": "2026-11-19T17:45:47+00:00",
-          "url": "https://www.youtube.com/watch?v=Yeew39b__E0",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.6,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "2v-k9xUyKG8",
-          "baslik": "#THYAO da satış zamanı mı ? #pgsus #bist100 #kesfet #kesfetteyiz",
-          "yayin_tarihi": "2026-11-19T14:07:59+00:00",
-          "url": "https://www.youtube.com/watch?v=2v-k9xUyKG8",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.8,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "lNCyBOTRsGw",
-          "baslik": "ANALİZ GRUBUMUZDA OLAN ARKADAŞLAR #THYAO DA %31 KAZANDI #bist100 #borsa #kesfet #kesfetteyiz",
-          "yayin_tarihi": "2026-11-19T10:28:07+00:00",
-          "url": "https://www.youtube.com/watch?v=lNCyBOTRsGw",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 1.0,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "tLye-SwuXGM",
-          "baslik": "Enflasyon, faiz ve borsalar için petrolu takip ediyoruz #brent #petrol #kesfet #kesfetteyiz #xauusd",
-          "yayin_tarihi": "2026-11-19T06:02:57+00:00",
-          "url": "https://www.youtube.com/watch?v=tLye-SwuXGM",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.9,
-          "canli": false,
-          "atlandi": "sure 1 dk"
         }
       ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 2,
-      "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313660+00:00"
+      "aday_sayisi": 4,
+      "son7_uzun_video": 2,
+      "son_kontrol_utc": "2026-11-23T15:29:22.064574+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -4599,7 +4707,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313663+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064577+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -4615,7 +4723,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-22T18:16:50.313666+00:00"
+      "son_kontrol_utc": "2026-11-23T15:29:22.064580+00:00"
     }
   },
   "hata": null,
@@ -4633,14 +4741,16 @@
   ],
   "butce": {
     "toplam_sinir": 20,
-    "islenen": 6,
-    "bekleyen": 1,
+    "islenen": 1,
+    "bekleyen": 5,
     "kota_bitti": false,
     "kullanilan_modeller": {
-      "gemini-3.8-flash": 2,
-      "gemini-3-flash-preview": 4
+      "gemini-3-flash-preview": 1
     },
-    "kotasi_dolan_modeller": []
+    "kotasi_dolan_modeller": [
+      "gemini-omni-1.2-flash",
+      "gemini-omni-flash-preview"
+    ]
   },
   "kota_gunlugu": [
     {
@@ -4872,20 +4982,58 @@
       },
       "kotasi_dolan_modeller": [],
       "zaman_utc": "2026-11-22T18:16:50.313686+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 1,
+      "bekleyen": 5,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-3-flash-preview": 1
+      },
+      "kotasi_dolan_modeller": [
+        "gemini-omni-1.2-flash",
+        "gemini-omni-flash-preview"
+      ],
+      "zaman_utc": "2026-11-23T15:29:22.064596+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-22T18:16:50.313719+00:00",
+  "uretim_zamani_utc": "2026-11-23T15:29:22.064601+00:00",
   "denemeler": [
-    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP",
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-omni-flash-preview gunluk kota doldu; siradaki model denenecek",
+    "Gemini gemini-omni-1.2-flash gunluk kota doldu; siradaki model denenecek",
+    "Gemini gemini-flash-lite-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "@Selcoin / Vdfug4N3Xsc Gemini hatasi: gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
-    "Gemini gemini-3.8-flash: 0 karakter, bitis=STOP",
+    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-lite-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "@birhissebiranalizunverdoktrini / bZyc-4VWsrw Gemini hatasi: gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
+    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-lite-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "@efeutkaner / sqYJ2L2YqjI Gemini hatasi: gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP"
+    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-lite-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "@cevikfinance / BfdL4BOVOXc Gemini hatasi: gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-flash-lite-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "@DevrimAkyıl / JytE38d7TGM Gemini hatasi: gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late"
   ]
 }

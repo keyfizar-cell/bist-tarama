@@ -1,5 +1,5 @@
 {
-  "uretim_zamani_utc": "2026-11-22T17:52:27.573035+00:00",
+  "uretim_zamani_utc": "2026-11-23T15:22:00.162000+00:00",
   "kanal": "Emir Bozkurt | Stratejik Yatirim",
   "channel_id": "UChiWzAwOe7J67dd5PmmUnnA",
   "video_liste_kaynagi": "rss_kanal",
@@ -68,7 +68,7 @@
     ]
   },
   "transkript_var": true,
-  "son_basarili_utc": "2026-11-22T17:52:27.573055+00:00",
+  "son_basarili_utc": "2026-11-23T15:22:00.162026+00:00",
   "son_videolar": [
     {
       "baslik": "Borsa Düşerken Bu 10 Şirketin Kasası Dolu | Tüpraş’ta 204 Milyar TL Nakit",
@@ -114,6 +114,6 @@
   "hata": null,
   "surum": "2.6",
   "denemeler": [
-    "Gemini gemini-3.8-flash: 12816 karakter, bitis=STOP"
+    "Ayni video icin transkript zaten var; yeniden cekilmedi."
   ]
 }
