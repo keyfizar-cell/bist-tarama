@@ -1,6 +1,6 @@
 {
  "surum": "1.1",
- "guncelleme": "2026-11-22",
+ "guncelleme": "2026-11-23",
  "sepetler": [
   {
    "hafta": "2026-H46",
@@ -14,8 +14,8 @@
      "skor": 89.6,
      "sira": 1,
      "agirlik_yuzde": 20.0,
-     "guncel": 322.75,
-     "getiri_yuzde": -8.96
+     "guncel": 324.0,
+     "getiri_yuzde": -8.6
     },
     {
      "kod": "ARDYZ",
@@ -24,8 +24,8 @@
      "skor": 77.9,
      "sira": 4,
      "agirlik_yuzde": 20.0,
-     "guncel": 45.78,
-     "getiri_yuzde": -14.27
+     "guncel": 48.6,
+     "getiri_yuzde": -8.99
     },
     {
      "kod": "NTGAZ",
@@ -34,8 +34,8 @@
      "skor": 76.6,
      "sira": 6,
      "agirlik_yuzde": 20.0,
-     "guncel": 8.11,
-     "getiri_yuzde": -2.64
+     "guncel": 8.03,
+     "getiri_yuzde": -3.6
     },
     {
      "kod": "ATATP",
@@ -44,8 +44,8 @@
      "skor": 76.1,
      "sira": 7,
      "agirlik_yuzde": 20.0,
-     "guncel": 173.2,
-     "getiri_yuzde": -14.72
+     "guncel": 179.2,
+     "getiri_yuzde": -11.77
     },
     {
      "kod": "AHGAZ",
@@ -54,13 +54,13 @@
      "skor": 76.0,
      "sira": 8,
      "agirlik_yuzde": 20.0,
-     "guncel": 43.8,
-     "getiri_yuzde": -3.74
+     "guncel": 42.24,
+     "getiri_yuzde": -7.16
     }
    ],
-   "sepet_getiri_yuzde": -8.87,
-   "xu100_getiri_yuzde": -5.84,
-   "fark_puan": -3.03
+   "sepet_getiri_yuzde": -8.02,
+   "xu100_getiri_yuzde": -6.07,
+   "fark_puan": -1.95
   },
   {
    "hafta": "2026-H47",
@@ -74,8 +74,8 @@
      "skor": 86.3,
      "sira": 1,
      "agirlik_yuzde": 20.0,
-     "guncel": 71.05,
-     "getiri_yuzde": -10.52
+     "guncel": 72.3,
+     "getiri_yuzde": -8.94
     },
     {
      "kod": "TUPRS",
@@ -84,8 +84,8 @@
      "skor": 86.2,
      "sira": 2,
      "agirlik_yuzde": 20.0,
-     "guncel": 322.75,
-     "getiri_yuzde": -9.34
+     "guncel": 324.0,
+     "getiri_yuzde": -8.99
     },
     {
      "kod": "TRMET",
@@ -94,8 +94,8 @@
      "skor": 77.4,
      "sira": 3,
      "agirlik_yuzde": 20.0,
-     "guncel": 105.3,
-     "getiri_yuzde": -8.59
+     "guncel": 106.7,
+     "getiri_yuzde": -7.38
     },
     {
      "kod": "ARDYZ",
@@ -104,8 +104,8 @@
      "skor": 75.2,
      "sira": 9,
      "agirlik_yuzde": 20.0,
-     "guncel": 45.78,
-     "getiri_yuzde": -13.13
+     "guncel": 48.6,
+     "getiri_yuzde": -7.78
     },
     {
      "kod": "BASGZ",
@@ -114,19 +114,79 @@
      "skor": 75.1,
      "sira": 10,
      "agirlik_yuzde": 20.0,
-     "guncel": 34.56,
-     "getiri_yuzde": -7.2
+     "guncel": 35.1,
+     "getiri_yuzde": -5.75
     }
    ],
-   "sepet_getiri_yuzde": -9.76,
-   "xu100_getiri_yuzde": -6.0,
-   "fark_puan": -3.76
+   "sepet_getiri_yuzde": -7.77,
+   "xu100_getiri_yuzde": -6.23,
+   "fark_puan": -1.54
+  },
+  {
+   "hafta": "2026-H48",
+   "tarih": "2026-11-23",
+   "xu100_giris": 11104.38,
+   "hisseler": [
+    {
+     "kod": "TUPRS",
+     "sektor": "Enerji / Rafineri",
+     "giris": 324.0,
+     "skor": 86.2,
+     "sira": 1,
+     "agirlik_yuzde": 20.0,
+     "guncel": 324.0,
+     "getiri_yuzde": 0.0
+    },
+    {
+     "kod": "TRENJ",
+     "sektor": "Enerji / Rafineri",
+     "giris": 72.3,
+     "skor": 85.5,
+     "sira": 2,
+     "agirlik_yuzde": 20.0,
+     "guncel": 72.3,
+     "getiri_yuzde": 0.0
+    },
+    {
+     "kod": "TRMET",
+     "sektor": "Metal / Maden / Çimento",
+     "giris": 106.7,
+     "skor": 77.2,
+     "sira": 3,
+     "agirlik_yuzde": 20.0,
+     "guncel": 106.7,
+     "getiri_yuzde": 0.0
+    },
+    {
+     "kod": "AHGAZ",
+     "sektor": "Enerji Dağıtım / Üretim",
+     "giris": 42.24,
+     "skor": 76.5,
+     "sira": 5,
+     "agirlik_yuzde": 20.0,
+     "guncel": 42.24,
+     "getiri_yuzde": 0.0
+    },
+    {
+     "kod": "ARDYZ",
+     "sektor": "Teknoloji Hizmetleri",
+     "giris": 48.6,
+     "skor": 76.0,
+     "sira": 7,
+     "agirlik_yuzde": 20.0,
+     "guncel": 48.6,
+     "getiri_yuzde": 0.0
+    }
+   ],
+   "sepet_getiri_yuzde": 0.0,
+   "xu100_getiri_yuzde": 0.0,
+   "fark_puan": 0.0
   }
  ],
  "karne": {
-  "sepet_sayisi": 2,
+  "sepet_sayisi": 3,
   "endeksi_gecen": 0,
-  "ort_fark_puan": -3.39
+  "ort_fark_puan": -1.16
  },
  "not": "Örnek model sepet — eğitim/izleme amaçlı kâğıt portföy; yatırım tavsiyesi değildir."
 }
