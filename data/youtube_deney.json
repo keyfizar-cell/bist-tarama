@@ -1,37 +1,37 @@
 {
  "surum": "1.2",
- "uretim_zamani_utc": "2026-11-22T15:14:49.328430+00:00",
+ "uretim_zamani_utc": "2026-11-23T19:12:17.797873+00:00",
  "video": {
-  "video_id": "NAUU0qJ2fLQ",
-  "baslik": "Borsa %6 Düştü, Altın da Kurtarmadı! Şimdi Ne Olacak?",
-  "sure_sn": 564,
+  "video_id": "cDgGWUIrn7Y",
+  "baslik": "Borsa Düşerken Bu 10 Şirketin Kasası Dolu | Tüpraş’ta 204 Milyar TL Nakit",
+  "sure_sn": 819,
   "esik": 1000
  },
  "deneyler": [
   {
    "ad": "gemini_teshis",
-   "durum": "basarili",
-   "karakter": 8943,
-   "turkce": true,
-   "sure_sn": 33.6,
-   "not": "model=gemini-3-flash-preview bitis=STOP",
-   "onizleme": "Bu hafta piyasalarda pek sık görmediğimiz bir şey oldu. Normalde borsalar hem yurt içinde hem yurt dışında düştüğü zaman para genelde altına kaçar diyebilirdik. Yıllarca böyle gördük, böyle öğrendik ama bu hafta bu kapı da kapanmış oldu. BIST 100 bu hafta %6 kayıpla kapattı. Gram altındaysa düşüş %7.6'ya ulaştı. Yani güvenli liman dediğimiz altın borsadan bile fazla kaybettirdi. Bugünse üç soruya "
+   "durum": "hata",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 71.8,
+   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3-flash-preview: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-flash-latest: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing",
+   "onizleme": ""
   },
   {
    "ad": "gemini_parca",
-   "durum": "basarili",
-   "karakter": 8905,
-   "turkce": true,
-   "sure_sn": 48.0,
-   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem",
-   "onizleme": "Bu hafta piyasalarda pek sık görmediğimiz bir şey oldu. Normalde borsalar hem yurt içinde hem yurt dışında düştüğü zaman para genelde altına kaçar diyebilirdik. Yıllarca böyle gördük böyle öğrendik ama bu hafta bu kapıda kapanmış oldu. BIST 100 bu hafta %6 kayıpla kapattı. Gram altındaysa düşüş %7.6'ya ulaştı. Yani güvenli liman dediğimiz altın borsadan bile fazla kaybettirdi. Bugünse üç soruya ya",
+   "durum": "hata",
+   "karakter": 0,
+   "turkce": false,
+   "sure_sn": 41.8,
+   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3-flash-preview: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-flash-latest: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing",
+   "onizleme": "",
    "parcalar": [
     {
      "bas": 0,
-     "bit": 564,
-     "model": "gemini-3-flash-preview",
-     "karakter": 8905,
-     "bitis": "STOP"
+     "bit": 600,
+     "model": null,
+     "karakter": 0,
+     "bitis": null
     }
    ]
   },
@@ -40,8 +40,8 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 1.1,
-   "not": "] NAUU0qJ2fLQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "sure_sn": 1.2,
+   "not": "] cDgGWUIrn7Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
   {
@@ -50,7 +50,7 @@
    "karakter": 0,
    "turkce": false,
    "sure_sn": 1.0,
-   "not": "] NAUU0qJ2fLQ: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "not": "] cDgGWUIrn7Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
   {
@@ -76,7 +76,7 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 0.7,
+   "sure_sn": 0.6,
    "not": "model=glm-4.6v-flash HTTP 429 {\"error\":{\"code\":\"1305\",\"message\":\"The service may be temporarily overloaded, please try again later\"}}",
    "onizleme": ""
   },
@@ -117,10 +117,7 @@
    "onizleme": ""
   }
  ],
- "basarili_yollar": [
-  "gemini_teshis",
-  "gemini_parca"
- ],
+ "basarili_yollar": [],
  "gecmis": {
   "gemini_teshis": [
    {
@@ -177,6 +174,11 @@
     "tarih": "2026-11-22T15:14:49.328430+00:00",
     "durum": "basarili",
     "karakter": 8943
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "gemini_parca": [
@@ -234,6 +236,11 @@
     "tarih": "2026-11-22T15:14:49.328430+00:00",
     "durum": "basarili",
     "karakter": 8905
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "ytdlp_altyazi": [
@@ -289,6 +296,11 @@
    },
    {
     "tarih": "2026-11-22T15:14:49.328430+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -348,6 +360,11 @@
     "tarih": "2026-11-22T15:14:49.328430+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "qwen_url": [
@@ -403,6 +420,11 @@
    },
    {
     "tarih": "2026-11-22T15:14:49.328430+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -462,6 +484,11 @@
     "tarih": "2026-11-22T15:14:49.328430+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "glm_url": [
@@ -517,6 +544,11 @@
    },
    {
     "tarih": "2026-11-22T15:14:49.328430+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -576,6 +608,11 @@
     "tarih": "2026-11-22T15:14:49.328430+00:00",
     "durum": "ses_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "ses_yok",
+    "karakter": 0
    }
   ],
   "siliconflow_ses": [
@@ -631,6 +668,11 @@
    },
    {
     "tarih": "2026-11-22T15:14:49.328430+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -690,6 +732,11 @@
     "tarih": "2026-11-22T15:14:49.328430+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "deepseek": [
@@ -745,6 +792,11 @@
    },
    {
     "tarih": "2026-11-22T15:14:49.328430+00:00",
+    "durum": "uygulanamaz",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "uygulanamaz",
     "karakter": 0
    }
