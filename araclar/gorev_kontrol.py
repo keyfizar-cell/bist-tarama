@@ -38,9 +38,9 @@ KURALLAR = {
         "ek_yasak": True,
     },
     "saglik_nobeti.md": {
-        "min": 6000,
+        "min": 3000,   # 24.11.2026: veri denetimleri araclar/saglik.py'ye taşındı; görevde yalnız bülten kontrolü
         "zorunlu": ["trig_01UjjJQe3p9x4D5SZc484Ryt", "fire_trigger", "PushNotification",
-                    "Portföy Bülteni", "youtube_konuk", "youtube_kanallar"],
+                    "Portföy Bülteni", "Sağlık Denetimi"],
         "ek_yasak": False,
     },
     "veri_kaynagi_arastirma.md": {

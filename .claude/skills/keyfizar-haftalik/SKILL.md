@@ -9,7 +9,7 @@ Bu beceri bir bulut görevinin (Claude Code bulut, ortam `bist-tarama`, kaynakla
 `keyfizar-cell/icerik-uretim`) her Pazar adım adım izlediği talimattır. Elle tek video istendiğinde KULLANILMAZ
 (o zaman eski kural: numaralı stil listesi + Alpay seçer).
 
-**Önce oku:** `bist-tarama/CLAUDE.md` (marka, ses, küfür, stil, ücretli araç kuralları — bu belgedeki her şeyden önce
+**Önce oku:** `bist-tarama/CLAUDE.md` ve `bist-tarama/.claude/skills/keyfizar-icerik/SKILL.md` (marka, ses, küfür, stil, ücretli araç kuralları — bu belgedeki her şeyden önce
 gelir), `icerik-uretim/README.md` (meta.json alanları), `icerik-uretim/stiller.md`,
 `.claude/skills/cinematic-film/SKILL.md`. Tüm yazışma Türkçe.
 
@@ -63,6 +63,16 @@ Stil seçimi (haftalık parti istisnası, CLAUDE.md):
   bu motorlarla görünümü uyarlanarak ya da lemo-opuscar klonlanarak (`git clone --depth 1`, depoya kopyalanmaz)
   yapılabilir; `icerik-uretim/sablonlar/` altındaki hazır şablonlar (golge-oyunu, casus-jenerigi, tek-cizgi,
   kazima-edit) varsa onları kullan.
+
+**Verimlilik (Alpay kararı 24.11.2026 — kullanım limiti; aşağıdaki akıştan ÖNCE gelir):**
+- Önce 7 videonun senaryosunu bitir, sonra **tek seslendirme süreci** başlat: tüm videoların tüm take'lerini sırayla
+  üreten tek bir arka plan komutu (XTTS modeli bir kez yüklenir); `run_in_background` + bitince tek bildirim.
+  Satır satır izleme, ara mesaj yok. Beklerken sahneleri yaz.
+- Hazır şablonu olan stili tercih et (`icerik-uretim/sablonlar/`, `stiller.md` şablon sütunu); `--probe` karelerine
+  yalnız yeni (şablonsuz) stilde ve tek temas kartı olarak bak.
+- 7 render'ı da tek arka plan komutunda sırayla çalıştır (tek bildirim).
+- Render bulutta (Actions) yapılmaz: harcanan limit CPU süresi değil mesaj/araç çağrısı sayısıdır; render tek komut
+  ve tek bildirimle zaten ucuzdur, Actions'a taşımak yalnız risk ekler.
 
 Akış (cinematic-film, proje geçici dizinde, ör. `/tmp/kz/<sira>-<ad>/`):
 1. `script.json` → her take için satırları boş satırla ayrılmış bir `.txt`.

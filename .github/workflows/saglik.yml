@@ -1,0 +1,22 @@
+name: Sağlık Denetimi
+
+# 24.11.2026: Claude'daki Sağlık Nöbeti'nin (A) tazelik, (B) kalite, (D) Actions, (E) yan dosya maddeleri
+# koda taşındı (araclar/saglik.py). Sorun varsa iş kırmızı biter → GitHub e-posta ile haber verir.
+on:
+  schedule:
+    - cron: "17 21 * * 1-5"   # 00:17 TR; GitHub cron gecikebilir, sorun değil
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  denetle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python araclar/saglik.py
