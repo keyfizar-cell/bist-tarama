@@ -1,6 +1,6 @@
 {
  "surum": "1.2",
- "uretim_zamani_utc": "2026-11-23T19:12:17.797873+00:00",
+ "uretim_zamani_utc": "2026-11-24T18:51:04.335954+00:00",
  "video": {
   "video_id": "cDgGWUIrn7Y",
   "baslik": "Borsa Düşerken Bu 10 Şirketin Kasası Dolu | Tüpraş’ta 204 Milyar TL Nakit",
@@ -13,7 +13,7 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 71.8,
+   "sure_sn": 84.1,
    "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3-flash-preview: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-flash-latest: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing",
    "onizleme": ""
   },
@@ -22,7 +22,7 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 41.8,
+   "sure_sn": 65.5,
    "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3-flash-preview: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-flash-latest: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing",
    "onizleme": "",
    "parcalar": [
@@ -40,7 +40,7 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 1.2,
+   "sure_sn": 1.1,
    "not": "] cDgGWUIrn7Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
@@ -76,7 +76,7 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 0.6,
+   "sure_sn": 0.5,
    "not": "model=glm-4.6v-flash HTTP 429 {\"error\":{\"code\":\"1305\",\"message\":\"The service may be temporarily overloaded, please try again later\"}}",
    "onizleme": ""
   },
@@ -179,6 +179,11 @@
     "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "gemini_parca": [
@@ -239,6 +244,11 @@
    },
    {
     "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -303,6 +313,11 @@
     "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "ytdlp_ses": [
@@ -363,6 +378,11 @@
    },
    {
     "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -427,6 +447,11 @@
     "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "qwen_ses": [
@@ -487,6 +512,11 @@
    },
    {
     "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -551,6 +581,11 @@
     "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "glm_ses": [
@@ -611,6 +646,11 @@
    },
    {
     "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "ses_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "ses_yok",
     "karakter": 0
    }
@@ -675,6 +715,11 @@
     "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "kimi_url": [
@@ -737,6 +782,11 @@
     "tarih": "2026-11-23T19:12:17.797873+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "deepseek": [
@@ -797,6 +847,11 @@
    },
    {
     "tarih": "2026-11-23T19:12:17.797873+00:00",
+    "durum": "uygulanamaz",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "uygulanamaz",
     "karakter": 0
    }
