@@ -116,6 +116,7 @@ KAYNAK ÖNCELİĞİ (haber): 1) KAP 2) Aracı kurum raporları (İş, Ak, Garant
 3) PORTFÖY ÖZET TABLOSU: Sıcaklık | Kod | Kapanış | Günlük % | Ağırlık % | Ort. Maliyet | Maliyete Göre K/Z % | Katalizör. Sıcaklık: 🔥 somut katalizör/sert hareket · 🟡 orta · ⚪ sakin. ADIM 0'daki TÜM açık hisseler. Ağırlık/Ort. Maliyet dosyadan; Maliyete Göre K/Z %'yi bugünkü kapanış ile ortalama maliyetten YENİDEN hesapla. Tablonun altına tek satır portföy toplamı: toplam maliyet TL, toplam güncel TL, toplam K/Z (dosyanın "Aktif Portföy" özetinden, tarihini belirt).
 
 4) PORTFÖY TEKNİK PLAN: Kod | Kapanış | 52H Konumu | RSI | MACD | Giriş | Stop | TP1 | TP2 | TV Sinyal
+   - ⚡ HAZIR HESAP (24.11.2026): Giriş/Stop/TP1/TP2/52H konumu/RSI/MACD/TV sinyal = /tmp/bg.json teknik_plan[KOD] (kaynak.tarih bugünse). Yeniden hesaplama; yalnız portföy kodlarını seç. Kod teknik_plan'da yoksa aşağıdaki kuralla hesapla.
    - RSI/MACD/52H/TV sinyal JSON'dan GERÇEK değerle gelir. NVO için data/abd.json (rsi14, macd, h52). hala_eksik kodlarda teknik hücreler "veri yok".
    - Seviye formülü (mekanik): Giriş = son kapanış · Stop = kapanış −%7 (52H dip daha yakınsa o) · TP1 = +%8 (52H zirveyi aşmaz) · TP2 = +%15 · İnvalidasyon = stop altında günlük kapanış.
    - Lejantta net yaz: "Bu seviyeler öneri değil, açıklanan kuralın mekanik uygulamasıdır."
@@ -125,6 +126,7 @@ KAYNAK ÖNCELİĞİ (haber): 1) KAP 2) Aracı kurum raporları (İş, Ak, Garant
 (Bölüm 6 · BIST 30 Günlük Görünüm — KALDIRILDI 12.11.2026, Alpay kararı: işe yarar sonuç vermiyordu. YAZMA.)
 
 7) 🐺 EMİR BOZKURT TARAMASI (DETAYLI — 7a/7b/7c): ⚠️ ÖNCE HAFIZADAN OKU: /areas/emir-bozkurt-taramasi.md (GÜNCEL YAPI en alttaki 02.10.2026 bloğudur).
+   ⚡ HAZIR HESAP — ÖNCE BUNU KULLAN (Alpay kararı 24.11.2026, kullanım limiti): Bash ile curl -sS "https://raw.githubusercontent.com/keyfizar-cell/bist-tarama/main/data/bulten_girdi.json?cb=$(date +%s%N)" -o /tmp/bg.json. kaynak.tarih BUGÜN ve hata boşsa: 7a/7b/yakın adaylar = emir_bozkurt (7a_watchlist, 7b_diger, yakin_adaylar, toplam_sinyal); 7c tablo satırları ve özet = sinyal_gecmisi (satirlar, ozet) — tarihli YYYY-MM-DD.json dosyalarını ÇEKME, sinyali YENİDEN HESAPLAMA (bulten_hazirla.py aynı kuralın kodudur; 09.11.2026'da bültenle birebir doğrulandı). Yalnız 'Portföy Kâr % / TL' sütunlarını aşağıdaki portföy kuralıyla sen ekle ve 7a için watchlist temel gerekçesini yaz. bulten_girdi.json bayatsa (kaynak.tarih ≠ bugün) veya hata doluysa aşağıdaki ESKİ YÖNTEME dön ve bülten sonuna '(hazır hesap bayattı, yeniden hesaplandı)' notu ekle.
    ⛔ JSON'daki tam_kurulum[] TEK BAŞINA KULLANMA (o yalnız watchlist A/B). Sinyali bülten tarafında Python ile tum_hisseler[] bayraklarından YENİDEN hesapla:
      SİNYAL = asiri_satim AND donus_teyidi AND hacim_patlamasi AND (NOT dusen_bicak) AND (NOT olasi_sermaye_islemi)
      GÜVENLİK FİLTRELERİ (hepsi sağlanmalı): bb_alt > 0 ; abs(gunluk_yuzde) < 15 ; piyasa_degeri ≥ 1.000.000.000 (1 mlr TL).
