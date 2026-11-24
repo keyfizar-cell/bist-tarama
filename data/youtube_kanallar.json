@@ -225,7 +225,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064312+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.409975+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -707,7 +707,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064336+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410001+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -716,8 +716,74 @@
       "channel_id": "UCtEZPZRd8QF8s4qu3F2WkPg",
       "kanal_adi": "Ahmet Beyefendi",
       "hata": null,
-      "son_basarili_utc": "2026-11-08T09:49:03.047498+00:00",
+      "son_basarili_utc": "2026-11-24T15:22:11.641885+00:00",
       "videolar": [
+        {
+          "video_id": "cnfa_rq1HiE",
+          "baslik": "24 Kasım 2026 Piyasa Yorumu",
+          "yayin_tarihi": "2026-11-24T15:19:38+00:00",
+          "url": "https://www.youtube.com/watch?v=cnfa_rq1HiE",
+          "kanal_adi": "Ahmet Beyefendi",
+          "sure_dk": 17.3,
+          "canli": false,
+          "ana_mesaj": "ABD borsalarındaki likidite sıkışıklığının ve Nvidia merkezli dalgalanmanın henüz sona ermediği, piyasaların yönü için Fed'in 9 Aralık'taki kararlarının ve jeopolitik gelişmelerin belirleyici olacağı öngörülmektedir.",
+          "ozet": [
+            "ABD ekonomisinin kredi odaklı yapısı nedeniyle emtialarda yükseliş için Fed'in faiz indirimine (pivot) ihtiyaç duyulmaktadır.",
+            "Nvidia CEO'su Huang'ın dönüşü piyasada geçici bir rahatlama yaratsa da kalıcı bir yükseliş trendi başlatamamıştır.",
+            "Anthropic hisselerinin halka arz fiyatının altına gerilemesi, yapay zeka sektörü ve beklenen OpenAI halka arzı için olumsuz bir sinyaldir.",
+            "Nvidia hissesinde 170 dolar direnci aşılamazken, 150 ve 140 dolar seviyeleri kritik destekler olarak takip edilmektedir.",
+            "Nasdaq endeksinde 26.300 puan seviyesi piyasanın yönü açısından en önemli eşik olarak görülmektedir.",
+            "Altın ve gümüşte likidite sıkışıklığı baskısı sürerken, Brent petrolde jeopolitik gerginliklere rağmen arz haberleriyle düşüş yaşanmaktadır.",
+            "ABD'de %7'nin üzerindeki mortgage faizleri ve kredi daralmasının reel ekonomiyi olumsuz etkilemeye başlaması beklenmektedir."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "NVDA",
+              "ne_dedi": "Huang'ın dönüşüyle 170 doları test etse de kıramadı; 150 dolar desteğinin altında 140 ve 100 dolar seviyeleri gündeme gelebilir."
+            },
+            {
+              "kod": "ANTRP",
+              "ne_dedi": "83 dolarlık halka arz fiyatının altına sarkarak 81 dolara gerilemesi yapay zeka teması için olumsuz bir gelişmedir."
+            },
+            {
+              "kod": "NAS100",
+              "ne_dedi": "26.300 puan seviyesinin altında kalması durumunda 25.000 puanın tekrar test edilme riski bulunmaktadır."
+            },
+            {
+              "kod": "US500",
+              "ne_dedi": "Nvidia kaynaklı satışlardan etkilenen endekste 7.300 puan seviyesi kritik bir eşik olarak izlenmektedir."
+            },
+            {
+              "kod": "XAUUSD",
+              "ne_dedi": "3.620 dolar seviyelerinde işlem gören altında, likidite sıkışıklığı ve Fed mesajlarına bağlı olarak 3.600 doların altı test edilebilir."
+            },
+            {
+              "kod": "XAGUSD",
+              "ne_dedi": "44 dolar seviyesinden gelen satışlarla 42 dolara geri çekilme yaşanmıştır."
+            },
+            {
+              "kod": "UKOIL",
+              "ne_dedi": "92-93 dolar desteğini kırarak 90 doların altını test eden petrolde jeopolitik riskler ve arz haberleri etkili olmaktadır."
+            },
+            {
+              "kod": "DXY",
+              "ne_dedi": "104,5 seviyesini gördükten sonra Euro'daki toparlanmayla hafif geri çekilme yaşamaktadır."
+            },
+            {
+              "kod": "BTC",
+              "ne_dedi": "Likidite sıkışıklığı nedeniyle dünkü zirvelerinin altında işlem görmektedir."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "İran kaynaklı yeni bir jeopolitik gerginlik veya çatışma riski.",
+            "Fed'in 9 Aralık toplantısında beklenenden daha şahin bir duruş sergilemesi.",
+            "PCE enflasyon verisinin yüksek gelmesiyle dolar faizlerinin kısa vadede artma ihtimali.",
+            "ABD'de mortgage faizlerinin yüksekliği ve kredi sıkışıklığının reel ekonomiyi vurmaya başlaması."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-24T15:22:11.641865+00:00"
+        },
         {
           "video_id": "Bt2tMf8Prjs",
           "baslik": "5 Kasım 2026 ABD Seçimi Sonrası Piyasa Yorumu",
@@ -776,9 +842,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064344+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 1,
+      "son_kontrol_utc": "2026-11-24T15:33:20.410012+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -786,23 +852,128 @@
       "not": "",
       "channel_id": "UCA-I5hXhFOQixUOhKyPkH0g",
       "kanal_adi": "Bir Hisse Bir Analiz #unverdoktrini",
-      "hata": "gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
-      "son_basarili_utc": null,
-      "videolar": [],
-      "bekleyenler": [
+      "hata": null,
+      "son_basarili_utc": "2026-11-24T15:29:42.708844+00:00",
+      "videolar": [
         {
           "video_id": "bZyc-4VWsrw",
           "baslik": "XU050 ANALİZİ 1 BÖLÜM",
-          "url": "https://www.youtube.com/watch?v=bZyc-4VWsrw",
           "yayin_tarihi": "2026-11-23T04:24:04+00:00",
-          "sure_dk": 18.1
+          "url": "https://www.youtube.com/watch?v=bZyc-4VWsrw",
+          "kanal_adi": "Bir Hisse Bir Analiz #unverdoktrini",
+          "sure_dk": 18.1,
+          "canli": false,
+          "ana_mesaj": "XU50 endeksindeki şirketlerin piyasa değeri/defter değeri oranları, nakit/borç dengeleri ve aracı kurum hedef fiyatları üzerinden temel bir değerlendirme sunulmaktadır.",
+          "ozet": [
+            "22 Kasım 2026 tarihli videoda XU50 endeksindeki 50 şirketin 3. çeyrek bilançoları üzerinden analiz yapılmıştır.",
+            "Endeks genelinde piyasa değeri/defter değeri (PD/DD) ortalamasının 1,10 seviyesinde olduğu hesaplanmıştır.",
+            "Şirketlerin kısa vadeli finansal borçlarını nakit varlıklarıyla karşılama kapasiteleri oranlar üzerinden incelenmiştir.",
+            "SASA ve HEKTS gibi şirketlerin yüksek yatırım maliyetleri nedeniyle finansal yük altında olduğu belirtilmiştir.",
+            "Koç Holding ve Sabancı Holding'in nakit pozisyonlarını güçlendirmek için yaptıkları iştirak satışlarına değinilmiştir.",
+            "Aracı kurum raporlarına dayanarak seçili hisseler için getiri potansiyelleri ve hedef fiyat beklentileri paylaşılmıştır."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "AEFES",
+              "ne_dedi": "PD/DD oranı 0,63, nakitleri borcunun 8,5 katı ve hedef fiyatı 27,70 TL ile %72 potansiyel barındırıyor."
+            },
+            {
+              "kod": "AKBNK",
+              "ne_dedi": "PD/DD oranı 1 seviyesinde, hedef fiyatı 95,03 TL ile %45,86 getiri potansiyeli sunuyor."
+            },
+            {
+              "kod": "AKSEN",
+              "ne_dedi": "PD/DD oranı 1, kısa vadede bir miktar sıkışıklık olsa da hedef fiyatı 119,16 TL ile %86,77 potansiyel taşıyor."
+            },
+            {
+              "kod": "ALARK",
+              "ne_dedi": "PD/DD oranı 0,43, nakitleri borcunun 1,5 katı ve hedef fiyatı 180,13 TL ile %75,40 potansiyel öngörülüyor."
+            },
+            {
+              "kod": "ASELS",
+              "ne_dedi": "PD/DD oranı 4,45, nakitleri borcunun 4 katı ve hedef fiyatı 511,04 TL ile %56,28 potansiyel vaat ediyor."
+            },
+            {
+              "kod": "ASTOR",
+              "ne_dedi": "PD/DD oranı 3,55, nakitleri borcunun 2 katı ve hedef fiyatı 375,99 TL ile %158,23 gibi yüksek bir potansiyele sahip."
+            },
+            {
+              "kod": "BIMAS",
+              "ne_dedi": "PD/DD oranı 2 ve nakitleri kısa vadeli borcunun 2,5 katı seviyesinde."
+            },
+            {
+              "kod": "BRSAN",
+              "ne_dedi": "PD/DD oranı 1,83 ve nakit/borç dengesi bire bir seviyelerinde."
+            },
+            {
+              "kod": "CCOLA",
+              "ne_dedi": "PD/DD oranı 2 ve nakit varlıkları kısa vadeli borçlarının 6,6 katı düzeyinde."
+            },
+            {
+              "kod": "CVKMD",
+              "ne_dedi": "Nakit varlıkları kısa vadeli finansal borçlarının 9,8 katı ile güçlü bir pozisyonda."
+            },
+            {
+              "kod": "ENKAI",
+              "ne_dedi": "197 milyar TL nakit değeri ve 25 milyar TL borcu ile yaklaşık 4 katlık güçlü bir rasyoya sahip."
+            },
+            {
+              "kod": "KCHOL",
+              "ne_dedi": "1,7 trilyon TL nakit varlığı ile kısa vadeli borçlarını 7 kez ödeyebilecek güçte."
+            },
+            {
+              "kod": "MGROS",
+              "ne_dedi": "Nakit varlıkları kısa vadeli borçlarının 13 katı seviyesinde, finansal yapısı kuvvetli."
+            },
+            {
+              "kod": "SISE",
+              "ne_dedi": "PD/DD oranı 0,36 ve nakitleri borcunun 6,5 katı seviyesinde oldukça makul."
+            },
+            {
+              "kod": "TCELL",
+              "ne_dedi": "PD/DD oranı 0,60 ve nakitleri borcunun 17 katı ile muazzam bir ölçekte."
+            },
+            {
+              "kod": "TAVHL",
+              "ne_dedi": "PD/DD oranı 1,69 ve nakitleri borcunun 30 katı seviyesinde."
+            },
+            {
+              "kod": "TTKOM",
+              "ne_dedi": "PD/DD oranı 0,58 ve 354 milyar TL nakit ile borç karşılama oranı çok yüksek."
+            },
+            {
+              "kod": "TUPRS",
+              "ne_dedi": "PD/DD oranı 1,19 ve nakitleri borcunun 52 katı seviyesinde çok güçlü."
+            },
+            {
+              "kod": "SASA",
+              "ne_dedi": "Yatırım maliyetlerinden kaynaklı ağır bir finansal yük ve kısa vadeli borç yükü altında."
+            },
+            {
+              "kod": "HEKTS",
+              "ne_dedi": "Finansal sıkıntıların aşılması için bir miktar bedelli sermaye artırımı ihtiyacı olabilir."
+            },
+            {
+              "kod": "SAHOL",
+              "ne_dedi": "1,2 trilyon TL nakit varlığı bulunuyor, küresel taraftaki handikaplara karşı nakde dönme stratejisi izliyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "SASA ve HEKTS gibi şirketlerdeki yüksek yatırım maliyetleri ve finansal yükler.",
+            "Küresel tarafta oluşabilecek handikaplı durumlar.",
+            "Bazı holdinglerin iştirak satışları ile nakit yaratma ihtiyacı duyması."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-24T15:29:42.708824+00:00"
         }
       ],
+      "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064350+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410019+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -937,7 +1108,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064356+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410028+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -945,8 +1116,8 @@
       "not": "",
       "channel_id": "UCDou5HvsE1AgL8yXzijbfxg",
       "kanal_adi": "Devrim Akyıl",
-      "hata": "gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
-      "son_basarili_utc": "2026-11-22T18:16:50.313362+00:00",
+      "hata": null,
+      "son_basarili_utc": "2026-11-24T15:33:20.409935+00:00",
       "videolar": [
         {
           "video_id": "JRHK-qQ2bvI",
@@ -1067,6 +1238,59 @@
           "icerik_turu": "piyasa_yorumu",
           "transkript_kaynagi": "gemini:gemini-3-flash-preview",
           "islendi_utc": "2026-11-22T18:16:50.313346+00:00"
+        },
+        {
+          "video_id": "JytE38d7TGM",
+          "baslik": "Tuhaf’a Gidiş!",
+          "yayin_tarihi": "2026-11-21T18:26:02+00:00",
+          "url": "https://www.youtube.com/watch?v=JytE38d7TGM",
+          "kanal_adi": "Devrim Akyıl",
+          "sure_dk": 19.7,
+          "canli": false,
+          "ana_mesaj": "2026 yılının zorlu ekonomik koşullarında yüksek faiz ve kur baskısı sürerken, altın ve gümüşün uzun vadeli güvenli liman olarak portföylerde önceliklendirilmesi gerektiği vurgulanıyor.",
+          "ozet": [
+            "2026 yılının bitmesine 6 hafta kala küresel ve yerel piyasalarda ekonomik sıkıntıların derinleştiği belirtiliyor.",
+            "Türkiye'de uygulanan yüksek faiz ve düşük kur politikasının sanayisizleşmeye yol açtığı ve döviz ihtiyacını artırdığı savunuluyor.",
+            "Döviz rezervlerindeki azalma ve carry trade işlemlerine yönelik belirsizliklerin ekonomik riskleri tetiklediği ifade ediliyor.",
+            "İkinci konut alımlarında kredi kolaylığı sağlanmasının, durgunlaşan gayrimenkul piyasasında bir hareketlenme yaratabileceği öngörülüyor.",
+            "Altın ve gümüşteki sert geri çekilmelerin fiziksel alım için fırsat olduğu ve 2028-2029 döngüsüne kadar tutulması gerektiği tavsiye ediliyor.",
+            "Borsa İstanbul'da hem TL hem dolar bazında aşağı yönlü trendin devam ettiği ve bankacılık hisselerindeki bozulmanın risk teşkil ettiği uyarısı yapılıyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "USD/TRY",
+              "ne_dedi": "49.37 seviyesi üzerinde kaldığı sürece yönün yukarı olduğu ve döngüsel hedeflerin geçerliliğini koruduğu belirtiliyor."
+            },
+            {
+              "kod": "Gram Altın",
+              "ne_dedi": "6180 seviyesinin üzerine çıkılması durumunda yukarı yönlü hareketin hızlanacağı, 2028-2029 yıllarına kadar tutulması gerektiği ifade ediliyor."
+            },
+            {
+              "kod": "ALTIN.S1",
+              "ne_dedi": "70 seviyesinin aşılmasının al sinyali üreteceği ve kısa vadeli trade için uygun bir enstrüman olduğu söyleniyor."
+            },
+            {
+              "kod": "Gram Gümüş",
+              "ne_dedi": "75.85 seviyesinin üzerine çıkılmasıyla toparlanma beklendiği, fiziksel biriktirmenin stratejik önemde olduğu vurgulanıyor."
+            },
+            {
+              "kod": "GMSTR",
+              "ne_dedi": "458 seviyesi trend takip seviyesi olarak belirlenmiş olup, aşırı düşüşler sonrası portföye bir miktar eklendiği belirtiliyor."
+            },
+            {
+              "kod": "XU100",
+              "ne_dedi": "11547 ve 11360 seviyelerinin altında kalındığı sürece yönün aşağı olduğu, dolar bazında ise 229 dolar altındaki seyrin riskli olduğu belirtiliyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Döviz rezervlerinin azalması ve olası bir devalüasyon ihtiyacı.",
+            "ABD merkezli sistemik bir krizin küresel sermaye akışlarını durdurma riski.",
+            "Küresel 'Büyük Sıfırlama' sürecinde kağıt paraların değer kaybı ve yeni dünya düzenine geçiş sancıları.",
+            "Borsa İstanbul'da bankacılık hisselerindeki bozulma ve yükselen CDS primleri."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-24T15:33:20.409915+00:00"
         },
         {
           "video_id": "z-T37SDcNNE",
@@ -1499,20 +1723,12 @@
           "islendi_utc": "2026-11-08T09:40:07.743745+00:00"
         }
       ],
-      "bekleyenler": [
-        {
-          "video_id": "JytE38d7TGM",
-          "baslik": "Tuhaf’a Gidiş!",
-          "url": "https://www.youtube.com/watch?v=JytE38d7TGM",
-          "yayin_tarihi": "2026-11-21T18:26:02+00:00",
-          "sure_dk": 19.7
-        }
-      ],
+      "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064376+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410050+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -1528,7 +1744,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064379+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410053+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -1544,7 +1760,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064381+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410056+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -1552,9 +1768,43 @@
       "not": "",
       "channel_id": "UCzANlYNW38QH4gchvUk3IsQ",
       "kanal_adi": "Efe Utkaner",
-      "hata": "gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
-      "son_basarili_utc": "2026-11-21T17:35:37.548552+00:00",
+      "hata": null,
+      "son_basarili_utc": "2026-11-24T15:30:28.491631+00:00",
       "videolar": [
+        {
+          "video_id": "sqYJ2L2YqjI",
+          "baslik": "Enka İnşaat #ENKAI Temel Analizi",
+          "yayin_tarihi": "2026-11-22T20:21:39+00:00",
+          "url": "https://www.youtube.com/watch?v=sqYJ2L2YqjI",
+          "kanal_adi": "Efe Utkaner",
+          "sure_dk": 16.1,
+          "canli": false,
+          "ana_mesaj": "ENKA İnşaat, inşaat faaliyetlerinin yanı sıra enerji üretimi, gayrimenkul kira gelirleri ve yeni nesil veri merkezi yatırımlarıyla döviz bazlı gelir çeşitliliği sağlayan güçlü bir holding yapısı sunmaktadır.",
+          "ozet": [
+            "ENKA'nın sadece inşaat değil; enerji, gayrimenkul, ticaret ve veri merkezi alanlarında faaliyet gösteren bir holding yapısında olduğu belirtildi.",
+            "Şirketin 8,1 milyar dolarlık sipariş portföyüne sahip olduğu ve projelerin ağırlıklı olarak Irak, ABD ve İngiltere'de yoğunlaştığı aktarıldı.",
+            "Rusya'da 1,35 milyon metrekarelik gayrimenkul portföyü ile yıllık yaklaşık 400-500 milyon dolar kira geliri elde edildiği vurgulandı.",
+            "Türkiye'nin elektrik ihtiyacının %10'unu karşılama kapasitesine sahip olan şirketin, Kırklareli ve Bulgaristan'da yeni enerji yatırımları yaptığı ifade edildi.",
+            "Tuzla ve Gebze'de devam eden veri merkezi projelerinin 2025 ve 2026 yıllarında tamamlanmasının hedeflendiği paylaşıldı.",
+            "Şirketin 5,6 milyar dolarlık net nakit pozisyonuna sahip olduğu ve bu nakdin büyük kısmının Eurobond ve mavi çipli hisselerde değerlendirildiği belirtildi."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "ENKAI",
+              "ne_dedi": "İnşaat, enerji ve gayrimenkul alanlarındaki çeşitliliği, güçlü nakit yapısı ve düzenli temettü ödemeleriyle beğenilen bir şirket olarak tanımlandı."
+            },
+            {
+              "kod": "TUPRS",
+              "ne_dedi": "ENKA'nın İzmit ve İzmir rafinerilerinde 175 milyon dolar bedelli propilen ayırma ünitesi projesi yürüttüğü belirtildi."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Savaşların artması nedeniyle enerji santrallerinin zarar görmesi riski dile getirildi."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-24T15:30:28.491611+00:00"
+        },
         {
           "video_id": "z0r2-VewTbk",
           "baslik": "Enerjisa #ENJSA Temel Analizi",
@@ -1804,20 +2054,12 @@
           "islendi_utc": "2026-11-14T16:55:23.005867+00:00"
         }
       ],
-      "bekleyenler": [
-        {
-          "video_id": "sqYJ2L2YqjI",
-          "baslik": "Enka İnşaat #ENKAI Temel Analizi",
-          "url": "https://www.youtube.com/watch?v=sqYJ2L2YqjI",
-          "yayin_tarihi": "2026-11-22T20:21:39+00:00",
-          "sure_dk": 16.1
-        }
-      ],
+      "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
-      "son7_uzun_video": 4,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064395+00:00"
+      "son7_uzun_video": 3,
+      "son_kontrol_utc": "2026-11-24T15:33:20.410074+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -1888,7 +2130,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064400+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410080+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -2068,7 +2310,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064409+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410090+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -2079,6 +2321,16 @@
       "hata": null,
       "son_basarili_utc": "2026-11-21T17:38:38.592115+00:00",
       "videolar": [
+        {
+          "video_id": "Xd5L6U6k2nE",
+          "baslik": "EREĞLİNİN DEĞERİ NASIL HESAPLANIR",
+          "yayin_tarihi": "2026-11-24T09:00:10+00:00",
+          "url": "https://www.youtube.com/watch?v=Xd5L6U6k2nE",
+          "kanal_adi": "FinansLab | Gülşah Bıçkı",
+          "sure_dk": 1.0,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
         {
           "video_id": "FukCmORp90s",
           "baslik": "SADECE KASAYA BAKMAK NE KADAR DOĞRU",
@@ -2286,7 +2538,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064446+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410114+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -2414,9 +2666,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064460+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410129+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -2545,7 +2797,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064466+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410137+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -2901,7 +3153,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064474+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410147+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -3076,7 +3328,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064485+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410159+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -3577,7 +3829,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064506+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410184+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -3725,7 +3977,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064515+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410194+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -3741,7 +3993,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064517+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410197+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -3757,7 +4009,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064520+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410200+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -4066,7 +4318,7 @@
       "bekleyenler": [
         {
           "video_id": "Vdfug4N3Xsc",
-          "baslik": "Onlar Parayı Vurdu! Sende Ucuzu Topla!",
+          "baslik": "Herkesi Batırdılar! Kendilerini Zengin Ettiler!",
           "url": "https://www.youtube.com/watch?v=Vdfug4N3Xsc",
           "yayin_tarihi": "2026-11-23T13:51:37+00:00",
           "sure_dk": 17.1
@@ -4076,7 +4328,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 1,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064532+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410215+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -4085,8 +4337,41 @@
       "channel_id": "UCCSACnW1QVfSVfL-KSP0bhw",
       "kanal_adi": "Selim Aldemir | Finans Akademisi",
       "hata": null,
-      "son_basarili_utc": "2026-11-09T15:24:35.608531+00:00",
+      "son_basarili_utc": "2026-11-24T15:25:13.347314+00:00",
       "videolar": [
+        {
+          "video_id": "jhBd6gieIsQ",
+          "baslik": "5 dakika borsa analizi ! 24 kasım salı saat gece 01;15",
+          "yayin_tarihi": "2026-11-23T22:17:04+00:00",
+          "url": "https://www.youtube.com/watch?v=jhBd6gieIsQ",
+          "kanal_adi": "Selim Aldemir | Finans Akademisi",
+          "sure_dk": 4.6,
+          "canli": false,
+          "ana_mesaj": "Borsa İstanbul'un 10.000-12.000 bandında sıkıştığı, 10.000-10.500 desteklerinden tepki beklense de genel satış baskısının sürdüğü ifade edilmektedir.",
+          "ozet": [
+            "Endekste direnç sonrası baskının sürdüğü ve yeni destek arayışının devam ettiği belirtiliyor.",
+            "Hisse bazlı tepki yükselişlerinin kalıcı olmayabileceği, bu nedenle nakit rezervini korumanın önemli olduğu vurgulanıyor.",
+            "Endeks için 10.500 ve 10.000 seviyeleri kritik destek noktaları olarak öne çıkıyor.",
+            "Olası bir tepki yükselişinde 12.000 seviyesinin önemli bir direnç ve satış bölgesi olduğu ifade ediliyor.",
+            "Kötümser senaryoda endeksin 9.800 seviyelerine kadar sarkabileceği ihtimali üzerinde duruluyor.",
+            "Alıcıların 10.000-10.500 bölgesinde, satıcıların ise 12.000 bölgesinde yoğunlaştığı söyleniyor.",
+            "Endeksin yakın vadede 10.000 ile 12.000 bandı arasında zikzaklı bir seyir izlemesi bekleniyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "XU100",
+              "ne_dedi": "10.500 ve 10.000 desteklerinden 12.000 direncine doğru tepki beklenirken, genel baskının sürdüğü ve 9.800 riskinin bulunduğu belirtiliyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Endeksteki satış baskısının hisse senetlerine yansımaya devam etmesi.",
+            "Tepki yükselişlerinin aldatıcı olması ve hisselerin tekrar düşüşe geçmesi.",
+            "Kötümser senaryoda endeksin 9.800 seviyelerine kadar gerileme ihtimali."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-24T15:25:13.347293+00:00"
+        },
         {
           "video_id": "lVkBHQukb74",
           "baslik": "ESCAR Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
@@ -4428,47 +4713,14 @@
           "sure_dk": 2.0,
           "canli": false,
           "atlandi": "sure 2 dk"
-        },
-        {
-          "video_id": "EEtkx4VNNGs",
-          "baslik": "KTLEV Hisse Teknik Analizi | Destek Direnç ve Grafik Yorumu",
-          "yayin_tarihi": "2026-11-06T14:30:24+00:00",
-          "url": "https://www.youtube.com/watch?v=EEtkx4VNNGs",
-          "kanal_adi": "Selim Aldemir | Finans Akademisi",
-          "sure_dk": 3.9,
-          "canli": false,
-          "ana_mesaj": "Katılımevim (KTLEV) hissesinin aşırı değerli olduğu ve beklenen düşüşün gerçekleştiği, hissenin gerçek değerinin 2.5-5 TL arasında olduğu vurgulanmaktadır.",
-          "ozet": [
-            "Katılımevim hissesinin düşüş trendinde olduğu ve destek seviyelerine yaklaştığı belirtildi.",
-            "3.5 TL ve 3 TL seviyelerinin destek olduğu, buralardan bir tepki yükselişi beklenebileceği ifade edildi.",
-            "Hissenin 2-2.5 TL seviyelerine kadar gerileme potansiyeli olduğu dile getirildi.",
-            "Tepki yükselişi durumunda ilk hedefin 5 TL, dirençlerin ise 7 TL ve 10 TL olduğu söylendi.",
-            "Konuşmacı, hissenin 15-20 TL olduğu dönemlerde bu düşüşü öngördüğünü iddia etti.",
-            "Hissenin piyasa değerinin normal şartlarda 2.5 TL ile 5 TL arasında olması gerektiği savunuldu.",
-            "Yatırımcıların yükselen ve pahalı hisselerden uzak durmaları gerektiği konusunda uyarı yapıldı."
-          ],
-          "bahsedilen_hisseler": [
-            {
-              "kod": "KTLEV",
-              "ne_dedi": "3.5 TL ve 3 TL desteklerinden tepki beklenen hissede, 2-2.5 TL seviyeleri teminat bölgesi olarak görülürken; tepki yükselişinde 5 TL, 7 TL ve 10 TL dirençleri takip edilmelidir."
-            }
-          ],
-          "konusmacinin_riskleri": [
-            "Piyasadaki fon krizi ve genel baskı nedeniyle hisselerin beklenen tepkiyi vermemesi.",
-            "Psikolojik baskıların piyasa hareketlerini kısıtlaması."
-          ],
-          "icerik_turu": "piyasa_yorumu",
-          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
-          "islendi_utc": "2026-11-08T09:50:04.499836+00:00"
         }
       ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 6,
-      "liste_disi": "her gun video yukluyor (son 7 gunde 6 uzun video)",
-      "son_kontrol_utc": "2026-11-23T15:29:22.064550+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 2,
+      "son_kontrol_utc": "2026-11-24T15:33:20.410242+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -4477,8 +4729,126 @@
       "channel_id": "UC79Ph9UMRx83-qQe6n1rbCg",
       "kanal_adi": "TANSEL ÇİFTÇİ ",
       "hata": null,
-      "son_basarili_utc": "2026-11-23T15:25:24.226824+00:00",
+      "son_basarili_utc": "2026-11-24T15:24:45.234227+00:00",
       "videolar": [
+        {
+          "video_id": "GwcG5eHp0gY",
+          "baslik": "#KCHOL de olası alım seviyeleri #bist100 #borsa #kesfet #keşfetteyiz",
+          "yayin_tarihi": "2026-11-24T09:57:34+00:00",
+          "url": "https://www.youtube.com/watch?v=GwcG5eHp0gY",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.6,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "Dwm7GBCbQ5g",
+          "baslik": "YÜKSELEMEYEN BORSADA YÜKSELME İHTİMALİ OLAN HİSSELERİ KONUŞUYORUZ....",
+          "yayin_tarihi": "2026-11-24T08:37:37+00:00",
+          "url": "https://www.youtube.com/watch?v=Dwm7GBCbQ5g",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 114.4,
+          "canli": false,
+          "ana_mesaj": "Borsa İstanbul'un zayıf seyri, küresel piyasalardaki teknoloji satışları ve enflasyon beklentileri ışığında hisse bazlı teknik analizler ve piyasa riskleri değerlendirilmektedir.",
+          "ozet": [
+            "BIST 100 endeksinin pozitif açılışlara rağmen günü negatif kapatması piyasadaki güç kaybına işaret ediyor.",
+            "Merkez Bankası Başkanı Karahan'ın enflasyon ve faiz indirimine dair açıklamaları, Aralık ayı beklentilerini şekillendiriyor.",
+            "Kasım ve Aralık aylarında baz etkisi nedeniyle enflasyonun düşmeme, hatta yükselme riski bulunuyor.",
+            "Küresel piyasalardaki teknoloji hisselerindeki satış baskısı ASELS gibi yerel hisseleri de olumsuz etkiledi.",
+            "Brent petrol fiyatlarının rezerv tamamlama talebi nedeniyle 70 dolar seviyelerine düşmesi zor görünüyor.",
+            "VIX korku endeksi ve DXY dolar endeksinin yüksek seyri risk iştahını baskılamaya devam ediyor.",
+            "Ay sonu vade kapanışları nedeniyle piyasada volatilite ve satış baskısı artabilir."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "YKBNK",
+              "ne_dedi": "36,82 TL seviyesindeki düşen trendin kırılması ve 36,70 TL üzerinde kalıcılık sağlanması yükseliş için kritik."
+            },
+            {
+              "kod": "THYAO",
+              "ne_dedi": "331 TL seviyesindeki güçlü Fibonacci direncinde zorlanıyor, 325-326 TL üzerinde kapanış yapamazsa satış sinyali gelebilir."
+            },
+            {
+              "kod": "AKBNK",
+              "ne_dedi": "Düşen trend devam ediyor, 60,65 TL seviyelerindeki destekler takip edilmeli."
+            },
+            {
+              "kod": "GARAN",
+              "ne_dedi": "146 TL üzerinde kapanışlar gelmedikçe düşüş trendinin devam etme riski var."
+            },
+            {
+              "kod": "ISCTR",
+              "ne_dedi": "12,70 TL seviyesindeki direnci geçemeyerek satış baskısı altına girdi, yeni bir al sinyali bekleniyor."
+            },
+            {
+              "kod": "TCELL",
+              "ne_dedi": "96-97 TL seviyelerinin üzerine çıkmadığı sürece pozitif bir görünümden bahsetmek zor."
+            },
+            {
+              "kod": "BIMAS",
+              "ne_dedi": "Yükseliş trend desteğine geldi ancak 386 TL seviyesinden gelen satışla teknik görünüm zayıfladı."
+            },
+            {
+              "kod": "TSKB",
+              "ne_dedi": "9,14 TL'den gelen al sinyali sonrası düşen trend direncine takıldı ve satış yedi."
+            },
+            {
+              "kod": "ASTOR",
+              "ne_dedi": "Sert düşüş sonrası yatay konsolidasyon ihtiyacı var, teknik analiz şu aşamada kısıtlı kalıyor."
+            },
+            {
+              "kod": "OYAKC",
+              "ne_dedi": "20 TL seviyesinin üzerine çıkmadığı sürece düşüş trendi etkisini sürdürecektir."
+            },
+            {
+              "kod": "MGROS",
+              "ne_dedi": "436-438 TL üzerinde kapanış yapamazsa satış baskısı devam edebilir."
+            },
+            {
+              "kod": "ASELS",
+              "ne_dedi": "338-339 TL seviyelerindeki hareketli ortalama dirençlerinin üzerine çıkması ve düşen trendi kırması gerekiyor."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Kasım ve Aralık aylarında enflasyonun baz etkisiyle yüksek gelme ihtimali.",
+            "Ay sonu vade kapanışlarının (vade sonu) getirebileceği satış baskısı.",
+            "DXY endeksinin 100 seviyesinin üzerinde kalmasının gelişmekte olan piyasalar için yarattığı risk.",
+            "Kamu tarafında net bir tasarruf tedbirinin açıklanmaması ve bütçe açığının enflasyonist baskısı."
+          ],
+          "icerik_turu": "piyasa_yorumu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-24T15:24:45.234207+00:00"
+        },
+        {
+          "video_id": "3F8rdbDWtkk",
+          "baslik": "#GARAN da alım seviyeleri…#bist100 #borsa #kesfet #kesfetteyiz",
+          "yayin_tarihi": "2026-11-24T04:30:52+00:00",
+          "url": "https://www.youtube.com/watch?v=3F8rdbDWtkk",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.8,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "orIiub2ao7g",
+          "baslik": "#AKBNK da olası alım seviyeleri ve hedefler….#bist100 #borsa #kesfet #kesfetteyiz",
+          "yayin_tarihi": "2026-11-23T18:00:30+00:00",
+          "url": "https://www.youtube.com/watch?v=orIiub2ao7g",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 0.7,
+          "canli": false,
+          "atlandi": "sure 1 dk"
+        },
+        {
+          "video_id": "imGXy7-dQW4",
+          "baslik": "Altında alım seviyeleri geldi mi ?#xauusd #altın #kesfet #kesfetteyiz #forex",
+          "yayin_tarihi": "2026-11-23T17:56:47+00:00",
+          "url": "https://www.youtube.com/watch?v=imGXy7-dQW4",
+          "kanal_adi": "TANSEL ÇİFTÇİ ",
+          "sure_dk": 1.5,
+          "canli": false,
+          "atlandi": "sure 2 dk"
+        },
         {
           "video_id": "8oUPb4syi4s",
           "baslik": "#THYAO da trend devam ediyor mu ? #bist100 #borsa #kesfet #kesfetteyiz",
@@ -4634,64 +5004,14 @@
           "sure_dk": 1.0,
           "canli": false,
           "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "INZlyaShA_g",
-          "baslik": "GÜMÜŞ İÇİN ALIM ZAMANI MI ?#xagusd #xauusd #kesfet #kesfetteyiz",
-          "yayin_tarihi": "2026-11-20T13:44:41+00:00",
-          "url": "https://www.youtube.com/watch?v=INZlyaShA_g",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.7,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "nIFnlpzPVmI",
-          "baslik": "Gram altın bu seviyelerden alınır mı ? #xauusd #altın #kesfet #kesfetteyiz #forex",
-          "yayin_tarihi": "2026-11-20T12:06:37+00:00",
-          "url": "https://www.youtube.com/watch?v=nIFnlpzPVmI",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.9,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "NcZ0_X4HE5U",
-          "baslik": "#THYAO da yükselişi takip etmeye devam ediyoruz….#bist100 #borsa #kesfet #kesfetteyiz",
-          "yayin_tarihi": "2026-11-20T10:48:50+00:00",
-          "url": "https://www.youtube.com/watch?v=NcZ0_X4HE5U",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.7,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "LsuJ7yVu4wc",
-          "baslik": "ALTIN ANALİZLERİMİZİ TAKİP ETMEYE DEVAM EDİN….#xauusd #altın #kesfet #kesfetteyiz #forex",
-          "yayin_tarihi": "2026-11-20T08:02:30+00:00",
-          "url": "https://www.youtube.com/watch?v=LsuJ7yVu4wc",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 1.0,
-          "canli": false,
-          "atlandi": "sure 1 dk"
-        },
-        {
-          "video_id": "4gvK9ItqZUU",
-          "baslik": "Desteklerin çalışmadığı gümüşte düşüş nerede bitecek ?#xagusd #xauusd #keşfet #keşfetteyiz #forex",
-          "yayin_tarihi": "2026-11-20T05:27:06+00:00",
-          "url": "https://www.youtube.com/watch?v=4gvK9ItqZUU",
-          "kanal_adi": "TANSEL ÇİFTÇİ ",
-          "sure_dk": 0.7,
-          "canli": false,
-          "atlandi": "sure 1 dk"
         }
       ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 4,
-      "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064574+00:00"
+      "aday_sayisi": 5,
+      "son7_uzun_video": 3,
+      "son_kontrol_utc": "2026-11-24T15:33:20.410307+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -4707,7 +5027,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064577+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410312+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -4723,7 +5043,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-23T15:29:22.064580+00:00"
+      "son_kontrol_utc": "2026-11-24T15:33:20.410315+00:00"
     }
   },
   "hata": null,
@@ -4741,11 +5061,11 @@
   ],
   "butce": {
     "toplam_sinir": 20,
-    "islenen": 1,
-    "bekleyen": 5,
+    "islenen": 6,
+    "bekleyen": 2,
     "kota_bitti": false,
     "kullanilan_modeller": {
-      "gemini-3-flash-preview": 1
+      "gemini-3-flash-preview": 6
     },
     "kotasi_dolan_modeller": [
       "gemini-omni-1.2-flash",
@@ -4996,11 +5316,31 @@
         "gemini-omni-flash-preview"
       ],
       "zaman_utc": "2026-11-23T15:29:22.064596+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 6,
+      "bekleyen": 2,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-3-flash-preview": 6
+      },
+      "kotasi_dolan_modeller": [
+        "gemini-omni-1.2-flash",
+        "gemini-omni-flash-preview"
+      ],
+      "zaman_utc": "2026-11-24T15:33:20.410337+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-23T15:29:22.064601+00:00",
+  "uretim_zamani_utc": "2026-11-24T15:33:20.410342+00:00",
   "denemeler": [
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
+    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
+    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
@@ -5012,17 +5352,7 @@
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-flash-lite-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "@birhissebiranalizunverdoktrini / bZyc-4VWsrw Gemini hatasi: gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
-    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-flash-lite-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "@efeutkaner / sqYJ2L2YqjI Gemini hatasi: gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
+    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
@@ -5030,10 +5360,6 @@
     "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "@cevikfinance / BfdL4BOVOXc Gemini hatasi: gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-flash-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-flash-lite-latest hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3.5-flash-lite hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "@DevrimAkyıl / JytE38d7TGM Gemini hatasi: gemini: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again late"
+    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP"
   ]
 }

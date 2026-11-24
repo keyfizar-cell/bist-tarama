@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-23T15:29:22.154185+00:00",
+ "uretim_zamani_utc": "2026-11-24T15:33:20.500935+00:00",
  "kisiler": {
   "Yaşar Erdinç": {
    "islenenler": [
@@ -313,6 +313,59 @@
      ],
      "konusmaci_dogrulandi": true,
      "yaklasik_tarih": "2013"
+    },
+    {
+     "video_id": "gTxxdnaDUSU",
+     "baslik": "YAŞAR ERDİNÇ Bir Hisseye Değer Biçmek",
+     "kanal": "YATIRIMCI SİZSİNİZ",
+     "yayin_tarihi": "2021-06-02T23:00:10Z",
+     "url": "https://www.youtube.com/watch?v=gTxxdnaDUSU",
+     "sure_dk": 10.4,
+     "islenme_utc": "2026-11-24T15:33:48.832715+00:00",
+     "kaynak": "gemini:gemini-3-flash-preview",
+     "ilkeler": [
+      "Şirketin faaliyet raporlarını mutlaka okuyun.",
+      "Şirketin 3 yıl sonraki cirosunun ne olacağını tahmin etmeye çalışın.",
+      "Şirketin yaptığı yatırımları ve bu yatırımların kârlılığa etkisini inceleyin.",
+      "Yönetim kurulu başkanlarının geçmişteki mesajlarını ve bu hedeflerin gerçekleşip gerçekleşmediğini kontrol edin.",
+      "Yeni teknoloji yatırımları maliyetleri düşürdüğü için kâr marjını artırır.",
+      "Uzun vadeli yatırım için hisse seçerken ev alır gibi 1-2 ay araştırma yapın.",
+      "Kâr artışı ile hisse fiyatı artışı arasındaki korelasyonu takip edin.",
+      "Borsayı her gün takip etmek yerine uzun vadeli yatırımcı olun.",
+      "Sabırsızlık ve tamahkarlık gibi insani duyguların yatırım kararlarınızı etkilemesine izin vermeyin.",
+      "Şirketin geçmişteki ortalama Fiyat/Kazanç (F/K) oranlarını referans alın."
+     ],
+     "ozet": [
+      "Hisse senedi değerlemesinde temel analiz ve gelecek projeksiyonlarının önemi vurgulanmaktadır.",
+      "Şirketlerin kâr artışları ile piyasa değerleri arasındaki güçlü ilişki örneklerle açıklanmaktadır.",
+      "Yatırımcının sabırlı olması ve kısa vadeli fiyat hareketleri yerine uzun vadeli büyümeye odaklanması gerektiği belirtilmektedir.",
+      "Faaliyet raporları ve yönetim mesajlarının analizi, şirketin gelecekteki performansını anlamak için kritik bir araçtır.",
+      "Çeşitli hisseler üzerinden geçmiş performans ve değerleme analizleri yapılmaktadır."
+     ],
+     "bahsedilen_hisseler": [
+      {
+       "kod": "ASELS",
+       "ne_dedi": "5 yıllık süreçte kâr artışına paralel olarak fiyatının 3 kat artabileceği öngörülmüştür."
+      },
+      {
+       "kod": "TBORG",
+       "ne_dedi": "Yaşar Grubu'ndan satıldıktan sonra kârı 12 kat, piyasa değeri ise yaklaşık 9 kat artmıştır."
+      },
+      {
+       "kod": "SODA",
+       "ne_dedi": "Kârı 12 kat artarken piyasa değerinin 10 kat arttığı bir başarı hikayesi olarak sunulmuştur."
+      },
+      {
+       "kod": "YATAS",
+       "ne_dedi": "Kârındaki 10 katlık artışa karşın piyasa değerinin çok daha fazla arttığı ve şu an pahalı olabileceği belirtilmiştir."
+      },
+      {
+       "kod": "BIMAS",
+       "ne_dedi": "Cirosu ve kârı istikrarlı artan ancak mevcut fiyatıyla çok ucuz olmayan bir şirket olarak analiz edilmiştir."
+      }
+     ],
+     "konusmaci_dogrulandi": true,
+     "yaklasik_tarih": "2017"
     }
    ],
    "hatali": {
@@ -474,9 +527,9 @@
     }
    ],
    "aday_guncelleme_utc": "2026-11-22T18:16:51.618949+00:00",
-   "kalan_aday": 11,
+   "kalan_aday": 10,
    "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz.",
-   "hata": "eLzWF-WJ_lk: RuntimeError: Gemini basarisiz: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in d"
+   "hata": null
   }
  },
  "hata": null
