@@ -1,37 +1,44 @@
 {
  "surum": "1.2",
- "uretim_zamani_utc": "2026-11-24T18:51:04.335954+00:00",
+ "uretim_zamani_utc": "2026-11-25T17:56:17.545057+00:00",
  "video": {
-  "video_id": "cDgGWUIrn7Y",
-  "baslik": "Borsa Düşerken Bu 10 Şirketin Kasası Dolu | Tüpraş’ta 204 Milyar TL Nakit",
-  "sure_sn": 819,
+  "video_id": "x2T-CvNUozo",
+  "baslik": "ATATP Neden %53 Düştü? I Bilanço Başka Bir Hikâye Anlatıyor",
+  "sure_sn": 935,
   "esik": 1000
  },
  "deneyler": [
   {
    "ad": "gemini_teshis",
-   "durum": "hata",
-   "karakter": 0,
-   "turkce": false,
-   "sure_sn": 84.1,
-   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3-flash-preview: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-flash-latest: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing",
-   "onizleme": ""
+   "durum": "basarili",
+   "karakter": 14621,
+   "turkce": true,
+   "sure_sn": 33.1,
+   "not": "model=gemini-3-flash-preview bitis=STOP",
+   "onizleme": "Bugün son dönemde yatırımcıların çok fazla takip ettiği ve sizlerden de çok fazla soru gelen bir şirketi analiz edeceğiz: ATP Yazılım. Bir yanda Burger King China gibi dev zincirlerin restoranlarında çalışan, Afrika'ya kadar uzanan bir yazılım işi yapıyorlar. Diğer yandan da Tıkla Gelsin'in sahibi olan şirkette büyük bir pay sahibiler. Kağıt üzerindeyse çarpanlar açısından oldukça cazip görünüyorl"
   },
   {
    "ad": "gemini_parca",
-   "durum": "hata",
-   "karakter": 0,
-   "turkce": false,
-   "sure_sn": 65.5,
-   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3-flash-preview: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-flash-latest: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing",
-   "onizleme": "",
+   "durum": "basarili",
+   "karakter": 14667,
+   "turkce": true,
+   "sure_sn": 63.2,
+   "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem",
+   "onizleme": "Bugün son dönemde yatırımcıların çok fazla takip ettiği ve sizlerden de çok fazla soru gelen bir şirketi analiz edeceğiz: ATP Yazılım. Bir yanda Burger King China gibi dev zincirlerin restoranlarında çalışan, Afrika'ya kadar uzanan bir yazılım işi yapıyorlar; diğer yandan da Tıkla Gelsin'in sahibi olan şirkette büyük bir pay sahibiler. Kağıt üzerindeyse çarpanlar açısından oldukça cazip görünüyorl",
    "parcalar": [
     {
      "bas": 0,
      "bit": 600,
-     "model": null,
-     "karakter": 0,
-     "bitis": null
+     "model": "gemini-3-flash-preview",
+     "karakter": 9318,
+     "bitis": "STOP"
+    },
+    {
+     "bas": 600,
+     "bit": 935,
+     "model": "gemini-3-flash-preview",
+     "karakter": 5348,
+     "bitis": "STOP"
     }
    ]
   },
@@ -40,8 +47,8 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 1.1,
-   "not": "] cDgGWUIrn7Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "sure_sn": 1.2,
+   "not": "] x2T-CvNUozo: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
   {
@@ -50,7 +57,7 @@
    "karakter": 0,
    "turkce": false,
    "sure_sn": 1.0,
-   "not": "] cDgGWUIrn7Y: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "not": "] x2T-CvNUozo: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
   {
@@ -117,7 +124,10 @@
    "onizleme": ""
   }
  ],
- "basarili_yollar": [],
+ "basarili_yollar": [
+  "gemini_teshis",
+  "gemini_parca"
+ ],
  "gecmis": {
   "gemini_teshis": [
    {
@@ -184,6 +194,11 @@
     "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "basarili",
+    "karakter": 14621
    }
   ],
   "gemini_parca": [
@@ -251,6 +266,11 @@
     "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "basarili",
+    "karakter": 14667
    }
   ],
   "ytdlp_altyazi": [
@@ -316,6 +336,11 @@
    },
    {
     "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -385,6 +410,11 @@
     "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "qwen_url": [
@@ -450,6 +480,11 @@
    },
    {
     "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -519,6 +554,11 @@
     "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "glm_url": [
@@ -584,6 +624,11 @@
    },
    {
     "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -653,6 +698,11 @@
     "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "ses_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "ses_yok",
+    "karakter": 0
    }
   ],
   "siliconflow_ses": [
@@ -718,6 +768,11 @@
    },
    {
     "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -787,6 +842,11 @@
     "tarih": "2026-11-24T18:51:04.335954+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "deepseek": [
@@ -852,6 +912,11 @@
    },
    {
     "tarih": "2026-11-24T18:51:04.335954+00:00",
+    "durum": "uygulanamaz",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "uygulanamaz",
     "karakter": 0
    }
