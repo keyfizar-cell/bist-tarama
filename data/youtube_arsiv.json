@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-24T15:33:20.500935+00:00",
+ "uretim_zamani_utc": "2026-11-25T15:38:07.051949+00:00",
  "kisiler": {
   "Yaşar Erdinç": {
    "islenenler": [
@@ -366,6 +366,43 @@
      ],
      "konusmaci_dogrulandi": true,
      "yaklasik_tarih": "2017"
+    },
+    {
+     "video_id": "h7A1mjFU2ZQ",
+     "baslik": "Piyasadaki Borsa Eğitimleri : Yaşar Erdinç ve Gökhan Ugan",
+     "kanal": "Fx Matik",
+     "yayin_tarihi": "2017-10-21T15:01:17Z",
+     "url": "https://www.youtube.com/watch?v=h7A1mjFU2ZQ",
+     "sure_dk": 10.2,
+     "islenme_utc": "2026-11-25T15:40:04.982731+00:00",
+     "kaynak": "gemini:gemini-3-flash-preview",
+     "ilkeler": [
+      "Teknik analiz indikatörleri tek başına kullanılmamalı, kişiselleştirilmiş bir sistemle birleştirilmelidir.",
+      "Yatırım stratejisi oluştururken Elliott, Gann veya Harmonik gibi belirli bir felsefe benimsenmelidir.",
+      "Portföyün sigortalanması ve risk yönetimi, sürdürülebilir kazanç için kritik öneme sahiptir.",
+      "Hisse senedi seçiminde makroekonomik veriler ve kavramlar temel analizle birlikte değerlendirilmelidir.",
+      "Mali tablolar ve bilanço analizi, şirketlerin gerçek değerini anlamak için öğrenilmelidir.",
+      "Başarılı bir trader, stratejisi gerektirdiğinde zararı kabullenip işlem kapatmayı bilmelidir."
+     ],
+     "ozet": [
+      "Konuşmacı, borsa eğitimleri konusundaki deneyimlerini ve Yaşar Erdinç ile Gökhan Ugan'ın eğitimlerini değerlendiriyor.",
+      "Gökhan Ugan'ın internet tabanlı 'Sıfırdan 100'e Borsa' eğitiminin içeriği ve konforu hakkında bilgi veriliyor.",
+      "Teknik analizin sadece indikatörlerden ibaret olmadığı, bir sistem ve felsefe gerektirdiği vurgulanıyor.",
+      "Portföy yönetimi, risk yönetimi ve mali tabloların borsa yatırımındaki önemi anlatılıyor.",
+      "Konuşmacı, gelecek hafta Yaşar Erdinç'in Ankara'daki yüz yüze eğitimine katılacağını belirtiyor."
+     ],
+     "bahsedilen_hisseler": [
+      {
+       "kod": "Borsa",
+       "ne_dedi": "Genel olarak borsa işleyişi, eğitimleri ve Forex ile olan teknik analiz benzerlikleri üzerine konuşulmuştur."
+      },
+      {
+       "kod": "Forex",
+       "ne_dedi": "Konuşmacı Forex'te uzmanlaştıktan sonra borsanın farklı dinamiklerini öğrenmek için bu alana yöneldiğini belirtmiştir."
+      }
+     ],
+     "konusmaci_dogrulandi": false,
+     "yaklasik_tarih": ""
     }
    ],
    "hatali": {
@@ -527,7 +564,7 @@
     }
    ],
    "aday_guncelleme_utc": "2026-11-22T18:16:51.618949+00:00",
-   "kalan_aday": 10,
+   "kalan_aday": 9,
    "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz.",
    "hata": null
   }
