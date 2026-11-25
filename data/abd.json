@@ -1,91 +1,91 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-24T14:41:55.616104+00:00",
+ "uretim_zamani_utc": "2026-11-25T00:05:00.415864+00:00",
  "kaynak": "Yahoo Finance chart API",
  "veriler": {
   "NVO": {
    "sembol": "NVO",
    "ad": "Novo Nordisk A/S",
    "para": "USD",
-   "son": 40.4,
+   "son": 40.31,
    "onceki_kapanis": 39.14,
-   "gunluk_yuzde": 3.22,
+   "gunluk_yuzde": 2.99,
    "son_mum_tarihi": "2026-11-24",
    "h52_zirve": 64.16,
    "h52_dip": 35.12,
-   "zirveye_uzaklik_yuzde": -37.0,
-   "rsi14": 52.0,
+   "zirveye_uzaklik_yuzde": -37.2,
+   "rsi14": 51.6,
    "macd": {
-    "macd": -0.09,
-    "sinyal": 0.059,
-    "histogram": -0.149,
+    "macd": -0.097,
+    "sinyal": 0.057,
+    "histogram": -0.155,
     "yon": "negatif"
    },
-   "piyasa_durumu": "REGULAR",
-   "guncelleme_utc": "2026-11-24T14:41:55.616104+00:00"
+   "piyasa_durumu": "KAPALI",
+   "guncelleme_utc": "2026-11-25T00:05:00.415864+00:00"
   },
   "SPY": {
    "sembol": "SPY",
    "ad": "State Street SPDR S&P 500 ETF Trust",
    "para": "USD",
-   "son": 715.85,
+   "son": 718.78,
    "onceki_kapanis": 722.29,
-   "gunluk_yuzde": -0.89,
+   "gunluk_yuzde": -0.49,
    "son_mum_tarihi": "2026-11-24",
    "h52_zirve": 781.62,
    "h52_dip": 629.28,
-   "zirveye_uzaklik_yuzde": -8.4,
-   "rsi14": 39.6,
+   "zirveye_uzaklik_yuzde": -8.0,
+   "rsi14": 40.5,
    "macd": {
-    "macd": -13.095,
-    "sinyal": -9.379,
-    "histogram": -3.716,
+    "macd": -12.861,
+    "sinyal": -9.332,
+    "histogram": -3.529,
     "yon": "negatif"
    },
-   "piyasa_durumu": "REGULAR",
-   "guncelleme_utc": "2026-11-24T14:41:55.616104+00:00"
+   "piyasa_durumu": "KAPALI",
+   "guncelleme_utc": "2026-11-25T00:05:00.415864+00:00"
   },
   "QQQ": {
    "sembol": "QQQ",
    "ad": "Invesco QQQ Trust",
    "para": "USD",
-   "son": 638.55,
+   "son": 638.1,
    "onceki_kapanis": 651.03,
-   "gunluk_yuzde": -1.92,
+   "gunluk_yuzde": -1.99,
    "son_mum_tarihi": "2026-11-24",
    "h52_zirve": 762.86,
    "h52_dip": 555.6,
-   "zirveye_uzaklik_yuzde": -16.3,
-   "rsi14": 39.5,
+   "zirveye_uzaklik_yuzde": -16.4,
+   "rsi14": 39.4,
    "macd": {
-    "macd": -19.813,
-    "sinyal": -17.029,
-    "histogram": -2.784,
+    "macd": -19.849,
+    "sinyal": -17.036,
+    "histogram": -2.813,
     "yon": "negatif"
    },
-   "piyasa_durumu": "REGULAR",
-   "guncelleme_utc": "2026-11-24T14:41:55.616104+00:00"
+   "piyasa_durumu": "KAPALI",
+   "guncelleme_utc": "2026-11-25T00:05:00.415864+00:00"
   },
   "DIA": {
    "sembol": "DIA",
    "ad": "State Street SPDR Dow Jones Industrial Average ETF Trust",
    "para": "USD",
-   "son": 495.78,
+   "son": 499.74,
    "onceki_kapanis": 495.8,
-   "gunluk_yuzde": -0.0,
+   "gunluk_yuzde": 0.79,
    "son_mum_tarihi": "2026-11-24",
    "h52_zirve": 546.75,
    "h52_dip": 450.44,
-   "zirveye_uzaklik_yuzde": -9.3,
-   "rsi14": 39.5,
+   "zirveye_uzaklik_yuzde": -8.6,
+   "rsi14": 42.4,
    "macd": {
-    "macd": -6.977,
-    "sinyal": -3.804,
-    "histogram": -3.173,
+    "macd": -6.661,
+    "sinyal": -3.741,
+    "histogram": -2.92,
     "yon": "negatif"
    },
-   "piyasa_durumu": "REGULAR",
-   "guncelleme_utc": "2026-11-24T14:41:55.616104+00:00"
+   "piyasa_durumu": "KAPALI",
+   "guncelleme_utc": "2026-11-25T00:05:00.415864+00:00"
   }
  },
  "hatalar": {}
