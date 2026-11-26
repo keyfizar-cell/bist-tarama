@@ -1,6 +1,6 @@
 {
  "surum": "1.1",
- "guncelleme": "2026-11-25",
+ "guncelleme": "2026-11-26",
  "sepetler": [
   {
    "hafta": "2026-H46",
@@ -14,8 +14,8 @@
      "skor": 89.6,
      "sira": 1,
      "agirlik_yuzde": 20.0,
-     "guncel": 318.0,
-     "getiri_yuzde": -10.3
+     "guncel": 323.25,
+     "getiri_yuzde": -8.82
     },
     {
      "kod": "ARDYZ",
@@ -24,8 +24,8 @@
      "skor": 77.9,
      "sira": 4,
      "agirlik_yuzde": 20.0,
-     "guncel": 43.88,
-     "getiri_yuzde": -17.83
+     "guncel": 43.84,
+     "getiri_yuzde": -17.9
     },
     {
      "kod": "NTGAZ",
@@ -34,8 +34,8 @@
      "skor": 76.6,
      "sira": 6,
      "agirlik_yuzde": 20.0,
-     "guncel": 7.92,
-     "getiri_yuzde": -4.92
+     "guncel": 8.12,
+     "getiri_yuzde": -2.52
     },
     {
      "kod": "ATATP",
@@ -44,8 +44,8 @@
      "skor": 76.1,
      "sira": 7,
      "agirlik_yuzde": 20.0,
-     "guncel": 170.0,
-     "getiri_yuzde": -16.3
+     "guncel": 170.9,
+     "getiri_yuzde": -15.85
     },
     {
      "kod": "AHGAZ",
@@ -58,9 +58,9 @@
      "getiri_yuzde": -7.25
     }
    ],
-   "sepet_getiri_yuzde": -11.32,
-   "xu100_getiri_yuzde": -9.7,
-   "fark_puan": -1.62
+   "sepet_getiri_yuzde": -10.47,
+   "xu100_getiri_yuzde": -9.12,
+   "fark_puan": -1.35
   },
   {
    "hafta": "2026-H47",
@@ -74,8 +74,8 @@
      "skor": 86.3,
      "sira": 1,
      "agirlik_yuzde": 20.0,
-     "guncel": 64.05,
-     "getiri_yuzde": -19.33
+     "guncel": 65.15,
+     "getiri_yuzde": -17.95
     },
     {
      "kod": "TUPRS",
@@ -84,8 +84,8 @@
      "skor": 86.2,
      "sira": 2,
      "agirlik_yuzde": 20.0,
-     "guncel": 318.0,
-     "getiri_yuzde": -10.67
+     "guncel": 323.25,
+     "getiri_yuzde": -9.2
     },
     {
      "kod": "TRMET",
@@ -94,8 +94,8 @@
      "skor": 77.4,
      "sira": 3,
      "agirlik_yuzde": 20.0,
-     "guncel": 95.3,
-     "getiri_yuzde": -17.27
+     "guncel": 96.8,
+     "getiri_yuzde": -15.97
     },
     {
      "kod": "ARDYZ",
@@ -104,8 +104,8 @@
      "skor": 75.2,
      "sira": 9,
      "agirlik_yuzde": 20.0,
-     "guncel": 43.88,
-     "getiri_yuzde": -16.74
+     "guncel": 43.84,
+     "getiri_yuzde": -16.81
     },
     {
      "kod": "BASGZ",
@@ -114,13 +114,13 @@
      "skor": 75.1,
      "sira": 10,
      "agirlik_yuzde": 20.0,
-     "guncel": 33.2,
-     "getiri_yuzde": -10.85
+     "guncel": 32.78,
+     "getiri_yuzde": -11.98
     }
    ],
-   "sepet_getiri_yuzde": -14.97,
-   "xu100_getiri_yuzde": -9.85,
-   "fark_puan": -5.12
+   "sepet_getiri_yuzde": -14.38,
+   "xu100_getiri_yuzde": -9.28,
+   "fark_puan": -5.1
   },
   {
    "hafta": "2026-H48",
@@ -134,8 +134,8 @@
      "skor": 86.2,
      "sira": 1,
      "agirlik_yuzde": 20.0,
-     "guncel": 318.0,
-     "getiri_yuzde": -1.85
+     "guncel": 323.25,
+     "getiri_yuzde": -0.23
     },
     {
      "kod": "TRENJ",
@@ -144,8 +144,8 @@
      "skor": 85.5,
      "sira": 2,
      "agirlik_yuzde": 20.0,
-     "guncel": 64.05,
-     "getiri_yuzde": -11.41
+     "guncel": 65.15,
+     "getiri_yuzde": -9.89
     },
     {
      "kod": "TRMET",
@@ -154,8 +154,8 @@
      "skor": 77.2,
      "sira": 3,
      "agirlik_yuzde": 20.0,
-     "guncel": 95.3,
-     "getiri_yuzde": -10.68
+     "guncel": 96.8,
+     "getiri_yuzde": -9.28
     },
     {
      "kod": "AHGAZ",
@@ -174,19 +174,19 @@
      "skor": 76.0,
      "sira": 7,
      "agirlik_yuzde": 20.0,
-     "guncel": 43.88,
-     "getiri_yuzde": -9.71
+     "guncel": 43.84,
+     "getiri_yuzde": -9.79
     }
    ],
-   "sepet_getiri_yuzde": -6.75,
-   "xu100_getiri_yuzde": -3.87,
-   "fark_puan": -2.88
+   "sepet_getiri_yuzde": -5.86,
+   "xu100_getiri_yuzde": -3.25,
+   "fark_puan": -2.61
   }
  ],
  "karne": {
   "sepet_sayisi": 3,
   "endeksi_gecen": 0,
-  "ort_fark_puan": -3.21
+  "ort_fark_puan": -3.02
  },
  "not": "Örnek model sepet — eğitim/izleme amaçlı kâğıt portföy; yatırım tavsiyesi değildir."
 }
