@@ -1,6 +1,6 @@
 {
  "surum": "1.2",
- "uretim_zamani_utc": "2026-11-25T17:56:17.545057+00:00",
+ "uretim_zamani_utc": "2026-11-26T17:41:31.636052+00:00",
  "video": {
   "video_id": "x2T-CvNUozo",
   "baslik": "ATATP Neden %53 Düştü? I Bilanço Başka Bir Hikâye Anlatıyor",
@@ -11,33 +11,33 @@
   {
    "ad": "gemini_teshis",
    "durum": "basarili",
-   "karakter": 14621,
+   "karakter": 14596,
    "turkce": true,
-   "sure_sn": 33.1,
+   "sure_sn": 218.7,
    "not": "model=gemini-3-flash-preview bitis=STOP",
-   "onizleme": "Bugün son dönemde yatırımcıların çok fazla takip ettiği ve sizlerden de çok fazla soru gelen bir şirketi analiz edeceğiz: ATP Yazılım. Bir yanda Burger King China gibi dev zincirlerin restoranlarında çalışan, Afrika'ya kadar uzanan bir yazılım işi yapıyorlar. Diğer yandan da Tıkla Gelsin'in sahibi olan şirkette büyük bir pay sahibiler. Kağıt üzerindeyse çarpanlar açısından oldukça cazip görünüyorl"
+   "onizleme": "Bugün son dönemde yatırımcıların çok fazla takip ettiği ve sizlerden de çok fazla soru gelen bir şirketi analiz edeceğiz: ATP Yazılım. Bir yanda Burger King China gibi dev zincirlerin restoranlarında çalışan, Afrika'ya kadar uzanan bir yazılım işi yapıyorlar. Diğer yandan da Tıkla Gelsin'in sahibi olan şirkette büyük bir pay sahipler. Kağıt üzerindeyse çarpanlar açısından oldukça cazip görünüyorla"
   },
   {
    "ad": "gemini_parca",
    "durum": "basarili",
-   "karakter": 14667,
+   "karakter": 14652,
    "turkce": true,
-   "sure_sn": 63.2,
+   "sure_sn": 96.9,
    "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem",
-   "onizleme": "Bugün son dönemde yatırımcıların çok fazla takip ettiği ve sizlerden de çok fazla soru gelen bir şirketi analiz edeceğiz: ATP Yazılım. Bir yanda Burger King China gibi dev zincirlerin restoranlarında çalışan, Afrika'ya kadar uzanan bir yazılım işi yapıyorlar; diğer yandan da Tıkla Gelsin'in sahibi olan şirkette büyük bir pay sahibiler. Kağıt üzerindeyse çarpanlar açısından oldukça cazip görünüyorl",
+   "onizleme": "Bugün son dönemde yatırımcıların çok fazla takip ettiği ve sizlerden de çok fazla soru gelen bir şirketi analiz edeceğiz: ATP Yazılım. Bir yanda Burger King China gibi dev zincirlerin restoranlarında çalışan, Afrika'ya kadar uzanan bir yazılım işi yapıyorlar. Diğer yandan da Tıkla Gelsin'in sahibi olan şirkette büyük bir pay sahipler. Kağıt üzerindeyse çarpanlar açısından oldukça cazip görünüyorla",
    "parcalar": [
     {
      "bas": 0,
      "bit": 600,
      "model": "gemini-3-flash-preview",
-     "karakter": 9318,
+     "karakter": 9299,
      "bitis": "STOP"
     },
     {
      "bas": 600,
      "bit": 935,
      "model": "gemini-3-flash-preview",
-     "karakter": 5348,
+     "karakter": 5352,
      "bitis": "STOP"
     }
    ]
@@ -47,7 +47,7 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 1.2,
+   "sure_sn": 1.1,
    "not": "] x2T-CvNUozo: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
@@ -83,8 +83,8 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 0.5,
-   "not": "model=glm-4.6v-flash HTTP 429 {\"error\":{\"code\":\"1305\",\"message\":\"The service may be temporarily overloaded, please try again later\"}}",
+   "sure_sn": 31.9,
+   "not": "model=glm-4.6v-flash HTTP 400 {\"error\":{\"code\":\"1210\",\"message\":\"图片输入格式/解析错误\"}}",
    "onizleme": ""
   },
   {
@@ -199,6 +199,11 @@
     "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "basarili",
     "karakter": 14621
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "basarili",
+    "karakter": 14596
    }
   ],
   "gemini_parca": [
@@ -271,6 +276,11 @@
     "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "basarili",
     "karakter": 14667
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "basarili",
+    "karakter": 14652
    }
   ],
   "ytdlp_altyazi": [
@@ -341,6 +351,11 @@
    },
    {
     "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -415,6 +430,11 @@
     "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "qwen_url": [
@@ -485,6 +505,11 @@
    },
    {
     "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -559,6 +584,11 @@
     "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "glm_url": [
@@ -629,6 +659,11 @@
    },
    {
     "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -703,6 +738,11 @@
     "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "ses_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "ses_yok",
+    "karakter": 0
    }
   ],
   "siliconflow_ses": [
@@ -773,6 +813,11 @@
    },
    {
     "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -847,6 +892,11 @@
     "tarih": "2026-11-25T17:56:17.545057+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "deepseek": [
@@ -917,6 +967,11 @@
    },
    {
     "tarih": "2026-11-25T17:56:17.545057+00:00",
+    "durum": "uygulanamaz",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "uygulanamaz",
     "karakter": 0
    }
