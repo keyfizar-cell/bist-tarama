@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-25T15:38:07.051949+00:00",
+ "uretim_zamani_utc": "2026-11-26T15:32:05.314620+00:00",
  "kisiler": {
   "Yaşar Erdinç": {
    "islenenler": [
@@ -403,6 +403,42 @@
      ],
      "konusmaci_dogrulandi": false,
      "yaklasik_tarih": ""
+    },
+    {
+     "video_id": "LAxpceeuAB8",
+     "baslik": "Dr  Yaşar Erdinç, Uzun Vade Hisse Senedi Yatırımı Neden Çok Kazandırır  Anlatıyor.Borsada Başarı",
+     "kanal": "İKTİSÂDÎ HAYAT",
+     "yayin_tarihi": "2023-01-21T21:08:37Z",
+     "url": "https://www.youtube.com/watch?v=LAxpceeuAB8",
+     "sure_dk": 10.0,
+     "islenme_utc": "2026-11-26T15:41:06.189066+00:00",
+     "kaynak": "gemini:gemini-3-flash-preview",
+     "ilkeler": [
+      "Borsayı bir kumar yeri olarak görmeyin, ancak piyasada çok sayıda kumarbaz olduğunu unutmayın.",
+      "Fiyatları ekran başında sürekli izlemekten kaçının, çünkü bu durum duygusal stres yaratarak hatalı kararlar vermenize yol açar.",
+      "Yatırım kararlarınızı forumlardaki duyumlara veya başkalarının fikirlerine göre değil, kendi kurduğunuz bir sisteme göre verin.",
+      "Al-sat yaparak para kazanmak mümkün olsa da kalıcı zenginlik için mutlaka uzun vadeli yatırımcı olunmalıdır.",
+      "Bir şirkete yatırım yapmadan önce faaliyet raporlarını okumak ve yatırım süreçlerini anlamak için ciddi zaman ayırın.",
+      "Sadece kârını ve iş hacmini büyütecek potansiyeli olan şirketlere ortak olmayı hedefleyin.",
+      "Şirketlerin devam eden yatırımlarının ne zaman biteceğini ve kârlılığa ne zaman katkı sağlayacağını sorgulayın.",
+      "Hisse fiyatının yükselmemesini veya düşmesini, daha düşük maliyetle daha fazla pay toplamak için bir fırsat olarak görün.",
+      "Portföyünüzü uzun vadeli yatırımlar ve piyasayı öğrenmek için yapılan kısa vadeli işlemler arasında paylaştırın.",
+      "Yatırım yapacağınız hisse için gelecekteki kâr beklentilerine dayalı rasyonel bir hedef fiyat belirleyin."
+     ],
+     "ozet": [
+      "Yatırımcıların en büyük düşmanı, hızlı değişen piyasalarda yanlış kararlar vermeye programlanmış olan kendi beyin yapılarıdır.",
+      "Sürekli fiyat takibi yapmak rasyonelliği öldürür; bu yüzden arsa yatırımı gibi daha sakin bir bakış açısı benimsenmelidir.",
+      "Başarılı yatırımın sırrı, başkalarının ne dediğine bakmadan, derinlemesine şirket analizi yaparak uzun vadeli ortak olmaktır.",
+      "Piyasa düşüşleri, temel analizi sağlam olan şirketlerde lot sayısını artırmak için en uygun zamanlardır."
+     ],
+     "bahsedilen_hisseler": [
+      {
+       "kod": "XU100",
+       "ne_dedi": "Endeks grafiği üzerinden 93.000 seviyesinin aşılmasını ve bu süreçteki fiyat hareketlerini analiz etti."
+      }
+     ],
+     "konusmaci_dogrulandi": true,
+     "yaklasik_tarih": "2017"
     }
    ],
    "hatali": {
@@ -564,7 +600,7 @@
     }
    ],
    "aday_guncelleme_utc": "2026-11-22T18:16:51.618949+00:00",
-   "kalan_aday": 9,
+   "kalan_aday": 8,
    "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz.",
    "hata": null
   }

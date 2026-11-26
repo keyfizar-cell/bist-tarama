@@ -1,5 +1,5 @@
 {
-  "uretim_zamani_utc": "2026-11-25T15:22:50.220361+00:00",
+  "uretim_zamani_utc": "2026-11-26T15:21:38.296346+00:00",
   "kanal": "Emir Bozkurt | Stratejik Yatirim",
   "channel_id": "UChiWzAwOe7J67dd5PmmUnnA",
   "video_liste_kaynagi": "rss_kanal",
@@ -33,7 +33,7 @@
     ]
   },
   "transkript_var": true,
-  "son_basarili_utc": "2026-11-25T15:22:50.220386+00:00",
+  "son_basarili_utc": "2026-11-26T15:21:38.296367+00:00",
   "son_videolar": [
     {
       "baslik": "ATATP Neden %53 Düştü? I Bilanço Başka Bir Hikâye Anlatıyor",
@@ -79,7 +79,6 @@
   "hata": null,
   "surum": "2.6",
   "denemeler": [
-    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview: 14599 karakter, bitis=STOP"
+    "Ayni video icin transkript zaten var; yeniden cekilmedi."
   ]
 }
