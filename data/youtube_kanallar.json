@@ -225,7 +225,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228815+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.927868+00:00"
     },
     "@cybist": {
       "ad": "@cybist",
@@ -826,9 +826,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 2,
-      "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228847+00:00"
+      "aday_sayisi": 0,
+      "son7_uzun_video": 2,
+      "son_kontrol_utc": "2026-11-27T15:27:46.927895+00:00"
     },
     "@AhmetBeyefendi": {
       "ad": "@AhmetBeyefendi",
@@ -965,7 +965,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228855+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.927903+00:00"
     },
     "@birhissebiranalizunverdoktrini": {
       "ad": "@birhissebiranalizunverdoktrini",
@@ -1094,7 +1094,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228861+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.927908+00:00"
     },
     "@cevikfinance": {
       "ad": "@cevikfinance",
@@ -1347,7 +1347,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228869+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.927916+00:00"
     },
     "@DevrimAkyıl": {
       "ad": "@DevrimAkyıl",
@@ -1967,7 +1967,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228890+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.927936+00:00"
     },
     "@DrSerkanUnal": {
       "ad": "@DrSerkanUnal",
@@ -1983,7 +1983,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228893+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.927938+00:00"
     },
     "@dragonomiYT": {
       "ad": "@dragonomiYT",
@@ -1999,7 +1999,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228896+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.927940+00:00"
     },
     "@efeutkaner": {
       "ad": "@efeutkaner",
@@ -2010,6 +2010,16 @@
       "hata": null,
       "son_basarili_utc": "2026-11-24T15:30:28.491631+00:00",
       "videolar": [
+        {
+          "video_id": "pGlcDOXlEyM",
+          "baslik": "Çimento Bilançoları #AKCNS #CIMSA #OYAKC #NUHCM #LMKDC #BOBET #GOLTS",
+          "yayin_tarihi": "2026-11-26T21:00:23+00:00",
+          "url": "https://www.youtube.com/watch?v=pGlcDOXlEyM",
+          "kanal_adi": "Efe Utkaner",
+          "sure_dk": 0.0,
+          "canli": true,
+          "atlandi": "canli yayin"
+        },
         {
           "video_id": "FHcSnGk3P6Y",
           "baslik": "Enerji Bilançoları #TUPRS #AYGAZ #ENJSA #AKSEN #TRCAS #NTGAZ #BASGZ #AHGAZ #ENERY #ARASE #VEYAS",
@@ -2306,9 +2316,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228913+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.927958+00:00"
     },
     "@erdemkaynar": {
       "ad": "@erdemkaynar",
@@ -2472,9 +2482,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228924+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.927967+00:00"
     },
     "@ErkanÖz-i5m": {
       "ad": "@ErkanÖz-i5m",
@@ -2702,9 +2712,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228936+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.927976+00:00"
     },
     "@FinansLabGulsah": {
       "ad": "@FinansLabGulsah",
@@ -2950,9 +2960,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228972+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928027+00:00"
     },
     "@FxMatik": {
       "ad": "@FxMatik",
@@ -3092,7 +3102,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228988+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928041+00:00"
     },
     "@KARAOĞLUEKONOMİ": {
       "ad": "@KARAOĞLUEKONOMİ",
@@ -3282,7 +3292,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-26T15:32:05.228997+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928048+00:00"
     },
     "@KendineYATIRIMCI": {
       "ad": "@KendineYATIRIMCI",
@@ -3638,7 +3648,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229006+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928056+00:00"
     },
     "@KendineMilyoner": {
       "ad": "@KendineMilyoner",
@@ -3647,8 +3657,53 @@
       "channel_id": "UCjdUCRPvoqvTVBJZfEZrd1A",
       "kanal_adi": "Kendine Milyoner",
       "hata": null,
-      "son_basarili_utc": "2026-11-20T15:34:56.700530+00:00",
+      "son_basarili_utc": "2026-11-27T15:26:48.791509+00:00",
       "videolar": [
+        {
+          "video_id": "w397_gOSlFY",
+          "baslik": "Seçim Öncesi Konut Kredisi Gevşedi: Şimdi mi Almalı, Faiz İnişini mi Beklemeli?",
+          "yayin_tarihi": "2026-11-27T14:30:02+00:00",
+          "url": "https://www.youtube.com/watch?v=w397_gOSlFY",
+          "kanal_adi": "Kendine Milyoner",
+          "sure_dk": 22.2,
+          "canli": false,
+          "ana_mesaj": "Konut kredisi ve kredi kartı düzenlemeleriyle genişlemeci adımlar atılsa da yüksek faiz ortamında ev almak için mükemmel zamanı beklemek yerine ödeme gücü varsa harekete geçmek enflasyonist ortamda daha mantıklıdır.",
+          "ozet": [
+            "BDDK, ikinci evini alacaklar için uygulanan kredi kısıtlamasını kaldırarak kredi oranlarını enerji sınıfına göre %90'a kadar yükseltti.",
+            "Kredi kartı asgari ödeme oranları 100 bin - 200 bin TL limitli kartlar için %40'tan %30'a düşürüldü ancak bu bir faiz indirimi değildir.",
+            "Konut fiyatları son bir yılda nominal olarak %21,1 artsa da enflasyon karşısında reel olarak %6,6 değer kaybetmiştir.",
+            "Aylık %2,90 faizle çekilen konut kredilerinde 5 milyon TL'lik bir kredinin toplam geri ödemesi 120 ayda yaklaşık 18 milyon TL'ye ulaşmaktadır.",
+            "Miras yoluyla %50 ve altı hisseli tapusu olanlar, kredi kısıtlaması hesaplamasında ev sahibi sayılmayarak ilk ev avantajlarından yararlanabilmektedir.",
+            "Faizlerin düşmesini beklemek, artacak talep nedeniyle konut fiyatlarının yükselmesine yol açabileceği için riskli bir stratejidir.",
+            "Enflasyonist ortamda sabit taksitli borçlanmak, gelirin artmasıyla birlikte borç yükünün yıllar içinde reel olarak hafiflemesini sağlar."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "Konut",
+              "ne_dedi": "Fiyatlar reel olarak gerilemiş durumda ve faiz indirimleri başladığında fiyatların hızla artması beklendiği için alım fırsatı olarak değerlendirilebilir."
+            },
+            {
+              "kod": "Kredi Kartı",
+              "ne_dedi": "Asgari ödeme oranları düşürüldü ancak borcun tamamını ödemek faiz yükünden kaçınmak için hala en sağlıklı yoldur."
+            },
+            {
+              "kod": "Altın",
+              "ne_dedi": "Ev almak için birikimlerin altın gibi varlıklarda tutulup piyasa zamanlaması yapılmaya çalışılmasının riskli olduğu belirtildi."
+            },
+            {
+              "kod": "Borsa",
+              "ne_dedi": "2022 yılındaki büyük ralli ve sonrasındaki reel kayıplar bağlamında konut piyasasıyla kıyaslanarak değinildi."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Yüksek faiz oranlarının aylık taksit ödeme gücünü zorlaması",
+            "Kredi kartı asgari ödemesinin düşürülmesinin borcun katlanarak büyümesine yol açması",
+            "Faizler düştüğünde konut fiyatlarının talebe bağlı olarak aşırı yükselme ihtimali"
+          ],
+          "icerik_turu": "kisisel_finans",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-27T15:26:48.791490+00:00"
+        },
         {
           "video_id": "QYC-OlWXCrQ",
           "baslik": "2026'da Ne Aldıysanız Kaybettiniz: 2027'de Paranız Ne Olacak?",
@@ -3811,9 +3866,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
+      "aday_sayisi": 1,
       "son7_uzun_video": 1,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229017+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928067+00:00"
     },
     "@koraynomi": {
       "ad": "@koraynomi",
@@ -4314,7 +4369,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 3,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229042+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928090+00:00"
     },
     "@MentalYatirim": {
       "ad": "@MentalYatirim",
@@ -4462,7 +4517,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229053+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928098+00:00"
     },
     "@mr_rakun35": {
       "ad": "@mr_rakun35",
@@ -4478,7 +4533,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229056+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928101+00:00"
     },
     "@OkanYORGANCI": {
       "ad": "@OkanYORGANCI",
@@ -4487,14 +4542,97 @@
       "channel_id": "UCi6gOcW2KfRyUCO4ox-AaLQ",
       "kanal_adi": "Okan YORGANCI",
       "hata": null,
-      "son_basarili_utc": null,
-      "videolar": [],
+      "son_basarili_utc": "2026-11-27T15:27:46.927836+00:00",
+      "videolar": [
+        {
+          "video_id": "mP7uEIGUnfI",
+          "baslik": "750 Şirketin DNA'sını Çıkardık! | BORSACILARA SEANS ODASI Yayında!",
+          "yayin_tarihi": "2026-11-26T17:00:05+00:00",
+          "url": "https://www.youtube.com/watch?v=mP7uEIGUnfI",
+          "kanal_adi": "Okan YORGANCI",
+          "sure_dk": 27.4,
+          "canli": false,
+          "ana_mesaj": "Okan Yorgancı, BIST 250 ve S&P 500 hisseleri için kendi puanlama sistemine dayalı analizler sunan \"Seans Odası\" adlı yeni web uygulamasını tanıttı.",
+          "ozet": [
+            "Okan Yorgancı, BIST ve ABD piyasalarındaki hisseleri analiz eden \"Seans Odası\" web uygulamasını duyurdu.",
+            "Uygulama, BIST 250 ve S&P 500 endeksindeki şirketlerin temel ve teknik verilerini içeriyor.",
+            "Şirketlerin iş modelleri, finansal sağlıkları, büyüme güçleri ve teknik göstergeleri Okan Yorgancı'nın özel puanlama sistemiyle sunuluyor.",
+            "Uygulamada \"Günün Dikkat Çekenleri\" ve \"En'ler\" gibi özel bölümler bulunuyor.",
+            "Verilerin çoğu ücretsiz erişime açıkken, detaylı yorumlar ve puanlar abonelik gerektiriyor.",
+            "Abonelik ücreti, yüksek veri lisans maliyetlerini karşılamak amacıyla aylık 1499 TL olarak belirlendi.",
+            "Okan Yorgancı, hiçbir analizin risk yönetiminden daha önemli olmadığını vurguluyor."
+          ],
+          "bahsedilen_hisseler": [
+            {
+              "kod": "CATES",
+              "ne_dedi": "Günün dikkat çeken BIST hisselerine örnek olarak gösterildi."
+            },
+            {
+              "kod": "DLTR",
+              "ne_dedi": "Günün dikkat çeken ABD hisselerine örnek olarak gösterildi."
+            },
+            {
+              "kod": "CIEN",
+              "ne_dedi": "Şirket tanıtım ve analiz bölümlerinin gösterimi için örnek olarak kullanıldı."
+            },
+            {
+              "kod": "FE",
+              "ne_dedi": "Finansal değişimler ve teknik puanlama bölümlerinin detaylı gösterimi için örnek olarak kullanıldı."
+            },
+            {
+              "kod": "KR",
+              "ne_dedi": "ABD hisse senedi analiz arayüzü gösterimi için örnek olarak kullanıldı."
+            },
+            {
+              "kod": "MGROS",
+              "ne_dedi": "BIST hisse senedi analiz ve puanlama arayüzü gösterimi için örnek olarak kullanıldı."
+            },
+            {
+              "kod": "OTKAR",
+              "ne_dedi": "Şirket analiz soruları ve puanlama sistemi gösterimi için örnek olarak kullanıldı."
+            },
+            {
+              "kod": "PEGSUS",
+              "ne_dedi": "Şirket tanıma ve DNA bölümlerinin gösterimi için örnek olarak kullanıldı."
+            },
+            {
+              "kod": "Altın",
+              "ne_dedi": "Portföy çeşitlendirmesi için bulunması gereken varlıklardan biri olarak belirtildi."
+            },
+            {
+              "kod": "Gümüş",
+              "ne_dedi": "Portföy çeşitlendirmesi için bulunması gereken varlıklardan biri olarak belirtildi."
+            },
+            {
+              "kod": "Petrol",
+              "ne_dedi": "Portföy çeşitlendirmesi için bulunması gereken varlıklardan biri olarak belirtildi."
+            },
+            {
+              "kod": "Doğalgaz",
+              "ne_dedi": "Portföy çeşitlendirmesi için bulunması gereken varlıklardan biri olarak belirtildi."
+            },
+            {
+              "kod": "Eurobond",
+              "ne_dedi": "Portföyün en az %20'sinin bu varlıkta olması tavsiye edildi."
+            }
+          ],
+          "konusmacinin_riskleri": [
+            "Piyasalar her zaman rasyonel değildir.",
+            "Türkiye gibi ülkelerde her an her şey olabilir.",
+            "Hiçbir analize %100 güvenilmemelidir.",
+            "Yüksek veri yayın lisans maliyetleri proje için bir maliyet riskidir."
+          ],
+          "icerik_turu": "reklam_sponsorlu",
+          "transkript_kaynagi": "gemini:gemini-3-flash-preview",
+          "islendi_utc": "2026-11-27T15:27:46.927814+00:00"
+        }
+      ],
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 0,
-      "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229059+00:00"
+      "aday_sayisi": 1,
+      "son7_uzun_video": 1,
+      "son_kontrol_utc": "2026-11-27T15:27:46.928105+00:00"
     },
     "@Selcoin": {
       "ad": "@Selcoin",
@@ -4933,9 +5071,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229076+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928121+00:00"
     },
     "@borsaciselim": {
       "ad": "@borsaciselim",
@@ -5401,9 +5539,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 1,
+      "aday_sayisi": 0,
       "son7_uzun_video": 2,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229102+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928144+00:00"
     },
     "@tanselciftci": {
       "ad": "@tanselciftci",
@@ -5757,9 +5895,9 @@
       "bekleyenler": [],
       "kimlik_kaynagi": "onbellek",
       "liste_kaynagi": "rss",
-      "aday_sayisi": 2,
+      "aday_sayisi": 0,
       "son7_uzun_video": 4,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229129+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928164+00:00"
     },
     "@tuncay-tursucu": {
       "ad": "@tuncay-tursucu",
@@ -5775,7 +5913,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229132+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928166+00:00"
     },
     "@WallStDiaries": {
       "ad": "@WallStDiaries",
@@ -5791,7 +5929,7 @@
       "liste_kaynagi": "rss",
       "aday_sayisi": 0,
       "son7_uzun_video": 0,
-      "son_kontrol_utc": "2026-11-26T15:32:05.229136+00:00"
+      "son_kontrol_utc": "2026-11-27T15:27:46.928169+00:00"
     }
   },
   "hata": null,
@@ -5809,11 +5947,11 @@
   ],
   "butce": {
     "toplam_sinir": 20,
-    "islenen": 5,
+    "islenen": 2,
     "bekleyen": 0,
     "kota_bitti": false,
     "kullanilan_modeller": {
-      "gemini-3-flash-preview": 5
+      "gemini-3-flash-preview": 2
     },
     "kotasi_dolan_modeller": []
   },
@@ -6097,17 +6235,22 @@
       },
       "kotasi_dolan_modeller": [],
       "zaman_utc": "2026-11-26T15:32:05.229155+00:00"
+    },
+    {
+      "toplam_sinir": 20,
+      "islenen": 2,
+      "bekleyen": 0,
+      "kota_bitti": false,
+      "kullanilan_modeller": {
+        "gemini-3-flash-preview": 2
+      },
+      "kotasi_dolan_modeller": [],
+      "zaman_utc": "2026-11-27T15:27:46.928185+00:00"
     }
   ],
   "surum": "1.2",
-  "uretim_zamani_utc": "2026-11-26T15:32:05.229160+00:00",
+  "uretim_zamani_utc": "2026-11-27T15:27:46.928189+00:00",
   "denemeler": [
-    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
-    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
-    "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
-    "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",
     "Gemini gemini-3-flash-preview: 0 karakter, bitis=STOP",
     "Gemini gemini-3.8-flash hata: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n",

@@ -1,6 +1,6 @@
 {
  "surum": "1.0",
- "uretim_zamani_utc": "2026-11-26T15:32:05.314620+00:00",
+ "uretim_zamani_utc": "2026-11-27T15:27:47.002256+00:00",
  "kisiler": {
   "Yaşar Erdinç": {
    "islenenler": [
@@ -439,6 +439,45 @@
      ],
      "konusmaci_dogrulandi": true,
      "yaklasik_tarih": "2017"
+    },
+    {
+     "video_id": "jsrYFSKqmI4",
+     "baslik": "(Fx Matik) Yaşar Erdinç ile Röportaj: Borsa Bitcoin Hakkında Konuştuk",
+     "kanal": "Fx Matik",
+     "yayin_tarihi": "2017-10-29T14:17:05Z",
+     "url": "https://www.youtube.com/watch?v=jsrYFSKqmI4",
+     "sure_dk": 8.2,
+     "islenme_utc": "2026-11-27T15:28:35.898278+00:00",
+     "kaynak": "gemini:gemini-3-flash-preview",
+     "ilkeler": [
+      "Başarılı olmak için yaptığınız işi çok sevmek ve üzerine sürekli düşünmek gerekir.",
+      "Her gün ekran izleyip fiyatlara bakmak yerine şirketlerin faaliyet raporlarını okuyun.",
+      "Bir şirketin hissesini alırken kendinizi o şirketin ortağı olarak görün.",
+      "Şirketin yatırımcı ilişkileri bölümüne mantıklı ve sorgulayıcı sorular sorun.",
+      "Yatırım yaparken tüm parayı bir kerede yatırmak yerine her ay belirli miktarlarda alım yaparak biriktirin.",
+      "Günlük al-sat (trade) yaparak para kazanmaya çalışmaktan kaçının.",
+      "Yatırım kararlarında beynin yanıltıcı olabileceğini bilerek bir sisteme bağlı kalın.",
+      "Finans alanındaki bilimsel çalışmaları ve farklı teorileri takip ederek kendi sentezinizi oluşturun."
+     ],
+     "ozet": [
+      "Yaşar Erdinç, başarının temel anahtarının sevilen işi tutkuyla yapmak olduğunu vurguluyor.",
+      "Bitcoin'in bir yatırım aracı değil, aşırı şişmiş bir balon ve kumar olduğu ifade ediliyor.",
+      "Borsada başarılı olmak için kısa vadeli fiyat takibi yerine uzun vadeli ortaklık bilinci öneriliyor.",
+      "Günlük al-sat işlemlerinin (trading) dünya genelinde sürdürülebilir bir kazanç sağlamadığı belirtiliyor.",
+      "Finansal okuryazarlık için Nobel ödüllü teorilerin ve yatırımcı psikolojisinin önemi anlatılıyor."
+     ],
+     "bahsedilen_hisseler": [
+      {
+       "kod": "Bitcoin",
+       "ne_dedi": "Para basma mekanizması belirsiz olduğu için bir yatırım aracı değil, spekülatif bir balon ve kumardır."
+      },
+      {
+       "kod": "Dolar",
+       "ne_dedi": "Merkez bankalarının şeffaf süreçleri nedeniyle Bitcoin'e kıyasla daha öngörülebilir bir yapıdadır."
+      }
+     ],
+     "konusmaci_dogrulandi": true,
+     "yaklasik_tarih": "2017"
     }
    ],
    "hatali": {
@@ -600,7 +639,7 @@
     }
    ],
    "aday_guncelleme_utc": "2026-11-22T18:16:51.618949+00:00",
-   "kalan_aday": 8,
+   "kalan_aday": 7,
    "not": "Rahmetli; arşiv videoları (ders, seminer, röportaj). Yöntemleri öğrenilir; eski tarihli hisse görüşleri güncel tavsiye sayılmaz.",
    "hata": null
   }
