@@ -1,43 +1,43 @@
 {
  "surum": "1.2",
- "uretim_zamani_utc": "2026-11-26T17:41:31.636052+00:00",
+ "uretim_zamani_utc": "2026-11-27T17:26:04.451031+00:00",
  "video": {
-  "video_id": "x2T-CvNUozo",
-  "baslik": "ATATP Neden %53 Düştü? I Bilanço Başka Bir Hikâye Anlatıyor",
-  "sure_sn": 935,
+  "video_id": "DiN2xHi1a2g",
+  "baslik": "ARD Grup (ARDYZ) Neden Düşüyor? Bilanço ve Değerleme",
+  "sure_sn": 869,
   "esik": 1000
  },
  "deneyler": [
   {
    "ad": "gemini_teshis",
    "durum": "basarili",
-   "karakter": 14596,
+   "karakter": 14725,
    "turkce": true,
-   "sure_sn": 218.7,
+   "sure_sn": 170.6,
    "not": "model=gemini-3-flash-preview bitis=STOP",
-   "onizleme": "Bugün son dönemde yatırımcıların çok fazla takip ettiği ve sizlerden de çok fazla soru gelen bir şirketi analiz edeceğiz: ATP Yazılım. Bir yanda Burger King China gibi dev zincirlerin restoranlarında çalışan, Afrika'ya kadar uzanan bir yazılım işi yapıyorlar. Diğer yandan da Tıkla Gelsin'in sahibi olan şirkette büyük bir pay sahipler. Kağıt üzerindeyse çarpanlar açısından oldukça cazip görünüyorla"
+   "onizleme": "Dünün sosyal medyada en çok konuşulan ve en çok tartışılan hisse senedi analizlerinden biriyle karşınızdayım. ARDYZ kodlu ARD Bilişim. Dün bildiğiniz üzere analiz toplantısında bir araştırma analistinin seans içerisinde bir tweet atması ve iddiaya göre şirket yetkililerinden birinin bu tweeti silinmesiyle ilgili ortaya atılan bir iddia vardı. Ve bu iddiayla ilgili şirket sitesine baktım, hani KAP'"
   },
   {
    "ad": "gemini_parca",
    "durum": "basarili",
-   "karakter": 14652,
+   "karakter": 14776,
    "turkce": true,
-   "sure_sn": 96.9,
+   "sure_sn": 75.1,
    "not": "gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem; gemini-3.8-flash: HTTP 503 {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in dem",
-   "onizleme": "Bugün son dönemde yatırımcıların çok fazla takip ettiği ve sizlerden de çok fazla soru gelen bir şirketi analiz edeceğiz: ATP Yazılım. Bir yanda Burger King China gibi dev zincirlerin restoranlarında çalışan, Afrika'ya kadar uzanan bir yazılım işi yapıyorlar. Diğer yandan da Tıkla Gelsin'in sahibi olan şirkette büyük bir pay sahipler. Kağıt üzerindeyse çarpanlar açısından oldukça cazip görünüyorla",
+   "onizleme": "Dünün sosyal medyada en çok konuşulan ve en çok tartışılan hisse senedi analizlerinden biriyle karşınızdayım. ARDYZ kodlu ARD Bilişim. Dün bildiğiniz üzere analiz toplantısında bir araştırma analistinin seans içerisinde bir tweet atması ve iddiaya göre şirket yetkililerinden birinin bu tweeti silinmesiyle ilgili ortaya atılan bir iddia vardı. Ve bu iddiayla ilgili şirket sitesine baktım, hani KAP'",
    "parcalar": [
     {
      "bas": 0,
      "bit": 600,
      "model": "gemini-3-flash-preview",
-     "karakter": 9299,
+     "karakter": 10090,
      "bitis": "STOP"
     },
     {
      "bas": 600,
-     "bit": 935,
+     "bit": 869,
      "model": "gemini-3-flash-preview",
-     "karakter": 5352,
+     "karakter": 4685,
      "bitis": "STOP"
     }
    ]
@@ -47,8 +47,8 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 1.1,
-   "not": "] x2T-CvNUozo: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "sure_sn": 1.5,
+   "not": "] DiN2xHi1a2g: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
   {
@@ -56,8 +56,8 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 1.0,
-   "not": "] x2T-CvNUozo: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
+   "sure_sn": 1.2,
+   "not": "] DiN2xHi1a2g: Sign in to confirm you’re not a bot. This helps protect our community. Use --cookies-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies\n",
    "onizleme": ""
   },
   {
@@ -83,7 +83,7 @@
    "durum": "hata",
    "karakter": 0,
    "turkce": false,
-   "sure_sn": 31.9,
+   "sure_sn": 31.2,
    "not": "model=glm-4.6v-flash HTTP 400 {\"error\":{\"code\":\"1210\",\"message\":\"图片输入格式/解析错误\"}}",
    "onizleme": ""
   },
@@ -204,6 +204,11 @@
     "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "basarili",
     "karakter": 14596
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
+    "durum": "basarili",
+    "karakter": 14725
    }
   ],
   "gemini_parca": [
@@ -281,6 +286,11 @@
     "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "basarili",
     "karakter": 14652
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
+    "durum": "basarili",
+    "karakter": 14776
    }
   ],
   "ytdlp_altyazi": [
@@ -356,6 +366,11 @@
    },
    {
     "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -435,6 +450,11 @@
     "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "hata",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
+    "durum": "hata",
+    "karakter": 0
    }
   ],
   "qwen_url": [
@@ -510,6 +530,11 @@
    },
    {
     "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -589,6 +614,11 @@
     "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "glm_url": [
@@ -664,6 +694,11 @@
    },
    {
     "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "hata",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
     "durum": "hata",
     "karakter": 0
    }
@@ -743,6 +778,11 @@
     "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "ses_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
+    "durum": "ses_yok",
+    "karakter": 0
    }
   ],
   "siliconflow_ses": [
@@ -818,6 +858,11 @@
    },
    {
     "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
    }
@@ -897,6 +942,11 @@
     "tarih": "2026-11-26T17:41:31.636052+00:00",
     "durum": "anahtar_yok",
     "karakter": 0
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
+    "durum": "anahtar_yok",
+    "karakter": 0
    }
   ],
   "deepseek": [
@@ -972,6 +1022,11 @@
    },
    {
     "tarih": "2026-11-26T17:41:31.636052+00:00",
+    "durum": "uygulanamaz",
+    "karakter": 0
+   },
+   {
+    "tarih": "2026-11-27T17:26:04.451031+00:00",
     "durum": "uygulanamaz",
     "karakter": 0
    }
